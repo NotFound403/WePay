@@ -1,5 +1,7 @@
 package org.hive.common.proxy;
 
+import org.hive.common.service.PayHandler;
+
 /**
  * Created with IntelliJ IDEA.
  *
