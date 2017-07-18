@@ -3,8 +3,10 @@ package org.hive;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.apache.commons.lang3.RandomStringUtils;
+import org.hive.common.exception.SignatureException;
 import org.hive.common.util.BeanUtil;
-import org.hive.common.util.MD5Util;
+import org.hive.common.util.StringUtil;
 
 import java.util.Map;
 
@@ -40,13 +42,16 @@ public class AppTest
         test.setBody("test");
         test.setDevice_info("1000");
         test.setNonce_str("ibuaiVcKdpRxkhJA");
-
         Map<String, Object> sortedMap = BeanUtil.beanToSortedTreeMapWithoutNull(test);
-        System.out.println(sortedMap);
-        StringBuffer stringBuffer=new StringBuffer();
-        for (String s: sortedMap.keySet()) {
-            stringBuffer.append(s).append("=").append(sortedMap.get(s)).append("&");
+        try {
+            String sign = StringUtil.signatureGenerator(sortedMap, "", "192006250b4c09247ec02edce69f6a2d");
+            System.out.println(sign);
+        } catch (SignatureException e) {
+            e.printStackTrace();
         }
-        System.out.println(MD5Util.MD5Encode(stringBuffer.append("key=192006250b4c09247ec02edce69f6a2d").toString(),null));
+    }
+
+    public void testA(){
+        System.out.println(StringUtil.onceStrGenerator());
     }
 }

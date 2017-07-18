@@ -19,6 +19,15 @@ import java.util.TreeMap;
 
 
 public class BeanUtil {
+    /**
+     * Bean to sorted tree map without null map.
+     * <p>
+     * 实体 Bean 转为按照ACCSII排序后的TreeMap 并排除空值
+     *
+     * @param <T> the type parameter
+     * @param t   the t
+     * @return the map
+     */
     public static <T> Map<String, Object> beanToSortedTreeMapWithoutNull(T t) {
         if (t == null) {
             return null;
@@ -44,6 +53,7 @@ public class BeanUtil {
                     } catch (IllegalAccessException | InvocationTargetException e) {
                         e.printStackTrace();
                     }
+//                    排除空值
                     if (value != null) {
                         map.put(key, value);
                     }
