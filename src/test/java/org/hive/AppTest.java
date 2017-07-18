@@ -3,11 +3,12 @@ package org.hive;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.apache.commons.lang3.RandomStringUtils;
+import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import org.hive.common.util.BeanUtil;
 import org.hive.common.util.StringUtil;
 
+import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
 /**
@@ -53,5 +54,22 @@ public class AppTest
 
     public void testA(){
         System.out.println(StringUtil.onceStrGenerator());
+        String key="ssssssss";
+        try {
+            byte[] bytes = "SSSS".getBytes("UTF-8");
+            for (byte b:bytes) {
+                System.out.println(b);
+            }
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+      try {
+            String r=  StringUtil.encryptBasedDes("ABC",key);
+            System.out.println(r);
+            String d=StringUtil.decryptBasedDes(r,key);
+            System.out.println(d);
+        } catch (RequiredParamException e) {
+            e.printStackTrace();
+        }
     }
 }
