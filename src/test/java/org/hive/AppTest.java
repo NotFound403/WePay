@@ -3,9 +3,11 @@ package org.hive;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import org.hive.common.util.BeanUtil;
 import org.hive.common.util.StringUtil;
+import org.hive.weChat.entity.PayRequestParams;
 
 import java.util.Map;
 
@@ -35,7 +37,7 @@ public class AppTest
      */
     public void testApp() {
 
-        org.hive.weChat.entity.Test test = new org.hive.weChat.entity.Test();
+      PayRequestParams test =new PayRequestParams();
         test.setAppid("wxd930ea5d5a258f4f");
         test.setMch_id("10000100");
         test.setBody("test");
@@ -44,15 +46,16 @@ public class AppTest
         Map<String, Object> sortedMap = BeanUtil.beanToSortedTreeMapWithoutNull(test);
         try {
             String sign = StringUtil.signatureGenerator(sortedMap, "", "192006250b4c09247ec02edce69f6a2d");
-            System.out.println(sign);
-        } catch (SignatureException e) {
+            sortedMap.put("sign",sign);
+          String XML=  StringUtil.mapToXML(sortedMap);
+            System.out.println(XML);
+        } catch (SignatureException |RequiredParamException e) {
             e.printStackTrace();
         }
     }
 
-    public void testA(){
-            String E=  StringUtil.encryptBasedDes("ABC");
-
+    public void testA() {
+        String E = StringUtil.encryptBasedDes("吴亚奇");
         System.out.println(E);
         System.out.println(StringUtil.decryptBasedDes(E));
     }

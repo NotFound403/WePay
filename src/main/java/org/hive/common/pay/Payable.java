@@ -20,5 +20,6 @@ public interface Payable {
      * @param payRequestParams the pay request params
      * @return the t
      */
-    Map<String, Object> unifiedorder(PayRequestParams payRequestParams);
+    Map<String, Object> unifiedOrder(PayRequestParams payRequestParams);
 }
+

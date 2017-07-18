@@ -15,12 +15,12 @@ import java.util.Properties;
  */
 
 
-public final class RequiredParams {
-    private static volatile RequiredParams instance;
+public final class WeChatPayConfig {
+    private static volatile WeChatPayConfig instance;
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
-  /*  // 私钥  签名算法使用 必传
-    private String secretKey;*/
+   // 私钥  签名算法使用 必传
+    private String secretKey;
     // 微信支付分配的商户号 必传
     private String mch_id;
     // 通知地址  必传
@@ -28,20 +28,20 @@ public final class RequiredParams {
     // 签名算法 默认MD5
     private String sign_type;
 
-    public static RequiredParams getInstance() {
+    public static WeChatPayConfig getInstance() {
         if (instance == null) {
-            synchronized (RequiredParams.class) {
+            synchronized (WeChatPayConfig.class) {
                 instance = newInstance();
             }
         }
         return instance;
     }
 
-    private static RequiredParams newInstance() {
+    private static WeChatPayConfig newInstance() {
 
         InputStream inputStream = ClassLoader.getSystemResourceAsStream("weChatConfig.properties");
         Properties properties = new Properties();
-        RequiredParams params = new RequiredParams();
+        WeChatPayConfig params = new WeChatPayConfig();
         try {
             properties.load(inputStream);
             params.setAppid(properties.getProperty("appid"));
@@ -63,6 +63,14 @@ public final class RequiredParams {
     }
     public String getMch_id() {
         return mch_id;
+    }
+
+    public String getSecretKey() {
+        return secretKey;
+    }
+
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 
     public void setMch_id(String mch_id) {
