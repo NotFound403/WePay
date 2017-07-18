@@ -1,6 +1,7 @@
 package org.hive.common.util;
 
 import org.apache.commons.lang3.RandomStringUtils;
+import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
@@ -113,16 +114,16 @@ public class StringUtil {
     /**
      * Map to xml string.
      *
-     * @param <K> the type parameter
+     * @param <String> the type parameter
      * @param <V> the type parameter
      * @param map the map
      * @return the string
      * @throws RequiredParamException the required param exception
      */
-    public static  <K, V> String mapToXML(Map<K, V> map) throws RequiredParamException {
+    public static <String, V> java.lang.String mapToXML(Map<String, V> map) throws RequiredParamException {
         if (map != null && !map.isEmpty()) {
             StringBuffer xml = new StringBuffer("<xml>");
-            for (K k : map.keySet()) {
+            for (String k : map.keySet()) {
                 V v = map.get(k);
                 if (v != null) {
                     xml.append("<").append(k).append(">").append(map.get(k)).append("</").append(k).append(">");
