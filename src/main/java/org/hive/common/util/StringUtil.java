@@ -1,7 +1,6 @@
 package org.hive.common.util;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
