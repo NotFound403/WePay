@@ -6,8 +6,8 @@ import java.beans.Introspector;
 import java.beans.PropertyDescriptor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -18,16 +18,15 @@ import java.util.Map;
  */
 
 
-public class ObjectUtil {
-    public static Map<String, Object> beanToHashMap(Object obj) {
-
-        if (obj == null) {
+public class BeanUtil {
+    public static <T> Map<String, Object> beanToSortedTreeMapWithoutNull(T t) {
+        if (t == null) {
             return null;
         }
-        Map<String, Object> map = new HashMap<>();
+        Map<String, Object> map = new TreeMap<>(String::compareTo);
         BeanInfo beanInfo = null;
         try {
-            beanInfo = Introspector.getBeanInfo(obj.getClass());
+            beanInfo = Introspector.getBeanInfo(t.getClass());
         } catch (IntrospectionException e) {
             e.printStackTrace();
         }
@@ -35,14 +34,13 @@ public class ObjectUtil {
             PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
             for (PropertyDescriptor property : propertyDescriptors) {
                 String key = property.getName();
-
                 // 过滤class属性
                 if (!"class".equals(key)) {
                     // 得到property对应的getter方法
                     Method getter = property.getReadMethod();
                     Object value = null;
                     try {
-                        value = getter.invoke(obj);
+                        value = getter.invoke(t);
                     } catch (IllegalAccessException | InvocationTargetException e) {
                         e.printStackTrace();
                     }

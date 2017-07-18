@@ -3,8 +3,10 @@ package org.hive;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.apache.commons.lang3.RandomStringUtils;
-import org.hive.weChat.enumeration.WeChatPayTypeEnum;
+import org.hive.common.util.BeanUtil;
+import org.hive.common.util.MD5Util;
+
+import java.util.Map;
 
 /**
  * Unit test for simple App.
@@ -32,8 +34,19 @@ public class AppTest
      */
     public void testApp() {
 
-       String string= RandomStringUtils.randomAlphanumeric(32);
-        System.out.println(string);
-        System.out.println(WeChatPayTypeEnum.APP.getMethod());
+        org.hive.weChat.entity.Test test = new org.hive.weChat.entity.Test();
+        test.setAppid("wxd930ea5d5a258f4f");
+        test.setMch_id("10000100");
+        test.setBody("test");
+        test.setDevice_info("1000");
+        test.setNonce_str("ibuaiVcKdpRxkhJA");
+
+        Map<String, Object> sortedMap = BeanUtil.beanToSortedTreeMapWithoutNull(test);
+        System.out.println(sortedMap);
+        StringBuffer stringBuffer=new StringBuffer();
+        for (String s: sortedMap.keySet()) {
+            stringBuffer.append(s).append("=").append(sortedMap.get(s)).append("&");
+        }
+        System.out.println(MD5Util.MD5Encode(stringBuffer.append("key=192006250b4c09247ec02edce69f6a2d").toString(),null));
     }
 }

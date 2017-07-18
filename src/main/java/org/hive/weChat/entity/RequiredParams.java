@@ -18,15 +18,15 @@ import java.util.Properties;
 public final class RequiredParams {
     private static volatile RequiredParams instance;
     // 微信开放平台审核通过的应用APPID 必传
-    private String appId;
-    // 私钥  签名算法使用 必传
-    private String secretKey;
+    private String appid;
+  /*  // 私钥  签名算法使用 必传
+    private String secretKey;*/
     // 微信支付分配的商户号 必传
-    private String mchId;
+    private String mch_id;
     // 通知地址  必传
-    private String notifyUrl;
+    private String notify_url;
     // 签名算法 默认MD5
-    private String signType;
+    private String sign_type;
 
     public static RequiredParams getInstance() {
         if (instance == null) {
@@ -39,59 +39,49 @@ public final class RequiredParams {
 
     private static RequiredParams newInstance() {
 
-        InputStream inputStream =ClassLoader.getSystemResourceAsStream("weChatConfig.properties");
+        InputStream inputStream = ClassLoader.getSystemResourceAsStream("weChatConfig.properties");
         Properties properties = new Properties();
         RequiredParams params = new RequiredParams();
         try {
             properties.load(inputStream);
-            params.setAppId(properties.getProperty("appId"));
-            params.setMchId(properties.getProperty("mchId"));
-            params.setNotifyUrl(properties.getProperty("notifyUrl"));
-            params.setSecretKey(properties.getProperty("secretKey"));
-            params.setSignType(properties.getProperty("signType"));
+            params.setAppid(properties.getProperty("appid"));
+            params.setMch_id(properties.getProperty("mch_id"));
+            params.setNotify_url(properties.getProperty("notify_url"));
+            params.setSign_type(properties.getProperty("sign_type"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         return params;
     }
 
-    public String getAppId() {
-        return appId;
+    public String getAppid() {
+        return appid;
     }
 
-    public void setAppId(String appId) {
-        this.appId = appId;
+    public void setAppid(String appid) {
+        this.appid = appid;
+    }
+    public String getMch_id() {
+        return mch_id;
     }
 
-    public String getSecretKey() {
-        return secretKey;
+    public void setMch_id(String mch_id) {
+        this.mch_id = mch_id;
     }
 
-    public void setSecretKey(String secretKey) {
-        this.secretKey = secretKey;
+    public String getNotify_url() {
+        return notify_url;
     }
 
-    public String getMchId() {
-        return mchId;
+    public void setNotify_url(String notify_url) {
+        this.notify_url = notify_url;
     }
 
-    public void setMchId(String mchId) {
-        this.mchId = mchId;
+    public String getSign_type() {
+        return sign_type;
     }
 
-    public String getNotifyUrl() {
-        return notifyUrl;
-    }
-
-    public void setNotifyUrl(String notifyUrl) {
-        this.notifyUrl = notifyUrl;
-    }
-
-    public String getSignType() {
-        return signType;
-    }
-
-    public void setSignType(String signType) {
-        this.signType = signType;
+    public void setSign_type(String sign_type) {
+        this.sign_type = sign_type;
     }
 }
