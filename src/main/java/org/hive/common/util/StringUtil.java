@@ -70,7 +70,7 @@ public class StringUtil {
      * Encrypt based des string.
      *
      * @param data       the data
-     * @param privateKey  必须大于8位
+     * @param privateKey 必须大于8位
      * @return the string
      * @throws RequiredParamException the required param exception
      */
@@ -91,7 +91,7 @@ public class StringUtil {
 
                 encryptedData = new BASE64Encoder().encode(cipher.doFinal(data.getBytes()));
             } else {
-                throw new RequiredParamException("required param is null");
+                throw new RequiredParamException("required param is null length less than 8");
             }
         } catch (Exception e) {
             throw new RuntimeException("加密错误，错误信息：", e);
@@ -123,7 +123,7 @@ public class StringUtil {
 
                 decryptedData = new String(cipher.doFinal(new BASE64Decoder().decodeBuffer(cryptData)));
             } else {
-                throw new RequiredParamException("required param is null");
+                throw new RequiredParamException("required param is null or length less than 8");
             }
 
         } catch (Exception e) {
