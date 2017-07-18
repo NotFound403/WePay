@@ -1,7 +1,6 @@
 package org.hive.common.util;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
@@ -29,6 +28,7 @@ import java.util.Set;
 public class StringUtil {
     private static final String hexDigits[] = {"0", "1", "2", "3", "4", "5",
             "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
+   private static final byte [] DES_KEY={17,36,-128,41,0,59,-13,6};
 
     /**
      * Signature generator.
@@ -69,30 +69,19 @@ public class StringUtil {
     /**
      * Encrypt based des string.
      *
-     * @param data       the data
-     * @param privateKey  必须大于8位
+     * @param data the data
      * @return the string
-     * @throws RequiredParamException the required param exception
      */
-    public static String encryptBasedDes(String data, String privateKey) throws RequiredParamException {
-
+    public static String encryptBasedDes(String data ) {
         String encryptedData;
         try {
-            if (privateKey != null) {
-                byte[] bytes = privateKey.getBytes("UTF-8");
                 SecureRandom sr = new SecureRandom();
-                DESKeySpec deskey = new DESKeySpec(bytes);
-
+                DESKeySpec deskey = new DESKeySpec(DES_KEY);
                 SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
                 SecretKey key = keyFactory.generateSecret(deskey);
-
                 Cipher cipher = Cipher.getInstance("DES");
                 cipher.init(1, key, sr);
-
                 encryptedData = new BASE64Encoder().encode(cipher.doFinal(data.getBytes()));
-            } else {
-                throw new RequiredParamException("required param is null");
-            }
         } catch (Exception e) {
             throw new RuntimeException("加密错误，错误信息：", e);
         }
@@ -102,30 +91,19 @@ public class StringUtil {
     /**
      * Decrypt based des string.
      *
-     * @param cryptData  the crypt data
-     * @param privateKey the private key  必须大于8位
+     * @param cryptData the crypt data
      * @return the string
-     * @throws RequiredParamException the required param exception
      */
-    public static String decryptBasedDes(String cryptData, String privateKey) throws RequiredParamException {
+    public static String decryptBasedDes(String cryptData )  {
         String decryptedData;
         try {
-            if (privateKey != null) {
-                byte[] bytes = privateKey.getBytes("UTF-8");
                 SecureRandom sr = new SecureRandom();
-                DESKeySpec desKeySpec = new DESKeySpec(bytes);
-
+                DESKeySpec desKeySpec = new DESKeySpec(DES_KEY);
                 SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
                 SecretKey key = keyFactory.generateSecret(desKeySpec);
-
                 Cipher cipher = Cipher.getInstance("DES");
                 cipher.init(2, key, sr);
-
                 decryptedData = new String(cipher.doFinal(new BASE64Decoder().decodeBuffer(cryptData)));
-            } else {
-                throw new RequiredParamException("required param is null");
-            }
-
         } catch (Exception e) {
             throw new RuntimeException("解密错误，错误信息：", e);
         }
