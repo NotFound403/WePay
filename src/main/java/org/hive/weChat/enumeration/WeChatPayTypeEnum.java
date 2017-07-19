@@ -1,5 +1,7 @@
 package org.hive.weChat.enumeration;
 
+import org.hive.common.pay.PayType;
+
 /**
  * Created with IntelliJ IDEA.
  * <p>

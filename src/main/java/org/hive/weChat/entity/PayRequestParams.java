@@ -14,8 +14,8 @@ package org.hive.weChat.entity;
 public class PayRequestParams {
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
-    /*  // 私钥  签名算法使用 必传
-      private String secretKey;*/
+    // 私钥  签名算法使用 必传
+    private String secretKey;
     // 微信支付分配的商户号 必传
     private String mch_id;
     // 通知地址  必传
@@ -61,6 +61,14 @@ public class PayRequestParams {
 
     public void setAppid(String appid) {
         this.appid = appid;
+    }
+
+    public String getSecretKey() {
+        return secretKey;
+    }
+
+    public void setSecretKey(String secretKey) {
+        this.secretKey = secretKey;
     }
 
     public String getMch_id() {

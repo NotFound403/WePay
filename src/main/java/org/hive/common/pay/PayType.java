@@ -1,4 +1,4 @@
-package org.hive.weChat.enumeration;
+package org.hive.common.pay;
 
 /**
  * Created with IntelliJ IDEA.

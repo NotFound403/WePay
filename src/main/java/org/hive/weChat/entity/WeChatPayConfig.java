@@ -1,5 +1,7 @@
 package org.hive.weChat.entity;
 
+import org.hive.common.pay.PayConfig;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
@@ -15,11 +17,11 @@ import java.util.Properties;
  */
 
 
-public final class WeChatPayConfig {
+public final class WeChatPayConfig implements PayConfig {
     private static volatile WeChatPayConfig instance;
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
-   // 私钥  签名算法使用 必传
+    // 私钥  签名算法使用 必传
     private String secretKey;
     // 微信支付分配的商户号 必传
     private String mch_id;
@@ -54,6 +56,7 @@ public final class WeChatPayConfig {
         return params;
     }
 
+    @Override
     public String getAppid() {
         return appid;
     }
@@ -61,10 +64,17 @@ public final class WeChatPayConfig {
     public void setAppid(String appid) {
         this.appid = appid;
     }
+
+    @Override
     public String getMch_id() {
         return mch_id;
     }
 
+    public void setMch_id(String mch_id) {
+        this.mch_id = mch_id;
+    }
+
+    @Override
     public String getSecretKey() {
         return secretKey;
     }
@@ -73,10 +83,7 @@ public final class WeChatPayConfig {
         this.secretKey = secretKey;
     }
 
-    public void setMch_id(String mch_id) {
-        this.mch_id = mch_id;
-    }
-
+    @Override
     public String getNotify_url() {
         return notify_url;
     }
@@ -85,6 +92,7 @@ public final class WeChatPayConfig {
         this.notify_url = notify_url;
     }
 
+    @Override
     public String getSign_type() {
         return sign_type;
     }
