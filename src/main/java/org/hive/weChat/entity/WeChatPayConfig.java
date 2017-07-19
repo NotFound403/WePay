@@ -25,7 +25,7 @@ public final class WeChatPayConfig implements PayConfig {
     private String secretKey;
     // 微信支付分配的商户号 必传
     private String mch_id;
-    // 通知地址  必传
+    // 完整的通知地址  必传
     private String notify_url;
     // 签名算法 默认MD5
     private String sign_type;
