@@ -12,6 +12,7 @@ package org.hive.common.exception;
 
 
 public class SignatureException extends Throwable {
+    private static final long serialVersionUID = 4661983063155751455L;
     public SignatureException(String message) {
         super(message);
     }

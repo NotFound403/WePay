@@ -10,6 +10,8 @@ package org.hive.common.exception;
 
 
 public class RequiredParamException extends Throwable {
+    private static final long serialVersionUID = -8363449024687868772L;
+
     public RequiredParamException(String message) {
         super(message);
     }
