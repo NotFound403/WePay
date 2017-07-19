@@ -39,7 +39,7 @@ public class BeanUtil {
         } catch (IntrospectionException e) {
             e.printStackTrace();
         }
-        if (beanInfo != null) {
+        if (beanInfo != null) { 
             PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
             for (PropertyDescriptor property : propertyDescriptors) {
                 String key = property.getName();
