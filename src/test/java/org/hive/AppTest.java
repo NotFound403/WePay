@@ -3,13 +3,20 @@ package org.hive;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
 import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import org.hive.common.util.BeanUtil;
 import org.hive.common.util.HttpKit;
 import org.hive.common.util.StringUtil;
 import org.hive.weChat.entity.PayRequestParams;
+import org.hive.weChat.enumeration.WeChatPayTypeEnum;
 
+import java.io.UnsupportedEncodingException;
+import java.util.Iterator;
 import java.util.Map;
 
 /**
@@ -50,7 +57,11 @@ public class AppTest
             sortedMap.put("sign", sign);
             String XML = StringUtil.mapToXML(sortedMap);
             System.out.println(XML);
-        } catch (SignatureException | RequiredParamException e) {
+            String s = HttpKit.httpPost(WeChatPayTypeEnum.APP.getApi(), XML);
+
+            String d = new String(s.getBytes("ISO-8859-1"), "UTF-8");
+            System.out.println(d);
+        } catch (SignatureException | UnsupportedEncodingException | RequiredParamException e) {
             e.printStackTrace();
         }
     }
@@ -65,5 +76,15 @@ public class AppTest
         String url = "https://way.jd.com/he/freeweather";
         String s = HttpKit.httpPost(url, "city=zhengzhou&appkey=86ecfe69876b60bdbc1e67f9a3c77462");
         System.out.println(s);
+    }
+
+    public void testc() {
+        String xml = "<xml>\n" +
+                "    <stringName>jack</stringName>\n" +
+                "    <age>18</age>\n" +
+                "    <address>河南郑州</address>\n" +
+                "    <description><![CDATA[<test demo>]]></description>\n" +
+                "</xml>";
+        System.out.println(StringUtil.XMLToMap(xml));
     }
 }

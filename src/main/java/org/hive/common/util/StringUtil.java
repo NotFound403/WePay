@@ -1,6 +1,13 @@
 package org.hive.common.util;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
 import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import sun.misc.BASE64Decoder;
@@ -14,6 +21,8 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
+import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 
@@ -115,8 +124,8 @@ public class StringUtil {
      * Map to xml string.
      *
      * @param <String> the type parameter
-     * @param <V> the type parameter
-     * @param map the map
+     * @param <V>      the type parameter
+     * @param map      the map
      * @return the string
      * @throws RequiredParamException the required param exception
      */
@@ -135,6 +144,44 @@ public class StringUtil {
             }
         }
         throw new RequiredParamException("map is invalid");
+    }
+
+    /**
+     * Map to json string.
+     * <p>
+     * map 转json字符串
+     *
+     * @param <K> the type parameter
+     * @param <V> the type parameter
+     * @param map the map
+     * @return the string
+     */
+    public static <K, V> String mapToJson(Map<K, V> map) {
+        ObjectMapper mapper = new ObjectMapper();
+        // 过滤空值
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        try {
+            return mapper.writeValueAsString(map);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+     public static Map<String, Object> XMLToMap(String xml) {
+         Map<String, Object> map=new HashMap<>();
+         try {
+             Document document = DocumentHelper.parseText(xml);
+             Element rootElement = document.getRootElement();
+             Iterator iterator= rootElement.elementIterator();
+             while (iterator.hasNext()){
+                 Element childElement= (Element) iterator.next();
+                 map.put(childElement.getName(),childElement.getData());
+             }
+         } catch (DocumentException e) {
+             e.printStackTrace();
+         }
+         return map;
     }
 
     private static String byteArrayToHexString(byte b[]) {
