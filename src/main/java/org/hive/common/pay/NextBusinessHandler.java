@@ -12,4 +12,5 @@ package org.hive.common.pay;
 
 
 public interface NextBusinessHandler {
+    <T> boolean callback(T t);
 }

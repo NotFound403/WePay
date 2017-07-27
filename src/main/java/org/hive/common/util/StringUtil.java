@@ -21,10 +21,7 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 /**
  * Created with IntelliJ IDEA.
@@ -149,34 +146,54 @@ public class StringUtil {
     /**
      * Map to json string.
      * <p>
-     * map 转json字符串
+     * Collection 转json字符串
      *
-     * @param <K> the type parameter
-     * @param <V> the type parameter
-     * @param map the map
+     * @param <T> the type parameter
+     * @param t   the t
      * @return the string
      */
-    public static <K, V> String mapToJson(Map<K, V> map) {
+    public static <T extends Collection> String collectionToJson(T t) {
         ObjectMapper mapper = new ObjectMapper();
         // 过滤空值
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         try {
-            return mapper.writeValueAsString(map);
+            return mapper.writeValueAsString(t);
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
         return null;
     }
 
-     public static Map<String, Object> XMLToMap(String xml) {
-         Map<String, Object> map=new HashMap<>();
+    /**
+     * Map to json string.
+     *
+     * Map 转json字符串
+     *
+     * @param <T> the type parameter
+     * @param t   the t
+     * @return the string
+     */
+    public static <T extends Map> String mapToJson(T t) {
+        ObjectMapper mapper = new ObjectMapper();
+        // 过滤空值
+        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
+        try {
+            return mapper.writeValueAsString(t);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+     public static Map<String, String> XMLToMap(String xml) {
+         Map<String, String> map=new HashMap<>();
          try {
              Document document = DocumentHelper.parseText(xml);
              Element rootElement = document.getRootElement();
              Iterator iterator= rootElement.elementIterator();
              while (iterator.hasNext()){
                  Element childElement= (Element) iterator.next();
-                 map.put(childElement.getName(),childElement.getData());
+                 map.put(childElement.getName(),childElement.getText());
              }
          } catch (DocumentException e) {
              e.printStackTrace();

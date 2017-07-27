@@ -3,21 +3,14 @@ package org.hive;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
-import org.dom4j.Document;
-import org.dom4j.DocumentException;
-import org.dom4j.DocumentHelper;
-import org.dom4j.Element;
-import org.hive.common.exception.RequiredParamException;
-import org.hive.common.exception.SignatureException;
-import org.hive.common.util.BeanUtil;
+import org.hive.common.pay.Payable;
+import org.hive.common.pay.PreBusinessHandler;
+import org.hive.common.proxy.ProxyPayHandler;
+import org.hive.common.service.PayHandler;
 import org.hive.common.util.HttpKit;
 import org.hive.common.util.StringUtil;
 import org.hive.weChat.entity.PayRequestParams;
 import org.hive.weChat.enumeration.WeChatPayTypeEnum;
-
-import java.io.UnsupportedEncodingException;
-import java.util.Iterator;
-import java.util.Map;
 
 /**
  * Unit test for simple App.
@@ -51,19 +44,17 @@ public class AppTest
         test.setBody("test");
         test.setDevice_info("1000");
         test.setNonce_str("ibuaiVcKdpRxkhJA");
-        Map<String, Object> sortedMap = BeanUtil.beanToSortedTreeMapWithoutNull(test);
-        try {
-            String sign = StringUtil.signatureGenerator(sortedMap, "", "192006250b4c09247ec02edce69f6a2d");
-            sortedMap.put("sign", sign);
-            String XML = StringUtil.mapToXML(sortedMap);
-            System.out.println(XML);
-            String s = HttpKit.httpPost(WeChatPayTypeEnum.APP.getApi(), XML);
-
-            String d = new String(s.getBytes("ISO-8859-1"), "UTF-8");
-            System.out.println(d);
-        } catch (SignatureException | UnsupportedEncodingException | RequiredParamException e) {
-            e.printStackTrace();
-        }
+        PayHandler payHandler = new PayHandler(WeChatPayTypeEnum.APP, test);
+        PreBusinessHandler preBusinessHandler = new PreBusinessHandler() {
+            @Override
+            public Object prehandler() {
+                System.out.println("开始处理预处理任务");
+                return true;
+            }
+        };
+        ProxyPayHandler proxyPayHandler = new ProxyPayHandler(payHandler,preBusinessHandler);
+        Payable payable = proxyPayHandler.initProxy();
+        payable.unifiedOrder();
     }
 
     public void testA() {
@@ -86,5 +77,9 @@ public class AppTest
                 "    <description><![CDATA[<test demo>]]></description>\n" +
                 "</xml>";
         System.out.println(StringUtil.XMLToMap(xml));
+    }
+
+    public void testD() {
+
     }
 }

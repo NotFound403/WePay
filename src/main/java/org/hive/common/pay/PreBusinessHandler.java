@@ -2,7 +2,7 @@ package org.hive.common.pay;
 
 /**
  * Created with IntelliJ IDEA.
- *
+ * <p>
  * 预处理业务
  *
  * @author Dax
@@ -12,4 +12,5 @@ package org.hive.common.pay;
 
 
 public interface PreBusinessHandler {
+    <T> T prehandler();
 }

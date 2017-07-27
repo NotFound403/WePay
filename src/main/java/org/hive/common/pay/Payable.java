@@ -1,7 +1,5 @@
 package org.hive.common.pay;
 
-import org.hive.weChat.entity.PayRequestParams;
-
 import java.util.Map;
 
 /**
@@ -17,9 +15,8 @@ public interface Payable {
     /**
      * 统一支付.
      *
-     * @param payRequestParams the pay request params
      * @return the t
      */
-    Map<String, Object> unifiedOrder(PayRequestParams payRequestParams);
+    Map<String, String> unifiedOrder();
 }
 

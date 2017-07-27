@@ -1,5 +1,7 @@
 package org.hive.weChat.entity;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.hive.common.pay.PayConfig;
 
 import java.io.IOException;
@@ -18,7 +20,8 @@ import java.util.Properties;
 
 
 public final class WeChatPayConfig implements PayConfig {
-    private static volatile WeChatPayConfig instance;
+    private static final Log log= LogFactory.getLog(WeChatPayConfig.class);
+      private static final String CONFIG="weChatConfig.properties";
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
     // 私钥  签名算法使用 必传
@@ -30,30 +33,20 @@ public final class WeChatPayConfig implements PayConfig {
     // 签名算法 默认MD5
     private String sign_type;
 
-    public static WeChatPayConfig getInstance() {
-        if (instance == null) {
-            synchronized (WeChatPayConfig.class) {
-                instance = newInstance();
-            }
-        }
-        return instance;
-    }
-
-    private static WeChatPayConfig newInstance() {
-
-        InputStream inputStream = ClassLoader.getSystemResourceAsStream("weChatConfig.properties");
-        Properties properties = new Properties();
-        WeChatPayConfig params = new WeChatPayConfig();
+    public WeChatPayConfig() {
+        log.info("开始加载配置文件 "+CONFIG);
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(CONFIG);
         try {
+            Properties properties = new Properties();
             properties.load(inputStream);
-            params.setAppid(properties.getProperty("appid"));
-            params.setMch_id(properties.getProperty("mch_id"));
-            params.setNotify_url(properties.getProperty("notify_url"));
-            params.setSign_type(properties.getProperty("sign_type"));
+            this.appid = properties.getProperty("appid");
+            this.mch_id = properties.getProperty("mch_id");
+            this.notify_url = properties.getProperty("notify_url");
+            this.sign_type = properties.getProperty("sign_type");
         } catch (IOException e) {
             e.printStackTrace();
+            log.debug("文件 "+CONFIG+" 不存在 或者路径 参数错误");
         }
-        return params;
     }
 
     @Override
