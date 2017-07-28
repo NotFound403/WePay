@@ -36,7 +36,7 @@ import java.util.*;
 
 public class StringUtil {
     private static final Log log = LogFactory.getLog(StringUtil.class);
-    private static final String hexDigits[] = {"0", "1", "2", "3", "4", "5",
+    private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5",
             "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] DES_KEY = {17, 36, -128, 41, 0, 59, -13, 6};
 
@@ -82,14 +82,14 @@ public class StringUtil {
      * @param data the data
      * @return the string
      */
-    public static String encryptBasedDes(String data) {
+    public static String encryptBasedAES(String data) {
         String encryptedData = null;
         try {
             SecureRandom sr = new SecureRandom();
             DESKeySpec deskey = new DESKeySpec(DES_KEY);
             SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
             SecretKey key = keyFactory.generateSecret(deskey);
-            Cipher cipher = Cipher.getInstance("DES");
+            Cipher cipher = Cipher.getInstance("AES");
             cipher.init(1, key, sr);
             byte[] bytes = data.getBytes();
             byte[] b = cipher.doFinal(bytes);
@@ -107,14 +107,14 @@ public class StringUtil {
      * @param cryptData the crypt data
      * @return the string
      */
-    public static String decryptBasedDes(String cryptData) {
+    public static String decryptBasedAES(String cryptData) {
         String decryptedData = null;
         try {
             SecureRandom sr = new SecureRandom();
             DESKeySpec desKeySpec = new DESKeySpec(DES_KEY);
             SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
             SecretKey key = keyFactory.generateSecret(desKeySpec);
-            Cipher cipher = Cipher.getInstance("DES");
+            Cipher cipher = Cipher.getInstance("AES");
             cipher.init(2, key, sr);
             BASE64Decoder decoder = new BASE64Decoder();
             byte[] bytes = decoder.decodeBuffer(cryptData);
@@ -136,9 +136,11 @@ public class StringUtil {
      */
     public static <String, V> java.lang.String mapToXML(Map<String, V> map) throws RequiredParamException {
         if (map != null && !map.isEmpty()) {
-            StringBuffer xml = new StringBuffer("<xml>");
-            for (String k : map.keySet()) {
-                V v = map.get(k);
+            StringBuilder xml = new StringBuilder("<xml>");
+            Set<Map.Entry<String, V>> entrySet = map.entrySet();
+            for (Map.Entry<String, V> entry : entrySet) {
+                String k = entry.getKey();
+                V v = entry.getValue();
                 if (v != null) {
                     xml.append("<").append(k).append(">").append(map.get(k)).append("</").append(k).append(">");
                 }
@@ -209,8 +211,8 @@ public class StringUtil {
         return map;
     }
 
-    private static String byteArrayToHexString(byte b[]) {
-        StringBuffer resultSb = new StringBuffer();
+    private static String byteArrayToHexString(byte[] b) {
+        StringBuilder resultSb = new StringBuilder();
         for (byte a : b) {
             resultSb.append(byteToHexString(a));
         }
@@ -235,13 +237,12 @@ public class StringUtil {
      * @return the string
      */
     private static String MD5Encrypt(String origin, String charset) {
-        if (charset == null || "".equals(charset)) {
-            charset = "UTF-8";
-        }
+
+        String encode = charset == null || "".equals(charset) ? "UTF-8" : charset;
         try {
-            byte bytes[] = origin.getBytes(charset);
+            byte[] bytes = origin.getBytes(encode);
             MessageDigest md = MessageDigest.getInstance("MD5");
-            byte b[] = md.digest(bytes);
+            byte[] b = md.digest(bytes);
             return byteArrayToHexString(b).toUpperCase();
         } catch (UnsupportedEncodingException | NoSuchAlgorithmException e) {
             log.debug("MD5加密异常", e);
