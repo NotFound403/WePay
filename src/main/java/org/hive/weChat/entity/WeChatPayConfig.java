@@ -41,6 +41,7 @@ public final class WeChatPayConfig implements PayConfig {
             properties.load(inputStream);
             this.appid = properties.getProperty("appid");
             this.mch_id = properties.getProperty("mch_id");
+            this.secretKey=properties.getProperty("secretKey");
             this.notify_url = properties.getProperty("notify_url");
             this.sign_type = properties.getProperty("sign_type");
         } catch (IOException e) {

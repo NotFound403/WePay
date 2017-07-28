@@ -27,6 +27,9 @@ import java.io.IOException;
 public class HttpKit {
     private static final Log log = LogFactory.getLog(HttpKit.class);
 
+    private HttpKit() {
+    }
+
     /**
      * Http post string.
      *

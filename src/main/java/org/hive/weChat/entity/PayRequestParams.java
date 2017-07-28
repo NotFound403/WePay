@@ -1,5 +1,7 @@
 package org.hive.weChat.entity;
 
+import org.hive.common.pay.PayConfig;
+
 /**
  * Created with IntelliJ IDEA.
  * <p>
@@ -35,7 +37,7 @@ public class PayRequestParams {
     // 货币类型 人民币为CNY
     private String fee_type;
     // 总金额 订单总金额，单位为分  重要
-    private int total_fee;
+    private String total_fee;
     // 用户端实际IP  必传
     private String spbill_create_ip;
     // 交易类型  必传
@@ -54,6 +56,19 @@ public class PayRequestParams {
     private String limit_pay;
     // 场景信息  JSON 格式
     private String scene_info;
+
+
+    private PayRequestParams(PayConfig payConfig) {
+        this.appid = payConfig.getAppid();
+        this.mch_id = payConfig.getMch_id();
+        this.secretKey = payConfig.getSecretKey();
+        this.notify_url = payConfig.getNotify_url();
+        this.sign_type = payConfig.getSign_type();
+    }
+
+    public static PayRequestParams getInstance(PayConfig payConfig) {
+        return new PayRequestParams(payConfig);
+    }
 
     public String getAppid() {
         return appid;
@@ -143,11 +158,11 @@ public class PayRequestParams {
         this.fee_type = fee_type;
     }
 
-    public int getTotal_fee() {
+    public String getTotal_fee() {
         return total_fee;
     }
 
-    public void setTotal_fee(int total_fee) {
+    public void setTotal_fee(String total_fee) {
         this.total_fee = total_fee;
     }
 

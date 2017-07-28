@@ -1,4 +1,4 @@
-package org.hive.common.service;
+package org.hive.weChat.service;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
@@ -10,7 +10,6 @@ import org.hive.common.util.BeanUtil;
 import org.hive.common.util.HttpKit;
 import org.hive.common.util.StringUtil;
 import org.hive.weChat.entity.PayRequestParams;
-import org.hive.weChat.entity.WeChatPayConfig;
 import org.hive.weChat.enumeration.WeChatPayTypeEnum;
 
 import java.io.UnsupportedEncodingException;
@@ -25,8 +24,8 @@ import java.util.Map;
  */
 
 
-public class PayHandler implements Payable {
-    private static final Log log = LogFactory.getLog(PayHandler.class);
+public class WeChatPayHandler implements Payable {
+    private static final Log log = LogFactory.getLog(WeChatPayHandler.class);
     private WeChatPayTypeEnum weChatPayTypeEnum;
     private PayRequestParams payRequestParams;
 
@@ -36,26 +35,23 @@ public class PayHandler implements Payable {
      * @param weChatPayTypeEnum the we chat pay type enum
      * @param payRequestParams  the pay request params
      */
-    public PayHandler(WeChatPayTypeEnum weChatPayTypeEnum, PayRequestParams payRequestParams) {
+    public WeChatPayHandler(WeChatPayTypeEnum weChatPayTypeEnum, PayRequestParams payRequestParams) {
         this.weChatPayTypeEnum = weChatPayTypeEnum;
         this.payRequestParams = payRequestParams;
     }
 
     @Override
     public Map<String, String> unifiedOrder() {
-        WeChatPayConfig weChatPayConfig = new WeChatPayConfig();
         payRequestParams.setNonce_str(StringUtil.onceStrGenerator());
-        payRequestParams.setAppid(weChatPayConfig.getAppid());
-        payRequestParams.setMch_id(weChatPayConfig.getMch_id());
-        payRequestParams.setSign_type("MD5");
-        payRequestParams.setNotify_url(weChatPayConfig.getNotify_url());
-        Map<String, Object> sortedMap = BeanUtil.beanToSortedTreeMapWithoutNull(payRequestParams);
+        String secretKey=payRequestParams.getSecretKey();
+        payRequestParams.setSecretKey(null);
+        Map<String, Object> sortedMap = BeanUtil.paramsSorter(payRequestParams);
         try {
-            String sign = StringUtil.signatureGenerator(sortedMap, "UTF-8", weChatPayConfig.getSecretKey());
+            String sign = StringUtil.signatureGenerator(sortedMap, "UTF-8", secretKey);
             log.info("生成签名：" + sign);
             sortedMap.put("sign", sign);
-            String XML = StringUtil.mapToXML(sortedMap);
-            String xmlResult = HttpKit.httpPost(weChatPayTypeEnum.getApi(), XML);
+            String xml = StringUtil.mapToXML(sortedMap);
+            String xmlResult = HttpKit.httpPost(weChatPayTypeEnum.getApi(), xml);
             if (StringUtils.isNotEmpty(xmlResult)) {
                 String responseXml = new String(xmlResult.getBytes("ISO-8859-1"), "UTF-8");
                 return StringUtil.xmlToMap(responseXml);

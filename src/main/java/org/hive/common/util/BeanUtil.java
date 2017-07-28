@@ -24,6 +24,9 @@ import java.util.TreeMap;
 public class BeanUtil {
     private static final Log log = LogFactory.getLog(BeanUtil.class);
 
+    private BeanUtil() {
+    }
+
     /**
      * Bean to sorted tree map without null map.
      * <p>
@@ -33,10 +36,8 @@ public class BeanUtil {
      * @param t   the t
      * @return the map
      */
-    public static <T> Map<String, Object> beanToSortedTreeMapWithoutNull(T t) {
-        if (t == null) {
-            return null;
-        }
+    public static <T> Map<String, Object> paramsSorter(T t) {
+
         Map<String, Object> map = new TreeMap<>(String::compareTo);
         BeanInfo beanInfo = null;
         try {
