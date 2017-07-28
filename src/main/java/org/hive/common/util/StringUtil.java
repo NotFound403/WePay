@@ -12,17 +12,12 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
-import sun.misc.BASE64Decoder;
-import sun.misc.BASE64Encoder;
 
 import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
-import javax.crypto.SecretKeyFactory;
-import javax.crypto.spec.DESKeySpec;
+import javax.crypto.spec.SecretKeySpec;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import java.security.SecureRandom;
 import java.util.*;
 
 /**
@@ -38,7 +33,10 @@ public class StringUtil {
     private static final Log log = LogFactory.getLog(StringUtil.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5",
             "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
-    private static final byte[] DES_KEY = {17, 36, -128, 41, 0, 59, -13, 6};
+    private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
+
+    private StringUtil() {
+    }
 
     /**
      * Signature generator.
@@ -60,7 +58,7 @@ public class StringUtil {
             }
             stringBuilder.append("key").append("=").append(key);
             String origin = stringBuilder.toString();
-            return MD5Encrypt(origin, charset);
+            return md5Encrypt(origin, charset);
         }
         throw new SignatureException("sortedMap is invalid");
     }
@@ -77,52 +75,57 @@ public class StringUtil {
     }
 
     /**
-     * Encrypt based des string.
+     * 加密
      *
-     * @param data the data
-     * @return the string
+     * @param sSrc 原字符
+     * @return string
      */
-    public static String encryptBasedDES(String data) {
-        String encryptedData = null;
+    public static String encrypt128(String sSrc) {
+
+        return doEncrypt(sSrc);
+    }
+
+    private static String doEncrypt(String sSrc) {
+        String cipherText = null;
         try {
-            SecureRandom sr = new SecureRandom();
-            DESKeySpec deskey = new DESKeySpec(DES_KEY);
-            SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
-            SecretKey key = keyFactory.generateSecret(deskey);
-            Cipher cipher = Cipher.getInstance("DES");
-            cipher.init(1, key, sr);
-            byte[] bytes = data.getBytes();
-            byte[] b = cipher.doFinal(bytes);
-            BASE64Encoder encoder = new BASE64Encoder();
-            encryptedData = encoder.encode(b);
+
+            SecretKeySpec skeySpec = new SecretKeySpec(AES_KEY, "AES");
+            Cipher cipher = Cipher.getInstance("AES");//创建密码器
+            cipher.init(1, skeySpec);// 初始化
+            byte[] encrypted = cipher.doFinal(sSrc.getBytes("utf-8"));//加密
+
+            //字节转换成十六进制的字符串
+            cipherText = byteArrayToHexString(encrypted).toUpperCase();
         } catch (Exception e) {
-            log.debug("加密错误，错误信息：", e);
+            log.debug("AES加密错误：", e);
         }
-        return encryptedData;
+        return cipherText;
     }
 
     /**
-     * Decrypt based des string.
+     * 解密
      *
-     * @param cryptData the crypt data
-     * @return the string
+     * @param sSrc 原字符
+     * @return String
      */
-    public static String decryptBasedDES(String cryptData) {
-        String decryptedData = null;
+    public static String decrypt128(String sSrc) {
+        return doDecrypt(sSrc);
+    }
+
+    private static String doDecrypt(String sSrc) {
         try {
-            SecureRandom sr = new SecureRandom();
-            DESKeySpec desKeySpec = new DESKeySpec(DES_KEY);
-            SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
-            SecretKey key = keyFactory.generateSecret(desKeySpec);
-            Cipher cipher = Cipher.getInstance("DES");
-            cipher.init(2, key, sr);
-            BASE64Decoder decoder = new BASE64Decoder();
-            byte[] bytes = decoder.decodeBuffer(cryptData);
-            decryptedData = new String(cipher.doFinal(bytes));
-        } catch (Exception e) {
-            log.debug("解密错误，错误信息：", e);
+
+            SecretKeySpec skeySpec = new SecretKeySpec(AES_KEY, "AES");
+            Cipher cipher = Cipher.getInstance("AES");
+            cipher.init(2, skeySpec);
+            byte[] encrypted1 = hex2byte(sSrc);
+
+            byte[] original = cipher.doFinal(encrypted1);
+            return new String(original, "utf-8");
+        } catch (Exception ex) {
+            log.debug("解密错误：", ex);
         }
-        return decryptedData;
+        return null;
     }
 
     /**
@@ -195,7 +198,13 @@ public class StringUtil {
         return null;
     }
 
-    public static Map<String, String> XMLToMap(String xml) {
+    /**
+     * Xml to map map.
+     *
+     * @param xml the xml
+     * @return the map
+     */
+    public static Map<String, String> xmlToMap(String xml) {
         Map<String, String> map = new HashMap<>();
         try {
             Document document = DocumentHelper.parseText(xml);
@@ -229,6 +238,18 @@ public class StringUtil {
         return hexDigits[d1] + hexDigits[d2];
     }
 
+    private static byte[] hex2byte(String hex) {
+        byte[] b = null;
+        if (hex != null && hex.length() % 2 != 1) {
+            int l = hex.length();
+            b = new byte[l / 2];
+            for (int i = 0; i != l / 2; i++) {
+                b[i] = (byte) Integer.parseInt(hex.substring(i * 2, i * 2 + 2), 16);
+            }
+        }
+        return b;
+    }
+
     /**
      * Md5 encode.
      *
@@ -236,7 +257,7 @@ public class StringUtil {
      * @param charset the charset
      * @return the string
      */
-    private static String MD5Encrypt(String origin, String charset) {
+    private static String md5Encrypt(String origin, String charset) {
 
         String encode = charset == null || "".equals(charset) ? "UTF-8" : charset;
         try {

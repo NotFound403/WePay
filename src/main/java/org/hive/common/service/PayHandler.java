@@ -58,7 +58,7 @@ public class PayHandler implements Payable {
             String xmlResult = HttpKit.httpPost(weChatPayTypeEnum.getApi(), XML);
             if (StringUtils.isNotEmpty(xmlResult)) {
                 String responseXml = new String(xmlResult.getBytes("ISO-8859-1"), "UTF-8");
-                return StringUtil.XMLToMap(responseXml);
+                return StringUtil.xmlToMap(responseXml);
             }
         } catch (SignatureException | UnsupportedEncodingException | RequiredParamException e) {
             log.debug("统一下单调用异常", e);
