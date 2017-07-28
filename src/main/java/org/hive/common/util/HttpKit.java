@@ -4,12 +4,13 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
-import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
+import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
+import java.io.Closeable;
 import java.io.IOException;
 
 /**
@@ -24,7 +25,8 @@ import java.io.IOException;
 
 
 public class HttpKit {
-   private static final Log log= LogFactory.getLog(HttpKit.class);
+    private static final Log log = LogFactory.getLog(HttpKit.class);
+
     /**
      * Http post string.
      *
@@ -34,7 +36,7 @@ public class HttpKit {
      */
     public static String httpPost(String url, String param) {
         //post请求返回结果
-        HttpClient httpClient = HttpClients.createDefault();
+        CloseableHttpClient httpClient = HttpClients.createDefault();
         HttpPost method = new HttpPost(url);
         if (null != param) {
             //解决中文乱码问题
@@ -53,8 +55,18 @@ public class HttpKit {
                 return EntityUtils.toString(result.getEntity());
             }
         } catch (IOException e) {
-            log.debug("网络请求IO异常",e);
+            log.debug("网络请求IO异常", e);
+        } finally {
+            close(httpClient);
         }
         return null;
+    }
+
+    private static void close(Closeable closeable) {
+        try {
+            closeable.close();
+        } catch (IOException e) {
+            log.debug("关闭IO异常", e);
+        }
     }
 }

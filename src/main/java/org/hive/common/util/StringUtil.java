@@ -82,14 +82,14 @@ public class StringUtil {
      * @param data the data
      * @return the string
      */
-    public static String encryptBasedAES(String data) {
+    public static String encryptBasedDES(String data) {
         String encryptedData = null;
         try {
             SecureRandom sr = new SecureRandom();
             DESKeySpec deskey = new DESKeySpec(DES_KEY);
             SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
             SecretKey key = keyFactory.generateSecret(deskey);
-            Cipher cipher = Cipher.getInstance("AES");
+            Cipher cipher = Cipher.getInstance("DES");
             cipher.init(1, key, sr);
             byte[] bytes = data.getBytes();
             byte[] b = cipher.doFinal(bytes);
@@ -107,14 +107,14 @@ public class StringUtil {
      * @param cryptData the crypt data
      * @return the string
      */
-    public static String decryptBasedAES(String cryptData) {
+    public static String decryptBasedDES(String cryptData) {
         String decryptedData = null;
         try {
             SecureRandom sr = new SecureRandom();
             DESKeySpec desKeySpec = new DESKeySpec(DES_KEY);
             SecretKeyFactory keyFactory = SecretKeyFactory.getInstance("DES");
             SecretKey key = keyFactory.generateSecret(desKeySpec);
-            Cipher cipher = Cipher.getInstance("AES");
+            Cipher cipher = Cipher.getInstance("DES");
             cipher.init(2, key, sr);
             BASE64Decoder decoder = new BASE64Decoder();
             byte[] bytes = decoder.decodeBuffer(cryptData);
