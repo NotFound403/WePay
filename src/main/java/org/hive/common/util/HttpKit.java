@@ -1,5 +1,7 @@
 package org.hive.common.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
@@ -22,7 +24,7 @@ import java.io.IOException;
 
 
 public class HttpKit {
-
+   private static final Log log= LogFactory.getLog(HttpKit.class);
     /**
      * Http post string.
      *
@@ -51,7 +53,7 @@ public class HttpKit {
                 return EntityUtils.toString(result.getEntity());
             }
         } catch (IOException e) {
-            e.getStackTrace();
+            log.debug("网络请求IO异常",e);
         }
         return null;
     }

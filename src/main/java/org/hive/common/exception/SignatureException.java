@@ -11,14 +11,8 @@ package org.hive.common.exception;
  */
 
 
-public class SignatureException extends Throwable {
+public class SignatureException extends Exception{
     private static final long serialVersionUID = 4661983063155751455L;
-
-    /**
-     * Instantiates a new Signature exception.
-     */
-    public SignatureException() {
-    }
 
     /**
      * Instantiates a new Signature exception.

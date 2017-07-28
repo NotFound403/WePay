@@ -26,7 +26,7 @@ import java.util.Map;
 
 
 public class PayHandler implements Payable {
-    private static final Log log= LogFactory.getLog(PayHandler.class);
+    private static final Log log = LogFactory.getLog(PayHandler.class);
     private WeChatPayTypeEnum weChatPayTypeEnum;
     private PayRequestParams payRequestParams;
 
@@ -52,7 +52,7 @@ public class PayHandler implements Payable {
         Map<String, Object> sortedMap = BeanUtil.beanToSortedTreeMapWithoutNull(payRequestParams);
         try {
             String sign = StringUtil.signatureGenerator(sortedMap, "UTF-8", weChatPayConfig.getSecretKey());
-            log.info("生成签名："+sign);
+            log.info("生成签名：" + sign);
             sortedMap.put("sign", sign);
             String XML = StringUtil.mapToXML(sortedMap);
             String xmlResult = HttpKit.httpPost(weChatPayTypeEnum.getApi(), XML);
@@ -61,7 +61,7 @@ public class PayHandler implements Payable {
                 return StringUtil.XMLToMap(responseXml);
             }
         } catch (SignatureException | UnsupportedEncodingException | RequiredParamException e) {
-            e.printStackTrace();
+            log.debug("统一下单调用异常", e);
         }
         return null;
     }

@@ -4,6 +4,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.RandomStringUtils;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
@@ -33,6 +35,7 @@ import java.util.*;
 
 
 public class StringUtil {
+    private static final Log log = LogFactory.getLog(StringUtil.class);
     private static final String hexDigits[] = {"0", "1", "2", "3", "4", "5",
             "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] DES_KEY = {17, 36, -128, 41, 0, 59, -13, 6};
@@ -50,13 +53,13 @@ public class StringUtil {
      */
     public static String signatureGenerator(Map<String, Object> sortedMap, String charset, String key) throws SignatureException {
         if (sortedMap != null && !sortedMap.isEmpty()) {
-            StringBuffer stringBuffer = new StringBuffer();
+            StringBuilder stringBuilder = new StringBuilder();
             Set<String> set = sortedMap.keySet();
             for (String s : set) {
-                stringBuffer.append(s).append("=").append(sortedMap.get(s)).append("&");
+                stringBuilder.append(s).append("=").append(sortedMap.get(s)).append("&");
             }
-            stringBuffer.append("key").append("=").append(key);
-            String origin = stringBuffer.toString();
+            stringBuilder.append("key").append("=").append(key);
+            String origin = stringBuilder.toString();
             return MD5Encrypt(origin, charset);
         }
         throw new SignatureException("sortedMap is invalid");
@@ -80,7 +83,7 @@ public class StringUtil {
      * @return the string
      */
     public static String encryptBasedDes(String data) {
-        String encryptedData;
+        String encryptedData = null;
         try {
             SecureRandom sr = new SecureRandom();
             DESKeySpec deskey = new DESKeySpec(DES_KEY);
@@ -88,9 +91,12 @@ public class StringUtil {
             SecretKey key = keyFactory.generateSecret(deskey);
             Cipher cipher = Cipher.getInstance("DES");
             cipher.init(1, key, sr);
-            encryptedData = new BASE64Encoder().encode(cipher.doFinal(data.getBytes()));
+            byte[] bytes = data.getBytes();
+            byte[] b = cipher.doFinal(bytes);
+            BASE64Encoder encoder = new BASE64Encoder();
+            encryptedData = encoder.encode(b);
         } catch (Exception e) {
-            throw new RuntimeException("加密错误，错误信息：", e);
+            log.debug("加密错误，错误信息：", e);
         }
         return encryptedData;
     }
@@ -102,7 +108,7 @@ public class StringUtil {
      * @return the string
      */
     public static String decryptBasedDes(String cryptData) {
-        String decryptedData;
+        String decryptedData = null;
         try {
             SecureRandom sr = new SecureRandom();
             DESKeySpec desKeySpec = new DESKeySpec(DES_KEY);
@@ -110,9 +116,11 @@ public class StringUtil {
             SecretKey key = keyFactory.generateSecret(desKeySpec);
             Cipher cipher = Cipher.getInstance("DES");
             cipher.init(2, key, sr);
-            decryptedData = new String(cipher.doFinal(new BASE64Decoder().decodeBuffer(cryptData)));
+            BASE64Decoder decoder = new BASE64Decoder();
+            byte[] bytes = decoder.decodeBuffer(cryptData);
+            decryptedData = new String(cipher.doFinal(bytes));
         } catch (Exception e) {
-            throw new RuntimeException("解密错误，错误信息：", e);
+            log.debug("解密错误，错误信息：", e);
         }
         return decryptedData;
     }
@@ -159,14 +167,14 @@ public class StringUtil {
         try {
             return mapper.writeValueAsString(t);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            log.debug("json转换错误", e);
         }
         return null;
     }
 
     /**
      * Map to json string.
-     *
+     * <p>
      * Map 转json字符串
      *
      * @param <T> the type parameter
@@ -180,25 +188,25 @@ public class StringUtil {
         try {
             return mapper.writeValueAsString(t);
         } catch (JsonProcessingException e) {
-            e.printStackTrace();
+            log.debug("json转换错误", e);
         }
         return null;
     }
 
-     public static Map<String, String> XMLToMap(String xml) {
-         Map<String, String> map=new HashMap<>();
-         try {
-             Document document = DocumentHelper.parseText(xml);
-             Element rootElement = document.getRootElement();
-             Iterator iterator= rootElement.elementIterator();
-             while (iterator.hasNext()){
-                 Element childElement= (Element) iterator.next();
-                 map.put(childElement.getName(),childElement.getText());
-             }
-         } catch (DocumentException e) {
-             e.printStackTrace();
-         }
-         return map;
+    public static Map<String, String> XMLToMap(String xml) {
+        Map<String, String> map = new HashMap<>();
+        try {
+            Document document = DocumentHelper.parseText(xml);
+            Element rootElement = document.getRootElement();
+            Iterator iterator = rootElement.elementIterator();
+            while (iterator.hasNext()) {
+                Element childElement = (Element) iterator.next();
+                map.put(childElement.getName(), childElement.getText());
+            }
+        } catch (DocumentException e) {
+            log.debug("XML转Map异常", e);
+        }
+        return map;
     }
 
     private static String byteArrayToHexString(byte b[]) {
@@ -236,7 +244,7 @@ public class StringUtil {
             byte b[] = md.digest(bytes);
             return byteArrayToHexString(b).toUpperCase();
         } catch (UnsupportedEncodingException | NoSuchAlgorithmException e) {
-            e.printStackTrace();
+            log.debug("MD5加密异常", e);
         }
         return null;
     }

@@ -1,5 +1,8 @@
 package org.hive.common.util;
 
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
@@ -19,6 +22,7 @@ import java.util.TreeMap;
 
 
 public class BeanUtil {
+    private static final Log log = LogFactory.getLog(BeanUtil.class);
     /**
      * Bean to sorted tree map without null map.
      * <p>
@@ -51,7 +55,7 @@ public class BeanUtil {
                     try {
                         value = getter.invoke(t);
                     } catch (IllegalAccessException | InvocationTargetException e) {
-                        e.printStackTrace();
+                    log.debug("实体bean转换Map异常",e);
                     }
 //                    排除空值
                     if (value != null) {

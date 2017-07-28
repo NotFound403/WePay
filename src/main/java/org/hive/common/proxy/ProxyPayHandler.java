@@ -50,8 +50,7 @@ public class ProxyPayHandler implements InvocationHandler {
         String returnCode = map != null ? map.get("return_code") : null;
         if ("SUCCESS".equals(returnCode)) {
             log.info("预支付成功 开始处理回调前的业务……");
-          boolean f=  preBusinessHandler.prehandler();
-            System.out.println(f);
+          preBusinessHandler.prehandler();
             return payResult;
         }
         String returnMsg = map != null ? map.get("return_msg") : null;

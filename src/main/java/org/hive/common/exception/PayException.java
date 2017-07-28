@@ -11,14 +11,8 @@ package org.hive.common.exception;
  */
 
 
-public class PayException extends Throwable {
+public class PayException extends Exception {
     private static final long serialVersionUID = -5439722412045261617L;
-
-    /**
-     * Instantiates a new Pay exception.
-     */
-    public PayException() {
-    }
 
     /**
      * Instantiates a new Pay exception.

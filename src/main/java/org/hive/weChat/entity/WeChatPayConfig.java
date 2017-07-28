@@ -44,8 +44,7 @@ public final class WeChatPayConfig implements PayConfig {
             this.notify_url = properties.getProperty("notify_url");
             this.sign_type = properties.getProperty("sign_type");
         } catch (IOException e) {
-            e.printStackTrace();
-            log.debug("文件 "+CONFIG+" 不存在 或者路径 参数错误");
+            log.debug("文件 "+CONFIG+" 不存在 或者路径 参数错误",e);
         }
     }
 

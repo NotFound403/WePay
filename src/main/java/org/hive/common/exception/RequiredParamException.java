@@ -9,14 +9,9 @@ package org.hive.common.exception;
  */
 
 
-public class RequiredParamException extends Throwable {
+public class RequiredParamException extends Exception {
     private static final long serialVersionUID = -8363449024687868772L;
 
-    /**
-     * Instantiates a new Required param exception.
-     */
-    public RequiredParamException() {
-    }
 
     /**
      * Instantiates a new Required param exception.
