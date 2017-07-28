@@ -17,7 +17,6 @@ buildNumber.properties
 # IntelliJ project files
 .idea
 *.iml
-/src/test/
 out
 gen### Java template
 # Compiled class file

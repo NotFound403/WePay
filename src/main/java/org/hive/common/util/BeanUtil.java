@@ -23,6 +23,7 @@ import java.util.TreeMap;
 
 public class BeanUtil {
     private static final Log log = LogFactory.getLog(BeanUtil.class);
+
     /**
      * Bean to sorted tree map without null map.
      * <p>
@@ -41,9 +42,9 @@ public class BeanUtil {
         try {
             beanInfo = Introspector.getBeanInfo(t.getClass());
         } catch (IntrospectionException e) {
-            e.printStackTrace();
+            log.debug("获取实体bean信息异常 ", e);
         }
-        if (beanInfo != null) { 
+        if (beanInfo != null) {
             PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
             for (PropertyDescriptor property : propertyDescriptors) {
                 String key = property.getName();
@@ -55,7 +56,7 @@ public class BeanUtil {
                     try {
                         value = getter.invoke(t);
                     } catch (IllegalAccessException | InvocationTargetException e) {
-                    log.debug("实体bean转换Map异常",e);
+                        log.debug("实体bean转换Map异常", e);
                     }
 //                    排除空值
                     if (value != null) {
