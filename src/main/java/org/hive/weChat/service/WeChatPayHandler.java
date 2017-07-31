@@ -6,9 +6,8 @@ import org.apache.commons.logging.LogFactory;
 import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
 import org.hive.common.pay.Payable;
-import org.hive.common.util.BeanUtil;
 import org.hive.common.util.HttpKit;
-import org.hive.common.util.StringUtil;
+import org.hive.common.util.ObjectUtils;
 import org.hive.weChat.entity.PayRequestParams;
 import org.hive.weChat.enumeration.WeChatPayTypeEnum;
 
@@ -42,19 +41,19 @@ public class WeChatPayHandler implements Payable {
 
     @Override
     public Map<String, String> unifiedOrder() {
-        payRequestParams.setNonce_str(StringUtil.onceStrGenerator());
-        String secretKey=payRequestParams.getSecretKey();
+        payRequestParams.setNonce_str(ObjectUtils.onceStrGenerator());
         payRequestParams.setSecretKey(null);
-        Map<String, Object> sortedMap = BeanUtil.paramsSorter(payRequestParams);
+        String secretKey=payRequestParams.getSecretKey();
+        Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
         try {
-            String sign = StringUtil.signatureGenerator(sortedMap, "UTF-8", secretKey);
+            String sign = ObjectUtils.signatureGenerator(sortedMap, "UTF-8", secretKey);
             log.info("生成签名：" + sign);
             sortedMap.put("sign", sign);
-            String xml = StringUtil.mapToXML(sortedMap);
+            String xml = ObjectUtils.mapToXML(sortedMap);
             String xmlResult = HttpKit.httpPost(weChatPayTypeEnum.getApi(), xml);
             if (StringUtils.isNotEmpty(xmlResult)) {
                 String responseXml = new String(xmlResult.getBytes("ISO-8859-1"), "UTF-8");
-                return StringUtil.xmlToMap(responseXml);
+                return ObjectUtils.xmlToMap(responseXml);
             }
         } catch (SignatureException | UnsupportedEncodingException | RequiredParamException e) {
             log.debug("统一下单调用异常", e);

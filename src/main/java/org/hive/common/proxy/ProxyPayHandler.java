@@ -4,7 +4,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hive.common.exception.PayException;
 import org.hive.common.pay.Payable;
-import org.hive.common.pay.PreBusinessHandler;
+import org.hive.common.pay.PreBusinessService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
@@ -24,11 +24,11 @@ import java.util.Map;
 public class ProxyPayHandler implements InvocationHandler {
     private static final Log log = LogFactory.getLog(ProxyPayHandler.class);
     private Payable target;
-    private PreBusinessHandler preBusinessHandler;
+    private PreBusinessService preBusinessService;
 
-    public ProxyPayHandler(Payable target, PreBusinessHandler preBusinessHandler) {
+    public ProxyPayHandler(Payable target, PreBusinessService preBusinessService) {
         this.target = target;
-        this.preBusinessHandler = preBusinessHandler;
+        this.preBusinessService = preBusinessService;
     }
 
     public Payable initProxy() {
@@ -47,13 +47,17 @@ public class ProxyPayHandler implements InvocationHandler {
             log.debug("通过反射调用支付方法失败", e);
         }
         Map<String, String> map = (Map<String, String>) payResult;
-        String returnCode = map != null ? map.get("return_code") : null;
-        if ("SUCCESS".equals(returnCode)) {
+        String resultCode = map != null ? map.get("result_code") : null;
+        if ("SUCCESS".equals(resultCode)) {
             log.info("预支付成功 开始处理回调前的业务……");
-          preBusinessHandler.prehandler();
+            preBusinessService.preHandler();
             return payResult;
         }
-        String returnMsg = map != null ? map.get("return_msg") : null;
+        String returnMsg = "";
+        if (map != null) {
+            returnMsg = map.get("return_msg");
+            log.debug("错误代码描述 ：" + map.get("err_code_des"));
+        }
         throw new PayException(returnMsg);
     }
 }

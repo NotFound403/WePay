@@ -15,7 +15,13 @@ import org.hive.common.exception.SignatureException;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
+import java.beans.BeanInfo;
+import java.beans.IntrospectionException;
+import java.beans.Introspector;
+import java.beans.PropertyDescriptor;
 import java.io.UnsupportedEncodingException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.*;
@@ -29,13 +35,56 @@ import java.util.*;
  */
 
 
-public class StringUtil {
-    private static final Log log = LogFactory.getLog(StringUtil.class);
+public class ObjectUtils {
+    private static final Log log = LogFactory.getLog(ObjectUtils.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5",
             "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
 
-    private StringUtil() {
+    private ObjectUtils() {
+    }
+
+
+    /**
+     * Bean to sorted tree map without null map.
+     * <p>
+     * 实体 Bean 转为按照ACCSII排序后的TreeMap 并排除空值
+     *
+     * @param <T> the type parameter
+     * @param t   the t
+     * @return the map
+     */
+    public static <T> Map<String, Object> paramsSorter(T t) {
+
+        Map<String, Object> map = new TreeMap<>(String::compareTo);
+        BeanInfo beanInfo = null;
+        try {
+            beanInfo = Introspector.getBeanInfo(t.getClass());
+        } catch (IntrospectionException e) {
+            log.debug("获取实体bean信息异常 ", e);
+        }
+        if (beanInfo != null) {
+            PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
+            for (PropertyDescriptor property : propertyDescriptors) {
+                String key = property.getName();
+                // 过滤class属性
+                if (!"class".equals(key)) {
+                    // 得到property对应的getter方法
+                    Method getter = property.getReadMethod();
+                    Object value = null;
+                    try {
+                        value = getter.invoke(t);
+                    } catch (IllegalAccessException | InvocationTargetException e) {
+                        log.debug("实体bean转换Map异常", e);
+                    }
+//                    排除空值
+                    if (value != null) {
+                        map.put(key, value);
+                    }
+                }
+            }
+        }
+        return map;
     }
 
     /**
@@ -78,7 +127,7 @@ public class StringUtil {
      * 加密
      *
      * @param sSrc 原字符
-     * @return string
+     * @return string string
      */
     public static String encrypt128(String sSrc) {
 
@@ -106,7 +155,7 @@ public class StringUtil {
      * 解密
      *
      * @param sSrc 原字符
-     * @return String
+     * @return String string
      */
     public static String decrypt128(String sSrc) {
         return doDecrypt(sSrc);
@@ -131,20 +180,18 @@ public class StringUtil {
     /**
      * Map to xml string.
      *
-     * @param <String> the type parameter
-     * @param <V>      the type parameter
-     * @param map      the map
+     * @param map the map
      * @return the string
      * @throws RequiredParamException the required param exception
      */
-    public static <String, V> java.lang.String mapToXML(Map<String, V> map) throws RequiredParamException {
+    public static String mapToXML(Map<String, Object> map) throws RequiredParamException {
         if (map != null && !map.isEmpty()) {
             StringBuilder xml = new StringBuilder("<xml>");
-            Set<Map.Entry<String, V>> entrySet = map.entrySet();
-            for (Map.Entry<String, V> entry : entrySet) {
+            Set<Map.Entry<String, Object>> entrySet = map.entrySet();
+            for (Map.Entry<String, Object> entry : entrySet) {
                 String k = entry.getKey();
-                V v = entry.getValue();
-                if (v != null) {
+                Object object = entry.getValue();
+                if (object != null) {
                     xml.append("<").append(k).append(">").append(map.get(k)).append("</").append(k).append(">");
                 }
             }

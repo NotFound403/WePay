@@ -11,6 +11,6 @@ package org.hive.common.pay;
  */
 
 
-public interface PreBusinessHandler {
-    <T> T prehandler();
+public interface PreBusinessService {
+    void preHandler();
 }
