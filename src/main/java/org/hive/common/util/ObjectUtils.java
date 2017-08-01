@@ -203,34 +203,13 @@ public class ObjectUtils {
     /**
      * Map to json string.
      * <p>
-     * Collection 转json字符串
+     * bean 转json字符串
      *
      * @param <T> the type parameter
      * @param t   the t
      * @return the string
      */
-    public static <T extends Collection> String collectionToJson(T t) {
-        ObjectMapper mapper = new ObjectMapper();
-        // 过滤空值
-        mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-        try {
-            return mapper.writeValueAsString(t);
-        } catch (JsonProcessingException e) {
-            log.debug("json转换错误", e);
-        }
-        return null;
-    }
-
-    /**
-     * Map to json string.
-     * <p>
-     * Map 转json字符串
-     *
-     * @param <T> the type parameter
-     * @param t   the t
-     * @return the string
-     */
-    public static <T extends Map> String mapToJson(T t) {
+    public static <T> String beanToJson(T t) {
         ObjectMapper mapper = new ObjectMapper();
         // 过滤空值
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);

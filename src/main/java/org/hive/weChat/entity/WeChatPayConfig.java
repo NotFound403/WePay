@@ -20,8 +20,9 @@ import java.util.Properties;
 
 
 public final class WeChatPayConfig implements PayConfig {
-    private static final Log log= LogFactory.getLog(WeChatPayConfig.class);
-      private static final String CONFIG="weChatConfig.properties";
+    private static final Log log = LogFactory.getLog(WeChatPayConfig.class);
+    private static final String PROPERTY_PLACEHOLDER = "weChatConfig.properties";
+    private static final ThreadLocal<WeChatPayConfig> WE_CHAT_PAY_CONFIG_THREAD_LOCAL = new ThreadLocal<>();
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
     // 私钥  签名算法使用 必传
@@ -33,20 +34,31 @@ public final class WeChatPayConfig implements PayConfig {
     // 签名算法 默认MD5
     private String sign_type;
 
-    public WeChatPayConfig() {
-        log.info("开始加载配置文件 "+CONFIG);
-        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(CONFIG);
+    private WeChatPayConfig() {
+        log.info("开始加载配置文件 " + PROPERTY_PLACEHOLDER);
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(PROPERTY_PLACEHOLDER);
         try {
             Properties properties = new Properties();
             properties.load(inputStream);
             this.appid = properties.getProperty("appid");
             this.mch_id = properties.getProperty("mch_id");
-            this.secretKey=properties.getProperty("secretKey");
+            this.secretKey = properties.getProperty("secretKey");
             this.notify_url = properties.getProperty("notify_url");
             this.sign_type = properties.getProperty("sign_type");
         } catch (IOException e) {
-            log.debug("配置文件 "+CONFIG+" 不存在 或者路径 参数错误",e);
+            log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 不存在 或者路径 参数错误", e);
         }
+    }
+
+    public static PayConfig initBaseConfig() {
+        if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
+            synchronized (WeChatPayConfig.class) {
+                if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
+                    return new WeChatPayConfig();
+                }
+            }
+        }
+        return WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get();
     }
 
     @Override
@@ -54,17 +66,9 @@ public final class WeChatPayConfig implements PayConfig {
         return appid;
     }
 
-    public void setAppid(String appid) {
-        this.appid = appid;
-    }
-
     @Override
     public String getMch_id() {
         return mch_id;
-    }
-
-    public void setMch_id(String mch_id) {
-        this.mch_id = mch_id;
     }
 
     @Override
@@ -72,17 +76,9 @@ public final class WeChatPayConfig implements PayConfig {
         return secretKey;
     }
 
-    public void setSecretKey(String secretKey) {
-        this.secretKey = secretKey;
-    }
-
     @Override
     public String getNotify_url() {
         return notify_url;
-    }
-
-    public void setNotify_url(String notify_url) {
-        this.notify_url = notify_url;
     }
 
     @Override
@@ -90,7 +86,4 @@ public final class WeChatPayConfig implements PayConfig {
         return sign_type;
     }
 
-    public void setSign_type(String sign_type) {
-        this.sign_type = sign_type;
-    }
 }

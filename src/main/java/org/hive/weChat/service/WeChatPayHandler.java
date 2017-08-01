@@ -5,11 +5,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hive.common.exception.RequiredParamException;
 import org.hive.common.exception.SignatureException;
+import org.hive.common.pay.PayType;
 import org.hive.common.pay.Payable;
 import org.hive.common.util.HttpKit;
 import org.hive.common.util.ObjectUtils;
 import org.hive.weChat.entity.PayRequestParams;
-import org.hive.weChat.enumeration.WeChatPayTypeEnum;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Map;
@@ -25,7 +25,7 @@ import java.util.Map;
 
 public class WeChatPayHandler implements Payable {
     private static final Log log = LogFactory.getLog(WeChatPayHandler.class);
-    private WeChatPayTypeEnum weChatPayTypeEnum;
+    private PayType weChatPayTypeEnum;
     private PayRequestParams payRequestParams;
 
     /**
@@ -34,7 +34,7 @@ public class WeChatPayHandler implements Payable {
      * @param weChatPayTypeEnum the we chat pay type enum
      * @param payRequestParams  the pay request params
      */
-    public WeChatPayHandler(WeChatPayTypeEnum weChatPayTypeEnum, PayRequestParams payRequestParams) {
+    public WeChatPayHandler(PayType weChatPayTypeEnum, PayRequestParams payRequestParams) {
         this.weChatPayTypeEnum = weChatPayTypeEnum;
         this.payRequestParams = payRequestParams;
     }
@@ -43,7 +43,7 @@ public class WeChatPayHandler implements Payable {
     public Map<String, String> unifiedOrder() {
         payRequestParams.setNonce_str(ObjectUtils.onceStrGenerator());
         payRequestParams.setSecretKey(null);
-        String secretKey=payRequestParams.getSecretKey();
+        String secretKey = payRequestParams.getSecretKey();
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
         try {
             String sign = ObjectUtils.signatureGenerator(sortedMap, "UTF-8", secretKey);

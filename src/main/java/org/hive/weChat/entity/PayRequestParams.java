@@ -1,6 +1,7 @@
 package org.hive.weChat.entity;
 
 import org.hive.common.pay.PayConfig;
+import org.hive.common.util.ObjectUtils;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,7 +15,6 @@ import org.hive.common.pay.PayConfig;
 
 
 public class PayRequestParams {
-    private volatile static PayRequestParams payRequestParams;
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
     // 私钥  签名算法使用 必传
@@ -43,7 +43,7 @@ public class PayRequestParams {
     private String spbill_create_ip;
     // 交易类型  必传
     private String trade_type;
-    // 终端设备号(门店号或收银设备ID)，默认请传"WEB"
+    // 终端设备号(门店号或收银设备ID)，默认请传"WEB"  选填
     private String device_info;
     // 商品详情
     private String detail;
@@ -58,7 +58,12 @@ public class PayRequestParams {
     // 场景信息  JSON 格式
     private String scene_info;
 
-    private PayRequestParams(PayConfig payConfig) {
+    /**
+     * Instantiates a new Pay request params.
+     *
+     * @param payConfig the pay config
+     */
+    public PayRequestParams(PayConfig payConfig) {
         this.appid = payConfig.getAppid();
         this.mch_id = payConfig.getMch_id();
         this.secretKey = payConfig.getSecretKey();
@@ -67,39 +72,12 @@ public class PayRequestParams {
     }
 
     /**
-     * 实例化参数.
-     *
-     * @param payConfig the pay config
-     * @return the instance
-     */
-    public static PayRequestParams getInstance(PayConfig payConfig) {
-         if (payRequestParams==null){
-             synchronized (PayRequestParams.class){
-                 if (payRequestParams==null){
-                     return new PayRequestParams(payConfig);
-                 }
-             }
-         }
-         return payRequestParams;
-    }
-
-
-    /**
      * Gets appid.
      *
      * @return the appid
      */
     public String getAppid() {
         return appid;
-    }
-
-    /**
-     * Sets appid.
-     *
-     * @param appid the appid
-     */
-    public void setAppid(String appid) {
-        this.appid = appid;
     }
 
     /**
@@ -130,15 +108,6 @@ public class PayRequestParams {
     }
 
     /**
-     * Sets mch id.
-     *
-     * @param mch_id the mch id
-     */
-    public void setMch_id(String mch_id) {
-        this.mch_id = mch_id;
-    }
-
-    /**
      * Gets notify url.
      *
      * @return the notify url
@@ -148,30 +117,12 @@ public class PayRequestParams {
     }
 
     /**
-     * Sets notify url.
-     *
-     * @param notify_url the notify url
-     */
-    public void setNotify_url(String notify_url) {
-        this.notify_url = notify_url;
-    }
-
-    /**
      * Gets sign type.
      *
      * @return the sign type
      */
     public String getSign_type() {
         return sign_type;
-    }
-
-    /**
-     * Sets sign type.
-     *
-     * @param sign_type the sign type
-     */
-    public void setSign_type(String sign_type) {
-        this.sign_type = sign_type;
     }
 
     /**
@@ -454,11 +405,13 @@ public class PayRequestParams {
     }
 
     /**
-     * Sets scene info.
+     * 场景信息 按照腾讯文档上为json字符串 此处直接用bean来进行转换.
      *
-     * @param scene_info the scene info
+     * @param <T> 场景信息的封装  具体参见腾讯开发文档
+     * @param t   the t
+     * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付开发文档</a>
      */
-    public void setScene_info(String scene_info) {
-        this.scene_info = scene_info;
+    public<T> void setScene_info(T t) {
+        this.scene_info = ObjectUtils.beanToJson(t);
     }
 }
