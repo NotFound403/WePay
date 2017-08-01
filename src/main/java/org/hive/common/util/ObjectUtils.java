@@ -55,15 +55,15 @@ public class ObjectUtils {
      * @return the map
      */
     public static <T> Map<String, Object> paramsSorter(T t) {
-
-        Map<String, Object> map = new TreeMap<>(String::compareTo);
-        BeanInfo beanInfo = null;
+//    1.8JDK 可采用注释部分的lambda表达式    Map<String, Object> map = new TreeMap<>(String::compareTo);
+        Map<String, Object> map = new TreeMap<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
         try {
-            beanInfo = Introspector.getBeanInfo(t.getClass());
-        } catch (IntrospectionException e) {
-            log.debug("获取实体bean信息异常 ", e);
-        }
-        if (beanInfo != null) {
+            BeanInfo beanInfo = Introspector.getBeanInfo(t.getClass());
             PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
             for (PropertyDescriptor property : propertyDescriptors) {
                 String key = property.getName();
@@ -71,18 +71,15 @@ public class ObjectUtils {
                 if (!"class".equals(key)) {
                     // 得到property对应的getter方法
                     Method getter = property.getReadMethod();
-                    Object value = null;
-                    try {
-                        value = getter.invoke(t);
-                    } catch (IllegalAccessException | InvocationTargetException e) {
-                        log.debug("实体bean转换Map异常", e);
-                    }
+                    Object value = getter.invoke(t);
 //                    排除空值
                     if (value != null) {
                         map.put(key, value);
                     }
                 }
             }
+        } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
+            log.debug("获取实体bean信息异常", e);
         }
         return map;
     }

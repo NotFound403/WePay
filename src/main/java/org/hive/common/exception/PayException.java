@@ -1,8 +1,5 @@
 package org.hive.common.exception;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Created with IntelliJ IDEA.
  * <p>
@@ -17,7 +14,7 @@ import java.util.Map;
 public class PayException extends Exception {
     private static final long serialVersionUID = -5439722412045261617L;
 
-    private static Map<String, String> statusMap = new HashMap<>();
+/*    private static final Map<String, String> statusMap = new HashMap<>();
 
     static {
         statusMap.put("NOAUTH", "商户无此接口权限,请商户前往申请此接口权限");
@@ -35,7 +32,7 @@ public class PayException extends Exception {
         statusMap.put("REQUIRE_POST_METHOD", "请检查请求参数是否通过post方法提交");
         statusMap.put("POST_DATA_EMPTY", "请检查post数据是否为空");
         statusMap.put("NOT_UTF8", "请使用NOT_UTF8编码格式");
-    }
+    }*/
 
     /**
      * Instantiates a new Pay exception.
