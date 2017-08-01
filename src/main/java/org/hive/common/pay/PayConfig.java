@@ -1,7 +1,7 @@
 package org.hive.common.pay;
 
 /**
- * Created with IntelliJ IDEA.
+ * 支付基础配置.
  *
  * @author Dax
  * @version v1.0.0
