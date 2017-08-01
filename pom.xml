@@ -6,6 +6,14 @@
     <version>1.0.0</version>
     <name>WePay</name>
     <url>https://git.oschina.net/felord/WePay</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
     <packaging>jar</packaging>
     <description>轻量级微信支付组件 只需要简单配置参数 只需专注于具体支付业务的实现</description>
 
