@@ -57,7 +57,9 @@ public final class WeChatPayConfig implements PayConfig {
         if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
             synchronized (WeChatPayConfig.class) {
                 if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
-                    return new WeChatPayConfig();
+                    WeChatPayConfig weChatPayConfig = new WeChatPayConfig();
+                    WE_CHAT_PAY_CONFIG_THREAD_LOCAL.set(weChatPayConfig);
+                    return weChatPayConfig;
                 }
             }
         }
