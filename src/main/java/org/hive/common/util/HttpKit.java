@@ -65,11 +65,16 @@ public class HttpKit {
         return null;
     }
 
-    private static void close(Closeable closeable) {
+    /**
+     * Close.
+     *
+     * @param closeable the closeable
+     */
+    public static void close(Closeable closeable) {
         try {
             closeable.close();
         } catch (IOException e) {
-            log.debug("关闭IO异常", e);
+            log.debug("IO关闭异常", e);
         }
     }
 }
