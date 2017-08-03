@@ -1,5 +1,7 @@
 package org.hive.common.pay;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * <p>
@@ -11,6 +13,6 @@ package org.hive.common.pay;
  */
 
 
-public interface NextBusinessHandler {
-    <T> boolean callback(T t);
+public interface Callback {
+    <T> T businessHandler(Map<String, String> map);
 }

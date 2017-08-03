@@ -39,16 +39,15 @@ public class HttpKit {
      */
     public static String httpPost(String url, String param) {
         //post请求返回结果
-        CloseableHttpClient httpClient = HttpClients.createDefault();
-        HttpPost method = new HttpPost(url);
-        if (null != param) {
-            //解决中文乱码问题
-            StringEntity entity = new StringEntity(param, "utf-8");
-            entity.setContentEncoding("UTF-8");
-            entity.setContentType("application/x-www-form-urlencoded");
-            method.setEntity(entity);
-        }
-        try {
+        try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
+            HttpPost method = new HttpPost(url);
+            if (null != param) {
+                //解决中文乱码问题
+                StringEntity entity = new StringEntity(param, "utf-8");
+                entity.setContentEncoding("UTF-8");
+                entity.setContentType("application/x-www-form-urlencoded");
+                method.setEntity(entity);
+            }
             HttpResponse result = httpClient.execute(method);
             /*请求发送成功，并得到响应**/
             StatusLine statusLine = result.getStatusLine();
@@ -59,20 +58,22 @@ public class HttpKit {
             }
         } catch (IOException e) {
             log.debug("网络请求IO异常", e);
-        } finally {
-            close(httpClient);
         }
         return null;
     }
 
     /**
-     * Close.
+     * 关闭IO
+     * 推荐使用JDK1.7 try-with-resources
      *
      * @param closeable the closeable
+     * @deprecated
      */
+    @Deprecated
     public static void close(Closeable closeable) {
         try {
-            closeable.close();
+            if (closeable != null)
+                closeable.close();
         } catch (IOException e) {
             log.debug("IO关闭异常", e);
         }

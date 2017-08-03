@@ -2,8 +2,8 @@ package org.hive.weChat.entity;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.hive.common.exception.RequiredParamException;
 import org.hive.common.pay.PayConfig;
-import org.hive.common.util.HttpKit;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -16,7 +16,7 @@ import java.util.Properties;
  *
  * @author Dax
  * @version v1.0.0
- * @since 2017/7/17  15:06
+ * @since 2017 /7/17  15:06
  */
 
 
@@ -35,30 +35,33 @@ public final class WeChatPayConfig implements PayConfig {
     // 签名算法 默认MD5
     private String sign_type;
 
-    private WeChatPayConfig() {
+    private WeChatPayConfig() throws RequiredParamException {
         log.info("开始加载配置文件 " + PROPERTY_PLACEHOLDER);
-        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(PROPERTY_PLACEHOLDER);
-        try {
+        try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(PROPERTY_PLACEHOLDER)) {
             Properties properties = new Properties();
             properties.load(inputStream);
-//      TODO      校验代码
-            this.appid = properties.getProperty("appid");
-            this.mch_id = properties.getProperty("mch_id");
-            this.secretKey = properties.getProperty("secretKey");
-            this.notify_url = properties.getProperty("notify_url");
-            this.sign_type = properties.getProperty("sign_type");
+            this.appid = verifyParam(properties.getProperty("appid"));
+            this.mch_id = verifyParam(properties.getProperty("mch_id"));
+            this.secretKey = verifyParam(properties.getProperty("secretKey"));
+            this.notify_url = verifyParam(properties.getProperty("notify_url"));
+            this.sign_type = verifyParam(properties.getProperty("sign_type"));
         } catch (IOException e) {
-            log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 不存在 或者路径 参数错误", e);
-        } finally {
-            HttpKit.close(inputStream);
+            log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 读取异常", e);
         }
     }
 
-    public static PayConfig initBaseConfig() {
+    /**
+     * Init base config pay config.
+     *
+     * @return the pay config
+     */
+    public static PayConfig initBaseConfig() throws RequiredParamException {
         if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
             synchronized (WeChatPayConfig.class) {
                 if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
-                    return new WeChatPayConfig();
+                    WeChatPayConfig weChatPayConfig = new WeChatPayConfig();
+                    WE_CHAT_PAY_CONFIG_THREAD_LOCAL.set(weChatPayConfig);
+                    return weChatPayConfig;
                 }
             }
         }
@@ -90,4 +93,10 @@ public final class WeChatPayConfig implements PayConfig {
         return sign_type;
     }
 
+    private String verifyParam(String str) throws RequiredParamException {
+        if (!"".equals(str)) {
+            return str;
+        }
+        throw new RequiredParamException("配置参数未填写或者为空，请检查");
+    }
 }

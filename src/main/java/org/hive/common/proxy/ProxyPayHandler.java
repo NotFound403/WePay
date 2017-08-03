@@ -55,8 +55,7 @@ public class ProxyPayHandler implements InvocationHandler {
         }
         String returnMsg = "";
         if (map != null) {
-            returnMsg = map.get("return_msg");
-            log.debug("错误代码描述 ：" + map.get("err_code_des"));
+            returnMsg = map.get("err_code_des");
         }
         throw new PayException(returnMsg);
     }

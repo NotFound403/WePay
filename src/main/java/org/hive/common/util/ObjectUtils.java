@@ -197,7 +197,7 @@ public class ObjectUtils {
                 return xml.toString();
             }
         }
-        throw new RequiredParamException("map is invalid");
+        throw new RequiredParamException("参数不可用");
     }
 
     /**
