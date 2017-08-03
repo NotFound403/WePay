@@ -3,6 +3,8 @@ package org.hive.weChat.entity;
 import org.hive.common.pay.PayConfig;
 import org.hive.common.util.ObjectUtils;
 
+import java.io.Serializable;
+
 /**
  * Created with IntelliJ IDEA.
  * <p>
@@ -14,7 +16,8 @@ import org.hive.common.util.ObjectUtils;
  */
 
 
-public class PayRequestParams {
+public class PayRequestParams implements Serializable {
+    private static final long serialVersionUID = 8926973745023186819L;
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
     // 私钥  签名算法使用 必传

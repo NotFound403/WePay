@@ -3,10 +3,14 @@ package org.hive.weChat.entity;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.hive.common.exception.RequiredParamException;
+import org.hive.common.pay.Decryptable;
 import org.hive.common.pay.PayConfig;
 
+import javax.crypto.Cipher;
+import javax.crypto.spec.SecretKeySpec;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Serializable;
 import java.util.Properties;
 
 /**
@@ -20,11 +24,12 @@ import java.util.Properties;
  */
 
 
-public final class WeChatPayConfig implements PayConfig {
+public class WeChatPayConfig implements PayConfig, Serializable {
+    private static final long serialVersionUID = 9096980878564215572L;
     private static final Log log = LogFactory.getLog(WeChatPayConfig.class);
     private static final String PROPERTY_PLACEHOLDER = "weChatConfig.properties";
     private static final ThreadLocal<WeChatPayConfig> WE_CHAT_PAY_CONFIG_THREAD_LOCAL = new ThreadLocal<>();
-    // 微信开放平台审核通过的应用APPID 必传
+    // 微信开放平台审核通过的应用 appid 必传
     private String appid;
     // 私钥  签名算法使用 必传
     private String secretKey;
@@ -35,15 +40,48 @@ public final class WeChatPayConfig implements PayConfig {
     // 签名算法 默认MD5
     private String sign_type;
 
-    private WeChatPayConfig() throws RequiredParamException {
+    private WeChatPayConfig(Decryptable decryptable, boolean defaultDecrypt) throws RequiredParamException {
+        decryptable = defaultDecrypt ? new Decryptable() {
+            @Override
+            public String decrypt(String original) {
+                return doDecrypt(original);
+            }
+
+            private String doDecrypt(String original) {
+                byte[] k = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
+                try {
+                    SecretKeySpec skeySpec = new SecretKeySpec(k, "AES");
+                    Cipher cipher = Cipher.getInstance("AES");
+                    cipher.init(2, skeySpec);
+                    byte[] encrypted1 = hex2byte(original);
+                    byte[] bytes = cipher.doFinal(encrypted1);
+                    return new String(bytes, "utf-8");
+                } catch (Exception e) {
+                    log.debug("解密错误：", e);
+                }
+                return null;
+            }
+
+            private byte[] hex2byte(String hex) {
+                byte[] b = null;
+                if (hex != null && hex.length() % 2 != 1) {
+                    int l = hex.length();
+                    b = new byte[l / 2];
+                    for (int i = 0; i != l / 2; i++) {
+                        b[i] = (byte) Integer.parseInt(hex.substring(i * 2, i * 2 + 2), 16);
+                    }
+                }
+                return b;
+            }
+        } : decryptable;
         log.info("开始加载配置文件 " + PROPERTY_PLACEHOLDER);
         try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(PROPERTY_PLACEHOLDER)) {
             Properties properties = new Properties();
             properties.load(inputStream);
-            this.appid = verifyParam(properties.getProperty("appid"));
-            this.mch_id = verifyParam(properties.getProperty("mch_id"));
-            this.secretKey = verifyParam(properties.getProperty("secretKey"));
-            this.notify_url = verifyParam(properties.getProperty("notify_url"));
+            this.appid = decryptable.decrypt(verifyParam(properties.getProperty("appid")));
+            this.mch_id = decryptable.decrypt(verifyParam(properties.getProperty("mch_id")));
+            this.secretKey = decryptable.decrypt(verifyParam(properties.getProperty("secretKey")));
+            this.notify_url = decryptable.decrypt(verifyParam(properties.getProperty("notify_url")));
             this.sign_type = verifyParam(properties.getProperty("sign_type"));
         } catch (IOException e) {
             log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 读取异常", e);
@@ -53,13 +91,16 @@ public final class WeChatPayConfig implements PayConfig {
     /**
      * Init base config pay config.
      *
+     * @param decryptable    解密算法接口  最好自己实现
+     * @param defaultDecrypt 默认 仅仅作为测试用
      * @return the pay config
+     * @throws RequiredParamException the required param exception
      */
-    public static PayConfig initBaseConfig() throws RequiredParamException {
+    public static PayConfig initBaseConfig(Decryptable decryptable, boolean defaultDecrypt) throws RequiredParamException {
         if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
             synchronized (WeChatPayConfig.class) {
                 if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
-                    WeChatPayConfig weChatPayConfig = new WeChatPayConfig();
+                    WeChatPayConfig weChatPayConfig = new WeChatPayConfig(decryptable, defaultDecrypt);
                     WE_CHAT_PAY_CONFIG_THREAD_LOCAL.set(weChatPayConfig);
                     return weChatPayConfig;
                 }
@@ -97,6 +138,6 @@ public final class WeChatPayConfig implements PayConfig {
         if (!"".equals(str)) {
             return str;
         }
-        throw new RequiredParamException("配置参数未填写或者为空，请检查");
+        throw new RequiredParamException("配置项参数没有值，请检查");
     }
 }
