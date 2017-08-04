@@ -1,4 +1,4 @@
-package org.hive.common.pay;
+package org.wepay.common.pay;
 
 import java.util.Map;
 

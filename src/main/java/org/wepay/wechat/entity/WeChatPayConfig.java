@@ -1,10 +1,10 @@
-package org.hive.weChat.entity;
+package org.wepay.wechat.entity;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hive.common.exception.RequiredParamException;
-import org.hive.common.pay.Decryptable;
-import org.hive.common.pay.PayConfig;
+import org.wepay.common.exception.RequiredParamException;
+import org.wepay.common.pay.Decryptable;
+import org.wepay.common.pay.PayConfig;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;

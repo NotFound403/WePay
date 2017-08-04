@@ -1,18 +1,18 @@
-package org.hive.weChat.service;
+package org.wepay.wechat.service;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hive.common.exception.PayException;
-import org.hive.common.exception.RequiredParamException;
-import org.hive.common.exception.SignatureException;
-import org.hive.common.pay.PayType;
-import org.hive.common.pay.Payable;
-import org.hive.common.util.HttpKit;
-import org.hive.common.util.ObjectUtils;
-import org.hive.weChat.entity.PayRequestParams;
-import org.hive.weChat.enumeration.IdTypeEnum;
-import org.hive.weChat.enumeration.WeChatPayTypeEnum;
+import org.wepay.common.exception.PayException;
+import org.wepay.common.exception.RequiredParamException;
+import org.wepay.common.exception.SignatureException;
+import org.wepay.common.pay.PayType;
+import org.wepay.common.pay.Payable;
+import org.wepay.common.util.HttpKit;
+import org.wepay.common.util.ObjectUtils;
+import org.wepay.wechat.entity.PayRequestParams;
+import org.wepay.wechat.enumeration.IdTypeEnum;
+import org.wepay.wechat.enumeration.WeChatPayTypeEnum;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Comparator;
@@ -55,7 +55,7 @@ public class WeChatPayService implements Payable {
             log.info("生成签名：" + sign);
             sortedMap.put("sign", sign);
             String xml = ObjectUtils.mapToXML(sortedMap);
-            resultMap = doHttpRequest(weChatPayTypeEnum.getApi(), xml);
+            resultMap = doWechatPayRequest(weChatPayTypeEnum.getApi(), xml);
         } catch (SignatureException | RequiredParamException e) {
             log.debug("统一下单参数处理异常", e);
         }
@@ -82,7 +82,7 @@ public class WeChatPayService implements Payable {
 
     private Map<String, String> orderHandler(PayType weChatPayTypeEnum, String orderId, IdTypeEnum idTypeEnum) throws PayException {
         String xml = xmlForQueryWrapper(orderId, idTypeEnum);
-        Map<String, String> result = doHttpRequest(weChatPayTypeEnum.getApi(), xml);
+        Map<String, String> result = doWechatPayRequest(weChatPayTypeEnum.getApi(), xml);
         if ("SUCCESS".equals(result.get("result_code"))) {
             return result;
         }
@@ -123,7 +123,14 @@ public class WeChatPayService implements Payable {
         return xml;
     }
 
-    private Map<String, String> doHttpRequest(String url, String xml) {
+    /**
+     * 请求腾讯支付
+     *
+     * @param url 调用腾讯支付对应的API
+     * @param xml 封装好的xml格式的参数
+     * @return
+     */
+    private Map<String, String> doWechatPayRequest(String url, String xml) {
         String xmlResult = HttpKit.httpPost(url, xml);
         Map<String, String> resultMap = new HashMap<>();
         if (StringUtils.isNotEmpty(xmlResult)) {

@@ -1,4 +1,4 @@
-package org.hive.common.util;
+package org.wepay.common.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -10,8 +10,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
-import org.hive.common.exception.RequiredParamException;
-import org.hive.common.exception.SignatureException;
+import org.wepay.common.exception.RequiredParamException;
+import org.wepay.common.exception.SignatureException;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;

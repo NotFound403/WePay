@@ -1,7 +1,7 @@
-package org.hive.common.pay;
+package org.wepay.common.pay;
 
-import org.hive.common.exception.PayException;
-import org.hive.weChat.enumeration.IdTypeEnum;
+import org.wepay.common.exception.PayException;
+import org.wepay.wechat.enumeration.IdTypeEnum;
 
 import java.util.Map;
 

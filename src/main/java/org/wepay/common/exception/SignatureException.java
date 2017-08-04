@@ -1,4 +1,4 @@
-package org.hive.common.exception;
+package org.wepay.common.exception;
 
 /**
  * Created with IntelliJ IDEA.

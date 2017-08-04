@@ -1,4 +1,4 @@
-package org.hive.common.pay;
+package org.wepay.common.pay;
 
 /**
  * 支付基础配置.

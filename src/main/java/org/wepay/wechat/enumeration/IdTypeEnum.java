@@ -1,7 +1,8 @@
-package org.hive.weChat.enumeration;
+package org.wepay.wechat.enumeration;
 
 /**
  * Created with IntelliJ IDEA.
+ * 订单号类型枚举
  *
  * @author Dax
  * @version v1.0.0
@@ -26,4 +27,5 @@ public enum IdTypeEnum {
      * 微信退款单号.
      */
     REFUND_ID
+
 }

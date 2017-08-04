@@ -1,9 +1,9 @@
-package org.hive.common.proxy;
+package org.wepay.common.proxy;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hive.common.pay.Callback;
-import org.hive.common.util.ObjectUtils;
+import org.wepay.common.pay.Callback;
+import org.wepay.common.util.ObjectUtils;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

@@ -1,4 +1,4 @@
-package org.hive.common.util;
+package org.wepay.common.util;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;

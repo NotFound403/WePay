@@ -1,6 +1,6 @@
-package org.hive.weChat.enumeration;
+package org.wepay.wechat.enumeration;
 
-import org.hive.common.pay.PayType;
+import org.wepay.common.pay.PayType;
 
 /**
  * Created with IntelliJ IDEA.

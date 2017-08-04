@@ -1,7 +1,7 @@
-package org.hive.weChat.entity;
+package org.wepay.wechat.entity;
 
-import org.hive.common.pay.PayConfig;
-import org.hive.common.util.ObjectUtils;
+import org.wepay.common.pay.PayConfig;
+import org.wepay.common.util.ObjectUtils;
 
 import java.io.Serializable;
 

@@ -1,10 +1,10 @@
-package org.hive.common.proxy;
+package org.wepay.common.proxy;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hive.common.exception.PayException;
-import org.hive.common.pay.Payable;
-import org.hive.common.pay.PreBusinessService;
+import org.wepay.common.exception.PayException;
+import org.wepay.common.pay.Payable;
+import org.wepay.common.pay.PreBusinessService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
