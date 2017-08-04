@@ -22,3 +22,5 @@
  - OSC:[https://git.oschina.net/felord/WePay]
  - GitHub:[https://github.com/NotFound403/WePay]
  
+** QQ **
+ - 448129110  欢迎各位大佬提出建议 不胜感激
