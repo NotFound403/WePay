@@ -44,11 +44,20 @@ public class ProxyCallBack implements InvocationHandler {
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        Object o = method.invoke(callback, initRequestData(request));
+        Map<String, String> result = initRequestData(request);
+        String resultCode = result.get("result_code");
         String responseXml = "<xml>" +
-                "<return_code><![CDATA[SUCCESS]]></return_code>" +
-                "<return_msg><![CDATA[OK]]></return_msg>" +
+                "<return_code><![CDATA[FAIL]]></return_code>" +
+                "<return_msg><![CDATA[" + result.get("err_code_des") + "]]></return_msg>" +
                 "</xml>";
+        Object o = null;
+        if ("SUCCESS".equals(resultCode)) {
+            o = method.invoke(callback, result);
+            responseXml = "<xml>" +
+                    "<return_code><![CDATA[SUCCESS]]></return_code>" +
+                    "<return_msg><![CDATA[OK]]></return_msg>" +
+                    "</xml>";
+        }
         response.setCharacterEncoding("UTF-8");
         try {
             response.getWriter().write(responseXml);
@@ -72,7 +81,7 @@ public class ProxyCallBack implements InvocationHandler {
                 requestData.append(str);
             }
         } catch (IOException e) {
-            e.getStackTrace();
+            log.debug("支付回调参数解析异常：", e);
         }
         return ObjectUtils.xmlToMap(requestData.toString());
     }

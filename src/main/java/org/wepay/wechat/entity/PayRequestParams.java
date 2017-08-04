@@ -60,6 +60,12 @@ public class PayRequestParams implements Serializable {
     private String limit_pay;
     // 场景信息  JSON 格式
     private String scene_info;
+    // 商品id   扫码支付必传 用户自定义
+    private String product_id;
+    // 用户标识  公众号支付必传
+    private String openid;
+    // 扫码支付必填  设备读取用户微信中的条码或者二维码信息
+    private String auth_code;
 
     /**
      * Instantiates a new Pay request params.
@@ -416,5 +422,49 @@ public class PayRequestParams implements Serializable {
      */
     public<T> void setScene_info(T t) {
         this.scene_info = ObjectUtils.beanToJson(t);
+    }
+
+    /**
+     * Gets product id.
+     *
+     * @return the product id
+     */
+    public String getProduct_id() {
+        return product_id;
+    }
+
+    /**
+     * Sets product id.
+     *
+     * @param product_id the product id
+     */
+    public void setProduct_id(String product_id) {
+        this.product_id = product_id;
+    }
+
+    /**
+     * Gets openid.
+     *
+     * @return the openid
+     */
+    public String getOpenid() {
+        return openid;
+    }
+
+    /**
+     * Sets openid.
+     *
+     * @param openid the openid
+     */
+    public void setOpenid(String openid) {
+        this.openid = openid;
+    }
+
+    public String getAuth_code() {
+        return auth_code;
+    }
+
+    public void setAuth_code(String auth_code) {
+        this.auth_code = auth_code;
     }
 }

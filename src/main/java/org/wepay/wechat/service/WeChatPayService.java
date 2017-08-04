@@ -11,7 +11,7 @@ import org.wepay.common.pay.Payable;
 import org.wepay.common.util.HttpKit;
 import org.wepay.common.util.ObjectUtils;
 import org.wepay.wechat.entity.PayRequestParams;
-import org.wepay.wechat.enumeration.IdTypeEnum;
+import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 import org.wepay.wechat.enumeration.WeChatPayTypeEnum;
 
 import java.io.UnsupportedEncodingException;
@@ -31,6 +31,7 @@ import java.util.TreeMap;
 
 public class WeChatPayService implements Payable {
     private static final Log log = LogFactory.getLog(WeChatPayService.class);
+    private static final String DEFAULT_CHARSET = "UTF-8";
     private PayRequestParams payRequestParams;
 
     /**
@@ -51,7 +52,7 @@ public class WeChatPayService implements Payable {
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
         Map<String, String> resultMap = new HashMap<>();
         try {
-            String sign = ObjectUtils.signatureGenerator(sortedMap, "UTF-8", secretKey);
+            String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
             log.info("生成签名：" + sign);
             sortedMap.put("sign", sign);
             String xml = ObjectUtils.mapToXML(sortedMap);
@@ -66,22 +67,22 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, String> orderQuery(String orderId, IdTypeEnum idTypeEnum) throws PayException {
-        return orderHandler(WeChatPayTypeEnum.ORDER_QUERY, orderId, idTypeEnum);
+    public Map<String, String> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
+        return orderHandler(WeChatPayTypeEnum.ORDER_QUERY, orderId, orderIdTypeEnum);
     }
 
     @Override
     public Map<String, String> closeOrder(String outTradeNo) throws PayException {
-        return orderHandler(WeChatPayTypeEnum.CLOSE_ORDER, outTradeNo, IdTypeEnum.OUT_TRADE_NO);
+        return orderHandler(WeChatPayTypeEnum.CLOSE_ORDER, outTradeNo, OrderIdTypeEnum.OUT_TRADE_NO);
     }
 
     @Override
-    public Map<String, String> refundQuery(String orderId, IdTypeEnum idTypeEnum) throws PayException {
-        return orderHandler(WeChatPayTypeEnum.REFUND_QUERY, orderId, idTypeEnum);
+    public Map<String, String> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
+        return orderHandler(WeChatPayTypeEnum.REFUND_QUERY, orderId, orderIdTypeEnum);
     }
 
-    private Map<String, String> orderHandler(PayType weChatPayTypeEnum, String orderId, IdTypeEnum idTypeEnum) throws PayException {
-        String xml = xmlForQueryWrapper(orderId, idTypeEnum);
+    private Map<String, String> orderHandler(PayType weChatPayTypeEnum, String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
+        String xml = xmlForQueryWrapper(orderId, orderIdTypeEnum);
         Map<String, String> result = doWechatPayRequest(weChatPayTypeEnum.getApi(), xml);
         if ("SUCCESS".equals(result.get("result_code"))) {
             return result;
@@ -92,10 +93,10 @@ public class WeChatPayService implements Payable {
     /**
      * 将查询订单参数包装成Xml.
      *
-     * @param orderId         the order id
+     * @param orderId the order id
      * @return the string
      */
-    private String xmlForQueryWrapper(String orderId, IdTypeEnum idTypeEnum) {
+    private String xmlForQueryWrapper(String orderId, OrderIdTypeEnum orderIdTypeEnum) {
         String nonceStr = ObjectUtils.onceStrGenerator();
         String appId = payRequestParams.getAppid();
         String mchId = payRequestParams.getMch_id();
@@ -110,10 +111,10 @@ public class WeChatPayService implements Payable {
         map.put("nonce_str", nonceStr);
         map.put("appid", appId);
         map.put("mch_id", mchId);
-        map.put(idTypeEnum.name().toLowerCase(), orderId);
+        map.put(orderIdTypeEnum.name().toLowerCase(), orderId);
         String xml = null;
         try {
-            String sign = ObjectUtils.signatureGenerator(map, "UTF-8", secretKey);
+            String sign = ObjectUtils.signatureGenerator(map, DEFAULT_CHARSET, secretKey);
             log.info("生成签名：" + sign);
             map.put("sign", sign);
             xml = ObjectUtils.mapToXML(map);
@@ -128,7 +129,7 @@ public class WeChatPayService implements Payable {
      *
      * @param url 调用腾讯支付对应的API
      * @param xml 封装好的xml格式的参数
-     * @return
+     * @return the map
      */
     private Map<String, String> doWechatPayRequest(String url, String xml) {
         String xmlResult = HttpKit.httpPost(url, xml);
@@ -136,7 +137,7 @@ public class WeChatPayService implements Payable {
         if (StringUtils.isNotEmpty(xmlResult)) {
             String responseXml = null;
             try {
-                responseXml = new String(xmlResult.getBytes("ISO-8859-1"), "UTF-8");
+                responseXml = new String(xmlResult.getBytes("ISO-8859-1"), DEFAULT_CHARSET);
             } catch (UnsupportedEncodingException e) {
                 log.debug("编码不支持", e);
             }

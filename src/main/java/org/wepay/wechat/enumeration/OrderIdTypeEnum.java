@@ -10,7 +10,7 @@ package org.wepay.wechat.enumeration;
  */
 
 
-public enum IdTypeEnum {
+public enum OrderIdTypeEnum {
     /**
      * 微信订单号.
      */
