@@ -45,3 +45,4 @@ hs_err_pid*
 
 /src/test/
 /src/main/resource/weChatConfig.properties
+/src/main/resource/
