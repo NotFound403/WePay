@@ -37,7 +37,19 @@ public enum WeChatPayTypeEnum implements PayType {
     /**
      * 微信小程序支付.
      */
-    WXA_API("UNAWARE");
+    WXA_API("UNAWARE"),
+    /**
+     * 查询订单.
+     */
+    ORDER_QUERY("pay/orderquery"),
+    /**
+     * 关闭订单.
+     */
+    CLOSE_ORDER("pay/closeorder"),
+    /**
+     * 查询退款.
+     */
+    REFUND_QUERY("pay/refundquery");
 
     private static final String WE_CHAT_PAY_URL = "https://api.mch.weixin.qq.com/";
     private final String uri;

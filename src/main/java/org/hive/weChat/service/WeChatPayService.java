@@ -11,6 +11,8 @@ import org.hive.common.pay.Payable;
 import org.hive.common.util.HttpKit;
 import org.hive.common.util.ObjectUtils;
 import org.hive.weChat.entity.PayRequestParams;
+import org.hive.weChat.enumeration.IdTypeEnum;
+import org.hive.weChat.enumeration.WeChatPayTypeEnum;
 
 import java.io.UnsupportedEncodingException;
 import java.util.Comparator;
@@ -27,24 +29,21 @@ import java.util.TreeMap;
  */
 
 
-public class WeChatPayHandler implements Payable {
-    private static final Log log = LogFactory.getLog(WeChatPayHandler.class);
-    private PayType weChatPayTypeEnum;
+public class WeChatPayService implements Payable {
+    private static final Log log = LogFactory.getLog(WeChatPayService.class);
     private PayRequestParams payRequestParams;
 
     /**
      * Instantiates a new Pay handler.
      *
-     * @param weChatPayTypeEnum the we chat pay type enum
-     * @param payRequestParams  the pay request params
+     * @param payRequestParams the pay request params
      */
-    public WeChatPayHandler(PayType weChatPayTypeEnum, PayRequestParams payRequestParams) {
-        this.weChatPayTypeEnum = weChatPayTypeEnum;
+    public WeChatPayService(PayRequestParams payRequestParams) {
         this.payRequestParams = payRequestParams;
     }
 
     @Override
-    public Map<String, String> unifiedOrder() throws PayException {
+    public Map<String, String> unifiedOrder(PayType weChatPayTypeEnum) throws PayException {
         payRequestParams.setNonce_str(ObjectUtils.onceStrGenerator());
 //        密钥需要排除不然影响签名生成
         payRequestParams.setSecretKey(null);
@@ -67,29 +66,36 @@ public class WeChatPayHandler implements Payable {
     }
 
     @Override
-    public Map<String, String> orderQuery(String orderId, boolean isTransactionId) throws PayException {
-
-        try {
-            String xml = xmlForQueryWrapper(orderId, isTransactionId);
-            String url = "https://api.mch.weixin.qq.com/pay/orderquery";
-            return doHttpRequest(url, xml);
-        } catch (SignatureException | RequiredParamException e) {
-            log.debug("查询订单参数处理异常：", e);
-        }
-        throw new PayException("查询订单异常");
+    public Map<String, String> orderQuery(String orderId, IdTypeEnum idTypeEnum) throws PayException {
+        return orderHandler(WeChatPayTypeEnum.ORDER_QUERY, orderId, idTypeEnum);
     }
 
+    @Override
+    public Map<String, String> closeOrder(String outTradeNo) throws PayException {
+        return orderHandler(WeChatPayTypeEnum.CLOSE_ORDER, outTradeNo, IdTypeEnum.OUT_TRADE_NO);
+    }
+
+    @Override
+    public Map<String, String> refundQuery(String orderId, IdTypeEnum idTypeEnum) throws PayException {
+        return orderHandler(WeChatPayTypeEnum.REFUND_QUERY, orderId, idTypeEnum);
+    }
+
+    private Map<String, String> orderHandler(PayType weChatPayTypeEnum, String orderId, IdTypeEnum idTypeEnum) throws PayException {
+        String xml = xmlForQueryWrapper(orderId, idTypeEnum);
+        Map<String, String> result = doHttpRequest(weChatPayTypeEnum.getApi(), xml);
+        if ("SUCCESS".equals(result.get("result_code"))) {
+            return result;
+        }
+        throw new PayException(result.get("err_code_des"));
+    }
 
     /**
      * 将查询订单参数包装成Xml.
      *
      * @param orderId         the order id
-     * @param isTransactionId the is transaction id
      * @return the string
-     * @throws SignatureException     the signature exception
-     * @throws RequiredParamException the required param exception
      */
-    private String xmlForQueryWrapper(String orderId, boolean isTransactionId) throws SignatureException, RequiredParamException {
+    private String xmlForQueryWrapper(String orderId, IdTypeEnum idTypeEnum) {
         String nonceStr = ObjectUtils.onceStrGenerator();
         String appId = payRequestParams.getAppid();
         String mchId = payRequestParams.getMch_id();
@@ -101,22 +107,23 @@ public class WeChatPayHandler implements Payable {
                 return o1.compareTo(o2);
             }
         });
-
         map.put("nonce_str", nonceStr);
         map.put("appid", appId);
         map.put("mch_id", mchId);
-        if (isTransactionId) {
-            map.put("transaction_id", orderId);
-        } else {
-            map.put("out_trade_no", orderId);
+        map.put(idTypeEnum.name().toLowerCase(), orderId);
+        String xml = null;
+        try {
+            String sign = ObjectUtils.signatureGenerator(map, "UTF-8", secretKey);
+            log.info("生成签名：" + sign);
+            map.put("sign", sign);
+            xml = ObjectUtils.mapToXML(map);
+        } catch (SignatureException | RequiredParamException e) {
+            log.debug("包装xml异常：", e);
         }
-        String sign = ObjectUtils.signatureGenerator(map, "UTF-8", secretKey);
-        log.info("生成签名：" + sign);
-        map.put("sign", sign);
-        return ObjectUtils.mapToXML(map);
+        return xml;
     }
 
-    private Map<String, String> doHttpRequest(String url, String xml) throws PayException {
+    private Map<String, String> doHttpRequest(String url, String xml) {
         String xmlResult = HttpKit.httpPost(url, xml);
         Map<String, String> resultMap = new HashMap<>();
         if (StringUtils.isNotEmpty(xmlResult)) {
@@ -128,9 +135,6 @@ public class WeChatPayHandler implements Payable {
             }
             resultMap = ObjectUtils.xmlToMap(responseXml);
         }
-        if ("SUCCESS".equals(resultMap.get("result_code"))) {
-            return resultMap;
-        }
-        throw new PayException(resultMap.get("err_code_des"));
+        return resultMap;
     }
 }
