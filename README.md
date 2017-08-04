@@ -18,6 +18,9 @@
  - 客户参数封装 —— 编写具体的支付相关业务 —— 支付代理类——执行支付处理 ——回调
  - 后台来说就是curd 包括一些反馈之类等等的业务 此处选择用代理支付模式来实现支付跟业务的解耦 只需要实现PreBusinessHandler NextBusinessHandler 来处理业务
  
+ **文档**
+ - wiki：[https://gitee.com/felord/WePay/wikis]
+ 
  **仓库地址**
  - OSC:[https://git.oschina.net/felord/WePay]
  - GitHub:[https://github.com/NotFound403/WePay]

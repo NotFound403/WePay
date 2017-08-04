@@ -40,8 +40,8 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     // 签名算法 默认MD5
     private String sign_type;
 
-    private WeChatPayConfig(Decryptable decryptable, boolean defaultDecrypt) throws RequiredParamException {
-        decryptable = defaultDecrypt ? new Decryptable() {
+    private WeChatPayConfig(Decryptable decryptable) throws RequiredParamException {
+        decryptable = decryptable == null ? new Decryptable() {
             @Override
             public String decrypt(String original) {
                 return doDecrypt(original);
@@ -91,16 +91,15 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     /**
      * Init base config pay config.
      *
-     * @param decryptable    解密算法接口  最好自己实现
-     * @param defaultDecrypt 默认 仅仅作为测试用
+     * @param decryptable 解密算法接口  最好自己实现
      * @return the pay config
      * @throws RequiredParamException the required param exception
      */
-    public static PayConfig initBaseConfig(Decryptable decryptable, boolean defaultDecrypt) throws RequiredParamException {
+    public static PayConfig initBaseConfig(Decryptable decryptable) throws RequiredParamException {
         if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
             synchronized (WeChatPayConfig.class) {
                 if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
-                    WeChatPayConfig weChatPayConfig = new WeChatPayConfig(decryptable, defaultDecrypt);
+                    WeChatPayConfig weChatPayConfig = new WeChatPayConfig(decryptable);
                     WE_CHAT_PAY_CONFIG_THREAD_LOCAL.set(weChatPayConfig);
                     return weChatPayConfig;
                 }
