@@ -10,7 +10,6 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-import java.io.Closeable;
 import java.io.IOException;
 
 /**
@@ -60,22 +59,5 @@ public class HttpKit {
             log.debug("网络请求IO异常", e);
         }
         return null;
-    }
-
-    /**
-     * 关闭IO
-     * 推荐使用JDK1.7 try-with-resources
-     *
-     * @param closeable the closeable
-     * @deprecated
-     */
-    @Deprecated
-    public static void close(Closeable closeable) {
-        try {
-            if (closeable != null)
-                closeable.close();
-        } catch (IOException e) {
-            log.debug("IO关闭异常", e);
-        }
     }
 }
