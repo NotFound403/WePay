@@ -1,4 +1,4 @@
-package org.hive.common.util;
+package org.wepay.common.util;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -10,8 +10,11 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
-import java.io.Closeable;
+import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -39,16 +42,15 @@ public class HttpKit {
      */
     public static String httpPost(String url, String param) {
         //post请求返回结果
-        CloseableHttpClient httpClient = HttpClients.createDefault();
-        HttpPost method = new HttpPost(url);
-        if (null != param) {
-            //解决中文乱码问题
-            StringEntity entity = new StringEntity(param, "utf-8");
-            entity.setContentEncoding("UTF-8");
-            entity.setContentType("application/x-www-form-urlencoded");
-            method.setEntity(entity);
-        }
-        try {
+        try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
+            HttpPost method = new HttpPost(url);
+            if (null != param) {
+                //解决中文乱码问题
+                StringEntity entity = new StringEntity(param, "utf-8");
+                entity.setContentEncoding("UTF-8");
+                entity.setContentType("application/x-www-form-urlencoded");
+                method.setEntity(entity);
+            }
             HttpResponse result = httpClient.execute(method);
             /*请求发送成功，并得到响应**/
             StatusLine statusLine = result.getStatusLine();
@@ -59,22 +61,26 @@ public class HttpKit {
             }
         } catch (IOException e) {
             log.debug("网络请求IO异常", e);
-        } finally {
-            close(httpClient);
         }
         return null;
     }
 
     /**
-     * Close.
+     * 腾讯回调请求中解析的参数.
      *
-     * @param closeable the closeable
+     * @param request the request
+     * @return the string
      */
-    public static void close(Closeable closeable) {
-        try {
-            closeable.close();
+    public static Map<String, String> resolveRequestData(HttpServletRequest request) {
+        StringBuilder requestData = new StringBuilder();
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(request.getInputStream(), "utf-8"))) {
+            String str;
+            while ((str = bufferedReader.readLine()) != null) {
+                requestData.append(str);
+            }
         } catch (IOException e) {
-            log.debug("IO关闭异常", e);
+            log.debug("支付回调参数解析异常：", e);
         }
+        return ObjectUtils.xmlToMap(requestData.toString());
     }
 }

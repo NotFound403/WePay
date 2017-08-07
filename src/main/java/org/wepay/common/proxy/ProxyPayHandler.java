@@ -1,10 +1,10 @@
-package org.hive.common.proxy;
+package org.wepay.common.proxy;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
-import org.hive.common.exception.PayException;
-import org.hive.common.pay.Payable;
-import org.hive.common.pay.PreBusinessService;
+import org.wepay.common.exception.PayException;
+import org.wepay.common.pay.Payable;
+import org.wepay.common.pay.PreBusinessService;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
@@ -39,13 +39,8 @@ public class ProxyPayHandler implements InvocationHandler {
 
     @Override
     @SuppressWarnings("unchecked")
-    public Object invoke(Object proxy, Method method, Object[] args) throws PayException {
-        Object payResult = null;
-        try {
-            payResult = method.invoke(target, args);
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            log.debug("通过反射调用支付方法失败", e);
-        }
+    public Object invoke(Object proxy, Method method, Object[] args) throws PayException, InvocationTargetException, IllegalAccessException {
+        Object payResult = method.invoke(target, args);
         Map<String, String> map = (Map<String, String>) payResult;
         String resultCode = map != null ? map.get("result_code") : null;
         if ("SUCCESS".equals(resultCode)) {
@@ -55,8 +50,7 @@ public class ProxyPayHandler implements InvocationHandler {
         }
         String returnMsg = "";
         if (map != null) {
-            returnMsg = map.get("return_msg");
-            log.debug("错误代码描述 ：" + map.get("err_code_des"));
+            returnMsg = map.get("err_code_des");
         }
         throw new PayException(returnMsg);
     }

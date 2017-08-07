@@ -1,4 +1,4 @@
-package org.hive.common.util;
+package org.wepay.common.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
@@ -10,8 +10,8 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
-import org.hive.common.exception.RequiredParamException;
-import org.hive.common.exception.SignatureException;
+import org.wepay.common.exception.RequiredParamException;
+import org.wepay.common.exception.SignatureException;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
@@ -37,8 +37,7 @@ import java.util.*;
 
 public class ObjectUtils {
     private static final Log log = LogFactory.getLog(ObjectUtils.class);
-    private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5",
-            "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
+    private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
 
     private ObjectUtils() {
@@ -123,22 +122,23 @@ public class ObjectUtils {
     /**
      * 加密
      *
-     * @param sSrc 原字符
+     * @param original 原字符
      * @return string string
+     * @deprecated
      */
-    public static String encrypt128(String sSrc) {
-
-        return doEncrypt(sSrc);
+    @Deprecated
+    public static String encrypt(String original) {
+        return doEncrypt(original);
     }
 
-    private static String doEncrypt(String sSrc) {
+    private static String doEncrypt(String original) {
         String cipherText = null;
         try {
 
             SecretKeySpec skeySpec = new SecretKeySpec(AES_KEY, "AES");
             Cipher cipher = Cipher.getInstance("AES");//创建密码器
             cipher.init(1, skeySpec);// 初始化
-            byte[] encrypted = cipher.doFinal(sSrc.getBytes("utf-8"));//加密
+            byte[] encrypted = cipher.doFinal(original.getBytes("utf-8"));//加密
 
             //字节转换成十六进制的字符串
             cipherText = byteArrayToHexString(encrypted).toUpperCase();
@@ -148,28 +148,16 @@ public class ObjectUtils {
         return cipherText;
     }
 
-    /**
-     * 解密
-     *
-     * @param sSrc 原字符
-     * @return String string
-     */
-    public static String decrypt128(String sSrc) {
-        return doDecrypt(sSrc);
-    }
-
-    private static String doDecrypt(String sSrc) {
+    private static String doDecrypt(String original) {
         try {
-
             SecretKeySpec skeySpec = new SecretKeySpec(AES_KEY, "AES");
             Cipher cipher = Cipher.getInstance("AES");
             cipher.init(2, skeySpec);
-            byte[] encrypted1 = hex2byte(sSrc);
-
-            byte[] original = cipher.doFinal(encrypted1);
-            return new String(original, "utf-8");
-        } catch (Exception ex) {
-            log.debug("解密错误：", ex);
+            byte[] encrypted1 = hex2byte(original);
+            byte[] bytes = cipher.doFinal(encrypted1);
+            return new String(bytes, "utf-8");
+        } catch (Exception e) {
+            log.debug("解密错误：", e);
         }
         return null;
     }
@@ -197,7 +185,7 @@ public class ObjectUtils {
                 return xml.toString();
             }
         }
-        throw new RequiredParamException("map is invalid");
+        throw new RequiredParamException("参数不可用");
     }
 
     /**
@@ -281,7 +269,6 @@ public class ObjectUtils {
      * @return the string
      */
     private static String md5Encrypt(String origin, String charset) {
-
         String encode = charset == null || "".equals(charset) ? "UTF-8" : charset;
         try {
             byte[] bytes = origin.getBytes(encode);
@@ -292,5 +279,17 @@ public class ObjectUtils {
             log.debug("MD5加密异常", e);
         }
         return null;
+    }
+
+    /**
+     * 解密
+     *
+     * @param original 密文
+     * @return String string
+     * @deprecated
+     */
+    @Deprecated
+    public String decrypt(String original) {
+        return doDecrypt(original);
     }
 }
