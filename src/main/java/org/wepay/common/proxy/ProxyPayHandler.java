@@ -1,7 +1,7 @@
 package org.wepay.common.proxy;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.Payable;
 import org.wepay.common.pay.PreBusinessService;
@@ -22,7 +22,7 @@ import java.util.Map;
 
 
 public class ProxyPayHandler implements InvocationHandler {
-    private static final Log log = LogFactory.getLog(ProxyPayHandler.class);
+    private static final Logger log = LoggerFactory.getLogger(ProxyPayHandler.class);
     private Payable target;
     private PreBusinessService preBusinessService;
 
@@ -39,18 +39,22 @@ public class ProxyPayHandler implements InvocationHandler {
 
     @Override
     @SuppressWarnings("unchecked")
-    public Object invoke(Object proxy, Method method, Object[] args) throws PayException, InvocationTargetException, IllegalAccessException {
-        Object payResult = method.invoke(target, args);
-        Map<String, String> map = (Map<String, String>) payResult;
-        String resultCode = map != null ? map.get("result_code") : null;
+    public Object invoke(Object proxy, Method method, Object[] args) throws PayException {
+        Object payResult = null;
+        try {
+            payResult = method.invoke(target, args);
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            log.debug("代异常：", e);
+        }
+        Map<String, Object> map = (Map<String, Object>) payResult;
+        String resultCode = map != null ? (String) map.get("result_code") : null;
         if ("SUCCESS".equals(resultCode)) {
-            log.info("预支付成功 开始处理回调前的业务……");
-            preBusinessService.preHandler();
+            preBusinessService.preHandler(map);
             return payResult;
         }
         String returnMsg = "";
         if (map != null) {
-            returnMsg = map.get("err_code_des");
+            returnMsg = (String) map.get("err_code_des");
         }
         throw new PayException(returnMsg);
     }

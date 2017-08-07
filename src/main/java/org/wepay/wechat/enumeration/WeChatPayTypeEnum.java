@@ -21,15 +21,15 @@ public enum WeChatPayTypeEnum implements PayType {
     /**
      * 微信公众号支付.
      */
-    JS_API("pay/unifiedorder"),
+    JSAPI("pay/unifiedorder"),
     /**
      * 扫码支付.
      */
-    NATIVE(WeChatPayTypeEnum.JS_API.uri),
+    NATIVE(WeChatPayTypeEnum.JSAPI.uri),
     /**
      * APP支付.
      */
-    APP(WeChatPayTypeEnum.JS_API.uri),
+    APP(WeChatPayTypeEnum.JSAPI.uri),
     /**
      * H5支付.
      */

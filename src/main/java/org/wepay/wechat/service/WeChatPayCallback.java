@@ -1,5 +1,7 @@
 package org.wepay.wechat.service;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.wepay.common.pay.Callback;
 import org.wepay.common.util.HttpKit;
 
@@ -18,6 +20,7 @@ import java.util.Map;
 
 
 public class WeChatPayCallback implements Callback {
+    private static final Logger log = LoggerFactory.getLogger(WeChatPayCallback.class);
     private HttpServletRequest request;
     private HttpServletResponse response;
 
@@ -34,14 +37,14 @@ public class WeChatPayCallback implements Callback {
 
     @Override
     public void payCallback() {
-        Map<String, String> result = HttpKit.resolveRequestData(request);
-        String resultCode = result.get("result_code");
-        String returnMsg = "SUCCESS".equals(resultCode) ? "OK" : result.get("err_code");
+        Map<String, Object> result = HttpKit.resolveRequestData(request);
+        String resultCode = (String) result.get("result_code");
+        String returnMsg = "SUCCESS".equals(resultCode) ? "OK" : (String) result.get("err_code");
         response.setCharacterEncoding("UTF-8");
         try {
             response.getWriter().write(xmlTemplate(resultCode, returnMsg));
         } catch (IOException e) {
-            e.getStackTrace();
+            log.debug("回调请求参数：" + result, e);
         }
     }
 

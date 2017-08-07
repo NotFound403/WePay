@@ -1,7 +1,5 @@
 package org.wepay.common.util;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.apache.http.HttpResponse;
 import org.apache.http.StatusLine;
 import org.apache.http.client.methods.HttpPost;
@@ -9,6 +7,8 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.BufferedReader;
@@ -28,7 +28,7 @@ import java.util.Map;
 
 
 public class HttpKit {
-    private static final Log log = LogFactory.getLog(HttpKit.class);
+    private static final Logger log = LoggerFactory.getLogger(HttpKit.class);
 
     private HttpKit() {
     }
@@ -71,7 +71,7 @@ public class HttpKit {
      * @param request the request
      * @return the string
      */
-    public static Map<String, String> resolveRequestData(HttpServletRequest request) {
+    public static Map<String, Object> resolveRequestData(HttpServletRequest request) {
         StringBuilder requestData = new StringBuilder();
         try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(request.getInputStream(), "utf-8"))) {
             String str;

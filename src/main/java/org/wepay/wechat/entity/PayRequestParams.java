@@ -3,6 +3,7 @@ package org.wepay.wechat.entity;
 import org.wepay.common.pay.PayConfig;
 import org.wepay.common.util.ObjectUtils;
 
+import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 
 /**
@@ -29,7 +30,7 @@ public class PayRequestParams implements Serializable {
     // 签名算法 默认MD5
     private String sign_type;
     // 随机字符串，不长于32位。必传
-    private String nonce_str;
+    private String nonce_str = ObjectUtils.onceStrGenerator();
     // 签名 重要
     private String sign;
     // 商品描述 格式 APP名称-实际商品名称 必传
@@ -41,7 +42,7 @@ public class PayRequestParams implements Serializable {
     // 货币类型 人民币为CNY
     private String fee_type;
     // 总金额 订单总金额，单位为分  重要
-    private String total_fee;
+    private int total_fee;
     // 用户端实际IP  必传
     private String spbill_create_ip;
     // 交易类型  必传
@@ -72,12 +73,13 @@ public class PayRequestParams implements Serializable {
      *
      * @param payConfig the pay config
      */
-    public PayRequestParams(PayConfig payConfig) {
+    public PayRequestParams(PayConfig payConfig, HttpServletRequest request) {
         this.appid = payConfig.getAppid();
         this.mch_id = payConfig.getMch_id();
         this.secretKey = payConfig.getSecretKey();
         this.notify_url = payConfig.getNotify_url();
         this.sign_type = payConfig.getSign_type();
+        this.spbill_create_ip = request.getRemoteAddr();
     }
 
     /**
@@ -143,14 +145,6 @@ public class PayRequestParams implements Serializable {
         return nonce_str;
     }
 
-    /**
-     * Sets nonce str.
-     *
-     * @param nonce_str the nonce str
-     */
-    public void setNonce_str(String nonce_str) {
-        this.nonce_str = nonce_str;
-    }
 
     /**
      * Gets sign.
@@ -247,7 +241,7 @@ public class PayRequestParams implements Serializable {
      *
      * @return the total fee
      */
-    public String getTotal_fee() {
+    public int getTotal_fee() {
         return total_fee;
     }
 
@@ -256,7 +250,7 @@ public class PayRequestParams implements Serializable {
      *
      * @param total_fee the total fee
      */
-    public void setTotal_fee(String total_fee) {
+    public void setTotal_fee(int total_fee) {
         this.total_fee = total_fee;
     }
 
@@ -267,15 +261,6 @@ public class PayRequestParams implements Serializable {
      */
     public String getSpbill_create_ip() {
         return spbill_create_ip;
-    }
-
-    /**
-     * Sets spbill create ip.
-     *
-     * @param spbill_create_ip the spbill create ip
-     */
-    public void setSpbill_create_ip(String spbill_create_ip) {
-        this.spbill_create_ip = spbill_create_ip;
     }
 
     /**
@@ -420,7 +405,7 @@ public class PayRequestParams implements Serializable {
      * @param t   the t
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付开发文档</a>
      */
-    public<T> void setScene_info(T t) {
+    public <T> void setScene_info(T t) {
         this.scene_info = ObjectUtils.beanToJson(t);
     }
 
