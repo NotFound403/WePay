@@ -84,6 +84,25 @@ public class ObjectUtils {
         return map;
     }
 
+    public static <M extends Map<String, Object>> Map<String, Object> paramsSorter(M m) {
+//    1.8JDK 可采用注释部分的lambda表达式    Map<String, Object> map = new TreeMap<>(String::compareTo);
+        Map<String, Object> map = new TreeMap<>(new Comparator<String>() {
+            @Override
+            public int compare(String o1, String o2) {
+                return o1.compareTo(o2);
+            }
+        });
+        Set<Map.Entry<String, Object>> entrySet = m.entrySet();
+        for (Map.Entry<String, Object> entry : entrySet) {
+            String k = entry.getKey();
+            Object v = entry.getValue();
+            if (v != null) {
+                map.put(k, v);
+            }
+        }
+        return map;
+    }
+
     /**
      * Signature generator.
      * <p>

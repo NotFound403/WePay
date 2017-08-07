@@ -1,8 +1,8 @@
 package org.wepay.wechat.service;
 
 import org.apache.commons.lang3.StringUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.wepay.common.exception.PayException;
 import org.wepay.common.exception.RequiredParamException;
 import org.wepay.common.exception.SignatureException;
@@ -30,7 +30,7 @@ import java.util.TreeMap;
 
 
 public class WeChatPayService implements Payable {
-    private static final Log log = LogFactory.getLog(WeChatPayService.class);
+    private static final Logger log = LoggerFactory.getLogger(WeChatPayService.class);
     private static final String DEFAULT_CHARSET = "UTF-8";
     private PayRequestParams payRequestParams;
 
@@ -46,7 +46,8 @@ public class WeChatPayService implements Payable {
     @Override
     public Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum) throws PayException {
         String secretKey = payRequestParams.getSecretKey();
-        payRequestParams.setTrade_type(weChatPayTypeEnum.name());
+        String tradeType = weChatPayTypeEnum.name();
+        payRequestParams.setTrade_type(tradeType);
         //        密钥需要排除不然影响签名生成
         payRequestParams.setSecretKey(null);
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
@@ -57,12 +58,16 @@ public class WeChatPayService implements Payable {
             sortedMap.put("sign", sign);
             String xml = ObjectUtils.mapToXML(sortedMap);
             resultMap = doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
+            if ("SUCCESS".equals(resultMap.get("result_code"))) {
+                Map<String, Object> params = initReRequestParams(resultMap, tradeType);
+                String signature = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(params), DEFAULT_CHARSET, secretKey);
+                params.put("sign", signature);
+                return params;
+            }
         } catch (SignatureException | RequiredParamException e) {
             log.debug("统一下单参数处理异常", e);
         }
-        if ("SUCCESS".equals(resultMap.get("result_code"))) {
-            return resultMap;
-        }
+
         throw new PayException("参数列表：" + resultMap);
     }
 
@@ -143,7 +148,27 @@ public class WeChatPayService implements Payable {
             }
             resultMap = ObjectUtils.xmlToMap(responseXml);
         }
-        log.debug("结果集： " + resultMap);
         return resultMap;
+    }
+
+    /**
+     * 第二次发请求 封装参数
+     *
+     * @param map
+     * @param tradeType
+     * @return
+     */
+    private Map<String, Object> initReRequestParams(Map<String, Object> map, String tradeType) {
+        Map<String, Object> sortMap = new HashMap<>();
+        //TODO 其他类型的 未实现 待补充
+        if ("APP".equals(tradeType)) {
+            map.put("appid", map.get("appid"));
+            map.put("partnerid", map.get("mch_id"));
+            map.put("prepayid", map.get("prepay_id"));
+            map.put("package", "Sign=WXPay");
+            map.put("noncestr", map.get("nonce_str"));
+            map.put("timestamp", System.currentTimeMillis());
+        }
+        return sortMap;
     }
 }
