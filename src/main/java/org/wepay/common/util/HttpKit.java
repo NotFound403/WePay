@@ -10,7 +10,11 @@ import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -59,5 +63,24 @@ public class HttpKit {
             log.debug("网络请求IO异常", e);
         }
         return null;
+    }
+
+    /**
+     * 腾讯回调请求中解析的参数.
+     *
+     * @param request the request
+     * @return the string
+     */
+    public static Map<String, String> resolveRequestData(HttpServletRequest request) {
+        StringBuilder requestData = new StringBuilder();
+        try (BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(request.getInputStream(), "utf-8"))) {
+            String str;
+            while ((str = bufferedReader.readLine()) != null) {
+                requestData.append(str);
+            }
+        } catch (IOException e) {
+            log.debug("支付回调参数解析异常：", e);
+        }
+        return ObjectUtils.xmlToMap(requestData.toString());
     }
 }
