@@ -1,5 +1,7 @@
 package org.wepay.common.pay;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  * <p>
@@ -12,5 +14,5 @@ package org.wepay.common.pay;
 
 
 public interface PreBusinessService {
-    void preHandler();
+    <T> T preHandler(Map<String, Object> result);
 }

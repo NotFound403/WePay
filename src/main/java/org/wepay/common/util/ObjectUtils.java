@@ -4,12 +4,12 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.wepay.common.exception.RequiredParamException;
 import org.wepay.common.exception.SignatureException;
 
@@ -36,7 +36,7 @@ import java.util.*;
 
 
 public class ObjectUtils {
-    private static final Log log = LogFactory.getLog(ObjectUtils.class);
+    private static final Logger log = LoggerFactory.getLogger(ObjectUtils.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
 
@@ -80,6 +80,7 @@ public class ObjectUtils {
         } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
             log.debug("获取实体bean信息异常", e);
         }
+        log.info(String.format("\u53c2\u6570\u5217\u8868\uff1a %s", map));
         return map;
     }
 
@@ -103,7 +104,11 @@ public class ObjectUtils {
             }
             stringBuilder.append("key").append("=").append(key);
             String origin = stringBuilder.toString();
-            return md5Encrypt(origin, charset);
+            String sign = md5Encrypt(origin, charset);
+            if (sign != null) {
+                log.debug(String.format("\u751f\u6210\u7b7e\u540d\u4e3a\uff1a%s", sign));
+            }
+            return sign;
         }
         throw new SignatureException("sortedMap is invalid");
     }
@@ -215,8 +220,8 @@ public class ObjectUtils {
      * @param xml the xml
      * @return the map
      */
-    public static Map<String, String> xmlToMap(String xml) {
-        Map<String, String> map = new HashMap<>();
+    public static Map<String, Object> xmlToMap(String xml) {
+        Map<String, Object> map = new HashMap<>();
         try {
             Document document = DocumentHelper.parseText(xml);
             Element rootElement = document.getRootElement();

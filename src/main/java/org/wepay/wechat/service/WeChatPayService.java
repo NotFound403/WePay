@@ -44,50 +44,50 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, String> unifiedOrder(PayType weChatPayTypeEnum) throws PayException {
-        payRequestParams.setNonce_str(ObjectUtils.onceStrGenerator());
-//        密钥需要排除不然影响签名生成
-        payRequestParams.setSecretKey(null);
+    public Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum) throws PayException {
         String secretKey = payRequestParams.getSecretKey();
+        payRequestParams.setTrade_type(weChatPayTypeEnum.name());
+        //        密钥需要排除不然影响签名生成
+        payRequestParams.setSecretKey(null);
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
-        Map<String, String> resultMap = new HashMap<>();
+        Map<String, Object> resultMap = new HashMap<>();
         try {
             String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
             log.info("生成签名：" + sign);
             sortedMap.put("sign", sign);
             String xml = ObjectUtils.mapToXML(sortedMap);
-            resultMap = doWechatPayRequest(weChatPayTypeEnum.getApi(), xml);
+            resultMap = doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
         } catch (SignatureException | RequiredParamException e) {
             log.debug("统一下单参数处理异常", e);
         }
         if ("SUCCESS".equals(resultMap.get("result_code"))) {
             return resultMap;
         }
-        throw new PayException(resultMap.get("err_code_des"));
+        throw new PayException("参数列表：" + resultMap);
     }
 
     @Override
-    public Map<String, String> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
+    public Map<String, Object> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         return orderHandler(WeChatPayTypeEnum.ORDER_QUERY, orderId, orderIdTypeEnum);
     }
 
     @Override
-    public Map<String, String> closeOrder(String outTradeNo) throws PayException {
+    public Map<String, Object> closeOrder(String outTradeNo) throws PayException {
         return orderHandler(WeChatPayTypeEnum.CLOSE_ORDER, outTradeNo, OrderIdTypeEnum.OUT_TRADE_NO);
     }
 
     @Override
-    public Map<String, String> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
+    public Map<String, Object> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         return orderHandler(WeChatPayTypeEnum.REFUND_QUERY, orderId, orderIdTypeEnum);
     }
 
-    private Map<String, String> orderHandler(PayType weChatPayTypeEnum, String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
+    private Map<String, Object> orderHandler(PayType weChatPayTypeEnum, String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         String xml = xmlForQueryWrapper(orderId, orderIdTypeEnum);
-        Map<String, String> result = doWechatPayRequest(weChatPayTypeEnum.getApi(), xml);
+        Map<String, Object> result = doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
         if ("SUCCESS".equals(result.get("result_code"))) {
             return result;
         }
-        throw new PayException(result.get("err_code_des"));
+        throw new PayException("结果集：" + result);
     }
 
     /**
@@ -131,9 +131,9 @@ public class WeChatPayService implements Payable {
      * @param xml 封装好的xml格式的参数
      * @return the map
      */
-    private Map<String, String> doWechatPayRequest(String url, String xml) {
+    private Map<String, Object> doWeChatPayRequest(String url, String xml) {
         String xmlResult = HttpKit.httpPost(url, xml);
-        Map<String, String> resultMap = new HashMap<>();
+        Map<String, Object> resultMap = new HashMap<>();
         if (StringUtils.isNotEmpty(xmlResult)) {
             String responseXml = null;
             try {
@@ -143,6 +143,7 @@ public class WeChatPayService implements Payable {
             }
             resultMap = ObjectUtils.xmlToMap(responseXml);
         }
+        log.debug("结果集： " + resultMap);
         return resultMap;
     }
 }

@@ -23,7 +23,7 @@ public interface Payable {
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
      */
-    Map<String, String> unifiedOrder(PayType weChatPayTypeEnum) throws PayException;
+    Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum) throws PayException;
 
     /**
      * 通过订单号查询订单.
@@ -34,7 +34,7 @@ public interface Payable {
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_2&index=4">腾讯微信支付查询订单</a>
      */
-    Map<String, String> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException;
+    Map<String, Object> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException;
 
     /**
      * 关闭订单.
@@ -43,7 +43,7 @@ public interface Payable {
      * @return the map
      * @throws PayException the pay exception
      */
-    Map<String, String> closeOrder(String outTradeNo) throws PayException;
+    Map<String, Object> closeOrder(String outTradeNo) throws PayException;
 
     /**
      * 查询退款.
@@ -54,7 +54,7 @@ public interface Payable {
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_5&index=7">腾讯微信支付查询退款</a>
      */
-    Map<String, String> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException;
+    Map<String, Object> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException;
 
 }
 

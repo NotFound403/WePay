@@ -1,13 +1,16 @@
 package org.wepay.common.proxy;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.Callback;
 import org.wepay.common.pay.PostBusiness;
 import org.wepay.common.util.HttpKit;
 
 import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Map;
@@ -22,7 +25,7 @@ import java.util.Map;
 
 
 public class ProxyPayCallback implements InvocationHandler {
-    private static final Log log = LogFactory.getLog(ProxyPayCallback.class);
+    private static final Logger log = LoggerFactory.getLogger(ProxyPayCallback.class);
     private Callback callback;
     private PostBusiness postBusiness;
 
@@ -50,17 +53,22 @@ public class ProxyPayCallback implements InvocationHandler {
     }
 
     @Override
-    public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+    public Object invoke(Object proxy, Method method, Object[] args) throws PayException {
         HttpServletRequest request = callback.getRequest();
-        Map<String, String> result = HttpKit.resolveRequestData(request);
-        String resultCode = result.get("result_code");
-        log.info("回调 resultCode: " + resultCode);
+        Map<String, Object> result = HttpKit.resolveRequestData(request);
+        String resultCode = (String) result.get("result_code");
+        log.info("\u56de\u8c03 resultCode: " + resultCode);
         if ("SUCCESS".equals(resultCode)) {
             postBusiness.successBusinessHandler(result);
         }
         if ("FAIL".equals(resultCode)) {
             postBusiness.failureBusinessHandler(result);
         }
-        return method.invoke(callback, args);
+        try {
+            return method.invoke(callback, args);
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            e.printStackTrace();
+        }
+        throw new PayException("回调异常");
     }
 }

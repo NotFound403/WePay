@@ -23,4 +23,6 @@ public interface PayType {
      * @return the api url
      */
     String getApi();
+
+    String name();
 }

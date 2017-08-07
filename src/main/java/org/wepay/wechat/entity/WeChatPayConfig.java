@@ -1,7 +1,7 @@
 package org.wepay.wechat.entity;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.wepay.common.exception.RequiredParamException;
 import org.wepay.common.pay.Decryptable;
 import org.wepay.common.pay.PayConfig;
@@ -26,7 +26,7 @@ import java.util.Properties;
 
 public class WeChatPayConfig implements PayConfig, Serializable {
     private static final long serialVersionUID = 9096980878564215572L;
-    private static final Log log = LogFactory.getLog(WeChatPayConfig.class);
+    private static final Logger log = LoggerFactory.getLogger(WeChatPayConfig.class);
     private static final String PROPERTY_PLACEHOLDER = "weChatConfig.properties";
     private static final ThreadLocal<WeChatPayConfig> WE_CHAT_PAY_CONFIG_THREAD_LOCAL = new ThreadLocal<>();
     // 微信开放平台审核通过的应用 appid 必传
@@ -78,11 +78,11 @@ public class WeChatPayConfig implements PayConfig, Serializable {
         try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(PROPERTY_PLACEHOLDER)) {
             Properties properties = new Properties();
             properties.load(inputStream);
-            this.appid = decryptable.decrypt(verifyParam(properties.getProperty("appid")));
-            this.mch_id = decryptable.decrypt(verifyParam(properties.getProperty("mch_id")));
+            this.appid = decryptable.decrypt(verifyParam(properties.getProperty("appId")));
+            this.mch_id = decryptable.decrypt(verifyParam(properties.getProperty("mchId")));
             this.secretKey = decryptable.decrypt(verifyParam(properties.getProperty("secretKey")));
-            this.notify_url = decryptable.decrypt(verifyParam(properties.getProperty("notify_url")));
-            this.sign_type = verifyParam(properties.getProperty("sign_type"));
+            this.notify_url = decryptable.decrypt(verifyParam(properties.getProperty("notifyUrl")));
+            this.sign_type = verifyParam(properties.getProperty("signType"));
         } catch (IOException e) {
             log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 读取异常", e);
         }
