@@ -57,17 +57,22 @@ public class WeChatPayService implements Payable {
             log.info("生成签名：" + sign);
             sortedMap.put("sign", sign);
             String xml = ObjectUtils.mapToXML(sortedMap);
+//            请求
             resultMap = doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
             if ("SUCCESS".equals(resultMap.get("result_code"))) {
                 Map<String, Object> params = initReRequestParams(resultMap, tradeType);
                 String signature = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(params), DEFAULT_CHARSET, secretKey);
-                params.put("sign", signature);
+                if (WeChatPayTypeEnum.APP.name().equals(tradeType)) {
+                    params.put("sign", signature);
+                }
+                if (WeChatPayTypeEnum.JSAPI.name().equals(tradeType)) {
+                    params.put("paySign", signature);
+                }
                 return params;
             }
         } catch (SignatureException | RequiredParamException e) {
             log.debug("统一下单参数处理异常", e);
         }
-
         throw new PayException("参数列表：" + resultMap);
     }
 
@@ -152,23 +157,36 @@ public class WeChatPayService implements Payable {
     }
 
     /**
-     * 第二次发请求 封装参数
+     * 第二次发请求 封装参数  主要根据不同的支付请求 进行的二次封装   没办法 微信的文档跟代码风格太烂了
      *
      * @param map
      * @param tradeType
      * @return
      */
     private Map<String, Object> initReRequestParams(Map<String, Object> map, String tradeType) {
-        Map<String, Object> sortMap = new HashMap<>();
+        Map<String, Object> result = new HashMap<>();
         //TODO 其他类型的 未实现 待补充
-        if ("APP".equals(tradeType)) {
-            map.put("appid", map.get("appid"));
-            map.put("partnerid", map.get("mch_id"));
-            map.put("prepayid", map.get("prepay_id"));
-            map.put("package", "Sign=WXPay");
-            map.put("noncestr", map.get("nonce_str"));
-            map.put("timestamp", System.currentTimeMillis());
+        Object appId = map.get("appid");
+        Object partnerId = map.get("mch_id");
+        Object prepayId = map.get("prepay_id");
+        Object nonceStr = map.get("nonce_str");
+//        APP支付
+        if (WeChatPayTypeEnum.APP.name().equals(tradeType)) {
+            result.put("appid", appId);
+            result.put("partnerid", partnerId);
+            result.put("prepayid", prepayId);
+            result.put("package", "Sign=WXPay");
+            result.put("noncestr", nonceStr);
+            result.put("timestamp", System.currentTimeMillis() / 1000);
         }
-        return sortMap;
+//        公众号内H5发起支付  公众号支付
+        if (WeChatPayTypeEnum.JSAPI.name().equals(tradeType)) {
+            result.put("appId", appId);
+            result.put("package", "prepay_id=" + prepayId);
+            result.put("nonceStr", nonceStr);
+            result.put("timeStamp", System.currentTimeMillis() / 1000);
+            result.put("signType", "MD5");
+        }
+        return result;
     }
 }

@@ -2,7 +2,6 @@ package org.wepay.common.proxy;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.Payable;
 import org.wepay.common.pay.PreBusinessService;
 
@@ -39,23 +38,15 @@ public class ProxyPayHandler implements InvocationHandler {
 
     @Override
     @SuppressWarnings("unchecked")
-    public Object invoke(Object proxy, Method method, Object[] args) throws PayException {
+    public Object invoke(Object proxy, Method method, Object[] args) {
         Object payResult = null;
         try {
             payResult = method.invoke(target, args);
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            log.debug("代异常：", e);
-        }
-        Map<String, Object> map = (Map<String, Object>) payResult;
-        String resultCode = map != null ? (String) map.get("result_code") : null;
-        if ("SUCCESS".equals(resultCode)) {
+            Map<String, Object> map = (Map<String, Object>) payResult;
             preBusinessService.preHandler(map);
-            return payResult;
+        } catch (IllegalAccessException | InvocationTargetException e) {
+            log.debug("支付代理异常：", e);
         }
-        String returnMsg = "";
-        if (map != null) {
-            returnMsg = (String) map.get("err_code_des");
-        }
-        throw new PayException(returnMsg);
+        return payResult;
     }
 }
