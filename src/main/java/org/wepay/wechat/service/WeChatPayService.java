@@ -49,6 +49,9 @@ public class WeChatPayService implements Payable {
         String tradeType = weChatPayTypeEnum.name();
         payRequestParams.setTrade_type(tradeType);
         //        密钥需要排除不然影响签名生成
+        if (!WeChatPayTypeEnum.JSAPI.name().equals(tradeType)) {
+            payRequestParams.setOpenid(null);
+        }
         payRequestParams.setSecretKey(null);
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
         Map<String, Object> resultMap = new HashMap<>();

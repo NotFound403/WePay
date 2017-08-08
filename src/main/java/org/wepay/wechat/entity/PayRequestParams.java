@@ -79,6 +79,7 @@ public class PayRequestParams implements Serializable {
         this.secretKey = payConfig.getSecretKey();
         this.notify_url = payConfig.getNotify_url();
         this.sign_type = payConfig.getSign_type();
+        this.openid = payConfig.getOpenid();
         this.spbill_create_ip = request.getRemoteAddr();
     }
 

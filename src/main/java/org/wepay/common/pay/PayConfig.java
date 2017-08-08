@@ -44,4 +44,11 @@ public interface PayConfig {
      * @return the mch id
      */
     String getMch_id();
+
+    /**
+     * Gets openid.
+     *
+     * @return the openid
+     */
+    String getOpenid();
 }
