@@ -67,7 +67,7 @@ public class ObjectUtils {
             for (PropertyDescriptor property : propertyDescriptors) {
                 String key = property.getName();
                 // 过滤class属性
-                if (!"class".equals(key)) {
+                if (!"class".equals(key) && !"secretKey".equals(key)) {
                     // 得到property对应的getter方法
                     Method getter = property.getReadMethod();
                     Object value = getter.invoke(t);
@@ -116,13 +116,7 @@ public class ObjectUtils {
      */
     public static String signatureGenerator(Map<String, Object> sortedMap, String charset, String key) throws SignatureException {
         if (sortedMap != null && !sortedMap.isEmpty()) {
-            StringBuilder stringBuilder = new StringBuilder();
-            Set<String> set = sortedMap.keySet();
-            for (String s : set) {
-                stringBuilder.append(s).append("=").append(sortedMap.get(s)).append("&");
-            }
-            stringBuilder.append("key").append("=").append(key);
-            String origin = stringBuilder.toString();
+            String origin = getParamStr(sortedMap, key);
             String sign = md5Encrypt(origin, charset);
             if (sign != null) {
                 log.debug(String.format("\u751f\u6210\u7b7e\u540d\u4e3a\uff1a%s", sign));
@@ -130,6 +124,18 @@ public class ObjectUtils {
             return sign;
         }
         throw new SignatureException("sortedMap is invalid");
+    }
+
+    private static String getParamStr(Map<String, Object> sortedMap, String key) {
+        Set<Map.Entry<String, Object>> entrySet = sortedMap.entrySet();
+        StringBuilder stringBuilder = new StringBuilder();
+        for (Map.Entry<String, Object> entry : entrySet) {
+            String k = entry.getKey();
+            Object v = entry.getValue();
+            stringBuilder.append(k).append("=").append(v).append("&");
+        }
+        stringBuilder.append("key").append("=").append(key);
+        return stringBuilder.toString();
     }
 
     /**

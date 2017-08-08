@@ -10,10 +10,13 @@ import org.wepay.common.pay.PayType;
 import org.wepay.common.pay.Payable;
 import org.wepay.common.util.HttpKit;
 import org.wepay.common.util.ObjectUtils;
+import org.wepay.common.util.QRCodeUtil;
 import org.wepay.wechat.entity.PayRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 import org.wepay.wechat.enumeration.WeChatPayTypeEnum;
 
+import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -33,6 +36,7 @@ public class WeChatPayService implements Payable {
     private static final Logger log = LoggerFactory.getLogger(WeChatPayService.class);
     private static final String DEFAULT_CHARSET = "UTF-8";
     private PayRequestParams payRequestParams;
+    private static final String QRCODE_TEMPLATE = "weixin：//wxpay/bizpayurl?sign=%s&appid=%S&mch_id=%s&product_id=%sX&time_stamp=%sX&nonce_str=%s";
 
     /**
      * Instantiates a new Pay handler.
@@ -48,11 +52,20 @@ public class WeChatPayService implements Payable {
         String secretKey = payRequestParams.getSecretKey();
         String tradeType = weChatPayTypeEnum.name();
         payRequestParams.setTrade_type(tradeType);
-        //        密钥需要排除不然影响签名生成
+
+//        如果不是公众号支付
         if (!WeChatPayTypeEnum.JSAPI.name().equals(tradeType)) {
             payRequestParams.setOpenid(null);
         }
-        payRequestParams.setSecretKey(null);
+
+     /*   if (WeChatPayTypeEnum.NATIVE.name().equals(tradeType)) {
+            String productId = payRequestParams.getProduct_id();
+            if (productId == null || "".equals(productId)) {
+                throw new PayException("扫码支付 product_id 不能使用空字符");
+            }
+        }*/
+        //todo        密钥需要排除不然影响签名生成
+//        payRequestParams.setSecretKey(null);
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
         Map<String, Object> resultMap = new HashMap<>();
         try {
@@ -65,11 +78,10 @@ public class WeChatPayService implements Payable {
             if ("SUCCESS".equals(resultMap.get("result_code"))) {
                 Map<String, Object> params = initReRequestParams(resultMap, tradeType);
                 String signature = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(params), DEFAULT_CHARSET, secretKey);
-                if (WeChatPayTypeEnum.APP.name().equals(tradeType)) {
-                    params.put("sign", signature);
-                }
                 if (WeChatPayTypeEnum.JSAPI.name().equals(tradeType)) {
                     params.put("paySign", signature);
+                } else {
+                    params.put("sign", signature);
                 }
                 return params;
             }
@@ -77,6 +89,36 @@ public class WeChatPayService implements Payable {
             log.debug("统一下单参数处理异常", e);
         }
         throw new PayException("参数列表：" + resultMap);
+    }
+
+    @Override
+    public void scanModeOne() throws PayException {
+
+
+    }
+
+    private String createQRCodeUrl() throws SignatureException {
+        String appId = payRequestParams.getAppid();
+        String mchId = payRequestParams.getMch_id();
+        String timestamp = String.valueOf(System.currentTimeMillis() / 1000);
+        String nonceStr = payRequestParams.getNonce_str();
+        String productId = payRequestParams.getProduct_id();
+        String secretKey = payRequestParams.getSecretKey();
+
+        Map<String, String> map = new HashMap<>();
+        map.put("appid", appId);
+        map.put("time_stamp", timestamp);
+        map.put("mch_id", mchId);
+        map.put("nonce_str", nonceStr);
+        map.put("product_id", productId);
+        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(map), DEFAULT_CHARSET, secretKey);
+
+        return String.format(QRCODE_TEMPLATE, sign, appId, mchId, productId, timestamp, nonceStr);
+
+    }
+
+    public void createQRCodeImage(HttpServletResponse response) throws SignatureException, IOException {
+        QRCodeUtil.encode(createQRCodeUrl(), 200, 200, "png", "", response.getOutputStream());
     }
 
     @Override
@@ -191,5 +233,15 @@ public class WeChatPayService implements Payable {
             result.put("signType", "MD5");
         }
         return result;
+    }
+
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     * @throws SignatureException the signature exception
+     */
+    public static void main(String[] args) throws SignatureException {
+
     }
 }

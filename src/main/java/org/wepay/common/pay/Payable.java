@@ -26,9 +26,14 @@ public interface Payable {
     Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum) throws PayException;
 
     /**
+     * 扫码模式一.
+     */
+    void scanModeOne() throws PayException;
+
+    /**
      * 通过订单号查询订单.
      *
-     * @param orderId    订单号  微信订单号 transaction_id    商户订单号 out_trade_no 二选一
+     * @param orderId         订单号  微信订单号 transaction_id    商户订单号 out_trade_no 二选一
      * @param orderIdTypeEnum 订单号类型
      * @return the map
      * @throws PayException the pay exception
@@ -48,7 +53,7 @@ public interface Payable {
     /**
      * 查询退款.
      *
-     * @param orderId    订单号 四选一
+     * @param orderId         订单号 四选一
      * @param orderIdTypeEnum 对应订单号的四种类型
      * @return the map
      * @throws PayException the pay exception
