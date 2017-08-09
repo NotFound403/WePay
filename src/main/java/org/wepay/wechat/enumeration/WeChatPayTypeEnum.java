@@ -33,7 +33,7 @@ public enum WeChatPayTypeEnum implements PayType {
     /**
      * H5支付.
      */
-    H5("UNAWARE"),
+    MWEB(WeChatPayTypeEnum.JSAPI.uri),
     /**
      * 微信小程序支付.
      */

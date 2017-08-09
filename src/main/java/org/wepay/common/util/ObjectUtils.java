@@ -66,7 +66,7 @@ public class ObjectUtils {
             PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
             for (PropertyDescriptor property : propertyDescriptors) {
                 String key = property.getName();
-                // 过滤class属性
+                // 过滤class属性 排序过滤掉secretKey
                 if (!"class".equals(key) && !"secretKey".equals(key)) {
                     // 得到property对应的getter方法
                     Method getter = property.getReadMethod();
@@ -96,7 +96,8 @@ public class ObjectUtils {
         for (Map.Entry<String, Object> entry : entrySet) {
             String k = entry.getKey();
             Object v = entry.getValue();
-            if (v != null) {
+//            排序过滤掉secretKey
+            if (v != null && !"secretKey".equals(k)) {
                 map.put(k, v);
             }
         }

@@ -3,6 +3,8 @@ package org.wepay.common.pay;
 import org.wepay.common.exception.PayException;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Map;
 
 /**
@@ -19,16 +21,23 @@ public interface Payable {
      * 统一下单.
      *
      * @param weChatPayTypeEnum 交易类型
+     * @param payRequestParams  the pay request params
      * @return the map
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
      */
-    Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum) throws PayException;
+    Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum, Params payRequestParams) throws PayException;
 
     /**
      * 扫码模式一.
+     *
+     * @param request               the request
+     * @param response              the response
+     * @param nativeBusinessWrapper the native business wrapper
+     * @return the map
+     * @throws PayException the pay exception
      */
-    void scanModeOne() throws PayException;
+    Map<String, Object> nativeModeOne(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException;
 
     /**
      * 通过订单号查询订单.

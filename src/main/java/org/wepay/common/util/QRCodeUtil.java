@@ -4,8 +4,11 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
 import com.google.zxing.WriterException;
+import com.google.zxing.client.j2se.MatrixToImageWriter;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -15,8 +18,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.EnumMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -25,12 +27,13 @@ import java.util.Map;
  *
  * @author Dax
  * @version v1.0.0
- * @since 2017/8/8  13:21
+ * @since 2017 /8/8  13:21
  */
 
 
 public class QRCodeUtil {
-    // 图片宽度
+    private static final Logger log = LoggerFactory.getLogger(QRCodeUtil.class);
+    // logo图片宽度 高度
     private static final int IMAGE_WIDTH = 50;
     private static final int IMAGE_HEIGHT = 50;
     private static final int IMAGE_HALF_WIDTH = IMAGE_WIDTH / 2;
@@ -39,13 +42,46 @@ public class QRCodeUtil {
     // 二维码写码器
     private static MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
 
-    public static void encode(String content, int width, int height, String format,
-                              String srcImagePath, OutputStream out) {
+    /**
+     * 生成带logo的二维码.
+     *
+     * @param content      二维码内容
+     * @param width        图像宽度
+     * @param height       图像高度
+     * @param format       图像类型
+     * @param srcImagePath logo图片路径
+     * @param out          输出流
+     */
+    public static void encode(String content, int width, int height, String format, String srcImagePath, OutputStream out) {
         try {
             ImageIO.write(genBarcode(content, width, height, srcImagePath), format, out);
         } catch (IOException | WriterException e) {
-            e.printStackTrace();
+            log.debug("生成二维码失败：", e);
         }
+    }
+
+    /**
+     * 生成不带logo的二维码.
+     *
+     * @param content 二维码内容
+     * @param width   图像宽度
+     * @param height  图像高度
+     * @param format  图像类型
+     * @param out     输出流
+     */
+    public static void encode(String content, int width, int height, String format, OutputStream out) {
+        EnumMap<EncodeHintType, Object> hints = new EnumMap<>(EncodeHintType.class);
+        hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
+        hints.put(EncodeHintType.MARGIN, 1);
+        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
+
+        try {
+            BitMatrix bitMatrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
+            MatrixToImageWriter.writeToStream(bitMatrix, format, out);
+        } catch (WriterException | IOException e) {
+            log.debug("生成二维码失败：", e);
+        }
+
     }
 
     private static BufferedImage genBarcode(String content, int width, int height, String srcImagePath) throws WriterException, IOException {
@@ -57,13 +93,11 @@ public class QRCodeUtil {
                 srcPixels[i][j] = scaleImage.getRGB(i, j);
             }
         }
-
-        Map<EncodeHintType, Object> hint = new HashMap<>();
+        EnumMap<EncodeHintType, Object> hint = new EnumMap<>(EncodeHintType.class);
         hint.put(EncodeHintType.CHARACTER_SET, "utf-8");
         hint.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
         // 生成二维码
-        BitMatrix matrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE,
-                width, height, hint);
+        BitMatrix matrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hint);
 
         // 二维矩阵转为一维像素数组
         int halfW = matrix.getWidth() / 2;

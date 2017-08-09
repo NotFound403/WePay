@@ -1,9 +1,8 @@
 package org.wepay.wechat.entity;
 
-import org.wepay.common.pay.PayConfig;
+import org.wepay.common.pay.Params;
 import org.wepay.common.util.ObjectUtils;
 
-import javax.servlet.http.HttpServletRequest;
 import java.io.Serializable;
 
 /**
@@ -17,7 +16,7 @@ import java.io.Serializable;
  */
 
 
-public class PayRequestParams implements Serializable {
+public class PayRequestParams implements Params, Serializable {
     private static final long serialVersionUID = 8926973745023186819L;
     // 微信开放平台审核通过的应用APPID 必传
     private String appid;
@@ -68,21 +67,40 @@ public class PayRequestParams implements Serializable {
     // 扫码支付必填  设备读取用户微信中的条码或者二维码信息
     private String auth_code;
 
-    /**
-     * Instantiates a new Pay request params.
-     *
-     * @param payConfig the pay config
-     */
-    public PayRequestParams(PayConfig payConfig, HttpServletRequest request) {
-        this.appid = payConfig.getAppid();
-        this.mch_id = payConfig.getMch_id();
-        this.secretKey = payConfig.getSecretKey();
-        this.notify_url = payConfig.getNotify_url();
-        this.sign_type = payConfig.getSign_type();
-        this.openid = payConfig.getOpenid();
-        this.spbill_create_ip = request.getRemoteAddr();
+    @Override
+    public void setAppid(String appId) {
+        this.appid = appId;
     }
 
+    @Override
+    public void setMch_id(String mchId) {
+        this.mch_id = mchId;
+    }
+
+    @Override
+    public void setNotify_url(String notifyUrl) {
+        this.notify_url = notifyUrl;
+    }
+
+    @Override
+    public void setSign_type(String signType) {
+        this.sign_type = signType;
+    }
+
+    @Override
+    public void setTrade_type(String tradeType) {
+        this.trade_type = tradeType;
+    }
+
+    @Override
+    public void setOpenid(String openId) {
+        this.openid = openId;
+    }
+
+    @Override
+    public void setProduct_id(String productId) {
+        this.product_id = productId;
+    }
     /**
      * Gets appid.
      *
@@ -146,6 +164,14 @@ public class PayRequestParams implements Serializable {
         return nonce_str;
     }
 
+    /**
+     * Sets nonce str.
+     *
+     * @param nonceStr the nonce str
+     */
+    public void setNonce_str(String nonceStr) {
+        this.nonce_str = nonceStr;
+    }
 
     /**
      * Gets sign.
@@ -213,10 +239,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets out trade no.
      *
-     * @param out_trade_no the out trade no
+     * @param outTradeNo the out trade no
      */
-    public void setOut_trade_no(String out_trade_no) {
-        this.out_trade_no = out_trade_no;
+    public void setOut_trade_no(String outTradeNo) {
+        this.out_trade_no = outTradeNo;
     }
 
     /**
@@ -231,10 +257,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets fee type.
      *
-     * @param fee_type the fee type
+     * @param feeType the fee type
      */
-    public void setFee_type(String fee_type) {
-        this.fee_type = fee_type;
+    public void setFee_type(String feeType) {
+        this.fee_type = feeType;
     }
 
     /**
@@ -249,10 +275,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets total fee.
      *
-     * @param total_fee the total fee
+     * @param totalFee the total fee
      */
-    public void setTotal_fee(int total_fee) {
-        this.total_fee = total_fee;
+    public void setTotal_fee(int totalFee) {
+        this.total_fee = totalFee;
     }
 
     /**
@@ -265,21 +291,21 @@ public class PayRequestParams implements Serializable {
     }
 
     /**
+     * Sets spbill create ip.
+     *
+     * @param spbillCreateIp the spbill create ip
+     */
+    public void setSpbill_create_ip(String spbillCreateIp) {
+        this.spbill_create_ip = spbillCreateIp;
+    }
+
+    /**
      * Gets trade type.
      *
      * @return the trade type
      */
     public String getTrade_type() {
         return trade_type;
-    }
-
-    /**
-     * Sets trade type.
-     *
-     * @param trade_type the trade type
-     */
-    public void setTrade_type(String trade_type) {
-        this.trade_type = trade_type;
     }
 
     /**
@@ -294,10 +320,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets device info.
      *
-     * @param device_info the device info
+     * @param deviceInfo the device info
      */
-    public void setDevice_info(String device_info) {
-        this.device_info = device_info;
+    public void setDevice_info(String deviceInfo) {
+        this.device_info = deviceInfo;
     }
 
     /**
@@ -330,10 +356,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets time start.
      *
-     * @param time_start the time start
+     * @param timeStart the time start
      */
-    public void setTime_start(String time_start) {
-        this.time_start = time_start;
+    public void setTime_start(String timeStart) {
+        this.time_start = timeStart;
     }
 
     /**
@@ -348,10 +374,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets time expire.
      *
-     * @param time_expire the time expire
+     * @param timeExpire the time expire
      */
-    public void setTime_expire(String time_expire) {
-        this.time_expire = time_expire;
+    public void setTime_expire(String timeExpire) {
+        this.time_expire = timeExpire;
     }
 
     /**
@@ -366,10 +392,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets goods tag.
      *
-     * @param goods_tag the goods tag
+     * @param goodsTag the goods tag
      */
-    public void setGoods_tag(String goods_tag) {
-        this.goods_tag = goods_tag;
+    public void setGoods_tag(String goodsTag) {
+        this.goods_tag = goodsTag;
     }
 
     /**
@@ -384,10 +410,10 @@ public class PayRequestParams implements Serializable {
     /**
      * Sets limit pay.
      *
-     * @param limit_pay the limit pay
+     * @param limitPay the limit pay
      */
-    public void setLimit_pay(String limit_pay) {
-        this.limit_pay = limit_pay;
+    public void setLimit_pay(String limitPay) {
+        this.limit_pay = limitPay;
     }
 
     /**
@@ -397,6 +423,50 @@ public class PayRequestParams implements Serializable {
      */
     public String getScene_info() {
         return scene_info;
+    }
+
+    /**
+     * Sets scene info.
+     *
+     * @param sceneInfo the scene info
+     */
+    public void setScene_info(String sceneInfo) {
+        this.scene_info = sceneInfo;
+    }
+
+    /**
+     * Gets product id.
+     *
+     * @return the product id
+     */
+    public String getProduct_id() {
+        return product_id;
+    }
+    /**
+     * Gets openid.
+     *
+     * @return the openid
+     */
+    public String getOpenid() {
+        return openid;
+    }
+
+    /**
+     * Gets auth code.
+     *
+     * @return the auth code
+     */
+    public String getAuth_code() {
+        return auth_code;
+    }
+
+    /**
+     * Sets auth code.
+     *
+     * @param authCode the auth code
+     */
+    public void setAuth_code(String authCode) {
+        this.auth_code = authCode;
     }
 
     /**
@@ -410,47 +480,4 @@ public class PayRequestParams implements Serializable {
         this.scene_info = ObjectUtils.beanToJson(t);
     }
 
-    /**
-     * Gets product id.
-     *
-     * @return the product id
-     */
-    public String getProduct_id() {
-        return product_id;
-    }
-
-    /**
-     * Sets product id.
-     *
-     * @param product_id the product id
-     */
-    public void setProduct_id(String product_id) {
-        this.product_id = product_id;
-    }
-
-    /**
-     * Gets openid.
-     *
-     * @return the openid
-     */
-    public String getOpenid() {
-        return openid;
-    }
-
-    /**
-     * Sets openid.
-     *
-     * @param openid the openid
-     */
-    public void setOpenid(String openid) {
-        this.openid = openid;
-    }
-
-    public String getAuth_code() {
-        return auth_code;
-    }
-
-    public void setAuth_code(String auth_code) {
-        this.auth_code = auth_code;
-    }
 }
