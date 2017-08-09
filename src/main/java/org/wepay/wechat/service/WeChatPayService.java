@@ -108,6 +108,22 @@ public class WeChatPayService implements Payable {
         return result;
     }
 
+    @Override
+    public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
+        Map<String, Object> result = unifiedOrder(WeChatPayTypeEnum.NATIVE, payRequestParams);
+        String codeUrl = (String) result.get("code_url");
+        try {
+            QRCodeUtil.encode(codeUrl, 200, 200, "png", response.getOutputStream());
+        } catch (IOException e) {
+            log.debug("二维码转换异常：", e);
+        }
+        return result;
+    }
+
+    @Override
+    public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
+        return unifiedOrder(WeChatPayTypeEnum.MWEB, payRequestParams);
+    }
     private String createQRCodeUrl(String productId) {
         String appId = weChatPayConfig.getAppid();
         String mchId = weChatPayConfig.getMch_id();
@@ -264,12 +280,23 @@ public class WeChatPayService implements Payable {
         if (WeChatPayTypeEnum.NATIVE.name().equals(tradeType)) {
             Object returnCode = map.get("return_code");
             Object resultCode = map.get("result_code");
+            Object codeUrl = map.get("code_url");
             result.put("return_code", returnCode);
             result.put("appid", appId);
             result.put("mch_id", partnerId);
             result.put("nonce_str", nonceStr);
             result.put("prepay_id", prepayId);
             result.put("result_code", resultCode);
+            result.put("code_url", codeUrl);
+        }
+        if (WeChatPayTypeEnum.MWEB.name().equals(tradeType)) {
+            Object resultCode = map.get("result_code");
+            Object mwebUrl = map.get("mweb_url");
+            result.put("appid", appId);
+            result.put("mch_id", partnerId);
+            result.put("nonce_str", nonceStr);
+            result.put("result_code", resultCode);
+            result.put("mweb_url", mwebUrl);
         }
         return result;
     }

@@ -39,6 +39,26 @@ public interface Payable {
      */
     Map<String, Object> nativeModeOne(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException;
 
+
+    /**
+     * 扫码模式二.
+     *
+     * @param payRequestParams the pay request params
+     * @param response         the response
+     * @return the map
+     * @throws PayException the pay exception
+     */
+    Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException;
+
+    /**
+     * H5支付.
+     *
+     * @param payRequestParams the pay request params
+     * @return the map
+     * @throws PayException the pay exception
+     */
+    Map<String, Object> payByH5(Params payRequestParams) throws PayException;
+
     /**
      * 通过订单号查询订单.
      *
