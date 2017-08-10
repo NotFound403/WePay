@@ -18,10 +18,7 @@ import java.io.BufferedOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
-import java.util.Comparator;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.*;
 
 import static org.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
 
@@ -86,7 +83,10 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> payByJsApi(Params params) throws PayException {
+    public Map<String, Object> payByJsApi(Params params) throws PayException, RequiredParamException {
+        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
+        List<String> fieldNames = Arrays.asList(names);
+        ObjectUtils.checkParams(params, fieldNames);
         params.setTrade_type(WeChatPayTypeEnum.JSAPI);
         Map<String, Object> resultMap = unifiedOrder(params);
         Object appId = resultMap.get("appid");
@@ -106,9 +106,12 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> payByApp(Params params) throws PayException {
-        params.setTrade_type(WeChatPayTypeEnum.APP);
-        Map<String, Object> resultMap = unifiedOrder(params);
+    public Map<String, Object> payByApp(Params payRequestParams) throws PayException, RequiredParamException {
+        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
+        List<String> fieldNames = Arrays.asList(names);
+        ObjectUtils.checkParams(payRequestParams, fieldNames);
+        payRequestParams.setTrade_type(WeChatPayTypeEnum.APP);
+        Map<String, Object> resultMap = unifiedOrder(payRequestParams);
 
         Object appId = resultMap.get("appid");
         Object prepayId = resultMap.get("prepay_id");
@@ -131,11 +134,15 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException {
+    public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException, RequiredParamException {
         Map<String, Object> params = HttpKit.resolveRequestData(request);
         String productId = (String) params.get("product_id");
         Params payRequestParams = nativeBusinessWrapper.getParams(productId);
         payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
+        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
+        List<String> fieldNames = Arrays.asList(names);
+        ObjectUtils.checkParams(params, fieldNames);
+
         Map<String, Object> map = unifiedOrder(payRequestParams);
         Object returnCode = map.get("return_code");
         Object resultCode = map.get("result_code");
@@ -162,8 +169,12 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
+    public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException, RequiredParamException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
+
+        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
+        List<String> fieldNames = Arrays.asList(names);
+        ObjectUtils.checkParams(payRequestParams, fieldNames);
         Map<String, Object> result = unifiedOrder(payRequestParams);
         String codeUrl = (String) result.get("code_url");
         try {
@@ -175,8 +186,12 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
+    public Map<String, Object> payByH5(Params payRequestParams) throws PayException, RequiredParamException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.MWEB);
+        //TODO scene_info 未完善
+        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "scene_info"};
+        List<String> fieldNames = Arrays.asList(names);
+        ObjectUtils.checkParams(payRequestParams, fieldNames);
         Map<String, Object> map = unifiedOrder(payRequestParams);
         Object appId = map.get("appid");
         Object partnerId = map.get("mch_id");

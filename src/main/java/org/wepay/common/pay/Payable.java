@@ -1,6 +1,7 @@
 package org.wepay.common.pay;
 
 import org.wepay.common.exception.PayException;
+import org.wepay.common.exception.RequiredParamException;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 
 import javax.servlet.http.HttpServletRequest;
@@ -26,16 +27,16 @@ public interface Payable {
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
      */
-    Map<String, Object> payByJsApi(Params params) throws PayException;
+    Map<String, Object> payByJsApi(Params params) throws PayException, RequiredParamException;
 
     /**
      * APP支付.
      *
-     * @param params 业务参数   基础参数自动注入
+     * @param payRequestParams 业务参数   基础参数自动注入
      * @return the map
      * @throws PayException the pay exception
      */
-    Map<String, Object> payByApp(Params params) throws PayException;
+    Map<String, Object> payByApp(Params payRequestParams) throws PayException, RequiredParamException;
 
     /**
      * 扫码模式一.
@@ -48,7 +49,7 @@ public interface Payable {
      * @return the map
      * @throws PayException the pay exception
      */
-    Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException;
+    Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException, RequiredParamException;
 
     /**
      * 扫码模式二.
@@ -58,7 +59,7 @@ public interface Payable {
      * @return the map
      * @throws PayException the pay exception
      */
-    Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException;
+    Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException, RequiredParamException;
 
     /**
      * H5支付.
@@ -67,7 +68,7 @@ public interface Payable {
      * @return the map
      * @throws PayException the pay exception
      */
-    Map<String, Object> payByH5(Params payRequestParams) throws PayException;
+    Map<String, Object> payByH5(Params payRequestParams) throws PayException, RequiredParamException;
     /**
      * 通过订单号查询订单.
      *
