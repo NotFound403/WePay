@@ -31,19 +31,13 @@ public interface Params {
      */
     void setNotify_url(String notifyUrl);
 
+
     /**
      * Sets sign type.
      *
      * @param signType the sign type
      */
     void setSign_type(String signType);
-
-    /**
-     * Sets trade type.
-     *
-     * @param tradeType the trade type
-     */
-    void setTrade_type(String tradeType);
 
     /**
      * Sets openid.
@@ -59,4 +53,17 @@ public interface Params {
      */
     void setProduct_id(String productId);
 
+    /**
+     * Gets trade type.
+     *
+     * @return the trade type
+     */
+    String getTrade_type();
+
+    /**
+     * Sets trade type.
+     *
+     * @param payType the pay type
+     */
+    void setTrade_type(PayType payType);
 }

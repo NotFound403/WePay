@@ -11,7 +11,6 @@ import org.dom4j.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.wepay.common.exception.RequiredParamException;
-import org.wepay.common.exception.SignatureException;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
@@ -36,6 +35,7 @@ import java.util.*;
 
 
 public class ObjectUtils {
+    public static final String DEFAULT_CHARSET = "UTF-8";
     private static final Logger log = LoggerFactory.getLogger(ObjectUtils.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
@@ -113,18 +113,10 @@ public class ObjectUtils {
      * @param charset   the charset
      * @param key       the key
      * @return the string
-     * @throws SignatureException the signature exception
      */
-    public static String signatureGenerator(Map<String, Object> sortedMap, String charset, String key) throws SignatureException {
-        if (sortedMap != null && !sortedMap.isEmpty()) {
-            String origin = getParamStr(sortedMap, key);
-            String sign = md5Encrypt(origin, charset);
-            if (sign != null) {
-                log.debug(String.format("\u751f\u6210\u7b7e\u540d\u4e3a\uff1a%s", sign));
-            }
-            return sign;
-        }
-        throw new SignatureException("sortedMap is invalid");
+    public static String signatureGenerator(Map<String, Object> sortedMap, String charset, String key) {
+        String origin = getParamStr(sortedMap, key);
+        return md5Encrypt(origin, charset);
     }
 
     private static String getParamStr(Map<String, Object> sortedMap, String key) {
@@ -169,7 +161,7 @@ public class ObjectUtils {
             SecretKeySpec skeySpec = new SecretKeySpec(AES_KEY, "AES");
             Cipher cipher = Cipher.getInstance("AES");//创建密码器
             cipher.init(1, skeySpec);// 初始化
-            byte[] encrypted = cipher.doFinal(original.getBytes("utf-8"));//加密
+            byte[] encrypted = cipher.doFinal(original.getBytes(DEFAULT_CHARSET));//加密
 
             //字节转换成十六进制的字符串
             cipherText = byteArrayToHexString(encrypted).toUpperCase();
@@ -186,7 +178,7 @@ public class ObjectUtils {
             cipher.init(2, skeySpec);
             byte[] encrypted1 = hex2byte(original);
             byte[] bytes = cipher.doFinal(encrypted1);
-            return new String(bytes, "utf-8");
+            return new String(bytes, DEFAULT_CHARSET);
         } catch (Exception e) {
             log.debug("解密错误：", e);
         }
@@ -310,6 +302,12 @@ public class ObjectUtils {
             log.debug("MD5加密异常", e);
         }
         return null;
+    }
+
+    public static <M extends Map<String, Object>> boolean verifySignature(M m, String secretKey) {
+        String originSign = (String) m.remove("sign");
+        String sign = signatureGenerator(ObjectUtils.paramsSorter(m), DEFAULT_CHARSET, secretKey);
+        return originSign.equals(sign);
     }
 
     /**

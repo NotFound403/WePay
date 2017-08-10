@@ -1,6 +1,7 @@
 package org.wepay.wechat.entity;
 
 import org.wepay.common.pay.Params;
+import org.wepay.common.pay.PayType;
 import org.wepay.common.util.ObjectUtils;
 
 import java.io.Serializable;
@@ -87,10 +88,7 @@ public class PayRequestParams implements Params, Serializable {
         this.sign_type = signType;
     }
 
-    @Override
-    public void setTrade_type(String tradeType) {
-        this.trade_type = tradeType;
-    }
+
 
     @Override
     public void setOpenid(String openId) {
@@ -306,6 +304,11 @@ public class PayRequestParams implements Params, Serializable {
      */
     public String getTrade_type() {
         return trade_type;
+    }
+
+    @Override
+    public void setTrade_type(PayType payType) {
+
     }
 
     /**

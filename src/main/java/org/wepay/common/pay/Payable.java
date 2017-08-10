@@ -17,28 +17,38 @@ import java.util.Map;
 
 
 public interface Payable {
+
     /**
-     * 统一下单.
+     * 公众号内H5发起支付  公众号支付.
      *
-     * @param weChatPayTypeEnum 交易类型
-     * @param payRequestParams  the pay request params
+     * @param params  业务参数   基础参数自动注入
      * @return the map
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
      */
-    Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum, Params payRequestParams) throws PayException;
+    Map<String, Object> payByJsApi(Params params) throws PayException;
+
+    /**
+     * APP支付.
+     *
+     * @param params 业务参数   基础参数自动注入
+     * @return the map
+     * @throws PayException the pay exception
+     */
+    Map<String, Object> payByApp(Params params) throws PayException;
 
     /**
      * 扫码模式一.
      *
+     * 适用场景自动售卖机 等   此为第一次回调配置  用于生成订单 调用统一支付     统一支付需要配置第二次回调
+     *
      * @param request               the request
      * @param response              the response
-     * @param nativeBusinessWrapper the native business wrapper
+     * @param nativeBusinessWrapper  业务处理  主要通过product_id 获取业务信息封装成Params 类型的参数
      * @return the map
      * @throws PayException the pay exception
      */
-    Map<String, Object> nativeModeOne(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException;
-
+    Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException;
 
     /**
      * 扫码模式二.
@@ -58,7 +68,6 @@ public interface Payable {
      * @throws PayException the pay exception
      */
     Map<String, Object> payByH5(Params payRequestParams) throws PayException;
-
     /**
      * 通过订单号查询订单.
      *

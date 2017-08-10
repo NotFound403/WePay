@@ -5,12 +5,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.wepay.common.exception.PayException;
 import org.wepay.common.exception.RequiredParamException;
-import org.wepay.common.exception.SignatureException;
 import org.wepay.common.pay.*;
 import org.wepay.common.util.HttpKit;
 import org.wepay.common.util.ObjectUtils;
 import org.wepay.common.util.QRCodeUtil;
-import org.wepay.wechat.entity.PayRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 import org.wepay.wechat.enumeration.WeChatPayTypeEnum;
 
@@ -25,6 +23,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
+import static org.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -36,7 +36,6 @@ import java.util.TreeMap;
 
 public class WeChatPayService implements Payable {
     private static final Logger log = LoggerFactory.getLogger(WeChatPayService.class);
-    private static final String DEFAULT_CHARSET = "UTF-8";
     private static final String QR_CODE_TEMPLATE = "weixin：//wxpay/bizpayurl?sign=%s&appid=%s&mch_id=%s&product_id=%s&time_stamp=%s&nonce_str=%s";
     private PayConfig weChatPayConfig;
 
@@ -49,54 +48,109 @@ public class WeChatPayService implements Payable {
         this.weChatPayConfig = weChatPayConfig;
     }
 
-    @Override
-    public Map<String, Object> unifiedOrder(PayType weChatPayTypeEnum, Params payRequestParams) throws PayException {
+    /**
+     * 统一下单.
+     * 相关支付方式调用 返回值  如果有返回值 说明 result_code  为 true     后续不需要判断是否业务处理成功
+     *
+     * @param payRequestParams the pay request params
+     * @return the map
+     * @throws PayException the pay exception
+     * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
+     */
+    private Map<String, Object> unifiedOrder(Params payRequestParams) throws PayException {
         payRequestParams.setAppid(weChatPayConfig.getAppid());
         payRequestParams.setMch_id(weChatPayConfig.getMch_id());
         payRequestParams.setNotify_url(weChatPayConfig.getNotify_url());
         payRequestParams.setSign_type(weChatPayConfig.getSign_type());
-        String secretKey = weChatPayConfig.getSecretKey();
-        String tradeType = weChatPayTypeEnum.name();
-        payRequestParams.setTrade_type(tradeType);
         payRequestParams.setOpenid(weChatPayConfig.getOpenid());
+
+        String secretKey = weChatPayConfig.getSecretKey();
+        String tradeType = payRequestParams.getTrade_type();
+
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
+        String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
+        sortedMap.put("sign", sign);
         Map<String, Object> resultMap = new HashMap<>();
         try {
-            String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
-            log.info("生成签名：" + sign);
-            sortedMap.put("sign", sign);
             String xml = ObjectUtils.mapToXML(sortedMap);
-            resultMap = doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
-            if ("SUCCESS".equals(resultMap.get("result_code"))) {
-                Map<String, Object> params = initReRequestParams(resultMap, tradeType);
-                String signature = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(params), DEFAULT_CHARSET, secretKey);
-                if (WeChatPayTypeEnum.JSAPI.name().equals(tradeType)) {
-                    params.put("paySign", signature);
-                } else {
-                    params.put("sign", signature);
-                }
-                return params;
+            resultMap = doWeChatPayRequest(WeChatPayTypeEnum.valueOf(tradeType).getApi(), xml);
+            boolean flag = ObjectUtils.verifySignature(resultMap, secretKey);
+            if ("SUCCESS".equals(resultMap.get("result_code")) && flag) {
+                resultMap.put("secretKey", secretKey);
+                return resultMap;
             }
-        } catch (SignatureException | RequiredParamException e) {
+        } catch (RequiredParamException e) {
             log.debug("统一下单参数处理异常", e);
         }
         throw new PayException("参数列表：" + resultMap);
     }
 
-    /**
-     * Native mode one.
-     *
-     * @param request               the request
-     * @param response              the response
-     * @param nativeBusinessWrapper the native business wrapper
-     * @throws PayException the pay exception
-     */
     @Override
-    public Map<String, Object> nativeModeOne(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException {
+    public Map<String, Object> payByJsApi(Params params) throws PayException {
+        params.setTrade_type(WeChatPayTypeEnum.JSAPI);
+        Map<String, Object> resultMap = unifiedOrder(params);
+        Object appId = resultMap.get("appid");
+        Object prepayId = resultMap.get("prepay_id");
+        Object nonceStr = resultMap.get("nonce_str");
+        String secretKey = (String) resultMap.get("secretKey");
+
+        Map<String, Object> returnMap = new HashMap<>();
+        returnMap.put("appId", appId);
+        returnMap.put("package", "prepay_id=" + prepayId);
+        returnMap.put("nonceStr", nonceStr);
+        returnMap.put("timeStamp", System.currentTimeMillis() / 1000);
+        returnMap.put("signType", "MD5");
+        String paySign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), DEFAULT_CHARSET, secretKey);
+        returnMap.put("paySign", paySign);
+        return returnMap;
+    }
+
+    @Override
+    public Map<String, Object> payByApp(Params params) throws PayException {
+        params.setTrade_type(WeChatPayTypeEnum.APP);
+        Map<String, Object> resultMap = unifiedOrder(params);
+
+        Object appId = resultMap.get("appid");
+        Object prepayId = resultMap.get("prepay_id");
+        Object nonceStr = resultMap.get("nonce_str");
+        Object partnerId = resultMap.get("mch_id");
+        String secretKey = (String) resultMap.get("secretKey");
+
+        Map<String, Object> returnMap = new HashMap<>();
+
+        returnMap.put("appid", appId);
+        returnMap.put("partnerid", partnerId);
+        returnMap.put("prepayid", prepayId);
+        returnMap.put("package", "Sign=WXPay");
+        returnMap.put("noncestr", nonceStr);
+        returnMap.put("timestamp", System.currentTimeMillis() / 1000);
+
+        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), DEFAULT_CHARSET, secretKey);
+        returnMap.put("sign", sign);
+        return returnMap;
+    }
+
+    @Override
+    public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException {
         Map<String, Object> params = HttpKit.resolveRequestData(request);
         String productId = (String) params.get("product_id");
-        PayRequestParams payRequestParams = nativeBusinessWrapper.getParams(productId);
-        Map<String, Object> result = unifiedOrder(WeChatPayTypeEnum.NATIVE, payRequestParams);
+        Params payRequestParams = nativeBusinessWrapper.getParams(productId);
+        payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
+        Map<String, Object> map = unifiedOrder(payRequestParams);
+        Object returnCode = map.get("return_code");
+        Object resultCode = map.get("result_code");
+        Object appId = map.get("appid");
+        Object partnerId = map.get("mch_id");
+        Object prepayId = map.get("prepay_id");
+        Object nonceStr = map.get("nonce_str");
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("return_code", returnCode);
+        result.put("appid", appId);
+        result.put("mch_id", partnerId);
+        result.put("nonce_str", nonceStr);
+        result.put("prepay_id", prepayId);
+        result.put("result_code", resultCode);
         try (BufferedOutputStream out = new BufferedOutputStream(response.getOutputStream())) {
             String xml = ObjectUtils.mapToXML(result);
             out.write(xml.getBytes());
@@ -104,13 +158,13 @@ public class WeChatPayService implements Payable {
         } catch (RequiredParamException | IOException e) {
             log.debug("扫码支付模式一失败：", e);
         }
-        result.put("product_id", productId);
         return result;
     }
 
     @Override
     public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
-        Map<String, Object> result = unifiedOrder(WeChatPayTypeEnum.NATIVE, payRequestParams);
+        payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
+        Map<String, Object> result = unifiedOrder(payRequestParams);
         String codeUrl = (String) result.get("code_url");
         try {
             QRCodeUtil.encode(codeUrl, 200, 200, "png", response.getOutputStream());
@@ -122,8 +176,29 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
-        return unifiedOrder(WeChatPayTypeEnum.MWEB, payRequestParams);
+        payRequestParams.setTrade_type(WeChatPayTypeEnum.MWEB);
+        Map<String, Object> map = unifiedOrder(payRequestParams);
+        Object appId = map.get("appid");
+        Object partnerId = map.get("mch_id");
+        Object resultCode = map.get("result_code");
+        Object mwebUrl = map.get("mweb_url");
+        Object nonceStr = map.get("nonce_str");
+
+        Map<String, Object> result = new HashMap<>();
+        result.put("appid", appId);
+        result.put("mch_id", partnerId);
+        result.put("nonce_str", nonceStr);
+        result.put("result_code", resultCode);
+        result.put("mweb_url", mwebUrl);
+        return result;
     }
+
+    /**
+     * 生成二维码编码 用于扫码支付模式一
+     *
+     * @param productId 商品编号  此id 是商户端生成   用于标识该次商品交易的商品id  并不按照商品种类来规定
+     * @return 规定格式的二维码编码 用于后续二维码的生成
+     */
     private String createQRCodeUrl(String productId) {
         String appId = weChatPayConfig.getAppid();
         String mchId = weChatPayConfig.getMch_id();
@@ -136,21 +211,16 @@ public class WeChatPayService implements Payable {
         map.put("mch_id", mchId);
         map.put("nonce_str", nonceStr);
         map.put("product_id", productId);
-        String sign = null;
-        try {
-            sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(map), DEFAULT_CHARSET, secretKey);
-        } catch (SignatureException e) {
-            log.debug("生成签名异常: ", e);
-        }
+        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(map), DEFAULT_CHARSET, secretKey);
         return String.format(QR_CODE_TEMPLATE, sign, appId, mchId, productId, timestamp, nonceStr);
     }
 
     /**
      * 生成带logo的支付二维码.
      *
-     * @param out       the out
-     * @param logoPath  the logo path
-     * @param productId the product id
+     * @param out       二维码输出流
+     * @param logoPath  logo的路径
+     * @param productId 商品编号
      */
     public void createQRCodeImage(OutputStream out, String logoPath, String productId) {
         QRCodeUtil.encode(createQRCodeUrl(productId), 200, 200, "png", logoPath, out);
@@ -159,8 +229,8 @@ public class WeChatPayService implements Payable {
     /**
      * 生成不带logo的支付二维码.
      *
-     * @param out       the out
-     * @param productId the product id
+     * @param out       二维码输出流
+     * @param productId 商品编号
      */
     public void createQRCodeImage(OutputStream out, String productId) {
         QRCodeUtil.encode(createQRCodeUrl(productId), 200, 200, "png", out);
@@ -168,6 +238,9 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
+        if (OrderIdTypeEnum.OUT_REFUND_NO.name().equals(orderIdTypeEnum.name()) || OrderIdTypeEnum.REFUND_ID.name().equals(orderIdTypeEnum.name())) {
+            throw new PayException("订单编号类型不匹配");
+        }
         return orderHandler(WeChatPayTypeEnum.ORDER_QUERY, orderId, orderIdTypeEnum);
     }
 
@@ -213,12 +286,11 @@ public class WeChatPayService implements Payable {
         map.put("mch_id", mchId);
         map.put(orderIdTypeEnum.name().toLowerCase(), orderId);
         String xml = null;
+        String sign = ObjectUtils.signatureGenerator(map, DEFAULT_CHARSET, secretKey);
+        map.put("sign", sign);
         try {
-            String sign = ObjectUtils.signatureGenerator(map, DEFAULT_CHARSET, secretKey);
-            log.info(String.format("生成签名：%s", sign));
-            map.put("sign", sign);
             xml = ObjectUtils.mapToXML(map);
-        } catch (SignatureException | RequiredParamException e) {
+        } catch (RequiredParamException e) {
             log.debug("包装xml异常：", e);
         }
         return xml;
@@ -244,60 +316,5 @@ public class WeChatPayService implements Payable {
             resultMap = ObjectUtils.xmlToMap(responseXml);
         }
         return resultMap;
-    }
-
-    /**
-     * 第二次发请求 封装参数  主要根据不同的支付请求 进行的二次封装   没办法 微信的文档跟代码风格太烂了
-     *
-     * @param map
-     * @param tradeType
-     * @return
-     */
-    private Map<String, Object> initReRequestParams(Map<String, Object> map, String tradeType) {
-        Map<String, Object> result = new HashMap<>();
-
-        Object appId = map.get("appid");
-        Object partnerId = map.get("mch_id");
-        Object prepayId = map.get("prepay_id");
-        Object nonceStr = map.get("nonce_str");
-//        APP支付
-        if (WeChatPayTypeEnum.APP.name().equals(tradeType)) {
-            result.put("appid", appId);
-            result.put("partnerid", partnerId);
-            result.put("prepayid", prepayId);
-            result.put("package", "Sign=WXPay");
-            result.put("noncestr", nonceStr);
-            result.put("timestamp", System.currentTimeMillis() / 1000);
-        }
-//        公众号内H5发起支付  公众号支付
-        if (WeChatPayTypeEnum.JSAPI.name().equals(tradeType)) {
-            result.put("appId", appId);
-            result.put("package", "prepay_id=" + prepayId);
-            result.put("nonceStr", nonceStr);
-            result.put("timeStamp", System.currentTimeMillis() / 1000);
-            result.put("signType", "MD5");
-        }
-        if (WeChatPayTypeEnum.NATIVE.name().equals(tradeType)) {
-            Object returnCode = map.get("return_code");
-            Object resultCode = map.get("result_code");
-            Object codeUrl = map.get("code_url");
-            result.put("return_code", returnCode);
-            result.put("appid", appId);
-            result.put("mch_id", partnerId);
-            result.put("nonce_str", nonceStr);
-            result.put("prepay_id", prepayId);
-            result.put("result_code", resultCode);
-            result.put("code_url", codeUrl);
-        }
-        if (WeChatPayTypeEnum.MWEB.name().equals(tradeType)) {
-            Object resultCode = map.get("result_code");
-            Object mwebUrl = map.get("mweb_url");
-            result.put("appid", appId);
-            result.put("mch_id", partnerId);
-            result.put("nonce_str", nonceStr);
-            result.put("result_code", resultCode);
-            result.put("mweb_url", mwebUrl);
-        }
-        return result;
     }
 }
