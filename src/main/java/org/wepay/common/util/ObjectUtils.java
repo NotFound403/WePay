@@ -310,6 +310,31 @@ public class ObjectUtils {
         return originSign.equals(sign);
     }
 
+    public static <T> void checkParams(T t, List<String> fieldNames) throws RequiredParamException {
+        Set<String> fieldNameSet = new HashSet<>(fieldNames);
+
+        try {
+            BeanInfo beanInfo = Introspector.getBeanInfo(t.getClass());
+
+            PropertyDescriptor[] propertyDescriptors = beanInfo.getPropertyDescriptors();
+            for (PropertyDescriptor property : propertyDescriptors) {
+
+                String key = property.getName();
+
+                if (fieldNameSet.contains(key)) {
+                    // 得到property对应的getter方法
+                    Method getter = property.getReadMethod();
+                    Object value = getter.invoke(t);
+                    if (value == null || "".equals(value)) {
+                        throw new RequiredParamException(t.getClass().getName() + " 参数 " + key + " 不能为空");
+                    }
+                }
+            }
+        } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
+            log.debug("获取实体bean信息异常", e);
+        }
+    }
+
     /**
      * 解密
      *
