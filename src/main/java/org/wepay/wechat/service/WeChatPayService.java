@@ -32,6 +32,9 @@ import static org.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
 
 
 public class WeChatPayService implements Payable {
+    /**
+     * The constant PARAMS_KEY.
+     */
     public static final String PARAMS_KEY = "params_key";
     private static final Logger log = LoggerFactory.getLogger(WeChatPayService.class);
     private static final String QR_CODE_TEMPLATE = "weixin：//wxpay/bizpayurl?sign=%s&appid=%s&mch_id=%s&product_id=%s&time_stamp=%s&nonce_str=%s";
@@ -85,9 +88,12 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException, RequiredParamException {
-        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
-        List<String> fieldNames = Arrays.asList(names);
-        ObjectUtils.checkParams(payRequestParams, fieldNames);
+        if ("true".equals(weChatPayConfig.getDevMode())) {
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
+            List<String> fieldNames = Arrays.asList(names);
+            ObjectUtils.checkParams(payRequestParams, fieldNames);
+        }
+
         payRequestParams.setTrade_type(WeChatPayTypeEnum.JSAPI);
         Map<String, Object> resultMap = unifiedOrder(payRequestParams);
         Object appId = resultMap.get("appid");
@@ -108,9 +114,12 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> payByApp(Params payRequestParams) throws PayException, RequiredParamException {
-        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
-        List<String> fieldNames = Arrays.asList(names);
-        ObjectUtils.checkParams(payRequestParams, fieldNames);
+        if ("true".equals(weChatPayConfig.getDevMode())) {
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
+            List<String> fieldNames = Arrays.asList(names);
+            ObjectUtils.checkParams(payRequestParams, fieldNames);
+        }
+
         payRequestParams.setTrade_type(WeChatPayTypeEnum.APP);
         Map<String, Object> resultMap = unifiedOrder(payRequestParams);
 
@@ -140,9 +149,12 @@ public class WeChatPayService implements Payable {
         String productId = (String) params.get("product_id");
         Params payRequestParams = nativeBusinessWrapper.getParams(productId);
         payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
-        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
-        List<String> fieldNames = Arrays.asList(names);
-        ObjectUtils.checkParams(params, fieldNames);
+
+        if ("true".equals(weChatPayConfig.getDevMode())) {
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
+            List<String> fieldNames = Arrays.asList(names);
+            ObjectUtils.checkParams(params, fieldNames);
+        }
 
         Map<String, Object> map = unifiedOrder(payRequestParams);
         Object returnCode = map.get("return_code");
@@ -173,9 +185,12 @@ public class WeChatPayService implements Payable {
     public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException, RequiredParamException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
 
-        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
-        List<String> fieldNames = Arrays.asList(names);
-        ObjectUtils.checkParams(payRequestParams, fieldNames);
+        if ("true".equals(weChatPayConfig.getDevMode())) {
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
+            List<String> fieldNames = Arrays.asList(names);
+            ObjectUtils.checkParams(payRequestParams, fieldNames);
+        }
+
         Map<String, Object> resultMap = unifiedOrder(payRequestParams);
         String codeUrl = (String) resultMap.get("code_url");
         try {
@@ -190,9 +205,12 @@ public class WeChatPayService implements Payable {
     public Map<String, Object> payByH5(Params payRequestParams) throws PayException, RequiredParamException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.MWEB);
         //TODO scene_info 未完善
-        String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "scene_info"};
-        List<String> fieldNames = Arrays.asList(names);
-        ObjectUtils.checkParams(payRequestParams, fieldNames);
+        if ("true".equals(weChatPayConfig.getDevMode())) {
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "scene_info"};
+            List<String> fieldNames = Arrays.asList(names);
+            ObjectUtils.checkParams(payRequestParams, fieldNames);
+        }
+
         Map<String, Object> map = unifiedOrder(payRequestParams);
         Object appId = map.get("appid");
         Object partnerId = map.get("mch_id");

@@ -51,4 +51,11 @@ public interface PayConfig {
      * @return the openid
      */
     String getOpenid();
+
+    /**
+     * Gets dev mode.
+     *
+     * @return the dev mode
+     */
+    String getDevMode();
 }

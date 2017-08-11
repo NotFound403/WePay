@@ -1,5 +1,7 @@
 package org.wepay.common.pay;
 
+import java.util.Map;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -12,17 +14,11 @@ package org.wepay.common.pay;
 public interface PostBusiness {
     /**
      * 失败后业务处理.
-     *
-     * @param <T> the type parameter
-     * @param t   the t
      */
-    <T> void failureBusinessHandler(T t);
+    <T extends Map<String, Object>> void failureBusinessHandler(T t);
 
     /**
      * 成功后业务处理.
-     *
-     * @param <T> the type parameter
-     * @param t   the t
      */
-    <T> void successBusinessHandler(T t);
+    <T extends Map<String, Object>> void successBusinessHandler(T t);
 }

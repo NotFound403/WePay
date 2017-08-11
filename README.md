@@ -19,11 +19,11 @@
  - 后台来说就是curd 包括一些反馈之类等等的业务 此处选择用代理支付模式来实现支付跟业务的解耦 只需要实现业务接口 来处理业务
  
  **wiki**
- - wiki：[https://gitee.com/felord/WePay/wikis]
+ - wiki：[ https://gitee.com/felord/WePay/wikis ]
  
  **仓库地址**
- - OSC:[https://git.oschina.net/felord/WePay]
- - GitHub:[https://github.com/NotFound403/WePay]
+ - OSC:[ https://git.oschina.net/felord/WePay ]
+ - GitHub:[ https://github.com/NotFound403/WePay ]
  
  
 ** QQ群 **

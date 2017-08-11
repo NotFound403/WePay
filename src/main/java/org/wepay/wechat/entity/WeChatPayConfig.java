@@ -40,6 +40,7 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     // 签名算法 默认MD5
     private String sign_type;
     private String openid;
+    private String devMode;
 
     private WeChatPayConfig(Decryptable decryptable) throws RequiredParamException {
         decryptable = decryptable == null ? new Decryptable() {
@@ -85,6 +86,7 @@ public class WeChatPayConfig implements PayConfig, Serializable {
             this.notify_url = decryptable.decrypt(verifyParam(properties.getProperty("notifyUrl")));
             this.openid = decryptable.decrypt(properties.getProperty("openId"));
             this.sign_type = verifyParam(properties.getProperty("signType"));
+            this.devMode = properties.getProperty("devMode");
         } catch (IOException e) {
             log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 读取异常", e);
         }
@@ -138,6 +140,11 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     @Override
     public String getSign_type() {
         return sign_type;
+    }
+
+    @Override
+    public String getDevMode() {
+        return devMode;
     }
 
     private String verifyParam(String str) throws RequiredParamException {
