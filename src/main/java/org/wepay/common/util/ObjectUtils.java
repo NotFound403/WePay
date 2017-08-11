@@ -50,7 +50,7 @@ public class ObjectUtils {
     /**
      * Bean to sorted tree map without null map.
      * <p>
-     * 实体 Bean 转为按照ACCSII排序后的TreeMap 并排除空值
+     * 实体 Bean 转为按照ACCSII排序后的TreeMap 并排除空值 ""值
      *
      * @param <T> the type parameter
      * @param t   the t

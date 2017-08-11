@@ -15,7 +15,7 @@
         </license>
     </licenses>
     <packaging>jar</packaging>
-    <description>轻量级微信支付组件 只需要简单配置参数 只需专注于具体支付业务的实现</description>
+    <description>轻量级微信支付组件 只需要简单配置参数 使你能专注于具体支付业务的实现</description>
 
     <build>
         <plugins>
@@ -38,13 +38,15 @@
         <dom4j-version>1.6.1</dom4j-version>
         <slf4j-version>1.7.25</slf4j-version>
         <zxing-version>3.0.0</zxing-version>
+        <junit-version>4.12</junit-version>
+        <servlet-version>3.1.0</servlet-version>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
-            <version>1.7.25</version>
+            <version>${slf4j-version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -69,7 +71,7 @@
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
-            <version>3.1.0</version>
+            <version>${servlet-version}</version>
             <scope>provided</scope>
         </dependency>
         <!-- 二维码 -->
@@ -86,7 +88,8 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit-version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 </project>
