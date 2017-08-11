@@ -22,12 +22,12 @@ public interface Payable {
     /**
      * 公众号内H5发起支付  公众号支付.
      *
-     * @param params  业务参数   基础参数自动注入
+     * @param payRequestParams  业务参数   基础参数自动注入
      * @return the map
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
      */
-    Map<String, Object> payByJsApi(Params params) throws PayException, RequiredParamException;
+    Map<String, Object> payByJsApi(Params payRequestParams) throws PayException, RequiredParamException;
 
     /**
      * APP支付.

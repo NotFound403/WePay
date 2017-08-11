@@ -11,6 +11,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.Map;
 
+import static org.wepay.wechat.service.WeChatPayService.PARAMS_KEY;
+
 /**
  * Created with IntelliJ IDEA.
  *
@@ -39,14 +41,15 @@ public class ProxyPayHandler implements InvocationHandler {
     @Override
     @SuppressWarnings("unchecked")
     public Object invoke(Object proxy, Method method, Object[] args) {
-        Object payResult = null;
         try {
-            payResult = method.invoke(target, args);
+            Object payResult = method.invoke(target, args);
             Map<String, Object> map = (Map<String, Object>) payResult;
             preBusinessService.preHandler(map);
+            map.remove(PARAMS_KEY);
+            return map;
         } catch (IllegalAccessException | InvocationTargetException e) {
             log.debug("支付代理异常：", e);
         }
-        return payResult;
+        return null;
     }
 }

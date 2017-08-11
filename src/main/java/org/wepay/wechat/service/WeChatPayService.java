@@ -32,6 +32,7 @@ import static org.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
 
 
 public class WeChatPayService implements Payable {
+    public static final String PARAMS_KEY = "params_key";
     private static final Logger log = LoggerFactory.getLogger(WeChatPayService.class);
     private static final String QR_CODE_TEMPLATE = "weixin：//wxpay/bizpayurl?sign=%s&appid=%s&mch_id=%s&product_id=%s&time_stamp=%s&nonce_str=%s";
     private PayConfig weChatPayConfig;
@@ -83,12 +84,12 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> payByJsApi(Params params) throws PayException, RequiredParamException {
+    public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException, RequiredParamException {
         String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
         List<String> fieldNames = Arrays.asList(names);
-        ObjectUtils.checkParams(params, fieldNames);
-        params.setTrade_type(WeChatPayTypeEnum.JSAPI);
-        Map<String, Object> resultMap = unifiedOrder(params);
+        ObjectUtils.checkParams(payRequestParams, fieldNames);
+        payRequestParams.setTrade_type(WeChatPayTypeEnum.JSAPI);
+        Map<String, Object> resultMap = unifiedOrder(payRequestParams);
         Object appId = resultMap.get("appid");
         Object prepayId = resultMap.get("prepay_id");
         Object nonceStr = resultMap.get("nonce_str");
@@ -102,7 +103,7 @@ public class WeChatPayService implements Payable {
         returnMap.put("signType", "MD5");
         String paySign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), DEFAULT_CHARSET, secretKey);
         returnMap.put("paySign", paySign);
-        return returnMap;
+        return injector(resultMap, payRequestParams);
     }
 
     @Override
@@ -130,7 +131,7 @@ public class WeChatPayService implements Payable {
 
         String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), DEFAULT_CHARSET, secretKey);
         returnMap.put("sign", sign);
-        return returnMap;
+        return injector(resultMap, payRequestParams);
     }
 
     @Override
@@ -151,21 +152,21 @@ public class WeChatPayService implements Payable {
         Object prepayId = map.get("prepay_id");
         Object nonceStr = map.get("nonce_str");
 
-        Map<String, Object> result = new HashMap<>();
-        result.put("return_code", returnCode);
-        result.put("appid", appId);
-        result.put("mch_id", partnerId);
-        result.put("nonce_str", nonceStr);
-        result.put("prepay_id", prepayId);
-        result.put("result_code", resultCode);
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("return_code", returnCode);
+        resultMap.put("appid", appId);
+        resultMap.put("mch_id", partnerId);
+        resultMap.put("nonce_str", nonceStr);
+        resultMap.put("prepay_id", prepayId);
+        resultMap.put("result_code", resultCode);
         try (BufferedOutputStream out = new BufferedOutputStream(response.getOutputStream())) {
-            String xml = ObjectUtils.mapToXML(result);
+            String xml = ObjectUtils.mapToXML(resultMap);
             out.write(xml.getBytes());
             out.flush();
         } catch (RequiredParamException | IOException e) {
             log.debug("扫码支付模式一失败：", e);
         }
-        return result;
+        return injector(resultMap, payRequestParams);
     }
 
     @Override
@@ -175,14 +176,14 @@ public class WeChatPayService implements Payable {
         String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
         List<String> fieldNames = Arrays.asList(names);
         ObjectUtils.checkParams(payRequestParams, fieldNames);
-        Map<String, Object> result = unifiedOrder(payRequestParams);
-        String codeUrl = (String) result.get("code_url");
+        Map<String, Object> resultMap = unifiedOrder(payRequestParams);
+        String codeUrl = (String) resultMap.get("code_url");
         try {
             QRCodeUtil.encode(codeUrl, 200, 200, "png", response.getOutputStream());
         } catch (IOException e) {
             log.debug("二维码转换异常：", e);
         }
-        return result;
+        return injector(resultMap, payRequestParams);
     }
 
     @Override
@@ -199,13 +200,13 @@ public class WeChatPayService implements Payable {
         Object mwebUrl = map.get("mweb_url");
         Object nonceStr = map.get("nonce_str");
 
-        Map<String, Object> result = new HashMap<>();
-        result.put("appid", appId);
-        result.put("mch_id", partnerId);
-        result.put("nonce_str", nonceStr);
-        result.put("result_code", resultCode);
-        result.put("mweb_url", mwebUrl);
-        return result;
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put("appid", appId);
+        resultMap.put("mch_id", partnerId);
+        resultMap.put("nonce_str", nonceStr);
+        resultMap.put("result_code", resultCode);
+        resultMap.put("mweb_url", mwebUrl);
+        return injector(resultMap, payRequestParams);
     }
 
     /**
@@ -331,5 +332,10 @@ public class WeChatPayService implements Payable {
             resultMap = ObjectUtils.xmlToMap(responseXml);
         }
         return resultMap;
+    }
+
+    private Map<String, Object> injector(Map<String, Object> map, Params params) {
+        map.put(PARAMS_KEY, params);
+        return map;
     }
 }
