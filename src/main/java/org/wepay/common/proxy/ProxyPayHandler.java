@@ -40,16 +40,14 @@ public class ProxyPayHandler implements InvocationHandler {
 
     @Override
     @SuppressWarnings("unchecked")
-    public Object invoke(Object proxy, Method method, Object[] args) {
-        try {
+    public Object invoke(Object proxy, Method method, Object[] args) throws InvocationTargetException, IllegalAccessException {
+
             Object payResult = method.invoke(target, args);
             Map<String, Object> map = (Map<String, Object>) payResult;
             preBusinessService.preHandler(map);
             map.remove(PARAMS_KEY);
             return map;
-        } catch (IllegalAccessException | InvocationTargetException e) {
-            log.debug("支付代理异常：", e);
-        }
-        return null;
+
+
     }
 }

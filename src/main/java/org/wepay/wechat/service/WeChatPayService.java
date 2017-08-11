@@ -4,7 +4,6 @@ import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.wepay.common.exception.PayException;
-import org.wepay.common.exception.RequiredParamException;
 import org.wepay.common.pay.*;
 import org.wepay.common.util.HttpKit;
 import org.wepay.common.util.ObjectUtils;
@@ -71,23 +70,18 @@ public class WeChatPayService implements Payable {
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
         String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
         sortedMap.put("sign", sign);
-        Map<String, Object> resultMap = new HashMap<>();
-        try {
-            String xml = ObjectUtils.mapToXML(sortedMap);
-            resultMap = doWeChatPayRequest(WeChatPayTypeEnum.valueOf(tradeType).getApi(), xml);
-            boolean flag = ObjectUtils.verifySignature(resultMap, secretKey);
-            if ("SUCCESS".equals(resultMap.get("result_code")) && flag) {
-                resultMap.put("secretKey", secretKey);
-                return resultMap;
-            }
-        } catch (RequiredParamException e) {
-            log.debug("统一下单参数处理异常", e);
+        String xml = ObjectUtils.mapToXML(sortedMap);
+        Map<String, Object> resultMap = doWeChatPayRequest(WeChatPayTypeEnum.valueOf(tradeType).getApi(), xml);
+        if ("SUCCESS".equals(resultMap.get("result_code"))) {
+            ObjectUtils.verifySignature(resultMap, secretKey);
+            resultMap.put("secretKey", secretKey);
+            return resultMap;
         }
         throw new PayException("参数列表：" + resultMap);
     }
 
     @Override
-    public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException, RequiredParamException {
+    public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
         if ("true".equals(weChatPayConfig.getDevMode())) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
             List<String> fieldNames = Arrays.asList(names);
@@ -113,7 +107,7 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> payByApp(Params payRequestParams) throws PayException, RequiredParamException {
+    public Map<String, Object> payByApp(Params payRequestParams) throws PayException {
         if ("true".equals(weChatPayConfig.getDevMode())) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
             List<String> fieldNames = Arrays.asList(names);
@@ -144,7 +138,7 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException, RequiredParamException {
+    public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException {
         Map<String, Object> params = HttpKit.resolveRequestData(request);
         String productId = (String) params.get("product_id");
         Params payRequestParams = nativeBusinessWrapper.getParams(productId);
@@ -175,14 +169,14 @@ public class WeChatPayService implements Payable {
             String xml = ObjectUtils.mapToXML(resultMap);
             out.write(xml.getBytes());
             out.flush();
-        } catch (RequiredParamException | IOException e) {
+        } catch (IOException e) {
             log.debug("扫码支付模式一失败：", e);
         }
         return injector(resultMap, payRequestParams);
     }
 
     @Override
-    public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException, RequiredParamException {
+    public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
 
         if ("true".equals(weChatPayConfig.getDevMode())) {
@@ -202,7 +196,7 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> payByH5(Params payRequestParams) throws PayException, RequiredParamException {
+    public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.MWEB);
         //TODO scene_info 未完善
         if ("true".equals(weChatPayConfig.getDevMode())) {
@@ -303,7 +297,7 @@ public class WeChatPayService implements Payable {
      * @param orderId the order id
      * @return the string
      */
-    private String xmlForQueryWrapper(String orderId, OrderIdTypeEnum orderIdTypeEnum, PayConfig payConfig) {
+    private String xmlForQueryWrapper(String orderId, OrderIdTypeEnum orderIdTypeEnum, PayConfig payConfig) throws PayException {
         String nonceStr = ObjectUtils.onceStrGenerator();
         String appId = payConfig.getAppid();
         String mchId = payConfig.getMch_id();
@@ -319,15 +313,9 @@ public class WeChatPayService implements Payable {
         map.put("appid", appId);
         map.put("mch_id", mchId);
         map.put(orderIdTypeEnum.name().toLowerCase(), orderId);
-        String xml = null;
         String sign = ObjectUtils.signatureGenerator(map, DEFAULT_CHARSET, secretKey);
         map.put("sign", sign);
-        try {
-            xml = ObjectUtils.mapToXML(map);
-        } catch (RequiredParamException e) {
-            log.debug("包装xml异常：", e);
-        }
-        return xml;
+        return ObjectUtils.mapToXML(map);
     }
 
     /**

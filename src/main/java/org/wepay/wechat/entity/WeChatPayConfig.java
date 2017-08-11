@@ -2,7 +2,7 @@ package org.wepay.wechat.entity;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.wepay.common.exception.RequiredParamException;
+import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.Decryptable;
 import org.wepay.common.pay.PayConfig;
 
@@ -42,7 +42,7 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     private String openid;
     private String devMode;
 
-    private WeChatPayConfig(Decryptable decryptable) throws RequiredParamException {
+    private WeChatPayConfig(Decryptable decryptable) throws PayException {
         decryptable = decryptable == null ? new Decryptable() {
             @Override
             public String decrypt(String original) {
@@ -77,6 +77,7 @@ public class WeChatPayConfig implements PayConfig, Serializable {
             }
         } : decryptable;
         log.info("开始加载配置文件 " + PROPERTY_PLACEHOLDER);
+
         try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(PROPERTY_PLACEHOLDER)) {
             Properties properties = new Properties();
             properties.load(inputStream);
@@ -97,9 +98,9 @@ public class WeChatPayConfig implements PayConfig, Serializable {
      *
      * @param decryptable 解密算法接口  最好自己实现
      * @return the pay config
-     * @throws RequiredParamException the required param exception
+     * @throws PayException the pay exception
      */
-    public static PayConfig initBaseConfig(Decryptable decryptable) throws RequiredParamException {
+    public static PayConfig initBaseConfig(Decryptable decryptable) throws PayException {
         if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
             synchronized (WeChatPayConfig.class) {
                 if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
@@ -147,10 +148,10 @@ public class WeChatPayConfig implements PayConfig, Serializable {
         return devMode;
     }
 
-    private String verifyParam(String str) throws RequiredParamException {
+    private String verifyParam(String str) throws PayException {
         if (!"".equals(str)) {
             return str;
         }
-        throw new RequiredParamException("配置项参数没有值，请检查");
+        throw new PayException("配置项参数没有值，请检查");
     }
 }

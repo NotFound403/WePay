@@ -24,5 +24,5 @@ public interface PayType {
      */
     String getApi();
 
-    String name();
+
 }

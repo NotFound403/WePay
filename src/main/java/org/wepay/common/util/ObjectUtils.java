@@ -10,7 +10,7 @@ import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.wepay.common.exception.RequiredParamException;
+import org.wepay.common.exception.PayException;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
@@ -35,6 +35,9 @@ import java.util.*;
 
 
 public class ObjectUtils {
+    /**
+     * The constant DEFAULT_CHARSET.
+     */
     public static final String DEFAULT_CHARSET = "UTF-8";
     private static final Logger log = LoggerFactory.getLogger(ObjectUtils.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
@@ -72,7 +75,7 @@ public class ObjectUtils {
                     Method getter = property.getReadMethod();
                     Object value = getter.invoke(t);
 //                    排除空值
-                    if (value != null) {
+                    if (value != null && "".equals(value)) {
                         map.put(key, value);
                     }
                 }
@@ -84,6 +87,13 @@ public class ObjectUtils {
         return map;
     }
 
+    /**
+     * Params sorter map.
+     *
+     * @param <M> the type parameter
+     * @param m   the m
+     * @return the map
+     */
     public static <M extends Map<String, Object>> Map<String, Object> paramsSorter(M m) {
 //    1.8JDK 可采用注释部分的lambda表达式    Map<String, Object> map = new TreeMap<>(String::compareTo);
         Map<String, Object> map = new TreeMap<>(new Comparator<String>() {
@@ -190,9 +200,9 @@ public class ObjectUtils {
      *
      * @param map the map
      * @return the string
-     * @throws RequiredParamException the required param exception
+     * @throws PayException 无效参数异常
      */
-    public static String mapToXML(Map<String, Object> map) throws RequiredParamException {
+    public static String mapToXML(Map<String, Object> map) throws PayException {
         if (map != null && !map.isEmpty()) {
             StringBuilder xml = new StringBuilder("<xml>");
             Set<Map.Entry<String, Object>> entrySet = map.entrySet();
@@ -208,7 +218,7 @@ public class ObjectUtils {
                 return xml.toString();
             }
         }
-        throw new RequiredParamException("参数不可用");
+        throw new PayException("参数不可用");
     }
 
     /**
@@ -304,13 +314,33 @@ public class ObjectUtils {
         return null;
     }
 
-    public static <M extends Map<String, Object>> boolean verifySignature(M m, String secretKey) {
+
+    /**
+     * 签名验证.
+     *
+     * @param <M>       the type parameter
+     * @param m         the m
+     * @param secretKey the secret key
+     * @throws PayException the pay exception
+     */
+    public static <M extends Map<String, Object>> void verifySignature(M m, String secretKey) throws PayException {
         String originSign = (String) m.remove("sign");
         String sign = signatureGenerator(ObjectUtils.paramsSorter(m), DEFAULT_CHARSET, secretKey);
-        return originSign.equals(sign);
+        if (!originSign.equals(sign)) {
+            throw new PayException("签名验证失败");
+        }
     }
 
-    public static <T> void checkParams(T t, List<String> fieldNames) throws RequiredParamException {
+
+    /**
+     * 参数值检测.
+     *
+     * @param <T>        the type parameter
+     * @param t          the t
+     * @param fieldNames the field names
+     * @throws PayException the pay exception
+     */
+    public static <T> void checkParams(T t, List<String> fieldNames) throws PayException {
         Set<String> fieldNameSet = new HashSet<>(fieldNames);
 
         try {
@@ -326,7 +356,7 @@ public class ObjectUtils {
                     Method getter = property.getReadMethod();
                     Object value = getter.invoke(t);
                     if (value == null || "".equals(value)) {
-                        throw new RequiredParamException(t.getClass().getName() + " 参数 " + key + " 不能为空");
+                        throw new PayException(t.getClass().getName() + " 参数 " + key + " 不能为空");
                     }
                 }
             }

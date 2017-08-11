@@ -42,7 +42,7 @@ public class PayRequestParams implements Params, Serializable {
     // 货币类型 人民币为CNY
     private String fee_type;
     // 总金额 订单总金额，单位为分  重要
-    private double total_fee;
+    private int total_fee;
     // 用户端实际IP  必传
     private String spbill_create_ip;
     // 交易类型  必传
@@ -266,7 +266,7 @@ public class PayRequestParams implements Params, Serializable {
      *
      * @return the total fee
      */
-    public double getTotal_fee() {
+    public int getTotal_fee() {
         return total_fee;
     }
 
@@ -275,7 +275,7 @@ public class PayRequestParams implements Params, Serializable {
      *
      * @param totalFee the total fee
      */
-    public void setTotal_fee(double totalFee) {
+    public void setTotal_fee(int totalFee) {
         this.total_fee = totalFee;
     }
 
@@ -308,7 +308,7 @@ public class PayRequestParams implements Params, Serializable {
 
     @Override
     public void setTrade_type(PayType payType) {
-
+        this.trade_type = payType.getType();
     }
 
     /**
