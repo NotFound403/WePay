@@ -58,12 +58,17 @@ public class ProxyPayCallback implements InvocationHandler {
         Map<String, Object> result = HttpKit.resolveRequestData(request);
         String resultCode = (String) result.get("result_code");
         log.info("\u56de\u8c03 resultCode: " + resultCode);
-        if ("SUCCESS".equals(resultCode)) {
-            postBusiness.successBusinessHandler(result);
+        if (postBusiness != null) {
+            if ("SUCCESS".equals(resultCode)) {
+
+                postBusiness.successBusinessHandler(result);
+            }
+            if ("FAIL".equals(resultCode)) {
+
+                postBusiness.failureBusinessHandler(result);
+            }
         }
-        if ("FAIL".equals(resultCode)) {
-            postBusiness.failureBusinessHandler(result);
-        }
+
         try {
             return method.invoke(callback, args);
         } catch (IllegalAccessException | InvocationTargetException e) {
