@@ -1,6 +1,5 @@
 package org.wepay.wechat.demo;
 
-import org.junit.Test;
 import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.PayConfig;
 import org.wepay.common.pay.Payable;
@@ -30,7 +29,7 @@ public class WeChatPayTest {
      *
      * @return the map
      */
-    @Test
+
     public void test() {
         System.out.println(appPay());
     }
