@@ -297,7 +297,7 @@ public class WeChatPayService implements Payable {
      * @param orderId the order id
      * @return the string
      */
-    private String xmlForQueryWrapper(String orderId, OrderIdTypeEnum orderIdTypeEnum, PayConfig payConfig) throws PayException {
+    private String xmlForQueryWrapper(String orderId, OrderIdTypeEnum orderIdTypeEnum, PayConfig payConfig) {
         String nonceStr = ObjectUtils.onceStrGenerator();
         String appId = payConfig.getAppid();
         String mchId = payConfig.getMch_id();

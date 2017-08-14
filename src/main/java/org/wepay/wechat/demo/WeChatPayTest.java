@@ -4,15 +4,12 @@ import org.junit.Test;
 import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.PayConfig;
 import org.wepay.common.pay.Payable;
-import org.wepay.common.pay.PreBusinessService;
 import org.wepay.common.proxy.ProxyPayHandler;
 import org.wepay.wechat.entity.PayRequestParams;
 import org.wepay.wechat.entity.WeChatPayConfig;
 import org.wepay.wechat.service.WeChatPayService;
 
 import java.util.Map;
-
-import static org.wepay.wechat.service.WeChatPayService.PARAMS_KEY;
 
 /**
  * Created with IntelliJ IDEA.
@@ -52,15 +49,7 @@ public class WeChatPayTest {
         try {
             PayConfig payConfig = WeChatPayConfig.initBaseConfig(null);
             Payable weChatPayService = new WeChatPayService(payConfig);
-            ProxyPayHandler proxy = new ProxyPayHandler(weChatPayService, new PreBusinessService() {
-                @Override
-                public <T> T preHandler(Map<String, Object> result) {
-//TODO                     统一下单后业务处理 实现  额外参数 请采用 实现类注入
-                    PayRequestParams payRequestParams = (PayRequestParams) result.get(PARAMS_KEY);
-//                    todo 实现业务   不用判断参数为空 已经在注入前进行了处理 所以此处的业务是  统一下单后你具体对应的业务
-                    return null;
-                }
-            });
+            ProxyPayHandler proxy = new ProxyPayHandler(weChatPayService, null);
             Payable payable = proxy.initProxy();
             return payable.payByApp(params);
         } catch (PayException e) {

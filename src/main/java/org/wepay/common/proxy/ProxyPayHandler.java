@@ -41,13 +41,15 @@ public class ProxyPayHandler implements InvocationHandler {
     @Override
     @SuppressWarnings("unchecked")
     public Object invoke(Object proxy, Method method, Object[] args) throws InvocationTargetException, IllegalAccessException {
-
-            Object payResult = method.invoke(target, args);
-            Map<String, Object> map = (Map<String, Object>) payResult;
+//        System.out.println(method.getName());
+        Object payResult = method.invoke(target, args);
+        Map<String, Object> map = (Map<String, Object>) payResult;
+        if (preBusinessService != null) {
             preBusinessService.preHandler(map);
+        }
+        if (map.containsKey(PARAMS_KEY)) {
             map.remove(PARAMS_KEY);
-            return map;
-
-
+        }
+        return map;
     }
 }

@@ -29,6 +29,40 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     private static final Logger log = LoggerFactory.getLogger(WeChatPayConfig.class);
     private static final String PROPERTY_PLACEHOLDER = "weChatConfig.properties";
     private static final ThreadLocal<WeChatPayConfig> WE_CHAT_PAY_CONFIG_THREAD_LOCAL = new ThreadLocal<>();
+    private static final Decryptable DEFAULT_DECRYPTABLE = new Decryptable() {
+        @Override
+        public String decrypt(String original) {
+            return doDecrypt(original);
+        }
+
+        private String doDecrypt(String original) {
+            byte[] k = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
+            try {
+                SecretKeySpec skeySpec = new SecretKeySpec(k, "AES");
+                Cipher cipher = Cipher.getInstance("AES");
+                cipher.init(2, skeySpec);
+                byte[] encrypted1 = hex2byte(original);
+                byte[] bytes = cipher.doFinal(encrypted1);
+                return new String(bytes, "utf-8");
+            } catch (Exception e) {
+                log.debug("解密错误：", e);
+            }
+            return null;
+        }
+
+        private byte[] hex2byte(String hex) {
+            byte[] bytes = null;
+            int radix = 16;
+            if (hex != null && hex.length() % 2 != 1) {
+                int len = hex.length();
+                bytes = new byte[len / 2];
+                for (int i = 0; i != len / 2; i++) {
+                    bytes[i] = (byte) Integer.parseInt(hex.substring(i * 2, i * 2 + 2), radix);
+                }
+            }
+            return bytes;
+        }
+    };
     // 微信开放平台审核通过的应用 appid 必传
     private String appid;
     // 私钥  签名算法使用 必传
@@ -43,51 +77,24 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     private String devMode;
 
     private WeChatPayConfig(Decryptable decryptable) throws PayException {
-        decryptable = decryptable == null ? new Decryptable() {
-            @Override
-            public String decrypt(String original) {
-                return doDecrypt(original);
-            }
-
-            private String doDecrypt(String original) {
-                byte[] k = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
-                try {
-                    SecretKeySpec skeySpec = new SecretKeySpec(k, "AES");
-                    Cipher cipher = Cipher.getInstance("AES");
-                    cipher.init(2, skeySpec);
-                    byte[] encrypted1 = hex2byte(original);
-                    byte[] bytes = cipher.doFinal(encrypted1);
-                    return new String(bytes, "utf-8");
-                } catch (Exception e) {
-                    log.debug("解密错误：", e);
-                }
-                return null;
-            }
-
-            private byte[] hex2byte(String hex) {
-                byte[] b = null;
-                if (hex != null && hex.length() % 2 != 1) {
-                    int l = hex.length();
-                    b = new byte[l / 2];
-                    for (int i = 0; i != l / 2; i++) {
-                        b[i] = (byte) Integer.parseInt(hex.substring(i * 2, i * 2 + 2), 16);
-                    }
-                }
-                return b;
-            }
-        } : decryptable;
-        log.info("开始加载配置文件 " + PROPERTY_PLACEHOLDER);
-
+        Decryptable dec = decryptable == null ? DEFAULT_DECRYPTABLE : decryptable;
         try (InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(PROPERTY_PLACEHOLDER)) {
             Properties properties = new Properties();
             properties.load(inputStream);
-            this.appid = decryptable.decrypt(verifyParam(properties.getProperty("appId")));
-            this.mch_id = decryptable.decrypt(verifyParam(properties.getProperty("mchId")));
-            this.secretKey = decryptable.decrypt(verifyParam(properties.getProperty("secretKey")));
-            this.notify_url = decryptable.decrypt(verifyParam(properties.getProperty("notifyUrl")));
-            this.openid = decryptable.decrypt(properties.getProperty("openId"));
-            this.sign_type = verifyParam(properties.getProperty("signType"));
-            this.devMode = properties.getProperty("devMode");
+            String appId = properties.getProperty("appId");
+            String mchId = properties.getProperty("mchId");
+            String secKey = properties.getProperty("secretKey");
+            String notifyUrl = properties.getProperty("notifyUrl");
+            String openId = properties.getProperty("openId");
+            String signType = properties.getProperty("signType");
+            String dev = properties.getProperty("devMode");
+            this.appid = verifyParam(dec.decrypt(appId), "appid");
+            this.mch_id = verifyParam(dec.decrypt(mchId), "mch_id");
+            this.secretKey = verifyParam(dec.decrypt(secKey), "secretKey");
+            this.notify_url = verifyParam(dec.decrypt(notifyUrl), "notify_url");
+            this.openid = dec.decrypt(openId);
+            this.sign_type = verifyParam(signType, "sign_type");
+            this.devMode = dev;
         } catch (IOException e) {
             log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 读取异常", e);
         }
@@ -148,10 +155,23 @@ public class WeChatPayConfig implements PayConfig, Serializable {
         return devMode;
     }
 
-    private String verifyParam(String str) throws PayException {
-        if (!"".equals(str)) {
+    private String verifyParam(String str, String fieldName) throws PayException {
+        if (str != null && !"".equals(str)) {
             return str;
         }
-        throw new PayException("配置项参数没有值，请检查");
+        throw new PayException("配置项参数 " + fieldName + " 没有值或者解密失败，请检查");
+    }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "appid:" + appid +
+                ", secretKey:" + secretKey +
+                ", mch_id:" + mch_id +
+                ", notify_url:" + notify_url +
+                ", sign_type:" + sign_type +
+                ", openid:" + openid +
+                ", devMode:" + devMode +
+                '}';
     }
 }
