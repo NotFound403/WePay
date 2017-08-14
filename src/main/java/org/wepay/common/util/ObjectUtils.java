@@ -200,25 +200,20 @@ public class ObjectUtils {
      *
      * @param map the map
      * @return the string
-     * @throws PayException 无效参数异常
      */
-    public static String mapToXML(Map<String, Object> map) throws PayException {
-        if (map != null && !map.isEmpty()) {
-            StringBuilder xml = new StringBuilder("<xml>");
-            Set<Map.Entry<String, Object>> entrySet = map.entrySet();
-            for (Map.Entry<String, Object> entry : entrySet) {
-                String k = entry.getKey();
-                Object object = entry.getValue();
-                if (object != null) {
-                    xml.append("<").append(k).append(">").append(map.get(k)).append("</").append(k).append(">");
-                }
-            }
-            xml.append("</xml>");
-            if (xml.length() != 11) {
-                return xml.toString();
+    public static String mapToXML(Map<String, Object> map) {
+
+        StringBuilder xml = new StringBuilder("<xml>");
+        Set<Map.Entry<String, Object>> entrySet = map.entrySet();
+        for (Map.Entry<String, Object> entry : entrySet) {
+            String k = entry.getKey();
+            Object object = entry.getValue();
+            if (object != null) {
+                xml.append("<").append(k).append(">").append(map.get(k)).append("</").append(k).append(">");
             }
         }
-        throw new PayException("参数不可用");
+        xml.append("</xml>");
+        return xml.toString();
     }
 
     /**
@@ -373,7 +368,7 @@ public class ObjectUtils {
      * @deprecated
      */
     @Deprecated
-    public String decrypt(String original) {
+    public static String decrypt(String original) {
         return doDecrypt(original);
     }
 }
