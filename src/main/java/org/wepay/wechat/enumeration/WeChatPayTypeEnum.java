@@ -45,7 +45,7 @@ public enum WeChatPayTypeEnum implements PayType {
     /**
      * 关闭订单.
      */
-    CLOSE_ORDER("pay/closeorder"),
+    ORDER_CLOSE("pay/closeorder"),
     /**
      * 退款.
      */

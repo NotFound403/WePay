@@ -274,7 +274,7 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> closeOrder(String outTradeNo) throws PayException {
-        return orderHandler(WeChatPayTypeEnum.CLOSE_ORDER, outTradeNo, OrderIdTypeEnum.OUT_TRADE_NO);
+        return orderHandler(WeChatPayTypeEnum.ORDER_CLOSE, outTradeNo, OrderIdTypeEnum.OUT_TRADE_NO);
     }
 
     @Override
