@@ -18,6 +18,8 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.file.FileSystems;
+import java.nio.file.Path;
 import java.util.EnumMap;
 
 /**
@@ -43,7 +45,7 @@ public class QRCodeUtil {
     private static MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
 
     /**
-     * 生成带logo的二维码.
+     * 生成带logo的二维码 输出流.
      *
      * @param content      二维码内容
      * @param width        图像宽度
@@ -61,7 +63,7 @@ public class QRCodeUtil {
     }
 
     /**
-     * 生成不带logo的二维码.
+     * 生成不带logo的二维码 输出流.
      *
      * @param content 二维码内容
      * @param width   图像宽度
@@ -84,6 +86,30 @@ public class QRCodeUtil {
 
     }
 
+    /**
+     * 生成二维码到指定目录.
+     *
+     * @param content  the content
+     * @param width    the width
+     * @param height   the height
+     * @param format   the format
+     * @param filePath the file path
+     * @param fileName the file name
+     */
+    public static void encode(String content, int width, int height, String format, String filePath, String fileName) {
+        EnumMap<EncodeHintType, Object> hints = new EnumMap<>(EncodeHintType.class);
+        hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
+        hints.put(EncodeHintType.MARGIN, 1);
+        hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
+        try {
+            BitMatrix bitMatrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
+            Path path = FileSystems.getDefault().getPath(filePath, fileName);
+            MatrixToImageWriter.writeToPath(bitMatrix, format, path);
+        } catch (WriterException | IOException e) {
+            log.debug("生成二维码失败：", e);
+        }
+    }
+
     private static BufferedImage genBarcode(String content, int width, int height, String srcImagePath) throws WriterException, IOException {
         // 读取源图像
         BufferedImage scaleImage = scale(srcImagePath, IMAGE_WIDTH, IMAGE_HEIGHT);
@@ -95,7 +121,7 @@ public class QRCodeUtil {
         }
         EnumMap<EncodeHintType, Object> hint = new EnumMap<>(EncodeHintType.class);
         hint.put(EncodeHintType.CHARACTER_SET, "utf-8");
-        hint.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.H);
+        hint.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
         // 生成二维码
         BitMatrix matrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hint);
 
