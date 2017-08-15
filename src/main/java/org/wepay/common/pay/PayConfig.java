@@ -58,4 +58,11 @@ public interface PayConfig {
      * @return the dev mode
      */
     String getDevMode();
+
+    /**
+     * Gets cert path.
+     *
+     * @return the cert path
+     */
+    String getCertPath();
 }

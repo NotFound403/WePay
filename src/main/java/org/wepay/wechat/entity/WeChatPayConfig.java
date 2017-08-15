@@ -74,6 +74,9 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     // 签名算法 默认MD5
     private String sign_type;
     private String openid;
+    // 证书路径
+    private String certPath;
+    // 开发模式开关
     private String devMode;
 
     private WeChatPayConfig(Decryptable decryptable) throws PayException {
@@ -88,12 +91,14 @@ public class WeChatPayConfig implements PayConfig, Serializable {
             String openId = properties.getProperty("openId");
             String signType = properties.getProperty("signType");
             String dev = properties.getProperty("devMode");
+            String certPath = properties.getProperty("certPath");
             this.appid = verifyParam(dec.decrypt(appId), "appid");
             this.mch_id = verifyParam(dec.decrypt(mchId), "mch_id");
             this.secretKey = verifyParam(dec.decrypt(secKey), "secretKey");
             this.notify_url = verifyParam(dec.decrypt(notifyUrl), "notify_url");
             this.openid = dec.decrypt(openId);
             this.sign_type = verifyParam(signType, "sign_type");
+            this.certPath = dec.decrypt(certPath);
             this.devMode = dev;
         } catch (IOException e) {
             log.debug("配置文件 " + PROPERTY_PLACEHOLDER + " 读取异常", e);
@@ -160,6 +165,11 @@ public class WeChatPayConfig implements PayConfig, Serializable {
             return str;
         }
         throw new PayException("配置项参数 " + fieldName + " 没有值或者解密失败，请检查");
+    }
+
+    @Override
+    public String getCertPath() {
+        return certPath;
     }
 
     @Override

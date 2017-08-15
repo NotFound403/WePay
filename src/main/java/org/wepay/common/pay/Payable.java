@@ -1,6 +1,7 @@
 package org.wepay.common.pay;
 
 import org.wepay.common.exception.PayException;
+import org.wepay.wechat.entity.RefundRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 
 import javax.servlet.http.HttpServletRequest;
@@ -21,7 +22,7 @@ public interface Payable {
     /**
      * 公众号内H5发起支付  公众号支付.
      *
-     * @param payRequestParams  业务参数   基础参数自动注入
+     * @param payRequestParams 业务参数   基础参数自动注入
      * @return the map
      * @throws PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
@@ -39,12 +40,12 @@ public interface Payable {
 
     /**
      * 扫码模式一.
-     *
+     * <p>
      * 适用场景自动售卖机 等   此为第一次回调配置  用于生成订单 调用统一支付     统一支付需要配置第二次回调
      *
      * @param request               the request
      * @param response              the response
-     * @param nativeBusinessWrapper  业务处理  主要通过product_id 获取业务信息封装成Params 类型的参数
+     * @param nativeBusinessWrapper 业务处理  主要通过product_id 获取业务信息封装成Params 类型的参数
      * @return the map
      * @throws PayException the pay exception
      */
@@ -68,6 +69,7 @@ public interface Payable {
      * @throws PayException the pay exception
      */
     Map<String, Object> payByH5(Params payRequestParams) throws PayException;
+
     /**
      * 通过订单号查询订单.
      *
@@ -98,6 +100,16 @@ public interface Payable {
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_5&index=7">腾讯微信支付查询退款</a>
      */
     Map<String, Object> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException;
+
+    /**
+     * 退款.
+     *
+     * @param refundRequestParams 退款参数封装 transaction_id 和 out_trade_no 二选一
+     * @return the map
+     * @throws PayException the pay exception
+     * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/jsapi.php?chapter=9_4">腾讯微信支付退款</a>
+     */
+    Map<String, Object> refund(RefundRequestParams refundRequestParams) throws PayException;
 
 }
 

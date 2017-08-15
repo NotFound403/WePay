@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.hive</groupId>
     <artifactId>wePay</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <name>wePay</name>
     <url>https://git.oschina.net/felord/WePay</url>
     <licenses>

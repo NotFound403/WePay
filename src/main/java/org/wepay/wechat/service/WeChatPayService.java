@@ -8,6 +8,7 @@ import org.wepay.common.pay.*;
 import org.wepay.common.util.HttpKit;
 import org.wepay.common.util.ObjectUtils;
 import org.wepay.common.util.QRCodeUtil;
+import org.wepay.wechat.entity.RefundRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 import org.wepay.wechat.enumeration.WeChatPayTypeEnum;
 
@@ -282,6 +283,43 @@ public class WeChatPayService implements Payable {
         return orderHandler(WeChatPayTypeEnum.REFUND_QUERY, orderId, orderIdTypeEnum);
     }
 
+    @Override
+    public Map<String, Object> refund(RefundRequestParams refundRequestParams) throws PayException {
+        String refundUrl = "";
+        String mchId = weChatPayConfig.getMch_id();
+        String appId = weChatPayConfig.getAppid();
+        String signType = weChatPayConfig.getSign_type();
+        refundRequestParams.setAppid(appId);
+        refundRequestParams.setMch_id(mchId);
+        refundRequestParams.setSign_type(signType);
+
+        if ("true".equals(weChatPayConfig.getDevMode())) {
+            String[] names = {"out_refund_no", "total_fee", "refund_fee"};
+            List<String> fieldNames = Arrays.asList(names);
+            ObjectUtils.checkParams(refundRequestParams, fieldNames);
+            String outTradeNo = refundRequestParams.getOut_trade_no();
+            String transactionId = refundRequestParams.getTransaction_id();
+            if (!StringUtils.isNotEmpty(outTradeNo) && !StringUtils.isNotEmpty(transactionId)) {
+                throw new PayException("out_trade_no,transaction_id 必须二选一");
+            }
+        }
+
+        String secretKey = weChatPayConfig.getSecretKey();
+        String certPath = weChatPayConfig.getCertPath();
+        Map<String, Object> sortedMap = ObjectUtils.paramsSorter(refundRequestParams);
+        String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
+        sortedMap.put("sign", sign);
+        String xml = ObjectUtils.mapToXML(sortedMap);
+
+        Map<String, Object> resultMap = doWeChatPayRequest(refundUrl, xml, certPath, mchId);
+        if ("SUCCESS".equals(resultMap.get("result_code"))) {
+            ObjectUtils.verifySignature(resultMap, secretKey);
+            resultMap.put("secretKey", secretKey);
+            return injector(resultMap, refundRequestParams);
+        }
+        throw new PayException("参数列表：" + resultMap);
+    }
+
     private Map<String, Object> orderHandler(PayType weChatPayTypeEnum, String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         String xml = xmlForQueryWrapper(orderId, orderIdTypeEnum, weChatPayConfig);
         Map<String, Object> result = doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
@@ -327,6 +365,22 @@ public class WeChatPayService implements Payable {
      */
     private Map<String, Object> doWeChatPayRequest(String url, String xml) {
         String xmlResult = HttpKit.httpPost(url, xml);
+        return xmlTo8859Map(xmlResult);
+    }
+
+    /**
+     * 请求SSL腾讯支付
+     *
+     * @param url 调用腾讯支付对应的API
+     * @param xml 封装好的xml格式的参数
+     * @return the map
+     */
+    private Map<String, Object> doWeChatPayRequest(String url, String xml, String path, String mchId) {
+        String xmlResult = HttpKit.httpPost(url, xml, path, mchId);
+        return xmlTo8859Map(xmlResult);
+    }
+
+    private Map<String, Object> xmlTo8859Map(String xmlResult) {
         Map<String, Object> resultMap = new HashMap<>();
         if (StringUtils.isNotEmpty(xmlResult)) {
             String responseXml = null;
@@ -340,8 +394,8 @@ public class WeChatPayService implements Payable {
         return resultMap;
     }
 
-    private Map<String, Object> injector(Map<String, Object> map, Params params) {
-        map.put(PARAMS_KEY, params);
+    private <T> Map<String, Object> injector(Map<String, Object> map, T t) {
+        map.put(PARAMS_KEY, t);
         return map;
     }
 }
