@@ -184,4 +184,13 @@ public class WeChatPayConfig implements PayConfig, Serializable {
                 ", devMode:" + devMode +
                 '}';
     }
+
+    /**
+     * Is dev mode boolean.
+     *
+     * @return the boolean
+     */
+    public boolean isDevMode() {
+        return "true".equals(devMode);
+    }
 }

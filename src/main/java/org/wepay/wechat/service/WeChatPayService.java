@@ -19,8 +19,11 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import static org.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
+import static org.wepay.common.util.ObjectUtils.MD5;
 
 /**
  * Created with IntelliJ IDEA.
@@ -69,12 +72,12 @@ public class WeChatPayService implements Payable {
         String tradeType = payRequestParams.getTrade_type();
 
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
-        String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
+        String sign = ObjectUtils.signatureGenerator(sortedMap, MD5, DEFAULT_CHARSET, secretKey);
         sortedMap.put("sign", sign);
         String xml = ObjectUtils.mapToXML(sortedMap);
         Map<String, Object> resultMap = doWeChatPayRequest(WeChatPayTypeEnum.valueOf(tradeType).getApi(), xml);
         if ("SUCCESS".equals(resultMap.get("result_code"))) {
-            ObjectUtils.verifySignature(resultMap, secretKey);
+            ObjectUtils.verifySignature(resultMap, MD5, secretKey);
             resultMap.put("secretKey", secretKey);
             return resultMap;
         }
@@ -83,7 +86,7 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
-        if ("true".equals(weChatPayConfig.getDevMode())) {
+        if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
@@ -102,14 +105,14 @@ public class WeChatPayService implements Payable {
         returnMap.put("nonceStr", nonceStr);
         returnMap.put("timeStamp", System.currentTimeMillis() / 1000);
         returnMap.put("signType", "MD5");
-        String paySign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), DEFAULT_CHARSET, secretKey);
+        String paySign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), MD5, DEFAULT_CHARSET, secretKey);
         returnMap.put("paySign", paySign);
         return injector(resultMap, payRequestParams);
     }
 
     @Override
     public Map<String, Object> payByApp(Params payRequestParams) throws PayException {
-        if ("true".equals(weChatPayConfig.getDevMode())) {
+        if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
@@ -133,7 +136,7 @@ public class WeChatPayService implements Payable {
         returnMap.put("noncestr", nonceStr);
         returnMap.put("timestamp", System.currentTimeMillis() / 1000);
 
-        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), DEFAULT_CHARSET, secretKey);
+        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(returnMap), MD5, DEFAULT_CHARSET, secretKey);
         returnMap.put("sign", sign);
         return injector(resultMap, payRequestParams);
     }
@@ -145,7 +148,7 @@ public class WeChatPayService implements Payable {
         Params payRequestParams = nativeBusinessWrapper.getParams(productId);
         payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
 
-        if ("true".equals(weChatPayConfig.getDevMode())) {
+        if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(params, fieldNames);
@@ -180,7 +183,7 @@ public class WeChatPayService implements Payable {
     public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
 
-        if ("true".equals(weChatPayConfig.getDevMode())) {
+        if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
@@ -199,8 +202,7 @@ public class WeChatPayService implements Payable {
     @Override
     public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
         payRequestParams.setTrade_type(WeChatPayTypeEnum.MWEB);
-        //TODO scene_info 未完善
-        if ("true".equals(weChatPayConfig.getDevMode())) {
+        if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "scene_info"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
@@ -228,7 +230,7 @@ public class WeChatPayService implements Payable {
      * @param productId 商品编号  此id 是商户端生成   用于标识该次商品交易的商品id  并不按照商品种类来规定
      * @return 规定格式的二维码编码 用于后续二维码的生成
      */
-    private String createQRCodeUrl(String productId) {
+    private String createQRCodeUrl(String productId) throws PayException {
         String appId = weChatPayConfig.getAppid();
         String mchId = weChatPayConfig.getMch_id();
         String timestamp = String.valueOf(System.currentTimeMillis() / 1000);
@@ -240,7 +242,7 @@ public class WeChatPayService implements Payable {
         map.put("mch_id", mchId);
         map.put("nonce_str", nonceStr);
         map.put("product_id", productId);
-        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(map), DEFAULT_CHARSET, secretKey);
+        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(map), MD5, DEFAULT_CHARSET, secretKey);
         return String.format(QR_CODE_TEMPLATE, sign, appId, mchId, productId, timestamp, nonceStr);
     }
 
@@ -251,7 +253,7 @@ public class WeChatPayService implements Payable {
      * @param logoPath  logo的路径
      * @param productId 商品编号
      */
-    public void createQRCodeImage(OutputStream out, String logoPath, String productId) {
+    public void createQRCodeImage(OutputStream out, String logoPath, String productId) throws PayException {
         QRCodeUtil.encode(createQRCodeUrl(productId), 200, 200, "png", logoPath, out);
     }
 
@@ -261,7 +263,7 @@ public class WeChatPayService implements Payable {
      * @param out       二维码输出流
      * @param productId 商品编号
      */
-    public void createQRCodeImage(OutputStream out, String productId) {
+    public void createQRCodeImage(OutputStream out, String productId) throws PayException {
         QRCodeUtil.encode(createQRCodeUrl(productId), 200, 200, "png", out);
     }
 
@@ -285,7 +287,7 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> refund(RefundRequestParams refundRequestParams) throws PayException {
-        String refundUrl = "";
+
         String mchId = weChatPayConfig.getMch_id();
         String appId = weChatPayConfig.getAppid();
         String signType = weChatPayConfig.getSign_type();
@@ -293,7 +295,7 @@ public class WeChatPayService implements Payable {
         refundRequestParams.setMch_id(mchId);
         refundRequestParams.setSign_type(signType);
 
-        if ("true".equals(weChatPayConfig.getDevMode())) {
+        if (weChatPayConfig.isDevMode()) {
             String[] names = {"out_refund_no", "total_fee", "refund_fee"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(refundRequestParams, fieldNames);
@@ -307,17 +309,69 @@ public class WeChatPayService implements Payable {
         String secretKey = weChatPayConfig.getSecretKey();
         String certPath = weChatPayConfig.getCertPath();
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(refundRequestParams);
-        String sign = ObjectUtils.signatureGenerator(sortedMap, DEFAULT_CHARSET, secretKey);
+        String sign = ObjectUtils.signatureGenerator(sortedMap, MD5, DEFAULT_CHARSET, secretKey);
         sortedMap.put("sign", sign);
         String xml = ObjectUtils.mapToXML(sortedMap);
 
-        Map<String, Object> resultMap = doWeChatPayRequest(refundUrl, xml, certPath, mchId);
+        Map<String, Object> resultMap = doWeChatPayRequest(WeChatPayTypeEnum.REFUND.getApi(), xml, certPath, mchId);
         if ("SUCCESS".equals(resultMap.get("result_code"))) {
-            ObjectUtils.verifySignature(resultMap, secretKey);
+            ObjectUtils.verifySignature(resultMap, MD5, secretKey);
             resultMap.put("secretKey", secretKey);
             return injector(resultMap, refundRequestParams);
         }
         throw new PayException("参数列表：" + resultMap);
+    }
+
+    @Override
+    public Map<String, Object> billDownload(String billDate) throws PayException {
+        Map<String, Object> result = new HashMap<>();
+
+        String appId = weChatPayConfig.getAppid();
+        String mchId = weChatPayConfig.getMch_id();
+        String nonceStr = ObjectUtils.onceStrGenerator();
+        String secretKey = weChatPayConfig.getSecretKey();
+        result.put("appid", appId);
+        result.put("mch_id", mchId);
+        result.put("nonce_str", nonceStr);
+        result.put("bill_date", billDate);
+        result.put("bill_type", "ALL");
+        String sign = ObjectUtils.signatureGenerator(ObjectUtils.paramsSorter(result), MD5, DEFAULT_CHARSET, secretKey);
+        result.put("sign", sign);
+        String xml = ObjectUtils.mapToXML(result);
+        String str = doWeChatPayRequest(xml);
+        String newStr = str.replaceAll(",", " "); // 去空格
+        String[] tempStr = newStr.split("`"); // 数据分组
+//        String[] t = tempStr[0].split(" ");// 分组标题
+
+        String[] t = {"tradeTime", "appId", "mchId", "subMchId", "deviceId", "outTradeNo", "sign", "tradeType", "tradeStatus", "bank", "feeType", "totalFee", "enterpriseFee", "refundId", "outRefundNo", "refundFee", "enterpriseRefundFee", "refundType", "refundStatus", "attach", "sceneInfo", "serviceFee", "serviceFeeRate"};
+        int k = 1; // 纪录数组下标
+        int j = tempStr.length / t.length; // 计算循环次数
+        List<Map<String, Object>> maps = new ArrayList<>();
+        for (int i = 0; i < j; i++) {
+            Map<String, Object> map = new TreeMap<>();
+            for (int l = 0; l < t.length; l++) {
+                /*********************** 我添加的开始 ***********************/
+                //如果是最后列且是最后一行数据时，去除数据里的汉字
+                if ((i == j - 1) && (l == t.length - 1)) {
+                    String reg = "[\u4e00-\u9fa5]";//汉字的正则表达式
+                    Pattern pat = Pattern.compile(reg);
+                    Matcher mat = pat.matcher(tempStr[l + k]);
+                    String repickStr = mat.replaceAll("");
+                    map.put(t[l], repickStr);
+//                    System.out.println(t[l] + ":" + repickStr);
+                } else {
+                    map.put(t[l], tempStr[l + k]);
+//                    System.out.println(t[l] + ":" + tempStr[l + k]);
+                }
+                /*********************** 我添加的结束 ***********************/
+            }
+            maps.add(map);
+//            System.out.println("---------");// 摘取有用数据存入数据库
+            k = k + t.length;
+        }
+        Map<String, Object> resultList = new HashMap<>();
+        resultList.put("bill", maps);
+        return resultList;
     }
 
     private Map<String, Object> orderHandler(PayType weChatPayTypeEnum, String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
@@ -335,7 +389,7 @@ public class WeChatPayService implements Payable {
      * @param orderId the order id
      * @return the string
      */
-    private String xmlForQueryWrapper(String orderId, OrderIdTypeEnum orderIdTypeEnum, PayConfig payConfig) {
+    private String xmlForQueryWrapper(String orderId, OrderIdTypeEnum orderIdTypeEnum, PayConfig payConfig) throws PayException {
         String nonceStr = ObjectUtils.onceStrGenerator();
         String appId = payConfig.getAppid();
         String mchId = payConfig.getMch_id();
@@ -351,7 +405,7 @@ public class WeChatPayService implements Payable {
         map.put("appid", appId);
         map.put("mch_id", mchId);
         map.put(orderIdTypeEnum.name().toLowerCase(), orderId);
-        String sign = ObjectUtils.signatureGenerator(map, DEFAULT_CHARSET, secretKey);
+        String sign = ObjectUtils.signatureGenerator(map, MD5, DEFAULT_CHARSET, secretKey);
         map.put("sign", sign);
         return ObjectUtils.mapToXML(map);
     }
@@ -366,6 +420,12 @@ public class WeChatPayService implements Payable {
     private Map<String, Object> doWeChatPayRequest(String url, String xml) {
         String xmlResult = HttpKit.httpPost(url, xml);
         return xmlTo8859Map(xmlResult);
+    }
+
+    private String doWeChatPayRequest(String xml) throws PayException {
+        return HttpKit.httpPost(WeChatPayTypeEnum.BILL_DOWNLOAD.getApi(), xml);
+
+
     }
 
     /**

@@ -23,7 +23,7 @@ public class AliPayConfig implements PayConfig {
     private String biz_content;
     @Override
     public String getAppid() {
-        return null;
+        return app_id;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class AliPayConfig implements PayConfig {
 
     @Override
     public String getSign_type() {
-        return null;
+        return sign_type;
     }
 
     @Override
@@ -54,5 +54,15 @@ public class AliPayConfig implements PayConfig {
     @Override
     public String getDevMode() {
         return null;
+    }
+
+    @Override
+    public String getCertPath() {
+        return null;
+    }
+
+    @Override
+    public boolean isDevMode() {
+        return false;
     }
 }

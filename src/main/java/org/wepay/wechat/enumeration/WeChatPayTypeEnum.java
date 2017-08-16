@@ -34,10 +34,7 @@ public enum WeChatPayTypeEnum implements PayType {
      * H5支付.
      */
     MWEB(WeChatPayTypeEnum.JSAPI.uri),
-    /**
-     * 微信小程序支付.
-     */
-    WXA_API("UNAWARE"),
+
     /**
      * 查询订单.
      */
@@ -53,7 +50,12 @@ public enum WeChatPayTypeEnum implements PayType {
     /**
      * 查询退款.
      */
-    REFUND_QUERY("pay/refundquery");
+    REFUND_QUERY("pay/refundquery"),
+    /**
+     * 下载对账单.
+     */
+    BILL_DOWNLOAD("pay/downloadbill");
+
 
     private static final String WE_CHAT_PAY_URL = "https://api.mch.weixin.qq.com/";
     private final String uri;

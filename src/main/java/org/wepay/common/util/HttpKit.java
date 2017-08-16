@@ -71,8 +71,8 @@ public class HttpKit {
             // Trust own CA and all self-signed certs
             SSLContext sslcontext = SSLContexts.custom().loadKeyMaterial(keyStore, pks).build();
             // Allow TLSv1 protocol only   BROWSER_COMPATIBLE_HOSTNAME_VERIFIER
-            SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(sslcontext, new String[]{"TLSv1"}, null, SSLConnectionSocketFactory.getDefaultHostnameVerifier());
-
+            String[] supportedProtocols = {"TLSv1", "SSLv3"};
+            SSLConnectionSocketFactory sslConnectionSocketFactory = new SSLConnectionSocketFactory(sslcontext, supportedProtocols, null, SSLConnectionSocketFactory.getDefaultHostnameVerifier());
             try (CloseableHttpClient httpClient = HttpClients.custom().setSSLSocketFactory(sslConnectionSocketFactory).build()) {
                 return clientPostRequest(url, param, httpClient);
             }

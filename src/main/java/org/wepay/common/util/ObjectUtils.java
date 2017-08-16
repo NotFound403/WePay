@@ -42,7 +42,7 @@ public class ObjectUtils {
     private static final Logger log = LoggerFactory.getLogger(ObjectUtils.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
-
+    public static final String MD5 = "md5";
     private ObjectUtils() {
     }
 
@@ -119,14 +119,20 @@ public class ObjectUtils {
      * <p>
      * 签名生成器
      *
-     * @param sortedMap the sorted map
-     * @param charset   the charset
-     * @param key       the key
+     * @param sortedMap   the sorted map
+     * @param encryptType 加密类型
+     * @param charset     the charset
+     * @param key         the key
      * @return the string
+     * @throws PayException the pay exception
      */
-    public static String signatureGenerator(Map<String, Object> sortedMap, String charset, String key) {
+    public static String signatureGenerator(Map<String, Object> sortedMap, String encryptType, String charset, String key) throws PayException {
         String origin = getParamStr(sortedMap, key);
-        return md5Encrypt(origin, charset);
+        if ((MD5).equalsIgnoreCase(encryptType)) {
+            return md5Encrypt(origin, charset);
+        }
+        throw new PayException("签名仅支持 MD5,RSA");
+
     }
 
     private static String getParamStr(Map<String, Object> sortedMap, String key) {
@@ -318,9 +324,9 @@ public class ObjectUtils {
      * @param secretKey the secret key
      * @throws PayException the pay exception
      */
-    public static <M extends Map<String, Object>> void verifySignature(M m, String secretKey) throws PayException {
+    public static <M extends Map<String, Object>> void verifySignature(M m, String encryptType, String secretKey) throws PayException {
         String originSign = (String) m.remove("sign");
-        String sign = signatureGenerator(ObjectUtils.paramsSorter(m), DEFAULT_CHARSET, secretKey);
+        String sign = signatureGenerator(ObjectUtils.paramsSorter(m), encryptType, DEFAULT_CHARSET, secretKey);
         if (!originSign.equals(sign)) {
             throw new PayException("签名验证失败");
         }

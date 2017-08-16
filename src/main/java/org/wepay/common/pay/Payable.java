@@ -20,7 +20,7 @@ import java.util.Map;
 public interface Payable {
 
     /**
-     * 公众号内H5发起支付  公众号支付.
+     * 公众号内H5发起支付  公众号支付 小程序支付.
      *
      * @param payRequestParams 业务参数   基础参数自动注入
      * @return the map
@@ -111,5 +111,13 @@ public interface Payable {
      */
     Map<String, Object> refund(RefundRequestParams refundRequestParams) throws PayException;
 
+    /**
+     * 下载对账单.
+     *
+     * @param billDate 格式为 yyyyMMdd
+     * @return the map
+     * @throws PayException the pay exception
+     */
+    Map<String, Object> billDownload(String billDate) throws PayException;
 }
 
