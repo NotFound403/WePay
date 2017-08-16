@@ -1,5 +1,6 @@
 package org.wepay.common.pay;
 
+import com.alipay.api.AlipayApiException;
 import org.wepay.common.exception.PayException;
 import org.wepay.wechat.entity.RefundRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
@@ -36,7 +37,7 @@ public interface Payable {
      * @return the map
      * @throws PayException the pay exception
      */
-    Map<String, Object> payByApp(Params payRequestParams) throws PayException;
+    Map<String, Object> payByApp(Params payRequestParams) throws PayException, AlipayApiException;
 
     /**
      * 扫码模式一.

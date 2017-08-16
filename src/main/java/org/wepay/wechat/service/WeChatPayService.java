@@ -39,6 +39,7 @@ public class WeChatPayService implements Payable {
      * The constant PARAMS_KEY.
      */
     public static final String PARAMS_KEY = "params_key";
+    public static final String BILL_KEY="bill";
     private static final Logger log = LoggerFactory.getLogger(WeChatPayService.class);
     private static final String QR_CODE_TEMPLATE = "weixin：//wxpay/bizpayurl?sign=%s&appid=%s&mch_id=%s&product_id=%s&time_stamp=%s&nonce_str=%s";
     private PayConfig weChatPayConfig;
@@ -350,7 +351,6 @@ public class WeChatPayService implements Payable {
         for (int i = 0; i < j; i++) {
             Map<String, Object> map = new TreeMap<>();
             for (int l = 0; l < t.length; l++) {
-                /*********************** 我添加的开始 ***********************/
                 //如果是最后列且是最后一行数据时，去除数据里的汉字
                 if ((i == j - 1) && (l == t.length - 1)) {
                     String reg = "[\u4e00-\u9fa5]";//汉字的正则表达式
@@ -358,19 +358,16 @@ public class WeChatPayService implements Payable {
                     Matcher mat = pat.matcher(tempStr[l + k]);
                     String repickStr = mat.replaceAll("");
                     map.put(t[l], repickStr);
-//                    System.out.println(t[l] + ":" + repickStr);
                 } else {
                     map.put(t[l], tempStr[l + k]);
-//                    System.out.println(t[l] + ":" + tempStr[l + k]);
                 }
-                /*********************** 我添加的结束 ***********************/
             }
             maps.add(map);
 //            System.out.println("---------");// 摘取有用数据存入数据库
             k = k + t.length;
         }
         Map<String, Object> resultList = new HashMap<>();
-        resultList.put("bill", maps);
+        resultList.put(BILL_KEY, maps);
         return resultList;
     }
 

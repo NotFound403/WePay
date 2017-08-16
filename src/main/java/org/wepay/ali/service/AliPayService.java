@@ -1,9 +1,17 @@
 package org.wepay.ali.service;
 
+import com.alipay.api.AlipayApiException;
+import com.alipay.api.AlipayClient;
+import com.alipay.api.DefaultAlipayClient;
+import com.alipay.api.request.AlipayTradeAppPayRequest;
+import com.alipay.api.response.AlipayTradeAppPayResponse;
+import org.wepay.ali.enumeration.AliPayTypeEnum;
 import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.NativeBusiness;
 import org.wepay.common.pay.Params;
+import org.wepay.common.pay.PayConfig;
 import org.wepay.common.pay.Payable;
+import org.wepay.common.util.ObjectUtils;
 import org.wepay.wechat.entity.RefundRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 
@@ -21,13 +29,27 @@ import java.util.Map;
 
 
 public class AliPayService implements Payable {
+
+    private PayConfig aliPayConfig;
+
     @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
         return null;
     }
 
     @Override
-    public Map<String, Object> payByApp(Params payRequestParams) throws PayException {
+    public Map<String, Object> payByApp(Params payRequestParams) throws PayException, AlipayApiException {
+        String appId = aliPayConfig.getAppid();
+        AlipayClient alipayClient = new DefaultAlipayClient(AliPayTypeEnum.PAY.getApi(), appId, "", "", "", "");
+        AlipayTradeAppPayRequest request = new AlipayTradeAppPayRequest();
+        request.setBizContent(ObjectUtils.beanToJson(payRequestParams));
+        AlipayTradeAppPayResponse response=alipayClient.execute(request);
+
+        if (response.isSuccess()){
+            System.out.println("success");
+        }else {
+            System.out.println("fail");
+        }
         return null;
     }
 
