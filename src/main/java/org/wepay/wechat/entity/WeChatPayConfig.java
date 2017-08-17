@@ -28,7 +28,7 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     private static final long serialVersionUID = 9096980878564215572L;
     private static final Logger log = LoggerFactory.getLogger(WeChatPayConfig.class);
     private static final String PROPERTY_PLACEHOLDER = "weChatConfig.properties";
-    private static final ThreadLocal<WeChatPayConfig> WE_CHAT_PAY_CONFIG_THREAD_LOCAL = new ThreadLocal<>();
+    private static ThreadLocal<WeChatPayConfig> configThreadLocal = new ThreadLocal<>();
     private static final Decryptable DEFAULT_DECRYPTABLE = new Decryptable() {
         @Override
         public String decrypt(String original) {
@@ -113,16 +113,16 @@ public class WeChatPayConfig implements PayConfig, Serializable {
      * @throws PayException the pay exception
      */
     public static PayConfig initBaseConfig(Decryptable decryptable) throws PayException {
-        if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
+        if (configThreadLocal.get() == null) {
             synchronized (WeChatPayConfig.class) {
-                if (WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get() == null) {
+                if (configThreadLocal.get() == null) {
                     WeChatPayConfig weChatPayConfig = new WeChatPayConfig(decryptable);
-                    WE_CHAT_PAY_CONFIG_THREAD_LOCAL.set(weChatPayConfig);
+                    configThreadLocal.set(weChatPayConfig);
                     return weChatPayConfig;
                 }
             }
         }
-        return WE_CHAT_PAY_CONFIG_THREAD_LOCAL.get();
+        return configThreadLocal.get();
     }
 
     @Override

@@ -1,5 +1,6 @@
 package org.wepay.wechat.service;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,6 +9,7 @@ import org.wepay.common.pay.*;
 import org.wepay.common.util.HttpKit;
 import org.wepay.common.util.ObjectUtils;
 import org.wepay.common.util.QRCodeUtil;
+import org.wepay.wechat.entity.Bill;
 import org.wepay.wechat.entity.RefundRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 import org.wepay.wechat.enumeration.WeChatPayTypeEnum;
@@ -39,7 +41,7 @@ public class WeChatPayService implements Payable {
      * The constant PARAMS_KEY.
      */
     public static final String PARAMS_KEY = "params_key";
-    public static final String BILL_KEY="bill";
+    public static final String BILL_KEY = "bill";
     private static final Logger log = LoggerFactory.getLogger(WeChatPayService.class);
     private static final String QR_CODE_TEMPLATE = "weixin：//wxpay/bizpayurl?sign=%s&appid=%s&mch_id=%s&product_id=%s&time_stamp=%s&nonce_str=%s";
     private PayConfig weChatPayConfig;
@@ -344,10 +346,10 @@ public class WeChatPayService implements Payable {
         String[] tempStr = newStr.split("`"); // 数据分组
 //        String[] t = tempStr[0].split(" ");// 分组标题
 
-        String[] t = {"tradeTime", "appId", "mchId", "subMchId", "deviceId", "outTradeNo", "sign", "tradeType", "tradeStatus", "bank", "feeType", "totalFee", "enterpriseFee", "refundId", "outRefundNo", "refundFee", "enterpriseRefundFee", "refundType", "refundStatus", "attach", "sceneInfo", "serviceFee", "serviceFeeRate"};
+        String[] t = {"tradeTime", "appId", "mchId", "subMchId", "deviceId", "transactionId", "outTradeNo", "sign", "tradeType", "tradeStatus", "bank", "feeType", "totalFee", "enterpriseFee", "refundId", "outRefundNo", "refundFee", "enterpriseRefundFee", "refundType", "refundStatus", "attach", "sceneInfo", "serviceFee", "serviceFeeRate"};
         int k = 1; // 纪录数组下标
         int j = tempStr.length / t.length; // 计算循环次数
-        List<Map<String, Object>> maps = new ArrayList<>();
+        List<Bill> maps = new ArrayList<>();
         for (int i = 0; i < j; i++) {
             Map<String, Object> map = new TreeMap<>();
             for (int l = 0; l < t.length; l++) {
@@ -362,7 +364,17 @@ public class WeChatPayService implements Payable {
                     map.put(t[l], tempStr[l + k]);
                 }
             }
-            maps.add(map);
+            ObjectMapper mapper = new ObjectMapper();
+
+            try {
+                String json = mapper.writeValueAsString(map);
+                Bill bill = mapper.readValue(json, Bill.class);
+                maps.add(bill);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+
 //            System.out.println("---------");// 摘取有用数据存入数据库
             k = k + t.length;
         }

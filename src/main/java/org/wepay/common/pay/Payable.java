@@ -35,7 +35,8 @@ public interface Payable {
      *
      * @param payRequestParams 业务参数   基础参数自动注入
      * @return the map
-     * @throws PayException the pay exception
+     * @throws PayException       the pay exception
+     * @throws AlipayApiException the alipay api exception
      */
     Map<String, Object> payByApp(Params payRequestParams) throws PayException, AlipayApiException;
 

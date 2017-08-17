@@ -39,10 +39,14 @@ public class ObjectUtils {
      * The constant DEFAULT_CHARSET.
      */
     public static final String DEFAULT_CHARSET = "UTF-8";
+    /**
+     * The constant MD5.
+     */
+    public static final String MD5 = "md5";
     private static final Logger log = LoggerFactory.getLogger(ObjectUtils.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
-    public static final String MD5 = "md5";
+
     private ObjectUtils() {
     }
 
@@ -319,9 +323,10 @@ public class ObjectUtils {
     /**
      * 签名验证.
      *
-     * @param <M>       the type parameter
-     * @param m         the m
-     * @param secretKey the secret key
+     * @param <M>         the type parameter
+     * @param m           the m
+     * @param encryptType the encrypt type
+     * @param secretKey   the secret key
      * @throws PayException the pay exception
      */
     public static <M extends Map<String, Object>> void verifySignature(M m, String encryptType, String secretKey) throws PayException {

@@ -1,7 +1,5 @@
 package org.wepay.common.proxy;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.wepay.common.pay.Payable;
 import org.wepay.common.pay.PreBusinessService;
 
@@ -23,7 +21,6 @@ import static org.wepay.wechat.service.WeChatPayService.PARAMS_KEY;
 
 
 public class ProxyPayHandler implements InvocationHandler {
-    private static final Logger log = LoggerFactory.getLogger(ProxyPayHandler.class);
     private Payable target;
     private PreBusinessService preBusinessService;
 
@@ -41,7 +38,6 @@ public class ProxyPayHandler implements InvocationHandler {
     @Override
     @SuppressWarnings("unchecked")
     public Object invoke(Object proxy, Method method, Object[] args) throws InvocationTargetException, IllegalAccessException {
-//        System.out.println(method.getName());
         Object payResult = method.invoke(target, args);
         Map<String, Object> map = (Map<String, Object>) payResult;
         if (preBusinessService != null) {

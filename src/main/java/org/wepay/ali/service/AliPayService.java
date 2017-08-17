@@ -38,18 +38,24 @@ public class AliPayService implements Payable {
     }
 
     @Override
-    public Map<String, Object> payByApp(Params payRequestParams) throws PayException, AlipayApiException {
+    public Map<String, Object> payByApp(Params payRequestParams) throws PayException {
         String appId = aliPayConfig.getAppid();
         AlipayClient alipayClient = new DefaultAlipayClient(AliPayTypeEnum.PAY.getApi(), appId, "", "", "", "");
         AlipayTradeAppPayRequest request = new AlipayTradeAppPayRequest();
         request.setBizContent(ObjectUtils.beanToJson(payRequestParams));
-        AlipayTradeAppPayResponse response=alipayClient.execute(request);
 
-        if (response.isSuccess()){
-            System.out.println("success");
-        }else {
-            System.out.println("fail");
+        try {
+            AlipayTradeAppPayResponse response = alipayClient.execute(request);
+            if (response.isSuccess()) {
+                System.out.println("success");
+            } else {
+                System.out.println("fail");
+            }
+        } catch (AlipayApiException e) {
+            e.printStackTrace();
         }
+
+
         return null;
     }
 
