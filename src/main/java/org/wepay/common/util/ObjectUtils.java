@@ -309,7 +309,7 @@ public class ObjectUtils {
      * @return the string
      */
     private static String md5Encrypt(String origin, String charset) {
-        String encode = charset == null || "".equals(charset) ? "UTF-8" : charset;
+        String encode = charset == null || "".equals(charset) ? DEFAULT_CHARSET : charset;
         try {
             byte[] bytes = origin.getBytes(encode);
             MessageDigest md = MessageDigest.getInstance("MD5");

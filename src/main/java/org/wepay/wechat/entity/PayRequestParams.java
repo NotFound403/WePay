@@ -68,33 +68,33 @@ public class PayRequestParams implements Params, Serializable {
     // 扫码支付必填  设备读取用户微信中的条码或者二维码信息
     private String auth_code;
 
-    @Override
+
     public void setAppid(String appId) {
         this.appid = appId;
     }
 
-    @Override
+
     public void setMch_id(String mchId) {
         this.mch_id = mchId;
     }
 
-    @Override
+
     public void setNotify_url(String notifyUrl) {
         this.notify_url = notifyUrl;
     }
 
-    @Override
+
     public void setSign_type(String signType) {
         this.sign_type = signType;
     }
 
 
-    @Override
+
     public void setOpenid(String openId) {
         this.openid = openId;
     }
 
-    @Override
+
     public void setProduct_id(String productId) {
         this.product_id = productId;
     }
@@ -306,7 +306,7 @@ public class PayRequestParams implements Params, Serializable {
         return trade_type;
     }
 
-    @Override
+
     public void setTrade_type(PayType payType) {
         this.trade_type = payType.getType();
     }

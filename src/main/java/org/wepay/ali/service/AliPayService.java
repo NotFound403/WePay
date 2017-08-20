@@ -1,15 +1,16 @@
 package org.wepay.ali.service;
 
-import com.alipay.api.AlipayApiException;
-import com.alipay.api.AlipayClient;
-import com.alipay.api.DefaultAlipayClient;
-import com.alipay.api.request.AlipayTradeAppPayRequest;
-import com.alipay.api.response.AlipayTradeAppPayResponse;
+
+import org.wepay.ali.sdk.api.request.AlipayTradeAppPayRequest;
+import org.wepay.ali.sdk.api.response.AlipayTradeAppPayResponse;
+import org.wepay.ali.entity.AliPayConfig;
 import org.wepay.ali.enumeration.AliPayTypeEnum;
+import org.wepay.ali.sdk.api.AlipayApiException;
+import org.wepay.ali.sdk.api.AlipayClient;
+import org.wepay.ali.sdk.api.DefaultAlipayClient;
 import org.wepay.common.exception.PayException;
 import org.wepay.common.pay.NativeBusiness;
 import org.wepay.common.pay.Params;
-import org.wepay.common.pay.PayConfig;
 import org.wepay.common.pay.Payable;
 import org.wepay.common.util.ObjectUtils;
 import org.wepay.wechat.entity.RefundRequestParams;
@@ -30,7 +31,12 @@ import java.util.Map;
 
 public class AliPayService implements Payable {
 
-    private PayConfig aliPayConfig;
+    private AliPayConfig aliPayConfig;
+
+    @Override
+    public Map<String, Object> payByMicro(Params payRequestParams) throws PayException {
+        return null;
+    }
 
     @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
@@ -39,8 +45,7 @@ public class AliPayService implements Payable {
 
     @Override
     public Map<String, Object> payByApp(Params payRequestParams) throws PayException {
-        String appId = aliPayConfig.getAppid();
-        AlipayClient alipayClient = new DefaultAlipayClient(AliPayTypeEnum.PAY.getApi(), appId, "", "", "", "");
+        AlipayClient alipayClient = alipayClientBuilder();
         AlipayTradeAppPayRequest request = new AlipayTradeAppPayRequest();
         request.setBizContent(ObjectUtils.beanToJson(payRequestParams));
 
@@ -97,5 +102,14 @@ public class AliPayService implements Payable {
     @Override
     public Map<String, Object> billDownload(String billDate) throws PayException {
         return null;
+    }
+
+    private AlipayClient alipayClientBuilder() {
+        String appId = aliPayConfig.getAppid();
+        String privateKey = aliPayConfig.getPrivateKey();
+        String format = aliPayConfig.getFormat();
+        String charSet = aliPayConfig.getCharset();
+        String publicKey = aliPayConfig.getPublicKey();
+        return new DefaultAlipayClient(AliPayTypeEnum.PAY.getApi(), appId, privateKey, format, charSet, publicKey);
     }
 }

@@ -1,7 +1,6 @@
 package org.wepay.ali.entity;
 
 import org.wepay.common.pay.Params;
-import org.wepay.common.pay.PayType;
 
 /**
  * Created with IntelliJ IDEA.
@@ -177,43 +176,5 @@ public class BizContent implements Params {
         this.timeout_express = timeout_express;
     }
 
-    @Override
-    public void setAppid(String appId) {
 
-    }
-
-    @Override
-    public void setMch_id(String mchId) {
-
-    }
-
-    @Override
-    public void setNotify_url(String notifyUrl) {
-
-    }
-
-    @Override
-    public void setSign_type(String signType) {
-
-    }
-
-    @Override
-    public void setOpenid(String openId) {
-
-    }
-
-    @Override
-    public void setProduct_id(String productId) {
-
-    }
-
-    @Override
-    public String getTrade_type() {
-        return null;
-    }
-
-    @Override
-    public void setTrade_type(PayType payType) {
-
-    }
 }

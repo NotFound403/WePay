@@ -1,7 +1,5 @@
 package org.wepay.ali.entity;
 
-import org.wepay.common.pay.PayConfig;
-
 /**
  * Created with IntelliJ IDEA.
  * Author: Dax
@@ -11,64 +9,32 @@ import org.wepay.common.pay.PayConfig;
  */
 
 
-public class AliPayConfig implements PayConfig {
+public class AliPayConfig {
 
     private String app_id;
     private String charset;
     private String sign_type;
     private String sign;
-    private String  timestamp;
-    private final String version="1.0";
+    private String timestamp;
     private String notify_url;
     private String app_auth_token;
     private String biz_content;
-    @Override
+    private String privateKey;
+    private String publicKey;
+
+    public String getFormat() {
+        return "JSON";
+    }
+
+    public String getVersion() {
+        return "1.0";
+    }
+
     public String getAppid() {
         return app_id;
     }
 
-    @Override
-    public String getSecretKey() {
-        return null;
-    }
-
-    @Override
-    public String getNotify_url() {
-        return notify_url;
-    }
-
-    @Override
-    public String getSign_type() {
-        return sign_type;
-    }
-
-    @Override
-    public String getMch_id() {
-        return null;
-    }
-
-    @Override
-    public String getOpenid() {
-        return null;
-    }
-
-    @Override
-    public String getDevMode() {
-        return null;
-    }
-
-    @Override
-    public String getCertPath() {
-        return null;
-    }
-
-    @Override
-    public boolean isDevMode() {
-        return false;
-    }
-
-
-    public void setAppid(String appid) {
+    public void setAppid(String app_id) {
         this.app_id = app_id;
     }
 
@@ -80,7 +46,11 @@ public class AliPayConfig implements PayConfig {
         this.charset = charset;
     }
 
-    public void setSign_type(String sign_type) {
+    public String getSignType() {
+        return sign_type;
+    }
+
+    public void setSignType(String sign_type) {
         this.sign_type = sign_type;
     }
 
@@ -100,27 +70,43 @@ public class AliPayConfig implements PayConfig {
         this.timestamp = timestamp;
     }
 
-    public String getVersion() {
-        return version;
+    public String getNotify_url() {
+        return notify_url;
     }
 
-    public String getAppAuthToken() {
+    public void setNotify_url(String notify_url) {
+        this.notify_url = notify_url;
+    }
+
+    public String getApp_auth_token() {
         return app_auth_token;
     }
 
-    public void setAppAuthToken(String appAuthToken) {
-        this.app_auth_token = appAuthToken;
+    public void setApp_auth_token(String app_auth_token) {
+        this.app_auth_token = app_auth_token;
     }
 
-    public String getBizContent() {
+    public String getBiz_content() {
         return biz_content;
     }
 
-    public void setBizContent(String bizContent) {
-        this.biz_content = bizContent;
+    public void setBiz_content(String biz_content) {
+        this.biz_content = biz_content;
     }
 
-    public void setNotifyUrl(String notifyUrl) {
-        this.notify_url = notifyUrl;
+    public String getPrivateKey() {
+        return privateKey;
+    }
+
+    public void setPrivateKey(String privateKey) {
+        this.privateKey = privateKey;
+    }
+
+    public String getPublicKey() {
+        return publicKey;
+    }
+
+    public void setPublicKey(String publicKey) {
+        this.publicKey = publicKey;
     }
 }

@@ -10,6 +10,7 @@ import org.wepay.common.util.HttpKit;
 import org.wepay.common.util.ObjectUtils;
 import org.wepay.common.util.QRCodeUtil;
 import org.wepay.wechat.entity.Bill;
+import org.wepay.wechat.entity.PayRequestParams;
 import org.wepay.wechat.entity.RefundRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
 import org.wepay.wechat.enumeration.WeChatPayTypeEnum;
@@ -65,16 +66,17 @@ public class WeChatPayService implements Payable {
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付统一下单文档</a>
      */
     private Map<String, Object> unifiedOrder(Params payRequestParams) throws PayException {
-        payRequestParams.setAppid(weChatPayConfig.getAppid());
-        payRequestParams.setMch_id(weChatPayConfig.getMch_id());
-        payRequestParams.setNotify_url(weChatPayConfig.getNotify_url());
-        payRequestParams.setSign_type(weChatPayConfig.getSign_type());
-        payRequestParams.setOpenid(weChatPayConfig.getOpenid());
+
+        String appId = weChatPayConfig.getAppid();
+        String mchId = weChatPayConfig.getMch_id();
+        String notifyUrl = weChatPayConfig.getNotify_url();
+        String signType = weChatPayConfig.getSign_type();
+        String openId = weChatPayConfig.getOpenid();
 
         String secretKey = weChatPayConfig.getSecretKey();
-        String tradeType = payRequestParams.getTrade_type();
-
-        Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
+        Params params = paramsBuilder(payRequestParams, appId, mchId, notifyUrl, signType, openId);
+        String tradeType = getPayTpye(params);
+        Map<String, Object> sortedMap = ObjectUtils.paramsSorter(params);
         String sign = ObjectUtils.signatureGenerator(sortedMap, MD5, DEFAULT_CHARSET, secretKey);
         sortedMap.put("sign", sign);
         String xml = ObjectUtils.mapToXML(sortedMap);
@@ -94,14 +96,14 @@ public class WeChatPayService implements Payable {
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
         }
-        payRequestParams.setAppid(weChatPayConfig.getAppid());
-        payRequestParams.setMch_id(weChatPayConfig.getMch_id());
-        payRequestParams.setSign_type(weChatPayConfig.getSign_type());
-
+        String appId = weChatPayConfig.getAppid();
+        String mchId = weChatPayConfig.getMch_id();
+        String signType = weChatPayConfig.getSign_type();
+        Params params = paramsBuilder(payRequestParams, appId, mchId, signType);
         String secretKey = weChatPayConfig.getSecretKey();
 
 
-        Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
+        Map<String, Object> sortedMap = ObjectUtils.paramsSorter(params);
         String sign = ObjectUtils.signatureGenerator(sortedMap, MD5, DEFAULT_CHARSET, secretKey);
         sortedMap.put("sign", sign);
         String xml = ObjectUtils.mapToXML(sortedMap);
@@ -121,8 +123,8 @@ public class WeChatPayService implements Payable {
             ObjectUtils.checkParams(payRequestParams, fieldNames);
         }
 
-        payRequestParams.setTrade_type(WeChatPayTypeEnum.JSAPI);
-        Map<String, Object> resultMap = unifiedOrder(payRequestParams);
+        Params params=setPayTpye(payRequestParams,WeChatPayTypeEnum.JSAPI);
+        Map<String, Object> resultMap = unifiedOrder(params);
         Object appId = resultMap.get("appid");
         Object prepayId = resultMap.get("prepay_id");
         Object nonceStr = resultMap.get("nonce_str");
@@ -147,8 +149,9 @@ public class WeChatPayService implements Payable {
             ObjectUtils.checkParams(payRequestParams, fieldNames);
         }
 
-        payRequestParams.setTrade_type(WeChatPayTypeEnum.APP);
-        Map<String, Object> resultMap = unifiedOrder(payRequestParams);
+
+        Params params=setPayTpye(payRequestParams,WeChatPayTypeEnum.APP);
+        Map<String, Object> resultMap = unifiedOrder(params);
 
         Object appId = resultMap.get("appid");
         Object prepayId = resultMap.get("prepay_id");
@@ -172,18 +175,17 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException {
-        Map<String, Object> params = HttpKit.resolveRequestData(request);
-        String productId = (String) params.get("product_id");
+        Map<String, Object> paramsMap = HttpKit.resolveRequestData(request);
+        String productId = (String) paramsMap.get("product_id");
         Params payRequestParams = nativeBusinessWrapper.getParams(productId);
-        payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
 
         if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
             List<String> fieldNames = Arrays.asList(names);
-            ObjectUtils.checkParams(params, fieldNames);
+            ObjectUtils.checkParams(paramsMap, fieldNames);
         }
-
-        Map<String, Object> map = unifiedOrder(payRequestParams);
+        Params params=setPayTpye(payRequestParams,WeChatPayTypeEnum.NATIVE);
+        Map<String, Object> map = unifiedOrder(params);
         Object returnCode = map.get("return_code");
         Object resultCode = map.get("result_code");
         Object appId = map.get("appid");
@@ -210,7 +212,6 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
-        payRequestParams.setTrade_type(WeChatPayTypeEnum.NATIVE);
 
         if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "product_id"};
@@ -218,7 +219,8 @@ public class WeChatPayService implements Payable {
             ObjectUtils.checkParams(payRequestParams, fieldNames);
         }
 
-        Map<String, Object> resultMap = unifiedOrder(payRequestParams);
+        Params params=setPayTpye(payRequestParams,WeChatPayTypeEnum.NATIVE);
+        Map<String, Object> resultMap = unifiedOrder(params);
         String codeUrl = (String) resultMap.get("code_url");
         try {
             QRCodeUtil.encode(codeUrl, 200, 200, "png", response.getOutputStream());
@@ -230,14 +232,13 @@ public class WeChatPayService implements Payable {
 
     @Override
     public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
-        payRequestParams.setTrade_type(WeChatPayTypeEnum.MWEB);
         if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "scene_info"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
         }
-
-        Map<String, Object> map = unifiedOrder(payRequestParams);
+        Params params=setPayTpye(payRequestParams,WeChatPayTypeEnum.MWEB);
+        Map<String, Object> map = unifiedOrder(params);
         Object appId = map.get("appid");
         Object partnerId = map.get("mch_id");
         Object resultCode = map.get("result_code");
@@ -375,7 +376,7 @@ public class WeChatPayService implements Payable {
         String[] t = {"tradeTime", "appId", "mchId", "subMchId", "deviceId", "transactionId", "outTradeNo", "sign", "tradeType", "tradeStatus", "bank", "feeType", "totalFee", "enterpriseFee", "refundId", "outRefundNo", "refundFee", "enterpriseRefundFee", "refundType", "refundStatus", "attach", "sceneInfo", "serviceFee", "serviceFeeRate"};
         int k = 1; // 纪录数组下标
         int j = tempStr.length / t.length; // 计算循环次数
-        List<Bill> maps = new ArrayList<>();
+        List<Bill> bills = new ArrayList<>();
         for (int i = 0; i < j; i++) {
             Map<String, Object> map = new TreeMap<>();
             for (int l = 0; l < t.length; l++) {
@@ -395,14 +396,14 @@ public class WeChatPayService implements Payable {
             try {
                 String json = mapper.writeValueAsString(map);
                 Bill bill = mapper.readValue(json, Bill.class);
-                maps.add(bill);
+                bills.add(bill);
             } catch (IOException e) {
                 log.debug("账单数据转换异常", e);
             }
             k = k + t.length;
         }
         Map<String, Object> resultList = new HashMap<>();
-        resultList.put(BILL_KEY, maps);
+        resultList.put(BILL_KEY, bills);
         return resultList;
     }
 
@@ -489,5 +490,36 @@ public class WeChatPayService implements Payable {
     private <T> Map<String, Object> injector(Map<String, Object> map, T t) {
         map.put(PARAMS_KEY, t);
         return map;
+    }
+
+    private Params paramsBuilder(Params params, String appId, String mchId, String notifyUrl, String signType, String openId) {
+        PayRequestParams payRequestParams = (PayRequestParams) params;
+        payRequestParams.setAppid(appId);
+        payRequestParams.setMch_id(mchId);
+        payRequestParams.setNotify_url(notifyUrl);
+        payRequestParams.setSign_type(signType);
+        payRequestParams.setOpenid(openId);
+        return payRequestParams;
+    }
+
+    private Params paramsBuilder(Params params, String appId, String mchId, String signType) {
+        PayRequestParams payRequestParams = (PayRequestParams) params;
+        payRequestParams.setAppid(appId);
+        payRequestParams.setMch_id(mchId);
+        payRequestParams.setSign_type(signType);
+        return payRequestParams;
+    }
+
+
+
+    private Params setPayTpye(Params params, PayType weChatPayTypeEnum) {
+        PayRequestParams payRequestParams = (PayRequestParams) params;
+        payRequestParams.setTrade_type(weChatPayTypeEnum);
+        return payRequestParams;
+    }
+
+    private String getPayTpye(Params params) {
+        PayRequestParams payRequestParams = (PayRequestParams) params;
+        return payRequestParams.getTrade_type();
     }
 }
