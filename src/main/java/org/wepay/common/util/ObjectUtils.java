@@ -240,7 +240,9 @@ public class ObjectUtils {
         // 过滤空值
         mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         try {
-            return mapper.writeValueAsString(t);
+            String json = mapper.writeValueAsString(t);
+            if (!"{}".equals(json))
+                return json;
         } catch (JsonProcessingException e) {
             log.debug("json转换错误", e);
         }

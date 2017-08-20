@@ -1,6 +1,5 @@
 package org.wepay.common.pay;
 
-import com.alipay.api.AlipayApiException;
 import org.wepay.common.exception.PayException;
 import org.wepay.wechat.entity.RefundRequestParams;
 import org.wepay.wechat.enumeration.OrderIdTypeEnum;
@@ -20,6 +19,9 @@ import java.util.Map;
 
 public interface Payable {
 
+
+    Map<String, Object> payByMicro(Params payRequestParams) throws PayException;
+
     /**
      * 公众号内H5发起支付  公众号支付 小程序支付.
      *
@@ -36,9 +38,8 @@ public interface Payable {
      * @param payRequestParams 业务参数   基础参数自动注入
      * @return the map
      * @throws PayException       the pay exception
-     * @throws AlipayApiException the alipay api exception
      */
-    Map<String, Object> payByApp(Params payRequestParams) throws PayException, AlipayApiException;
+    Map<String, Object> payByApp(Params payRequestParams) throws PayException;
 
     /**
      * 扫码模式一.

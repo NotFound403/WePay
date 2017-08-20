@@ -476,12 +476,11 @@ public class PayRequestParams implements Params, Serializable {
     /**
      * 场景信息 按照腾讯文档上为json字符串 此处直接用bean来进行转换.
      *
-     * @param <T> 场景信息的封装  具体参见腾讯开发文档
-     * @param t   the t
+     * @param sceneInfo the scene info
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_1">腾讯微信支付开发文档</a>
      */
-    public <T> void setScene_info(T t) {
-        this.scene_info = ObjectUtils.beanToJson(t);
+    public void setScene_info(SceneInfo sceneInfo) {
+        this.scene_info = ObjectUtils.beanToJson(sceneInfo);
     }
 
 }

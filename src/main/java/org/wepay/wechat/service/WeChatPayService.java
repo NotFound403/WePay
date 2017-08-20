@@ -88,6 +88,32 @@ public class WeChatPayService implements Payable {
     }
 
     @Override
+    public Map<String, Object> payByMicro(Params payRequestParams) throws PayException {
+        if (weChatPayConfig.isDevMode()) {
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "auth_code"};
+            List<String> fieldNames = Arrays.asList(names);
+            ObjectUtils.checkParams(payRequestParams, fieldNames);
+        }
+        payRequestParams.setAppid(weChatPayConfig.getAppid());
+        payRequestParams.setMch_id(weChatPayConfig.getMch_id());
+        payRequestParams.setSign_type(weChatPayConfig.getSign_type());
+
+        String secretKey = weChatPayConfig.getSecretKey();
+
+
+        Map<String, Object> sortedMap = ObjectUtils.paramsSorter(payRequestParams);
+        String sign = ObjectUtils.signatureGenerator(sortedMap, MD5, DEFAULT_CHARSET, secretKey);
+        sortedMap.put("sign", sign);
+        String xml = ObjectUtils.mapToXML(sortedMap);
+        Map<String, Object> resultMap = doWeChatPayRequest(WeChatPayTypeEnum.MICRO_PAY.getApi(), xml);
+        if ("SUCCESS".equals(resultMap.get("result_code"))) {
+            ObjectUtils.verifySignature(resultMap, MD5, secretKey);
+            return injector(resultMap, payRequestParams);
+        }
+        throw new PayException("参数列表：" + resultMap);
+    }
+
+    @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
         if (weChatPayConfig.isDevMode()) {
             String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
@@ -371,11 +397,8 @@ public class WeChatPayService implements Payable {
                 Bill bill = mapper.readValue(json, Bill.class);
                 maps.add(bill);
             } catch (IOException e) {
-                e.printStackTrace();
+                log.debug("账单数据转换异常", e);
             }
-
-
-//            System.out.println("---------");// 摘取有用数据存入数据库
             k = k + t.length;
         }
         Map<String, Object> resultList = new HashMap<>();
