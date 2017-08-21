@@ -21,11 +21,13 @@
 #### **maven坐标**
  
  ``` javascript  
+ 
  <dependency>
    <groupId>cn.felord</groupId>
    <artifactId>wePay</artifactId>
    <version>1.0.1</version>
  </dependency>
+ 
  ```  
 
 
