@@ -18,6 +18,18 @@
  - 具体使用配置方法参看腾讯文档或者 wiki：[https://gitee.com/felord/WePay/wikis]
  - demo 包下有简单调用实例
  
+#### **maven坐标**
+ 
+ ``` javascript  
+ <dependency>
+   <groupId>cn.felord</groupId>
+   <artifactId>wePay</artifactId>
+   <version>1.0.1</version>
+ </dependency>
+ ```  
+
+
+
 #### **仓库地址**
  - OSC:[https://git.oschina.net/felord/WePay]
  - GitHub:[https://github.com/NotFound403/WePay]
