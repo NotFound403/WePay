@@ -20,7 +20,7 @@
  
 #### **maven坐标**
  
- ``` javascript  
+ ```   
  
  <dependency>
    <groupId>cn.felord</groupId>
