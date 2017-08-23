@@ -3,9 +3,12 @@ package cn.felord.wepay.wechat.entity;
 import cn.felord.wepay.common.exception.PayException;
 import cn.felord.wepay.common.pay.Decryptable;
 import cn.felord.wepay.common.pay.PayConfig;
+import cn.felord.wepay.common.util.PropertyUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.Serializable;
-import java.util.ResourceBundle;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -20,6 +23,8 @@ import java.util.ResourceBundle;
 
 public class WeChatPayConfig implements PayConfig, Serializable {
     private static final long serialVersionUID = 9096980878564215572L;
+    private static final Logger log = LoggerFactory.getLogger(WeChatPayConfig.class);
+
     // 微信开放平台审核通过的应用 appid 必传
     private String appid;
     // 私钥  签名算法使用 必传
@@ -36,34 +41,27 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     // 开发模式开关
     private String devMode;
 
+    /**
+     * Instantiates a new We chat pay config.
+     *
+     * @param decryptable the decryptable
+     */
     public WeChatPayConfig(Decryptable decryptable) throws PayException {
-        ResourceBundle resource = ResourceBundle.getBundle("weChatConfig");
-
-        String appId = resource.getString("appId");
-        String mchId = resource.getString("mchId");
-        String secKey = resource.getString("secretKey");
-        String notifyUrl = resource.getString("notifyUrl");
-        String openId = null;
-        if (resource.containsKey("openId")) {
-            openId = resource.getString("openId");
-        }
-        String dev = null;
-        if (resource.containsKey("devMode")) {
-            dev = resource.getString("devMode");
-        }
-        String cert = null;
-        if (resource.containsKey("devMode")) {
-            cert = resource.getString("certPath");
-        }
-        String signType = resource.getString("signType");
-
-
+        Map<Object, Object> config = PropertyUtil.readToMap();
+        String appId = (String) config.get("appId");
+        String mchId = (String) config.get("mchId");
+        String secKey = (String) config.get("secretKey");
+        String notifyUrl = (String) config.get("notifyUrl");
+        String signType = (String) config.get("signType");
+        String openId = (String) config.get("openId");
+        String cert = (String) config.get("certPath");
+        String dev = (String) config.get("devMode");
         if (decryptable != null) {
-            this.appid = verifyParam(decryptable.decrypt(appId), "appid");
-            this.mch_id = verifyParam(decryptable.decrypt(mchId), "mch_id");
-            this.secretKey = verifyParam(decryptable.decrypt(secKey), "secretKey");
-            this.notify_url = verifyParam(decryptable.decrypt(notifyUrl), "notify_url");
-            this.sign_type = verifyParam(signType, "sign_type");
+            this.appid = decryptable.decrypt(appId);
+            this.mch_id = decryptable.decrypt(mchId);
+            this.secretKey = decryptable.decrypt(secKey);
+            this.notify_url = decryptable.decrypt(notifyUrl);
+            this.sign_type = signType;
             this.openid = openId != null ? decryptable.decrypt(openId) : null;
             this.certPath = cert != null ? decryptable.decrypt(cert) : null;
             this.devMode = dev;
@@ -77,7 +75,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
             this.certPath = cert;
             this.devMode = dev;
         }
-
     }
 
 
@@ -114,13 +111,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     @Override
     public String getDevMode() {
         return devMode;
-    }
-
-    private String verifyParam(String str, String fieldName) throws PayException {
-        if (str != null && !"".equals(str)) {
-            return str;
-        }
-        throw new PayException("配置项参数 " + fieldName + " 没有值或者解密失败，请检查");
     }
 
     @Override

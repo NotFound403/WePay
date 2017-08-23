@@ -1,9 +1,5 @@
 package cn.felord.wepay.wechat.service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import cn.felord.wepay.common.exception.PayException;
 import cn.felord.wepay.common.pay.*;
 import cn.felord.wepay.common.util.HttpKit;
@@ -12,8 +8,13 @@ import cn.felord.wepay.common.util.QRCodeUtil;
 import cn.felord.wepay.wechat.entity.Bill;
 import cn.felord.wepay.wechat.entity.PayRequestParams;
 import cn.felord.wepay.wechat.entity.RefundRequestParams;
+import cn.felord.wepay.wechat.entity.WeChatPayConfig;
 import cn.felord.wepay.wechat.enumeration.OrderIdTypeEnum;
 import cn.felord.wepay.wechat.enumeration.WeChatPayTypeEnum;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,10 +26,10 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static cn.felord.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
-import static cn.felord.wepay.common.util.ObjectUtils.MD5;
 import static cn.felord.wepay.common.pay.Constant.BILL_KEY;
 import static cn.felord.wepay.common.pay.Constant.PARAMS_KEY;
+import static cn.felord.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
+import static cn.felord.wepay.common.util.ObjectUtils.MD5;
 
 /**
  * Created with IntelliJ IDEA.
@@ -529,5 +530,10 @@ public class WeChatPayClient implements Payable {
     private String getPayTpye(Params params) {
         PayRequestParams payRequestParams = (PayRequestParams) params;
         return payRequestParams.getTrade_type();
+    }
+
+    public static void main(String[] args) throws PayException {
+        WeChatPayConfig chatPayConfig=new WeChatPayConfig(null);
+        System.out.println(chatPayConfig);
     }
 }
