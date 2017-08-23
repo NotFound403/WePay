@@ -3,7 +3,7 @@ package cn.felord.wepay.wechat.entity;
 import cn.felord.wepay.common.exception.PayException;
 import cn.felord.wepay.common.pay.Decryptable;
 import cn.felord.wepay.common.pay.PayConfig;
-import cn.felord.wepay.common.util.PropertyUtil;
+import cn.felord.wepay.common.util.Configuration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -45,8 +45,9 @@ public class WeChatPayConfig implements PayConfig, Serializable {
      *
      * @param decryptable the decryptable
      */
-    public WeChatPayConfig(Decryptable decryptable) throws PayException {
-        Map<Object, Object> config = PropertyUtil.readToMap();
+    public <C extends Configuration> WeChatPayConfig(Decryptable decryptable, Class<C> clazz) throws PayException, IllegalAccessException, InstantiationException {
+        C c = clazz.newInstance();
+        Map<Object, Object> config = c == null ? Configuration.readDefault() : c.read();
         String appId = (String) config.get("appId");
         String mchId = (String) config.get("mchId");
         String secKey = (String) config.get("secretKey");
