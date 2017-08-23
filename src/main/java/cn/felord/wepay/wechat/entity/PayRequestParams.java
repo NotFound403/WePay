@@ -483,4 +483,33 @@ public class PayRequestParams implements Params, Serializable {
         this.scene_info = ObjectUtils.beanToJson(sceneInfo);
     }
 
+    @Override
+    public String toString() {
+        return "{" +
+                "appid:" + appid +
+                ", secretKey:" + secretKey +
+                ", mch_id:" + mch_id +
+                ", notify_url:" + notify_url +
+                ", sign_type:" + sign_type +
+                ", nonce_str:" + nonce_str +
+                ", sign:" + sign +
+                ", body:" + body +
+                ", attach:" + attach +
+                ", out_trade_no:" + out_trade_no +
+                ", fee_type:" + fee_type +
+                ", total_fee:" + total_fee +
+                ", spbill_create_ip:" + spbill_create_ip +
+                ", trade_type:" + trade_type +
+                ", device_info:" + device_info +
+                ", detail:" + detail +
+                ", time_start:" + time_start +
+                ", time_expire:" + time_expire +
+                ", goods_tag:" + goods_tag +
+                ", limit_pay:" + limit_pay +
+                ", scene_info:" + scene_info +
+                ", product_id:" + product_id +
+                ", openid:" + openid +
+                ", auth_code:" + auth_code +
+                '}';
+    }
 }

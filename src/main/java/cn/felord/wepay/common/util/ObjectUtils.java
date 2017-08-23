@@ -79,7 +79,7 @@ public class ObjectUtils {
                     Method getter = property.getReadMethod();
                     Object value = getter.invoke(t);
 //                    排除空值
-                    if (value != null && "".equals(value)) {
+                    if (value != null && !"".equals(value)) {
                         map.put(key, value);
                     }
                 }
@@ -135,7 +135,7 @@ public class ObjectUtils {
         if ((MD5).equalsIgnoreCase(encryptType)) {
             return md5Encrypt(origin, charset);
         }
-        throw new PayException("签名仅支持 MD5,RSA");
+        throw new PayException("only MD5 is supported");
 
     }
 
@@ -186,7 +186,7 @@ public class ObjectUtils {
             //字节转换成十六进制的字符串
             cipherText = byteArrayToHexString(encrypted).toUpperCase();
         } catch (Exception e) {
-            log.debug("AES加密错误：", e);
+            log.debug("AES encrypt error：", e);
         }
         return cipherText;
     }
@@ -200,7 +200,7 @@ public class ObjectUtils {
             byte[] bytes = cipher.doFinal(encrypted1);
             return new String(bytes, DEFAULT_CHARSET);
         } catch (Exception e) {
-            log.debug("解密错误：", e);
+            log.debug("AES decrypt error：", e);
         }
         return null;
     }
@@ -217,9 +217,9 @@ public class ObjectUtils {
         Set<Map.Entry<String, Object>> entrySet = map.entrySet();
         for (Map.Entry<String, Object> entry : entrySet) {
             String k = entry.getKey();
-            Object object = entry.getValue();
-            if (object != null) {
-                xml.append("<").append(k).append(">").append(map.get(k)).append("</").append(k).append(">");
+            Object v = entry.getValue();
+            if (v != null && !"".equals(v)) {
+                xml.append("<").append(k).append(">").append(v).append("</").append(k).append(">");
             }
         }
         xml.append("</xml>");
@@ -244,7 +244,7 @@ public class ObjectUtils {
             if (!"{}".equals(json))
                 return json;
         } catch (JsonProcessingException e) {
-            log.debug("json转换错误", e);
+            log.debug("bean can't  convert to JSON ", e);
         }
         return null;
     }
@@ -266,7 +266,7 @@ public class ObjectUtils {
                 map.put(childElement.getName(), childElement.getText());
             }
         } catch (DocumentException e) {
-            log.debug("XML转Map异常", e);
+            log.debug("XML can't convert to map", e);
         }
         return map;
     }
@@ -316,7 +316,7 @@ public class ObjectUtils {
             byte[] b = md.digest(bytes);
             return byteArrayToHexString(b).toUpperCase();
         } catch (UnsupportedEncodingException | NoSuchAlgorithmException e) {
-            log.debug("MD5加密异常", e);
+            log.debug("MD5 encrypt encode algorithm ", e);
         }
         return null;
     }
@@ -335,7 +335,7 @@ public class ObjectUtils {
         String originSign = (String) m.remove("sign");
         String sign = signatureGenerator(ObjectUtils.paramsSorter(m), encryptType, DEFAULT_CHARSET, secretKey);
         if (!originSign.equals(sign)) {
-            throw new PayException("签名验证失败");
+            throw new PayException("signature verification failed");
         }
     }
 
@@ -364,12 +364,12 @@ public class ObjectUtils {
                     Method getter = property.getReadMethod();
                     Object value = getter.invoke(t);
                     if (value == null || "".equals(value)) {
-                        throw new PayException(t.getClass().getName() + " 参数 " + key + " 不能为空");
+                        throw new PayException(t.getClass().getName() + "  field [" + key + "] is null");
                     }
                 }
             }
         } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
-            log.debug("获取实体bean信息异常", e);
+            log.debug("bean can be resolved ", e);
         }
     }
 

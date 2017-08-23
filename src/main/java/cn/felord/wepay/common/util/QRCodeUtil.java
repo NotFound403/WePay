@@ -42,7 +42,7 @@ public class QRCodeUtil {
     private static final int FRAME_WIDTH = 2;
 
     // 二维码写码器
-    private static MultiFormatWriter multiFormatWriter = new MultiFormatWriter();
+    private static final MultiFormatWriter MULTI_FORMAT_WRITER = new MultiFormatWriter();
 
     /**
      * 生成带logo的二维码 输出流.
@@ -58,7 +58,7 @@ public class QRCodeUtil {
         try {
             ImageIO.write(genBarcode(content, width, height, srcImagePath), format, out);
         } catch (IOException | WriterException e) {
-            log.debug("生成二维码失败：", e);
+            log.debug("create QRcode is defeated：", e);
         }
     }
 
@@ -78,10 +78,10 @@ public class QRCodeUtil {
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
 
         try {
-            BitMatrix bitMatrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
+            BitMatrix bitMatrix = MULTI_FORMAT_WRITER.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
             MatrixToImageWriter.writeToStream(bitMatrix, format, out);
         } catch (WriterException | IOException e) {
-            log.debug("生成二维码失败：", e);
+            log.debug("create QRcode is defeated ：", e);
         }
 
     }
@@ -102,11 +102,11 @@ public class QRCodeUtil {
         hints.put(EncodeHintType.MARGIN, 1);
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
         try {
-            BitMatrix bitMatrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
+            BitMatrix bitMatrix = MULTI_FORMAT_WRITER.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
             Path path = FileSystems.getDefault().getPath(filePath, fileName);
             MatrixToImageWriter.writeToPath(bitMatrix, format, path);
         } catch (WriterException | IOException e) {
-            log.debug("生成二维码失败：", e);
+            log.debug("create QRcode is defeated ：", e);
         }
     }
 
@@ -123,7 +123,7 @@ public class QRCodeUtil {
         hint.put(EncodeHintType.CHARACTER_SET, "utf-8");
         hint.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
         // 生成二维码
-        BitMatrix matrix = multiFormatWriter.encode(content, BarcodeFormat.QR_CODE, width, height, hint);
+        BitMatrix matrix = MULTI_FORMAT_WRITER.encode(content, BarcodeFormat.QR_CODE, width, height, hint);
 
         // 二维矩阵转为一维像素数组
         int halfW = matrix.getWidth() / 2;

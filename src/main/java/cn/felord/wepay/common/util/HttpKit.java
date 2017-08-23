@@ -48,7 +48,7 @@ public class HttpKit {
         try (CloseableHttpClient httpClient = HttpClients.createDefault()) {
             return clientPostRequest(url, param, httpClient);
         } catch (IOException e) {
-            log.debug("网络请求IO异常", e);
+            log.debug("POST request is defeated", e);
         }
         return null;
     }
@@ -77,7 +77,7 @@ public class HttpKit {
                 return clientPostRequest(url, param, httpClient);
             }
         } catch (KeyStoreException | CertificateException | NoSuchAlgorithmException | UnrecoverableKeyException | KeyManagementException | IOException e) {
-            log.debug("网络请求IO异常", e);
+            log.debug("SSL request is defeated", e);
         }
         return null;
     }
@@ -116,7 +116,7 @@ public class HttpKit {
                 requestData.append(str);
             }
         } catch (IOException e) {
-            log.debug("支付回调参数解析异常：", e);
+            log.debug("payment callback params can't be resolved：", e);
         }
         return ObjectUtils.xmlToMap(requestData.toString());
     }

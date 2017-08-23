@@ -6,6 +6,11 @@
     <version>1.0.1</version>
     <name>wePay</name>
     <url>https://git.oschina.net/felord/WePay</url>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
     <licenses>
         <license>
             <name>Apache License, Version 2.0</name>
@@ -14,6 +19,19 @@
             <comments>A business-friendly OSS license</comments>
         </license>
     </licenses>
+    <scm>
+        <tag>1.0.1</tag>
+        <url>git@git.oschina.net:felord/WePay.git</url>
+        <connection>scm:git:git@git.oschina.net:felord/WePay.git</connection>
+        <developerConnection>scm:git:git@git.oschina.net:felord/WePay.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <name>felord</name>
+            <email>felord@qq.com</email>
+            <organization>Free software</organization>
+        </developer>
+    </developers>
     <packaging>jar</packaging>
     <description>轻量级微信支付组件 只需要简单配置参数 使你能专注于具体支付业务的实现</description>
 
@@ -26,6 +44,11 @@
                     <source>1.7</source>
                     <target>1.7</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-gpg-plugin</artifactId>
+                <version>1.5</version>
             </plugin>
         </plugins>
     </build>
@@ -74,7 +97,6 @@
             <version>${servlet-version}</version>
             <scope>provided</scope>
         </dependency>
-        <!-- 二维码 -->
         <dependency>
             <groupId>com.google.zxing</groupId>
             <artifactId>core</artifactId>

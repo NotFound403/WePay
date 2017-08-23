@@ -44,7 +44,7 @@ public class WeChatPayCallback implements Callback {
         try {
             response.getWriter().write(xmlTemplate(resultCode, returnMsg));
         } catch (IOException e) {
-            log.debug("回调请求参数：" + result, e);
+            log.debug("callback request resolve params：" + result, e);
         }
     }
 

@@ -72,8 +72,8 @@ public class ProxyPayCallback implements InvocationHandler {
         try {
             return method.invoke(callback, args);
         } catch (IllegalAccessException | InvocationTargetException e) {
-            log.debug("调用回调异常：", e);
+            log.debug("payment callback is defeated：", e);
         }
-        throw new PayException("回调异常");
+        throw new PayException("payment callback is defeated");
     }
 }

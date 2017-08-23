@@ -157,4 +157,24 @@ public class RefundRequestParams implements Serializable {
     public void setRefund_account(RefundAccountEnum refundAccountEnum) {
         this.refund_account = refundAccountEnum.name();
     }
+
+    @Override
+    public String toString() {
+        return "{" +
+                "appid:" + appid +
+                ", secretKey:" + secretKey +
+                ", mch_id:" + mch_id +
+                ", sign_type:" + sign_type +
+                ", nonce_str:" + nonce_str +
+                ", sign:" + sign +
+                ", transaction_id:" + transaction_id +
+                ", out_trade_no:" + out_trade_no +
+                ", out_refund_no:" + out_refund_no +
+                ", refund_fee_type:" + refund_fee_type +
+                ", total_fee:" + total_fee +
+                ", refund_fee:" + refund_fee +
+                ", refund_desc:" + refund_desc +
+                ", refund_account:" + refund_account +
+                '}';
+    }
 }
