@@ -72,6 +72,7 @@ public class PropertyUtil {
      * Read to map map.
      *
      * @return the map
+     * @throws PayException the pay exception
      */
     public static Map<Object, Object> readToMap() throws PayException {
         if (null == props) {
@@ -88,8 +89,6 @@ public class PropertyUtil {
             if ( "".equals(value) ||value==null) {
                 throw new PayException("配置文件中 必配参数 " + key + " 未找到");
             }
-
-
         }
     }
 }

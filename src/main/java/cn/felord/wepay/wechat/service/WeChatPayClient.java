@@ -8,7 +8,6 @@ import cn.felord.wepay.common.util.QRCodeUtil;
 import cn.felord.wepay.wechat.entity.Bill;
 import cn.felord.wepay.wechat.entity.PayRequestParams;
 import cn.felord.wepay.wechat.entity.RefundRequestParams;
-import cn.felord.wepay.wechat.entity.WeChatPayConfig;
 import cn.felord.wepay.wechat.enumeration.OrderIdTypeEnum;
 import cn.felord.wepay.wechat.enumeration.WeChatPayTypeEnum;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -530,10 +529,5 @@ public class WeChatPayClient implements Payable {
     private String getPayTpye(Params params) {
         PayRequestParams payRequestParams = (PayRequestParams) params;
         return payRequestParams.getTrade_type();
-    }
-
-    public static void main(String[] args) throws PayException {
-        WeChatPayConfig chatPayConfig=new WeChatPayConfig(null);
-        System.out.println(chatPayConfig);
     }
 }
