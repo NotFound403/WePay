@@ -31,7 +31,7 @@ import static cn.felord.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
 import static cn.felord.wepay.common.util.ObjectUtils.MD5;
 
 /**
- * Created with IntelliJ IDEA.
+ * 微信支付客户端.
  *
  * @author Dax
  * @version v1.0.0
@@ -69,10 +69,9 @@ public class WeChatPayClient implements Payable {
         String mchId = weChatPayConfig.getMch_id();
         String notifyUrl = weChatPayConfig.getNotify_url();
         String signType = weChatPayConfig.getSign_type();
-        String openId = weChatPayConfig.getOpenid();
         String secretKey = weChatPayConfig.getSecretKey();
         String devMode = weChatPayConfig.getDevMode();
-        Params params = paramsBuilder(payRequestParams, appId, mchId, notifyUrl, signType, openId);
+        Params params = paramsBuilder(payRequestParams, appId, mchId, notifyUrl, signType);
         String tradeType = getPayTpye(params);
         Map<String, Object> sortedMap = ObjectUtils.paramsSorter(params);
         String sign = ObjectUtils.signatureGenerator(sortedMap, MD5, DEFAULT_CHARSET, secretKey);
@@ -125,7 +124,7 @@ public class WeChatPayClient implements Payable {
     @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
         if (weChatPayConfig.isDevMode()) {
-            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip"};
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip","openid"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
         }
@@ -240,7 +239,7 @@ public class WeChatPayClient implements Payable {
     @Override
     public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
         if (weChatPayConfig.isDevMode()) {
-            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "scene_info"};
+            String[] names = {"body", "out_trade_no", "total_fee", "spbill_create_ip", "scene_info","openid"};
             List<String> fieldNames = Arrays.asList(names);
             ObjectUtils.checkParams(payRequestParams, fieldNames);
         }
@@ -418,11 +417,7 @@ public class WeChatPayClient implements Payable {
 
     private Map<String, Object> orderHandler(PayType weChatPayTypeEnum, String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         String xml = xmlForQueryWrapper(orderId, orderIdTypeEnum, weChatPayConfig);
-        Map<String, Object> result = doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
-        if ("SUCCESS".equals(result.get("result_code"))) {
-            return result;
-        }
-        throw new PayException("request is defeated ：" + result);
+        return doWeChatPayRequest(weChatPayTypeEnum.getApi(), xml);
     }
 
     /**
@@ -501,13 +496,12 @@ public class WeChatPayClient implements Payable {
         return map;
     }
 
-    private Params paramsBuilder(Params params, String appId, String mchId, String notifyUrl, String signType, String openId) {
+    private Params paramsBuilder(Params params, String appId, String mchId, String notifyUrl, String signType) {
         PayRequestParams payRequestParams = (PayRequestParams) params;
         payRequestParams.setAppid(appId);
         payRequestParams.setMch_id(mchId);
         payRequestParams.setNotify_url(notifyUrl);
         payRequestParams.setSign_type(signType);
-        payRequestParams.setOpenid(openId);
         return payRequestParams;
     }
 

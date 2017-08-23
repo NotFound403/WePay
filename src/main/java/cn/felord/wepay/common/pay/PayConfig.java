@@ -45,12 +45,7 @@ public interface PayConfig {
      */
     String getMch_id();
 
-    /**
-     * Gets openid.
-     *
-     * @return the openid
-     */
-    String getOpenid();
+
 
     /**
      * Gets dev mode.

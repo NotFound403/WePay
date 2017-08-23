@@ -35,7 +35,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
     private String notify_url;
     // 签名算法 默认MD5
     private String sign_type;
-    private String openid;
     // 证书路径
     private String certPath;
     // 开发模式开关
@@ -53,7 +52,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
         String secKey = (String) config.get("secretKey");
         String notifyUrl = (String) config.get("notifyUrl");
         String signType = (String) config.get("signType");
-        String openId = (String) config.get("openId");
         String cert = (String) config.get("certPath");
         String dev = (String) config.get("devMode");
         if (decryptable != null) {
@@ -62,7 +60,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
             this.secretKey = decryptable.decrypt(secKey);
             this.notify_url = decryptable.decrypt(notifyUrl);
             this.sign_type = signType;
-            this.openid = openId != null ? decryptable.decrypt(openId) : null;
             this.certPath = cert != null ? decryptable.decrypt(cert) : null;
             this.devMode = dev;
         } else {
@@ -70,7 +67,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
             this.mch_id = mchId;
             this.secretKey = secKey;
             this.notify_url = notifyUrl;
-            this.openid = openId;
             this.sign_type = signType;
             this.certPath = cert;
             this.devMode = dev;
@@ -88,10 +84,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
         return mch_id;
     }
 
-    @Override
-    public String getOpenid() {
-        return openid;
-    }
 
     @Override
     public String getSecretKey() {
@@ -126,7 +118,6 @@ public class WeChatPayConfig implements PayConfig, Serializable {
                 ", mch_id:" + mch_id +
                 ", notify_url:" + notify_url +
                 ", sign_type:" + sign_type +
-                ", openid:" + openid +
                 ", certPath:" + certPath +
                 ", devMode:" + devMode +
                 '}';

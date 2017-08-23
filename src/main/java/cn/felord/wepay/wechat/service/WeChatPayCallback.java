@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Created with IntelliJ IDEA.
+ * 微信支付回调.
  *
  * @author Dax
  * @version v1.0.0

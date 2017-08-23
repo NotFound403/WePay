@@ -83,7 +83,7 @@ public class PropertyUtil {
     }
 
     private static void verifyKey() throws PayException {
-        String[] keys = {"appId", "mchId", "secretKey", "signType", "notifyUrl", "openId", "certPath"};
+        String[] keys = {"appId", "mchId", "secretKey", "signType", "notifyUrl", "certPath"};
         for (String key : keys) {
             String value = props.getProperty(key);
             if ( "".equals(value) ||value==null) {
