@@ -24,19 +24,19 @@ public abstract class Configuration {
 
 
     /**
-     * Read to map map.
+     * Read   map.
      *
      * @return the map
      * @throws PayException the pay exception
      */
-    public   Map<Object, Object> read() throws PayException {
+    public Map<Object, Object> read() throws PayException {
 
         ConfigProperties configProperties = AnnotationUtil.getAnnotation(this.getClass(), ConfigProperties.class);
         String fileName = "weChatConfig";
         if (configProperties != null) {
             fileName = configProperties.fileName();
         }
-        Properties  props = new Properties();
+        Properties props = new Properties();
         try (InputStream in = Configuration.class.getClassLoader().getResourceAsStream(fileName + ".properties")) {
             props.load(in);
         } catch (FileNotFoundException e) {
@@ -53,14 +53,22 @@ public abstract class Configuration {
             }
         }
         return props;
-    }  public  static   Map<Object, Object> readDefault() throws PayException {
+    }
+
+    /**
+     * Read default map.
+     *
+     * @return the map
+     * @throws PayException the pay exception
+     */
+    public static Map<Object, Object> readDefault() throws PayException {
 
         ConfigProperties configProperties = AnnotationUtil.getAnnotation(Configuration.class, ConfigProperties.class);
         String fileName = "weChatConfig";
         if (configProperties != null) {
             fileName = configProperties.fileName();
         }
-        Properties  props = new Properties();
+        Properties props = new Properties();
         try (InputStream in = Configuration.class.getClassLoader().getResourceAsStream(fileName + ".properties")) {
             props.load(in);
         } catch (FileNotFoundException e) {

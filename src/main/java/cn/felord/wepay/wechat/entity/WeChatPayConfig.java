@@ -46,8 +46,8 @@ public class WeChatPayConfig implements PayConfig, Serializable {
      * @param decryptable the decryptable
      */
     public <C extends Configuration> WeChatPayConfig(Decryptable decryptable, Class<C> clazz) throws PayException, IllegalAccessException, InstantiationException {
-        C c = clazz.newInstance();
-        Map<Object, Object> config = c == null ? Configuration.readDefault() : c.read();
+
+        Map<Object, Object> config = clazz == null ? Configuration.readDefault() : clazz.newInstance().read();
         String appId = (String) config.get("appId");
         String mchId = (String) config.get("mchId");
         String secKey = (String) config.get("secretKey");
