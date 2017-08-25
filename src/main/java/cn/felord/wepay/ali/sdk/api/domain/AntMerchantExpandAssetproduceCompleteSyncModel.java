@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 物料生产完成反馈接口
  *
  * @author auto create
- * @since 1.0, 2017-06-30 10:15:08
+ * @version $Id: $Id
  */
 public class AntMerchantExpandAssetproduceCompleteSyncModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AntMerchantExpandAssetproduceCompleteSyncModel extends AlipayObject
 	@ApiField("item_delivery_detail")
 	private List<ItemDeliveryDetail> assetProduceDetails;
 
+	/**
+	 * <p>Getter for the field <code>assetProduceDetails</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ItemDeliveryDetail> getAssetProduceDetails() {
 		return this.assetProduceDetails;
 	}
+	/**
+	 * <p>Setter for the field <code>assetProduceDetails</code>.</p>
+	 *
+	 * @param assetProduceDetails a {@link java.util.List} object.
+	 */
 	public void setAssetProduceDetails(List<ItemDeliveryDetail> assetProduceDetails) {
 		this.assetProduceDetails = assetProduceDetails;
 	}

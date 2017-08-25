@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 会员卡更新
  *
  * @author auto create
- * @since 1.0, 2017-06-21 14:30:36
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardUpdateModel extends AlipayObject {
 
@@ -65,51 +65,121 @@ BIZ_CARD：支付宝业务卡号
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;
 
+	/**
+	 * <p>Getter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public MerchantCard getCardInfo() {
 		return this.cardInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @param cardInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mcardStyleInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.McardStylInfo} object.
+	 */
 	public McardStylInfo getMcardStyleInfo() {
 		return this.mcardStyleInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>mcardStyleInfo</code>.</p>
+	 *
+	 * @param mcardStyleInfo a {@link cn.felord.wepay.ali.sdk.api.domain.McardStylInfo} object.
+	 */
 	public void setMcardStyleInfo(McardStylInfo mcardStyleInfo) {
 		this.mcardStyleInfo = mcardStyleInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>notifyMessages</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<McardNotifyMessage> getNotifyMessages() {
 		return this.notifyMessages;
 	}
+	/**
+	 * <p>Setter for the field <code>notifyMessages</code>.</p>
+	 *
+	 * @param notifyMessages a {@link java.util.List} object.
+	 */
 	public void setNotifyMessages(List<McardNotifyMessage> notifyMessages) {
 		this.notifyMessages = notifyMessages;
 	}
 
+	/**
+	 * <p>Getter for the field <code>occurTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getOccurTime() {
 		return this.occurTime;
 	}
+	/**
+	 * <p>Setter for the field <code>occurTime</code>.</p>
+	 *
+	 * @param occurTime a {@link java.util.Date} object.
+	 */
 	public void setOccurTime(Date occurTime) {
 		this.occurTime = occurTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetCardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetCardNo() {
 		return this.targetCardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>targetCardNo</code>.</p>
+	 *
+	 * @param targetCardNo a {@link java.lang.String} object.
+	 */
 	public void setTargetCardNo(String targetCardNo) {
 		this.targetCardNo = targetCardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetCardNoType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetCardNoType() {
 		return this.targetCardNoType;
 	}
+	/**
+	 * <p>Setter for the field <code>targetCardNoType</code>.</p>
+	 *
+	 * @param targetCardNoType a {@link java.lang.String} object.
+	 */
 	public void setTargetCardNoType(String targetCardNoType) {
 		this.targetCardNoType = targetCardNoType;
 	}

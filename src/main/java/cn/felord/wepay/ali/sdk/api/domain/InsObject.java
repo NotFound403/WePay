@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险标的
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:36:51
+ * @version $Id: $Id
  */
 public class InsObject extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class InsObject extends AlipayObject {
 	@ApiField("type")
 	private Long type;
 
+	/**
+	 * <p>Getter for the field <code>insuredObjectId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInsuredObjectId() {
 		return this.insuredObjectId;
 	}
+	/**
+	 * <p>Setter for the field <code>insuredObjectId</code>.</p>
+	 *
+	 * @param insuredObjectId a {@link java.lang.String} object.
+	 */
 	public void setInsuredObjectId(String insuredObjectId) {
 		this.insuredObjectId = insuredObjectId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>insuredObjectInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInsuredObjectInfo() {
 		return this.insuredObjectInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>insuredObjectInfo</code>.</p>
+	 *
+	 * @param insuredObjectInfo a {@link java.lang.String} object.
+	 */
 	public void setInsuredObjectInfo(String insuredObjectInfo) {
 		this.insuredObjectInfo = insuredObjectInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.Long} object.
+	 */
 	public void setType(Long type) {
 		this.type = type;
 	}

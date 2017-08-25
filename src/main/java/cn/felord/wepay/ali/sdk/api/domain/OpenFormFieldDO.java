@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 开放表单字段定义数据模型
  *
  * @author auto create
- * @since 1.0, 2017-04-18 12:09:49
+ * @version $Id: $Id
  */
 public class OpenFormFieldDO extends AlipayObject {
 
@@ -36,16 +36,36 @@ OPEN_FORM_FIELD_MEMBER_GRADE -- 会员等级
 	@ApiField("required")
 	private String required;
 
+	/**
+	 * <p>Getter for the field <code>optional</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOptional() {
 		return this.optional;
 	}
+	/**
+	 * <p>Setter for the field <code>optional</code>.</p>
+	 *
+	 * @param optional a {@link java.lang.String} object.
+	 */
 	public void setOptional(String optional) {
 		this.optional = optional;
 	}
 
+	/**
+	 * <p>Getter for the field <code>required</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequired() {
 		return this.required;
 	}
+	/**
+	 * <p>Setter for the field <code>required</code>.</p>
+	 *
+	 * @param required a {@link java.lang.String} object.
+	 */
 	public void setRequired(String required) {
 		this.required = required;
 	}

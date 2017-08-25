@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户会员交易习惯查询接口
  *
  * @author auto create
- * @since 1.0, 2016-11-25 10:43:58
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataTradeHabbitQueryModel extends AlipayObject {
 
@@ -26,16 +26,36 @@ public class KoubeiMarketingDataTradeHabbitQueryModel extends AlipayObject {
 	@ApiField("store_ids")
 	private String storeIds;
 
+	/**
+	 * <p>Getter for the field <code>bizDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizDate() {
 		return this.bizDate;
 	}
+	/**
+	 * <p>Setter for the field <code>bizDate</code>.</p>
+	 *
+	 * @param bizDate a {@link java.lang.String} object.
+	 */
 	public void setBizDate(String bizDate) {
 		this.bizDate = bizDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeIds</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreIds() {
 		return this.storeIds;
 	}
+	/**
+	 * <p>Setter for the field <code>storeIds</code>.</p>
+	 *
+	 * @param storeIds a {@link java.lang.String} object.
+	 */
 	public void setStoreIds(String storeIds) {
 		this.storeIds = storeIds;
 	}

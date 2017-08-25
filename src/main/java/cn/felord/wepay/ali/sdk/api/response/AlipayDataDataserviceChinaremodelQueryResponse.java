@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataservice.chinaremodel.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:15
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceChinaremodelQueryResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayDataDataserviceChinaremodelQueryResponse extends AlipayRespon
 	@ApiField("result")
 	private AlipayChinareModelResult result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayChinareModelResult} object.
+	 */
 	public void setResult(AlipayChinareModelResult result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayChinareModelResult} object.
+	 */
 	public AlipayChinareModelResult getResult( ) {
 		return this.result;
 	}

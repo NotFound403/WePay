@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.operator.mobile.bind response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-03 16:48:39
+ * @version $Id: $Id
  */
 public class AlipayOperatorMobileBindResponse extends AlipayResponse {
 
@@ -47,37 +47,87 @@ public class AlipayOperatorMobileBindResponse extends AlipayResponse {
 	@ApiField("user_name")
 	private String userName;
 
+	/**
+	 * <p>Setter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @param alipayUserId a {@link java.lang.String} object.
+	 */
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>certificate</code>.</p>
+	 *
+	 * @param certificate a {@link java.lang.String} object.
+	 */
 	public void setCertificate(String certificate) {
 		this.certificate = certificate;
 	}
+	/**
+	 * <p>Getter for the field <code>certificate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertificate( ) {
 		return this.certificate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>mobileNo</code>.</p>
+	 *
+	 * @param mobileNo a {@link java.lang.String} object.
+	 */
 	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
+	/**
+	 * <p>Getter for the field <code>mobileNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobileNo( ) {
 		return this.mobileNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	/**
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserName( ) {
 		return this.userName;
 	}

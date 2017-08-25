@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 创建保养洗车订单接口
  *
  * @author auto create
- * @since 1.0, 2016-11-16 10:03:46
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarMaintainBizorderCreateModel extends AlipayObject {
 
@@ -129,121 +129,291 @@ public class AlipayEcoMycarMaintainBizorderCreateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>appointAffirmTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppointAffirmTime() {
 		return this.appointAffirmTime;
 	}
+	/**
+	 * <p>Setter for the field <code>appointAffirmTime</code>.</p>
+	 *
+	 * @param appointAffirmTime a {@link java.lang.String} object.
+	 */
 	public void setAppointAffirmTime(String appointAffirmTime) {
 		this.appointAffirmTime = appointAffirmTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appointEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppointEndTime() {
 		return this.appointEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>appointEndTime</code>.</p>
+	 *
+	 * @param appointEndTime a {@link java.lang.String} object.
+	 */
 	public void setAppointEndTime(String appointEndTime) {
 		this.appointEndTime = appointEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appointStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppointStartTime() {
 		return this.appointStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>appointStartTime</code>.</p>
+	 *
+	 * @param appointStartTime a {@link java.lang.String} object.
+	 */
 	public void setAppointStartTime(String appointStartTime) {
 		this.appointStartTime = appointStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appointStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAppointStatus() {
 		return this.appointStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>appointStatus</code>.</p>
+	 *
+	 * @param appointStatus a {@link java.lang.Long} object.
+	 */
 	public void setAppointStatus(Long appointStatus) {
 		this.appointStatus = appointStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arriveTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArriveTime() {
 		return this.arriveTime;
 	}
+	/**
+	 * <p>Setter for the field <code>arriveTime</code>.</p>
+	 *
+	 * @param arriveTime a {@link java.lang.String} object.
+	 */
 	public void setArriveTime(String arriveTime) {
 		this.arriveTime = arriveTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizStatusTxt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizStatusTxt() {
 		return this.bizStatusTxt;
 	}
+	/**
+	 * <p>Setter for the field <code>bizStatusTxt</code>.</p>
+	 *
+	 * @param bizStatusTxt a {@link java.lang.String} object.
+	 */
 	public void setBizStatusTxt(String bizStatusTxt) {
 		this.bizStatusTxt = bizStatusTxt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.Long} object.
+	 */
 	public void setBizType(Long bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>carId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCarId() {
 		return this.carId;
 	}
+	/**
+	 * <p>Setter for the field <code>carId</code>.</p>
+	 *
+	 * @param carId a {@link java.lang.String} object.
+	 */
 	public void setCarId(String carId) {
 		this.carId = carId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderServerList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<MaintainBizOrder> getOrderServerList() {
 		return this.orderServerList;
 	}
+	/**
+	 * <p>Setter for the field <code>orderServerList</code>.</p>
+	 *
+	 * @param orderServerList a {@link java.util.List} object.
+	 */
 	public void setOrderServerList(List<MaintainBizOrder> orderServerList) {
 		this.orderServerList = orderServerList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getOrderStatus() {
 		return this.orderStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @param orderStatus a {@link java.lang.Long} object.
+	 */
 	public void setOrderStatus(Long orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>originalCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginalCost() {
 		return this.originalCost;
 	}
+	/**
+	 * <p>Setter for the field <code>originalCost</code>.</p>
+	 *
+	 * @param originalCost a {@link java.lang.String} object.
+	 */
 	public void setOriginalCost(String originalCost) {
 		this.originalCost = originalCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outShopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutShopId() {
 		return this.outShopId;
 	}
+	/**
+	 * <p>Setter for the field <code>outShopId</code>.</p>
+	 *
+	 * @param outShopId a {@link java.lang.String} object.
+	 */
 	public void setOutShopId(String outShopId) {
 		this.outShopId = outShopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayTime() {
 		return this.payTime;
 	}
+	/**
+	 * <p>Setter for the field <code>payTime</code>.</p>
+	 *
+	 * @param payTime a {@link java.lang.String} object.
+	 */
 	public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>realCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealCost() {
 		return this.realCost;
 	}
+	/**
+	 * <p>Setter for the field <code>realCost</code>.</p>
+	 *
+	 * @param realCost a {@link java.lang.String} object.
+	 */
 	public void setRealCost(String realCost) {
 		this.realCost = realCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.Long} object.
+	 */
 	public void setShopId(Long shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

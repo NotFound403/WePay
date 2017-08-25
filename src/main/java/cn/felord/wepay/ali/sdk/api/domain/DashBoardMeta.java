@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 仪表盘详细信息
  *
  * @author auto create
- * @since 1.0, 2017-01-18 22:20:32
+ * @version $Id: $Id
  */
 public class DashBoardMeta extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class DashBoardMeta extends AlipayObject {
 	@ApiField("dashboard_name")
 	private String dashboardName;
 
+	/**
+	 * <p>Getter for the field <code>authStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getAuthStatus() {
 		return this.authStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>authStatus</code>.</p>
+	 *
+	 * @param authStatus a {@link java.lang.Boolean} object.
+	 */
 	public void setAuthStatus(Boolean authStatus) {
 		this.authStatus = authStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>createTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreateTime() {
 		return this.createTime;
 	}
+	/**
+	 * <p>Setter for the field <code>createTime</code>.</p>
+	 *
+	 * @param createTime a {@link java.lang.String} object.
+	 */
 	public void setCreateTime(String createTime) {
 		this.createTime = createTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dashboardId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDashboardId() {
 		return this.dashboardId;
 	}
+	/**
+	 * <p>Setter for the field <code>dashboardId</code>.</p>
+	 *
+	 * @param dashboardId a {@link java.lang.String} object.
+	 */
 	public void setDashboardId(String dashboardId) {
 		this.dashboardId = dashboardId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dashboardName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDashboardName() {
 		return this.dashboardName;
 	}
+	/**
+	 * <p>Setter for the field <code>dashboardName</code>.</p>
+	 *
+	 * @param dashboardName a {@link java.lang.String} object.
+	 */
 	public void setDashboardName(String dashboardName) {
 		this.dashboardName = dashboardName;
 	}

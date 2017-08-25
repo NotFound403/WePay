@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.flashsales.stock.sync.update request
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-08-22 15:32:32
+ * @version $Id: $Id
  */
 public class AlipayFlashsalesStockSyncUpdateRequest implements AlipayRequest<AlipayFlashsalesStockSyncUpdateResponse> {
 
@@ -33,23 +33,53 @@ public class AlipayFlashsalesStockSyncUpdateRequest implements AlipayRequest<Ali
 	 */
 	private Long stock;
 
+	/**
+	 * <p>Setter for the field <code>outProductId</code>.</p>
+	 *
+	 * @param outProductId a {@link java.lang.String} object.
+	 */
 	public void setOutProductId(String outProductId) {
 		this.outProductId = outProductId;
 	}
+	/**
+	 * <p>Getter for the field <code>outProductId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutProductId() {
 		return this.outProductId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publicId</code>.</p>
+	 *
+	 * @param publicId a {@link java.lang.String} object.
+	 */
 	public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
+	/**
+	 * <p>Getter for the field <code>publicId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicId() {
 		return this.publicId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>stock</code>.</p>
+	 *
+	 * @param stock a {@link java.lang.Long} object.
+	 */
 	public void setStock(Long stock) {
 		this.stock = stock;
 	}
+	/**
+	 * <p>Getter for the field <code>stock</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getStock() {
 		return this.stock;
 	}
@@ -61,58 +91,104 @@ public class AlipayFlashsalesStockSyncUpdateRequest implements AlipayRequest<Ali
 	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }	
 
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.flashsales.stock.sync.update";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("out_product_id", this.outProductId);
@@ -124,6 +200,12 @@ public class AlipayFlashsalesStockSyncUpdateRequest implements AlipayRequest<Ali
 		return txtParams;
 	}
 
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -131,28 +213,45 @@ public class AlipayFlashsalesStockSyncUpdateRequest implements AlipayRequest<Ali
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayFlashsalesStockSyncUpdateResponse> getResponseClass() {
 		return AlipayFlashsalesStockSyncUpdateResponse.class;
 	}
 	
 
+    /**
+     * <p>isNeedEncrypt.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

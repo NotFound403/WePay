@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 扩展区
  *
  * @author auto create
- * @since 1.0, 2017-07-04 11:08:57
+ * @version $Id: $Id
  */
 public class ExtensionArea extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class ExtensionArea extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
+	/**
+	 * <p>Getter for the field <code>gotoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGotoUrl() {
 		return this.gotoUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>gotoUrl</code>.</p>
+	 *
+	 * @param gotoUrl a {@link java.lang.String} object.
+	 */
 	public void setGotoUrl(String gotoUrl) {
 		this.gotoUrl = gotoUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>height</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getHeight() {
 		return this.height;
 	}
+	/**
+	 * <p>Setter for the field <code>height</code>.</p>
+	 *
+	 * @param height a {@link java.lang.Long} object.
+	 */
 	public void setHeight(Long height) {
 		this.height = height;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/**
+	 * <p>Getter for the field <code>url</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrl() {
 		return this.url;
 	}
+	/**
+	 * <p>Setter for the field <code>url</code>.</p>
+	 *
+	 * @param url a {@link java.lang.String} object.
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}

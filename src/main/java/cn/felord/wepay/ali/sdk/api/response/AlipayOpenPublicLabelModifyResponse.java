@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.label.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:55:16
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLabelModifyResponse extends AlipayResponse {
 

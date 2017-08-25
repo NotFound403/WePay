@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.templatedetail.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:10
+ * @version $Id: $Id
  */
 public class AlipayMarketingVoucherTemplatedetailQueryResponse extends AlipayResponse {
 
@@ -117,121 +117,291 @@ public class AlipayMarketingVoucherTemplatedetailQueryResponse extends AlipayRes
 	@ApiField("voucher_valid_period")
 	private String voucherValidPeriod;
 
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount( ) {
 		return this.amount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>floorAmount</code>.</p>
+	 *
+	 * @param floorAmount a {@link java.lang.String} object.
+	 */
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>floorAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFloorAmount( ) {
 		return this.floorAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publishAmount</code>.</p>
+	 *
+	 * @param publishAmount a {@link java.lang.String} object.
+	 */
 	public void setPublishAmount(String publishAmount) {
 		this.publishAmount = publishAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>publishAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublishAmount( ) {
 		return this.publishAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publishCount</code>.</p>
+	 *
+	 * @param publishCount a {@link java.lang.Long} object.
+	 */
 	public void setPublishCount(Long publishCount) {
 		this.publishCount = publishCount;
 	}
+	/**
+	 * <p>Getter for the field <code>publishCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPublishCount( ) {
 		return this.publishCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @param publishEndTime a {@link java.util.Date} object.
+	 */
 	public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
+	/**
+	 * <p>Getter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishEndTime( ) {
 		return this.publishEndTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @param publishStartTime a {@link java.util.Date} object.
+	 */
 	public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
+	/**
+	 * <p>Getter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishStartTime( ) {
 		return this.publishStartTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>recycleAmount</code>.</p>
+	 *
+	 * @param recycleAmount a {@link java.lang.String} object.
+	 */
 	public void setRecycleAmount(String recycleAmount) {
 		this.recycleAmount = recycleAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>recycleAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecycleAmount( ) {
 		return this.recycleAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}
 
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId( ) {
 		return this.templateId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>usedAmount</code>.</p>
+	 *
+	 * @param usedAmount a {@link java.lang.String} object.
+	 */
 	public void setUsedAmount(String usedAmount) {
 		this.usedAmount = usedAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>usedAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUsedAmount( ) {
 		return this.usedAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>usedCount</code>.</p>
+	 *
+	 * @param usedCount a {@link java.lang.Long} object.
+	 */
 	public void setUsedCount(Long usedCount) {
 		this.usedCount = usedCount;
 	}
+	/**
+	 * <p>Getter for the field <code>usedCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getUsedCount( ) {
 		return this.usedCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherDescription</code>.</p>
+	 *
+	 * @param voucherDescription a {@link java.lang.String} object.
+	 */
 	public void setVoucherDescription(String voucherDescription) {
 		this.voucherDescription = voucherDescription;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherDescription</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherDescription( ) {
 		return this.voucherDescription;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherName</code>.</p>
+	 *
+	 * @param voucherName a {@link java.lang.String} object.
+	 */
 	public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherName( ) {
 		return this.voucherName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherQuantity</code>.</p>
+	 *
+	 * @param voucherQuantity a {@link java.lang.Long} object.
+	 */
 	public void setVoucherQuantity(Long voucherQuantity) {
 		this.voucherQuantity = voucherQuantity;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherQuantity</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getVoucherQuantity( ) {
 		return this.voucherQuantity;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherType</code>.</p>
+	 *
+	 * @param voucherType a {@link java.lang.String} object.
+	 */
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherType( ) {
 		return this.voucherType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherValidPeriod</code>.</p>
+	 *
+	 * @param voucherValidPeriod a {@link java.lang.String} object.
+	 */
 	public void setVoucherValidPeriod(String voucherValidPeriod) {
 		this.voucherValidPeriod = voucherValidPeriod;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherValidPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherValidPeriod( ) {
 		return this.voucherValidPeriod;
 	}

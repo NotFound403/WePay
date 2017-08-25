@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.transfer.thirdparty.bill.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-06-25 17:00:56
+ * @version $Id: $Id
  */
 public class AlipayTransferThirdpartyBillCreateResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayTransferThirdpartyBillCreateResponse extends AlipayResponse {
 	@ApiField("payment_id")
 	private String paymentId;
 
+	/**
+	 * <p>Setter for the field <code>orderId</code>.</p>
+	 *
+	 * @param orderId a {@link java.lang.String} object.
+	 */
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
+	/**
+	 * <p>Getter for the field <code>orderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderId( ) {
 		return this.orderId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderType</code>.</p>
+	 *
+	 * @param orderType a {@link java.lang.String} object.
+	 */
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
+	/**
+	 * <p>Getter for the field <code>orderType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderType( ) {
 		return this.orderType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>paymentId</code>.</p>
+	 *
+	 * @param paymentId a {@link java.lang.String} object.
+	 */
 	public void setPaymentId(String paymentId) {
 		this.paymentId = paymentId;
 	}
+	/**
+	 * <p>Getter for the field <code>paymentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPaymentId( ) {
 		return this.paymentId;
 	}

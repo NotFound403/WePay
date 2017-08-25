@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 同步发票申请结果
  *
  * @author auto create
- * @since 1.0, 2017-05-09 14:11:19
+ * @version $Id: $Id
  */
 public class AlipayEbppInvoiceApplyResultSyncModel extends AlipayObject {
 
@@ -49,37 +49,87 @@ SUCCESS:成功;FAIL:失败
 	@ApiField("tax_apply_id")
 	private String taxApplyId;
 
+	/**
+	 * <p>Getter for the field <code>applyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyId() {
 		return this.applyId;
 	}
+	/**
+	 * <p>Setter for the field <code>applyId</code>.</p>
+	 *
+	 * @param applyId a {@link java.lang.String} object.
+	 */
 	public void setApplyId(String applyId) {
 		this.applyId = applyId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult() {
 		return this.result;
 	}
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode() {
 		return this.resultCode;
 	}
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultMsg() {
 		return this.resultMsg;
 	}
+	/**
+	 * <p>Setter for the field <code>resultMsg</code>.</p>
+	 *
+	 * @param resultMsg a {@link java.lang.String} object.
+	 */
 	public void setResultMsg(String resultMsg) {
 		this.resultMsg = resultMsg;
 	}
 
+	/**
+	 * <p>Getter for the field <code>taxApplyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTaxApplyId() {
 		return this.taxApplyId;
 	}
+	/**
+	 * <p>Setter for the field <code>taxApplyId</code>.</p>
+	 *
+	 * @param taxApplyId a {@link java.lang.String} object.
+	 */
 	public void setTaxApplyId(String taxApplyId) {
 		this.taxApplyId = taxApplyId;
 	}

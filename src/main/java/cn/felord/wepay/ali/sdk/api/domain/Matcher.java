@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 生活号用户匹配器
  *
  * @author auto create
- * @since 1.0, 2017-06-01 11:25:22
+ * @version $Id: $Id
  */
 public class Matcher extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class Matcher extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>identityCard</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentityCard() {
 		return this.identityCard;
 	}
+	/**
+	 * <p>Setter for the field <code>identityCard</code>.</p>
+	 *
+	 * @param identityCard a {@link java.lang.String} object.
+	 */
 	public void setIdentityCard(String identityCard) {
 		this.identityCard = identityCard;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobileNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobileNo() {
 		return this.mobileNo;
 	}
+	/**
+	 * <p>Setter for the field <code>mobileNo</code>.</p>
+	 *
+	 * @param mobileNo a {@link java.lang.String} object.
+	 */
 	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

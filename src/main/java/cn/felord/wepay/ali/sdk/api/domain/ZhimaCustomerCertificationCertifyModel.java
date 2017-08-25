@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 芝麻认证开始认证
  *
  * @author auto create
- * @since 1.0, 2017-01-10 16:08:26
+ * @version $Id: $Id
  */
 public class ZhimaCustomerCertificationCertifyModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class ZhimaCustomerCertificationCertifyModel extends AlipayObject {
 	@ApiField("biz_no")
 	private String bizNo;
 
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo() {
 		return this.bizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}

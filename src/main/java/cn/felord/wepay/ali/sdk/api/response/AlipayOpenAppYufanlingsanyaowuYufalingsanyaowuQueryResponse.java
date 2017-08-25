@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.app.yufanlingsanyaowu.yufalingsanyaowu.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-25 09:12:04
+ * @version $Id: $Id
  */
 public class AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryResponse extends
 	@ApiField("userid")
 	private String userid;
 
+	/**
+	 * <p>Setter for the field <code>userid</code>.</p>
+	 *
+	 * @param userid a {@link java.lang.String} object.
+	 */
 	public void setUserid(String userid) {
 		this.userid = userid;
 	}
+	/**
+	 * <p>Getter for the field <code>userid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserid( ) {
 		return this.userid;
 	}

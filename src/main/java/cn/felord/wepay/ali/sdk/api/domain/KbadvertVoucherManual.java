@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑客券的使用说明
  *
  * @author auto create
- * @since 1.0, 2017-02-20 21:18:14
+ * @version $Id: $Id
  */
 public class KbadvertVoucherManual extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class KbadvertVoucherManual extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>details</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getDetails() {
 		return this.details;
 	}
+	/**
+	 * <p>Setter for the field <code>details</code>.</p>
+	 *
+	 * @param details a {@link java.util.List} object.
+	 */
 	public void setDetails(List<String> details) {
 		this.details = details;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

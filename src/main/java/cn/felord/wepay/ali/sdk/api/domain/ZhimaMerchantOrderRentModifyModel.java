@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 信用借还订单修改接口
  *
  * @author auto create
- * @since 1.0, 2017-05-25 14:35:11
+ * @version $Id: $Id
  */
 public class ZhimaMerchantOrderRentModifyModel extends AlipayObject {
 
@@ -41,30 +41,70 @@ borrow_time 与 expiry_time 须至少传入一个，可同时传入。
 	@ApiField("product_code")
 	private String productCode;
 
+	/**
+	 * <p>Getter for the field <code>borrowTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBorrowTime() {
 		return this.borrowTime;
 	}
+	/**
+	 * <p>Setter for the field <code>borrowTime</code>.</p>
+	 *
+	 * @param borrowTime a {@link java.lang.String} object.
+	 */
 	public void setBorrowTime(String borrowTime) {
 		this.borrowTime = borrowTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>expiryTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExpiryTime() {
 		return this.expiryTime;
 	}
+	/**
+	 * <p>Setter for the field <code>expiryTime</code>.</p>
+	 *
+	 * @param expiryTime a {@link java.lang.String} object.
+	 */
 	public void setExpiryTime(String expiryTime) {
 		this.expiryTime = expiryTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}

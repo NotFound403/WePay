@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.point.budget.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 18:54:17
+ * @version $Id: $Id
  */
 public class AlipayPointBudgetGetResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayPointBudgetGetResponse extends AlipayResponse {
 	@ApiField("budget_amount")
 	private Long budgetAmount;
 
+	/**
+	 * <p>Setter for the field <code>budgetAmount</code>.</p>
+	 *
+	 * @param budgetAmount a {@link java.lang.Long} object.
+	 */
 	public void setBudgetAmount(Long budgetAmount) {
 		this.budgetAmount = budgetAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>budgetAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getBudgetAmount( ) {
 		return this.budgetAmount;
 	}

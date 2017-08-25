@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.crowd.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-15 16:30:54
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignCrowdBatchqueryResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class KoubeiMarketingCampaignCrowdBatchqueryResponse extends AlipayRespon
 	@ApiField("total_number")
 	private String totalNumber;
 
+	/**
+	 * <p>Setter for the field <code>crowdGroupSets</code>.</p>
+	 *
+	 * @param crowdGroupSets a {@link java.lang.String} object.
+	 */
 	public void setCrowdGroupSets(String crowdGroupSets) {
 		this.crowdGroupSets = crowdGroupSets;
 	}
+	/**
+	 * <p>Getter for the field <code>crowdGroupSets</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdGroupSets( ) {
 		return this.crowdGroupSets;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalNumber</code>.</p>
+	 *
+	 * @param totalNumber a {@link java.lang.String} object.
+	 */
 	public void setTotalNumber(String totalNumber) {
 		this.totalNumber = totalNumber;
 	}
+	/**
+	 * <p>Getter for the field <code>totalNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalNumber( ) {
 		return this.totalNumber;
 	}

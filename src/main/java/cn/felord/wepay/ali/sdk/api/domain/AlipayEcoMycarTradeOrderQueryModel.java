@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 交易订单查询接口
  *
  * @author auto create
- * @since 1.0, 2016-12-22 21:53:37
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarTradeOrderQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoMycarTradeOrderQueryModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Getter for the field <code>bizTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizTradeNo() {
 		return this.bizTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizTradeNo</code>.</p>
+	 *
+	 * @param bizTradeNo a {@link java.lang.String} object.
+	 */
 	public void setBizTradeNo(String bizTradeNo) {
 		this.bizTradeNo = bizTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizTradeNo() {
 		return this.outBizTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizTradeNo</code>.</p>
+	 *
+	 * @param outBizTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizTradeNo(String outBizTradeNo) {
 		this.outBizTradeNo = outBizTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}

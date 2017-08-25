@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.customs.declare response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 00:48:24
+ * @version $Id: $Id
  */
 public class AlipayTradeCustomsDeclareResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayTradeCustomsDeclareResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Setter for the field <code>alipayDeclareNo</code>.</p>
+	 *
+	 * @param alipayDeclareNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayDeclareNo(String alipayDeclareNo) {
 		this.alipayDeclareNo = alipayDeclareNo;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayDeclareNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayDeclareNo( ) {
 		return this.alipayDeclareNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>identityCheck</code>.</p>
+	 *
+	 * @param identityCheck a {@link java.lang.String} object.
+	 */
 	public void setIdentityCheck(String identityCheck) {
 		this.identityCheck = identityCheck;
 	}
+	/**
+	 * <p>Getter for the field <code>identityCheck</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentityCheck( ) {
 		return this.identityCheck;
 	}
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 优惠立减活动子时间段模型足戒用
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:49
+ * @version $Id: $Id
  */
 public class DateAreaModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class DateAreaModel extends AlipayObject {
 	@ApiField("end_date")
 	private String endDate;
 
+	/**
+	 * <p>Getter for the field <code>beginDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBeginDate() {
 		return this.beginDate;
 	}
+	/**
+	 * <p>Setter for the field <code>beginDate</code>.</p>
+	 *
+	 * @param beginDate a {@link java.lang.String} object.
+	 */
 	public void setBeginDate(String beginDate) {
 		this.beginDate = beginDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEndDate() {
 		return this.endDate;
 	}
+	/**
+	 * <p>Setter for the field <code>endDate</code>.</p>
+	 *
+	 * @param endDate a {@link java.lang.String} object.
+	 */
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}

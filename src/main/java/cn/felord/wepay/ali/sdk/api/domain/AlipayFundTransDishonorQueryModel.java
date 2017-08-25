@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询转账订单退票接口
  *
  * @author auto create
- * @since 1.0, 2016-07-19 22:59:10
+ * @version $Id: $Id
  */
 public class AlipayFundTransDishonorQueryModel extends AlipayObject {
 
@@ -37,23 +37,53 @@ public class AlipayFundTransDishonorQueryModel extends AlipayObject {
 	@ApiField("page")
 	private String page;
 
+	/**
+	 * <p>Getter for the field <code>dishonorBegin</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDishonorBegin() {
 		return this.dishonorBegin;
 	}
+	/**
+	 * <p>Setter for the field <code>dishonorBegin</code>.</p>
+	 *
+	 * @param dishonorBegin a {@link java.lang.String} object.
+	 */
 	public void setDishonorBegin(String dishonorBegin) {
 		this.dishonorBegin = dishonorBegin;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dishonorEnd</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDishonorEnd() {
 		return this.dishonorEnd;
 	}
+	/**
+	 * <p>Setter for the field <code>dishonorEnd</code>.</p>
+	 *
+	 * @param dishonorEnd a {@link java.lang.String} object.
+	 */
 	public void setDishonorEnd(String dishonorEnd) {
 		this.dishonorEnd = dishonorEnd;
 	}
 
+	/**
+	 * <p>Getter for the field <code>page</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPage() {
 		return this.page;
 	}
+	/**
+	 * <p>Setter for the field <code>page</code>.</p>
+	 *
+	 * @param page a {@link java.lang.String} object.
+	 */
 	public void setPage(String page) {
 		this.page = page;
 	}

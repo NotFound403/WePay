@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.retail.shopitem.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 18:19:47
+ * @version $Id: $Id
  */
 public class KoubeiRetailShopitemBatchqueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiRetailShopitemBatchqueryResponse extends AlipayResponse {
 	@ApiField("ext_shop_item")
 	private List<ExtShopItem> shopitemlist;
 
+	/**
+	 * <p>Setter for the field <code>shopitemlist</code>.</p>
+	 *
+	 * @param shopitemlist a {@link java.util.List} object.
+	 */
 	public void setShopitemlist(List<ExtShopItem> shopitemlist) {
 		this.shopitemlist = shopitemlist;
 	}
+	/**
+	 * <p>Getter for the field <code>shopitemlist</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ExtShopItem> getShopitemlist( ) {
 		return this.shopitemlist;
 	}

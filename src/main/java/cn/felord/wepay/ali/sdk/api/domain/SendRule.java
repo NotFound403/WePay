@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 奖品发放规则
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class SendRule extends AlipayObject {
 
@@ -43,30 +43,70 @@ true代表允许，false代表不允许
 	@ApiField("send_num")
 	private String sendNum;
 
+	/**
+	 * <p>Getter for the field <code>allowRepeatSend</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAllowRepeatSend() {
 		return this.allowRepeatSend;
 	}
+	/**
+	 * <p>Setter for the field <code>allowRepeatSend</code>.</p>
+	 *
+	 * @param allowRepeatSend a {@link java.lang.String} object.
+	 */
 	public void setAllowRepeatSend(String allowRepeatSend) {
 		this.allowRepeatSend = allowRepeatSend;
 	}
 
+	/**
+	 * <p>Getter for the field <code>minCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMinCost() {
 		return this.minCost;
 	}
+	/**
+	 * <p>Setter for the field <code>minCost</code>.</p>
+	 *
+	 * @param minCost a {@link java.lang.String} object.
+	 */
 	public void setMinCost(String minCost) {
 		this.minCost = minCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendBudget</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSendBudget() {
 		return this.sendBudget;
 	}
+	/**
+	 * <p>Setter for the field <code>sendBudget</code>.</p>
+	 *
+	 * @param sendBudget a {@link java.lang.String} object.
+	 */
 	public void setSendBudget(String sendBudget) {
 		this.sendBudget = sendBudget;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSendNum() {
 		return this.sendNum;
 	}
+	/**
+	 * <p>Setter for the field <code>sendNum</code>.</p>
+	 *
+	 * @param sendNum a {@link java.lang.String} object.
+	 */
 	public void setSendNum(String sendNum) {
 		this.sendNum = sendNum;
 	}

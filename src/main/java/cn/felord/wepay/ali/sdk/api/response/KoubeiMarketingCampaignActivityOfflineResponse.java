@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.activity.offline response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-25 15:07:50
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignActivityOfflineResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class KoubeiMarketingCampaignActivityOfflineResponse extends AlipayRespon
 	@ApiField("camp_status")
 	private String campStatus;
 
+	/**
+	 * <p>Setter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @param auditStatus a {@link java.lang.String} object.
+	 */
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campStatus</code>.</p>
+	 *
+	 * @param campStatus a {@link java.lang.String} object.
+	 */
 	public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>campStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampStatus( ) {
 		return this.campStatus;
 	}

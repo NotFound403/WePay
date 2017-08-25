@@ -22,8 +22,6 @@ import java.util.Map;
  * @version v1.0.0
  * @since 2017 /8/7  11:12
  */
-
-
 public class ProxyPayCallback implements InvocationHandler {
     private static final Logger log = LoggerFactory.getLogger(ProxyPayCallback.class);
     private Callback callback;
@@ -52,6 +50,7 @@ public class ProxyPayCallback implements InvocationHandler {
         return (Callback) Proxy.newProxyInstance(classLoader, interfaces, this);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws PayException {
         HttpServletRequest request = callback.getRequest();

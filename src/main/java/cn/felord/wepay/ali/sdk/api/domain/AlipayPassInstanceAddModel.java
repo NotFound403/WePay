@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝pass新建卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2017-03-31 15:33:20
+ * @version $Id: $Id
  */
 public class AlipayPassInstanceAddModel extends AlipayObject {
 
@@ -38,30 +38,70 @@ public class AlipayPassInstanceAddModel extends AlipayObject {
 	@ApiField("tpl_params")
 	private String tplParams;
 
+	/**
+	 * <p>Getter for the field <code>recognitionInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecognitionInfo() {
 		return this.recognitionInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>recognitionInfo</code>.</p>
+	 *
+	 * @param recognitionInfo a {@link java.lang.String} object.
+	 */
 	public void setRecognitionInfo(String recognitionInfo) {
 		this.recognitionInfo = recognitionInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recognitionType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecognitionType() {
 		return this.recognitionType;
 	}
+	/**
+	 * <p>Setter for the field <code>recognitionType</code>.</p>
+	 *
+	 * @param recognitionType a {@link java.lang.String} object.
+	 */
 	public void setRecognitionType(String recognitionType) {
 		this.recognitionType = recognitionType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tplId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTplId() {
 		return this.tplId;
 	}
+	/**
+	 * <p>Setter for the field <code>tplId</code>.</p>
+	 *
+	 * @param tplId a {@link java.lang.String} object.
+	 */
 	public void setTplId(String tplId) {
 		this.tplId = tplId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tplParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTplParams() {
 		return this.tplParams;
 	}
+	/**
+	 * <p>Setter for the field <code>tplParams</code>.</p>
+	 *
+	 * @param tplParams a {@link java.lang.String} object.
+	 */
 	public void setTplParams(String tplParams) {
 		this.tplParams = tplParams;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询当前用户可用的模板列表
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:23
+ * @version $Id: $Id
  */
 public class AlipayMarketingToolFengdieTemplateQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayMarketingToolFengdieTemplateQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * <p>Getter for the field <code>pageNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNumber() {
 		return this.pageNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNumber</code>.</p>
+	 *
+	 * @param pageNumber a {@link java.lang.Long} object.
+	 */
 	public void setPageNumber(Long pageNumber) {
 		this.pageNumber = pageNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}

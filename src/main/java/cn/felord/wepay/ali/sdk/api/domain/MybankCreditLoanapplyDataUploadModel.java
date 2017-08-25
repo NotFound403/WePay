@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 外部合作机构数据推送
  *
  * @author auto create
- * @since 1.0, 2017-05-11 14:09:08
+ * @version $Id: $Id
  */
 public class MybankCreditLoanapplyDataUploadModel extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class MybankCreditLoanapplyDataUploadModel extends AlipayObject {
 	@ApiField("entity_type")
 	private String entityType;
 
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo() {
 		return this.bizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>category</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategory() {
 		return this.category;
 	}
+	/**
+	 * <p>Setter for the field <code>category</code>.</p>
+	 *
+	 * @param category a {@link java.lang.String} object.
+	 */
 	public void setCategory(String category) {
 		this.category = category;
 	}
 
+	/**
+	 * <p>Getter for the field <code>data</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getData() {
 		return this.data;
 	}
+	/**
+	 * <p>Setter for the field <code>data</code>.</p>
+	 *
+	 * @param data a {@link java.lang.String} object.
+	 */
 	public void setData(String data) {
 		this.data = data;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dataProvider</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDataProvider() {
 		return this.dataProvider;
 	}
+	/**
+	 * <p>Setter for the field <code>dataProvider</code>.</p>
+	 *
+	 * @param dataProvider a {@link java.lang.String} object.
+	 */
 	public void setDataProvider(String dataProvider) {
 		this.dataProvider = dataProvider;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityCode() {
 		return this.entityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>entityCode</code>.</p>
+	 *
+	 * @param entityCode a {@link java.lang.String} object.
+	 */
 	public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityName() {
 		return this.entityName;
 	}
+	/**
+	 * <p>Setter for the field <code>entityName</code>.</p>
+	 *
+	 * @param entityName a {@link java.lang.String} object.
+	 */
 	public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityType() {
 		return this.entityType;
 	}
+	/**
+	 * <p>Setter for the field <code>entityType</code>.</p>
+	 *
+	 * @param entityType a {@link java.lang.String} object.
+	 */
 	public void setEntityType(String entityType) {
 		this.entityType = entityType;
 	}

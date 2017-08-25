@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.mobile.public.info.modify request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:44:30
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicInfoModifyRequest implements AlipayRequest<AlipayMobilePublicInfoModifyResponse> {
 
@@ -58,58 +58,138 @@ public class AlipayMobilePublicInfoModifyRequest implements AlipayRequest<Alipay
 	 */
 	private String shopPic3;
 
+	/**
+	 * <p>Setter for the field <code>appName</code>.</p>
+	 *
+	 * @param appName a {@link java.lang.String} object.
+	 */
 	public void setAppName(String appName) {
 		this.appName = appName;
 	}
+	/**
+	 * <p>Getter for the field <code>appName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppName() {
 		return this.appName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>authPic</code>.</p>
+	 *
+	 * @param authPic a {@link java.lang.String} object.
+	 */
 	public void setAuthPic(String authPic) {
 		this.authPic = authPic;
 	}
+	/**
+	 * <p>Getter for the field <code>authPic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthPic() {
 		return this.authPic;
 	}
 
+	/**
+	 * <p>Setter for the field <code>licenseUrl</code>.</p>
+	 *
+	 * @param licenseUrl a {@link java.lang.String} object.
+	 */
 	public void setLicenseUrl(String licenseUrl) {
 		this.licenseUrl = licenseUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>licenseUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenseUrl() {
 		return this.licenseUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>logoUrl</code>.</p>
+	 *
+	 * @param logoUrl a {@link java.lang.String} object.
+	 */
 	public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>logoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogoUrl() {
 		return this.logoUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publicGreeting</code>.</p>
+	 *
+	 * @param publicGreeting a {@link java.lang.String} object.
+	 */
 	public void setPublicGreeting(String publicGreeting) {
 		this.publicGreeting = publicGreeting;
 	}
+	/**
+	 * <p>Getter for the field <code>publicGreeting</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicGreeting() {
 		return this.publicGreeting;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopPic1</code>.</p>
+	 *
+	 * @param shopPic1 a {@link java.lang.String} object.
+	 */
 	public void setShopPic1(String shopPic1) {
 		this.shopPic1 = shopPic1;
 	}
+	/**
+	 * <p>Getter for the field <code>shopPic1</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopPic1() {
 		return this.shopPic1;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopPic2</code>.</p>
+	 *
+	 * @param shopPic2 a {@link java.lang.String} object.
+	 */
 	public void setShopPic2(String shopPic2) {
 		this.shopPic2 = shopPic2;
 	}
+	/**
+	 * <p>Getter for the field <code>shopPic2</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopPic2() {
 		return this.shopPic2;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopPic3</code>.</p>
+	 *
+	 * @param shopPic3 a {@link java.lang.String} object.
+	 */
 	public void setShopPic3(String shopPic3) {
 		this.shopPic3 = shopPic3;
 	}
+	/**
+	 * <p>Getter for the field <code>shopPic3</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopPic3() {
 		return this.shopPic3;
 	}
@@ -121,58 +201,104 @@ public class AlipayMobilePublicInfoModifyRequest implements AlipayRequest<Alipay
 	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }	
 
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.mobile.public.info.modify";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("app_name", this.appName);
@@ -189,6 +315,12 @@ public class AlipayMobilePublicInfoModifyRequest implements AlipayRequest<Alipay
 		return txtParams;
 	}
 
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -196,28 +328,45 @@ public class AlipayMobilePublicInfoModifyRequest implements AlipayRequest<Alipay
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayMobilePublicInfoModifyResponse> getResponseClass() {
 		return AlipayMobilePublicInfoModifyResponse.class;
 	}
 	
 
+    /**
+     * <p>isNeedEncrypt.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

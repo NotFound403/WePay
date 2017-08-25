@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险营销权益基础信息
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:56:59
+ * @version $Id: $Id
  */
 public class InsMktCouponBaseDTO extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class InsMktCouponBaseDTO extends AlipayObject {
 	@ApiField("coupon_value")
 	private String couponValue;
 
+	/**
+	 * <p>Getter for the field <code>couponId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponId() {
 		return this.couponId;
 	}
+	/**
+	 * <p>Setter for the field <code>couponId</code>.</p>
+	 *
+	 * @param couponId a {@link java.lang.String} object.
+	 */
 	public void setCouponId(String couponId) {
 		this.couponId = couponId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>couponType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponType() {
 		return this.couponType;
 	}
+	/**
+	 * <p>Setter for the field <code>couponType</code>.</p>
+	 *
+	 * @param couponType a {@link java.lang.String} object.
+	 */
 	public void setCouponType(String couponType) {
 		this.couponType = couponType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>couponValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponValue() {
 		return this.couponValue;
 	}
+	/**
+	 * <p>Setter for the field <code>couponValue</code>.</p>
+	 *
+	 * @param couponValue a {@link java.lang.String} object.
+	 */
 	public void setCouponValue(String couponValue) {
 		this.couponValue = couponValue;
 	}

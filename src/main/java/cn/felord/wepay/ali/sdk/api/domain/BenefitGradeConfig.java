@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 权益的等级配置信息
  *
  * @author auto create
- * @since 1.0, 2017-06-15 15:43:39
+ * @version $Id: $Id
  */
 public class BenefitGradeConfig extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class BenefitGradeConfig extends AlipayObject {
 	@ApiField("point_discount")
 	private String pointDiscount;
 
+	/**
+	 * <p>Getter for the field <code>backgroundUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBackgroundUrl() {
 		return this.backgroundUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>backgroundUrl</code>.</p>
+	 *
+	 * @param backgroundUrl a {@link java.lang.String} object.
+	 */
 	public void setBackgroundUrl(String backgroundUrl) {
 		this.backgroundUrl = backgroundUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>detail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetail() {
 		return this.detail;
 	}
+	/**
+	 * <p>Setter for the field <code>detail</code>.</p>
+	 *
+	 * @param detail a {@link java.lang.String} object.
+	 */
 	public void setDetail(String detail) {
 		this.detail = detail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>grade</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGrade() {
 		return this.grade;
 	}
+	/**
+	 * <p>Setter for the field <code>grade</code>.</p>
+	 *
+	 * @param grade a {@link java.lang.String} object.
+	 */
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageUrl() {
 		return this.pageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>pageUrl</code>.</p>
+	 *
+	 * @param pageUrl a {@link java.lang.String} object.
+	 */
 	public void setPageUrl(String pageUrl) {
 		this.pageUrl = pageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>point</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPoint() {
 		return this.point;
 	}
+	/**
+	 * <p>Setter for the field <code>point</code>.</p>
+	 *
+	 * @param point a {@link java.lang.Long} object.
+	 */
 	public void setPoint(Long point) {
 		this.point = point;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pointDiscount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPointDiscount() {
 		return this.pointDiscount;
 	}
+	/**
+	 * <p>Setter for the field <code>pointDiscount</code>.</p>
+	 *
+	 * @param pointDiscount a {@link java.lang.String} object.
+	 */
 	public void setPointDiscount(String pointDiscount) {
 		this.pointDiscount = pointDiscount;
 	}

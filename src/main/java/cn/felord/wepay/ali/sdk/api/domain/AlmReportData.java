@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 资产负债报表数据
  *
  * @author auto create
- * @since 1.0, 2016-12-02 14:48:05
+ * @version $Id: $Id
  */
 public class AlmReportData extends AlipayObject {
 
@@ -52,44 +52,104 @@ public class AlmReportData extends AlipayObject {
 	@ApiField("sub_biz_type")
 	private String subBizType;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDateType() {
 		return this.dateType;
 	}
+	/**
+	 * <p>Setter for the field <code>dateType</code>.</p>
+	 *
+	 * @param dateType a {@link java.lang.String} object.
+	 */
 	public void setDateType(String dateType) {
 		this.dateType = dateType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportDate() {
 		return this.reportDate;
 	}
+	/**
+	 * <p>Setter for the field <code>reportDate</code>.</p>
+	 *
+	 * @param reportDate a {@link java.lang.String} object.
+	 */
 	public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportName() {
 		return this.reportName;
 	}
+	/**
+	 * <p>Setter for the field <code>reportName</code>.</p>
+	 *
+	 * @param reportName a {@link java.lang.String} object.
+	 */
 	public void setReportName(String reportName) {
 		this.reportName = reportName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getReportValue() {
 		return this.reportValue;
 	}
+	/**
+	 * <p>Setter for the field <code>reportValue</code>.</p>
+	 *
+	 * @param reportValue a {@link java.lang.Long} object.
+	 */
 	public void setReportValue(Long reportValue) {
 		this.reportValue = reportValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subBizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubBizType() {
 		return this.subBizType;
 	}
+	/**
+	 * <p>Setter for the field <code>subBizType</code>.</p>
+	 *
+	 * @param subBizType a {@link java.lang.String} object.
+	 */
 	public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}

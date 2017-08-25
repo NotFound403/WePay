@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 减至指定折扣奖品模型
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:49
+ * @version $Id: $Id
  */
 public class ReduceToDiscountDstCampPrizeModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class ReduceToDiscountDstCampPrizeModel extends AlipayObject {
 	@ApiField("reduce_to_discount_rate")
 	private String reduceToDiscountRate;
 
+	/**
+	 * <p>Getter for the field <code>budgetId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBudgetId() {
 		return this.budgetId;
 	}
+	/**
+	 * <p>Setter for the field <code>budgetId</code>.</p>
+	 *
+	 * @param budgetId a {@link java.lang.String} object.
+	 */
 	public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.String} object.
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxDiscountAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxDiscountAmt() {
 		return this.maxDiscountAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>maxDiscountAmt</code>.</p>
+	 *
+	 * @param maxDiscountAmt a {@link java.lang.String} object.
+	 */
 	public void setMaxDiscountAmt(String maxDiscountAmt) {
 		this.maxDiscountAmt = maxDiscountAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reduceToDiscountRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReduceToDiscountRate() {
 		return this.reduceToDiscountRate;
 	}
+	/**
+	 * <p>Setter for the field <code>reduceToDiscountRate</code>.</p>
+	 *
+	 * @param reduceToDiscountRate a {@link java.lang.String} object.
+	 */
 	public void setReduceToDiscountRate(String reduceToDiscountRate) {
 		this.reduceToDiscountRate = reduceToDiscountRate;
 	}

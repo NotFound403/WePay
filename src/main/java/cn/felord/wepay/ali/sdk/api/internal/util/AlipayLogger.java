@@ -1,45 +1,53 @@
 package cn.felord.wepay.ali.sdk.api.internal.util;
 
+import cn.felord.wepay.ali.sdk.api.AlipayConstants;
+import cn.felord.wepay.ali.sdk.api.AlipayResponse;
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.commons.logging.impl.Jdk14Logger;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.net.HttpURLConnection;
 import java.net.InetAddress;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.TimeZone;
+import java.util.*;
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
-import org.apache.commons.logging.impl.Jdk14Logger;
-
-import cn.felord.wepay.ali.sdk.api.AlipayConstants;
-import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * 客户端日志
  * 通讯错误格式：time^_^api^_^app^_^ip^_^os^_^sdk^_^url^responseCode
  * 业务错误格式：time^_^response
+ *
+ * @author lenovo
+ * @version $Id: $Id
  */
 public class AlipayLogger {
 
-    private static final Log clog             = LogFactory.getLog("sdk.comm.err");
-    private static final Log blog             = LogFactory.getLog("sdk.biz.err");
+    private static final Log clog = LogFactory.getLog("sdk.comm.err");
+    private static final Log blog = LogFactory.getLog("sdk.biz.err");
 
-    private static String    osName           = System.getProperties().getProperty("os.name");
-    private static String    ip               = null;
-    private static boolean   needEnableLogger = true;
+    private static String osName = System.getProperties().getProperty("os.name");
+    private static String ip = null;
+    private static boolean needEnableLogger = true;
 
+    /**
+     * Sets need enable logger.
+     *
+     * @param needEnableLogger the need enable logger
+     */
     public static void setNeedEnableLogger(boolean needEnableLogger) {
         AlipayLogger.needEnableLogger = needEnableLogger;
     }
 
+    /**
+     * Gets ip.
+     *
+     * @return the ip
+     */
     public static String getIp() {
         if (ip == null) {
             try {
@@ -51,12 +59,23 @@ public class AlipayLogger {
         return ip;
     }
 
+    /**
+     * Sets ip.
+     *
+     * @param ip the ip
+     */
     public static void setIp(String ip) {
         AlipayLogger.ip = ip;
     }
 
     /**
      * 通讯错误日志
+     *
+     * @param e       the e
+     * @param conn    the conn
+     * @param appKey  the app key
+     * @param method  the method
+     * @param content the content
      */
     public static void logCommError(Exception e, HttpURLConnection conn, String appKey,
                                     String method, byte[] content) {
@@ -74,6 +93,12 @@ public class AlipayLogger {
 
     /**
      * 通讯错误日志
+     *
+     * @param e       the e
+     * @param url     the url
+     * @param appKey  the app key
+     * @param method  the method
+     * @param content the content
      */
     public static void logCommError(Exception e, String url, String appKey, String method,
                                     byte[] content) {
@@ -91,6 +116,12 @@ public class AlipayLogger {
 
     /**
      * 通讯错误日志
+     *
+     * @param e      the e
+     * @param conn   the conn
+     * @param appKey the app key
+     * @param method the method
+     * @param params the params
      */
     public static void logCommError(Exception e, HttpURLConnection conn, String appKey,
                                     String method, Map<String, String> params) {
@@ -100,6 +131,15 @@ public class AlipayLogger {
         _logCommError(e, conn, null, appKey, method, params);
     }
 
+    /**
+     * Log comm error.
+     *
+     * @param e      the e
+     * @param url    the url
+     * @param appKey the app key
+     * @param method the method
+     * @param params the params
+     */
     public static void logCommError(Exception e, String url, String appKey, String method,
                                     Map<String, String> params) {
         if (!needEnableLogger) {
@@ -186,6 +226,8 @@ public class AlipayLogger {
 
     /**
      * 业务/系统错误日志
+     *
+     * @param rsp the rsp
      */
     public static void logBizDebug(String rsp) {
         if (!needEnableLogger) {
@@ -205,6 +247,8 @@ public class AlipayLogger {
 
     /**
      * 业务/系统错误日志
+     *
+     * @param rsp the rsp
      */
     public static void logBizError(String rsp) {
         if (!needEnableLogger) {
@@ -221,6 +265,8 @@ public class AlipayLogger {
 
     /**
      * 业务/系统错误日志
+     *
+     * @param t the t
      */
     public static void logBizError(Throwable t) {
         if (!needEnableLogger) {
@@ -231,6 +277,10 @@ public class AlipayLogger {
 
     /**
      * 发生特别错误时记录完整错误现场
+     *
+     * @param rt        the rt
+     * @param tRsp      the t rsp
+     * @param appSecret the app secret
      */
     public static void logErrorScene(Map<String, Object> rt, AlipayResponse tRsp,
                                      String appSecret) {
@@ -279,14 +329,19 @@ public class AlipayLogger {
         }
     }
 
+    /**
+     * Is biz debug enabled boolean.
+     *
+     * @return the boolean
+     */
     public static Boolean isBizDebugEnabled() {
         return blog.isDebugEnabled();
     }
 
     /**
      * 开启DEBUG级别日志（仅针对JDK14LOGGER，LOG4J请自行修改配置文件）
-     * 
-     * @param isEnabled
+     *
+     * @param isEnabled the is enabled
      */
     public static void setJDKDebugEnabled(Boolean isEnabled) {
         //如果使用JDK14LOGGER，将业务日志级别设为DEBUG(FINE)

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.qrcode.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:59:38
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicQrcodeCreateResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayOpenPublicQrcodeCreateResponse extends AlipayResponse {
 	@ApiField("expire_second")
 	private String expireSecond;
 
+	/**
+	 * <p>Setter for the field <code>codeImg</code>.</p>
+	 *
+	 * @param codeImg a {@link java.lang.String} object.
+	 */
 	public void setCodeImg(String codeImg) {
 		this.codeImg = codeImg;
 	}
+	/**
+	 * <p>Getter for the field <code>codeImg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodeImg( ) {
 		return this.codeImg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>expireSecond</code>.</p>
+	 *
+	 * @param expireSecond a {@link java.lang.String} object.
+	 */
 	public void setExpireSecond(String expireSecond) {
 		this.expireSecond = expireSecond;
 	}
+	/**
+	 * <p>Getter for the field <code>expireSecond</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExpireSecond( ) {
 		return this.expireSecond;
 	}

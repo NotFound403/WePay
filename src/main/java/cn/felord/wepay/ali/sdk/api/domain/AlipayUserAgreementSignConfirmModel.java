@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝个人协议签约验证接口
  *
  * @author auto create
- * @since 1.0, 2017-07-12 16:30:33
+ * @version $Id: $Id
  */
 public class AlipayUserAgreementSignConfirmModel extends AlipayObject {
 
@@ -32,23 +32,53 @@ public class AlipayUserAgreementSignConfirmModel extends AlipayObject {
 	@ApiField("confirm_no")
 	private String confirmNo;
 
+	/**
+	 * <p>Getter for the field <code>applyToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyToken() {
 		return this.applyToken;
 	}
+	/**
+	 * <p>Setter for the field <code>applyToken</code>.</p>
+	 *
+	 * @param applyToken a {@link java.lang.String} object.
+	 */
 	public void setApplyToken(String applyToken) {
 		this.applyToken = applyToken;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>confirmNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConfirmNo() {
 		return this.confirmNo;
 	}
+	/**
+	 * <p>Setter for the field <code>confirmNo</code>.</p>
+	 *
+	 * @param confirmNo a {@link java.lang.String} object.
+	 */
 	public void setConfirmNo(String confirmNo) {
 		this.confirmNo = confirmNo;
 	}

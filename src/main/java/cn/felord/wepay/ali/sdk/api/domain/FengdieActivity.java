@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 凤蝶H5应用详情信息
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:11
+ * @version $Id: $Id
  */
 public class FengdieActivity extends AlipayObject {
 
@@ -78,72 +78,172 @@ public class FengdieActivity extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.Long} object.
+	 */
 	public void setId(Long id) {
 		this.id = id;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isOnline</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getIsOnline() {
 		return this.isOnline;
 	}
+	/**
+	 * <p>Setter for the field <code>isOnline</code>.</p>
+	 *
+	 * @param isOnline a {@link java.lang.Boolean} object.
+	 */
 	public void setIsOnline(Boolean isOnline) {
 		this.isOnline = isOnline;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>nickName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNickName() {
 		return this.nickName;
 	}
+	/**
+	 * <p>Setter for the field <code>nickName</code>.</p>
+	 *
+	 * @param nickName a {@link java.lang.String} object.
+	 */
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>offlineTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getOfflineTime() {
 		return this.offlineTime;
 	}
+	/**
+	 * <p>Setter for the field <code>offlineTime</code>.</p>
+	 *
+	 * @param offlineTime a {@link java.util.Date} object.
+	 */
 	public void setOfflineTime(Date offlineTime) {
 		this.offlineTime = offlineTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>page</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<FengdieActivityPage> getPage() {
 		return this.page;
 	}
+	/**
+	 * <p>Setter for the field <code>page</code>.</p>
+	 *
+	 * @param page a {@link java.util.List} object.
+	 */
 	public void setPage(List<FengdieActivityPage> page) {
 		this.page = page;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishTime() {
 		return this.publishTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishTime</code>.</p>
+	 *
+	 * @param publishTime a {@link java.util.Date} object.
+	 */
 	public void setPublishTime(Date publishTime) {
 		this.publishTime = publishTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.Long} object.
+	 */
 	public void setTemplateId(Long templateId) {
 		this.templateId = templateId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

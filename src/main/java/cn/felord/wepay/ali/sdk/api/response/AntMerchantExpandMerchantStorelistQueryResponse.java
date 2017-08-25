@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.merchant.storelist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-20 21:12:59
+ * @version $Id: $Id
  */
 public class AntMerchantExpandMerchantStorelistQueryResponse extends AlipayResponse {
 
@@ -48,37 +48,87 @@ public class AntMerchantExpandMerchantStorelistQueryResponse extends AlipayRespo
 	@ApiField("total_size")
 	private Long totalSize;
 
+	/**
+	 * <p>Setter for the field <code>merchantStores</code>.</p>
+	 *
+	 * @param merchantStores a {@link java.util.List} object.
+	 */
 	public void setMerchantStores(List<ShopQueryInfo> merchantStores) {
 		this.merchantStores = merchantStores;
 	}
+	/**
+	 * <p>Getter for the field <code>merchantStores</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ShopQueryInfo> getMerchantStores( ) {
 		return this.merchantStores;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pageNum</code>.</p>
+	 *
+	 * @param pageNum a {@link java.lang.Long} object.
+	 */
 	public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
+	/**
+	 * <p>Getter for the field <code>pageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNum( ) {
 		return this.pageNum;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalPages</code>.</p>
+	 *
+	 * @param totalPages a {@link java.lang.Long} object.
+	 */
 	public void setTotalPages(Long totalPages) {
 		this.totalPages = totalPages;
 	}
+	/**
+	 * <p>Getter for the field <code>totalPages</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalPages( ) {
 		return this.totalPages;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalSize</code>.</p>
+	 *
+	 * @param totalSize a {@link java.lang.Long} object.
+	 */
 	public void setTotalSize(Long totalSize) {
 		this.totalSize = totalSize;
 	}
+	/**
+	 * <p>Getter for the field <code>totalSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalSize( ) {
 		return this.totalSize;
 	}

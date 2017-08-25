@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 电子发票平台发票明细项
  *
  * @author auto create
- * @since 1.0, 2017-01-13 18:53:44
+ * @version $Id: $Id
  */
 public class InvoiceItemContent extends AlipayObject {
 
@@ -73,72 +73,172 @@ public class InvoiceItemContent extends AlipayObject {
 	@ApiField("row_type")
 	private Long rowType;
 
+	/**
+	 * <p>Getter for the field <code>itemAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemAmount() {
 		return this.itemAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>itemAmount</code>.</p>
+	 *
+	 * @param itemAmount a {@link java.lang.String} object.
+	 */
 	public void setItemAmount(String itemAmount) {
 		this.itemAmount = itemAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemName() {
 		return this.itemName;
 	}
+	/**
+	 * <p>Setter for the field <code>itemName</code>.</p>
+	 *
+	 * @param itemName a {@link java.lang.String} object.
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemNo() {
 		return this.itemNo;
 	}
+	/**
+	 * <p>Setter for the field <code>itemNo</code>.</p>
+	 *
+	 * @param itemNo a {@link java.lang.String} object.
+	 */
 	public void setItemNo(String itemNo) {
 		this.itemNo = itemNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemPrice() {
 		return this.itemPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>itemPrice</code>.</p>
+	 *
+	 * @param itemPrice a {@link java.lang.String} object.
+	 */
 	public void setItemPrice(String itemPrice) {
 		this.itemPrice = itemPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemQuantity</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getItemQuantity() {
 		return this.itemQuantity;
 	}
+	/**
+	 * <p>Setter for the field <code>itemQuantity</code>.</p>
+	 *
+	 * @param itemQuantity a {@link java.lang.Long} object.
+	 */
 	public void setItemQuantity(Long itemQuantity) {
 		this.itemQuantity = itemQuantity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemSumPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemSumPrice() {
 		return this.itemSumPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>itemSumPrice</code>.</p>
+	 *
+	 * @param itemSumPrice a {@link java.lang.String} object.
+	 */
 	public void setItemSumPrice(String itemSumPrice) {
 		this.itemSumPrice = itemSumPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemTaxPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemTaxPrice() {
 		return this.itemTaxPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>itemTaxPrice</code>.</p>
+	 *
+	 * @param itemTaxPrice a {@link java.lang.String} object.
+	 */
 	public void setItemTaxPrice(String itemTaxPrice) {
 		this.itemTaxPrice = itemTaxPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemTaxRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemTaxRate() {
 		return this.itemTaxRate;
 	}
+	/**
+	 * <p>Setter for the field <code>itemTaxRate</code>.</p>
+	 *
+	 * @param itemTaxRate a {@link java.lang.String} object.
+	 */
 	public void setItemTaxRate(String itemTaxRate) {
 		this.itemTaxRate = itemTaxRate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemUnit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemUnit() {
 		return this.itemUnit;
 	}
+	/**
+	 * <p>Setter for the field <code>itemUnit</code>.</p>
+	 *
+	 * @param itemUnit a {@link java.lang.String} object.
+	 */
 	public void setItemUnit(String itemUnit) {
 		this.itemUnit = itemUnit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rowType</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRowType() {
 		return this.rowType;
 	}
+	/**
+	 * <p>Setter for the field <code>rowType</code>.</p>
+	 *
+	 * @param rowType a {@link java.lang.Long} object.
+	 */
 	public void setRowType(Long rowType) {
 		this.rowType = rowType;
 	}

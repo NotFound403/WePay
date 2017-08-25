@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 银行间连商户修改
  *
  * @author auto create
- * @since 1.0, 2017-05-25 18:14:45
+ * @version $Id: $Id
  */
 public class AntMerchantExpandIndirectModifyModel extends AlipayObject {
 
@@ -113,107 +113,257 @@ public class AntMerchantExpandIndirectModifyModel extends AlipayObject {
 	@ApiField("sub_merchant_id")
 	private String subMerchantId;
 
+	/**
+	 * <p>Getter for the field <code>addressInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AddressInfo> getAddressInfo() {
 		return this.addressInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>addressInfo</code>.</p>
+	 *
+	 * @param addressInfo a {@link java.util.List} object.
+	 */
 	public void setAddressInfo(List<AddressInfo> addressInfo) {
 		this.addressInfo = addressInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>aliasName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAliasName() {
 		return this.aliasName;
 	}
+	/**
+	 * <p>Setter for the field <code>aliasName</code>.</p>
+	 *
+	 * @param aliasName a {@link java.lang.String} object.
+	 */
 	public void setAliasName(String aliasName) {
 		this.aliasName = aliasName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bankcardInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<BankCardInfo> getBankcardInfo() {
 		return this.bankcardInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>bankcardInfo</code>.</p>
+	 *
+	 * @param bankcardInfo a {@link java.util.List} object.
+	 */
 	public void setBankcardInfo(List<BankCardInfo> bankcardInfo) {
 		this.bankcardInfo = bankcardInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicense</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicense() {
 		return this.businessLicense;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicense</code>.</p>
+	 *
+	 * @param businessLicense a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicense(String businessLicense) {
 		this.businessLicense = businessLicense;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseType() {
 		return this.businessLicenseType;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseType</code>.</p>
+	 *
+	 * @param businessLicenseType a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseType(String businessLicenseType) {
 		this.businessLicenseType = businessLicenseType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryId() {
 		return this.categoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryId</code>.</p>
+	 *
+	 * @param categoryId a {@link java.lang.String} object.
+	 */
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ContactInfo> getContactInfo() {
 		return this.contactInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>contactInfo</code>.</p>
+	 *
+	 * @param contactInfo a {@link java.util.List} object.
+	 */
 	public void setContactInfo(List<ContactInfo> contactInfo) {
 		this.contactInfo = contactInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalId() {
 		return this.externalId;
 	}
+	/**
+	 * <p>Setter for the field <code>externalId</code>.</p>
+	 *
+	 * @param externalId a {@link java.lang.String} object.
+	 */
 	public void setExternalId(String externalId) {
 		this.externalId = externalId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.util.List} object.
+	 */
 	public void setLogonId(List<String> logonId) {
 		this.logonId = logonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payCodeInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getPayCodeInfo() {
 		return this.payCodeInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>payCodeInfo</code>.</p>
+	 *
+	 * @param payCodeInfo a {@link java.util.List} object.
+	 */
 	public void setPayCodeInfo(List<String> payCodeInfo) {
 		this.payCodeInfo = payCodeInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>servicePhone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServicePhone() {
 		return this.servicePhone;
 	}
+	/**
+	 * <p>Setter for the field <code>servicePhone</code>.</p>
+	 *
+	 * @param servicePhone a {@link java.lang.String} object.
+	 */
 	public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
 	}
 
+	/**
+	 * <p>Getter for the field <code>source</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSource() {
 		return this.source;
 	}
+	/**
+	 * <p>Setter for the field <code>source</code>.</p>
+	 *
+	 * @param source a {@link java.lang.String} object.
+	 */
 	public void setSource(String source) {
 		this.source = source;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subMerchantId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubMerchantId() {
 		return this.subMerchantId;
 	}
+	/**
+	 * <p>Setter for the field <code>subMerchantId</code>.</p>
+	 *
+	 * @param subMerchantId a {@link java.lang.String} object.
+	 */
 	public void setSubMerchantId(String subMerchantId) {
 		this.subMerchantId = subMerchantId;
 	}

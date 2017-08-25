@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 删除手艺人作品信息接口
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:33:05
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataWorkDeleteModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class KoubeiCraftsmanDataWorkDeleteModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> workIds;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
+	/**
+	 * <p>Setter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @param craftsmanId a {@link java.lang.String} object.
+	 */
 	public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>workIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getWorkIds() {
 		return this.workIds;
 	}
+	/**
+	 * <p>Setter for the field <code>workIds</code>.</p>
+	 *
+	 * @param workIds a {@link java.util.List} object.
+	 */
 	public void setWorkIds(List<String> workIds) {
 		this.workIds = workIds;
 	}

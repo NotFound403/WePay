@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 触发现金红包活动
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:19
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayMarketingCampaignCashTriggerModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>crowdNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdNo() {
 		return this.crowdNo;
 	}
+	/**
+	 * <p>Setter for the field <code>crowdNo</code>.</p>
+	 *
+	 * @param crowdNo a {@link java.lang.String} object.
+	 */
 	public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loginId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoginId() {
 		return this.loginId;
 	}
+	/**
+	 * <p>Setter for the field <code>loginId</code>.</p>
+	 *
+	 * @param loginId a {@link java.lang.String} object.
+	 */
 	public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询用户的支付宝交易信息
  *
  * @author auto create
- * @since 1.0, 2017-06-07 16:38:09
+ * @version $Id: $Id
  */
 public class AlipayEbppInvoiceUserTradeQueryModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayEbppInvoiceUserTradeQueryModel extends AlipayObject {
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Getter for the field <code>einvTradeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEinvTradeId() {
 		return this.einvTradeId;
 	}
+	/**
+	 * <p>Setter for the field <code>einvTradeId</code>.</p>
+	 *
+	 * @param einvTradeId a {@link java.lang.String} object.
+	 */
 	public void setEinvTradeId(String einvTradeId) {
 		this.einvTradeId = einvTradeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>random</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRandom() {
 		return this.random;
 	}
+	/**
+	 * <p>Setter for the field <code>random</code>.</p>
+	 *
+	 * @param random a {@link java.lang.String} object.
+	 */
 	public void setRandom(String random) {
 		this.random = random;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timestamp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimestamp() {
 		return this.timestamp;
 	}
+	/**
+	 * <p>Setter for the field <code>timestamp</code>.</p>
+	 *
+	 * @param timestamp a {@link java.lang.String} object.
+	 */
 	public void setTimestamp(String timestamp) {
 		this.timestamp = timestamp;
 	}
 
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken() {
 		return this.token;
 	}
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}

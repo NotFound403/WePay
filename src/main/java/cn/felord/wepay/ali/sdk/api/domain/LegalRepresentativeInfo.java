@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 企业级商户法人信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class LegalRepresentativeInfo extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class LegalRepresentativeInfo extends AlipayObject {
 	@ApiField("legal_representative_name")
 	private String legalRepresentativeName;
 
+	/**
+	 * <p>Getter for the field <code>legalRepresentativeCertIndate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLegalRepresentativeCertIndate() {
 		return this.legalRepresentativeCertIndate;
 	}
+	/**
+	 * <p>Setter for the field <code>legalRepresentativeCertIndate</code>.</p>
+	 *
+	 * @param legalRepresentativeCertIndate a {@link java.lang.String} object.
+	 */
 	public void setLegalRepresentativeCertIndate(String legalRepresentativeCertIndate) {
 		this.legalRepresentativeCertIndate = legalRepresentativeCertIndate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>legalRepresentativeCertNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLegalRepresentativeCertNo() {
 		return this.legalRepresentativeCertNo;
 	}
+	/**
+	 * <p>Setter for the field <code>legalRepresentativeCertNo</code>.</p>
+	 *
+	 * @param legalRepresentativeCertNo a {@link java.lang.String} object.
+	 */
 	public void setLegalRepresentativeCertNo(String legalRepresentativeCertNo) {
 		this.legalRepresentativeCertNo = legalRepresentativeCertNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>legalRepresentativeCertPicBack</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLegalRepresentativeCertPicBack() {
 		return this.legalRepresentativeCertPicBack;
 	}
+	/**
+	 * <p>Setter for the field <code>legalRepresentativeCertPicBack</code>.</p>
+	 *
+	 * @param legalRepresentativeCertPicBack a {@link java.lang.String} object.
+	 */
 	public void setLegalRepresentativeCertPicBack(String legalRepresentativeCertPicBack) {
 		this.legalRepresentativeCertPicBack = legalRepresentativeCertPicBack;
 	}
 
+	/**
+	 * <p>Getter for the field <code>legalRepresentativeCertPicFront</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLegalRepresentativeCertPicFront() {
 		return this.legalRepresentativeCertPicFront;
 	}
+	/**
+	 * <p>Setter for the field <code>legalRepresentativeCertPicFront</code>.</p>
+	 *
+	 * @param legalRepresentativeCertPicFront a {@link java.lang.String} object.
+	 */
 	public void setLegalRepresentativeCertPicFront(String legalRepresentativeCertPicFront) {
 		this.legalRepresentativeCertPicFront = legalRepresentativeCertPicFront;
 	}
 
+	/**
+	 * <p>Getter for the field <code>legalRepresentativeCertType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLegalRepresentativeCertType() {
 		return this.legalRepresentativeCertType;
 	}
+	/**
+	 * <p>Setter for the field <code>legalRepresentativeCertType</code>.</p>
+	 *
+	 * @param legalRepresentativeCertType a {@link java.lang.String} object.
+	 */
 	public void setLegalRepresentativeCertType(String legalRepresentativeCertType) {
 		this.legalRepresentativeCertType = legalRepresentativeCertType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>legalRepresentativeName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLegalRepresentativeName() {
 		return this.legalRepresentativeName;
 	}
+	/**
+	 * <p>Setter for the field <code>legalRepresentativeName</code>.</p>
+	 *
+	 * @param legalRepresentativeName a {@link java.lang.String} object.
+	 */
 	public void setLegalRepresentativeName(String legalRepresentativeName) {
 		this.legalRepresentativeName = legalRepresentativeName;
 	}

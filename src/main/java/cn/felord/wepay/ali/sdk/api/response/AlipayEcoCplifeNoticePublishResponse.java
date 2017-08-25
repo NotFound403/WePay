@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.notice.publish response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-02 18:17:16
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeNoticePublishResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayEcoCplifeNoticePublishResponse extends AlipayResponse {
 	@ApiField("notice_id")
 	private String noticeId;
 
+	/**
+	 * <p>Setter for the field <code>noticeId</code>.</p>
+	 *
+	 * @param noticeId a {@link java.lang.String} object.
+	 */
 	public void setNoticeId(String noticeId) {
 		this.noticeId = noticeId;
 	}
+	/**
+	 * <p>Getter for the field <code>noticeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNoticeId( ) {
 		return this.noticeId;
 	}

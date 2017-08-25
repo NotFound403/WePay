@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 数据决策分析结果
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @version $Id: $Id
  */
 public class AlipayDataServiceResult extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayDataServiceResult extends AlipayObject {
 	@ApiField("success")
 	private Boolean success;
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>message</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMessage() {
 		return this.message;
 	}
+	/**
+	 * <p>Setter for the field <code>message</code>.</p>
+	 *
+	 * @param message a {@link java.lang.String} object.
+	 */
 	public void setMessage(String message) {
 		this.message = message;
 	}
 
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult() {
 		return this.result;
 	}
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
 
+	/**
+	 * <p>Getter for the field <code>success</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSuccess() {
 		return this.success;
 	}
+	/**
+	 * <p>Setter for the field <code>success</code>.</p>
+	 *
+	 * @param success a {@link java.lang.Boolean} object.
+	 */
 	public void setSuccess(Boolean success) {
 		this.success = success;
 	}

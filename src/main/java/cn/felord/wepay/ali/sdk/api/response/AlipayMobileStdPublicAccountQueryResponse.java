@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.std.public.account.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:28:20
+ * @version $Id: $Id
  */
 public class AlipayMobileStdPublicAccountQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayMobileStdPublicAccountQueryResponse extends AlipayResponse {
 	@ApiField("public_bind_account")
 	private List<PublicBindAccount> publicBindAccounts;
 
+	/**
+	 * <p>Setter for the field <code>publicBindAccounts</code>.</p>
+	 *
+	 * @param publicBindAccounts a {@link java.util.List} object.
+	 */
 	public void setPublicBindAccounts(List<PublicBindAccount> publicBindAccounts) {
 		this.publicBindAccounts = publicBindAccounts;
 	}
+	/**
+	 * <p>Getter for the field <code>publicBindAccounts</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PublicBindAccount> getPublicBindAccounts( ) {
 		return this.publicBindAccounts;
 	}

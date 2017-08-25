@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 通知消息
  *
  * @author auto create
- * @since 1.0, 2017-06-06 17:13:14
+ * @version $Id: $Id
  */
 public class McardNotifyMessage extends AlipayObject {
 
@@ -37,23 +37,53 @@ LEVEL_UPDATE：等级变更消息
 	@ApiField("message_type")
 	private String messageType;
 
+	/**
+	 * <p>Getter for the field <code>changeReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChangeReason() {
 		return this.changeReason;
 	}
+	/**
+	 * <p>Setter for the field <code>changeReason</code>.</p>
+	 *
+	 * @param changeReason a {@link java.lang.String} object.
+	 */
 	public void setChangeReason(String changeReason) {
 		this.changeReason = changeReason;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>messageType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMessageType() {
 		return this.messageType;
 	}
+	/**
+	 * <p>Setter for the field <code>messageType</code>.</p>
+	 *
+	 * @param messageType a {@link java.lang.String} object.
+	 */
 	public void setMessageType(String messageType) {
 		this.messageType = messageType;
 	}

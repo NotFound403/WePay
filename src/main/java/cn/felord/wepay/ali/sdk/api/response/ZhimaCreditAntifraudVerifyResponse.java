@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.antifraud.verify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 17:17:49
+ * @version $Id: $Id
  */
 public class ZhimaCreditAntifraudVerifyResponse extends AlipayResponse {
 
@@ -29,16 +29,36 @@ public class ZhimaCreditAntifraudVerifyResponse extends AlipayResponse {
 	@ApiField("string")
 	private List<String> verifyCode;
 
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo( ) {
 		return this.bizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>verifyCode</code>.</p>
+	 *
+	 * @param verifyCode a {@link java.util.List} object.
+	 */
 	public void setVerifyCode(List<String> verifyCode) {
 		this.verifyCode = verifyCode;
 	}
+	/**
+	 * <p>Getter for the field <code>verifyCode</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getVerifyCode( ) {
 		return this.verifyCode;
 	}

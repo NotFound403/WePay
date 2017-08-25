@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-25 14:35:11
+ * @version $Id: $Id
  */
 public class ZhimaMerchantOrderRentModifyResponse extends AlipayResponse {
 

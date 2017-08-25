@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 到位的单笔订单拒绝接口
  *
  * @author auto create
- * @since 1.0, 2017-01-16 11:30:45
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderRefuseModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayDaoweiOrderRefuseModel extends AlipayObject {
 	@ApiField("reason")
 	private String reason;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReason() {
 		return this.reason;
 	}
+	/**
+	 * <p>Setter for the field <code>reason</code>.</p>
+	 *
+	 * @param reason a {@link java.lang.String} object.
+	 */
 	public void setReason(String reason) {
 		this.reason = reason;
 	}

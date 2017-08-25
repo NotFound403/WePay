@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.watchlistii.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-12 12:06:05
+ * @version $Id: $Id
  */
 public class ZhimaCreditWatchlistiiGetResponse extends AlipayResponse {
 
@@ -37,23 +37,53 @@ false=未命中
 	@ApiField("is_matched")
 	private Boolean isMatched;
 
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo( ) {
 		return this.bizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>details</code>.</p>
+	 *
+	 * @param details a {@link java.util.List} object.
+	 */
 	public void setDetails(List<ZmWatchListDetail> details) {
 		this.details = details;
 	}
+	/**
+	 * <p>Getter for the field <code>details</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ZmWatchListDetail> getDetails( ) {
 		return this.details;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isMatched</code>.</p>
+	 *
+	 * @param isMatched a {@link java.lang.Boolean} object.
+	 */
 	public void setIsMatched(Boolean isMatched) {
 		this.isMatched = isMatched;
 	}
+	/**
+	 * <p>Getter for the field <code>isMatched</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getIsMatched( ) {
 		return this.isMatched;
 	}

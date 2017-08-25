@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.tool.prizesend.auth response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-10-09 11:45:06
+ * @version $Id: $Id
  */
 public class KoubeiMarketingToolPrizesendAuthResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiMarketingToolPrizesendAuthResponse extends AlipayResponse {
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken( ) {
 		return this.token;
 	}

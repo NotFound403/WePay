@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.pay response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 16:45:48
+ * @version $Id: $Id
  */
 public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 
@@ -47,37 +47,87 @@ public class AlipayEbppPdeductPayResponse extends AlipayResponse {
 	@ApiField("result_status")
 	private String resultStatus;
 
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>billNo</code>.</p>
+	 *
+	 * @param billNo a {@link java.lang.String} object.
+	 */
 	public void setBillNo(String billNo) {
 		this.billNo = billNo;
 	}
+	/**
+	 * <p>Getter for the field <code>billNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillNo( ) {
 		return this.billNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>extendField</code>.</p>
+	 *
+	 * @param extendField a {@link java.lang.String} object.
+	 */
 	public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
+	/**
+	 * <p>Getter for the field <code>extendField</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendField( ) {
 		return this.extendField;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>resultStatus</code>.</p>
+	 *
+	 * @param resultStatus a {@link java.lang.String} object.
+	 */
 	public void setResultStatus(String resultStatus) {
 		this.resultStatus = resultStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>resultStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultStatus( ) {
 		return this.resultStatus;
 	}

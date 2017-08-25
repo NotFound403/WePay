@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 券的单品信息
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class ItemInfo extends AlipayObject {
 
@@ -70,58 +70,138 @@ public class ItemInfo extends AlipayObject {
 	@ApiField("original_price")
 	private String originalPrice;
 
+	/**
+	 * <p>Getter for the field <code>itemIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getItemIds() {
 		return this.itemIds;
 	}
+	/**
+	 * <p>Setter for the field <code>itemIds</code>.</p>
+	 *
+	 * @param itemIds a {@link java.util.List} object.
+	 */
 	public void setItemIds(List<String> itemIds) {
 		this.itemIds = itemIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemImgs</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getItemImgs() {
 		return this.itemImgs;
 	}
+	/**
+	 * <p>Setter for the field <code>itemImgs</code>.</p>
+	 *
+	 * @param itemImgs a {@link java.util.List} object.
+	 */
 	public void setItemImgs(List<String> itemImgs) {
 		this.itemImgs = itemImgs;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemLink</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemLink() {
 		return this.itemLink;
 	}
+	/**
+	 * <p>Setter for the field <code>itemLink</code>.</p>
+	 *
+	 * @param itemLink a {@link java.lang.String} object.
+	 */
 	public void setItemLink(String itemLink) {
 		this.itemLink = itemLink;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemName() {
 		return this.itemName;
 	}
+	/**
+	 * <p>Setter for the field <code>itemName</code>.</p>
+	 *
+	 * @param itemName a {@link java.lang.String} object.
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemText</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemText() {
 		return this.itemText;
 	}
+	/**
+	 * <p>Setter for the field <code>itemText</code>.</p>
+	 *
+	 * @param itemText a {@link java.lang.String} object.
+	 */
 	public void setItemText(String itemText) {
 		this.itemText = itemText;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxDiscountNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxDiscountNum() {
 		return this.maxDiscountNum;
 	}
+	/**
+	 * <p>Setter for the field <code>maxDiscountNum</code>.</p>
+	 *
+	 * @param maxDiscountNum a {@link java.lang.String} object.
+	 */
 	public void setMaxDiscountNum(String maxDiscountNum) {
 		this.maxDiscountNum = maxDiscountNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>minConsumeNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMinConsumeNum() {
 		return this.minConsumeNum;
 	}
+	/**
+	 * <p>Setter for the field <code>minConsumeNum</code>.</p>
+	 *
+	 * @param minConsumeNum a {@link java.lang.String} object.
+	 */
 	public void setMinConsumeNum(String minConsumeNum) {
 		this.minConsumeNum = minConsumeNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginalPrice() {
 		return this.originalPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @param originalPrice a {@link java.lang.String} object.
+	 */
 	public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}

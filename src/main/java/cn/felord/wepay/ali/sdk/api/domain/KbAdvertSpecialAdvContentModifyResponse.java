@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统创建特殊广告内容返回模型
  *
  * @author auto create
- * @since 1.0, 2017-03-10 10:04:13
+ * @version $Id: $Id
  */
 public class KbAdvertSpecialAdvContentModifyResponse extends AlipayObject {
 
@@ -52,37 +52,87 @@ NOT_SUPPORT_ERROR：非代金券不支持创建口令；
 	@ApiField("msg")
 	private String msg;
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentPassword</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertContentPassword} object.
+	 */
 	public KbAdvertContentPassword getContentPassword() {
 		return this.contentPassword;
 	}
+	/**
+	 * <p>Setter for the field <code>contentPassword</code>.</p>
+	 *
+	 * @param contentPassword a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertContentPassword} object.
+	 */
 	public void setContentPassword(KbAdvertContentPassword contentPassword) {
 		this.contentPassword = contentPassword;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentShareCode</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertContentShareCode} object.
+	 */
 	public KbAdvertContentShareCode getContentShareCode() {
 		return this.contentShareCode;
 	}
+	/**
+	 * <p>Setter for the field <code>contentShareCode</code>.</p>
+	 *
+	 * @param contentShareCode a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertContentShareCode} object.
+	 */
 	public void setContentShareCode(KbAdvertContentShareCode contentShareCode) {
 		this.contentShareCode = contentShareCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentType() {
 		return this.contentType;
 	}
+	/**
+	 * <p>Setter for the field <code>contentType</code>.</p>
+	 *
+	 * @param contentType a {@link java.lang.String} object.
+	 */
 	public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg() {
 		return this.msg;
 	}
+	/**
+	 * <p>Setter for the field <code>msg</code>.</p>
+	 *
+	 * @param msg a {@link java.lang.String} object.
+	 */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}

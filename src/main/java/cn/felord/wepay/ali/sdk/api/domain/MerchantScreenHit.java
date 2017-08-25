@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户反洗钱风险检查发现的风险，包含命中的实体类型和命中详情等信息。
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class MerchantScreenHit extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class MerchantScreenHit extends AlipayObject {
 	@ApiField("risk_detail")
 	private String riskDetail;
 
+	/**
+	 * <p>Getter for the field <code>inputType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInputType() {
 		return this.inputType;
 	}
+	/**
+	 * <p>Setter for the field <code>inputType</code>.</p>
+	 *
+	 * @param inputType a {@link java.lang.String} object.
+	 */
 	public void setInputType(String inputType) {
 		this.inputType = inputType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>riskDetail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRiskDetail() {
 		return this.riskDetail;
 	}
+	/**
+	 * <p>Setter for the field <code>riskDetail</code>.</p>
+	 *
+	 * @param riskDetail a {@link java.lang.String} object.
+	 */
 	public void setRiskDetail(String riskDetail) {
 		this.riskDetail = riskDetail;
 	}

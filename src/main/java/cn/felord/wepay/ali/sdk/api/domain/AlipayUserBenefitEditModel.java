@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 蚂蚁会员合作权益编辑接口
  *
  * @author auto create
- * @since 1.0, 2016-09-28 17:51:23
+ * @version $Id: $Id
  */
 public class AlipayUserBenefitEditModel extends AlipayObject {
 
@@ -117,114 +117,274 @@ public class AlipayUserBenefitEditModel extends AlipayObject {
 	@ApiField("start_time")
 	private String startTime;
 
+	/**
+	 * <p>Getter for the field <code>benefitAreaCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitAreaCode() {
 		return this.benefitAreaCode;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitAreaCode</code>.</p>
+	 *
+	 * @param benefitAreaCode a {@link java.lang.String} object.
+	 */
 	public void setBenefitAreaCode(String benefitAreaCode) {
 		this.benefitAreaCode = benefitAreaCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitIconUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitIconUrl() {
 		return this.benefitIconUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitIconUrl</code>.</p>
+	 *
+	 * @param benefitIconUrl a {@link java.lang.String} object.
+	 */
 	public void setBenefitIconUrl(String benefitIconUrl) {
 		this.benefitIconUrl = benefitIconUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitId() {
 		return this.benefitId;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitId</code>.</p>
+	 *
+	 * @param benefitId a {@link java.lang.String} object.
+	 */
 	public void setBenefitId(String benefitId) {
 		this.benefitId = benefitId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitName() {
 		return this.benefitName;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitName</code>.</p>
+	 *
+	 * @param benefitName a {@link java.lang.String} object.
+	 */
 	public void setBenefitName(String benefitName) {
 		this.benefitName = benefitName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitNameAsAreaSubtitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitNameAsAreaSubtitle() {
 		return this.benefitNameAsAreaSubtitle;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitNameAsAreaSubtitle</code>.</p>
+	 *
+	 * @param benefitNameAsAreaSubtitle a {@link java.lang.String} object.
+	 */
 	public void setBenefitNameAsAreaSubtitle(String benefitNameAsAreaSubtitle) {
 		this.benefitNameAsAreaSubtitle = benefitNameAsAreaSubtitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitPageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitPageUrl() {
 		return this.benefitPageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitPageUrl</code>.</p>
+	 *
+	 * @param benefitPageUrl a {@link java.lang.String} object.
+	 */
 	public void setBenefitPageUrl(String benefitPageUrl) {
 		this.benefitPageUrl = benefitPageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitPoint</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getBenefitPoint() {
 		return this.benefitPoint;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitPoint</code>.</p>
+	 *
+	 * @param benefitPoint a {@link java.lang.Long} object.
+	 */
 	public void setBenefitPoint(Long benefitPoint) {
 		this.benefitPoint = benefitPoint;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitRecBizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitRecBizId() {
 		return this.benefitRecBizId;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitRecBizId</code>.</p>
+	 *
+	 * @param benefitRecBizId a {@link java.lang.String} object.
+	 */
 	public void setBenefitRecBizId(String benefitRecBizId) {
 		this.benefitRecBizId = benefitRecBizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitRecType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitRecType() {
 		return this.benefitRecType;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitRecType</code>.</p>
+	 *
+	 * @param benefitRecType a {@link java.lang.String} object.
+	 */
 	public void setBenefitRecType(String benefitRecType) {
 		this.benefitRecType = benefitRecType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitSubtitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitSubtitle() {
 		return this.benefitSubtitle;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitSubtitle</code>.</p>
+	 *
+	 * @param benefitSubtitle a {@link java.lang.String} object.
+	 */
 	public void setBenefitSubtitle(String benefitSubtitle) {
 		this.benefitSubtitle = benefitSubtitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId() {
 		return this.campId;
 	}
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>eligibleGrade</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEligibleGrade() {
 		return this.eligibleGrade;
 	}
+	/**
+	 * <p>Setter for the field <code>eligibleGrade</code>.</p>
+	 *
+	 * @param eligibleGrade a {@link java.lang.String} object.
+	 */
 	public void setEligibleGrade(String eligibleGrade) {
 		this.eligibleGrade = eligibleGrade;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.lang.String} object.
+	 */
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>exchangeRuleIds</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExchangeRuleIds() {
 		return this.exchangeRuleIds;
 	}
+	/**
+	 * <p>Setter for the field <code>exchangeRuleIds</code>.</p>
+	 *
+	 * @param exchangeRuleIds a {@link java.lang.String} object.
+	 */
 	public void setExchangeRuleIds(String exchangeRuleIds) {
 		this.exchangeRuleIds = exchangeRuleIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gradeDiscount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGradeDiscount() {
 		return this.gradeDiscount;
 	}
+	/**
+	 * <p>Setter for the field <code>gradeDiscount</code>.</p>
+	 *
+	 * @param gradeDiscount a {@link java.lang.String} object.
+	 */
 	public void setGradeDiscount(String gradeDiscount) {
 		this.gradeDiscount = gradeDiscount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.lang.String} object.
+	 */
 	public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}

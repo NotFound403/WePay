@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 广告推广用于参与接口
  *
  * @author auto create
- * @since 1.0, 2017-01-17 21:29:21
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionAdvertPurchaseModel extends AlipayObject {
 
@@ -88,58 +88,138 @@ user_id - 支付宝账户ID
 	@ApiField("user_identify_type")
 	private String userIdentifyType;
 
+	/**
+	 * <p>Getter for the field <code>channelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelId() {
 		return this.channelId;
 	}
+	/**
+	 * <p>Setter for the field <code>channelId</code>.</p>
+	 *
+	 * @param channelId a {@link java.lang.String} object.
+	 */
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outUniqueId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutUniqueId() {
 		return this.outUniqueId;
 	}
+	/**
+	 * <p>Setter for the field <code>outUniqueId</code>.</p>
+	 *
+	 * @param outUniqueId a {@link java.lang.String} object.
+	 */
 	public void setOutUniqueId(String outUniqueId) {
 		this.outUniqueId = outUniqueId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>securityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSecurityCode() {
 		return this.securityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>securityCode</code>.</p>
+	 *
+	 * @param securityCode a {@link java.lang.String} object.
+	 */
 	public void setSecurityCode(String securityCode) {
 		this.securityCode = securityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tag</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTag() {
 		return this.tag;
 	}
+	/**
+	 * <p>Setter for the field <code>tag</code>.</p>
+	 *
+	 * @param tag a {@link java.lang.String} object.
+	 */
 	public void setTag(String tag) {
 		this.tag = tag;
 	}
 
+	/**
+	 * <p>Getter for the field <code>triggerIdentifies</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getTriggerIdentifies() {
 		return this.triggerIdentifies;
 	}
+	/**
+	 * <p>Setter for the field <code>triggerIdentifies</code>.</p>
+	 *
+	 * @param triggerIdentifies a {@link java.util.List} object.
+	 */
 	public void setTriggerIdentifies(List<String> triggerIdentifies) {
 		this.triggerIdentifies = triggerIdentifies;
 	}
 
+	/**
+	 * <p>Getter for the field <code>triggerIdentifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTriggerIdentifyType() {
 		return this.triggerIdentifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>triggerIdentifyType</code>.</p>
+	 *
+	 * @param triggerIdentifyType a {@link java.lang.String} object.
+	 */
 	public void setTriggerIdentifyType(String triggerIdentifyType) {
 		this.triggerIdentifyType = triggerIdentifyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userIdentify</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserIdentify() {
 		return this.userIdentify;
 	}
+	/**
+	 * <p>Setter for the field <code>userIdentify</code>.</p>
+	 *
+	 * @param userIdentify a {@link java.lang.String} object.
+	 */
 	public void setUserIdentify(String userIdentify) {
 		this.userIdentify = userIdentify;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userIdentifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserIdentifyType() {
 		return this.userIdentifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>userIdentifyType</code>.</p>
+	 *
+	 * @param userIdentifyType a {@link java.lang.String} object.
+	 */
 	public void setUserIdentifyType(String userIdentifyType) {
 		this.userIdentifyType = userIdentifyType;
 	}

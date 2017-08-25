@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 会员卡开卡（内部无需授权）
  *
  * @author auto create
- * @since 1.0, 2017-06-13 19:07:11
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardOpenApplyModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class AlipayMarketingCardOpenApplyModel extends AlipayObject {
 	@ApiField("out_serial_no")
 	private String outSerialNo;
 
+	/**
+	 * <p>Getter for the field <code>cardExtInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public MerchantCard getCardExtInfo() {
 		return this.cardExtInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardExtInfo</code>.</p>
+	 *
+	 * @param cardExtInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public void setCardExtInfo(MerchantCard cardExtInfo) {
 		this.cardExtInfo = cardExtInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardTemplateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardTemplateId() {
 		return this.cardTemplateId;
 	}
+	/**
+	 * <p>Setter for the field <code>cardTemplateId</code>.</p>
+	 *
+	 * @param cardTemplateId a {@link java.lang.String} object.
+	 */
 	public void setCardTemplateId(String cardTemplateId) {
 		this.cardTemplateId = cardTemplateId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardUserInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CardUserInfo} object.
+	 */
 	public CardUserInfo getCardUserInfo() {
 		return this.cardUserInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardUserInfo</code>.</p>
+	 *
+	 * @param cardUserInfo a {@link cn.felord.wepay.ali.sdk.api.domain.CardUserInfo} object.
+	 */
 	public void setCardUserInfo(CardUserInfo cardUserInfo) {
 		this.cardUserInfo = cardUserInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memberExtInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantMenber} object.
+	 */
 	public MerchantMenber getMemberExtInfo() {
 		return this.memberExtInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>memberExtInfo</code>.</p>
+	 *
+	 * @param memberExtInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantMenber} object.
+	 */
 	public void setMemberExtInfo(MerchantMenber memberExtInfo) {
 		this.memberExtInfo = memberExtInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSerialNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSerialNo() {
 		return this.outSerialNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outSerialNo</code>.</p>
+	 *
+	 * @param outSerialNo a {@link java.lang.String} object.
+	 */
 	public void setOutSerialNo(String outSerialNo) {
 		this.outSerialNo = outSerialNo;
 	}

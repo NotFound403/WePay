@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 合约条件组选择器，根据条件组类型和code选择条件
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class ArrangementConditionGroupSelector extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class ArrangementConditionGroupSelector extends AlipayObject {
 	@ApiField("select_latest_pd_cd")
 	private Boolean selectLatestPdCd;
 
+	/**
+	 * <p>Getter for the field <code>selectLatestPdCd</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSelectLatestPdCd() {
 		return this.selectLatestPdCd;
 	}
+	/**
+	 * <p>Setter for the field <code>selectLatestPdCd</code>.</p>
+	 *
+	 * @param selectLatestPdCd a {@link java.lang.Boolean} object.
+	 */
 	public void setSelectLatestPdCd(Boolean selectLatestPdCd) {
 		this.selectLatestPdCd = selectLatestPdCd;
 	}

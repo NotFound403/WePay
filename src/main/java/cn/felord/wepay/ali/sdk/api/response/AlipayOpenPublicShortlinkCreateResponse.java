@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.shortlink.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-04 10:40:37
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicShortlinkCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicShortlinkCreateResponse extends AlipayResponse {
 	@ApiField("shortlink")
 	private String shortlink;
 
+	/**
+	 * <p>Setter for the field <code>shortlink</code>.</p>
+	 *
+	 * @param shortlink a {@link java.lang.String} object.
+	 */
 	public void setShortlink(String shortlink) {
 		this.shortlink = shortlink;
 	}
+	/**
+	 * <p>Getter for the field <code>shortlink</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShortlink( ) {
 		return this.shortlink;
 	}

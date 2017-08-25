@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 修改资金券模板
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:47
+ * @version $Id: $Id
  */
 public class AlipayMarketingCashvoucherTemplateModifyModel extends AlipayObject {
 
@@ -51,44 +51,104 @@ public class AlipayMarketingCashvoucherTemplateModifyModel extends AlipayObject 
 	@ApiField("voucher_valid_period")
 	private String voucherValidPeriod;
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @param publishEndTime a {@link java.util.Date} object.
+	 */
 	public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishStartTime() {
 		return this.publishStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @param publishStartTime a {@link java.util.Date} object.
+	 */
 	public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>slogan</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSlogan() {
 		return this.slogan;
 	}
+	/**
+	 * <p>Setter for the field <code>slogan</code>.</p>
+	 *
+	 * @param slogan a {@link java.lang.String} object.
+	 */
 	public void setSlogan(String slogan) {
 		this.slogan = slogan;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherValidPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherValidPeriod() {
 		return this.voucherValidPeriod;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherValidPeriod</code>.</p>
+	 *
+	 * @param voucherValidPeriod a {@link java.lang.String} object.
+	 */
 	public void setVoucherValidPeriod(String voucherValidPeriod) {
 		this.voucherValidPeriod = voucherValidPeriod;
 	}

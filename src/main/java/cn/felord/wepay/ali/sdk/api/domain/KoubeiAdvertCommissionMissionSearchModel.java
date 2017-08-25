@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 广告标的分页搜索接口
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:12
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionMissionSearchModel extends AlipayObject {
 
@@ -61,51 +61,121 @@ voucher-券
 	@ApiField("voucher")
 	private KbAdvertSubjectVoucher voucher;
 
+	/**
+	 * <p>Getter for the field <code>commissionClauseType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommissionClauseType() {
 		return this.commissionClauseType;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionClauseType</code>.</p>
+	 *
+	 * @param commissionClauseType a {@link java.lang.String} object.
+	 */
 	public void setCommissionClauseType(String commissionClauseType) {
 		this.commissionClauseType = commissionClauseType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageIndex</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageIndex() {
 		return this.pageIndex;
 	}
+	/**
+	 * <p>Setter for the field <code>pageIndex</code>.</p>
+	 *
+	 * @param pageIndex a {@link java.lang.String} object.
+	 */
 	public void setPageIndex(String pageIndex) {
 		this.pageIndex = pageIndex;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.String} object.
+	 */
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>percentageClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClausePercentage} object.
+	 */
 	public KbAdvertCommissionClausePercentage getPercentageClause() {
 		return this.percentageClause;
 	}
+	/**
+	 * <p>Setter for the field <code>percentageClause</code>.</p>
+	 *
+	 * @param percentageClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClausePercentage} object.
+	 */
 	public void setPercentageClause(KbAdvertCommissionClausePercentage percentageClause) {
 		this.percentageClause = percentageClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>quotaClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClauseQuota} object.
+	 */
 	public KbAdvertCommissionClauseQuota getQuotaClause() {
 		return this.quotaClause;
 	}
+	/**
+	 * <p>Setter for the field <code>quotaClause</code>.</p>
+	 *
+	 * @param quotaClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClauseQuota} object.
+	 */
 	public void setQuotaClause(KbAdvertCommissionClauseQuota quotaClause) {
 		this.quotaClause = quotaClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucher</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertSubjectVoucher} object.
+	 */
 	public KbAdvertSubjectVoucher getVoucher() {
 		return this.voucher;
 	}
+	/**
+	 * <p>Setter for the field <code>voucher</code>.</p>
+	 *
+	 * @param voucher a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertSubjectVoucher} object.
+	 */
 	public void setVoucher(KbAdvertSubjectVoucher voucher) {
 		this.voucher = voucher;
 	}

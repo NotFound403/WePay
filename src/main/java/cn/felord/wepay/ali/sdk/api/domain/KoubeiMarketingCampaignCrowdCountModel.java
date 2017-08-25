@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑商户人群组数目统计接口
  *
  * @author auto create
- * @since 1.0, 2017-06-29 11:19:53
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignCrowdCountModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ value:标签值
 	@ApiField("dimensions")
 	private String dimensions;
 
+	/**
+	 * <p>Getter for the field <code>conditions</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConditions() {
 		return this.conditions;
 	}
+	/**
+	 * <p>Setter for the field <code>conditions</code>.</p>
+	 *
+	 * @param conditions a {@link java.lang.String} object.
+	 */
 	public void setConditions(String conditions) {
 		this.conditions = conditions;
 	}
 
+	/**
+	 * <p>Getter for the field <code>crowdGroupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdGroupId() {
 		return this.crowdGroupId;
 	}
+	/**
+	 * <p>Setter for the field <code>crowdGroupId</code>.</p>
+	 *
+	 * @param crowdGroupId a {@link java.lang.String} object.
+	 */
 	public void setCrowdGroupId(String crowdGroupId) {
 		this.crowdGroupId = crowdGroupId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dimensions</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDimensions() {
 		return this.dimensions;
 	}
+	/**
+	 * <p>Setter for the field <code>dimensions</code>.</p>
+	 *
+	 * @param dimensions a {@link java.lang.String} object.
+	 */
 	public void setDimensions(String dimensions) {
 		this.dimensions = dimensions;
 	}

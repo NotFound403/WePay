@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 机构代客户还款
  *
  * @author auto create
- * @since 1.0, 2016-12-22 21:53:37
+ * @version $Id: $Id
  */
 public class MybankCreditLoantradeLoanarRepayModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class MybankCreditLoantradeLoanarRepayModel extends AlipayObject {
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Getter for the field <code>custIproleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCustIproleId() {
 		return this.custIproleId;
 	}
+	/**
+	 * <p>Setter for the field <code>custIproleId</code>.</p>
+	 *
+	 * @param custIproleId a {@link java.lang.String} object.
+	 */
 	public void setCustIproleId(String custIproleId) {
 		this.custIproleId = custIproleId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>date</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDate() {
 		return this.date;
 	}
+	/**
+	 * <p>Setter for the field <code>date</code>.</p>
+	 *
+	 * @param date a {@link java.lang.String} object.
+	 */
 	public void setDate(String date) {
 		this.date = date;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanArNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanArNo() {
 		return this.loanArNo;
 	}
+	/**
+	 * <p>Setter for the field <code>loanArNo</code>.</p>
+	 *
+	 * @param loanArNo a {@link java.lang.String} object.
+	 */
 	public void setLoanArNo(String loanArNo) {
 		this.loanArNo = loanArNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prinAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrinAmt() {
 		return this.prinAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>prinAmt</code>.</p>
+	 *
+	 * @param prinAmt a {@link java.lang.String} object.
+	 */
 	public void setPrinAmt(String prinAmt) {
 		this.prinAmt = prinAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}

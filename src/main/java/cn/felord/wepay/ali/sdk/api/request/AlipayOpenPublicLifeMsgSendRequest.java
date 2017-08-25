@@ -12,9 +12,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.life.msg.send request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-11 11:21:11
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeMsgSendRequest implements AlipayUploadRequest<AlipayOpenPublicLifeMsgSendResponse> {
 
@@ -102,100 +102,240 @@ deadline（int）：文章的失效时间，单位秒
 	 */
 	private String videoUrl;
 
+	/**
+	 * <p>Setter for the field <code>category</code>.</p>
+	 *
+	 * @param category a {@link java.lang.String} object.
+	 */
 	public void setCategory(String category) {
 		this.category = category;
 	}
+	/**
+	 * <p>Getter for the field <code>category</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategory() {
 		return this.category;
 	}
 
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
 
+	/**
+	 * <p>Setter for the field <code>cover</code>.</p>
+	 *
+	 * @param cover a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public void setCover(FileItem cover) {
 		this.cover = cover;
 	}
+	/**
+	 * <p>Getter for the field <code>cover</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public FileItem getCover() {
 		return this.cover;
 	}
 
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
 
+	/**
+	 * <p>Setter for the field <code>msgType</code>.</p>
+	 *
+	 * @param msgType a {@link java.lang.String} object.
+	 */
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
+	/**
+	 * <p>Getter for the field <code>msgType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsgType() {
 		return this.msgType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sourceExtInfo</code>.</p>
+	 *
+	 * @param sourceExtInfo a {@link java.lang.String} object.
+	 */
 	public void setSourceExtInfo(String sourceExtInfo) {
 		this.sourceExtInfo = sourceExtInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>sourceExtInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSourceExtInfo() {
 		return this.sourceExtInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
 
+	/**
+	 * <p>Setter for the field <code>uniqueMsgId</code>.</p>
+	 *
+	 * @param uniqueMsgId a {@link java.lang.String} object.
+	 */
 	public void setUniqueMsgId(String uniqueMsgId) {
 		this.uniqueMsgId = uniqueMsgId;
 	}
+	/**
+	 * <p>Getter for the field <code>uniqueMsgId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUniqueMsgId() {
 		return this.uniqueMsgId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>videoLength</code>.</p>
+	 *
+	 * @param videoLength a {@link java.lang.String} object.
+	 */
 	public void setVideoLength(String videoLength) {
 		this.videoLength = videoLength;
 	}
+	/**
+	 * <p>Getter for the field <code>videoLength</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVideoLength() {
 		return this.videoLength;
 	}
 
+	/**
+	 * <p>Setter for the field <code>videoSamples</code>.</p>
+	 *
+	 * @param videoSamples a {@link java.util.List} object.
+	 */
 	public void setVideoSamples(List<String> videoSamples) {
 		this.videoSamples = videoSamples;
 	}
+	/**
+	 * <p>Getter for the field <code>videoSamples</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getVideoSamples() {
 		return this.videoSamples;
 	}
 
+	/**
+	 * <p>Setter for the field <code>videoSize</code>.</p>
+	 *
+	 * @param videoSize a {@link java.lang.String} object.
+	 */
 	public void setVideoSize(String videoSize) {
 		this.videoSize = videoSize;
 	}
+	/**
+	 * <p>Getter for the field <code>videoSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVideoSize() {
 		return this.videoSize;
 	}
 
+	/**
+	 * <p>Setter for the field <code>videoSource</code>.</p>
+	 *
+	 * @param videoSource a {@link java.lang.String} object.
+	 */
 	public void setVideoSource(String videoSource) {
 		this.videoSource = videoSource;
 	}
+	/**
+	 * <p>Getter for the field <code>videoSource</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVideoSource() {
 		return this.videoSource;
 	}
 
+	/**
+	 * <p>Setter for the field <code>videoTemporaryUrl</code>.</p>
+	 *
+	 * @param videoTemporaryUrl a {@link java.lang.String} object.
+	 */
 	public void setVideoTemporaryUrl(String videoTemporaryUrl) {
 		this.videoTemporaryUrl = videoTemporaryUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>videoTemporaryUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVideoTemporaryUrl() {
 		return this.videoTemporaryUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>videoUrl</code>.</p>
+	 *
+	 * @param videoUrl a {@link java.lang.String} object.
+	 */
 	public void setVideoUrl(String videoUrl) {
 		this.videoUrl = videoUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>videoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVideoUrl() {
 		return this.videoUrl;
 	}
@@ -207,57 +347,103 @@ deadline（int）：文章的失效时间，单位秒
     private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 	
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }
 	
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 	
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
     
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.open.public.life.msg.send";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("category", this.category);
@@ -279,6 +465,12 @@ deadline（int）：文章的失效时间，单位秒
 		return txtParams;
 	}
 	
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -286,33 +478,55 @@ deadline（int）：文章的失效时间，单位秒
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getFileParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
 		params.put("cover", this.cover);
 		return params;
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayOpenPublicLifeMsgSendResponse> getResponseClass() {
 		return AlipayOpenPublicLifeMsgSendResponse.class;
 	}
 	
+	 /**
+	  * <p>isNeedEncrypt.</p>
+	  *
+	  * @return a boolean.
+	  */
 	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

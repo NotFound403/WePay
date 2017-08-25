@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 同步定损/核损结果到蚂蚁
  *
  * @author auto create
- * @since 1.0, 2017-03-16 09:53:30
+ * @version $Id: $Id
  */
 public class AlipayInsDataAutodamageEstimateConfirmModel extends AlipayObject {
 
@@ -107,107 +107,257 @@ public class AlipayInsDataAutodamageEstimateConfirmModel extends AlipayObject {
 	@ApiField("total_remain_value")
 	private String totalRemainValue;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>commercialPolicyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommercialPolicyNo() {
 		return this.commercialPolicyNo;
 	}
+	/**
+	 * <p>Setter for the field <code>commercialPolicyNo</code>.</p>
+	 *
+	 * @param commercialPolicyNo a {@link java.lang.String} object.
+	 */
 	public void setCommercialPolicyNo(String commercialPolicyNo) {
 		this.commercialPolicyNo = commercialPolicyNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>compulsoryPolicyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCompulsoryPolicyNo() {
 		return this.compulsoryPolicyNo;
 	}
+	/**
+	 * <p>Setter for the field <code>compulsoryPolicyNo</code>.</p>
+	 *
+	 * @param compulsoryPolicyNo a {@link java.lang.String} object.
+	 */
 	public void setCompulsoryPolicyNo(String compulsoryPolicyNo) {
 		this.compulsoryPolicyNo = compulsoryPolicyNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>engineNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEngineNo() {
 		return this.engineNo;
 	}
+	/**
+	 * <p>Setter for the field <code>engineNo</code>.</p>
+	 *
+	 * @param engineNo a {@link java.lang.String} object.
+	 */
 	public void setEngineNo(String engineNo) {
 		this.engineNo = engineNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>estimateDetailList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsDataAutodamageEstimateConfirmModel> getEstimateDetailList() {
 		return this.estimateDetailList;
 	}
+	/**
+	 * <p>Setter for the field <code>estimateDetailList</code>.</p>
+	 *
+	 * @param estimateDetailList a {@link java.util.List} object.
+	 */
 	public void setEstimateDetailList(List<InsDataAutodamageEstimateConfirmModel> estimateDetailList) {
 		this.estimateDetailList = estimateDetailList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>estimateNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEstimateNo() {
 		return this.estimateNo;
 	}
+	/**
+	 * <p>Setter for the field <code>estimateNo</code>.</p>
+	 *
+	 * @param estimateNo a {@link java.lang.String} object.
+	 */
 	public void setEstimateNo(String estimateNo) {
 		this.estimateNo = estimateNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>frameNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFrameNo() {
 		return this.frameNo;
 	}
+	/**
+	 * <p>Setter for the field <code>frameNo</code>.</p>
+	 *
+	 * @param frameNo a {@link java.lang.String} object.
+	 */
 	public void setFrameNo(String frameNo) {
 		this.frameNo = frameNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>licenseNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenseNo() {
 		return this.licenseNo;
 	}
+	/**
+	 * <p>Setter for the field <code>licenseNo</code>.</p>
+	 *
+	 * @param licenseNo a {@link java.lang.String} object.
+	 */
 	public void setLicenseNo(String licenseNo) {
 		this.licenseNo = licenseNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>modelBrand</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getModelBrand() {
 		return this.modelBrand;
 	}
+	/**
+	 * <p>Setter for the field <code>modelBrand</code>.</p>
+	 *
+	 * @param modelBrand a {@link java.lang.String} object.
+	 */
 	public void setModelBrand(String modelBrand) {
 		this.modelBrand = modelBrand;
 	}
 
+	/**
+	 * <p>Getter for the field <code>repairCorpName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRepairCorpName() {
 		return this.repairCorpName;
 	}
+	/**
+	 * <p>Setter for the field <code>repairCorpName</code>.</p>
+	 *
+	 * @param repairCorpName a {@link java.lang.String} object.
+	 */
 	public void setRepairCorpName(String repairCorpName) {
 		this.repairCorpName = repairCorpName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>repairCorpType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRepairCorpType() {
 		return this.repairCorpType;
 	}
+	/**
+	 * <p>Setter for the field <code>repairCorpType</code>.</p>
+	 *
+	 * @param repairCorpType a {@link java.lang.String} object.
+	 */
 	public void setRepairCorpType(String repairCorpType) {
 		this.repairCorpType = repairCorpType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportNo() {
 		return this.reportNo;
 	}
+	/**
+	 * <p>Setter for the field <code>reportNo</code>.</p>
+	 *
+	 * @param reportNo a {@link java.lang.String} object.
+	 */
 	public void setReportNo(String reportNo) {
 		this.reportNo = reportNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>surveyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSurveyNo() {
 		return this.surveyNo;
 	}
+	/**
+	 * <p>Setter for the field <code>surveyNo</code>.</p>
+	 *
+	 * @param surveyNo a {@link java.lang.String} object.
+	 */
 	public void setSurveyNo(String surveyNo) {
 		this.surveyNo = surveyNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalDamageAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalDamageAmount() {
 		return this.totalDamageAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>totalDamageAmount</code>.</p>
+	 *
+	 * @param totalDamageAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalDamageAmount(String totalDamageAmount) {
 		this.totalDamageAmount = totalDamageAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalRemainValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalRemainValue() {
 		return this.totalRemainValue;
 	}
+	/**
+	 * <p>Setter for the field <code>totalRemainValue</code>.</p>
+	 *
+	 * @param totalRemainValue a {@link java.lang.String} object.
+	 */
 	public void setTotalRemainValue(String totalRemainValue) {
 		this.totalRemainValue = totalRemainValue;
 	}

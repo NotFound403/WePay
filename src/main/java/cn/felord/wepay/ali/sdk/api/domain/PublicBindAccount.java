@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 公众平台的绑定账户
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class PublicBindAccount extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class PublicBindAccount extends AlipayObject {
 	@ApiField("real_name")
 	private String realName;
 
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId() {
 		return this.agreementId;
 	}
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppId() {
 		return this.appId;
 	}
+	/**
+	 * <p>Setter for the field <code>appId</code>.</p>
+	 *
+	 * @param appId a {@link java.lang.String} object.
+	 */
 	public void setAppId(String appId) {
 		this.appId = appId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bindAccountNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBindAccountNo() {
 		return this.bindAccountNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bindAccountNo</code>.</p>
+	 *
+	 * @param bindAccountNo a {@link java.lang.String} object.
+	 */
 	public void setBindAccountNo(String bindAccountNo) {
 		this.bindAccountNo = bindAccountNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>displayName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDisplayName() {
 		return this.displayName;
 	}
+	/**
+	 * <p>Setter for the field <code>displayName</code>.</p>
+	 *
+	 * @param displayName a {@link java.lang.String} object.
+	 */
 	public void setDisplayName(String displayName) {
 		this.displayName = displayName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fromUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFromUserId() {
 		return this.fromUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>fromUserId</code>.</p>
+	 *
+	 * @param fromUserId a {@link java.lang.String} object.
+	 */
 	public void setFromUserId(String fromUserId) {
 		this.fromUserId = fromUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>realName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealName() {
 		return this.realName;
 	}
+	/**
+	 * <p>Setter for the field <code>realName</code>.</p>
+	 *
+	 * @param realName a {@link java.lang.String} object.
+	 */
 	public void setRealName(String realName) {
 		this.realName = realName;
 	}

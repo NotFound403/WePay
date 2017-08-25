@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.templatelist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:56
+ * @version $Id: $Id
  */
 public class AlipayMarketingVoucherTemplatelistQueryResponse extends AlipayResponse {
 
@@ -48,37 +48,87 @@ public class AlipayMarketingVoucherTemplatelistQueryResponse extends AlipayRespo
 	@ApiField("voucher_template_lite_info")
 	private List<VoucherTemplateLiteInfo> voucherTemplates;
 
+	/**
+	 * <p>Setter for the field <code>currentPage</code>.</p>
+	 *
+	 * @param currentPage a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPage(Long currentPage) {
 		this.currentPage = currentPage;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPage</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPage( ) {
 		return this.currentPage;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemsPerPage</code>.</p>
+	 *
+	 * @param itemsPerPage a {@link java.lang.Long} object.
+	 */
 	public void setItemsPerPage(Long itemsPerPage) {
 		this.itemsPerPage = itemsPerPage;
 	}
+	/**
+	 * <p>Getter for the field <code>itemsPerPage</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getItemsPerPage( ) {
 		return this.itemsPerPage;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalItems</code>.</p>
+	 *
+	 * @param totalItems a {@link java.lang.Long} object.
+	 */
 	public void setTotalItems(Long totalItems) {
 		this.totalItems = totalItems;
 	}
+	/**
+	 * <p>Getter for the field <code>totalItems</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalItems( ) {
 		return this.totalItems;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalPages</code>.</p>
+	 *
+	 * @param totalPages a {@link java.lang.Long} object.
+	 */
 	public void setTotalPages(Long totalPages) {
 		this.totalPages = totalPages;
 	}
+	/**
+	 * <p>Getter for the field <code>totalPages</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalPages( ) {
 		return this.totalPages;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherTemplates</code>.</p>
+	 *
+	 * @param voucherTemplates a {@link java.util.List} object.
+	 */
 	public void setVoucherTemplates(List<VoucherTemplateLiteInfo> voucherTemplates) {
 		this.voucherTemplates = voucherTemplates;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherTemplates</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<VoucherTemplateLiteInfo> getVoucherTemplates( ) {
 		return this.voucherTemplates;
 	}

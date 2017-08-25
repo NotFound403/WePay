@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.amlrisk.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-02-02 15:48:33
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdAmlriskQueryResponse extends AlipayResponse {
 
@@ -42,30 +42,70 @@ public class AlipaySecurityProdAmlriskQueryResponse extends AlipayResponse {
 	@ApiField("merchant_screen_hit")
 	private List<MerchantScreenHit> risks;
 
+	/**
+	 * <p>Setter for the field <code>eventId</code>.</p>
+	 *
+	 * @param eventId a {@link java.lang.String} object.
+	 */
 	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
+	/**
+	 * <p>Getter for the field <code>eventId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEventId( ) {
 		return this.eventId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>hasRisk</code>.</p>
+	 *
+	 * @param hasRisk a {@link java.lang.String} object.
+	 */
 	public void setHasRisk(String hasRisk) {
 		this.hasRisk = hasRisk;
 	}
+	/**
+	 * <p>Getter for the field <code>hasRisk</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHasRisk( ) {
 		return this.hasRisk;
 	}
 
+	/**
+	 * <p>Setter for the field <code>merchantId</code>.</p>
+	 *
+	 * @param merchantId a {@link java.lang.String} object.
+	 */
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
 	}
+	/**
+	 * <p>Getter for the field <code>merchantId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantId( ) {
 		return this.merchantId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>risks</code>.</p>
+	 *
+	 * @param risks a {@link java.util.List} object.
+	 */
 	public void setRisks(List<MerchantScreenHit> risks) {
 		this.risks = risks;
 	}
+	/**
+	 * <p>Getter for the field <code>risks</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<MerchantScreenHit> getRisks( ) {
 		return this.risks;
 	}

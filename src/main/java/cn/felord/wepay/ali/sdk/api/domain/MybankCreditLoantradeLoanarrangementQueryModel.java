@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 外部商业平台合作-查询贷款合约
  *
  * @author auto create
- * @since 1.0, 2017-06-09 11:22:51
+ * @version $Id: $Id
  */
 public class MybankCreditLoantradeLoanarrangementQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class MybankCreditLoantradeLoanarrangementQueryModel extends AlipayObject
 	@ApiField("loan_ar_no")
 	private String loanArNo;
 
+	/**
+	 * <p>Getter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIpRoleId() {
 		return this.ipRoleId;
 	}
+	/**
+	 * <p>Setter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @param ipRoleId a {@link java.lang.String} object.
+	 */
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanArNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanArNo() {
 		return this.loanArNo;
 	}
+	/**
+	 * <p>Setter for the field <code>loanArNo</code>.</p>
+	 *
+	 * @param loanArNo a {@link java.lang.String} object.
+	 */
 	public void setLoanArNo(String loanArNo) {
 		this.loanArNo = loanArNo;
 	}

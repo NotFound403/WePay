@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 统一收单支付能力咨询
  *
  * @author auto create
- * @since 1.0, 2017-07-20 12:19:54
+ * @version $Id: $Id
  */
 public class AlipayTradePayConsultModel extends AlipayObject {
 
@@ -67,65 +67,155 @@ public class AlipayTradePayConsultModel extends AlipayObject {
 	@ApiField("subject")
 	private String subject;
 
+	/**
+	 * <p>Getter for the field <code>agreementNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementNo() {
 		return this.agreementNo;
 	}
+	/**
+	 * <p>Setter for the field <code>agreementNo</code>.</p>
+	 *
+	 * @param agreementNo a {@link java.lang.String} object.
+	 */
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyAmount() {
 		return this.applyAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>applyAmount</code>.</p>
+	 *
+	 * @param applyAmount a {@link java.lang.String} object.
+	 */
 	public void setApplyAmount(String applyAmount) {
 		this.applyAmount = applyAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizScene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizScene() {
 		return this.bizScene;
 	}
+	/**
+	 * <p>Setter for the field <code>bizScene</code>.</p>
+	 *
+	 * @param bizScene a {@link java.lang.String} object.
+	 */
 	public void setBizScene(String bizScene) {
 		this.bizScene = bizScene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>buyerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerId() {
 		return this.buyerId;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerId</code>.</p>
+	 *
+	 * @param buyerId a {@link java.lang.String} object.
+	 */
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>consultPhase</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConsultPhase() {
 		return this.consultPhase;
 	}
+	/**
+	 * <p>Setter for the field <code>consultPhase</code>.</p>
+	 *
+	 * @param consultPhase a {@link java.lang.String} object.
+	 */
 	public void setConsultPhase(String consultPhase) {
 		this.consultPhase = consultPhase;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendParams() {
 		return this.extendParams;
 	}
+	/**
+	 * <p>Setter for the field <code>extendParams</code>.</p>
+	 *
+	 * @param extendParams a {@link java.lang.String} object.
+	 */
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestNo() {
 		return this.requestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>requestNo</code>.</p>
+	 *
+	 * @param requestNo a {@link java.lang.String} object.
+	 */
 	public void setRequestNo(String requestNo) {
 		this.requestNo = requestNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}

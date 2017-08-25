@@ -37,8 +37,6 @@ import static cn.felord.wepay.common.util.ObjectUtils.MD5;
  * @version v1.0.0
  * @since 2017 /7/17  17:21
  */
-
-
 public class WeChatPayClient implements Payable {
 
     private static final Logger log = LoggerFactory.getLogger(WeChatPayClient.class);
@@ -95,6 +93,7 @@ public class WeChatPayClient implements Payable {
         throw new PayException("参数列表：" + resultMap);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByMicro(Params payRequestParams) throws PayException {
         if (weChatPayConfig.isDevMode()) {
@@ -121,6 +120,7 @@ public class WeChatPayClient implements Payable {
         throw new PayException("参数列表：" + resultMap);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
         if (weChatPayConfig.isDevMode()) {
@@ -147,6 +147,7 @@ public class WeChatPayClient implements Payable {
         return injector(resultMap, payRequestParams);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByApp(Params payRequestParams) throws PayException {
         if (weChatPayConfig.isDevMode()) {
@@ -179,6 +180,7 @@ public class WeChatPayClient implements Payable {
         return injector(returnMap, payRequestParams);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException {
         Map<String, Object> paramsMap = HttpKit.resolveRequestData(request);
@@ -216,6 +218,7 @@ public class WeChatPayClient implements Payable {
         return injector(returnMap, payRequestParams);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
 
@@ -236,6 +239,7 @@ public class WeChatPayClient implements Payable {
         return injector(resultMap, payRequestParams);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
         if (weChatPayConfig.isDevMode()) {
@@ -288,7 +292,7 @@ public class WeChatPayClient implements Payable {
      * @param out       二维码输出流
      * @param logoPath  logo的路径
      * @param productId 商品编号
-     * @throws PayException the pay exception
+     * @throws cn.felord.wepay.common.exception.PayException the pay exception
      */
     public void createQRCodeImage(OutputStream out, String logoPath, String productId) throws PayException {
         QRCodeUtil.encode(createQRCodeUrl(productId), 200, 200, "png", logoPath, out);
@@ -299,12 +303,13 @@ public class WeChatPayClient implements Payable {
      *
      * @param out       二维码输出流
      * @param productId 商品编号
-     * @throws PayException the pay exception
+     * @throws cn.felord.wepay.common.exception.PayException the pay exception
      */
     public void createQRCodeImage(OutputStream out, String productId) throws PayException {
         QRCodeUtil.encode(createQRCodeUrl(productId), 200, 200, "png", out);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         if (OrderIdTypeEnum.OUT_REFUND_NO.name().equals(orderIdTypeEnum.name()) || OrderIdTypeEnum.REFUND_ID.name().equals(orderIdTypeEnum.name())) {
@@ -313,16 +318,19 @@ public class WeChatPayClient implements Payable {
         return orderHandler(WeChatPayTypeEnum.ORDER_QUERY, orderId, orderIdTypeEnum);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> closeOrder(String outTradeNo) throws PayException {
         return orderHandler(WeChatPayTypeEnum.ORDER_CLOSE, outTradeNo, OrderIdTypeEnum.OUT_TRADE_NO);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         return orderHandler(WeChatPayTypeEnum.REFUND_QUERY, orderId, orderIdTypeEnum);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> refund(RefundRequestParams refundRequestParams) throws PayException {
 
@@ -360,6 +368,7 @@ public class WeChatPayClient implements Payable {
         throw new PayException("refund return result：" + returnMap);
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> billDownload(String billDate) throws PayException {
         Map<String, Object> result = new HashMap<>();

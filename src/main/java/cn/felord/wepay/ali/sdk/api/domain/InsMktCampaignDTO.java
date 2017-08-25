@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保险营销活动DTO对象
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class InsMktCampaignDTO extends AlipayObject {
 
@@ -97,86 +97,206 @@ public class InsMktCampaignDTO extends AlipayObject {
 	@ApiField("status")
 	private Long status;
 
+	/**
+	 * <p>Getter for the field <code>campaignId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampaignId() {
 		return this.campaignId;
 	}
+	/**
+	 * <p>Setter for the field <code>campaignId</code>.</p>
+	 *
+	 * @param campaignId a {@link java.lang.String} object.
+	 */
 	public void setCampaignId(String campaignId) {
 		this.campaignId = campaignId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>circulation</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCirculation() {
 		return this.circulation;
 	}
+	/**
+	 * <p>Setter for the field <code>circulation</code>.</p>
+	 *
+	 * @param circulation a {@link java.lang.Long} object.
+	 */
 	public void setCirculation(Long circulation) {
 		this.circulation = circulation;
 	}
 
+	/**
+	 * <p>Getter for the field <code>couponConfig</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsMktCouponConfigDTO} object.
+	 */
 	public InsMktCouponConfigDTO getCouponConfig() {
 		return this.couponConfig;
 	}
+	/**
+	 * <p>Setter for the field <code>couponConfig</code>.</p>
+	 *
+	 * @param couponConfig a {@link cn.felord.wepay.ali.sdk.api.domain.InsMktCouponConfigDTO} object.
+	 */
 	public void setCouponConfig(InsMktCouponConfigDTO couponConfig) {
 		this.couponConfig = couponConfig;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mktObjects</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsMktObjectDTO> getMktObjects() {
 		return this.mktObjects;
 	}
+	/**
+	 * <p>Setter for the field <code>mktObjects</code>.</p>
+	 *
+	 * @param mktObjects a {@link java.util.List} object.
+	 */
 	public void setMktObjects(List<InsMktObjectDTO> mktObjects) {
 		this.mktObjects = mktObjects;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendAlgorithm</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSendAlgorithm() {
 		return this.sendAlgorithm;
 	}
+	/**
+	 * <p>Setter for the field <code>sendAlgorithm</code>.</p>
+	 *
+	 * @param sendAlgorithm a {@link java.lang.String} object.
+	 */
 	public void setSendAlgorithm(String sendAlgorithm) {
 		this.sendAlgorithm = sendAlgorithm;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendFrqncType</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getSendFrqncType() {
 		return this.sendFrqncType;
 	}
+	/**
+	 * <p>Setter for the field <code>sendFrqncType</code>.</p>
+	 *
+	 * @param sendFrqncType a {@link java.lang.Long} object.
+	 */
 	public void setSendFrqncType(Long sendFrqncType) {
 		this.sendFrqncType = sendFrqncType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendFrqncValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getSendFrqncValue() {
 		return this.sendFrqncValue;
 	}
+	/**
+	 * <p>Setter for the field <code>sendFrqncValue</code>.</p>
+	 *
+	 * @param sendFrqncValue a {@link java.lang.Long} object.
+	 */
 	public void setSendFrqncValue(Long sendFrqncValue) {
 		this.sendFrqncValue = sendFrqncValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.Long} object.
+	 */
 	public void setStatus(Long status) {
 		this.status = status;
 	}

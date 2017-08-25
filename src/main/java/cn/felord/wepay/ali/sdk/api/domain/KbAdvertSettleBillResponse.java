@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统账单查询结果(结算账单)
  *
  * @author auto create
- * @since 1.0, 2017-04-17 10:53:54
+ * @version $Id: $Id
  */
 public class KbAdvertSettleBillResponse extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class KbAdvertSettleBillResponse extends AlipayObject {
 	@ApiField("paid_date")
 	private String paidDate;
 
+	/**
+	 * <p>Getter for the field <code>downloadUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDownloadUrl() {
 		return this.downloadUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>downloadUrl</code>.</p>
+	 *
+	 * @param downloadUrl a {@link java.lang.String} object.
+	 */
 	public void setDownloadUrl(String downloadUrl) {
 		this.downloadUrl = downloadUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>paidDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPaidDate() {
 		return this.paidDate;
 	}
+	/**
+	 * <p>Setter for the field <code>paidDate</code>.</p>
+	 *
+	 * @param paidDate a {@link java.lang.String} object.
+	 */
 	public void setPaidDate(String paidDate) {
 		this.paidDate = paidDate;
 	}

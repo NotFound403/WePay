@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 外部商户同步电子发票至支付宝
  *
  * @author auto create
- * @since 1.0, 2017-02-22 17:17:00
+ * @version $Id: $Id
  */
 public class AlipayEbppInvoiceSycnModel extends AlipayObject {
 
@@ -38,23 +38,53 @@ m_short_name+sub_m_short_name具有唯一约束
 	@ApiField("sub_m_short_name")
 	private String subMShortName;
 
+	/**
+	 * <p>Getter for the field <code>invoiceInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InvoiceModelContent> getInvoiceInfo() {
 		return this.invoiceInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceInfo</code>.</p>
+	 *
+	 * @param invoiceInfo a {@link java.util.List} object.
+	 */
 	public void setInvoiceInfo(List<InvoiceModelContent> invoiceInfo) {
 		this.invoiceInfo = invoiceInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mShortName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getmShortName() {
 		return this.mShortName;
 	}
+	/**
+	 * <p>Setter for the field <code>mShortName</code>.</p>
+	 *
+	 * @param mShortName a {@link java.lang.String} object.
+	 */
 	public void setmShortName(String mShortName) {
 		this.mShortName = mShortName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subMShortName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubMShortName() {
 		return this.subMShortName;
 	}
+	/**
+	 * <p>Setter for the field <code>subMShortName</code>.</p>
+	 *
+	 * @param subMShortName a {@link java.lang.String} object.
+	 */
 	public void setSubMShortName(String subMShortName) {
 		this.subMShortName = subMShortName;
 	}

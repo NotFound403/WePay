@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 创建菜单
  *
  * @author auto create
- * @since 1.0, 2017-05-25 11:40:07
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMenuCreateModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayOpenPublicMenuCreateModel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>button</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ButtonObject> getButton() {
 		return this.button;
 	}
+	/**
+	 * <p>Setter for the field <code>button</code>.</p>
+	 *
+	 * @param button a {@link java.util.List} object.
+	 */
 	public void setButton(List<ButtonObject> button) {
 		this.button = button;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

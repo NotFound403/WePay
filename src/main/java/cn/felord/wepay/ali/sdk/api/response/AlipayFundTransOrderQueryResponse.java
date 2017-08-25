@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.trans.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-09 15:07:43
+ * @version $Id: $Id
  */
 public class AlipayFundTransOrderQueryResponse extends AlipayResponse {
 
@@ -73,58 +73,134 @@ public class AlipayFundTransOrderQueryResponse extends AlipayResponse {
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Setter for the field <code>arrivalTimeEnd</code>.</p>
+	 *
+	 * @param arrivalTimeEnd a {@link java.lang.String} object.
+	 */
 	public void setArrivalTimeEnd(String arrivalTimeEnd) {
 		this.arrivalTimeEnd = arrivalTimeEnd;
 	}
+	/**
+	 * <p>Getter for the field <code>arrivalTimeEnd</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArrivalTimeEnd( ) {
 		return this.arrivalTimeEnd;
 	}
 
+	/** {@inheritDoc} */
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>errorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorCode( ) {
 		return this.errorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>failReason</code>.</p>
+	 *
+	 * @param failReason a {@link java.lang.String} object.
+	 */
 	public void setFailReason(String failReason) {
 		this.failReason = failReason;
 	}
+	/**
+	 * <p>Getter for the field <code>failReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFailReason( ) {
 		return this.failReason;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderFee</code>.</p>
+	 *
+	 * @param orderFee a {@link java.lang.String} object.
+	 */
 	public void setOrderFee(String orderFee) {
 		this.orderFee = orderFee;
 	}
+	/**
+	 * <p>Getter for the field <code>orderFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderFee( ) {
 		return this.orderFee;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderId</code>.</p>
+	 *
+	 * @param orderId a {@link java.lang.String} object.
+	 */
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
+	/**
+	 * <p>Getter for the field <code>orderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderId( ) {
 		return this.orderId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payDate</code>.</p>
+	 *
+	 * @param payDate a {@link java.lang.String} object.
+	 */
 	public void setPayDate(String payDate) {
 		this.payDate = payDate;
 	}
+	/**
+	 * <p>Getter for the field <code>payDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayDate( ) {
 		return this.payDate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}

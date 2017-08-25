@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 主记录+对应资金明细信息列表模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class FundDetailItemAOPModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class FundDetailItemAOPModel extends AlipayObject {
 	@ApiField("single_fund_detail_item_a_o_p_model")
 	private List<SingleFundDetailItemAOPModel> singleFundDetailItemAopmodelList;
 
+	/**
+	 * <p>Getter for the field <code>singleFundDetailItemAopmodelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<SingleFundDetailItemAOPModel> getSingleFundDetailItemAopmodelList() {
 		return this.singleFundDetailItemAopmodelList;
 	}
+	/**
+	 * <p>Setter for the field <code>singleFundDetailItemAopmodelList</code>.</p>
+	 *
+	 * @param singleFundDetailItemAopmodelList a {@link java.util.List} object.
+	 */
 	public void setSingleFundDetailItemAopmodelList(List<SingleFundDetailItemAOPModel> singleFundDetailItemAopmodelList) {
 		this.singleFundDetailItemAopmodelList = singleFundDetailItemAopmodelList;
 	}

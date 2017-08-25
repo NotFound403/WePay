@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.acquire.precreate response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-05-28 11:57:10
+ * @version $Id: $Id
  */
 public class AlipayAcquirePrecreateResponse extends AlipayResponse {
 
@@ -85,72 +85,172 @@ UNKNOWN：结果未知
 	@ApiField("voucher_type")
 	private String voucherType;
 
+	/**
+	 * <p>Setter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @param detailErrorCode a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorCode(String detailErrorCode) {
 		this.detailErrorCode = detailErrorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorCode( ) {
 		return this.detailErrorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @param detailErrorDes a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorDes(String detailErrorDes) {
 		this.detailErrorDes = detailErrorDes;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorDes( ) {
 		return this.detailErrorDes;
 	}
 
+	/**
+	 * <p>Setter for the field <code>error</code>.</p>
+	 *
+	 * @param error a {@link java.lang.String} object.
+	 */
 	public void setError(String error) {
 		this.error = error;
 	}
+	/**
+	 * <p>Getter for the field <code>error</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getError( ) {
 		return this.error;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isSuccess</code>.</p>
+	 *
+	 * @param isSuccess a {@link java.lang.String} object.
+	 */
 	public void setIsSuccess(String isSuccess) {
 		this.isSuccess = isSuccess;
 	}
+	/**
+	 * <p>Getter for the field <code>isSuccess</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsSuccess( ) {
 		return this.isSuccess;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>picUrl</code>.</p>
+	 *
+	 * @param picUrl a {@link java.lang.String} object.
+	 */
 	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>picUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPicUrl( ) {
 		return this.picUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>qrCode</code>.</p>
+	 *
+	 * @param qrCode a {@link java.lang.String} object.
+	 */
 	public void setQrCode(String qrCode) {
 		this.qrCode = qrCode;
 	}
+	/**
+	 * <p>Getter for the field <code>qrCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCode( ) {
 		return this.qrCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode( ) {
 		return this.resultCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherType</code>.</p>
+	 *
+	 * @param voucherType a {@link java.lang.String} object.
+	 */
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherType( ) {
 		return this.voucherType;
 	}

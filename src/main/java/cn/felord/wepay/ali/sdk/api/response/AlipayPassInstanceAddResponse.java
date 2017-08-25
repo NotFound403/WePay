@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pass.instance.add response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-31 15:33:21
+ * @version $Id: $Id
  */
 public class AlipayPassInstanceAddResponse extends AlipayResponse {
 
@@ -31,16 +31,36 @@ errorMsg：处理结果说明（错误说明）
 	@ApiField("success")
 	private String success;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult( ) {
 		return this.result;
 	}
 
+	/**
+	 * <p>Setter for the field <code>success</code>.</p>
+	 *
+	 * @param success a {@link java.lang.String} object.
+	 */
 	public void setSuccess(String success) {
 		this.success = success;
 	}
+	/**
+	 * <p>Getter for the field <code>success</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSuccess( ) {
 		return this.success;
 	}

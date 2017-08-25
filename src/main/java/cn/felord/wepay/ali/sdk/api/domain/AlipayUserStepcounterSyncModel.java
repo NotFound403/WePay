@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 外部商户步数同步接口
  *
  * @author auto create
- * @since 1.0, 2017-03-31 11:20:20
+ * @version $Id: $Id
  */
 public class AlipayUserStepcounterSyncModel extends AlipayObject {
 
@@ -93,93 +93,223 @@ public class AlipayUserStepcounterSyncModel extends AlipayObject {
 	@ApiField("weight")
 	private String weight;
 
+	/**
+	 * <p>Getter for the field <code>age</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAge() {
 		return this.age;
 	}
+	/**
+	 * <p>Setter for the field <code>age</code>.</p>
+	 *
+	 * @param age a {@link java.lang.Long} object.
+	 */
 	public void setAge(Long age) {
 		this.age = age;
 	}
 
+	/**
+	 * <p>Getter for the field <code>calorie</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCalorie() {
 		return this.calorie;
 	}
+	/**
+	 * <p>Setter for the field <code>calorie</code>.</p>
+	 *
+	 * @param calorie a {@link java.lang.String} object.
+	 */
 	public void setCalorie(String calorie) {
 		this.calorie = calorie;
 	}
 
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCount() {
 		return this.count;
 	}
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.Long} object.
+	 */
 	public void setCount(Long count) {
 		this.count = count;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dataProvider</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDataProvider() {
 		return this.dataProvider;
 	}
+	/**
+	 * <p>Setter for the field <code>dataProvider</code>.</p>
+	 *
+	 * @param dataProvider a {@link java.lang.String} object.
+	 */
 	public void setDataProvider(String dataProvider) {
 		this.dataProvider = dataProvider;
 	}
 
+	/**
+	 * <p>Getter for the field <code>distance</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getDistance() {
 		return this.distance;
 	}
+	/**
+	 * <p>Setter for the field <code>distance</code>.</p>
+	 *
+	 * @param distance a {@link java.lang.Long} object.
+	 */
 	public void setDistance(Long distance) {
 		this.distance = distance;
 	}
 
+	/**
+	 * <p>Getter for the field <code>height</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHeight() {
 		return this.height;
 	}
+	/**
+	 * <p>Setter for the field <code>height</code>.</p>
+	 *
+	 * @param height a {@link java.lang.String} object.
+	 */
 	public void setHeight(String height) {
 		this.height = height;
 	}
 
+	/**
+	 * <p>Getter for the field <code>latitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLatitude() {
 		return this.latitude;
 	}
+	/**
+	 * <p>Setter for the field <code>latitude</code>.</p>
+	 *
+	 * @param latitude a {@link java.lang.String} object.
+	 */
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>longitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLongitude() {
 		return this.longitude;
 	}
+	/**
+	 * <p>Setter for the field <code>longitude</code>.</p>
+	 *
+	 * @param longitude a {@link java.lang.String} object.
+	 */
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutUserId() {
 		return this.outUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>outUserId</code>.</p>
+	 *
+	 * @param outUserId a {@link java.lang.String} object.
+	 */
 	public void setOutUserId(String outUserId) {
 		this.outUserId = outUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>time</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getTime() {
 		return this.time;
 	}
+	/**
+	 * <p>Setter for the field <code>time</code>.</p>
+	 *
+	 * @param time a {@link java.util.Date} object.
+	 */
 	public void setTime(Date time) {
 		this.time = time;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeZone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimeZone() {
 		return this.timeZone;
 	}
+	/**
+	 * <p>Setter for the field <code>timeZone</code>.</p>
+	 *
+	 * @param timeZone a {@link java.lang.String} object.
+	 */
 	public void setTimeZone(String timeZone) {
 		this.timeZone = timeZone;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>weight</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWeight() {
 		return this.weight;
 	}
+	/**
+	 * <p>Setter for the field <code>weight</code>.</p>
+	 *
+	 * @param weight a {@link java.lang.String} object.
+	 */
 	public void setWeight(String weight) {
 		this.weight = weight;
 	}

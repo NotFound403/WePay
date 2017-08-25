@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 当面付申请查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-14 12:06:49
+ * @version $Id: $Id
  */
 public class AntMerchantExpandContractFacetofaceQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AntMerchantExpandContractFacetofaceQueryModel extends AlipayObject 
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}

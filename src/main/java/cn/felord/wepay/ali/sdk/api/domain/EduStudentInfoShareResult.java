@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 学生信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class EduStudentInfoShareResult extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class EduStudentInfoShareResult extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>studentInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<StudentInfo> getStudentInfos() {
 		return this.studentInfos;
 	}
+	/**
+	 * <p>Setter for the field <code>studentInfos</code>.</p>
+	 *
+	 * @param studentInfos a {@link java.util.List} object.
+	 */
 	public void setStudentInfos(List<StudentInfo> studentInfos) {
 		this.studentInfos = studentInfos;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

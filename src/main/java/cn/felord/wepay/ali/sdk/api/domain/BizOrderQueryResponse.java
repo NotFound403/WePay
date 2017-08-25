@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 店铺商品产品系统业务流水信息接口模型
  *
  * @author auto create
- * @since 1.0, 2017-02-07 16:46:17
+ * @version $Id: $Id
  */
 public class BizOrderQueryResponse extends AlipayObject {
 
@@ -109,100 +109,240 @@ PAUSE_ITEM-恢复售卖商品
 	@ApiField("update_time")
 	private Date updateTime;
 
+	/**
+	 * <p>Getter for the field <code>action</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAction() {
 		return this.action;
 	}
+	/**
+	 * <p>Setter for the field <code>action</code>.</p>
+	 *
+	 * @param action a {@link java.lang.String} object.
+	 */
 	public void setAction(String action) {
 		this.action = action;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionMode() {
 		return this.actionMode;
 	}
+	/**
+	 * <p>Setter for the field <code>actionMode</code>.</p>
+	 *
+	 * @param actionMode a {@link java.lang.String} object.
+	 */
 	public void setActionMode(String actionMode) {
 		this.actionMode = actionMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyId() {
 		return this.applyId;
 	}
+	/**
+	 * <p>Setter for the field <code>applyId</code>.</p>
+	 *
+	 * @param applyId a {@link java.lang.String} object.
+	 */
 	public void setApplyId(String applyId) {
 		this.applyId = applyId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizContextInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizContextInfo() {
 		return this.bizContextInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizContextInfo</code>.</p>
+	 *
+	 * @param bizContextInfo a {@link java.lang.String} object.
+	 */
 	public void setBizContextInfo(String bizContextInfo) {
 		this.bizContextInfo = bizContextInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizId() {
 		return this.bizId;
 	}
+	/**
+	 * <p>Setter for the field <code>bizId</code>.</p>
+	 *
+	 * @param bizId a {@link java.lang.String} object.
+	 */
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>createTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getCreateTime() {
 		return this.createTime;
 	}
+	/**
+	 * <p>Setter for the field <code>createTime</code>.</p>
+	 *
+	 * @param createTime a {@link java.util.Date} object.
+	 */
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpId() {
 		return this.opId;
 	}
+	/**
+	 * <p>Setter for the field <code>opId</code>.</p>
+	 *
+	 * @param opId a {@link java.lang.String} object.
+	 */
 	public void setOpId(String opId) {
 		this.opId = opId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode() {
 		return this.resultCode;
 	}
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultDesc() {
 		return this.resultDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>resultDesc</code>.</p>
+	 *
+	 * @param resultDesc a {@link java.lang.String} object.
+	 */
 	public void setResultDesc(String resultDesc) {
 		this.resultDesc = resultDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubStatus() {
 		return this.subStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>subStatus</code>.</p>
+	 *
+	 * @param subStatus a {@link java.lang.String} object.
+	 */
 	public void setSubStatus(String subStatus) {
 		this.subStatus = subStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>updateTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getUpdateTime() {
 		return this.updateTime;
 	}
+	/**
+	 * <p>Setter for the field <code>updateTime</code>.</p>
+	 *
+	 * @param updateTime a {@link java.util.Date} object.
+	 */
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 集卡信息
  *
  * @author auto create
- * @since 1.0, 2016-11-24 22:26:22
+ * @version $Id: $Id
  */
 public class CardInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class CardInfo extends AlipayObject {
 	@ApiField("user_name")
 	private String userName;
 
+	/**
+	 * <p>Getter for the field <code>takenTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTakenTime() {
 		return this.takenTime;
 	}
+	/**
+	 * <p>Setter for the field <code>takenTime</code>.</p>
+	 *
+	 * @param takenTime a {@link java.lang.String} object.
+	 */
 	public void setTakenTime(String takenTime) {
 		this.takenTime = takenTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserName() {
 		return this.userName;
 	}
+	/**
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}

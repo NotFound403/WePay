@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.reporterror.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:37
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketReporterrorCreateResponse extends AlipayResponse {
 

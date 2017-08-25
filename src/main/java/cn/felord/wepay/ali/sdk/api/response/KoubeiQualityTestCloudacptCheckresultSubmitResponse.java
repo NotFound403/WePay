@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.quality.test.cloudacpt.checkresult.submit response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-15 15:06:55
+ * @version $Id: $Id
  */
 public class KoubeiQualityTestCloudacptCheckresultSubmitResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class KoubeiQualityTestCloudacptCheckresultSubmitResponse extends AlipayR
 	@ApiField("batch_id")
 	private String batchId;
 
+	/**
+	 * <p>Setter for the field <code>activityId</code>.</p>
+	 *
+	 * @param activityId a {@link java.lang.String} object.
+	 */
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
+	/**
+	 * <p>Getter for the field <code>activityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActivityId( ) {
 		return this.activityId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId( ) {
 		return this.batchId;
 	}

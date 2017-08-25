@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑订单资金凭证列表
  *
  * @author auto create
- * @since 1.0, 2016-11-18 13:11:04
+ * @version $Id: $Id
  */
 public class KbOrderFundsVoucherModel extends AlipayObject {
 
@@ -57,51 +57,121 @@ public class KbOrderFundsVoucherModel extends AlipayObject {
 	@ApiField("trans_type")
 	private String transType;
 
+	/**
+	 * <p>Getter for the field <code>account</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccount() {
 		return this.account;
 	}
+	/**
+	 * <p>Setter for the field <code>account</code>.</p>
+	 *
+	 * @param account a {@link java.lang.String} object.
+	 */
 	public void setAccount(String account) {
 		this.account = account;
 	}
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fundsVoucherNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundsVoucherNo() {
 		return this.fundsVoucherNo;
 	}
+	/**
+	 * <p>Setter for the field <code>fundsVoucherNo</code>.</p>
+	 *
+	 * @param fundsVoucherNo a {@link java.lang.String} object.
+	 */
 	public void setFundsVoucherNo(String fundsVoucherNo) {
 		this.fundsVoucherNo = fundsVoucherNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtCreate() {
 		return this.gmtCreate;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @param gmtCreate a {@link java.util.Date} object.
+	 */
 	public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId() {
 		return this.storeId;
 	}
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransType() {
 		return this.transType;
 	}
+	/**
+	 * <p>Setter for the field <code>transType</code>.</p>
+	 *
+	 * @param transType a {@link java.lang.String} object.
+	 */
 	public void setTransType(String transType) {
 		this.transType = transType;
 	}

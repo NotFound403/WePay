@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 商品描述模型(数据)
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class AlipayDataItemDescription extends AlipayObject {
 
@@ -42,30 +42,70 @@ public class AlipayDataItemDescription extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
+	/**
+	 * <p>Getter for the field <code>details</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getDetails() {
 		return this.details;
 	}
+	/**
+	 * <p>Setter for the field <code>details</code>.</p>
+	 *
+	 * @param details a {@link java.util.List} object.
+	 */
 	public void setDetails(List<String> details) {
 		this.details = details;
 	}
 
+	/**
+	 * <p>Getter for the field <code>images</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getImages() {
 		return this.images;
 	}
+	/**
+	 * <p>Setter for the field <code>images</code>.</p>
+	 *
+	 * @param images a {@link java.util.List} object.
+	 */
 	public void setImages(List<String> images) {
 		this.images = images;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * <p>Getter for the field <code>url</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrl() {
 		return this.url;
 	}
+	/**
+	 * <p>Setter for the field <code>url</code>.</p>
+	 *
+	 * @param url a {@link java.lang.String} object.
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}

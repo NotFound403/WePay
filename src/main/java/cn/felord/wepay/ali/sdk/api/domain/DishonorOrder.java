@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 退票订单
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class DishonorOrder extends AlipayObject {
 
@@ -62,58 +62,138 @@ public class DishonorOrder extends AlipayObject {
 	@ApiField("payment_no")
 	private String paymentNo;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dishonorDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDishonorDate() {
 		return this.dishonorDate;
 	}
+	/**
+	 * <p>Setter for the field <code>dishonorDate</code>.</p>
+	 *
+	 * @param dishonorDate a {@link java.lang.String} object.
+	 */
 	public void setDishonorDate(String dishonorDate) {
 		this.dishonorDate = dishonorDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>failReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFailReason() {
 		return this.failReason;
 	}
+	/**
+	 * <p>Setter for the field <code>failReason</code>.</p>
+	 *
+	 * @param failReason a {@link java.lang.String} object.
+	 */
 	public void setFailReason(String failReason) {
 		this.failReason = failReason;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderId() {
 		return this.orderId;
 	}
+	/**
+	 * <p>Setter for the field <code>orderId</code>.</p>
+	 *
+	 * @param orderId a {@link java.lang.String} object.
+	 */
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayDate() {
 		return this.payDate;
 	}
+	/**
+	 * <p>Setter for the field <code>payDate</code>.</p>
+	 *
+	 * @param payDate a {@link java.lang.String} object.
+	 */
 	public void setPayDate(String payDate) {
 		this.payDate = payDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerAccount() {
 		return this.payerAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>payerAccount</code>.</p>
+	 *
+	 * @param payerAccount a {@link java.lang.String} object.
+	 */
 	public void setPayerAccount(String payerAccount) {
 		this.payerAccount = payerAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>paymentNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPaymentNo() {
 		return this.paymentNo;
 	}
+	/**
+	 * <p>Setter for the field <code>paymentNo</code>.</p>
+	 *
+	 * @param paymentNo a {@link java.lang.String} object.
+	 */
 	public void setPaymentNo(String paymentNo) {
 		this.paymentNo = paymentNo;
 	}

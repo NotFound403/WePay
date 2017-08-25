@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 医院报告明细
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class MedicalHospitalReportList extends AlipayObject {
 
@@ -47,37 +47,87 @@ EXAM_REPORT检验报告
 	@ApiField("report_type")
 	private String reportType;
 
+	/**
+	 * <p>Getter for the field <code>reportDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getReportDate() {
 		return this.reportDate;
 	}
+	/**
+	 * <p>Setter for the field <code>reportDate</code>.</p>
+	 *
+	 * @param reportDate a {@link java.util.Date} object.
+	 */
 	public void setReportDate(Date reportDate) {
 		this.reportDate = reportDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportDesc() {
 		return this.reportDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>reportDesc</code>.</p>
+	 *
+	 * @param reportDesc a {@link java.lang.String} object.
+	 */
 	public void setReportDesc(String reportDesc) {
 		this.reportDesc = reportDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportLink</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportLink() {
 		return this.reportLink;
 	}
+	/**
+	 * <p>Setter for the field <code>reportLink</code>.</p>
+	 *
+	 * @param reportLink a {@link java.lang.String} object.
+	 */
 	public void setReportLink(String reportLink) {
 		this.reportLink = reportLink;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportName() {
 		return this.reportName;
 	}
+	/**
+	 * <p>Setter for the field <code>reportName</code>.</p>
+	 *
+	 * @param reportName a {@link java.lang.String} object.
+	 */
 	public void setReportName(String reportName) {
 		this.reportName = reportName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportType() {
 		return this.reportType;
 	}
+	/**
+	 * <p>Setter for the field <code>reportType</code>.</p>
+	 *
+	 * @param reportType a {@link java.lang.String} object.
+	 */
 	public void setReportType(String reportType) {
 		this.reportType = reportType;
 	}

@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.retail.shopitem.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 18:10:01
+ * @version $Id: $Id
  */
 public class KoubeiRetailShopitemUploadResponse extends AlipayResponse {
 

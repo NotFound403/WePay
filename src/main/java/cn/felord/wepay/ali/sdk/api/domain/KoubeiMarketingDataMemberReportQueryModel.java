@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 会员报表批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-23 09:40:18
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataMemberReportQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiMarketingDataMemberReportQueryModel extends AlipayObject {
 	@ApiField("biz_date")
 	private String bizDate;
 
+	/**
+	 * <p>Getter for the field <code>bizDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizDate() {
 		return this.bizDate;
 	}
+	/**
+	 * <p>Setter for the field <code>bizDate</code>.</p>
+	 *
+	 * @param bizDate a {@link java.lang.String} object.
+	 */
 	public void setBizDate(String bizDate) {
 		this.bizDate = bizDate;
 	}

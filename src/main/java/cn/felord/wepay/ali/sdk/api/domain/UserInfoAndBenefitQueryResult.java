@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 用户信息和权益配置查询结果
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class UserInfoAndBenefitQueryResult extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class UserInfoAndBenefitQueryResult extends AlipayObject {
 	@ApiField("grade")
 	private String grade;
 
+	/**
+	 * <p>Getter for the field <code>balance</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getBalance() {
 		return this.balance;
 	}
+	/**
+	 * <p>Setter for the field <code>balance</code>.</p>
+	 *
+	 * @param balance a {@link java.lang.Long} object.
+	 */
 	public void setBalance(Long balance) {
 		this.balance = balance;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitInfoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<BenefitGradePoint> getBenefitInfoList() {
 		return this.benefitInfoList;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitInfoList</code>.</p>
+	 *
+	 * @param benefitInfoList a {@link java.util.List} object.
+	 */
 	public void setBenefitInfoList(List<BenefitGradePoint> benefitInfoList) {
 		this.benefitInfoList = benefitInfoList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>grade</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGrade() {
 		return this.grade;
 	}
+	/**
+	 * <p>Setter for the field <code>grade</code>.</p>
+	 *
+	 * @param grade a {@link java.lang.String} object.
+	 */
 	public void setGrade(String grade) {
 		this.grade = grade;
 	}

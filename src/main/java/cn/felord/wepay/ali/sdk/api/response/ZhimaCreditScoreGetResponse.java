@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.score.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-12 14:16:29
+ * @version $Id: $Id
  */
 public class ZhimaCreditScoreGetResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class ZhimaCreditScoreGetResponse extends AlipayResponse {
 	@ApiField("zm_score")
 	private String zmScore;
 
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo( ) {
 		return this.bizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>zmScore</code>.</p>
+	 *
+	 * @param zmScore a {@link java.lang.String} object.
+	 */
 	public void setZmScore(String zmScore) {
 		this.zmScore = zmScore;
 	}
+	/**
+	 * <p>Getter for the field <code>zmScore</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getZmScore( ) {
 		return this.zmScore;
 	}

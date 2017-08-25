@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保险批单申请接口
  *
  * @author auto create
- * @since 1.0, 2016-12-29 17:49:22
+ * @version $Id: $Id
  */
 public class AlipayInsScenePolicyEndorseApplyModel extends AlipayObject {
 
@@ -41,30 +41,70 @@ public class AlipayInsScenePolicyEndorseApplyModel extends AlipayObject {
 	@ApiField("source")
 	private String source;
 
+	/**
+	 * <p>Getter for the field <code>endorseItems</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsEndorseItem> getEndorseItems() {
 		return this.endorseItems;
 	}
+	/**
+	 * <p>Setter for the field <code>endorseItems</code>.</p>
+	 *
+	 * @param endorseItems a {@link java.util.List} object.
+	 */
 	public void setEndorseItems(List<InsEndorseItem> endorseItems) {
 		this.endorseItems = endorseItems;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>policyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPolicyNo() {
 		return this.policyNo;
 	}
+	/**
+	 * <p>Setter for the field <code>policyNo</code>.</p>
+	 *
+	 * @param policyNo a {@link java.lang.String} object.
+	 */
 	public void setPolicyNo(String policyNo) {
 		this.policyNo = policyNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>source</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSource() {
 		return this.source;
 	}
+	/**
+	 * <p>Setter for the field <code>source</code>.</p>
+	 *
+	 * @param source a {@link java.lang.String} object.
+	 */
 	public void setSource(String source) {
 		this.source = source;
 	}

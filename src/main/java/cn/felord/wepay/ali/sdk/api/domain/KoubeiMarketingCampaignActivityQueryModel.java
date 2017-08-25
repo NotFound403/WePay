@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 活动详情查询
  *
  * @author auto create
- * @since 1.0, 2017-07-19 15:39:40
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignActivityQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KoubeiMarketingCampaignActivityQueryModel extends AlipayObject {
 	@ApiField("operator_type")
 	private String operatorType;
 
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId() {
 		return this.campId;
 	}
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operatorId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorId() {
 		return this.operatorId;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorId</code>.</p>
+	 *
+	 * @param operatorId a {@link java.lang.String} object.
+	 */
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operatorType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorType() {
 		return this.operatorType;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorType</code>.</p>
+	 *
+	 * @param operatorType a {@link java.lang.String} object.
+	 */
 	public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}

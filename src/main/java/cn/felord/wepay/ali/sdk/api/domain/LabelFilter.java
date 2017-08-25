@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 标签组发过滤单个条件
  *
  * @author auto create
- * @since 1.0, 2016-12-02 17:04:34
+ * @version $Id: $Id
  */
 public class LabelFilter extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class LabelFilter extends AlipayObject {
 	@ApiField("string")
 	private List<String> values;
 
+	/**
+	 * <p>Getter for the field <code>columnName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getColumnName() {
 		return this.columnName;
 	}
+	/**
+	 * <p>Setter for the field <code>columnName</code>.</p>
+	 *
+	 * @param columnName a {@link java.lang.String} object.
+	 */
 	public void setColumnName(String columnName) {
 		this.columnName = columnName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>op</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOp() {
 		return this.op;
 	}
+	/**
+	 * <p>Setter for the field <code>op</code>.</p>
+	 *
+	 * @param op a {@link java.lang.String} object.
+	 */
 	public void setOp(String op) {
 		this.op = op;
 	}
 
+	/**
+	 * <p>Getter for the field <code>values</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getValues() {
 		return this.values;
 	}
+	/**
+	 * <p>Setter for the field <code>values</code>.</p>
+	 *
+	 * @param values a {@link java.util.List} object.
+	 */
 	public void setValues(List<String> values) {
 		this.values = values;
 	}

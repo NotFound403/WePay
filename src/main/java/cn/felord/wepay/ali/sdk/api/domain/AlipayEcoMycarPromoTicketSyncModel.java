@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * ISV有新的卡券信息同步到车主服务平台
  *
  * @author auto create
- * @since 1.0, 2016-05-12 09:57:58
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarPromoTicketSyncModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class AlipayEcoMycarPromoTicketSyncModel extends AlipayObject {
 	@ApiField("source_type")
 	private String sourceType;
 
+	/**
+	 * <p>Getter for the field <code>activeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActiveId() {
 		return this.activeId;
 	}
+	/**
+	 * <p>Setter for the field <code>activeId</code>.</p>
+	 *
+	 * @param activeId a {@link java.lang.String} object.
+	 */
 	public void setActiveId(String activeId) {
 		this.activeId = activeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>codeNoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CodeNOList> getCodeNoList() {
 		return this.codeNoList;
 	}
+	/**
+	 * <p>Setter for the field <code>codeNoList</code>.</p>
+	 *
+	 * @param codeNoList a {@link java.util.List} object.
+	 */
 	public void setCodeNoList(List<CodeNOList> codeNoList) {
 		this.codeNoList = codeNoList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sourceType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSourceType() {
 		return this.sourceType;
 	}
+	/**
+	 * <p>Setter for the field <code>sourceType</code>.</p>
+	 *
+	 * @param sourceType a {@link java.lang.String} object.
+	 */
 	public void setSourceType(String sourceType) {
 		this.sourceType = sourceType;
 	}

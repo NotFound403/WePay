@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 医疗行业通知行业消息card头部信息
  *
  * @author auto create
- * @since 1.0, 2016-11-16 15:16:20
+ * @version $Id: $Id
  */
 public class MedicalSvTpCardHeadInfo extends AlipayObject {
 
@@ -26,16 +26,36 @@ public class MedicalSvTpCardHeadInfo extends AlipayObject {
 	@ApiField("header_title")
 	private String headerTitle;
 
+	/**
+	 * <p>Getter for the field <code>headerIcon</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHeaderIcon() {
 		return this.headerIcon;
 	}
+	/**
+	 * <p>Setter for the field <code>headerIcon</code>.</p>
+	 *
+	 * @param headerIcon a {@link java.lang.String} object.
+	 */
 	public void setHeaderIcon(String headerIcon) {
 		this.headerIcon = headerIcon;
 	}
 
+	/**
+	 * <p>Getter for the field <code>headerTitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHeaderTitle() {
 		return this.headerTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>headerTitle</code>.</p>
+	 *
+	 * @param headerTitle a {@link java.lang.String} object.
+	 */
 	public void setHeaderTitle(String headerTitle) {
 		this.headerTitle = headerTitle;
 	}

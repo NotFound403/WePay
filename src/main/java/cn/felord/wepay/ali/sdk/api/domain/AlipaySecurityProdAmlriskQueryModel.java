@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 该API用于外部商户准入时的反洗钱风险分析。
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:13
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdAmlriskQueryModel extends AlipayObject {
 
@@ -65,58 +65,138 @@ public class AlipaySecurityProdAmlriskQueryModel extends AlipayObject {
 	@ApiField("registration_number")
 	private String registrationNumber;
 
+	/**
+	 * <p>Getter for the field <code>businessAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessAddress() {
 		return this.businessAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>businessAddress</code>.</p>
+	 *
+	 * @param businessAddress a {@link java.lang.String} object.
+	 */
 	public void setBusinessAddress(String businessAddress) {
 		this.businessAddress = businessAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>eventId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEventId() {
 		return this.eventId;
 	}
+	/**
+	 * <p>Setter for the field <code>eventId</code>.</p>
+	 *
+	 * @param eventId a {@link java.lang.String} object.
+	 */
 	public void setEventId(String eventId) {
 		this.eventId = eventId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>individualList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<IndividualInfo> getIndividualList() {
 		return this.individualList;
 	}
+	/**
+	 * <p>Setter for the field <code>individualList</code>.</p>
+	 *
+	 * @param individualList a {@link java.util.List} object.
+	 */
 	public void setIndividualList(List<IndividualInfo> individualList) {
 		this.individualList = individualList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>legalName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLegalName() {
 		return this.legalName;
 	}
+	/**
+	 * <p>Setter for the field <code>legalName</code>.</p>
+	 *
+	 * @param legalName a {@link java.lang.String} object.
+	 */
 	public void setLegalName(String legalName) {
 		this.legalName = legalName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantId() {
 		return this.merchantId;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantId</code>.</p>
+	 *
+	 * @param merchantId a {@link java.lang.String} object.
+	 */
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderId() {
 		return this.orderId;
 	}
+	/**
+	 * <p>Setter for the field <code>orderId</code>.</p>
+	 *
+	 * @param orderId a {@link java.lang.String} object.
+	 */
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>registeredAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRegisteredAddress() {
 		return this.registeredAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>registeredAddress</code>.</p>
+	 *
+	 * @param registeredAddress a {@link java.lang.String} object.
+	 */
 	public void setRegisteredAddress(String registeredAddress) {
 		this.registeredAddress = registeredAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>registrationNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRegistrationNumber() {
 		return this.registrationNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>registrationNumber</code>.</p>
+	 *
+	 * @param registrationNumber a {@link java.lang.String} object.
+	 */
 	public void setRegistrationNumber(String registrationNumber) {
 		this.registrationNumber = registrationNumber;
 	}

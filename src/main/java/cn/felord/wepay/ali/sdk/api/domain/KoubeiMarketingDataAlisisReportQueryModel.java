@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 报表详情查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-16 20:33:10
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataAlisisReportQueryModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class KoubeiMarketingDataAlisisReportQueryModel extends AlipayObject {
 	@ApiField("report_uk")
 	private String reportUk;
 
+	/**
+	 * <p>Getter for the field <code>conditions</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ReportQueryCondition> getConditions() {
 		return this.conditions;
 	}
+	/**
+	 * <p>Setter for the field <code>conditions</code>.</p>
+	 *
+	 * @param conditions a {@link java.util.List} object.
+	 */
 	public void setConditions(List<ReportQueryCondition> conditions) {
 		this.conditions = conditions;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportUk</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportUk() {
 		return this.reportUk;
 	}
+	/**
+	 * <p>Setter for the field <code>reportUk</code>.</p>
+	 *
+	 * @param reportUk a {@link java.lang.String} object.
+	 */
 	public void setReportUk(String reportUk) {
 		this.reportUk = reportUk;
 	}

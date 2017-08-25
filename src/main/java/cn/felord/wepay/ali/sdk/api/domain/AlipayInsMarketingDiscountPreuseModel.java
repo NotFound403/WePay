@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保险营销优惠预核销
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:56:59
+ * @version $Id: $Id
  */
 public class AlipayInsMarketingDiscountPreuseModel extends AlipayObject {
 
@@ -75,65 +75,155 @@ public class AlipayInsMarketingDiscountPreuseModel extends AlipayObject {
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Getter for the field <code>accountId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountId() {
 		return this.accountId;
 	}
+	/**
+	 * <p>Setter for the field <code>accountId</code>.</p>
+	 *
+	 * @param accountId a {@link java.lang.String} object.
+	 */
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAccountType() {
 		return this.accountType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountType</code>.</p>
+	 *
+	 * @param accountType a {@link java.lang.Long} object.
+	 */
 	public void setAccountType(Long accountType) {
 		this.accountType = accountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessType</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getBusinessType() {
 		return this.businessType;
 	}
+	/**
+	 * <p>Setter for the field <code>businessType</code>.</p>
+	 *
+	 * @param businessType a {@link java.lang.Long} object.
+	 */
 	public void setBusinessType(Long businessType) {
 		this.businessType = businessType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>factors</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsMktFactorDTO> getFactors() {
 		return this.factors;
 	}
+	/**
+	 * <p>Setter for the field <code>factors</code>.</p>
+	 *
+	 * @param factors a {@link java.util.List} object.
+	 */
 	public void setFactors(List<InsMktFactorDTO> factors) {
 		this.factors = factors;
 	}
 
+	/**
+	 * <p>Getter for the field <code>marketTypes</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Long> getMarketTypes() {
 		return this.marketTypes;
 	}
+	/**
+	 * <p>Setter for the field <code>marketTypes</code>.</p>
+	 *
+	 * @param marketTypes a {@link java.util.List} object.
+	 */
 	public void setMarketTypes(List<Long> marketTypes) {
 		this.marketTypes = marketTypes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mktCouponCampaigns</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsMktCouponCmpgnBaseDTO> getMktCouponCampaigns() {
 		return this.mktCouponCampaigns;
 	}
+	/**
+	 * <p>Setter for the field <code>mktCouponCampaigns</code>.</p>
+	 *
+	 * @param mktCouponCampaigns a {@link java.util.List} object.
+	 */
 	public void setMktCouponCampaigns(List<InsMktCouponCmpgnBaseDTO> mktCouponCampaigns) {
 		this.mktCouponCampaigns = mktCouponCampaigns;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mktCoupons</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsMktCouponBaseDTO> getMktCoupons() {
 		return this.mktCoupons;
 	}
+	/**
+	 * <p>Setter for the field <code>mktCoupons</code>.</p>
+	 *
+	 * @param mktCoupons a {@link java.util.List} object.
+	 */
 	public void setMktCoupons(List<InsMktCouponBaseDTO> mktCoupons) {
 		this.mktCoupons = mktCoupons;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mktObjects</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsMktObjectDTO> getMktObjects() {
 		return this.mktObjects;
 	}
+	/**
+	 * <p>Setter for the field <code>mktObjects</code>.</p>
+	 *
+	 * @param mktObjects a {@link java.util.List} object.
+	 */
 	public void setMktObjects(List<InsMktObjectDTO> mktObjects) {
 		this.mktObjects = mktObjects;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}

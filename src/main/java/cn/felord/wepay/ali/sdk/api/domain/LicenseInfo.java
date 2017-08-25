@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 服务者的证书信息
  *
  * @author auto create
- * @since 1.0, 2017-01-16 11:50:40
+ * @version $Id: $Id
  */
 public class LicenseInfo extends AlipayObject {
 
@@ -91,65 +91,155 @@ OTHER：其他
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>agency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgency() {
 		return this.agency;
 	}
+	/**
+	 * <p>Setter for the field <code>agency</code>.</p>
+	 *
+	 * @param agency a {@link java.lang.String} object.
+	 */
 	public void setAgency(String agency) {
 		this.agency = agency;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtExpire</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtExpire() {
 		return this.gmtExpire;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtExpire</code>.</p>
+	 *
+	 * @param gmtExpire a {@link java.lang.String} object.
+	 */
 	public void setGmtExpire(String gmtExpire) {
 		this.gmtExpire = gmtExpire;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtStart() {
 		return this.gmtStart;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @param gmtStart a {@link java.lang.String} object.
+	 */
 	public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
+	/**
+	 * <p>Getter for the field <code>licenseId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenseId() {
 		return this.licenseId;
 	}
+	/**
+	 * <p>Setter for the field <code>licenseId</code>.</p>
+	 *
+	 * @param licenseId a {@link java.lang.String} object.
+	 */
 	public void setLicenseId(String licenseId) {
 		this.licenseId = licenseId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>licenseName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenseName() {
 		return this.licenseName;
 	}
+	/**
+	 * <p>Setter for the field <code>licenseName</code>.</p>
+	 *
+	 * @param licenseName a {@link java.lang.String} object.
+	 */
 	public void setLicenseName(String licenseName) {
 		this.licenseName = licenseName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>picUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPicUrl() {
 		return this.picUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>picUrl</code>.</p>
+	 *
+	 * @param picUrl a {@link java.lang.String} object.
+	 */
 	public void setPicUrl(String picUrl) {
 		this.picUrl = picUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult() {
 		return this.result;
 	}
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sequence</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSequence() {
 		return this.sequence;
 	}
+	/**
+	 * <p>Setter for the field <code>sequence</code>.</p>
+	 *
+	 * @param sequence a {@link java.lang.String} object.
+	 */
 	public void setSequence(String sequence) {
 		this.sequence = sequence;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

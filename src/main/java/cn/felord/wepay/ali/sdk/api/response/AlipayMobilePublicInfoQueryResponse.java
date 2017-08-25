@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.info.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:42:06
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicInfoQueryResponse extends AlipayResponse {
 
@@ -56,51 +56,121 @@ public class AlipayMobilePublicInfoQueryResponse extends AlipayResponse {
 	@ApiField("public_greeting")
 	private String publicGreeting;
 
+	/**
+	 * <p>Setter for the field <code>appName</code>.</p>
+	 *
+	 * @param appName a {@link java.lang.String} object.
+	 */
 	public void setAppName(String appName) {
 		this.appName = appName;
 	}
+	/**
+	 * <p>Getter for the field <code>appName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppName( ) {
 		return this.appName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @param auditDesc a {@link java.lang.String} object.
+	 */
 	public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
+	/**
+	 * <p>Getter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @param auditStatus a {@link java.lang.String} object.
+	 */
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isOnline</code>.</p>
+	 *
+	 * @param isOnline a {@link java.lang.String} object.
+	 */
 	public void setIsOnline(String isOnline) {
 		this.isOnline = isOnline;
 	}
+	/**
+	 * <p>Getter for the field <code>isOnline</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsOnline( ) {
 		return this.isOnline;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isRelease</code>.</p>
+	 *
+	 * @param isRelease a {@link java.lang.String} object.
+	 */
 	public void setIsRelease(String isRelease) {
 		this.isRelease = isRelease;
 	}
+	/**
+	 * <p>Getter for the field <code>isRelease</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsRelease( ) {
 		return this.isRelease;
 	}
 
+	/**
+	 * <p>Setter for the field <code>logoUrl</code>.</p>
+	 *
+	 * @param logoUrl a {@link java.lang.String} object.
+	 */
 	public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>logoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogoUrl( ) {
 		return this.logoUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publicGreeting</code>.</p>
+	 *
+	 * @param publicGreeting a {@link java.lang.String} object.
+	 */
 	public void setPublicGreeting(String publicGreeting) {
 		this.publicGreeting = publicGreeting;
 	}
+	/**
+	 * <p>Getter for the field <code>publicGreeting</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicGreeting( ) {
 		return this.publicGreeting;
 	}

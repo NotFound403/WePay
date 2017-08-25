@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 银行卡信息
  *
  * @author auto create
- * @since 1.0, 2017-06-14 19:53:52
+ * @version $Id: $Id
  */
 public class BankCardInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class BankCardInfo extends AlipayObject {
 	@ApiField("card_no")
 	private String cardNo;
 
+	/**
+	 * <p>Getter for the field <code>cardName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardName() {
 		return this.cardName;
 	}
+	/**
+	 * <p>Setter for the field <code>cardName</code>.</p>
+	 *
+	 * @param cardName a {@link java.lang.String} object.
+	 */
 	public void setCardName(String cardName) {
 		this.cardName = cardName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardNo() {
 		return this.cardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardNo</code>.</p>
+	 *
+	 * @param cardNo a {@link java.lang.String} object.
+	 */
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * ISV同步售后单状态
  *
  * @author auto create
- * @since 1.0, 2016-10-19 18:42:36
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarMaintainAftersaleSyncModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoMycarMaintainAftersaleSyncModel extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>aftersaleNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAftersaleNo() {
 		return this.aftersaleNo;
 	}
+	/**
+	 * <p>Setter for the field <code>aftersaleNo</code>.</p>
+	 *
+	 * @param aftersaleNo a {@link java.lang.String} object.
+	 */
 	public void setAftersaleNo(String aftersaleNo) {
 		this.aftersaleNo = aftersaleNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refuseReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefuseReason() {
 		return this.refuseReason;
 	}
+	/**
+	 * <p>Setter for the field <code>refuseReason</code>.</p>
+	 *
+	 * @param refuseReason a {@link java.lang.String} object.
+	 */
 	public void setRefuseReason(String refuseReason) {
 		this.refuseReason = refuseReason;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

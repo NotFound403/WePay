@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 添加广告的渠道关系接口
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:28
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionAdvchannelBindModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class KoubeiAdvertCommissionAdvchannelBindModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> channelIdList;
 
+	/**
+	 * <p>Getter for the field <code>advId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdvId() {
 		return this.advId;
 	}
+	/**
+	 * <p>Setter for the field <code>advId</code>.</p>
+	 *
+	 * @param advId a {@link java.lang.String} object.
+	 */
 	public void setAdvId(String advId) {
 		this.advId = advId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>channelIdList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getChannelIdList() {
 		return this.channelIdList;
 	}
+	/**
+	 * <p>Setter for the field <code>channelIdList</code>.</p>
+	 *
+	 * @param channelIdList a {@link java.util.List} object.
+	 */
 	public void setChannelIdList(List<String> channelIdList) {
 		this.channelIdList = channelIdList;
 	}

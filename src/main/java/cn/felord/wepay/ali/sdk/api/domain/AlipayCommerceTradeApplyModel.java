@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 行业代理收单接口
  *
  * @author auto create
- * @since 1.0, 2017-05-10 11:09:03
+ * @version $Id: $Id
  */
 public class AlipayCommerceTradeApplyModel extends AlipayObject {
 
@@ -67,65 +67,155 @@ public class AlipayCommerceTradeApplyModel extends AlipayObject {
 	@ApiField("trade_apply_params")
 	private TradeApplyParams tradeApplyParams;
 
+	/**
+	 * <p>Getter for the field <code>amountDetail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmountDetail() {
 		return this.amountDetail;
 	}
+	/**
+	 * <p>Setter for the field <code>amountDetail</code>.</p>
+	 *
+	 * @param amountDetail a {@link java.lang.String} object.
+	 */
 	public void setAmountDetail(String amountDetail) {
 		this.amountDetail = amountDetail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>channel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannel() {
 		return this.channel;
 	}
+	/**
+	 * <p>Setter for the field <code>channel</code>.</p>
+	 *
+	 * @param channel a {@link java.lang.String} object.
+	 */
 	public void setChannel(String channel) {
 		this.channel = channel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>interfaceVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInterfaceVersion() {
 		return this.interfaceVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>interfaceVersion</code>.</p>
+	 *
+	 * @param interfaceVersion a {@link java.lang.String} object.
+	 */
 	public void setInterfaceVersion(String interfaceVersion) {
 		this.interfaceVersion = interfaceVersion;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpCode() {
 		return this.opCode;
 	}
+	/**
+	 * <p>Setter for the field <code>opCode</code>.</p>
+	 *
+	 * @param opCode a {@link java.lang.String} object.
+	 */
 	public void setOpCode(String opCode) {
 		this.opCode = opCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderDetail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderDetail() {
 		return this.orderDetail;
 	}
+	/**
+	 * <p>Setter for the field <code>orderDetail</code>.</p>
+	 *
+	 * @param orderDetail a {@link java.lang.String} object.
+	 */
 	public void setOrderDetail(String orderDetail) {
 		this.orderDetail = orderDetail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @param sceneCode a {@link java.lang.String} object.
+	 */
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetId() {
 		return this.targetId;
 	}
+	/**
+	 * <p>Setter for the field <code>targetId</code>.</p>
+	 *
+	 * @param targetId a {@link java.lang.String} object.
+	 */
 	public void setTargetId(String targetId) {
 		this.targetId = targetId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetIdType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetIdType() {
 		return this.targetIdType;
 	}
+	/**
+	 * <p>Setter for the field <code>targetIdType</code>.</p>
+	 *
+	 * @param targetIdType a {@link java.lang.String} object.
+	 */
 	public void setTargetIdType(String targetIdType) {
 		this.targetIdType = targetIdType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeApplyParams</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.TradeApplyParams} object.
+	 */
 	public TradeApplyParams getTradeApplyParams() {
 		return this.tradeApplyParams;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeApplyParams</code>.</p>
+	 *
+	 * @param tradeApplyParams a {@link cn.felord.wepay.ali.sdk.api.domain.TradeApplyParams} object.
+	 */
 	public void setTradeApplyParams(TradeApplyParams tradeApplyParams) {
 		this.tradeApplyParams = tradeApplyParams;
 	}

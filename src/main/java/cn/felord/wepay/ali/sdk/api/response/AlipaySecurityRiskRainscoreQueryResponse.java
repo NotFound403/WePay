@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.risk.rainscore.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-26 11:44:02
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskRainscoreQueryResponse extends AlipayResponse {
 
@@ -43,30 +43,70 @@ public class AlipaySecurityRiskRainscoreQueryResponse extends AlipayResponse {
 	@ApiField("unique_id")
 	private String uniqueId;
 
+	/**
+	 * <p>Setter for the field <code>infocode</code>.</p>
+	 *
+	 * @param infocode a {@link java.util.List} object.
+	 */
 	public void setInfocode(List<InfoCode> infocode) {
 		this.infocode = infocode;
 	}
+	/**
+	 * <p>Getter for the field <code>infocode</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InfoCode> getInfocode( ) {
 		return this.infocode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>label</code>.</p>
+	 *
+	 * @param label a {@link java.util.List} object.
+	 */
 	public void setLabel(List<String> label) {
 		this.label = label;
 	}
+	/**
+	 * <p>Getter for the field <code>label</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getLabel( ) {
 		return this.label;
 	}
 
+	/**
+	 * <p>Setter for the field <code>score</code>.</p>
+	 *
+	 * @param score a {@link java.lang.String} object.
+	 */
 	public void setScore(String score) {
 		this.score = score;
 	}
+	/**
+	 * <p>Getter for the field <code>score</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getScore( ) {
 		return this.score;
 	}
 
+	/**
+	 * <p>Setter for the field <code>uniqueId</code>.</p>
+	 *
+	 * @param uniqueId a {@link java.lang.String} object.
+	 */
 	public void setUniqueId(String uniqueId) {
 		this.uniqueId = uniqueId;
 	}
+	/**
+	 * <p>Getter for the field <code>uniqueId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUniqueId( ) {
 		return this.uniqueId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户授权信息查询图片信息对象
  *
  * @author auto create
- * @since 1.0, 2016-10-31 14:42:07
+ * @version $Id: $Id
  */
 public class AlipayUserPicture extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayUserPicture extends AlipayObject {
 	@ApiField("picture_url")
 	private String pictureUrl;
 
+	/**
+	 * <p>Getter for the field <code>pictureType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPictureType() {
 		return this.pictureType;
 	}
+	/**
+	 * <p>Setter for the field <code>pictureType</code>.</p>
+	 *
+	 * @param pictureType a {@link java.lang.String} object.
+	 */
 	public void setPictureType(String pictureType) {
 		this.pictureType = pictureType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pictureUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPictureUrl() {
 		return this.pictureUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>pictureUrl</code>.</p>
+	 *
+	 * @param pictureUrl a {@link java.lang.String} object.
+	 */
 	public void setPictureUrl(String pictureUrl) {
 		this.pictureUrl = pictureUrl;
 	}

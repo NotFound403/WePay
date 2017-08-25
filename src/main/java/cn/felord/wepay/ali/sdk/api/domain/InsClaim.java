@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 赔案
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:48:09
+ * @version $Id: $Id
  */
 public class InsClaim extends AlipayObject {
 
@@ -66,58 +66,138 @@ public class InsClaim extends AlipayObject {
 	@ApiField("reject_reason")
 	private String rejectReason;
 
+	/**
+	 * <p>Getter for the field <code>bizData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizData() {
 		return this.bizData;
 	}
+	/**
+	 * <p>Setter for the field <code>bizData</code>.</p>
+	 *
+	 * @param bizData a {@link java.lang.String} object.
+	 */
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claimFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getClaimFee() {
 		return this.claimFee;
 	}
+	/**
+	 * <p>Setter for the field <code>claimFee</code>.</p>
+	 *
+	 * @param claimFee a {@link java.lang.Long} object.
+	 */
 	public void setClaimFee(Long claimFee) {
 		this.claimFee = claimFee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claimNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClaimNo() {
 		return this.claimNo;
 	}
+	/**
+	 * <p>Setter for the field <code>claimNo</code>.</p>
+	 *
+	 * @param claimNo a {@link java.lang.String} object.
+	 */
 	public void setClaimNo(String claimNo) {
 		this.claimNo = claimNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claimPayTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getClaimPayTime() {
 		return this.claimPayTime;
 	}
+	/**
+	 * <p>Setter for the field <code>claimPayTime</code>.</p>
+	 *
+	 * @param claimPayTime a {@link java.util.Date} object.
+	 */
 	public void setClaimPayTime(Date claimPayTime) {
 		this.claimPayTime = claimPayTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claimProgress</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ClaimProgress> getClaimProgress() {
 		return this.claimProgress;
 	}
+	/**
+	 * <p>Setter for the field <code>claimProgress</code>.</p>
+	 *
+	 * @param claimProgress a {@link java.util.List} object.
+	 */
 	public void setClaimProgress(List<ClaimProgress> claimProgress) {
 		this.claimProgress = claimProgress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claimStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClaimStatus() {
 		return this.claimStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>claimStatus</code>.</p>
+	 *
+	 * @param claimStatus a {@link java.lang.String} object.
+	 */
 	public void setClaimStatus(String claimStatus) {
 		this.claimStatus = claimStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rejectReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRejectReason() {
 		return this.rejectReason;
 	}
+	/**
+	 * <p>Setter for the field <code>rejectReason</code>.</p>
+	 *
+	 * @param rejectReason a {@link java.lang.String} object.
+	 */
 	public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
 	}

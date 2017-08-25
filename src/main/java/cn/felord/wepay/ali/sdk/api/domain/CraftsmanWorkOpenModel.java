@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 手艺人作品返回对象
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:33:13
+ * @version $Id: $Id
  */
 public class CraftsmanWorkOpenModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class CraftsmanWorkOpenModel extends AlipayObject {
 	@ApiField("work_id")
 	private String workId;
 
+	/**
+	 * <p>Getter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
+	/**
+	 * <p>Setter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @param craftsmanId a {@link java.lang.String} object.
+	 */
 	public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>duration</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getDuration() {
 		return this.duration;
 	}
+	/**
+	 * <p>Setter for the field <code>duration</code>.</p>
+	 *
+	 * @param duration a {@link java.lang.Long} object.
+	 */
 	public void setDuration(Long duration) {
 		this.duration = duration;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mediaId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMediaId() {
 		return this.mediaId;
 	}
+	/**
+	 * <p>Setter for the field <code>mediaId</code>.</p>
+	 *
+	 * @param mediaId a {@link java.lang.String} object.
+	 */
 	public void setMediaId(String mediaId) {
 		this.mediaId = mediaId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mediaType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMediaType() {
 		return this.mediaType;
 	}
+	/**
+	 * <p>Setter for the field <code>mediaType</code>.</p>
+	 *
+	 * @param mediaType a {@link java.lang.String} object.
+	 */
 	public void setMediaType(String mediaType) {
 		this.mediaType = mediaType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * <p>Getter for the field <code>workId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWorkId() {
 		return this.workId;
 	}
+	/**
+	 * <p>Setter for the field <code>workId</code>.</p>
+	 *
+	 * @param workId a {@link java.lang.String} object.
+	 */
 	public void setWorkId(String workId) {
 		this.workId = workId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 批量查询标准后台类目
  *
  * @author auto create
- * @since 1.0, 2017-06-06 11:40:51
+ * @version $Id: $Id
  */
 public class KoubeiItemCategoryChildrenBatchqueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiItemCategoryChildrenBatchqueryModel extends AlipayObject {
 	@ApiField("root_category_id")
 	private String rootCategoryId;
 
+	/**
+	 * <p>Getter for the field <code>rootCategoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRootCategoryId() {
 		return this.rootCategoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>rootCategoryId</code>.</p>
+	 *
+	 * @param rootCategoryId a {@link java.lang.String} object.
+	 */
 	public void setRootCategoryId(String rootCategoryId) {
 		this.rootCategoryId = rootCategoryId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 资产信息
  *
  * @author auto create
- * @since 1.0, 2017-07-11 14:32:14
+ * @version $Id: $Id
  */
 public class AssetParams extends AlipayObject {
 
@@ -35,23 +35,53 @@ assetType为BANK时，必填。
 	@ApiField("inst_id")
 	private String instId;
 
+	/**
+	 * <p>Getter for the field <code>assetType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAssetType() {
 		return this.assetType;
 	}
+	/**
+	 * <p>Setter for the field <code>assetType</code>.</p>
+	 *
+	 * @param assetType a {@link java.lang.String} object.
+	 */
 	public void setAssetType(String assetType) {
 		this.assetType = assetType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardNo() {
 		return this.cardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardNo</code>.</p>
+	 *
+	 * @param cardNo a {@link java.lang.String} object.
+	 */
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>instId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInstId() {
 		return this.instId;
 	}
+	/**
+	 * <p>Setter for the field <code>instId</code>.</p>
+	 *
+	 * @param instId a {@link java.lang.String} object.
+	 */
 	public void setInstId(String instId) {
 		this.instId = instId;
 	}

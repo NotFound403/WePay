@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统二维码内容详情
  *
  * @author auto create
- * @since 1.0, 2017-02-15 13:57:59
+ * @version $Id: $Id
  */
 public class KbAdvertContentCodec extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KbAdvertContentCodec extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
+	/**
+	 * <p>Getter for the field <code>url</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrl() {
 		return this.url;
 	}
+	/**
+	 * <p>Setter for the field <code>url</code>.</p>
+	 *
+	 * @param url a {@link java.lang.String} object.
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}

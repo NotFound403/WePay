@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 蚁盾营销反作弊服务
  *
  * @author auto create
- * @since 1.0, 2017-06-29 21:11:08
+ * @version $Id: $Id
  */
 public class SsdataDataserviceRiskAntimarketcheatQueryModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class SsdataDataserviceRiskAntimarketcheatQueryModel extends AlipayObject
 	@ApiField("sys_version")
 	private String sysVersion;
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId() {
 		return this.partnerId;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>phone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPhone() {
 		return this.phone;
 	}
+	/**
+	 * <p>Setter for the field <code>phone</code>.</p>
+	 *
+	 * @param phone a {@link java.lang.String} object.
+	 */
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
+	/**
+	 * <p>Getter for the field <code>riskCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRiskCode() {
 		return this.riskCode;
 	}
+	/**
+	 * <p>Setter for the field <code>riskCode</code>.</p>
+	 *
+	 * @param riskCode a {@link java.lang.String} object.
+	 */
 	public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @param sceneCode a {@link java.lang.String} object.
+	 */
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sysVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSysVersion() {
 		return this.sysVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>sysVersion</code>.</p>
+	 *
+	 * @param sysVersion a {@link java.lang.String} object.
+	 */
 	public void setSysVersion(String sysVersion) {
 		this.sysVersion = sysVersion;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.customreport.save response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-05 17:13:15
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataCustomreportSaveResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiMarketingDataCustomreportSaveResponse extends AlipayResponse 
 	@ApiField("condition_key")
 	private String conditionKey;
 
+	/**
+	 * <p>Setter for the field <code>conditionKey</code>.</p>
+	 *
+	 * @param conditionKey a {@link java.lang.String} object.
+	 */
 	public void setConditionKey(String conditionKey) {
 		this.conditionKey = conditionKey;
 	}
+	/**
+	 * <p>Getter for the field <code>conditionKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConditionKey( ) {
 		return this.conditionKey;
 	}

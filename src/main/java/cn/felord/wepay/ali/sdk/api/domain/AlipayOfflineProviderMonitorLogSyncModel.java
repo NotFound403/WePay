@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * ISV服务商监控数据回流
  *
  * @author auto create
- * @since 1.0, 2016-09-28 11:33:15
+ * @version $Id: $Id
  */
 public class AlipayOfflineProviderMonitorLogSyncModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayOfflineProviderMonitorLogSyncModel extends AlipayObject {
 	@ApiField("i_s_v_log_sync")
 	private List<ISVLogSync> logs;
 
+	/**
+	 * <p>Getter for the field <code>logs</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ISVLogSync> getLogs() {
 		return this.logs;
 	}
+	/**
+	 * <p>Setter for the field <code>logs</code>.</p>
+	 *
+	 * @param logs a {@link java.util.List} object.
+	 */
 	public void setLogs(List<ISVLogSync> logs) {
 		this.logs = logs;
 	}

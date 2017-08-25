@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 停车ISV系统配置接口
  *
  * @author auto create
- * @since 1.0, 2017-07-20 09:54:35
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingConfigSetModel extends AlipayObject {
 
@@ -47,37 +47,87 @@ public class AlipayEcoMycarParkingConfigSetModel extends AlipayObject {
 	@ApiField("merchant_service_phone")
 	private String merchantServicePhone;
 
+	/**
+	 * <p>Getter for the field <code>accountNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountNo() {
 		return this.accountNo;
 	}
+	/**
+	 * <p>Setter for the field <code>accountNo</code>.</p>
+	 *
+	 * @param accountNo a {@link java.lang.String} object.
+	 */
 	public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>interfaceInfoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InterfaceInfoList> getInterfaceInfoList() {
 		return this.interfaceInfoList;
 	}
+	/**
+	 * <p>Setter for the field <code>interfaceInfoList</code>.</p>
+	 *
+	 * @param interfaceInfoList a {@link java.util.List} object.
+	 */
 	public void setInterfaceInfoList(List<InterfaceInfoList> interfaceInfoList) {
 		this.interfaceInfoList = interfaceInfoList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantLogo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantLogo() {
 		return this.merchantLogo;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantLogo</code>.</p>
+	 *
+	 * @param merchantLogo a {@link java.lang.String} object.
+	 */
 	public void setMerchantLogo(String merchantLogo) {
 		this.merchantLogo = merchantLogo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantName() {
 		return this.merchantName;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantName</code>.</p>
+	 *
+	 * @param merchantName a {@link java.lang.String} object.
+	 */
 	public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantServicePhone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantServicePhone() {
 		return this.merchantServicePhone;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantServicePhone</code>.</p>
+	 *
+	 * @param merchantServicePhone a {@link java.lang.String} object.
+	 */
 	public void setMerchantServicePhone(String merchantServicePhone) {
 		this.merchantServicePhone = merchantServicePhone;
 	}

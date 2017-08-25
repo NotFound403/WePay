@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 无授权模式的查询对账单下载地址
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:19
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayDataDataserviceBillDownloadurlQueryModel extends AlipayObject
 	@ApiField("bill_type")
 	private String billType;
 
+	/**
+	 * <p>Getter for the field <code>billDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillDate() {
 		return this.billDate;
 	}
+	/**
+	 * <p>Setter for the field <code>billDate</code>.</p>
+	 *
+	 * @param billDate a {@link java.lang.String} object.
+	 */
 	public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillType() {
 		return this.billType;
 	}
+	/**
+	 * <p>Setter for the field <code>billType</code>.</p>
+	 *
+	 * @param billType a {@link java.lang.String} object.
+	 */
 	public void setBillType(String billType) {
 		this.billType = billType;
 	}

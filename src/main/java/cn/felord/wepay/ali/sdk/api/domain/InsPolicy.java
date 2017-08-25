@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保单
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:35:52
+ * @version $Id: $Id
  */
 public class InsPolicy extends AlipayObject {
 
@@ -123,121 +123,291 @@ public class InsPolicy extends AlipayObject {
 	@ApiField("surrender_time")
 	private Date surrenderTime;
 
+	/**
+	 * <p>Getter for the field <code>addressee</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsAddressee} object.
+	 */
 	public InsAddressee getAddressee() {
 		return this.addressee;
 	}
+	/**
+	 * <p>Setter for the field <code>addressee</code>.</p>
+	 *
+	 * @param addressee a {@link cn.felord.wepay.ali.sdk.api.domain.InsAddressee} object.
+	 */
 	public void setAddressee(InsAddressee addressee) {
 		this.addressee = addressee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applicant</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public InsPerson getApplicant() {
 		return this.applicant;
 	}
+	/**
+	 * <p>Setter for the field <code>applicant</code>.</p>
+	 *
+	 * @param applicant a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public void setApplicant(InsPerson applicant) {
 		this.applicant = applicant;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizData() {
 		return this.bizData;
 	}
+	/**
+	 * <p>Setter for the field <code>bizData</code>.</p>
+	 *
+	 * @param bizData a {@link java.lang.String} object.
+	 */
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claims</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsClaim> getClaims() {
 		return this.claims;
 	}
+	/**
+	 * <p>Setter for the field <code>claims</code>.</p>
+	 *
+	 * @param claims a {@link java.util.List} object.
+	 */
 	public void setClaims(List<InsClaim> claims) {
 		this.claims = claims;
 	}
 
+	/**
+	 * <p>Getter for the field <code>coverages</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsCoverage> getCoverages() {
 		return this.coverages;
 	}
+	/**
+	 * <p>Setter for the field <code>coverages</code>.</p>
+	 *
+	 * @param coverages a {@link java.util.List} object.
+	 */
 	public void setCoverages(List<InsCoverage> coverages) {
 		this.coverages = coverages;
 	}
 
+	/**
+	 * <p>Getter for the field <code>effectEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEffectEndTime() {
 		return this.effectEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>effectEndTime</code>.</p>
+	 *
+	 * @param effectEndTime a {@link java.lang.String} object.
+	 */
 	public void setEffectEndTime(String effectEndTime) {
 		this.effectEndTime = effectEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>effectStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEffectStartTime() {
 		return this.effectStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>effectStartTime</code>.</p>
+	 *
+	 * @param effectStartTime a {@link java.lang.String} object.
+	 */
 	public void setEffectStartTime(String effectStartTime) {
 		this.effectStartTime = effectStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>insObjects</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsObject> getInsObjects() {
 		return this.insObjects;
 	}
+	/**
+	 * <p>Setter for the field <code>insObjects</code>.</p>
+	 *
+	 * @param insObjects a {@link java.util.List} object.
+	 */
 	public void setInsObjects(List<InsObject> insObjects) {
 		this.insObjects = insObjects;
 	}
 
+	/**
+	 * <p>Getter for the field <code>insureds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsPerson> getInsureds() {
 		return this.insureds;
 	}
+	/**
+	 * <p>Setter for the field <code>insureds</code>.</p>
+	 *
+	 * @param insureds a {@link java.util.List} object.
+	 */
 	public void setInsureds(List<InsPerson> insureds) {
 		this.insureds = insureds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantName() {
 		return this.merchantName;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantName</code>.</p>
+	 *
+	 * @param merchantName a {@link java.lang.String} object.
+	 */
 	public void setMerchantName(String merchantName) {
 		this.merchantName = merchantName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>policyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPolicyNo() {
 		return this.policyNo;
 	}
+	/**
+	 * <p>Setter for the field <code>policyNo</code>.</p>
+	 *
+	 * @param policyNo a {@link java.lang.String} object.
+	 */
 	public void setPolicyNo(String policyNo) {
 		this.policyNo = policyNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>policyStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPolicyStatus() {
 		return this.policyStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>policyStatus</code>.</p>
+	 *
+	 * @param policyStatus a {@link java.lang.String} object.
+	 */
 	public void setPolicyStatus(String policyStatus) {
 		this.policyStatus = policyStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>premium</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPremium() {
 		return this.premium;
 	}
+	/**
+	 * <p>Setter for the field <code>premium</code>.</p>
+	 *
+	 * @param premium a {@link java.lang.Long} object.
+	 */
 	public void setPremium(Long premium) {
 		this.premium = premium;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdName() {
 		return this.prodName;
 	}
+	/**
+	 * <p>Setter for the field <code>prodName</code>.</p>
+	 *
+	 * @param prodName a {@link java.lang.String} object.
+	 */
 	public void setProdName(String prodName) {
 		this.prodName = prodName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sumInsured</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getSumInsured() {
 		return this.sumInsured;
 	}
+	/**
+	 * <p>Setter for the field <code>sumInsured</code>.</p>
+	 *
+	 * @param sumInsured a {@link java.lang.Long} object.
+	 */
 	public void setSumInsured(Long sumInsured) {
 		this.sumInsured = sumInsured;
 	}
 
+	/**
+	 * <p>Getter for the field <code>surrenderFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getSurrenderFee() {
 		return this.surrenderFee;
 	}
+	/**
+	 * <p>Setter for the field <code>surrenderFee</code>.</p>
+	 *
+	 * @param surrenderFee a {@link java.lang.Long} object.
+	 */
 	public void setSurrenderFee(Long surrenderFee) {
 		this.surrenderFee = surrenderFee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>surrenderTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getSurrenderTime() {
 		return this.surrenderTime;
 	}
+	/**
+	 * <p>Setter for the field <code>surrenderTime</code>.</p>
+	 *
+	 * @param surrenderTime a {@link java.util.Date} object.
+	 */
 	public void setSurrenderTime(Date surrenderTime) {
 		this.surrenderTime = surrenderTime;
 	}

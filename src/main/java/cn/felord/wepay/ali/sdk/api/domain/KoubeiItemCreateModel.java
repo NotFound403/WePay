@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑商品创建接口
  *
  * @author auto create
- * @since 1.0, 2017-05-31 21:37:29
+ * @version $Id: $Id
  */
 public class KoubeiItemCreateModel extends AlipayObject {
 
@@ -128,128 +128,308 @@ public class KoubeiItemCreateModel extends AlipayObject {
 	@ApiField("weight")
 	private String weight;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryId() {
 		return this.categoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryId</code>.</p>
+	 *
+	 * @param categoryId a {@link java.lang.String} object.
+	 */
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cover</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCover() {
 		return this.cover;
 	}
+	/**
+	 * <p>Setter for the field <code>cover</code>.</p>
+	 *
+	 * @param cover a {@link java.lang.String} object.
+	 */
 	public void setCover(String cover) {
 		this.cover = cover;
 	}
 
+	/**
+	 * <p>Getter for the field <code>descriptions</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KoubeiItemDescription> getDescriptions() {
 		return this.descriptions;
 	}
+	/**
+	 * <p>Setter for the field <code>descriptions</code>.</p>
+	 *
+	 * @param descriptions a {@link java.util.List} object.
+	 */
 	public void setDescriptions(List<KoubeiItemDescription> descriptions) {
 		this.descriptions = descriptions;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtStart() {
 		return this.gmtStart;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @param gmtStart a {@link java.util.Date} object.
+	 */
 	public void setGmtStart(Date gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
+	/**
+	 * <p>Getter for the field <code>inventory</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getInventory() {
 		return this.inventory;
 	}
+	/**
+	 * <p>Setter for the field <code>inventory</code>.</p>
+	 *
+	 * @param inventory a {@link java.lang.Long} object.
+	 */
 	public void setInventory(Long inventory) {
 		this.inventory = inventory;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemDetailUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemDetailUrl() {
 		return this.itemDetailUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>itemDetailUrl</code>.</p>
+	 *
+	 * @param itemDetailUrl a {@link java.lang.String} object.
+	 */
 	public void setItemDetailUrl(String itemDetailUrl) {
 		this.itemDetailUrl = itemDetailUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemType() {
 		return this.itemType;
 	}
+	/**
+	 * <p>Setter for the field <code>itemType</code>.</p>
+	 *
+	 * @param itemType a {@link java.lang.String} object.
+	 */
 	public void setItemType(String itemType) {
 		this.itemType = itemType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operationContext</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KoubeiOperationContext} object.
+	 */
 	public KoubeiOperationContext getOperationContext() {
 		return this.operationContext;
 	}
+	/**
+	 * <p>Setter for the field <code>operationContext</code>.</p>
+	 *
+	 * @param operationContext a {@link cn.felord.wepay.ali.sdk.api.domain.KoubeiOperationContext} object.
+	 */
 	public void setOperationContext(KoubeiOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
+	/**
+	 * <p>Getter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginalPrice() {
 		return this.originalPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @param originalPrice a {@link java.lang.String} object.
+	 */
 	public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pictureDetails</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPictureDetails() {
 		return this.pictureDetails;
 	}
+	/**
+	 * <p>Setter for the field <code>pictureDetails</code>.</p>
+	 *
+	 * @param pictureDetails a {@link java.lang.String} object.
+	 */
 	public void setPictureDetails(String pictureDetails) {
 		this.pictureDetails = pictureDetails;
 	}
 
+	/**
+	 * <p>Getter for the field <code>price</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrice() {
 		return this.price;
 	}
+	/**
+	 * <p>Setter for the field <code>price</code>.</p>
+	 *
+	 * @param price a {@link java.lang.String} object.
+	 */
 	public void setPrice(String price) {
 		this.price = price;
 	}
 
+	/**
+	 * <p>Getter for the field <code>priceMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPriceMode() {
 		return this.priceMode;
 	}
+	/**
+	 * <p>Setter for the field <code>priceMode</code>.</p>
+	 *
+	 * @param priceMode a {@link java.lang.String} object.
+	 */
 	public void setPriceMode(String priceMode) {
 		this.priceMode = priceMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopIds</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopIds() {
 		return this.shopIds;
 	}
+	/**
+	 * <p>Setter for the field <code>shopIds</code>.</p>
+	 *
+	 * @param shopIds a {@link java.lang.String} object.
+	 */
 	public void setShopIds(String shopIds) {
 		this.shopIds = shopIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeVoucherItemTemplate</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KoubeiTradeVoucherItemTemplete} object.
+	 */
 	public KoubeiTradeVoucherItemTemplete getTradeVoucherItemTemplate() {
 		return this.tradeVoucherItemTemplate;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeVoucherItemTemplate</code>.</p>
+	 *
+	 * @param tradeVoucherItemTemplate a {@link cn.felord.wepay.ali.sdk.api.domain.KoubeiTradeVoucherItemTemplete} object.
+	 */
 	public void setTradeVoucherItemTemplate(KoubeiTradeVoucherItemTemplete tradeVoucherItemTemplate) {
 		this.tradeVoucherItemTemplate = tradeVoucherItemTemplate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>weight</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWeight() {
 		return this.weight;
 	}
+	/**
+	 * <p>Setter for the field <code>weight</code>.</p>
+	 *
+	 * @param weight a {@link java.lang.String} object.
+	 */
 	public void setWeight(String weight) {
 		this.weight = weight;
 	}

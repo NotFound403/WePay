@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.customs.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 00:47:36
+ * @version $Id: $Id
  */
 public class AlipayTradeCustomsQueryResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayTradeCustomsQueryResponse extends AlipayResponse {
 	@ApiField("customs_declare_record_info")
 	private List<CustomsDeclareRecordInfo> records;
 
+	/**
+	 * <p>Setter for the field <code>notFound</code>.</p>
+	 *
+	 * @param notFound a {@link java.lang.String} object.
+	 */
 	public void setNotFound(String notFound) {
 		this.notFound = notFound;
 	}
+	/**
+	 * <p>Getter for the field <code>notFound</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotFound( ) {
 		return this.notFound;
 	}
 
+	/**
+	 * <p>Setter for the field <code>records</code>.</p>
+	 *
+	 * @param records a {@link java.util.List} object.
+	 */
 	public void setRecords(List<CustomsDeclareRecordInfo> records) {
 		this.records = records;
 	}
+	/**
+	 * <p>Getter for the field <code>records</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CustomsDeclareRecordInfo> getRecords( ) {
 		return this.records;
 	}

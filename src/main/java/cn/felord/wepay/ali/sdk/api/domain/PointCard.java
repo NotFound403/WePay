@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 集点卡工具
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class PointCard extends AlipayObject {
 
@@ -52,44 +52,104 @@ public class PointCard extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogo() {
 		return this.logo;
 	}
+	/**
+	 * <p>Setter for the field <code>logo</code>.</p>
+	 *
+	 * @param logo a {@link java.lang.String} object.
+	 */
 	public void setLogo(String logo) {
 		this.logo = logo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

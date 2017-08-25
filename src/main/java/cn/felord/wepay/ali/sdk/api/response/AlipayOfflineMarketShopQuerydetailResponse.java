@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.querydetail response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:57
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopQuerydetailResponse extends AlipayResponse {
 
@@ -320,359 +320,869 @@ public class AlipayOfflineMarketShopQuerydetailResponse extends AlipayResponse {
 	@ApiField("wifi")
 	private String wifi;
 
+	/**
+	 * <p>Setter for the field <code>address</code>.</p>
+	 *
+	 * @param address a {@link java.lang.String} object.
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	/**
+	 * <p>Getter for the field <code>address</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddress( ) {
 		return this.address;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @param auditDesc a {@link java.lang.String} object.
+	 */
 	public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
+	/**
+	 * <p>Getter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditImages</code>.</p>
+	 *
+	 * @param auditImages a {@link java.lang.String} object.
+	 */
 	public void setAuditImages(String auditImages) {
 		this.auditImages = auditImages;
 	}
+	/**
+	 * <p>Getter for the field <code>auditImages</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditImages( ) {
 		return this.auditImages;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @param auditStatus a {@link java.lang.String} object.
+	 */
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>authLetter</code>.</p>
+	 *
+	 * @param authLetter a {@link java.lang.String} object.
+	 */
 	public void setAuthLetter(String authLetter) {
 		this.authLetter = authLetter;
 	}
+	/**
+	 * <p>Getter for the field <code>authLetter</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthLetter( ) {
 		return this.authLetter;
 	}
 
+	/**
+	 * <p>Setter for the field <code>avgPrice</code>.</p>
+	 *
+	 * @param avgPrice a {@link java.lang.String} object.
+	 */
 	public void setAvgPrice(String avgPrice) {
 		this.avgPrice = avgPrice;
 	}
+	/**
+	 * <p>Getter for the field <code>avgPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAvgPrice( ) {
 		return this.avgPrice;
 	}
 
+	/**
+	 * <p>Setter for the field <code>box</code>.</p>
+	 *
+	 * @param box a {@link java.lang.String} object.
+	 */
 	public void setBox(String box) {
 		this.box = box;
 	}
+	/**
+	 * <p>Getter for the field <code>box</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBox( ) {
 		return this.box;
 	}
 
+	/**
+	 * <p>Setter for the field <code>branchShopName</code>.</p>
+	 *
+	 * @param branchShopName a {@link java.lang.String} object.
+	 */
 	public void setBranchShopName(String branchShopName) {
 		this.branchShopName = branchShopName;
 	}
+	/**
+	 * <p>Getter for the field <code>branchShopName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBranchShopName( ) {
 		return this.branchShopName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>brandLogo</code>.</p>
+	 *
+	 * @param brandLogo a {@link java.lang.String} object.
+	 */
 	public void setBrandLogo(String brandLogo) {
 		this.brandLogo = brandLogo;
 	}
+	/**
+	 * <p>Getter for the field <code>brandLogo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandLogo( ) {
 		return this.brandLogo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>brandName</code>.</p>
+	 *
+	 * @param brandName a {@link java.lang.String} object.
+	 */
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
+	/**
+	 * <p>Getter for the field <code>brandName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandName( ) {
 		return this.brandName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>businessCertificate</code>.</p>
+	 *
+	 * @param businessCertificate a {@link java.lang.String} object.
+	 */
 	public void setBusinessCertificate(String businessCertificate) {
 		this.businessCertificate = businessCertificate;
 	}
+	/**
+	 * <p>Getter for the field <code>businessCertificate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessCertificate( ) {
 		return this.businessCertificate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>businessCertificateExpires</code>.</p>
+	 *
+	 * @param businessCertificateExpires a {@link java.lang.String} object.
+	 */
 	public void setBusinessCertificateExpires(String businessCertificateExpires) {
 		this.businessCertificateExpires = businessCertificateExpires;
 	}
+	/**
+	 * <p>Getter for the field <code>businessCertificateExpires</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessCertificateExpires( ) {
 		return this.businessCertificateExpires;
 	}
 
+	/**
+	 * <p>Setter for the field <code>businessTime</code>.</p>
+	 *
+	 * @param businessTime a {@link java.lang.String} object.
+	 */
 	public void setBusinessTime(String businessTime) {
 		this.businessTime = businessTime;
 	}
+	/**
+	 * <p>Getter for the field <code>businessTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessTime( ) {
 		return this.businessTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>categoryId</code>.</p>
+	 *
+	 * @param categoryId a {@link java.lang.String} object.
+	 */
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
+	/**
+	 * <p>Getter for the field <code>categoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryId( ) {
 		return this.categoryId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>cityCode</code>.</p>
+	 *
+	 * @param cityCode a {@link java.lang.String} object.
+	 */
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
+	/**
+	 * <p>Getter for the field <code>cityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityCode( ) {
 		return this.cityCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contactNumber</code>.</p>
+	 *
+	 * @param contactNumber a {@link java.lang.String} object.
+	 */
 	public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
 	}
+	/**
+	 * <p>Getter for the field <code>contactNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactNumber( ) {
 		return this.contactNumber;
 	}
 
+	/**
+	 * <p>Setter for the field <code>createChannel</code>.</p>
+	 *
+	 * @param createChannel a {@link java.lang.String} object.
+	 */
 	public void setCreateChannel(String createChannel) {
 		this.createChannel = createChannel;
 	}
+	/**
+	 * <p>Getter for the field <code>createChannel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreateChannel( ) {
 		return this.createChannel;
 	}
 
+	/**
+	 * <p>Setter for the field <code>districtCode</code>.</p>
+	 *
+	 * @param districtCode a {@link java.lang.String} object.
+	 */
 	public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
+	/**
+	 * <p>Getter for the field <code>districtCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDistrictCode( ) {
 		return this.districtCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtShopCreate</code>.</p>
+	 *
+	 * @param gmtShopCreate a {@link java.lang.String} object.
+	 */
 	public void setGmtShopCreate(String gmtShopCreate) {
 		this.gmtShopCreate = gmtShopCreate;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtShopCreate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtShopCreate( ) {
 		return this.gmtShopCreate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtShopModified</code>.</p>
+	 *
+	 * @param gmtShopModified a {@link java.lang.String} object.
+	 */
 	public void setGmtShopModified(String gmtShopModified) {
 		this.gmtShopModified = gmtShopModified;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtShopModified</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtShopModified( ) {
 		return this.gmtShopModified;
 	}
 
+	/**
+	 * <p>Setter for the field <code>implementId</code>.</p>
+	 *
+	 * @param implementId a {@link java.lang.String} object.
+	 */
 	public void setImplementId(String implementId) {
 		this.implementId = implementId;
 	}
+	/**
+	 * <p>Getter for the field <code>implementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImplementId( ) {
 		return this.implementId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isOnline</code>.</p>
+	 *
+	 * @param isOnline a {@link java.lang.String} object.
+	 */
 	public void setIsOnline(String isOnline) {
 		this.isOnline = isOnline;
 	}
+	/**
+	 * <p>Getter for the field <code>isOnline</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsOnline( ) {
 		return this.isOnline;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isOperatingOnline</code>.</p>
+	 *
+	 * @param isOperatingOnline a {@link java.lang.String} object.
+	 */
 	public void setIsOperatingOnline(String isOperatingOnline) {
 		this.isOperatingOnline = isOperatingOnline;
 	}
+	/**
+	 * <p>Getter for the field <code>isOperatingOnline</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsOperatingOnline( ) {
 		return this.isOperatingOnline;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isShow</code>.</p>
+	 *
+	 * @param isShow a {@link java.lang.String} object.
+	 */
 	public void setIsShow(String isShow) {
 		this.isShow = isShow;
 	}
+	/**
+	 * <p>Getter for the field <code>isShow</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsShow( ) {
 		return this.isShow;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isvUid</code>.</p>
+	 *
+	 * @param isvUid a {@link java.lang.String} object.
+	 */
 	public void setIsvUid(String isvUid) {
 		this.isvUid = isvUid;
 	}
+	/**
+	 * <p>Getter for the field <code>isvUid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvUid( ) {
 		return this.isvUid;
 	}
 
+	/**
+	 * <p>Setter for the field <code>latitude</code>.</p>
+	 *
+	 * @param latitude a {@link java.lang.String} object.
+	 */
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
+	/**
+	 * <p>Getter for the field <code>latitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLatitude( ) {
 		return this.latitude;
 	}
 
+	/**
+	 * <p>Setter for the field <code>licence</code>.</p>
+	 *
+	 * @param licence a {@link java.lang.String} object.
+	 */
 	public void setLicence(String licence) {
 		this.licence = licence;
 	}
+	/**
+	 * <p>Getter for the field <code>licence</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicence( ) {
 		return this.licence;
 	}
 
+	/**
+	 * <p>Setter for the field <code>licenceCode</code>.</p>
+	 *
+	 * @param licenceCode a {@link java.lang.String} object.
+	 */
 	public void setLicenceCode(String licenceCode) {
 		this.licenceCode = licenceCode;
 	}
+	/**
+	 * <p>Getter for the field <code>licenceCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenceCode( ) {
 		return this.licenceCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>licenceExpires</code>.</p>
+	 *
+	 * @param licenceExpires a {@link java.lang.String} object.
+	 */
 	public void setLicenceExpires(String licenceExpires) {
 		this.licenceExpires = licenceExpires;
 	}
+	/**
+	 * <p>Getter for the field <code>licenceExpires</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenceExpires( ) {
 		return this.licenceExpires;
 	}
 
+	/**
+	 * <p>Setter for the field <code>licenceName</code>.</p>
+	 *
+	 * @param licenceName a {@link java.lang.String} object.
+	 */
 	public void setLicenceName(String licenceName) {
 		this.licenceName = licenceName;
 	}
+	/**
+	 * <p>Getter for the field <code>licenceName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenceName( ) {
 		return this.licenceName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>longitude</code>.</p>
+	 *
+	 * @param longitude a {@link java.lang.String} object.
+	 */
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
+	/**
+	 * <p>Getter for the field <code>longitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLongitude( ) {
 		return this.longitude;
 	}
 
+	/**
+	 * <p>Setter for the field <code>mainImage</code>.</p>
+	 *
+	 * @param mainImage a {@link java.lang.String} object.
+	 */
 	public void setMainImage(String mainImage) {
 		this.mainImage = mainImage;
 	}
+	/**
+	 * <p>Getter for the field <code>mainImage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMainImage( ) {
 		return this.mainImage;
 	}
 
+	/**
+	 * <p>Setter for the field <code>mainShopName</code>.</p>
+	 *
+	 * @param mainShopName a {@link java.lang.String} object.
+	 */
 	public void setMainShopName(String mainShopName) {
 		this.mainShopName = mainShopName;
 	}
+	/**
+	 * <p>Getter for the field <code>mainShopName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMainShopName( ) {
 		return this.mainShopName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>noSmoking</code>.</p>
+	 *
+	 * @param noSmoking a {@link java.lang.String} object.
+	 */
 	public void setNoSmoking(String noSmoking) {
 		this.noSmoking = noSmoking;
 	}
+	/**
+	 * <p>Getter for the field <code>noSmoking</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNoSmoking( ) {
 		return this.noSmoking;
 	}
 
+	/**
+	 * <p>Setter for the field <code>notifyMobile</code>.</p>
+	 *
+	 * @param notifyMobile a {@link java.lang.String} object.
+	 */
 	public void setNotifyMobile(String notifyMobile) {
 		this.notifyMobile = notifyMobile;
 	}
+	/**
+	 * <p>Getter for the field <code>notifyMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyMobile( ) {
 		return this.notifyMobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>onlineImage</code>.</p>
+	 *
+	 * @param onlineImage a {@link java.lang.String} object.
+	 */
 	public void setOnlineImage(String onlineImage) {
 		this.onlineImage = onlineImage;
 	}
+	/**
+	 * <p>Getter for the field <code>onlineImage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOnlineImage( ) {
 		return this.onlineImage;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operateNotifyUrl</code>.</p>
+	 *
+	 * @param operateNotifyUrl a {@link java.lang.String} object.
+	 */
 	public void setOperateNotifyUrl(String operateNotifyUrl) {
 		this.operateNotifyUrl = operateNotifyUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>operateNotifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateNotifyUrl( ) {
 		return this.operateNotifyUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>otherAuthImages</code>.</p>
+	 *
+	 * @param otherAuthImages a {@link java.lang.String} object.
+	 */
 	public void setOtherAuthImages(String otherAuthImages) {
 		this.otherAuthImages = otherAuthImages;
 	}
+	/**
+	 * <p>Getter for the field <code>otherAuthImages</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOtherAuthImages( ) {
 		return this.otherAuthImages;
 	}
 
+	/**
+	 * <p>Setter for the field <code>parking</code>.</p>
+	 *
+	 * @param parking a {@link java.lang.String} object.
+	 */
 	public void setParking(String parking) {
 		this.parking = parking;
 	}
+	/**
+	 * <p>Getter for the field <code>parking</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParking( ) {
 		return this.parking;
 	}
 
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId( ) {
 		return this.partnerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payType</code>.</p>
+	 *
+	 * @param payType a {@link java.lang.String} object.
+	 */
 	public void setPayType(String payType) {
 		this.payType = payType;
 	}
+	/**
+	 * <p>Getter for the field <code>payType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayType( ) {
 		return this.payType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>paymentAccount</code>.</p>
+	 *
+	 * @param paymentAccount a {@link java.lang.String} object.
+	 */
 	public void setPaymentAccount(String paymentAccount) {
 		this.paymentAccount = paymentAccount;
 	}
+	/**
+	 * <p>Getter for the field <code>paymentAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPaymentAccount( ) {
 		return this.paymentAccount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>picColl</code>.</p>
+	 *
+	 * @param picColl a {@link java.lang.String} object.
+	 */
 	public void setPicColl(String picColl) {
 		this.picColl = picColl;
 	}
+	/**
+	 * <p>Getter for the field <code>picColl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPicColl( ) {
 		return this.picColl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>processedQrCode</code>.</p>
+	 *
+	 * @param processedQrCode a {@link java.lang.String} object.
+	 */
 	public void setProcessedQrCode(String processedQrCode) {
 		this.processedQrCode = processedQrCode;
 	}
+	/**
+	 * <p>Getter for the field <code>processedQrCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProcessedQrCode( ) {
 		return this.processedQrCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>providerXiaoerUid</code>.</p>
+	 *
+	 * @param providerXiaoerUid a {@link java.lang.String} object.
+	 */
 	public void setProviderXiaoerUid(String providerXiaoerUid) {
 		this.providerXiaoerUid = providerXiaoerUid;
 	}
+	/**
+	 * <p>Getter for the field <code>providerXiaoerUid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProviderXiaoerUid( ) {
 		return this.providerXiaoerUid;
 	}
 
+	/**
+	 * <p>Setter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @param provinceCode a {@link java.lang.String} object.
+	 */
 	public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
+	/**
+	 * <p>Getter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProvinceCode( ) {
 		return this.provinceCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>qrCode</code>.</p>
+	 *
+	 * @param qrCode a {@link java.lang.String} object.
+	 */
 	public void setQrCode(String qrCode) {
 		this.qrCode = qrCode;
 	}
+	/**
+	 * <p>Getter for the field <code>qrCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCode( ) {
 		return this.qrCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopTags</code>.</p>
+	 *
+	 * @param shopTags a {@link java.lang.String} object.
+	 */
 	public void setShopTags(String shopTags) {
 		this.shopTags = shopTags;
 	}
+	/**
+	 * <p>Getter for the field <code>shopTags</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopTags( ) {
 		return this.shopTags;
 	}
 
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId( ) {
 		return this.storeId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>valueAdded</code>.</p>
+	 *
+	 * @param valueAdded a {@link java.lang.String} object.
+	 */
 	public void setValueAdded(String valueAdded) {
 		this.valueAdded = valueAdded;
 	}
+	/**
+	 * <p>Getter for the field <code>valueAdded</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValueAdded( ) {
 		return this.valueAdded;
 	}
 
+	/**
+	 * <p>Setter for the field <code>wifi</code>.</p>
+	 *
+	 * @param wifi a {@link java.lang.String} object.
+	 */
 	public void setWifi(String wifi) {
 		this.wifi = wifi;
 	}
+	/**
+	 * <p>Getter for the field <code>wifi</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWifi( ) {
 		return this.wifi;
 	}

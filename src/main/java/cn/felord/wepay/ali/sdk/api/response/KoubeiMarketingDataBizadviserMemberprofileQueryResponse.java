@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.bizadviser.memberprofile.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-21 10:27:15
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataBizadviserMemberprofileQueryResponse extends AlipayResponse {
 
@@ -33,9 +33,19 @@ indicator_key 说明如下：
 	@ApiField("result")
 	private String result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult( ) {
 		return this.result;
 	}

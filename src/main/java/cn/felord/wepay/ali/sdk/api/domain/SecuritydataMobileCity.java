@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 手机归属地对象
  *
  * @author auto create
- * @since 1.0, 2017-01-03 17:38:43
+ * @version $Id: $Id
  */
 public class SecuritydataMobileCity extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class SecuritydataMobileCity extends AlipayObject {
 	@ApiField("province")
 	private String province;
 
+	/**
+	 * <p>Getter for the field <code>city</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCity() {
 		return this.city;
 	}
+	/**
+	 * <p>Setter for the field <code>city</code>.</p>
+	 *
+	 * @param city a {@link java.lang.String} object.
+	 */
 	public void setCity(String city) {
 		this.city = city;
 	}
 
+	/**
+	 * <p>Getter for the field <code>phoneFirst7Digits</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPhoneFirst7Digits() {
 		return this.phoneFirst7Digits;
 	}
+	/**
+	 * <p>Setter for the field <code>phoneFirst7Digits</code>.</p>
+	 *
+	 * @param phoneFirst7Digits a {@link java.lang.String} object.
+	 */
 	public void setPhoneFirst7Digits(String phoneFirst7Digits) {
 		this.phoneFirst7Digits = phoneFirst7Digits;
 	}
 
+	/**
+	 * <p>Getter for the field <code>province</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProvince() {
 		return this.province;
 	}
+	/**
+	 * <p>Setter for the field <code>province</code>.</p>
+	 *
+	 * @param province a {@link java.lang.String} object.
+	 */
 	public void setProvince(String province) {
 		this.province = province;
 	}

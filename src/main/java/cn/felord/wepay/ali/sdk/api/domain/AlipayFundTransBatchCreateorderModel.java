@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 如果有创建AA收款，江湖救急等业务场景的话，创建批次后，可以调用此接口创建付款单
  *
  * @author auto create
- * @since 1.0, 2017-02-13 17:30:37
+ * @version $Id: $Id
  */
 public class AlipayFundTransBatchCreateorderModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class AlipayFundTransBatchCreateorderModel extends AlipayObject {
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Getter for the field <code>batchNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchNo() {
 		return this.batchNo;
 	}
+	/**
+	 * <p>Setter for the field <code>batchNo</code>.</p>
+	 *
+	 * @param batchNo a {@link java.lang.String} object.
+	 */
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtParam() {
 		return this.extParam;
 	}
+	/**
+	 * <p>Setter for the field <code>extParam</code>.</p>
+	 *
+	 * @param extParam a {@link java.lang.String} object.
+	 */
 	public void setExtParam(String extParam) {
 		this.extParam = extParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayAmount() {
 		return this.payAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>payAmount</code>.</p>
+	 *
+	 * @param payAmount a {@link java.lang.String} object.
+	 */
 	public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeId() {
 		return this.payeeId;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeId</code>.</p>
+	 *
+	 * @param payeeId a {@link java.lang.String} object.
+	 */
 	public void setPayeeId(String payeeId) {
 		this.payeeId = payeeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerId() {
 		return this.payerId;
 	}
+	/**
+	 * <p>Setter for the field <code>payerId</code>.</p>
+	 *
+	 * @param payerId a {@link java.lang.String} object.
+	 */
 	public void setPayerId(String payerId) {
 		this.payerId = payerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken() {
 		return this.token;
 	}
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}

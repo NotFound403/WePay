@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 会员卡级别配置信息
  *
  * @author auto create
- * @since 1.0, 2016-12-28 15:26:46
+ * @version $Id: $Id
  */
 public class TemplateCardLevelConfDTO extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class TemplateCardLevelConfDTO extends AlipayObject {
 	@ApiField("level_show_name")
 	private String levelShowName;
 
+	/**
+	 * <p>Getter for the field <code>level</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLevel() {
 		return this.level;
 	}
+	/**
+	 * <p>Setter for the field <code>level</code>.</p>
+	 *
+	 * @param level a {@link java.lang.String} object.
+	 */
 	public void setLevel(String level) {
 		this.level = level;
 	}
 
+	/**
+	 * <p>Getter for the field <code>levelDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLevelDesc() {
 		return this.levelDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>levelDesc</code>.</p>
+	 *
+	 * @param levelDesc a {@link java.lang.String} object.
+	 */
 	public void setLevelDesc(String levelDesc) {
 		this.levelDesc = levelDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>levelIcon</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLevelIcon() {
 		return this.levelIcon;
 	}
+	/**
+	 * <p>Setter for the field <code>levelIcon</code>.</p>
+	 *
+	 * @param levelIcon a {@link java.lang.String} object.
+	 */
 	public void setLevelIcon(String levelIcon) {
 		this.levelIcon = levelIcon;
 	}
 
+	/**
+	 * <p>Getter for the field <code>levelShowName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLevelShowName() {
 		return this.levelShowName;
 	}
+	/**
+	 * <p>Setter for the field <code>levelShowName</code>.</p>
+	 *
+	 * @param levelShowName a {@link java.lang.String} object.
+	 */
 	public void setLevelShowName(String levelShowName) {
 		this.levelShowName = levelShowName;
 	}

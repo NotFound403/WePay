@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑码创建接口
  *
  * @author auto create
- * @since 1.0, 2017-05-12 14:05:12
+ * @version $Id: $Id
  */
 public class KoubeiCateringKbcodeCreateModel extends AlipayObject {
 
@@ -41,30 +41,70 @@ public class KoubeiCateringKbcodeCreateModel extends AlipayObject {
 	@ApiField("stuff_type")
 	private String stuffType;
 
+	/**
+	 * <p>Getter for the field <code>bindInfoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbCodeBindInfoVO> getBindInfoList() {
 		return this.bindInfoList;
 	}
+	/**
+	 * <p>Setter for the field <code>bindInfoList</code>.</p>
+	 *
+	 * @param bindInfoList a {@link java.util.List} object.
+	 */
 	public void setBindInfoList(List<KbCodeBindInfoVO> bindInfoList) {
 		this.bindInfoList = bindInfoList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>stuffTemplate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStuffTemplate() {
 		return this.stuffTemplate;
 	}
+	/**
+	 * <p>Setter for the field <code>stuffTemplate</code>.</p>
+	 *
+	 * @param stuffTemplate a {@link java.lang.String} object.
+	 */
 	public void setStuffTemplate(String stuffTemplate) {
 		this.stuffTemplate = stuffTemplate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>stuffType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStuffType() {
 		return this.stuffType;
 	}
+	/**
+	 * <p>Setter for the field <code>stuffType</code>.</p>
+	 *
+	 * @param stuffType a {@link java.lang.String} object.
+	 */
 	public void setStuffType(String stuffType) {
 		this.stuffType = stuffType;
 	}

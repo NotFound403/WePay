@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 余利宝收益详情数据结构
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:37
+ * @version $Id: $Id
  */
 public class YLBProfitDetailInfo extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class YLBProfitDetailInfo extends AlipayObject {
 	@ApiField("week_profit")
 	private String weekProfit;
 
+	/**
+	 * <p>Getter for the field <code>dayProfit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDayProfit() {
 		return this.dayProfit;
 	}
+	/**
+	 * <p>Setter for the field <code>dayProfit</code>.</p>
+	 *
+	 * @param dayProfit a {@link java.lang.String} object.
+	 */
 	public void setDayProfit(String dayProfit) {
 		this.dayProfit = dayProfit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>monthProfit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMonthProfit() {
 		return this.monthProfit;
 	}
+	/**
+	 * <p>Setter for the field <code>monthProfit</code>.</p>
+	 *
+	 * @param monthProfit a {@link java.lang.String} object.
+	 */
 	public void setMonthProfit(String monthProfit) {
 		this.monthProfit = monthProfit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalProfit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalProfit() {
 		return this.totalProfit;
 	}
+	/**
+	 * <p>Setter for the field <code>totalProfit</code>.</p>
+	 *
+	 * @param totalProfit a {@link java.lang.String} object.
+	 */
 	public void setTotalProfit(String totalProfit) {
 		this.totalProfit = totalProfit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>weekProfit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWeekProfit() {
 		return this.weekProfit;
 	}
+	/**
+	 * <p>Setter for the field <code>weekProfit</code>.</p>
+	 *
+	 * @param weekProfit a {@link java.lang.String} object.
+	 */
 	public void setWeekProfit(String weekProfit) {
 		this.weekProfit = weekProfit;
 	}

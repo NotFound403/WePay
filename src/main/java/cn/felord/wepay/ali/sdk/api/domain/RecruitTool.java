@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 创建活动的招商信息
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class RecruitTool extends AlipayObject {
 
@@ -42,30 +42,70 @@ public class RecruitTool extends AlipayObject {
 	@ApiField("start_time")
 	private Date startTime;
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>excludeConstraintShops</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getExcludeConstraintShops() {
 		return this.excludeConstraintShops;
 	}
+	/**
+	 * <p>Setter for the field <code>excludeConstraintShops</code>.</p>
+	 *
+	 * @param excludeConstraintShops a {@link java.lang.Boolean} object.
+	 */
 	public void setExcludeConstraintShops(Boolean excludeConstraintShops) {
 		this.excludeConstraintShops = excludeConstraintShops;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pidShops</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PidShopInfo> getPidShops() {
 		return this.pidShops;
 	}
+	/**
+	 * <p>Setter for the field <code>pidShops</code>.</p>
+	 *
+	 * @param pidShops a {@link java.util.List} object.
+	 */
 	public void setPidShops(List<PidShopInfo> pidShops) {
 		this.pidShops = pidShops;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}

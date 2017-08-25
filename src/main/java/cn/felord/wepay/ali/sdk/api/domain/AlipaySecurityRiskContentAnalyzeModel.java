@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 内容风险识别接口服务
  *
  * @author auto create
- * @since 1.0, 2016-10-28 09:34:57
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskContentAnalyzeModel extends AlipayObject {
 
@@ -102,93 +102,223 @@ public class AlipaySecurityRiskContentAnalyzeModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> videoUrls;
 
+	/**
+	 * <p>Getter for the field <code>accountId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountId() {
 		return this.accountId;
 	}
+	/**
+	 * <p>Setter for the field <code>accountId</code>.</p>
+	 *
+	 * @param accountId a {@link java.lang.String} object.
+	 */
 	public void setAccountId(String accountId) {
 		this.accountId = accountId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountType() {
 		return this.accountType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountType</code>.</p>
+	 *
+	 * @param accountType a {@link java.lang.String} object.
+	 */
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appMainScene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppMainScene() {
 		return this.appMainScene;
 	}
+	/**
+	 * <p>Setter for the field <code>appMainScene</code>.</p>
+	 *
+	 * @param appMainScene a {@link java.lang.String} object.
+	 */
 	public void setAppMainScene(String appMainScene) {
 		this.appMainScene = appMainScene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appMainSceneId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppMainSceneId() {
 		return this.appMainSceneId;
 	}
+	/**
+	 * <p>Setter for the field <code>appMainSceneId</code>.</p>
+	 *
+	 * @param appMainSceneId a {@link java.lang.String} object.
+	 */
 	public void setAppMainSceneId(String appMainSceneId) {
 		this.appMainSceneId = appMainSceneId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppName() {
 		return this.appName;
 	}
+	/**
+	 * <p>Setter for the field <code>appName</code>.</p>
+	 *
+	 * @param appName a {@link java.lang.String} object.
+	 */
 	public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appScene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppScene() {
 		return this.appScene;
 	}
+	/**
+	 * <p>Setter for the field <code>appScene</code>.</p>
+	 *
+	 * @param appScene a {@link java.lang.String} object.
+	 */
 	public void setAppScene(String appScene) {
 		this.appScene = appScene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appSceneDataId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppSceneDataId() {
 		return this.appSceneDataId;
 	}
+	/**
+	 * <p>Setter for the field <code>appSceneDataId</code>.</p>
+	 *
+	 * @param appSceneDataId a {@link java.lang.String} object.
+	 */
 	public void setAppSceneDataId(String appSceneDataId) {
 		this.appSceneDataId = appSceneDataId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>audioUrls</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getAudioUrls() {
 		return this.audioUrls;
 	}
+	/**
+	 * <p>Setter for the field <code>audioUrls</code>.</p>
+	 *
+	 * @param audioUrls a {@link java.util.List} object.
+	 */
 	public void setAudioUrls(List<String> audioUrls) {
 		this.audioUrls = audioUrls;
 	}
 
+	/**
+	 * <p>Getter for the field <code>linkUrls</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getLinkUrls() {
 		return this.linkUrls;
 	}
+	/**
+	 * <p>Setter for the field <code>linkUrls</code>.</p>
+	 *
+	 * @param linkUrls a {@link java.util.List} object.
+	 */
 	public void setLinkUrls(List<String> linkUrls) {
 		this.linkUrls = linkUrls;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pictureUrls</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getPictureUrls() {
 		return this.pictureUrls;
 	}
+	/**
+	 * <p>Setter for the field <code>pictureUrls</code>.</p>
+	 *
+	 * @param pictureUrls a {@link java.util.List} object.
+	 */
 	public void setPictureUrls(List<String> pictureUrls) {
 		this.pictureUrls = pictureUrls;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishDate() {
 		return this.publishDate;
 	}
+	/**
+	 * <p>Setter for the field <code>publishDate</code>.</p>
+	 *
+	 * @param publishDate a {@link java.util.Date} object.
+	 */
 	public void setPublishDate(Date publishDate) {
 		this.publishDate = publishDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>text</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getText() {
 		return this.text;
 	}
+	/**
+	 * <p>Setter for the field <code>text</code>.</p>
+	 *
+	 * @param text a {@link java.lang.String} object.
+	 */
 	public void setText(String text) {
 		this.text = text;
 	}
 
+	/**
+	 * <p>Getter for the field <code>videoUrls</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getVideoUrls() {
 		return this.videoUrls;
 	}
+	/**
+	 * <p>Setter for the field <code>videoUrls</code>.</p>
+	 *
+	 * @param videoUrls a {@link java.util.List} object.
+	 */
 	public void setVideoUrls(List<String> videoUrls) {
 		this.videoUrls = videoUrls;
 	}

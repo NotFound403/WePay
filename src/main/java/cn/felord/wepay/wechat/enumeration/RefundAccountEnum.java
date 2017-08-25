@@ -8,8 +8,6 @@ package cn.felord.wepay.wechat.enumeration;
  * @version v1.0.0
  * @since 2017 /8/15  10:55
  */
-
-
 public enum RefundAccountEnum {
     /**
      * 未结算资金退款.

@@ -20,8 +20,8 @@ package cn.felord.wepay.ali.sdk.api.internal.util.codec;
 
 /**
  * <p>Provides the highest level of abstraction for Encoders.
- * This is the sister interface of {@link Decoder}.  Every implementation of
- * Encoder provides this common generic interface whic allows a user to pass a 
+ * This is the sister interface of {@link cn.felord.wepay.ali.sdk.api.internal.util.codec.Decoder}.  Every implementation of
+ * Encoder provides this common generic interface whic allows a user to pass a
  * generic Object to any Encoder implementation in the codec package.</p>
  *
  * @author Apache Software Foundation
@@ -30,15 +30,13 @@ package cn.felord.wepay.ali.sdk.api.internal.util.codec;
 public interface Encoder {
     
     /**
-     * Encodes an "Object" and returns the encoded content 
+     * Encodes an "Object" and returns the encoded content
      * as an Object.  The Objects here may just be <code>byte[]</code>
      * or <code>String</code>s depending on the implementation used.
-     *   
+     *
      * @param pObject An object ot encode
-     * 
      * @return An "encoded" Object
-     * 
-     * @throws EncoderException an encoder exception is
+     * @throws cn.felord.wepay.ali.sdk.api.internal.util.codec.EncoderException an encoder exception is
      *  thrown if the encoder experiences a failure
      *  condition during the encoding process.
      */

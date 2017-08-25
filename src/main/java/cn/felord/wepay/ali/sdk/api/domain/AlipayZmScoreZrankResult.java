@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 芝麻分分段
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @version $Id: $Id
  */
 public class AlipayZmScoreZrankResult extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayZmScoreZrankResult extends AlipayObject {
 	@ApiField("zrank")
 	private String zrank;
 
+	/**
+	 * <p>Getter for the field <code>zrank</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getZrank() {
 		return this.zrank;
 	}
+	/**
+	 * <p>Setter for the field <code>zrank</code>.</p>
+	 *
+	 * @param zrank a {@link java.lang.String} object.
+	 */
 	public void setZrank(String zrank) {
 		this.zrank = zrank;
 	}

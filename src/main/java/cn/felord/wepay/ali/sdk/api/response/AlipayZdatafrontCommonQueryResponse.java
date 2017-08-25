@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdatafront.common.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 16:28:03
+ * @version $Id: $Id
  */
 public class AlipayZdatafrontCommonQueryResponse extends AlipayResponse {
 
@@ -28,16 +28,36 @@ public class AlipayZdatafrontCommonQueryResponse extends AlipayResponse {
 	@ApiField("values")
 	private String values;
 
+	/**
+	 * <p>Setter for the field <code>cacheTimestamp</code>.</p>
+	 *
+	 * @param cacheTimestamp a {@link java.lang.Long} object.
+	 */
 	public void setCacheTimestamp(Long cacheTimestamp) {
 		this.cacheTimestamp = cacheTimestamp;
 	}
+	/**
+	 * <p>Getter for the field <code>cacheTimestamp</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCacheTimestamp( ) {
 		return this.cacheTimestamp;
 	}
 
+	/**
+	 * <p>Setter for the field <code>values</code>.</p>
+	 *
+	 * @param values a {@link java.lang.String} object.
+	 */
 	public void setValues(String values) {
 		this.values = values;
 	}
+	/**
+	 * <p>Getter for the field <code>values</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValues( ) {
 		return this.values;
 	}

@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 会员卡消费记录同步
  *
  * @author auto create
- * @since 1.0, 2017-06-23 14:51:37
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardConsumeSyncModel extends AlipayObject {
 
@@ -115,100 +115,240 @@ BIZ_CARD：支付宝业务卡号
 	@ApiField("benefit_info_detail")
 	private List<BenefitInfoDetail> useBenefitList;
 
+	/**
+	 * <p>Getter for the field <code>actPayAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActPayAmount() {
 		return this.actPayAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>actPayAmount</code>.</p>
+	 *
+	 * @param actPayAmount a {@link java.lang.String} object.
+	 */
 	public void setActPayAmount(String actPayAmount) {
 		this.actPayAmount = actPayAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public MerchantCard getCardInfo() {
 		return this.cardInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @param cardInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gainBenefitList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<BenefitInfoDetail> getGainBenefitList() {
 		return this.gainBenefitList;
 	}
+	/**
+	 * <p>Setter for the field <code>gainBenefitList</code>.</p>
+	 *
+	 * @param gainBenefitList a {@link java.util.List} object.
+	 */
 	public void setGainBenefitList(List<BenefitInfoDetail> gainBenefitList) {
 		this.gainBenefitList = gainBenefitList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopCode() {
 		return this.shopCode;
 	}
+	/**
+	 * <p>Setter for the field <code>shopCode</code>.</p>
+	 *
+	 * @param shopCode a {@link java.lang.String} object.
+	 */
 	public void setShopCode(String shopCode) {
 		this.shopCode = shopCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>swipeCertType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSwipeCertType() {
 		return this.swipeCertType;
 	}
+	/**
+	 * <p>Setter for the field <code>swipeCertType</code>.</p>
+	 *
+	 * @param swipeCertType a {@link java.lang.String} object.
+	 */
 	public void setSwipeCertType(String swipeCertType) {
 		this.swipeCertType = swipeCertType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetCardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetCardNo() {
 		return this.targetCardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>targetCardNo</code>.</p>
+	 *
+	 * @param targetCardNo a {@link java.lang.String} object.
+	 */
 	public void setTargetCardNo(String targetCardNo) {
 		this.targetCardNo = targetCardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetCardNoType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetCardNoType() {
 		return this.targetCardNoType;
 	}
+	/**
+	 * <p>Setter for the field <code>targetCardNoType</code>.</p>
+	 *
+	 * @param targetCardNoType a {@link java.lang.String} object.
+	 */
 	public void setTargetCardNoType(String targetCardNoType) {
 		this.targetCardNoType = targetCardNoType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeAmount() {
 		return this.tradeAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeAmount</code>.</p>
+	 *
+	 * @param tradeAmount a {@link java.lang.String} object.
+	 */
 	public void setTradeAmount(String tradeAmount) {
 		this.tradeAmount = tradeAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeName() {
 		return this.tradeName;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeName</code>.</p>
+	 *
+	 * @param tradeName a {@link java.lang.String} object.
+	 */
 	public void setTradeName(String tradeName) {
 		this.tradeName = tradeName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getTradeTime() {
 		return this.tradeTime;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeTime</code>.</p>
+	 *
+	 * @param tradeTime a {@link java.util.Date} object.
+	 */
 	public void setTradeTime(Date tradeTime) {
 		this.tradeTime = tradeTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeType() {
 		return this.tradeType;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeType</code>.</p>
+	 *
+	 * @param tradeType a {@link java.lang.String} object.
+	 */
 	public void setTradeType(String tradeType) {
 		this.tradeType = tradeType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>useBenefitList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<BenefitInfoDetail> getUseBenefitList() {
 		return this.useBenefitList;
 	}
+	/**
+	 * <p>Setter for the field <code>useBenefitList</code>.</p>
+	 *
+	 * @param useBenefitList a {@link java.util.List} object.
+	 */
 	public void setUseBenefitList(List<BenefitInfoDetail> useBenefitList) {
 		this.useBenefitList = useBenefitList;
 	}

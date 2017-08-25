@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * isv 回传的商户操作行为信息调用接口
  *
  * @author auto create
- * @since 1.0, 2017-06-08 10:03:38
+ * @version $Id: $Id
  */
 public class AlipayOfflineProviderShopactionRecordModel extends AlipayObject {
 
@@ -71,51 +71,121 @@ public class AlipayOfflineProviderShopactionRecordModel extends AlipayObject {
 	@ApiField("outer_shop_do")
 	private OuterShopDO outerShopDo;
 
+	/**
+	 * <p>Getter for the field <code>actionDetail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionDetail() {
 		return this.actionDetail;
 	}
+	/**
+	 * <p>Setter for the field <code>actionDetail</code>.</p>
+	 *
+	 * @param actionDetail a {@link java.lang.String} object.
+	 */
 	public void setActionDetail(String actionDetail) {
 		this.actionDetail = actionDetail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionOuterId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionOuterId() {
 		return this.actionOuterId;
 	}
+	/**
+	 * <p>Setter for the field <code>actionOuterId</code>.</p>
+	 *
+	 * @param actionOuterId a {@link java.lang.String} object.
+	 */
 	public void setActionOuterId(String actionOuterId) {
 		this.actionOuterId = actionOuterId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionType() {
 		return this.actionType;
 	}
+	/**
+	 * <p>Setter for the field <code>actionType</code>.</p>
+	 *
+	 * @param actionType a {@link java.lang.String} object.
+	 */
 	public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dateTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDateTime() {
 		return this.dateTime;
 	}
+	/**
+	 * <p>Setter for the field <code>dateTime</code>.</p>
+	 *
+	 * @param dateTime a {@link java.lang.String} object.
+	 */
 	public void setDateTime(String dateTime) {
 		this.dateTime = dateTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntity() {
 		return this.entity;
 	}
+	/**
+	 * <p>Setter for the field <code>entity</code>.</p>
+	 *
+	 * @param entity a {@link java.lang.String} object.
+	 */
 	public void setEntity(String entity) {
 		this.entity = entity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>industry</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIndustry() {
 		return this.industry;
 	}
+	/**
+	 * <p>Setter for the field <code>industry</code>.</p>
+	 *
+	 * @param industry a {@link java.lang.String} object.
+	 */
 	public void setIndustry(String industry) {
 		this.industry = industry;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outerShopDo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.OuterShopDO} object.
+	 */
 	public OuterShopDO getOuterShopDo() {
 		return this.outerShopDo;
 	}
+	/**
+	 * <p>Setter for the field <code>outerShopDo</code>.</p>
+	 *
+	 * @param outerShopDo a {@link cn.felord.wepay.ali.sdk.api.domain.OuterShopDO} object.
+	 */
 	public void setOuterShopDo(OuterShopDO outerShopDo) {
 		this.outerShopDo = outerShopDo;
 	}

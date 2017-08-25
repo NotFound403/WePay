@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 机具绑定信息，包括机具ID和是否绑定门店
  *
  * @author auto create
- * @since 1.0, 2015-11-20 19:28:49
+ * @version $Id: $Id
  */
 public class EquipmentBindInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class EquipmentBindInfo extends AlipayObject {
 	@ApiField("is_bind_shop")
 	private String isBindShop;
 
+	/**
+	 * <p>Getter for the field <code>equipmentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEquipmentId() {
 		return this.equipmentId;
 	}
+	/**
+	 * <p>Setter for the field <code>equipmentId</code>.</p>
+	 *
+	 * @param equipmentId a {@link java.lang.String} object.
+	 */
 	public void setEquipmentId(String equipmentId) {
 		this.equipmentId = equipmentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isBindShop</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsBindShop() {
 		return this.isBindShop;
 	}
+	/**
+	 * <p>Setter for the field <code>isBindShop</code>.</p>
+	 *
+	 * @param isBindShop a {@link java.lang.String} object.
+	 */
 	public void setIsBindShop(String isBindShop) {
 		this.isBindShop = isBindShop;
 	}

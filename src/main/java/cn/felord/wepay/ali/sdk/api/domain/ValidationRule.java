@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 输入域规则校验模型
  *
  * @author auto create
- * @since 1.0, 2013-12-05 14:40:29
+ * @version $Id: $Id
  */
 public class ValidationRule extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class ValidationRule extends AlipayObject {
 	@ApiField("rule_text")
 	private String ruleText;
 
+	/**
+	 * <p>Getter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorMsg() {
 		return this.errorMsg;
 	}
+	/**
+	 * <p>Setter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @param errorMsg a {@link java.lang.String} object.
+	 */
 	public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleText</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleText() {
 		return this.ruleText;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleText</code>.</p>
+	 *
+	 * @param ruleText a {@link java.lang.String} object.
+	 */
 	public void setRuleText(String ruleText) {
 		this.ruleText = ruleText;
 	}

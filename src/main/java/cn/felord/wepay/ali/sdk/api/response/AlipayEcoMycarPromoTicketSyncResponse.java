@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.promo.ticket.sync response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-12 09:57:58
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarPromoTicketSyncResponse extends AlipayResponse {
 

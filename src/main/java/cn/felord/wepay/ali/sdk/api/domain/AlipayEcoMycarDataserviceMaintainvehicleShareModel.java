@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 同步评论接口
  *
  * @author auto create
- * @since 1.0, 2017-04-12 11:49:20
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarDataserviceMaintainvehicleShareModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEcoMycarDataserviceMaintainvehicleShareModel extends AlipayOb
 	@ApiField("vid")
 	private String vid;
 
+	/**
+	 * <p>Getter for the field <code>vid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVid() {
 		return this.vid;
 	}
+	/**
+	 * <p>Setter for the field <code>vid</code>.</p>
+	 *
+	 * @param vid a {@link java.lang.String} object.
+	 */
 	public void setVid(String vid) {
 		this.vid = vid;
 	}

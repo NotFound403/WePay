@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.xwbtest.purchase response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-20 15:51:58
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdXwbtestPurchaseResponse extends AlipayResponse {
 
@@ -41,30 +41,70 @@ public class AlipaySecurityProdXwbtestPurchaseResponse extends AlipayResponse {
 	@ApiField("idcard")
 	private String idcard;
 
+	/**
+	 * <p>Setter for the field <code>add</code>.</p>
+	 *
+	 * @param add a {@link java.lang.String} object.
+	 */
 	public void setAdd(String add) {
 		this.add = add;
 	}
+	/**
+	 * <p>Getter for the field <code>add</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdd( ) {
 		return this.add;
 	}
 
+	/**
+	 * <p>Setter for the field <code>as</code>.</p>
+	 *
+	 * @param as a {@link java.lang.String} object.
+	 */
 	public void setAs(String as) {
 		this.as = as;
 	}
+	/**
+	 * <p>Getter for the field <code>as</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAs( ) {
 		return this.as;
 	}
 
+	/**
+	 * <p>Setter for the field <code>del</code>.</p>
+	 *
+	 * @param del a {@link java.util.List} object.
+	 */
 	public void setDel(List<Boolean> del) {
 		this.del = del;
 	}
+	/**
+	 * <p>Getter for the field <code>del</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Boolean> getDel( ) {
 		return this.del;
 	}
 
+	/**
+	 * <p>Setter for the field <code>idcard</code>.</p>
+	 *
+	 * @param idcard a {@link java.lang.String} object.
+	 */
 	public void setIdcard(String idcard) {
 		this.idcard = idcard;
 	}
+	/**
+	 * <p>Getter for the field <code>idcard</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdcard( ) {
 		return this.idcard;
 	}

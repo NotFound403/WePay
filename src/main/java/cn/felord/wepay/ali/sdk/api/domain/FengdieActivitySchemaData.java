@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 初始化凤蝶应用时传入的默认数据
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:11
+ * @version $Id: $Id
  */
 public class FengdieActivitySchemaData extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class FengdieActivitySchemaData extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Getter for the field <code>data</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getData() {
 		return this.data;
 	}
+	/**
+	 * <p>Setter for the field <code>data</code>.</p>
+	 *
+	 * @param data a {@link java.lang.String} object.
+	 */
 	public void setData(String data) {
 		this.data = data;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}

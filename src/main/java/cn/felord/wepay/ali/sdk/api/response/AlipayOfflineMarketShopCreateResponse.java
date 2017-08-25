@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:33
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopCreateResponse extends AlipayResponse {
 
@@ -59,51 +59,121 @@ WAIT_MERCHANT_CONFIRM：等待商户确认
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Setter for the field <code>applyId</code>.</p>
+	 *
+	 * @param applyId a {@link java.lang.String} object.
+	 */
 	public void setApplyId(String applyId) {
 		this.applyId = applyId;
 	}
+	/**
+	 * <p>Getter for the field <code>applyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyId( ) {
 		return this.applyId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @param auditDesc a {@link java.lang.String} object.
+	 */
 	public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
+	/**
+	 * <p>Getter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @param auditStatus a {@link java.lang.String} object.
+	 */
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isOnline</code>.</p>
+	 *
+	 * @param isOnline a {@link java.lang.String} object.
+	 */
 	public void setIsOnline(String isOnline) {
 		this.isOnline = isOnline;
 	}
+	/**
+	 * <p>Getter for the field <code>isOnline</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsOnline( ) {
 		return this.isOnline;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isShow</code>.</p>
+	 *
+	 * @param isShow a {@link java.lang.String} object.
+	 */
 	public void setIsShow(String isShow) {
 		this.isShow = isShow;
 	}
+	/**
+	 * <p>Getter for the field <code>isShow</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsShow( ) {
 		return this.isShow;
 	}
 
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode( ) {
 		return this.resultCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId( ) {
 		return this.shopId;
 	}

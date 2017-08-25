@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 营业执照信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @version $Id: $Id
  */
 public class BusinessLicenceInfo extends AlipayObject {
 
@@ -85,86 +85,206 @@ public class BusinessLicenceInfo extends AlipayObject {
 	@ApiField("org_code_certificate_pic")
 	private String orgCodeCertificatePic;
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseAuthPic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseAuthPic() {
 		return this.businessLicenseAuthPic;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseAuthPic</code>.</p>
+	 *
+	 * @param businessLicenseAuthPic a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseAuthPic(String businessLicenseAuthPic) {
 		this.businessLicenseAuthPic = businessLicenseAuthPic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseCity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseCity() {
 		return this.businessLicenseCity;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseCity</code>.</p>
+	 *
+	 * @param businessLicenseCity a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseCity(String businessLicenseCity) {
 		this.businessLicenseCity = businessLicenseCity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseIndate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseIndate() {
 		return this.businessLicenseIndate;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseIndate</code>.</p>
+	 *
+	 * @param businessLicenseIndate a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseIndate(String businessLicenseIndate) {
 		this.businessLicenseIndate = businessLicenseIndate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseIsThreeInOne</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getBusinessLicenseIsThreeInOne() {
 		return this.businessLicenseIsThreeInOne;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseIsThreeInOne</code>.</p>
+	 *
+	 * @param businessLicenseIsThreeInOne a {@link java.lang.Boolean} object.
+	 */
 	public void setBusinessLicenseIsThreeInOne(Boolean businessLicenseIsThreeInOne) {
 		this.businessLicenseIsThreeInOne = businessLicenseIsThreeInOne;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseNo() {
 		return this.businessLicenseNo;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseNo</code>.</p>
+	 *
+	 * @param businessLicenseNo a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseNo(String businessLicenseNo) {
 		this.businessLicenseNo = businessLicenseNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicensePic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicensePic() {
 		return this.businessLicensePic;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicensePic</code>.</p>
+	 *
+	 * @param businessLicensePic a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicensePic(String businessLicensePic) {
 		this.businessLicensePic = businessLicensePic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseProvince</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseProvince() {
 		return this.businessLicenseProvince;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseProvince</code>.</p>
+	 *
+	 * @param businessLicenseProvince a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseProvince(String businessLicenseProvince) {
 		this.businessLicenseProvince = businessLicenseProvince;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessScope</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessScope() {
 		return this.businessScope;
 	}
+	/**
+	 * <p>Setter for the field <code>businessScope</code>.</p>
+	 *
+	 * @param businessScope a {@link java.lang.String} object.
+	 */
 	public void setBusinessScope(String businessScope) {
 		this.businessScope = businessScope;
 	}
 
+	/**
+	 * <p>Getter for the field <code>companyAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCompanyAddress() {
 		return this.companyAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>companyAddress</code>.</p>
+	 *
+	 * @param companyAddress a {@link java.lang.String} object.
+	 */
 	public void setCompanyAddress(String companyAddress) {
 		this.companyAddress = companyAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>companyName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCompanyName() {
 		return this.companyName;
 	}
+	/**
+	 * <p>Setter for the field <code>companyName</code>.</p>
+	 *
+	 * @param companyName a {@link java.lang.String} object.
+	 */
 	public void setCompanyName(String companyName) {
 		this.companyName = companyName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orgCodeCertificateNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrgCodeCertificateNo() {
 		return this.orgCodeCertificateNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orgCodeCertificateNo</code>.</p>
+	 *
+	 * @param orgCodeCertificateNo a {@link java.lang.String} object.
+	 */
 	public void setOrgCodeCertificateNo(String orgCodeCertificateNo) {
 		this.orgCodeCertificateNo = orgCodeCertificateNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orgCodeCertificatePic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrgCodeCertificatePic() {
 		return this.orgCodeCertificatePic;
 	}
+	/**
+	 * <p>Setter for the field <code>orgCodeCertificatePic</code>.</p>
+	 *
+	 * @param orgCodeCertificatePic a {@link java.lang.String} object.
+	 */
 	public void setOrgCodeCertificatePic(String orgCodeCertificatePic) {
 		this.orgCodeCertificatePic = orgCodeCertificatePic;
 	}

@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:39:57
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 
@@ -27,16 +27,36 @@ public class AlipayMarketingCardQueryResponse extends AlipayResponse {
 	@ApiField("schema_url")
 	private String schemaUrl;
 
+	/**
+	 * <p>Setter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @param cardInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public MerchantCard getCardInfo( ) {
 		return this.cardInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>schemaUrl</code>.</p>
+	 *
+	 * @param schemaUrl a {@link java.lang.String} object.
+	 */
 	public void setSchemaUrl(String schemaUrl) {
 		this.schemaUrl = schemaUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>schemaUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchemaUrl( ) {
 		return this.schemaUrl;
 	}

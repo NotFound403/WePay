@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 创建测试支付宝账户
  *
  * @author auto create
- * @since 1.0, 2017-05-10 20:20:03
+ * @version $Id: $Id
  */
 public class AlipayUserAntpaasTestaccountCreateModel extends AlipayObject {
 
@@ -91,93 +91,223 @@ public class AlipayUserAntpaasTestaccountCreateModel extends AlipayObject {
 	@ApiField("user_type")
 	private String userType;
 
+	/**
+	 * <p>Getter for the field <code>accountLevel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountLevel() {
 		return this.accountLevel;
 	}
+	/**
+	 * <p>Setter for the field <code>accountLevel</code>.</p>
+	 *
+	 * @param accountLevel a {@link java.lang.String} object.
+	 */
 	public void setAccountLevel(String accountLevel) {
 		this.accountLevel = accountLevel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertName() {
 		return this.certName;
 	}
+	/**
+	 * <p>Setter for the field <code>certName</code>.</p>
+	 *
+	 * @param certName a {@link java.lang.String} object.
+	 */
 	public void setCertName(String certName) {
 		this.certName = certName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertType() {
 		return this.certType;
 	}
+	/**
+	 * <p>Setter for the field <code>certType</code>.</p>
+	 *
+	 * @param certType a {@link java.lang.String} object.
+	 */
 	public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonType() {
 		return this.logonType;
 	}
+	/**
+	 * <p>Setter for the field <code>logonType</code>.</p>
+	 *
+	 * @param logonType a {@link java.lang.String} object.
+	 */
 	public void setLogonType(String logonType) {
 		this.logonType = logonType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operationType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperationType() {
 		return this.operationType;
 	}
+	/**
+	 * <p>Setter for the field <code>operationType</code>.</p>
+	 *
+	 * @param operationType a {@link java.lang.String} object.
+	 */
 	public void setOperationType(String operationType) {
 		this.operationType = operationType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operatorId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorId() {
 		return this.operatorId;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorId</code>.</p>
+	 *
+	 * @param operatorId a {@link java.lang.String} object.
+	 */
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>remoteIp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRemoteIp() {
 		return this.remoteIp;
 	}
+	/**
+	 * <p>Setter for the field <code>remoteIp</code>.</p>
+	 *
+	 * @param remoteIp a {@link java.lang.String} object.
+	 */
 	public void setRemoteIp(String remoteIp) {
 		this.remoteIp = remoteIp;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserStatus() {
 		return this.userStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>userStatus</code>.</p>
+	 *
+	 * @param userStatus a {@link java.lang.String} object.
+	 */
 	public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserType() {
 		return this.userType;
 	}
+	/**
+	 * <p>Setter for the field <code>userType</code>.</p>
+	 *
+	 * @param userType a {@link java.lang.String} object.
+	 */
 	public void setUserType(String userType) {
 		this.userType = userType;
 	}

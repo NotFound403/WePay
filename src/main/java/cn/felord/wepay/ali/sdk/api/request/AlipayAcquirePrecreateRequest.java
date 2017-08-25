@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.acquire.precreate request
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-05-28 11:57:10
+ * @version $Id: $Id
  */
 public class AlipayAcquirePrecreateRequest implements AlipayRequest<AlipayAcquirePrecreateResponse> {
 
@@ -120,128 +120,308 @@ m-分钟，h-小时，d-天，1c-当天（无论交易何时创建，都在0点�
 	 */
 	private String totalFee;
 
+	/**
+	 * <p>Setter for the field <code>body</code>.</p>
+	 *
+	 * @param body a {@link java.lang.String} object.
+	 */
 	public void setBody(String body) {
 		this.body = body;
 	}
+	/**
+	 * <p>Getter for the field <code>body</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBody() {
 		return this.body;
 	}
 
+	/**
+	 * <p>Setter for the field <code>channelParameters</code>.</p>
+	 *
+	 * @param channelParameters a {@link java.lang.String} object.
+	 */
 	public void setChannelParameters(String channelParameters) {
 		this.channelParameters = channelParameters;
 	}
+	/**
+	 * <p>Getter for the field <code>channelParameters</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelParameters() {
 		return this.channelParameters;
 	}
 
+	/**
+	 * <p>Setter for the field <code>currency</code>.</p>
+	 *
+	 * @param currency a {@link java.lang.String} object.
+	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
+	/**
+	 * <p>Getter for the field <code>currency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCurrency() {
 		return this.currency;
 	}
 
+	/**
+	 * <p>Setter for the field <code>extendParams</code>.</p>
+	 *
+	 * @param extendParams a {@link java.lang.String} object.
+	 */
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
 	}
+	/**
+	 * <p>Getter for the field <code>extendParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendParams() {
 		return this.extendParams;
 	}
 
+	/**
+	 * <p>Setter for the field <code>goodsDetail</code>.</p>
+	 *
+	 * @param goodsDetail a {@link java.lang.String} object.
+	 */
 	public void setGoodsDetail(String goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
+	/**
+	 * <p>Getter for the field <code>goodsDetail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGoodsDetail() {
 		return this.goodsDetail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itBPay</code>.</p>
+	 *
+	 * @param itBPay a {@link java.lang.String} object.
+	 */
 	public void setItBPay(String itBPay) {
 		this.itBPay = itBPay;
 	}
+	/**
+	 * <p>Getter for the field <code>itBPay</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItBPay() {
 		return this.itBPay;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operatorCode</code>.</p>
+	 *
+	 * @param operatorCode a {@link java.lang.String} object.
+	 */
 	public void setOperatorCode(String operatorCode) {
 		this.operatorCode = operatorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>operatorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorCode() {
 		return this.operatorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operatorId</code>.</p>
+	 *
+	 * @param operatorId a {@link java.lang.String} object.
+	 */
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
+	/**
+	 * <p>Getter for the field <code>operatorId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorId() {
 		return this.operatorId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>price</code>.</p>
+	 *
+	 * @param price a {@link java.lang.String} object.
+	 */
 	public void setPrice(String price) {
 		this.price = price;
 	}
+	/**
+	 * <p>Getter for the field <code>price</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrice() {
 		return this.price;
 	}
 
+	/**
+	 * <p>Setter for the field <code>quantity</code>.</p>
+	 *
+	 * @param quantity a {@link java.lang.String} object.
+	 */
 	public void setQuantity(String quantity) {
 		this.quantity = quantity;
 	}
+	/**
+	 * <p>Getter for the field <code>quantity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQuantity() {
 		return this.quantity;
 	}
 
+	/**
+	 * <p>Setter for the field <code>royaltyParameters</code>.</p>
+	 *
+	 * @param royaltyParameters a {@link java.lang.String} object.
+	 */
 	public void setRoyaltyParameters(String royaltyParameters) {
 		this.royaltyParameters = royaltyParameters;
 	}
+	/**
+	 * <p>Getter for the field <code>royaltyParameters</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRoyaltyParameters() {
 		return this.royaltyParameters;
 	}
 
+	/**
+	 * <p>Setter for the field <code>royaltyType</code>.</p>
+	 *
+	 * @param royaltyType a {@link java.lang.String} object.
+	 */
 	public void setRoyaltyType(String royaltyType) {
 		this.royaltyType = royaltyType;
 	}
+	/**
+	 * <p>Getter for the field <code>royaltyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRoyaltyType() {
 		return this.royaltyType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerEmail</code>.</p>
+	 *
+	 * @param sellerEmail a {@link java.lang.String} object.
+	 */
 	public void setSellerEmail(String sellerEmail) {
 		this.sellerEmail = sellerEmail;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerEmail() {
 		return this.sellerEmail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerId</code>.</p>
+	 *
+	 * @param sellerId a {@link java.lang.String} object.
+	 */
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerId() {
 		return this.sellerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>showUrl</code>.</p>
+	 *
+	 * @param showUrl a {@link java.lang.String} object.
+	 */
 	public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>showUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShowUrl() {
 		return this.showUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalFee</code>.</p>
+	 *
+	 * @param totalFee a {@link java.lang.String} object.
+	 */
 	public void setTotalFee(String totalFee) {
 		this.totalFee = totalFee;
 	}
+	/**
+	 * <p>Getter for the field <code>totalFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalFee() {
 		return this.totalFee;
 	}
@@ -253,58 +433,104 @@ m-分钟，h-小时，d-天，1c-当天（无论交易何时创建，都在0点�
 	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }	
 
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.acquire.precreate";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("body", this.body);
@@ -331,6 +557,12 @@ m-分钟，h-小时，d-天，1c-当天（无论交易何时创建，都在0点�
 		return txtParams;
 	}
 
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -338,28 +570,45 @@ m-分钟，h-小时，d-天，1c-当天（无论交易何时创建，都在0点�
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayAcquirePrecreateResponse> getResponseClass() {
 		return AlipayAcquirePrecreateResponse.class;
 	}
 	
 
+    /**
+     * <p>isNeedEncrypt.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

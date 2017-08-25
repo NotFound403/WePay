@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 投放渠道
  *
  * @author auto create
- * @since 1.0, 2016-10-31 12:00:30
+ * @version $Id: $Id
  */
 public class PublishChannel extends AlipayObject {
 
@@ -44,30 +44,70 @@ EXTERNAL：外部投放，口碑需要感知任何投放内容
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>config</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConfig() {
 		return this.config;
 	}
+	/**
+	 * <p>Setter for the field <code>config</code>.</p>
+	 *
+	 * @param config a {@link java.lang.String} object.
+	 */
 	public void setConfig(String config) {
 		this.config = config;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

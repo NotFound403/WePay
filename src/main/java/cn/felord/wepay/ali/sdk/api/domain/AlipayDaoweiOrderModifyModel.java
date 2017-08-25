@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 服务订单修改接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:01:59
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderModifyModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class AlipayDaoweiOrderModifyModel extends AlipayObject {
 	@ApiField("real_amount")
 	private String realAmount;
 
+	/**
+	 * <p>Getter for the field <code>address</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddress() {
 		return this.address;
 	}
+	/**
+	 * <p>Setter for the field <code>address</code>.</p>
+	 *
+	 * @param address a {@link java.lang.String} object.
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtStart() {
 		return this.gmtStart;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @param gmtStart a {@link java.lang.String} object.
+	 */
 	public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>modifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getModifyType() {
 		return this.modifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>modifyType</code>.</p>
+	 *
+	 * @param modifyType a {@link java.lang.String} object.
+	 */
 	public void setModifyType(String modifyType) {
 		this.modifyType = modifyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>originAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginAmount() {
 		return this.originAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>originAmount</code>.</p>
+	 *
+	 * @param originAmount a {@link java.lang.String} object.
+	 */
 	public void setOriginAmount(String originAmount) {
 		this.originAmount = originAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>realAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealAmount() {
 		return this.realAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>realAmount</code>.</p>
+	 *
+	 * @param realAmount a {@link java.lang.String} object.
+	 */
 	public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}

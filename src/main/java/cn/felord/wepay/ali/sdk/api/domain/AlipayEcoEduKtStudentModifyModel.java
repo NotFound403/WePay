@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 学生信息更新
  *
  * @author auto create
- * @since 1.0, 2017-06-13 10:29:37
+ * @version $Id: $Id
  */
 public class AlipayEcoEduKtStudentModifyModel extends AlipayObject {
 
@@ -62,58 +62,138 @@ public class AlipayEcoEduKtStudentModifyModel extends AlipayObject {
 	@ApiField("student_no")
 	private String studentNo;
 
+	/**
+	 * <p>Getter for the field <code>childName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChildName() {
 		return this.childName;
 	}
+	/**
+	 * <p>Setter for the field <code>childName</code>.</p>
+	 *
+	 * @param childName a {@link java.lang.String} object.
+	 */
 	public void setChildName(String childName) {
 		this.childName = childName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isvPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvPid() {
 		return this.isvPid;
 	}
+	/**
+	 * <p>Setter for the field <code>isvPid</code>.</p>
+	 *
+	 * @param isvPid a {@link java.lang.String} object.
+	 */
 	public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolNo() {
 		return this.schoolNo;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolNo</code>.</p>
+	 *
+	 * @param schoolNo a {@link java.lang.String} object.
+	 */
 	public void setSchoolNo(String schoolNo) {
 		this.schoolNo = schoolNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolPid() {
 		return this.schoolPid;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolPid</code>.</p>
+	 *
+	 * @param schoolPid a {@link java.lang.String} object.
+	 */
 	public void setSchoolPid(String schoolPid) {
 		this.schoolPid = schoolPid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>studentCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStudentCode() {
 		return this.studentCode;
 	}
+	/**
+	 * <p>Setter for the field <code>studentCode</code>.</p>
+	 *
+	 * @param studentCode a {@link java.lang.String} object.
+	 */
 	public void setStudentCode(String studentCode) {
 		this.studentCode = studentCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>studentIdentify</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStudentIdentify() {
 		return this.studentIdentify;
 	}
+	/**
+	 * <p>Setter for the field <code>studentIdentify</code>.</p>
+	 *
+	 * @param studentIdentify a {@link java.lang.String} object.
+	 */
 	public void setStudentIdentify(String studentIdentify) {
 		this.studentIdentify = studentIdentify;
 	}
 
+	/**
+	 * <p>Getter for the field <code>studentNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStudentNo() {
 		return this.studentNo;
 	}
+	/**
+	 * <p>Setter for the field <code>studentNo</code>.</p>
+	 *
+	 * @param studentNo a {@link java.lang.String} object.
+	 */
 	public void setStudentNo(String studentNo) {
 		this.studentNo = studentNo;
 	}

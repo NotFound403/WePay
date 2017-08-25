@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.security.risk.detect request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-04 14:55:25
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskDetectRequest implements AlipayRequest<AlipaySecurityRiskDetectResponse> {
 
@@ -298,394 +298,954 @@ public class AlipaySecurityRiskDetectRequest implements AlipayRequest<AlipaySecu
 	 */
 	private String transportType;
 
+	/**
+	 * <p>Setter for the field <code>buyerAccountNo</code>.</p>
+	 *
+	 * @param buyerAccountNo a {@link java.lang.String} object.
+	 */
 	public void setBuyerAccountNo(String buyerAccountNo) {
 		this.buyerAccountNo = buyerAccountNo;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerAccountNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerAccountNo() {
 		return this.buyerAccountNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerBindBankcard</code>.</p>
+	 *
+	 * @param buyerBindBankcard a {@link java.lang.String} object.
+	 */
 	public void setBuyerBindBankcard(String buyerBindBankcard) {
 		this.buyerBindBankcard = buyerBindBankcard;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerBindBankcard</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerBindBankcard() {
 		return this.buyerBindBankcard;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerBindBankcardType</code>.</p>
+	 *
+	 * @param buyerBindBankcardType a {@link java.lang.String} object.
+	 */
 	public void setBuyerBindBankcardType(String buyerBindBankcardType) {
 		this.buyerBindBankcardType = buyerBindBankcardType;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerBindBankcardType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerBindBankcardType() {
 		return this.buyerBindBankcardType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerBindMobile</code>.</p>
+	 *
+	 * @param buyerBindMobile a {@link java.lang.String} object.
+	 */
 	public void setBuyerBindMobile(String buyerBindMobile) {
 		this.buyerBindMobile = buyerBindMobile;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerBindMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerBindMobile() {
 		return this.buyerBindMobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerGrade</code>.</p>
+	 *
+	 * @param buyerGrade a {@link java.lang.String} object.
+	 */
 	public void setBuyerGrade(String buyerGrade) {
 		this.buyerGrade = buyerGrade;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerGrade</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerGrade() {
 		return this.buyerGrade;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerIdentityNo</code>.</p>
+	 *
+	 * @param buyerIdentityNo a {@link java.lang.String} object.
+	 */
 	public void setBuyerIdentityNo(String buyerIdentityNo) {
 		this.buyerIdentityNo = buyerIdentityNo;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerIdentityNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerIdentityNo() {
 		return this.buyerIdentityNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerIdentityType</code>.</p>
+	 *
+	 * @param buyerIdentityType a {@link java.lang.String} object.
+	 */
 	public void setBuyerIdentityType(String buyerIdentityType) {
 		this.buyerIdentityType = buyerIdentityType;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerIdentityType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerIdentityType() {
 		return this.buyerIdentityType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerRealName</code>.</p>
+	 *
+	 * @param buyerRealName a {@link java.lang.String} object.
+	 */
 	public void setBuyerRealName(String buyerRealName) {
 		this.buyerRealName = buyerRealName;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerRealName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerRealName() {
 		return this.buyerRealName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerRegDate</code>.</p>
+	 *
+	 * @param buyerRegDate a {@link java.lang.String} object.
+	 */
 	public void setBuyerRegDate(String buyerRegDate) {
 		this.buyerRegDate = buyerRegDate;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerRegDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerRegDate() {
 		return this.buyerRegDate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerRegEmail</code>.</p>
+	 *
+	 * @param buyerRegEmail a {@link java.lang.String} object.
+	 */
 	public void setBuyerRegEmail(String buyerRegEmail) {
 		this.buyerRegEmail = buyerRegEmail;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerRegEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerRegEmail() {
 		return this.buyerRegEmail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerRegMobile</code>.</p>
+	 *
+	 * @param buyerRegMobile a {@link java.lang.String} object.
+	 */
 	public void setBuyerRegMobile(String buyerRegMobile) {
 		this.buyerRegMobile = buyerRegMobile;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerRegMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerRegMobile() {
 		return this.buyerRegMobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerSceneBankcard</code>.</p>
+	 *
+	 * @param buyerSceneBankcard a {@link java.lang.String} object.
+	 */
 	public void setBuyerSceneBankcard(String buyerSceneBankcard) {
 		this.buyerSceneBankcard = buyerSceneBankcard;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerSceneBankcard</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerSceneBankcard() {
 		return this.buyerSceneBankcard;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerSceneBankcardType</code>.</p>
+	 *
+	 * @param buyerSceneBankcardType a {@link java.lang.String} object.
+	 */
 	public void setBuyerSceneBankcardType(String buyerSceneBankcardType) {
 		this.buyerSceneBankcardType = buyerSceneBankcardType;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerSceneBankcardType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerSceneBankcardType() {
 		return this.buyerSceneBankcardType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerSceneEmail</code>.</p>
+	 *
+	 * @param buyerSceneEmail a {@link java.lang.String} object.
+	 */
 	public void setBuyerSceneEmail(String buyerSceneEmail) {
 		this.buyerSceneEmail = buyerSceneEmail;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerSceneEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerSceneEmail() {
 		return this.buyerSceneEmail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerSceneMobile</code>.</p>
+	 *
+	 * @param buyerSceneMobile a {@link java.lang.String} object.
+	 */
 	public void setBuyerSceneMobile(String buyerSceneMobile) {
 		this.buyerSceneMobile = buyerSceneMobile;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerSceneMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerSceneMobile() {
 		return this.buyerSceneMobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>currency</code>.</p>
+	 *
+	 * @param currency a {@link java.lang.String} object.
+	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
+	/**
+	 * <p>Getter for the field <code>currency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCurrency() {
 		return this.currency;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientBaseBand</code>.</p>
+	 *
+	 * @param envClientBaseBand a {@link java.lang.String} object.
+	 */
 	public void setEnvClientBaseBand(String envClientBaseBand) {
 		this.envClientBaseBand = envClientBaseBand;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientBaseBand</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientBaseBand() {
 		return this.envClientBaseBand;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientBaseStation</code>.</p>
+	 *
+	 * @param envClientBaseStation a {@link java.lang.String} object.
+	 */
 	public void setEnvClientBaseStation(String envClientBaseStation) {
 		this.envClientBaseStation = envClientBaseStation;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientBaseStation</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientBaseStation() {
 		return this.envClientBaseStation;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientCoordinates</code>.</p>
+	 *
+	 * @param envClientCoordinates a {@link java.lang.String} object.
+	 */
 	public void setEnvClientCoordinates(String envClientCoordinates) {
 		this.envClientCoordinates = envClientCoordinates;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientCoordinates</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientCoordinates() {
 		return this.envClientCoordinates;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientImei</code>.</p>
+	 *
+	 * @param envClientImei a {@link java.lang.String} object.
+	 */
 	public void setEnvClientImei(String envClientImei) {
 		this.envClientImei = envClientImei;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientImei</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientImei() {
 		return this.envClientImei;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientImsi</code>.</p>
+	 *
+	 * @param envClientImsi a {@link java.lang.String} object.
+	 */
 	public void setEnvClientImsi(String envClientImsi) {
 		this.envClientImsi = envClientImsi;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientImsi</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientImsi() {
 		return this.envClientImsi;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientIosUdid</code>.</p>
+	 *
+	 * @param envClientIosUdid a {@link java.lang.String} object.
+	 */
 	public void setEnvClientIosUdid(String envClientIosUdid) {
 		this.envClientIosUdid = envClientIosUdid;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientIosUdid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientIosUdid() {
 		return this.envClientIosUdid;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientIp</code>.</p>
+	 *
+	 * @param envClientIp a {@link java.lang.String} object.
+	 */
 	public void setEnvClientIp(String envClientIp) {
 		this.envClientIp = envClientIp;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientIp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientIp() {
 		return this.envClientIp;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientMac</code>.</p>
+	 *
+	 * @param envClientMac a {@link java.lang.String} object.
+	 */
 	public void setEnvClientMac(String envClientMac) {
 		this.envClientMac = envClientMac;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientMac</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientMac() {
 		return this.envClientMac;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientScreen</code>.</p>
+	 *
+	 * @param envClientScreen a {@link java.lang.String} object.
+	 */
 	public void setEnvClientScreen(String envClientScreen) {
 		this.envClientScreen = envClientScreen;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientScreen</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientScreen() {
 		return this.envClientScreen;
 	}
 
+	/**
+	 * <p>Setter for the field <code>envClientUuid</code>.</p>
+	 *
+	 * @param envClientUuid a {@link java.lang.String} object.
+	 */
 	public void setEnvClientUuid(String envClientUuid) {
 		this.envClientUuid = envClientUuid;
 	}
+	/**
+	 * <p>Getter for the field <code>envClientUuid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnvClientUuid() {
 		return this.envClientUuid;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemQuantity</code>.</p>
+	 *
+	 * @param itemQuantity a {@link java.lang.String} object.
+	 */
 	public void setItemQuantity(String itemQuantity) {
 		this.itemQuantity = itemQuantity;
 	}
+	/**
+	 * <p>Getter for the field <code>itemQuantity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemQuantity() {
 		return this.itemQuantity;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemUnitPrice</code>.</p>
+	 *
+	 * @param itemUnitPrice a {@link java.lang.String} object.
+	 */
 	public void setItemUnitPrice(String itemUnitPrice) {
 		this.itemUnitPrice = itemUnitPrice;
 	}
+	/**
+	 * <p>Getter for the field <code>itemUnitPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemUnitPrice() {
 		return this.itemUnitPrice;
 	}
 
+	/**
+	 * <p>Setter for the field <code>jsTokenId</code>.</p>
+	 *
+	 * @param jsTokenId a {@link java.lang.String} object.
+	 */
 	public void setJsTokenId(String jsTokenId) {
 		this.jsTokenId = jsTokenId;
 	}
+	/**
+	 * <p>Getter for the field <code>jsTokenId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getJsTokenId() {
 		return this.jsTokenId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderAmount</code>.</p>
+	 *
+	 * @param orderAmount a {@link java.lang.String} object.
+	 */
 	public void setOrderAmount(String orderAmount) {
 		this.orderAmount = orderAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>orderAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderAmount() {
 		return this.orderAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderCategory</code>.</p>
+	 *
+	 * @param orderCategory a {@link java.lang.String} object.
+	 */
 	public void setOrderCategory(String orderCategory) {
 		this.orderCategory = orderCategory;
 	}
+	/**
+	 * <p>Getter for the field <code>orderCategory</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderCategory() {
 		return this.orderCategory;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderCredateTime</code>.</p>
+	 *
+	 * @param orderCredateTime a {@link java.lang.String} object.
+	 */
 	public void setOrderCredateTime(String orderCredateTime) {
 		this.orderCredateTime = orderCredateTime;
 	}
+	/**
+	 * <p>Getter for the field <code>orderCredateTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderCredateTime() {
 		return this.orderCredateTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderItemCity</code>.</p>
+	 *
+	 * @param orderItemCity a {@link java.lang.String} object.
+	 */
 	public void setOrderItemCity(String orderItemCity) {
 		this.orderItemCity = orderItemCity;
 	}
+	/**
+	 * <p>Getter for the field <code>orderItemCity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderItemCity() {
 		return this.orderItemCity;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderItemName</code>.</p>
+	 *
+	 * @param orderItemName a {@link java.lang.String} object.
+	 */
 	public void setOrderItemName(String orderItemName) {
 		this.orderItemName = orderItemName;
 	}
+	/**
+	 * <p>Getter for the field <code>orderItemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderItemName() {
 		return this.orderItemName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId() {
 		return this.partnerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverAddress</code>.</p>
+	 *
+	 * @param receiverAddress a {@link java.lang.String} object.
+	 */
 	public void setReceiverAddress(String receiverAddress) {
 		this.receiverAddress = receiverAddress;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverAddress() {
 		return this.receiverAddress;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverCity</code>.</p>
+	 *
+	 * @param receiverCity a {@link java.lang.String} object.
+	 */
 	public void setReceiverCity(String receiverCity) {
 		this.receiverCity = receiverCity;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverCity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverCity() {
 		return this.receiverCity;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverDistrict</code>.</p>
+	 *
+	 * @param receiverDistrict a {@link java.lang.String} object.
+	 */
 	public void setReceiverDistrict(String receiverDistrict) {
 		this.receiverDistrict = receiverDistrict;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverDistrict</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverDistrict() {
 		return this.receiverDistrict;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverEmail</code>.</p>
+	 *
+	 * @param receiverEmail a {@link java.lang.String} object.
+	 */
 	public void setReceiverEmail(String receiverEmail) {
 		this.receiverEmail = receiverEmail;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverEmail() {
 		return this.receiverEmail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverMobile</code>.</p>
+	 *
+	 * @param receiverMobile a {@link java.lang.String} object.
+	 */
 	public void setReceiverMobile(String receiverMobile) {
 		this.receiverMobile = receiverMobile;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverMobile() {
 		return this.receiverMobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverName</code>.</p>
+	 *
+	 * @param receiverName a {@link java.lang.String} object.
+	 */
 	public void setReceiverName(String receiverName) {
 		this.receiverName = receiverName;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverName() {
 		return this.receiverName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverState</code>.</p>
+	 *
+	 * @param receiverState a {@link java.lang.String} object.
+	 */
 	public void setReceiverState(String receiverState) {
 		this.receiverState = receiverState;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverState</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverState() {
 		return this.receiverState;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiverZip</code>.</p>
+	 *
+	 * @param receiverZip a {@link java.lang.String} object.
+	 */
 	public void setReceiverZip(String receiverZip) {
 		this.receiverZip = receiverZip;
 	}
+	/**
+	 * <p>Getter for the field <code>receiverZip</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverZip() {
 		return this.receiverZip;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @param sceneCode a {@link java.lang.String} object.
+	 */
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}
+	/**
+	 * <p>Getter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerAccountNo</code>.</p>
+	 *
+	 * @param sellerAccountNo a {@link java.lang.String} object.
+	 */
 	public void setSellerAccountNo(String sellerAccountNo) {
 		this.sellerAccountNo = sellerAccountNo;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerAccountNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerAccountNo() {
 		return this.sellerAccountNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerBindBankcard</code>.</p>
+	 *
+	 * @param sellerBindBankcard a {@link java.lang.String} object.
+	 */
 	public void setSellerBindBankcard(String sellerBindBankcard) {
 		this.sellerBindBankcard = sellerBindBankcard;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerBindBankcard</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerBindBankcard() {
 		return this.sellerBindBankcard;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerBindBankcardType</code>.</p>
+	 *
+	 * @param sellerBindBankcardType a {@link java.lang.String} object.
+	 */
 	public void setSellerBindBankcardType(String sellerBindBankcardType) {
 		this.sellerBindBankcardType = sellerBindBankcardType;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerBindBankcardType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerBindBankcardType() {
 		return this.sellerBindBankcardType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerBindMobile</code>.</p>
+	 *
+	 * @param sellerBindMobile a {@link java.lang.String} object.
+	 */
 	public void setSellerBindMobile(String sellerBindMobile) {
 		this.sellerBindMobile = sellerBindMobile;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerBindMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerBindMobile() {
 		return this.sellerBindMobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerIdentityNo</code>.</p>
+	 *
+	 * @param sellerIdentityNo a {@link java.lang.String} object.
+	 */
 	public void setSellerIdentityNo(String sellerIdentityNo) {
 		this.sellerIdentityNo = sellerIdentityNo;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerIdentityNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerIdentityNo() {
 		return this.sellerIdentityNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerIdentityType</code>.</p>
+	 *
+	 * @param sellerIdentityType a {@link java.lang.String} object.
+	 */
 	public void setSellerIdentityType(String sellerIdentityType) {
 		this.sellerIdentityType = sellerIdentityType;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerIdentityType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerIdentityType() {
 		return this.sellerIdentityType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerRealName</code>.</p>
+	 *
+	 * @param sellerRealName a {@link java.lang.String} object.
+	 */
 	public void setSellerRealName(String sellerRealName) {
 		this.sellerRealName = sellerRealName;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerRealName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerRealName() {
 		return this.sellerRealName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerRegDate</code>.</p>
+	 *
+	 * @param sellerRegDate a {@link java.lang.String} object.
+	 */
 	public void setSellerRegDate(String sellerRegDate) {
 		this.sellerRegDate = sellerRegDate;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerRegDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerRegDate() {
 		return this.sellerRegDate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerRegEmail</code>.</p>
+	 *
+	 * @param sellerRegEmail a {@link java.lang.String} object.
+	 */
 	public void setSellerRegEmail(String sellerRegEmail) {
 		this.sellerRegEmail = sellerRegEmail;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerRegEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerRegEmail() {
 		return this.sellerRegEmail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerRegMoile</code>.</p>
+	 *
+	 * @param sellerRegMoile a {@link java.lang.String} object.
+	 */
 	public void setSellerRegMoile(String sellerRegMoile) {
 		this.sellerRegMoile = sellerRegMoile;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerRegMoile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerRegMoile() {
 		return this.sellerRegMoile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>transportType</code>.</p>
+	 *
+	 * @param transportType a {@link java.lang.String} object.
+	 */
 	public void setTransportType(String transportType) {
 		this.transportType = transportType;
 	}
+	/**
+	 * <p>Getter for the field <code>transportType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransportType() {
 		return this.transportType;
 	}
@@ -697,58 +1257,104 @@ public class AlipaySecurityRiskDetectRequest implements AlipayRequest<AlipaySecu
 	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }	
 
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.security.risk.detect";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("buyer_account_no", this.buyerAccountNo);
@@ -813,6 +1419,12 @@ public class AlipaySecurityRiskDetectRequest implements AlipayRequest<AlipaySecu
 		return txtParams;
 	}
 
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -820,28 +1432,45 @@ public class AlipaySecurityRiskDetectRequest implements AlipayRequest<AlipaySecu
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipaySecurityRiskDetectResponse> getResponseClass() {
 		return AlipaySecurityRiskDetectResponse.class;
 	}
 	
 
+    /**
+     * <p>isNeedEncrypt.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

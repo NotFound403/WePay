@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.customreport.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-17 11:57:57
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataCustomreportBatchqueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiMarketingDataCustomreportBatchqueryResponse extends AlipayRes
 	@ApiField("custom_report_condition")
 	private List<CustomReportCondition> reportConditionList;
 
+	/**
+	 * <p>Setter for the field <code>reportConditionList</code>.</p>
+	 *
+	 * @param reportConditionList a {@link java.util.List} object.
+	 */
 	public void setReportConditionList(List<CustomReportCondition> reportConditionList) {
 		this.reportConditionList = reportConditionList;
 	}
+	/**
+	 * <p>Getter for the field <code>reportConditionList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CustomReportCondition> getReportConditionList( ) {
 		return this.reportConditionList;
 	}

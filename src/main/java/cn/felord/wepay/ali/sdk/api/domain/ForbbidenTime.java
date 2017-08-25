@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券不可用时间
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class ForbbidenTime extends AlipayObject {
 
@@ -21,9 +21,19 @@ public class ForbbidenTime extends AlipayObject {
 	@ApiField("days")
 	private String days;
 
+	/**
+	 * <p>Getter for the field <code>days</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDays() {
 		return this.days;
 	}
+	/**
+	 * <p>Setter for the field <code>days</code>.</p>
+	 *
+	 * @param days a {@link java.lang.String} object.
+	 */
 	public void setDays(String days) {
 		this.days = days;
 	}

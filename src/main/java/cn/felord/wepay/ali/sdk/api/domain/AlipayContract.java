@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户订购信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class AlipayContract extends AlipayObject {
 
@@ -51,44 +51,104 @@ public class AlipayContract extends AlipayObject {
 	@ApiField("subscribe")
 	private Boolean subscribe;
 
+	/**
+	 * <p>Getter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @param alipayUserId a {@link java.lang.String} object.
+	 */
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contractContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContractContent() {
 		return this.contractContent;
 	}
+	/**
+	 * <p>Setter for the field <code>contractContent</code>.</p>
+	 *
+	 * @param contractContent a {@link java.lang.String} object.
+	 */
 	public void setContractContent(String contractContent) {
 		this.contractContent = contractContent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageUrl() {
 		return this.pageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>pageUrl</code>.</p>
+	 *
+	 * @param pageUrl a {@link java.lang.String} object.
+	 */
 	public void setPageUrl(String pageUrl) {
 		this.pageUrl = pageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subscribe</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSubscribe() {
 		return this.subscribe;
 	}
+	/**
+	 * <p>Setter for the field <code>subscribe</code>.</p>
+	 *
+	 * @param subscribe a {@link java.lang.Boolean} object.
+	 */
 	public void setSubscribe(Boolean subscribe) {
 		this.subscribe = subscribe;
 	}

@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServletRequest;
  * @version v1.0.0
  * @since 2017 /8/7  10:34
  */
-
-
 public interface Callback {
     /**
      * Pay callback.

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 删除物业小区房屋信息
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:51
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeRoominfoDeleteModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class AlipayEcoCplifeRoominfoDeleteModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> outRoomIdSet;
 
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId() {
 		return this.batchId;
 	}
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRoomIdSet</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getOutRoomIdSet() {
 		return this.outRoomIdSet;
 	}
+	/**
+	 * <p>Setter for the field <code>outRoomIdSet</code>.</p>
+	 *
+	 * @param outRoomIdSet a {@link java.util.List} object.
+	 */
 	public void setOutRoomIdSet(List<String> outRoomIdSet) {
 		this.outRoomIdSet = outRoomIdSet;
 	}

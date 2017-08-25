@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 个性化菜单创建
  *
  * @author auto create
- * @since 1.0, 2017-05-25 11:40:27
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 
@@ -36,23 +36,53 @@ public class AlipayOpenPublicPersonalizedMenuCreateModel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>button</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ButtonObject> getButton() {
 		return this.button;
 	}
+	/**
+	 * <p>Setter for the field <code>button</code>.</p>
+	 *
+	 * @param button a {@link java.util.List} object.
+	 */
 	public void setButton(List<ButtonObject> button) {
 		this.button = button;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelRule</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<LabelRule> getLabelRule() {
 		return this.labelRule;
 	}
+	/**
+	 * <p>Setter for the field <code>labelRule</code>.</p>
+	 *
+	 * @param labelRule a {@link java.util.List} object.
+	 */
 	public void setLabelRule(List<LabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

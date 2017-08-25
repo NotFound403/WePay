@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 设备指纹H5版本
  *
  * @author auto create
- * @since 1.0, 2017-06-26 11:43:06
+ * @version $Id: $Id
  */
 public class SsdataDataserviceRiskDeviceidentityQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class SsdataDataserviceRiskDeviceidentityQueryModel extends AlipayObject 
 	@ApiField("device_token")
 	private String deviceToken;
 
+	/**
+	 * <p>Getter for the field <code>deviceToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeviceToken() {
 		return this.deviceToken;
 	}
+	/**
+	 * <p>Setter for the field <code>deviceToken</code>.</p>
+	 *
+	 * @param deviceToken a {@link java.lang.String} object.
+	 */
 	public void setDeviceToken(String deviceToken) {
 		this.deviceToken = deviceToken;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.recommend.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-03-11 15:19:54
+ * @version $Id: $Id
  */
 public class AlipayMobileRecommendGetResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayMobileRecommendGetResponse extends AlipayResponse {
 	@ApiField("recommend_id")
 	private String recommendId;
 
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>items</code>.</p>
+	 *
+	 * @param items a {@link java.lang.String} object.
+	 */
 	public void setItems(String items) {
 		this.items = items;
 	}
+	/**
+	 * <p>Getter for the field <code>items</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItems( ) {
 		return this.items;
 	}
 
+	/**
+	 * <p>Setter for the field <code>recommendId</code>.</p>
+	 *
+	 * @param recommendId a {@link java.lang.String} object.
+	 */
 	public void setRecommendId(String recommendId) {
 		this.recommendId = recommendId;
 	}
+	/**
+	 * <p>Getter for the field <code>recommendId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecommendId( ) {
 		return this.recommendId;
 	}

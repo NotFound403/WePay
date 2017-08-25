@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.personalized.extension.set response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-27 10:50:31
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPersonalizedExtensionSetResponse extends AlipayResponse {
 

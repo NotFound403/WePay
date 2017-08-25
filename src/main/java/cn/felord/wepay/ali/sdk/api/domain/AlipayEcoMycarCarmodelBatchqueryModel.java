@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 车型信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:45
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarCarmodelBatchqueryModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayEcoMycarCarmodelBatchqueryModel extends AlipayObject {
 	@ApiField("serie_id")
 	private String serieId;
 
+	/**
+	 * <p>Getter for the field <code>brandId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandId() {
 		return this.brandId;
 	}
+	/**
+	 * <p>Setter for the field <code>brandId</code>.</p>
+	 *
+	 * @param brandId a {@link java.lang.String} object.
+	 */
 	public void setBrandId(String brandId) {
 		this.brandId = brandId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>companyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCompanyId() {
 		return this.companyId;
 	}
+	/**
+	 * <p>Setter for the field <code>companyId</code>.</p>
+	 *
+	 * @param companyId a {@link java.lang.String} object.
+	 */
 	public void setCompanyId(String companyId) {
 		this.companyId = companyId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>queryType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQueryType() {
 		return this.queryType;
 	}
+	/**
+	 * <p>Setter for the field <code>queryType</code>.</p>
+	 *
+	 * @param queryType a {@link java.lang.String} object.
+	 */
 	public void setQueryType(String queryType) {
 		this.queryType = queryType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serieId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSerieId() {
 		return this.serieId;
 	}
+	/**
+	 * <p>Setter for the field <code>serieId</code>.</p>
+	 *
+	 * @param serieId a {@link java.lang.String} object.
+	 */
 	public void setSerieId(String serieId) {
 		this.serieId = serieId;
 	}

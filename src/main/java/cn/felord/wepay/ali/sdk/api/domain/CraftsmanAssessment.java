@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 手艺人评价详情
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:27:52
+ * @version $Id: $Id
  */
 public class CraftsmanAssessment extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class CraftsmanAssessment extends AlipayObject {
 	@ApiField("total_score")
 	private Long totalScore;
 
+	/**
+	 * <p>Getter for the field <code>subAssessments</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CraftsmanSubAssessment> getSubAssessments() {
 		return this.subAssessments;
 	}
+	/**
+	 * <p>Setter for the field <code>subAssessments</code>.</p>
+	 *
+	 * @param subAssessments a {@link java.util.List} object.
+	 */
 	public void setSubAssessments(List<CraftsmanSubAssessment> subAssessments) {
 		this.subAssessments = subAssessments;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalNo() {
 		return this.totalNo;
 	}
+	/**
+	 * <p>Setter for the field <code>totalNo</code>.</p>
+	 *
+	 * @param totalNo a {@link java.lang.Long} object.
+	 */
 	public void setTotalNo(Long totalNo) {
 		this.totalNo = totalNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalScore</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalScore() {
 		return this.totalScore;
 	}
+	/**
+	 * <p>Setter for the field <code>totalScore</code>.</p>
+	 *
+	 * @param totalScore a {@link java.lang.Long} object.
+	 */
 	public void setTotalScore(Long totalScore) {
 		this.totalScore = totalScore;
 	}

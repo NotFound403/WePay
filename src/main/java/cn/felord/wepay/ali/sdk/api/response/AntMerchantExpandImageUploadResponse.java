@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.image.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-28 23:35:31
+ * @version $Id: $Id
  */
 public class AntMerchantExpandImageUploadResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AntMerchantExpandImageUploadResponse extends AlipayResponse {
 	@ApiField("image_id")
 	private String imageId;
 
+	/**
+	 * <p>Setter for the field <code>imageId</code>.</p>
+	 *
+	 * @param imageId a {@link java.lang.String} object.
+	 */
 	public void setImageId(String imageId) {
 		this.imageId = imageId;
 	}
+	/**
+	 * <p>Getter for the field <code>imageId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageId( ) {
 		return this.imageId;
 	}

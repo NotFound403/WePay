@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 卡模板投放渠道
  *
  * @author auto create
- * @since 1.0, 2016-12-28 15:26:46
+ * @version $Id: $Id
  */
 public class PubChannelDTO extends AlipayObject {
 
@@ -26,16 +26,36 @@ public class PubChannelDTO extends AlipayObject {
 	@ApiField("pub_channel")
 	private String pubChannel;
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pubChannel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPubChannel() {
 		return this.pubChannel;
 	}
+	/**
+	 * <p>Setter for the field <code>pubChannel</code>.</p>
+	 *
+	 * @param pubChannel a {@link java.lang.String} object.
+	 */
 	public void setPubChannel(String pubChannel) {
 		this.pubChannel = pubChannel;
 	}

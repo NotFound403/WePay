@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 蚂蚁会员V3权益创建接口
  *
  * @author auto create
- * @since 1.0, 2017-06-15 15:43:45
+ * @version $Id: $Id
  */
 public class AlipayUserNewbenefitCreateModel extends AlipayObject {
 
@@ -83,79 +83,189 @@ public class AlipayUserNewbenefitCreateModel extends AlipayObject {
 	@ApiField("start_dt")
 	private Long startDt;
 
+	/**
+	 * <p>Getter for the field <code>areaCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAreaCode() {
 		return this.areaCode;
 	}
+	/**
+	 * <p>Setter for the field <code>areaCode</code>.</p>
+	 *
+	 * @param areaCode a {@link java.lang.String} object.
+	 */
 	public void setAreaCode(String areaCode) {
 		this.areaCode = areaCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitName() {
 		return this.benefitName;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitName</code>.</p>
+	 *
+	 * @param benefitName a {@link java.lang.String} object.
+	 */
 	public void setBenefitName(String benefitName) {
 		this.benefitName = benefitName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitSubTitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitSubTitle() {
 		return this.benefitSubTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitSubTitle</code>.</p>
+	 *
+	 * @param benefitSubTitle a {@link java.lang.String} object.
+	 */
 	public void setBenefitSubTitle(String benefitSubTitle) {
 		this.benefitSubTitle = benefitSubTitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>description</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDescription() {
 		return this.description;
 	}
+	/**
+	 * <p>Setter for the field <code>description</code>.</p>
+	 *
+	 * @param description a {@link java.lang.String} object.
+	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
+	/**
+	 * <p>Getter for the field <code>differentiation</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDifferentiation() {
 		return this.differentiation;
 	}
+	/**
+	 * <p>Setter for the field <code>differentiation</code>.</p>
+	 *
+	 * @param differentiation a {@link java.lang.String} object.
+	 */
 	public void setDifferentiation(String differentiation) {
 		this.differentiation = differentiation;
 	}
 
+	/**
+	 * <p>Getter for the field <code>eligibleGradeDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEligibleGradeDesc() {
 		return this.eligibleGradeDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>eligibleGradeDesc</code>.</p>
+	 *
+	 * @param eligibleGradeDesc a {@link java.lang.String} object.
+	 */
 	public void setEligibleGradeDesc(String eligibleGradeDesc) {
 		this.eligibleGradeDesc = eligibleGradeDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endDt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getEndDt() {
 		return this.endDt;
 	}
+	/**
+	 * <p>Setter for the field <code>endDt</code>.</p>
+	 *
+	 * @param endDt a {@link java.lang.Long} object.
+	 */
 	public void setEndDt(Long endDt) {
 		this.endDt = endDt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>exchangeRuleIds</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExchangeRuleIds() {
 		return this.exchangeRuleIds;
 	}
+	/**
+	 * <p>Setter for the field <code>exchangeRuleIds</code>.</p>
+	 *
+	 * @param exchangeRuleIds a {@link java.lang.String} object.
+	 */
 	public void setExchangeRuleIds(String exchangeRuleIds) {
 		this.exchangeRuleIds = exchangeRuleIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gradeConfig</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<BenefitGradeConfig> getGradeConfig() {
 		return this.gradeConfig;
 	}
+	/**
+	 * <p>Setter for the field <code>gradeConfig</code>.</p>
+	 *
+	 * @param gradeConfig a {@link java.util.List} object.
+	 */
 	public void setGradeConfig(List<BenefitGradeConfig> gradeConfig) {
 		this.gradeConfig = gradeConfig;
 	}
 
+	/**
+	 * <p>Getter for the field <code>iconUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIconUrl() {
 		return this.iconUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>iconUrl</code>.</p>
+	 *
+	 * @param iconUrl a {@link java.lang.String} object.
+	 */
 	public void setIconUrl(String iconUrl) {
 		this.iconUrl = iconUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startDt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getStartDt() {
 		return this.startDt;
 	}
+	/**
+	 * <p>Setter for the field <code>startDt</code>.</p>
+	 *
+	 * @param startDt a {@link java.lang.Long} object.
+	 */
 	public void setStartDt(Long startDt) {
 		this.startDt = startDt;
 	}

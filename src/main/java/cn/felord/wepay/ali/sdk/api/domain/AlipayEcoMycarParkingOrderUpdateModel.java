@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 订单更新接口
  *
  * @author auto create
- * @since 1.0, 2016-12-22 15:57:50
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoMycarParkingOrderUpdateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderStatus() {
 		return this.orderStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @param orderStatus a {@link java.lang.String} object.
+	 */
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

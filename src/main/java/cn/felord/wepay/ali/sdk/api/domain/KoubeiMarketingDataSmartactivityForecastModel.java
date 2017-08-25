@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户智能活动效果预测接口
  *
  * @author auto create
- * @since 1.0, 2017-04-13 10:59:00
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataSmartactivityForecastModel extends AlipayObject {
 
@@ -46,23 +46,53 @@ commission_rate:口碑客分佣比例
 	@ApiField("ext_info")
 	private String extInfo;
 
+	/**
+	 * <p>Getter for the field <code>configCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConfigCode() {
 		return this.configCode;
 	}
+	/**
+	 * <p>Setter for the field <code>configCode</code>.</p>
+	 *
+	 * @param configCode a {@link java.lang.String} object.
+	 */
 	public void setConfigCode(String configCode) {
 		this.configCode = configCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>diagnoseCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDiagnoseCode() {
 		return this.diagnoseCode;
 	}
+	/**
+	 * <p>Setter for the field <code>diagnoseCode</code>.</p>
+	 *
+	 * @param diagnoseCode a {@link java.lang.String} object.
+	 */
 	public void setDiagnoseCode(String diagnoseCode) {
 		this.diagnoseCode = diagnoseCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}

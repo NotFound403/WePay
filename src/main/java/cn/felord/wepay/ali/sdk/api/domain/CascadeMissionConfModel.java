@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 二级分佣任务配置
  *
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:39
+ * @version $Id: $Id
  */
 public class CascadeMissionConfModel extends AlipayObject {
 
@@ -33,16 +33,36 @@ KOUBEI_PLATFORM：口碑平台推广
 	@ApiField("commission_user_type")
 	private String commissionUserType;
 
+	/**
+	 * <p>Getter for the field <code>commissionClause</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbAdvertCommissionClause> getCommissionClause() {
 		return this.commissionClause;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionClause</code>.</p>
+	 *
+	 * @param commissionClause a {@link java.util.List} object.
+	 */
 	public void setCommissionClause(List<KbAdvertCommissionClause> commissionClause) {
 		this.commissionClause = commissionClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>commissionUserType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommissionUserType() {
 		return this.commissionUserType;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionUserType</code>.</p>
+	 *
+	 * @param commissionUserType a {@link java.lang.String} object.
+	 */
 	public void setCommissionUserType(String commissionUserType) {
 		this.commissionUserType = commissionUserType;
 	}

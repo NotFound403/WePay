@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.matchuser.label.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-04 11:09:47
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMatchuserLabelCreateResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayOpenPublicMatchuserLabelCreateResponse extends AlipayResponse
 	@ApiField("error_matcher")
 	private List<ErrorMatcher> errorMatchers;
 
+	/**
+	 * <p>Setter for the field <code>errorCount</code>.</p>
+	 *
+	 * @param errorCount a {@link java.lang.Long} object.
+	 */
 	public void setErrorCount(Long errorCount) {
 		this.errorCount = errorCount;
 	}
+	/**
+	 * <p>Getter for the field <code>errorCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getErrorCount( ) {
 		return this.errorCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>errorMatchers</code>.</p>
+	 *
+	 * @param errorMatchers a {@link java.util.List} object.
+	 */
 	public void setErrorMatchers(List<ErrorMatcher> errorMatchers) {
 		this.errorMatchers = errorMatchers;
 	}
+	/**
+	 * <p>Getter for the field <code>errorMatchers</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ErrorMatcher> getErrorMatchers( ) {
 		return this.errorMatchers;
 	}

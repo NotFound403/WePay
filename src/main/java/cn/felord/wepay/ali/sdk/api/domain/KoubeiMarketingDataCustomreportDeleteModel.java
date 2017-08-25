@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 自定义数据报表删除接口
  *
  * @author auto create
- * @since 1.0, 2016-08-29 14:52:26
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataCustomreportDeleteModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiMarketingDataCustomreportDeleteModel extends AlipayObject {
 	@ApiField("condition_key")
 	private String conditionKey;
 
+	/**
+	 * <p>Getter for the field <code>conditionKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConditionKey() {
 		return this.conditionKey;
 	}
+	/**
+	 * <p>Setter for the field <code>conditionKey</code>.</p>
+	 *
+	 * @param conditionKey a {@link java.lang.String} object.
+	 */
 	public void setConditionKey(String conditionKey) {
 		this.conditionKey = conditionKey;
 	}

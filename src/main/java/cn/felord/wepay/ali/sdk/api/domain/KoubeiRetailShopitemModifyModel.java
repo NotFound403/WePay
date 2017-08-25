@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * isv 回传的门店商品信更新接口
  *
  * @author auto create
- * @since 1.0, 2017-04-14 18:08:34
+ * @version $Id: $Id
  */
 public class KoubeiRetailShopitemModifyModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class KoubeiRetailShopitemModifyModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>brandCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandCode() {
 		return this.brandCode;
 	}
+	/**
+	 * <p>Setter for the field <code>brandCode</code>.</p>
+	 *
+	 * @param brandCode a {@link java.lang.String} object.
+	 */
 	public void setBrandCode(String brandCode) {
 		this.brandCode = brandCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryCode() {
 		return this.categoryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @param categoryCode a {@link java.lang.String} object.
+	 */
 	public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>description</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDescription() {
 		return this.description;
 	}
+	/**
+	 * <p>Setter for the field <code>description</code>.</p>
+	 *
+	 * @param description a {@link java.lang.String} object.
+	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemCode() {
 		return this.itemCode;
 	}
+	/**
+	 * <p>Setter for the field <code>itemCode</code>.</p>
+	 *
+	 * @param itemCode a {@link java.lang.String} object.
+	 */
 	public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>kbShopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getKbShopId() {
 		return this.kbShopId;
 	}
+	/**
+	 * <p>Setter for the field <code>kbShopId</code>.</p>
+	 *
+	 * @param kbShopId a {@link java.lang.String} object.
+	 */
 	public void setKbShopId(String kbShopId) {
 		this.kbShopId = kbShopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>price</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrice() {
 		return this.price;
 	}
+	/**
+	 * <p>Setter for the field <code>price</code>.</p>
+	 *
+	 * @param price a {@link java.lang.String} object.
+	 */
 	public void setPrice(String price) {
 		this.price = price;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.customreport.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-13 15:42:37
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataCustomreportQueryResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class KoubeiMarketingDataCustomreportQueryResponse extends AlipayResponse
 	@ApiField("report_data_item")
 	private List<ReportDataItem> reportData;
 
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.String} object.
+	 */
 	public void setCount(String count) {
 		this.count = count;
 	}
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCount( ) {
 		return this.count;
 	}
 
+	/**
+	 * <p>Setter for the field <code>reportData</code>.</p>
+	 *
+	 * @param reportData a {@link java.util.List} object.
+	 */
 	public void setReportData(List<ReportDataItem> reportData) {
 		this.reportData = reportData;
 	}
+	/**
+	 * <p>Getter for the field <code>reportData</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ReportDataItem> getReportData( ) {
 		return this.reportData;
 	}

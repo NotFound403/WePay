@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券下架
  *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:01
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketingVoucherOfflineModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayOfflineMarketingVoucherOfflineModel extends AlipayObject {
 	@ApiField("voucher_id")
 	private String voucherId;
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherId() {
 		return this.voucherId;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherId</code>.</p>
+	 *
+	 * @param voucherId a {@link java.lang.String} object.
+	 */
 	public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 设备指纹查询接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:13
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskHideDeviceidQueryModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipaySecurityRiskHideDeviceidQueryModel extends AlipayObject {
 	@ApiField("deviceid_token")
 	private String deviceidToken;
 
+	/**
+	 * <p>Getter for the field <code>appKeyClient</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppKeyClient() {
 		return this.appKeyClient;
 	}
+	/**
+	 * <p>Setter for the field <code>appKeyClient</code>.</p>
+	 *
+	 * @param appKeyClient a {@link java.lang.String} object.
+	 */
 	public void setAppKeyClient(String appKeyClient) {
 		this.appKeyClient = appKeyClient;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appKeyServer</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppKeyServer() {
 		return this.appKeyServer;
 	}
+	/**
+	 * <p>Setter for the field <code>appKeyServer</code>.</p>
+	 *
+	 * @param appKeyServer a {@link java.lang.String} object.
+	 */
 	public void setAppKeyServer(String appKeyServer) {
 		this.appKeyServer = appKeyServer;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppName() {
 		return this.appName;
 	}
+	/**
+	 * <p>Setter for the field <code>appName</code>.</p>
+	 *
+	 * @param appName a {@link java.lang.String} object.
+	 */
 	public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>deviceidToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeviceidToken() {
 		return this.deviceidToken;
 	}
+	/**
+	 * <p>Setter for the field <code>deviceidToken</code>.</p>
+	 *
+	 * @param deviceidToken a {@link java.lang.String} object.
+	 */
 	public void setDeviceidToken(String deviceidToken) {
 		this.deviceidToken = deviceidToken;
 	}

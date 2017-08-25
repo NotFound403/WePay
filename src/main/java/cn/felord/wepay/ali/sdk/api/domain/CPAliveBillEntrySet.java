@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 社区物业物业费账单明细条目列表
  *
  * @author auto create
- * @since 1.0, 2017-01-18 16:45:49
+ * @version $Id: $Id
  */
 public class CPAliveBillEntrySet extends AlipayObject {
 
@@ -27,16 +27,36 @@ UNDER_PAYMENT - 账单锁定待用户完成支付
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>billEntryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillEntryId() {
 		return this.billEntryId;
 	}
+	/**
+	 * <p>Setter for the field <code>billEntryId</code>.</p>
+	 *
+	 * @param billEntryId a {@link java.lang.String} object.
+	 */
 	public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

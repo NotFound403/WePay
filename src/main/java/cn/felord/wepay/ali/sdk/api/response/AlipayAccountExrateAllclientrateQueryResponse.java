@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.account.exrate.allclientrate.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-23 14:55:48
+ * @version $Id: $Id
  */
 public class AlipayAccountExrateAllclientrateQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayAccountExrateAllclientrateQueryResponse extends AlipayRespons
 	@ApiField("ex_client_rate_v_o")
 	private List<ExClientRateVO> clientRateList;
 
+	/**
+	 * <p>Setter for the field <code>clientRateList</code>.</p>
+	 *
+	 * @param clientRateList a {@link java.util.List} object.
+	 */
 	public void setClientRateList(List<ExClientRateVO> clientRateList) {
 		this.clientRateList = clientRateList;
 	}
+	/**
+	 * <p>Getter for the field <code>clientRateList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ExClientRateVO> getClientRateList( ) {
 		return this.clientRateList;
 	}

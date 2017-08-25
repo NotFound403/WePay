@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 医疗行业通用消息通知
  *
  * @author auto create
- * @since 1.0, 2016-11-16 15:16:21
+ * @version $Id: $Id
  */
 public class AlipayEcoMedicalcareCommonTpcardNotifyModel extends AlipayObject {
 
@@ -82,65 +82,155 @@ sv_app_doctors_say	名医说
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>actionInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<MedicalSvTpCardActionInfo> getActionInfo() {
 		return this.actionInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>actionInfo</code>.</p>
+	 *
+	 * @param actionInfo a {@link java.util.List} object.
+	 */
 	public void setActionInfo(List<MedicalSvTpCardActionInfo> actionInfo) {
 		this.actionInfo = actionInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bodyInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<MedicalSvTpCardBodyInfo> getBodyInfo() {
 		return this.bodyInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>bodyInfo</code>.</p>
+	 *
+	 * @param bodyInfo a {@link java.util.List} object.
+	 */
 	public void setBodyInfo(List<MedicalSvTpCardBodyInfo> bodyInfo) {
 		this.bodyInfo = bodyInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendParams() {
 		return this.extendParams;
 	}
+	/**
+	 * <p>Setter for the field <code>extendParams</code>.</p>
+	 *
+	 * @param extendParams a {@link java.lang.String} object.
+	 */
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>headerInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalSvTpCardHeadInfo} object.
+	 */
 	public MedicalSvTpCardHeadInfo getHeaderInfo() {
 		return this.headerInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>headerInfo</code>.</p>
+	 *
+	 * @param headerInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalSvTpCardHeadInfo} object.
+	 */
 	public void setHeaderInfo(MedicalSvTpCardHeadInfo headerInfo) {
 		this.headerInfo = headerInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>notifyTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyTime() {
 		return this.notifyTime;
 	}
+	/**
+	 * <p>Setter for the field <code>notifyTime</code>.</p>
+	 *
+	 * @param notifyTime a {@link java.lang.String} object.
+	 */
 	public void setNotifyTime(String notifyTime) {
 		this.notifyTime = notifyTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperate() {
 		return this.operate;
 	}
+	/**
+	 * <p>Setter for the field <code>operate</code>.</p>
+	 *
+	 * @param operate a {@link java.lang.String} object.
+	 */
 	public void setOperate(String operate) {
 		this.operate = operate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateCode() {
 		return this.templateCode;
 	}
+	/**
+	 * <p>Setter for the field <code>templateCode</code>.</p>
+	 *
+	 * @param templateCode a {@link java.lang.String} object.
+	 */
 	public void setTemplateCode(String templateCode) {
 		this.templateCode = templateCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thirdNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThirdNo() {
 		return this.thirdNo;
 	}
+	/**
+	 * <p>Setter for the field <code>thirdNo</code>.</p>
+	 *
+	 * @param thirdNo a {@link java.lang.String} object.
+	 */
 	public void setThirdNo(String thirdNo) {
 		this.thirdNo = thirdNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

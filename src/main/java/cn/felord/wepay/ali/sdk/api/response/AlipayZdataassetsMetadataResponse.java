@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdataassets.metadata response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-26 15:12:06
+ * @version $Id: $Id
  */
 public class AlipayZdataassetsMetadataResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayZdataassetsMetadataResponse extends AlipayResponse {
 	@ApiField("customer_entity")
 	private List<CustomerEntity> result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.util.List} object.
+	 */
 	public void setResult(List<CustomerEntity> result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CustomerEntity> getResult( ) {
 		return this.result;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.fingerprint.verify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-12 17:27:17
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFingerprintVerifyResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipaySecurityProdFingerprintVerifyResponse extends AlipayResponse 
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Setter for the field <code>authResult</code>.</p>
+	 *
+	 * @param authResult a {@link java.lang.Boolean} object.
+	 */
 	public void setAuthResult(Boolean authResult) {
 		this.authResult = authResult;
 	}
+	/**
+	 * <p>Getter for the field <code>authResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getAuthResult( ) {
 		return this.authResult;
 	}
 
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken( ) {
 		return this.token;
 	}

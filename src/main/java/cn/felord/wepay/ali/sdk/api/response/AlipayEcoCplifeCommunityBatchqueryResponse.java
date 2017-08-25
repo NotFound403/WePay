@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.community.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:55:25
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeCommunityBatchqueryResponse extends AlipayResponse {
 
@@ -38,23 +38,53 @@ public class AlipayEcoCplifeCommunityBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_community_count")
 	private Long totalCommunityCount;
 
+	/**
+	 * <p>Setter for the field <code>communityList</code>.</p>
+	 *
+	 * @param communityList a {@link java.util.List} object.
+	 */
 	public void setCommunityList(List<CPCommunitySet> communityList) {
 		this.communityList = communityList;
 	}
+	/**
+	 * <p>Getter for the field <code>communityList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CPCommunitySet> getCommunityList( ) {
 		return this.communityList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>currentPageNum</code>.</p>
+	 *
+	 * @param currentPageNum a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPageNum(Long currentPageNum) {
 		this.currentPageNum = currentPageNum;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPageNum( ) {
 		return this.currentPageNum;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalCommunityCount</code>.</p>
+	 *
+	 * @param totalCommunityCount a {@link java.lang.Long} object.
+	 */
 	public void setTotalCommunityCount(Long totalCommunityCount) {
 		this.totalCommunityCount = totalCommunityCount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalCommunityCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalCommunityCount( ) {
 		return this.totalCommunityCount;
 	}

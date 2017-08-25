@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 审核规则
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:50
+ * @version $Id: $Id
  */
 public class AlipayItemAuditRule extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayItemAuditRule extends AlipayObject {
 	@ApiField("need_audit")
 	private Boolean needAudit;
 
+	/**
+	 * <p>Getter for the field <code>auditType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditType() {
 		return this.auditType;
 	}
+	/**
+	 * <p>Setter for the field <code>auditType</code>.</p>
+	 *
+	 * @param auditType a {@link java.lang.String} object.
+	 */
 	public void setAuditType(String auditType) {
 		this.auditType = auditType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>needAudit</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getNeedAudit() {
 		return this.needAudit;
 	}
+	/**
+	 * <p>Setter for the field <code>needAudit</code>.</p>
+	 *
+	 * @param needAudit a {@link java.lang.Boolean} object.
+	 */
 	public void setNeedAudit(Boolean needAudit) {
 		this.needAudit = needAudit;
 	}

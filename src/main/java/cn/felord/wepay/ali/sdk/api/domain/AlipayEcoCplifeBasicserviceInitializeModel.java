@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 初始化小区物业基础服务
  *
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:21
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBasicserviceInitializeModel extends AlipayObject {
 
@@ -62,44 +62,104 @@ PROPERTY_PAY_BILL_MODE - 物业缴费账单上传模式
 	@ApiField("service_type")
 	private String serviceType;
 
+	/**
+	 * <p>Getter for the field <code>account</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccount() {
 		return this.account;
 	}
+	/**
+	 * <p>Setter for the field <code>account</code>.</p>
+	 *
+	 * @param account a {@link java.lang.String} object.
+	 */
 	public void setAccount(String account) {
 		this.account = account;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountType() {
 		return this.accountType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountType</code>.</p>
+	 *
+	 * @param accountType a {@link java.lang.String} object.
+	 */
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalInvokeAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalInvokeAddress() {
 		return this.externalInvokeAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>externalInvokeAddress</code>.</p>
+	 *
+	 * @param externalInvokeAddress a {@link java.lang.String} object.
+	 */
 	public void setExternalInvokeAddress(String externalInvokeAddress) {
 		this.externalInvokeAddress = externalInvokeAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceExpires</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getServiceExpires() {
 		return this.serviceExpires;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceExpires</code>.</p>
+	 *
+	 * @param serviceExpires a {@link java.util.Date} object.
+	 */
 	public void setServiceExpires(Date serviceExpires) {
 		this.serviceExpires = serviceExpires;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServiceType() {
 		return this.serviceType;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceType</code>.</p>
+	 *
+	 * @param serviceType a {@link java.lang.String} object.
+	 */
 	public void setServiceType(String serviceType) {
 		this.serviceType = serviceType;
 	}

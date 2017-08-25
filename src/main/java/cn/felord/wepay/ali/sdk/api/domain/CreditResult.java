@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 授信结果,每一笔授信编号对应的一笔授信结果；主要提供ISV查看
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class CreditResult extends AlipayObject {
 
@@ -81,79 +81,189 @@ public class CreditResult extends AlipayObject {
 	@ApiField("repayment_mode")
 	private String repaymentMode;
 
+	/**
+	 * <p>Getter for the field <code>creditLine</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreditLine() {
 		return this.creditLine;
 	}
+	/**
+	 * <p>Setter for the field <code>creditLine</code>.</p>
+	 *
+	 * @param creditLine a {@link java.lang.String} object.
+	 */
 	public void setCreditLine(String creditLine) {
 		this.creditLine = creditLine;
 	}
 
+	/**
+	 * <p>Getter for the field <code>creditNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreditNo() {
 		return this.creditNo;
 	}
+	/**
+	 * <p>Setter for the field <code>creditNo</code>.</p>
+	 *
+	 * @param creditNo a {@link java.lang.String} object.
+	 */
 	public void setCreditNo(String creditNo) {
 		this.creditNo = creditNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>creditTerm</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCreditTerm() {
 		return this.creditTerm;
 	}
+	/**
+	 * <p>Setter for the field <code>creditTerm</code>.</p>
+	 *
+	 * @param creditTerm a {@link java.lang.Long} object.
+	 */
 	public void setCreditTerm(Long creditTerm) {
 		this.creditTerm = creditTerm;
 	}
 
+	/**
+	 * <p>Getter for the field <code>creditTermUnit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreditTermUnit() {
 		return this.creditTermUnit;
 	}
+	/**
+	 * <p>Setter for the field <code>creditTermUnit</code>.</p>
+	 *
+	 * @param creditTermUnit a {@link java.lang.String} object.
+	 */
 	public void setCreditTermUnit(String creditTermUnit) {
 		this.creditTermUnit = creditTermUnit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>effectiveDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEffectiveDate() {
 		return this.effectiveDate;
 	}
+	/**
+	 * <p>Setter for the field <code>effectiveDate</code>.</p>
+	 *
+	 * @param effectiveDate a {@link java.util.Date} object.
+	 */
 	public void setEffectiveDate(Date effectiveDate) {
 		this.effectiveDate = effectiveDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>expireDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getExpireDate() {
 		return this.expireDate;
 	}
+	/**
+	 * <p>Setter for the field <code>expireDate</code>.</p>
+	 *
+	 * @param expireDate a {@link java.util.Date} object.
+	 */
 	public void setExpireDate(Date expireDate) {
 		this.expireDate = expireDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>feeRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFeeRate() {
 		return this.feeRate;
 	}
+	/**
+	 * <p>Setter for the field <code>feeRate</code>.</p>
+	 *
+	 * @param feeRate a {@link java.lang.String} object.
+	 */
 	public void setFeeRate(String feeRate) {
 		this.feeRate = feeRate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>interestRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInterestRate() {
 		return this.interestRate;
 	}
+	/**
+	 * <p>Setter for the field <code>interestRate</code>.</p>
+	 *
+	 * @param interestRate a {@link java.lang.String} object.
+	 */
 	public void setInterestRate(String interestRate) {
 		this.interestRate = interestRate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanTerm</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getLoanTerm() {
 		return this.loanTerm;
 	}
+	/**
+	 * <p>Setter for the field <code>loanTerm</code>.</p>
+	 *
+	 * @param loanTerm a {@link java.lang.Long} object.
+	 */
 	public void setLoanTerm(Long loanTerm) {
 		this.loanTerm = loanTerm;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanTermUnit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanTermUnit() {
 		return this.loanTermUnit;
 	}
+	/**
+	 * <p>Setter for the field <code>loanTermUnit</code>.</p>
+	 *
+	 * @param loanTermUnit a {@link java.lang.String} object.
+	 */
 	public void setLoanTermUnit(String loanTermUnit) {
 		this.loanTermUnit = loanTermUnit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>repaymentMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRepaymentMode() {
 		return this.repaymentMode;
 	}
+	/**
+	 * <p>Setter for the field <code>repaymentMode</code>.</p>
+	 *
+	 * @param repaymentMode a {@link java.lang.String} object.
+	 */
 	public void setRepaymentMode(String repaymentMode) {
 		this.repaymentMode = repaymentMode;
 	}

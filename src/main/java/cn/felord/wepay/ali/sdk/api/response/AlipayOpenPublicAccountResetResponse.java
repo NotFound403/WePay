@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.account.reset response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 12:01:32
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicAccountResetResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicAccountResetResponse extends AlipayResponse {
 	@ApiField("agreement_id")
 	private String agreementId;
 
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId( ) {
 		return this.agreementId;
 	}

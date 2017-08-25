@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 赔案进度
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:37:03
+ * @version $Id: $Id
  */
 public class ClaimProgress extends AlipayObject {
 
@@ -27,16 +27,36 @@ public class ClaimProgress extends AlipayObject {
 	@ApiField("update_time")
 	private Date updateTime;
 
+	/**
+	 * <p>Getter for the field <code>updateContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUpdateContent() {
 		return this.updateContent;
 	}
+	/**
+	 * <p>Setter for the field <code>updateContent</code>.</p>
+	 *
+	 * @param updateContent a {@link java.lang.String} object.
+	 */
 	public void setUpdateContent(String updateContent) {
 		this.updateContent = updateContent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>updateTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getUpdateTime() {
 		return this.updateTime;
 	}
+	/**
+	 * <p>Setter for the field <code>updateTime</code>.</p>
+	 *
+	 * @param updateTime a {@link java.util.Date} object.
+	 */
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}

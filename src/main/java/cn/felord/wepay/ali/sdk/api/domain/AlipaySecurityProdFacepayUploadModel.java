@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 人脸支付图片上传接口
  *
  * @author auto create
- * @since 1.0, 2017-03-04 12:55:28
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFacepayUploadModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipaySecurityProdFacepayUploadModel extends AlipayObject {
 	@ApiField("store_id")
 	private String storeId;
 
+	/**
+	 * <p>Getter for the field <code>checkCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCheckCode() {
 		return this.checkCode;
 	}
+	/**
+	 * <p>Setter for the field <code>checkCode</code>.</p>
+	 *
+	 * @param checkCode a {@link java.lang.String} object.
+	 */
 	public void setCheckCode(String checkCode) {
 		this.checkCode = checkCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>faceImage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFaceImage() {
 		return this.faceImage;
 	}
+	/**
+	 * <p>Setter for the field <code>faceImage</code>.</p>
+	 *
+	 * @param faceImage a {@link java.lang.String} object.
+	 */
 	public void setFaceImage(String faceImage) {
 		this.faceImage = faceImage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId() {
 		return this.storeId;
 	}
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}

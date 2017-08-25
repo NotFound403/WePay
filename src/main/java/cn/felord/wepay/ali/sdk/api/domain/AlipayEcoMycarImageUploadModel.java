@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 通用图片上传接口
  *
  * @author auto create
- * @since 1.0, 2016-11-15 18:00:20
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarImageUploadModel extends AlipayObject {
 
@@ -43,23 +43,53 @@ public class AlipayEcoMycarImageUploadModel extends AlipayObject {
 	@ApiField("scene_type")
 	private String sceneType;
 
+	/**
+	 * <p>Getter for the field <code>imgContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImgContent() {
 		return this.imgContent;
 	}
+	/**
+	 * <p>Setter for the field <code>imgContent</code>.</p>
+	 *
+	 * @param imgContent a {@link java.lang.String} object.
+	 */
 	public void setImgContent(String imgContent) {
 		this.imgContent = imgContent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imgType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImgType() {
 		return this.imgType;
 	}
+	/**
+	 * <p>Setter for the field <code>imgType</code>.</p>
+	 *
+	 * @param imgType a {@link java.lang.String} object.
+	 */
 	public void setImgType(String imgType) {
 		this.imgType = imgType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sceneType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneType() {
 		return this.sceneType;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneType</code>.</p>
+	 *
+	 * @param sceneType a {@link java.lang.String} object.
+	 */
 	public void setSceneType(String sceneType) {
 		this.sceneType = sceneType;
 	}

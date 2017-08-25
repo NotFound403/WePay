@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 加油站门店信息查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:18
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarFuellingShopQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEcoMycarFuellingShopQueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Getter for the field <code>outShopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutShopId() {
 		return this.outShopId;
 	}
+	/**
+	 * <p>Setter for the field <code>outShopId</code>.</p>
+	 *
+	 * @param outShopId a {@link java.lang.String} object.
+	 */
 	public void setOutShopId(String outShopId) {
 		this.outShopId = outShopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险受托代扣签约
  *
  * @author auto create
- * @since 1.0, 2016-10-28 10:29:11
+ * @version $Id: $Id
  */
 public class AlipayInsMarketingSellerSignModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayInsMarketingSellerSignModel extends AlipayObject {
 	@ApiField("sign_alipay_id")
 	private String signAlipayId;
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode;
 	}
+	/**
+	 * <p>Setter for the field <code>prodCode</code>.</p>
+	 *
+	 * @param prodCode a {@link java.lang.String} object.
+	 */
 	public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>seller</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public InsPerson getSeller() {
 		return this.seller;
 	}
+	/**
+	 * <p>Setter for the field <code>seller</code>.</p>
+	 *
+	 * @param seller a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public void setSeller(InsPerson seller) {
 		this.seller = seller;
 	}
 
+	/**
+	 * <p>Getter for the field <code>signAlipayId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSignAlipayId() {
 		return this.signAlipayId;
 	}
+	/**
+	 * <p>Setter for the field <code>signAlipayId</code>.</p>
+	 *
+	 * @param signAlipayId a {@link java.lang.String} object.
+	 */
 	public void setSignAlipayId(String signAlipayId) {
 		this.signAlipayId = signAlipayId;
 	}

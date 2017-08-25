@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 门店类目信息
  *
  * @author auto create
- * @since 1.0, 2017-02-15 10:04:25
+ * @version $Id: $Id
  */
 public class ShopCategoryInfo extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class ShopCategoryInfo extends AlipayObject {
 	@ApiField("category_name")
 	private String categoryName;
 
+	/**
+	 * <p>Getter for the field <code>categoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryId() {
 		return this.categoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryId</code>.</p>
+	 *
+	 * @param categoryId a {@link java.lang.String} object.
+	 */
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryLevel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryLevel() {
 		return this.categoryLevel;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryLevel</code>.</p>
+	 *
+	 * @param categoryLevel a {@link java.lang.String} object.
+	 */
 	public void setCategoryLevel(String categoryLevel) {
 		this.categoryLevel = categoryLevel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryName() {
 		return this.categoryName;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryName</code>.</p>
+	 *
+	 * @param categoryName a {@link java.lang.String} object.
+	 */
 	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}

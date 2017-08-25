@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ins.scene.coupon.receive response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-23 21:17:48
+ * @version $Id: $Id
  */
 public class AlipayInsSceneCouponReceiveResponse extends AlipayResponse {
 
@@ -27,16 +27,36 @@ public class AlipayInsSceneCouponReceiveResponse extends AlipayResponse {
 	@ApiField("product")
 	private InsProduct product;
 
+	/**
+	 * <p>Setter for the field <code>policyNo</code>.</p>
+	 *
+	 * @param policyNo a {@link java.lang.String} object.
+	 */
 	public void setPolicyNo(String policyNo) {
 		this.policyNo = policyNo;
 	}
+	/**
+	 * <p>Getter for the field <code>policyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPolicyNo( ) {
 		return this.policyNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>product</code>.</p>
+	 *
+	 * @param product a {@link cn.felord.wepay.ali.sdk.api.domain.InsProduct} object.
+	 */
 	public void setProduct(InsProduct product) {
 		this.product = product;
 	}
+	/**
+	 * <p>Getter for the field <code>product</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsProduct} object.
+	 */
 	public InsProduct getProduct( ) {
 		return this.product;
 	}

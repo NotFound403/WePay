@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险查询用户的精简模型定义
  *
  * @author auto create
- * @since 1.0, 2017-07-20 21:55:46
+ * @version $Id: $Id
  */
 public class InsQueryPerson extends AlipayObject {
 
@@ -51,37 +51,87 @@ public class InsQueryPerson extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertType() {
 		return this.certType;
 	}
+	/**
+	 * <p>Setter for the field <code>certType</code>.</p>
+	 *
+	 * @param certType a {@link java.lang.String} object.
+	 */
 	public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>channelUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelUserId() {
 		return this.channelUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>channelUserId</code>.</p>
+	 *
+	 * @param channelUserId a {@link java.lang.String} object.
+	 */
 	public void setChannelUserId(String channelUserId) {
 		this.channelUserId = channelUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>channelUserSource</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelUserSource() {
 		return this.channelUserSource;
 	}
+	/**
+	 * <p>Setter for the field <code>channelUserSource</code>.</p>
+	 *
+	 * @param channelUserSource a {@link java.lang.String} object.
+	 */
 	public void setChannelUserSource(String channelUserSource) {
 		this.channelUserSource = channelUserSource;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

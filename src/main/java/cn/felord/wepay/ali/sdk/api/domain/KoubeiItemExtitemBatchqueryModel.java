@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商品列表查询接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:10
+ * @version $Id: $Id
  */
 public class KoubeiItemExtitemBatchqueryModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class KoubeiItemExtitemBatchqueryModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>brandCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandCode() {
 		return this.brandCode;
 	}
+	/**
+	 * <p>Setter for the field <code>brandCode</code>.</p>
+	 *
+	 * @param brandCode a {@link java.lang.String} object.
+	 */
 	public void setBrandCode(String brandCode) {
 		this.brandCode = brandCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryCode() {
 		return this.categoryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @param categoryCode a {@link java.lang.String} object.
+	 */
 	public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNum() {
 		return this.pageNum;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNum</code>.</p>
+	 *
+	 * @param pageNum a {@link java.lang.String} object.
+	 */
 	public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.String} object.
+	 */
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

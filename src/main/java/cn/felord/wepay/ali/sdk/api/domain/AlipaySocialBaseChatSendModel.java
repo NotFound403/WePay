@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 发送分享消息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:12
+ * @version $Id: $Id
  */
 public class AlipaySocialBaseChatSendModel extends AlipayObject {
 
@@ -66,51 +66,121 @@ public class AlipaySocialBaseChatSendModel extends AlipayObject {
 	@ApiField("template_type")
 	private String templateType;
 
+	/**
+	 * <p>Getter for the field <code>bizMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizMemo() {
 		return this.bizMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizMemo</code>.</p>
+	 *
+	 * @param bizMemo a {@link java.lang.String} object.
+	 */
 	public void setBizMemo(String bizMemo) {
 		this.bizMemo = bizMemo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>clientMsgId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClientMsgId() {
 		return this.clientMsgId;
 	}
+	/**
+	 * <p>Setter for the field <code>clientMsgId</code>.</p>
+	 *
+	 * @param clientMsgId a {@link java.lang.String} object.
+	 */
 	public void setClientMsgId(String clientMsgId) {
 		this.clientMsgId = clientMsgId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>link</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLink() {
 		return this.link;
 	}
+	/**
+	 * <p>Setter for the field <code>link</code>.</p>
+	 *
+	 * @param link a {@link java.lang.String} object.
+	 */
 	public void setLink(String link) {
 		this.link = link;
 	}
 
+	/**
+	 * <p>Getter for the field <code>receiverId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverId() {
 		return this.receiverId;
 	}
+	/**
+	 * <p>Setter for the field <code>receiverId</code>.</p>
+	 *
+	 * @param receiverId a {@link java.lang.String} object.
+	 */
 	public void setReceiverId(String receiverId) {
 		this.receiverId = receiverId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>receiverUsertype</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverUsertype() {
 		return this.receiverUsertype;
 	}
+	/**
+	 * <p>Setter for the field <code>receiverUsertype</code>.</p>
+	 *
+	 * @param receiverUsertype a {@link java.lang.String} object.
+	 */
 	public void setReceiverUsertype(String receiverUsertype) {
 		this.receiverUsertype = receiverUsertype;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateData() {
 		return this.templateData;
 	}
+	/**
+	 * <p>Setter for the field <code>templateData</code>.</p>
+	 *
+	 * @param templateData a {@link java.lang.String} object.
+	 */
 	public void setTemplateData(String templateData) {
 		this.templateData = templateData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateType() {
 		return this.templateType;
 	}
+	/**
+	 * <p>Setter for the field <code>templateType</code>.</p>
+	 *
+	 * @param templateType a {@link java.lang.String} object.
+	 */
 	public void setTemplateType(String templateType) {
 		this.templateType = templateType;
 	}

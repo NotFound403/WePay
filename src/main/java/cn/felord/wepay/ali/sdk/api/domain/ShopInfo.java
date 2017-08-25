@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 店铺信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class ShopInfo extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class ShopInfo extends AlipayObject {
 	@ApiField("shop_sign_board_pic")
 	private String shopSignBoardPic;
 
+	/**
+	 * <p>Getter for the field <code>shopName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopName() {
 		return this.shopName;
 	}
+	/**
+	 * <p>Setter for the field <code>shopName</code>.</p>
+	 *
+	 * @param shopName a {@link java.lang.String} object.
+	 */
 	public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopScenePic</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getShopScenePic() {
 		return this.shopScenePic;
 	}
+	/**
+	 * <p>Setter for the field <code>shopScenePic</code>.</p>
+	 *
+	 * @param shopScenePic a {@link java.util.List} object.
+	 */
 	public void setShopScenePic(List<String> shopScenePic) {
 		this.shopScenePic = shopScenePic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopSignBoardPic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopSignBoardPic() {
 		return this.shopSignBoardPic;
 	}
+	/**
+	 * <p>Setter for the field <code>shopSignBoardPic</code>.</p>
+	 *
+	 * @param shopSignBoardPic a {@link java.lang.String} object.
+	 */
 	public void setShopSignBoardPic(String shopSignBoardPic) {
 		this.shopSignBoardPic = shopSignBoardPic;
 	}

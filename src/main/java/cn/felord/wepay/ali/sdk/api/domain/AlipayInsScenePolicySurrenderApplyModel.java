@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 退保受理
  *
  * @author auto create
- * @since 1.0, 2017-01-24 19:46:50
+ * @version $Id: $Id
  */
 public class AlipayInsScenePolicySurrenderApplyModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayInsScenePolicySurrenderApplyModel extends AlipayObject {
 	@ApiField("policy_no")
 	private String policyNo;
 
+	/**
+	 * <p>Getter for the field <code>bizData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizData() {
 		return this.bizData;
 	}
+	/**
+	 * <p>Setter for the field <code>bizData</code>.</p>
+	 *
+	 * @param bizData a {@link java.lang.String} object.
+	 */
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>policyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPolicyNo() {
 		return this.policyNo;
 	}
+	/**
+	 * <p>Setter for the field <code>policyNo</code>.</p>
+	 *
+	 * @param policyNo a {@link java.lang.String} object.
+	 */
 	public void setPolicyNo(String policyNo) {
 		this.policyNo = policyNo;
 	}

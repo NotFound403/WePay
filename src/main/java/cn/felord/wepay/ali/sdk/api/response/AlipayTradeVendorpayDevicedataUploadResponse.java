@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.vendorpay.devicedata.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 00:51:39
+ * @version $Id: $Id
  */
 public class AlipayTradeVendorpayDevicedataUploadResponse extends AlipayResponse {
 

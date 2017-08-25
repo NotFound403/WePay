@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 卡模板样式信息
  *
  * @author auto create
- * @since 1.0, 2016-12-28 15:26:45
+ * @version $Id: $Id
  */
 public class TemplateStyleInfoDTO extends AlipayObject {
 
@@ -79,65 +79,155 @@ public class TemplateStyleInfoDTO extends AlipayObject {
 	@ApiField("slogan_img_id")
 	private String sloganImgId;
 
+	/**
+	 * <p>Getter for the field <code>backgroundId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBackgroundId() {
 		return this.backgroundId;
 	}
+	/**
+	 * <p>Setter for the field <code>backgroundId</code>.</p>
+	 *
+	 * @param backgroundId a {@link java.lang.String} object.
+	 */
 	public void setBackgroundId(String backgroundId) {
 		this.backgroundId = backgroundId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bgColor</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBgColor() {
 		return this.bgColor;
 	}
+	/**
+	 * <p>Setter for the field <code>bgColor</code>.</p>
+	 *
+	 * @param bgColor a {@link java.lang.String} object.
+	 */
 	public void setBgColor(String bgColor) {
 		this.bgColor = bgColor;
 	}
 
+	/**
+	 * <p>Getter for the field <code>brandName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandName() {
 		return this.brandName;
 	}
+	/**
+	 * <p>Setter for the field <code>brandName</code>.</p>
+	 *
+	 * @param brandName a {@link java.lang.String} object.
+	 */
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardShowName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardShowName() {
 		return this.cardShowName;
 	}
+	/**
+	 * <p>Setter for the field <code>cardShowName</code>.</p>
+	 *
+	 * @param cardShowName a {@link java.lang.String} object.
+	 */
 	public void setCardShowName(String cardShowName) {
 		this.cardShowName = cardShowName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>color</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getColor() {
 		return this.color;
 	}
+	/**
+	 * <p>Setter for the field <code>color</code>.</p>
+	 *
+	 * @param color a {@link java.lang.String} object.
+	 */
 	public void setColor(String color) {
 		this.color = color;
 	}
 
+	/**
+	 * <p>Getter for the field <code>featureDescriptions</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getFeatureDescriptions() {
 		return this.featureDescriptions;
 	}
+	/**
+	 * <p>Setter for the field <code>featureDescriptions</code>.</p>
+	 *
+	 * @param featureDescriptions a {@link java.util.List} object.
+	 */
 	public void setFeatureDescriptions(List<String> featureDescriptions) {
 		this.featureDescriptions = featureDescriptions;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logoId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogoId() {
 		return this.logoId;
 	}
+	/**
+	 * <p>Setter for the field <code>logoId</code>.</p>
+	 *
+	 * @param logoId a {@link java.lang.String} object.
+	 */
 	public void setLogoId(String logoId) {
 		this.logoId = logoId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>slogan</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSlogan() {
 		return this.slogan;
 	}
+	/**
+	 * <p>Setter for the field <code>slogan</code>.</p>
+	 *
+	 * @param slogan a {@link java.lang.String} object.
+	 */
 	public void setSlogan(String slogan) {
 		this.slogan = slogan;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sloganImgId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSloganImgId() {
 		return this.sloganImgId;
 	}
+	/**
+	 * <p>Setter for the field <code>sloganImgId</code>.</p>
+	 *
+	 * @param sloganImgId a {@link java.lang.String} object.
+	 */
 	public void setSloganImgId(String sloganImgId) {
 		this.sloganImgId = sloganImgId;
 	}

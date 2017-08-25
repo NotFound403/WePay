@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 申请开具发票
  *
  * @author auto create
- * @since 1.0, 2017-05-09 14:11:07
+ * @version $Id: $Id
  */
 public class AlipayEbppInvoiceApplyModel extends AlipayObject {
 
@@ -56,44 +56,104 @@ PAYEE:销售方;PAYER:购买方
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>action</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAction() {
 		return this.action;
 	}
+	/**
+	 * <p>Setter for the field <code>action</code>.</p>
+	 *
+	 * @param action a {@link java.lang.String} object.
+	 */
 	public void setAction(String action) {
 		this.action = action;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyFrom</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyFrom() {
 		return this.applyFrom;
 	}
+	/**
+	 * <p>Setter for the field <code>applyFrom</code>.</p>
+	 *
+	 * @param applyFrom a {@link java.lang.String} object.
+	 */
 	public void setApplyFrom(String applyFrom) {
 		this.applyFrom = applyFrom;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceApplyModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InvoiceApplyOpenModel} object.
+	 */
 	public InvoiceApplyOpenModel getInvoiceApplyModel() {
 		return this.invoiceApplyModel;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceApplyModel</code>.</p>
+	 *
+	 * @param invoiceApplyModel a {@link cn.felord.wepay.ali.sdk.api.domain.InvoiceApplyOpenModel} object.
+	 */
 	public void setInvoiceApplyModel(InvoiceApplyOpenModel invoiceApplyModel) {
 		this.invoiceApplyModel = invoiceApplyModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mShortName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getmShortName() {
 		return this.mShortName;
 	}
+	/**
+	 * <p>Setter for the field <code>mShortName</code>.</p>
+	 *
+	 * @param mShortName a {@link java.lang.String} object.
+	 */
 	public void setmShortName(String mShortName) {
 		this.mShortName = mShortName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subMShortName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubMShortName() {
 		return this.subMShortName;
 	}
+	/**
+	 * <p>Setter for the field <code>subMShortName</code>.</p>
+	 *
+	 * @param subMShortName a {@link java.lang.String} object.
+	 */
 	public void setSubMShortName(String subMShortName) {
 		this.subMShortName = subMShortName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

@@ -7,28 +7,37 @@ package cn.felord.wepay.ali.sdk.api;
 import java.io.Serializable;
 
 /**
- * 
+ * The type Response parse item.
+ *
  * @author jiehua
- * @version $Id: EncryptResponseItem.java, v 0.1 2016-3-28 下午4:34:57 jiehua Exp $
+ * @version $Id : EncryptResponseItem.java, v 0.1 2016-3-28 下午4:34:57 jiehua Exp $
  */
 public class ResponseParseItem implements Serializable {
 
     /**  */
     private static final long serialVersionUID = -27707404159419651L;
 
-    /** 加密节点开始 */
-    private int               startIndex       = -1;
-
-    /** 加密节点结束 */
-    private int               endIndex         = -1;
-
-    /** 加密内容 */
-    private String            encryptContent   = null;
+    /**
+     * 加密节点开始
+     */
+    private int startIndex = -1;
 
     /**
-     * @param startIndex
-     * @param endIndex
-     * @param encryptContent
+     * 加密节点结束
+     */
+    private int endIndex = -1;
+
+    /**
+     * 加密内容
+     */
+    private String encryptContent = null;
+
+    /**
+     * Instantiates a new Response parse item.
+     *
+     * @param startIndex     the start index
+     * @param endIndex       the end index
+     * @param encryptContent the encrypt content
      */
     public ResponseParseItem(int startIndex, int endIndex, String encryptContent) {
         super();
@@ -39,7 +48,7 @@ public class ResponseParseItem implements Serializable {
 
     /**
      * Getter method for property <tt>startIndex</tt>.
-     * 
+     *
      * @return property value of startIndex
      */
     public int getStartIndex() {
@@ -48,7 +57,7 @@ public class ResponseParseItem implements Serializable {
 
     /**
      * Getter method for property <tt>endIndex</tt>.
-     * 
+     *
      * @return property value of endIndex
      */
     public int getEndIndex() {
@@ -57,7 +66,7 @@ public class ResponseParseItem implements Serializable {
 
     /**
      * Getter method for property <tt>encryptContent</tt>.
-     * 
+     *
      * @return property value of encryptContent
      */
     public String getEncryptContent() {

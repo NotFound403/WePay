@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.benefit.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:41:01
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardBenefitQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayMarketingCardBenefitQueryResponse extends AlipayResponse {
 	@ApiField("mcard_template_benefit_query")
 	private List<McardTemplateBenefitQuery> mcardTemplateBenefitQuery;
 
+	/**
+	 * <p>Setter for the field <code>mcardTemplateBenefitQuery</code>.</p>
+	 *
+	 * @param mcardTemplateBenefitQuery a {@link java.util.List} object.
+	 */
 	public void setMcardTemplateBenefitQuery(List<McardTemplateBenefitQuery> mcardTemplateBenefitQuery) {
 		this.mcardTemplateBenefitQuery = mcardTemplateBenefitQuery;
 	}
+	/**
+	 * <p>Getter for the field <code>mcardTemplateBenefitQuery</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<McardTemplateBenefitQuery> getMcardTemplateBenefitQuery( ) {
 		return this.mcardTemplateBenefitQuery;
 	}

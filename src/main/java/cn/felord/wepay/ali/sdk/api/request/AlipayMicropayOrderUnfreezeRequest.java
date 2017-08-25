@@ -1,17 +1,17 @@
 package cn.felord.wepay.ali.sdk.api.request;
 
-import java.util.Map;
-
+import cn.felord.wepay.ali.sdk.api.AlipayObject;
 import cn.felord.wepay.ali.sdk.api.AlipayRequest;
 import cn.felord.wepay.ali.sdk.api.internal.util.AlipayHashMap;
 import cn.felord.wepay.ali.sdk.api.response.AlipayMicropayOrderUnfreezeResponse;
-import cn.felord.wepay.ali.sdk.api.AlipayObject;
+
+import java.util.Map;
 
 /**
  * ALIPAY API: alipay.micropay.order.unfreeze request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-06 17:54:23
+ * @version $Id: $Id
  */
 public class AlipayMicropayOrderUnfreezeRequest implements AlipayRequest<AlipayMicropayOrderUnfreezeResponse> {
 
@@ -28,16 +28,36 @@ public class AlipayMicropayOrderUnfreezeRequest implements AlipayRequest<AlipayM
 	 */
 	private String memo;
 
+	/**
+	 * <p>Setter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @param alipayOrderNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayOrderNo() {
 		return this.alipayOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
@@ -49,58 +69,104 @@ public class AlipayMicropayOrderUnfreezeRequest implements AlipayRequest<AlipayM
 	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }	
 
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.micropay.order.unfreeze";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("alipay_order_no", this.alipayOrderNo);
@@ -111,6 +177,12 @@ public class AlipayMicropayOrderUnfreezeRequest implements AlipayRequest<AlipayM
 		return txtParams;
 	}
 
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -118,28 +190,45 @@ public class AlipayMicropayOrderUnfreezeRequest implements AlipayRequest<AlipayM
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayMicropayOrderUnfreezeResponse> getResponseClass() {
 		return AlipayMicropayOrderUnfreezeResponse.class;
 	}
 	
 
+    /**
+     * <p>isNeedEncrypt.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

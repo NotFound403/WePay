@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 单条数据传入
  *
  * @author auto create
- * @since 1.0, 2017-05-27 22:38:09
+ * @version $Id: $Id
  */
 public class ZhimaMerchantSingleDataUploadModel extends AlipayObject {
 
@@ -47,30 +47,70 @@ public class ZhimaMerchantSingleDataUploadModel extends AlipayObject {
 	@ApiField("scene_code")
 	private String sceneCode;
 
+	/**
+	 * <p>Getter for the field <code>bizExtParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizExtParams() {
 		return this.bizExtParams;
 	}
+	/**
+	 * <p>Setter for the field <code>bizExtParams</code>.</p>
+	 *
+	 * @param bizExtParams a {@link java.lang.String} object.
+	 */
 	public void setBizExtParams(String bizExtParams) {
 		this.bizExtParams = bizExtParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>data</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getData() {
 		return this.data;
 	}
+	/**
+	 * <p>Setter for the field <code>data</code>.</p>
+	 *
+	 * @param data a {@link java.lang.String} object.
+	 */
 	public void setData(String data) {
 		this.data = data;
 	}
 
+	/**
+	 * <p>Getter for the field <code>primaryKeys</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrimaryKeys() {
 		return this.primaryKeys;
 	}
+	/**
+	 * <p>Setter for the field <code>primaryKeys</code>.</p>
+	 *
+	 * @param primaryKeys a {@link java.lang.String} object.
+	 */
 	public void setPrimaryKeys(String primaryKeys) {
 		this.primaryKeys = primaryKeys;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @param sceneCode a {@link java.lang.String} object.
+	 */
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}

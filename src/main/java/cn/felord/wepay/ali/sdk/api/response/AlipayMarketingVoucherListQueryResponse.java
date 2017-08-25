@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.list.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:28:18
+ * @version $Id: $Id
  */
 public class AlipayMarketingVoucherListQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayMarketingVoucherListQueryResponse extends AlipayResponse {
 	@ApiField("voucher_lite_info")
 	private List<VoucherLiteInfo> vouchers;
 
+	/**
+	 * <p>Setter for the field <code>vouchers</code>.</p>
+	 *
+	 * @param vouchers a {@link java.util.List} object.
+	 */
 	public void setVouchers(List<VoucherLiteInfo> vouchers) {
 		this.vouchers = vouchers;
 	}
+	/**
+	 * <p>Getter for the field <code>vouchers</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<VoucherLiteInfo> getVouchers( ) {
 		return this.vouchers;
 	}

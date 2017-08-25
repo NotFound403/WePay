@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 推送新支持违章查询的城市
  *
  * @author auto create
- * @since 1.0, 2016-05-12 09:57:36
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarViolationCityPushModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoMycarViolationCityPushModel extends AlipayObject {
 	@ApiField("service_status")
 	private String serviceStatus;
 
+	/**
+	 * <p>Getter for the field <code>cityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityCode() {
 		return this.cityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>cityCode</code>.</p>
+	 *
+	 * @param cityCode a {@link java.lang.String} object.
+	 */
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pushType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPushType() {
 		return this.pushType;
 	}
+	/**
+	 * <p>Setter for the field <code>pushType</code>.</p>
+	 *
+	 * @param pushType a {@link java.lang.String} object.
+	 */
 	public void setPushType(String pushType) {
 		this.pushType = pushType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServiceStatus() {
 		return this.serviceStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceStatus</code>.</p>
+	 *
+	 * @param serviceStatus a {@link java.lang.String} object.
+	 */
 	public void setServiceStatus(String serviceStatus) {
 		this.serviceStatus = serviceStatus;
 	}

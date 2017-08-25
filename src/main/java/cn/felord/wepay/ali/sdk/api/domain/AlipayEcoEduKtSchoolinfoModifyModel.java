@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 教育缴费学校信息录入接口
  *
  * @author auto create
- * @since 1.0, 2017-06-13 10:29:12
+ * @version $Id: $Id
  */
 public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 
@@ -122,128 +122,308 @@ public class AlipayEcoEduKtSchoolinfoModifyModel extends AlipayObject {
 	@ApiField("school_type")
 	private String schoolType;
 
+	/**
+	 * <p>Getter for the field <code>bankcardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBankcardNo() {
 		return this.bankcardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bankcardNo</code>.</p>
+	 *
+	 * @param bankcardNo a {@link java.lang.String} object.
+	 */
 	public void setBankcardNo(String bankcardNo) {
 		this.bankcardNo = bankcardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityCode() {
 		return this.cityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>cityCode</code>.</p>
+	 *
+	 * @param cityCode a {@link java.lang.String} object.
+	 */
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cityName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityName() {
 		return this.cityName;
 	}
+	/**
+	 * <p>Setter for the field <code>cityName</code>.</p>
+	 *
+	 * @param cityName a {@link java.lang.String} object.
+	 */
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>districtCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDistrictCode() {
 		return this.districtCode;
 	}
+	/**
+	 * <p>Setter for the field <code>districtCode</code>.</p>
+	 *
+	 * @param districtCode a {@link java.lang.String} object.
+	 */
 	public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>districtName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDistrictName() {
 		return this.districtName;
 	}
+	/**
+	 * <p>Setter for the field <code>districtName</code>.</p>
+	 *
+	 * @param districtName a {@link java.lang.String} object.
+	 */
 	public void setDistrictName(String districtName) {
 		this.districtName = districtName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isvName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvName() {
 		return this.isvName;
 	}
+	/**
+	 * <p>Setter for the field <code>isvName</code>.</p>
+	 *
+	 * @param isvName a {@link java.lang.String} object.
+	 */
 	public void setIsvName(String isvName) {
 		this.isvName = isvName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isvNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvNo() {
 		return this.isvNo;
 	}
+	/**
+	 * <p>Setter for the field <code>isvNo</code>.</p>
+	 *
+	 * @param isvNo a {@link java.lang.String} object.
+	 */
 	public void setIsvNo(String isvNo) {
 		this.isvNo = isvNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isvNotifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvNotifyUrl() {
 		return this.isvNotifyUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>isvNotifyUrl</code>.</p>
+	 *
+	 * @param isvNotifyUrl a {@link java.lang.String} object.
+	 */
 	public void setIsvNotifyUrl(String isvNotifyUrl) {
 		this.isvNotifyUrl = isvNotifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isvPhone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvPhone() {
 		return this.isvPhone;
 	}
+	/**
+	 * <p>Setter for the field <code>isvPhone</code>.</p>
+	 *
+	 * @param isvPhone a {@link java.lang.String} object.
+	 */
 	public void setIsvPhone(String isvPhone) {
 		this.isvPhone = isvPhone;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isvPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvPid() {
 		return this.isvPid;
 	}
+	/**
+	 * <p>Setter for the field <code>isvPid</code>.</p>
+	 *
+	 * @param isvPid a {@link java.lang.String} object.
+	 */
 	public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProvinceCode() {
 		return this.provinceCode;
 	}
+	/**
+	 * <p>Setter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @param provinceCode a {@link java.lang.String} object.
+	 */
 	public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>provinceName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProvinceName() {
 		return this.provinceName;
 	}
+	/**
+	 * <p>Setter for the field <code>provinceName</code>.</p>
+	 *
+	 * @param provinceName a {@link java.lang.String} object.
+	 */
 	public void setProvinceName(String provinceName) {
 		this.provinceName = provinceName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolIcon</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolIcon() {
 		return this.schoolIcon;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolIcon</code>.</p>
+	 *
+	 * @param schoolIcon a {@link java.lang.String} object.
+	 */
 	public void setSchoolIcon(String schoolIcon) {
 		this.schoolIcon = schoolIcon;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolIconType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolIconType() {
 		return this.schoolIconType;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolIconType</code>.</p>
+	 *
+	 * @param schoolIconType a {@link java.lang.String} object.
+	 */
 	public void setSchoolIconType(String schoolIconType) {
 		this.schoolIconType = schoolIconType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolName() {
 		return this.schoolName;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolName</code>.</p>
+	 *
+	 * @param schoolName a {@link java.lang.String} object.
+	 */
 	public void setSchoolName(String schoolName) {
 		this.schoolName = schoolName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolPid() {
 		return this.schoolPid;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolPid</code>.</p>
+	 *
+	 * @param schoolPid a {@link java.lang.String} object.
+	 */
 	public void setSchoolPid(String schoolPid) {
 		this.schoolPid = schoolPid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolStdcode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolStdcode() {
 		return this.schoolStdcode;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolStdcode</code>.</p>
+	 *
+	 * @param schoolStdcode a {@link java.lang.String} object.
+	 */
 	public void setSchoolStdcode(String schoolStdcode) {
 		this.schoolStdcode = schoolStdcode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolType() {
 		return this.schoolType;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolType</code>.</p>
+	 *
+	 * @param schoolType a {@link java.lang.String} object.
+	 */
 	public void setSchoolType(String schoolType) {
 		this.schoolType = schoolType;
 	}

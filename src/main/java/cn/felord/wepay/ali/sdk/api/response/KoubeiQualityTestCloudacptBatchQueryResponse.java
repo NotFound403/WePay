@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.quality.test.cloudacpt.batch.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-15 15:06:46
+ * @version $Id: $Id
  */
 public class KoubeiQualityTestCloudacptBatchQueryResponse extends AlipayResponse {
 
@@ -36,23 +36,53 @@ public class KoubeiQualityTestCloudacptBatchQueryResponse extends AlipayResponse
 	@ApiField("batch_num")
 	private String batchNum;
 
+	/**
+	 * <p>Setter for the field <code>activityId</code>.</p>
+	 *
+	 * @param activityId a {@link java.lang.String} object.
+	 */
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
+	/**
+	 * <p>Getter for the field <code>activityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActivityId( ) {
 		return this.activityId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>batchList</code>.</p>
+	 *
+	 * @param batchList a {@link java.util.List} object.
+	 */
 	public void setBatchList(List<OpenBatch> batchList) {
 		this.batchList = batchList;
 	}
+	/**
+	 * <p>Getter for the field <code>batchList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OpenBatch> getBatchList( ) {
 		return this.batchList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>batchNum</code>.</p>
+	 *
+	 * @param batchNum a {@link java.lang.String} object.
+	 */
 	public void setBatchNum(String batchNum) {
 		this.batchNum = batchNum;
 	}
+	/**
+	 * <p>Getter for the field <code>batchNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchNum( ) {
 		return this.batchNum;
 	}

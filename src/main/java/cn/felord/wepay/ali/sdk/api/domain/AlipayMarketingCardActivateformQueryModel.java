@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询用户授权的开放表单信息
  *
  * @author auto create
- * @since 1.0, 2017-03-13 15:28:02
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardActivateformQueryModel extends AlipayObject {
 
@@ -32,23 +32,53 @@ MEMBER_CARD -- 会员卡开卡
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}

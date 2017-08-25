@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户还款
  *
  * @author auto create
- * @since 1.0, 2016-08-25 10:32:15
+ * @version $Id: $Id
  */
 public class AlipayPcreditLoanRefundCreateModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayPcreditLoanRefundCreateModel extends AlipayObject {
 	@ApiField("req_id")
 	private String reqId;
 
+	/**
+	 * <p>Getter for the field <code>loanApplyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanApplyNo() {
 		return this.loanApplyNo;
 	}
+	/**
+	 * <p>Setter for the field <code>loanApplyNo</code>.</p>
+	 *
+	 * @param loanApplyNo a {@link java.lang.String} object.
+	 */
 	public void setLoanApplyNo(String loanApplyNo) {
 		this.loanApplyNo = loanApplyNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>repayAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRepayAmt() {
 		return this.repayAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>repayAmt</code>.</p>
+	 *
+	 * @param repayAmt a {@link java.lang.String} object.
+	 */
 	public void setRepayAmt(String repayAmt) {
 		this.repayAmt = repayAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reqId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReqId() {
 		return this.reqId;
 	}
+	/**
+	 * <p>Setter for the field <code>reqId</code>.</p>
+	 *
+	 * @param reqId a {@link java.lang.String} object.
+	 */
 	public void setReqId(String reqId) {
 		this.reqId = reqId;
 	}

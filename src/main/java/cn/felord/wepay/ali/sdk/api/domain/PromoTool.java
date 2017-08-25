@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 营销工具
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class PromoTool extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class PromoTool extends AlipayObject {
 	@ApiField("voucher_no")
 	private String voucherNo;
 
+	/**
+	 * <p>Getter for the field <code>pointCard</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.PointCard} object.
+	 */
 	public PointCard getPointCard() {
 		return this.pointCard;
 	}
+	/**
+	 * <p>Setter for the field <code>pointCard</code>.</p>
+	 *
+	 * @param pointCard a {@link cn.felord.wepay.ali.sdk.api.domain.PointCard} object.
+	 */
 	public void setPointCard(PointCard pointCard) {
 		this.pointCard = pointCard;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendRule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.SendRule} object.
+	 */
 	public SendRule getSendRule() {
 		return this.sendRule;
 	}
+	/**
+	 * <p>Setter for the field <code>sendRule</code>.</p>
+	 *
+	 * @param sendRule a {@link cn.felord.wepay.ali.sdk.api.domain.SendRule} object.
+	 */
 	public void setSendRule(SendRule sendRule) {
 		this.sendRule = sendRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucher</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.Voucher} object.
+	 */
 	public Voucher getVoucher() {
 		return this.voucher;
 	}
+	/**
+	 * <p>Setter for the field <code>voucher</code>.</p>
+	 *
+	 * @param voucher a {@link cn.felord.wepay.ali.sdk.api.domain.Voucher} object.
+	 */
 	public void setVoucher(Voucher voucher) {
 		this.voucher = voucher;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherNo() {
 		return this.voucherNo;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherNo</code>.</p>
+	 *
+	 * @param voucherNo a {@link java.lang.String} object.
+	 */
 	public void setVoucherNo(String voucherNo) {
 		this.voucherNo = voucherNo;
 	}

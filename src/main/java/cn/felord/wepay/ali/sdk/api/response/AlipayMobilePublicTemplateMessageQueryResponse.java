@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.template.message.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:27:44
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicTemplateMessageQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMobilePublicTemplateMessageQueryResponse extends AlipayRespon
 	@ApiField("result")
 	private String result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult( ) {
 		return this.result;
 	}

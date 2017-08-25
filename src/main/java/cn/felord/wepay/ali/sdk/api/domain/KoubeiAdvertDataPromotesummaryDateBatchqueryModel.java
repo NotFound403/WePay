@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑客日期维度汇总数据查询
  *
  * @author auto create
- * @since 1.0, 2017-06-09 15:39:43
+ * @version $Id: $Id
  */
 public class KoubeiAdvertDataPromotesummaryDateBatchqueryModel extends AlipayObject {
 
@@ -46,37 +46,87 @@ public class KoubeiAdvertDataPromotesummaryDateBatchqueryModel extends AlipayObj
 	@ApiField("voucher_name")
 	private String voucherName;
 
+	/**
+	 * <p>Getter for the field <code>advId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdvId() {
 		return this.advId;
 	}
+	/**
+	 * <p>Setter for the field <code>advId</code>.</p>
+	 *
+	 * @param advId a {@link java.lang.String} object.
+	 */
 	public void setAdvId(String advId) {
 		this.advId = advId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndDate() {
 		return this.endDate;
 	}
+	/**
+	 * <p>Setter for the field <code>endDate</code>.</p>
+	 *
+	 * @param endDate a {@link java.util.Date} object.
+	 */
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartDate() {
 		return this.startDate;
 	}
+	/**
+	 * <p>Setter for the field <code>startDate</code>.</p>
+	 *
+	 * @param startDate a {@link java.util.Date} object.
+	 */
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherName() {
 		return this.voucherName;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherName</code>.</p>
+	 *
+	 * @param voucherName a {@link java.lang.String} object.
+	 */
 	public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}

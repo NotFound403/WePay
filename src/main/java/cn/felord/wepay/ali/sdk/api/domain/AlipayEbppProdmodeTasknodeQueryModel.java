@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 审批任务节点状态API
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:17:03
+ * @version $Id: $Id
  */
 public class AlipayEbppProdmodeTasknodeQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEbppProdmodeTasknodeQueryModel extends AlipayObject {
 	@ApiField("task_id")
 	private String taskId;
 
+	/**
+	 * <p>Getter for the field <code>taskId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTaskId() {
 		return this.taskId;
 	}
+	/**
+	 * <p>Setter for the field <code>taskId</code>.</p>
+	 *
+	 * @param taskId a {@link java.lang.String} object.
+	 */
 	public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}

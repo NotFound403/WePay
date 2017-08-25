@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商圈首页地址变更工单审核状态查询
  *
  * @author auto create
- * @since 1.0, 2017-03-31 14:01:07
+ * @version $Id: $Id
  */
 public class KoubeiShopMallAuditQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiShopMallAuditQueryModel extends AlipayObject {
 	@ApiField("order_flow_id")
 	private String orderFlowId;
 
+	/**
+	 * <p>Getter for the field <code>orderFlowId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderFlowId() {
 		return this.orderFlowId;
 	}
+	/**
+	 * <p>Setter for the field <code>orderFlowId</code>.</p>
+	 *
+	 * @param orderFlowId a {@link java.lang.String} object.
+	 */
 	public void setOrderFlowId(String orderFlowId) {
 		this.orderFlowId = orderFlowId;
 	}

@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.detail.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:26
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignCashDetailQueryResponse extends AlipayResponse {
 
@@ -86,79 +86,189 @@ SETTLE:活动已清算
 	@ApiField("total_num")
 	private Long totalNum;
 
+	/**
+	 * <p>Setter for the field <code>campStatus</code>.</p>
+	 *
+	 * @param campStatus a {@link java.lang.String} object.
+	 */
 	public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>campStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampStatus( ) {
 		return this.campStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>couponName</code>.</p>
+	 *
+	 * @param couponName a {@link java.lang.String} object.
+	 */
 	public void setCouponName(String couponName) {
 		this.couponName = couponName;
 	}
+	/**
+	 * <p>Getter for the field <code>couponName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponName( ) {
 		return this.couponName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>crowdNo</code>.</p>
+	 *
+	 * @param crowdNo a {@link java.lang.String} object.
+	 */
 	public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
+	/**
+	 * <p>Getter for the field <code>crowdNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdNo( ) {
 		return this.crowdNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime( ) {
 		return this.endTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>originCrowdNo</code>.</p>
+	 *
+	 * @param originCrowdNo a {@link java.lang.String} object.
+	 */
 	public void setOriginCrowdNo(String originCrowdNo) {
 		this.originCrowdNo = originCrowdNo;
 	}
+	/**
+	 * <p>Getter for the field <code>originCrowdNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginCrowdNo( ) {
 		return this.originCrowdNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>prizeMsg</code>.</p>
+	 *
+	 * @param prizeMsg a {@link java.lang.String} object.
+	 */
 	public void setPrizeMsg(String prizeMsg) {
 		this.prizeMsg = prizeMsg;
 	}
+	/**
+	 * <p>Getter for the field <code>prizeMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeMsg( ) {
 		return this.prizeMsg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>prizeType</code>.</p>
+	 *
+	 * @param prizeType a {@link java.lang.String} object.
+	 */
 	public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
+	/**
+	 * <p>Getter for the field <code>prizeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeType( ) {
 		return this.prizeType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sendAmount</code>.</p>
+	 *
+	 * @param sendAmount a {@link java.lang.String} object.
+	 */
 	public void setSendAmount(String sendAmount) {
 		this.sendAmount = sendAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>sendAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSendAmount( ) {
 		return this.sendAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime( ) {
 		return this.startTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalNum</code>.</p>
+	 *
+	 * @param totalNum a {@link java.lang.Long} object.
+	 */
 	public void setTotalNum(Long totalNum) {
 		this.totalNum = totalNum;
 	}
+	/**
+	 * <p>Getter for the field <code>totalNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalNum( ) {
 		return this.totalNum;
 	}

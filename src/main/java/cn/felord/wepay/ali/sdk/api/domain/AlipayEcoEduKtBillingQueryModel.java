@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 缴费账单查询
  *
  * @author auto create
- * @since 1.0, 2017-06-13 10:28:56
+ * @version $Id: $Id
  */
 public class AlipayEcoEduKtBillingQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoEduKtBillingQueryModel extends AlipayObject {
 	@ApiField("school_pid")
 	private String schoolPid;
 
+	/**
+	 * <p>Getter for the field <code>isvPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvPid() {
 		return this.isvPid;
 	}
+	/**
+	 * <p>Setter for the field <code>isvPid</code>.</p>
+	 *
+	 * @param isvPid a {@link java.lang.String} object.
+	 */
 	public void setIsvPid(String isvPid) {
 		this.isvPid = isvPid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schoolPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchoolPid() {
 		return this.schoolPid;
 	}
+	/**
+	 * <p>Setter for the field <code>schoolPid</code>.</p>
+	 *
+	 * @param schoolPid a {@link java.lang.String} object.
+	 */
 	public void setSchoolPid(String schoolPid) {
 		this.schoolPid = schoolPid;
 	}

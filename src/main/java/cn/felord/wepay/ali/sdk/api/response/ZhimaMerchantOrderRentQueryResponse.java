@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-25 14:34:06
+ * @version $Id: $Id
  */
 public class ZhimaMerchantOrderRentQueryResponse extends AlipayResponse {
 
@@ -97,86 +97,206 @@ cancel:撤销
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>admitState</code>.</p>
+	 *
+	 * @param admitState a {@link java.lang.String} object.
+	 */
 	public void setAdmitState(String admitState) {
 		this.admitState = admitState;
 	}
+	/**
+	 * <p>Getter for the field <code>admitState</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdmitState( ) {
 		return this.admitState;
 	}
 
+	/**
+	 * <p>Setter for the field <code>alipayFundOrderNo</code>.</p>
+	 *
+	 * @param alipayFundOrderNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayFundOrderNo(String alipayFundOrderNo) {
 		this.alipayFundOrderNo = alipayFundOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayFundOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayFundOrderNo( ) {
 		return this.alipayFundOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>borrowTime</code>.</p>
+	 *
+	 * @param borrowTime a {@link java.lang.String} object.
+	 */
 	public void setBorrowTime(String borrowTime) {
 		this.borrowTime = borrowTime;
 	}
+	/**
+	 * <p>Getter for the field <code>borrowTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBorrowTime( ) {
 		return this.borrowTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>goodsName</code>.</p>
+	 *
+	 * @param goodsName a {@link java.lang.String} object.
+	 */
 	public void setGoodsName(String goodsName) {
 		this.goodsName = goodsName;
 	}
+	/**
+	 * <p>Getter for the field <code>goodsName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGoodsName( ) {
 		return this.goodsName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payAmount</code>.</p>
+	 *
+	 * @param payAmount a {@link java.lang.String} object.
+	 */
 	public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>payAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayAmount( ) {
 		return this.payAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payAmountType</code>.</p>
+	 *
+	 * @param payAmountType a {@link java.lang.String} object.
+	 */
 	public void setPayAmountType(String payAmountType) {
 		this.payAmountType = payAmountType;
 	}
+	/**
+	 * <p>Getter for the field <code>payAmountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayAmountType( ) {
 		return this.payAmountType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payStatus</code>.</p>
+	 *
+	 * @param payStatus a {@link java.lang.String} object.
+	 */
 	public void setPayStatus(String payStatus) {
 		this.payStatus = payStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>payStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayStatus( ) {
 		return this.payStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payTime</code>.</p>
+	 *
+	 * @param payTime a {@link java.lang.String} object.
+	 */
 	public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
+	/**
+	 * <p>Getter for the field <code>payTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayTime( ) {
 		return this.payTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>restoreTime</code>.</p>
+	 *
+	 * @param restoreTime a {@link java.lang.String} object.
+	 */
 	public void setRestoreTime(String restoreTime) {
 		this.restoreTime = restoreTime;
 	}
+	/**
+	 * <p>Getter for the field <code>restoreTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRestoreTime( ) {
 		return this.restoreTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>useState</code>.</p>
+	 *
+	 * @param useState a {@link java.lang.String} object.
+	 */
 	public void setUseState(String useState) {
 		this.useState = useState;
 	}
+	/**
+	 * <p>Getter for the field <code>useState</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUseState( ) {
 		return this.useState;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}

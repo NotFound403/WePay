@@ -5,11 +5,11 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
 
 /**
  * 参见“body_info参数说明”
-1提醒类body_info固定为主副及可选布局格式
-2应用类body_info固定为图文连接的格式布局
+ *1提醒类body_info固定为主副及可选布局格式
+ *2应用类body_info固定为图文连接的格式布局
  *
  * @author auto create
- * @since 1.0, 2016-11-16 15:16:20
+ * @version $Id: $Id
  */
 public class MedicalSvTpCardBodyInfo extends AlipayObject {
 
@@ -65,51 +65,121 @@ public class MedicalSvTpCardBodyInfo extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageUrl() {
 		return this.imageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @param imageUrl a {@link java.lang.String} object.
+	 */
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>linkUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLinkUrl() {
 		return this.linkUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>linkUrl</code>.</p>
+	 *
+	 * @param linkUrl a {@link java.lang.String} object.
+	 */
 	public void setLinkUrl(String linkUrl) {
 		this.linkUrl = linkUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>remark</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRemark() {
 		return this.remark;
 	}
+	/**
+	 * <p>Setter for the field <code>remark</code>.</p>
+	 *
+	 * @param remark a {@link java.lang.String} object.
+	 */
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subContenet</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubContenet() {
 		return this.subContenet;
 	}
+	/**
+	 * <p>Setter for the field <code>subContenet</code>.</p>
+	 *
+	 * @param subContenet a {@link java.lang.String} object.
+	 */
 	public void setSubContenet(String subContenet) {
 		this.subContenet = subContenet;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subTitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubTitle() {
 		return this.subTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>subTitle</code>.</p>
+	 *
+	 * @param subTitle a {@link java.lang.String} object.
+	 */
 	public void setSubTitle(String subTitle) {
 		this.subTitle = subTitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

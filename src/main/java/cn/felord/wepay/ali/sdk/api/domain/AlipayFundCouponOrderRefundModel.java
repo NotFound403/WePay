@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 受托退款接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 14:07:16
+ * @version $Id: $Id
  */
 public class AlipayFundCouponOrderRefundModel extends AlipayObject {
 
@@ -39,30 +39,70 @@ public class AlipayFundCouponOrderRefundModel extends AlipayObject {
 	@ApiField("remark")
 	private String remark;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>authNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthNo() {
 		return this.authNo;
 	}
+	/**
+	 * <p>Setter for the field <code>authNo</code>.</p>
+	 *
+	 * @param authNo a {@link java.lang.String} object.
+	 */
 	public void setAuthNo(String authNo) {
 		this.authNo = authNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>remark</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRemark() {
 		return this.remark;
 	}
+	/**
+	 * <p>Setter for the field <code>remark</code>.</p>
+	 *
+	 * @param remark a {@link java.lang.String} object.
+	 */
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}

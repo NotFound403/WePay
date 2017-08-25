@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.servicemarket.order.accept response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:47:51
+ * @version $Id: $Id
  */
 public class AlipayOpenServicemarketOrderAcceptResponse extends AlipayResponse {
 

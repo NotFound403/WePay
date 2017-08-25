@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 商圈店铺活动信息
  *
  * @author auto create
- * @since 1.0, 2017-06-20 15:01:09
+ * @version $Id: $Id
  */
 public class KoubeiMarketingMallShoppromoinfoQueryModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class KoubeiMarketingMallShoppromoinfoQueryModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> shopIds;
 
+	/**
+	 * <p>Getter for the field <code>mallId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMallId() {
 		return this.mallId;
 	}
+	/**
+	 * <p>Setter for the field <code>mallId</code>.</p>
+	 *
+	 * @param mallId a {@link java.lang.String} object.
+	 */
 	public void setMallId(String mallId) {
 		this.mallId = mallId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getShopIds() {
 		return this.shopIds;
 	}
+	/**
+	 * <p>Setter for the field <code>shopIds</code>.</p>
+	 *
+	 * @param shopIds a {@link java.util.List} object.
+	 */
 	public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 业务下拉列表API
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:17:29
+ * @version $Id: $Id
  */
 public class AlipayEbppProdmodeDropdataQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEbppProdmodeDropdataQueryModel extends AlipayObject {
 	@ApiField("search_type")
 	private String searchType;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>searchType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSearchType() {
 		return this.searchType;
 	}
+	/**
+	 * <p>Setter for the field <code>searchType</code>.</p>
+	 *
+	 * @param searchType a {@link java.lang.String} object.
+	 */
 	public void setSearchType(String searchType) {
 		this.searchType = searchType;
 	}

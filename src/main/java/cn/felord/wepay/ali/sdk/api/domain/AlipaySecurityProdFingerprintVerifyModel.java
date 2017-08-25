@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 指纹校验
  *
  * @author auto create
- * @since 1.0, 2017-01-12 17:27:17
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFingerprintVerifyModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipaySecurityProdFingerprintVerifyModel extends AlipayObject {
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * <p>Getter for the field <code>ifafMessage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIfafMessage() {
 		return this.ifafMessage;
 	}
+	/**
+	 * <p>Setter for the field <code>ifafMessage</code>.</p>
+	 *
+	 * @param ifafMessage a {@link java.lang.String} object.
+	 */
 	public void setIfafMessage(String ifafMessage) {
 		this.ifafMessage = ifafMessage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}

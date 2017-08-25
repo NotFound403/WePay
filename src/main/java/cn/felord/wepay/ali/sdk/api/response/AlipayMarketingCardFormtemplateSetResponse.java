@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.formtemplate.set response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-01 15:08:54
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardFormtemplateSetResponse extends AlipayResponse {
 

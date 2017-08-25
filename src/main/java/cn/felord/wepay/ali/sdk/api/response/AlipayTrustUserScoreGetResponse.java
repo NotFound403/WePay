@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trust.user.score.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-01-04 10:16:11
+ * @version $Id: $Id
  */
 public class AlipayTrustUserScoreGetResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayTrustUserScoreGetResponse extends AlipayResponse {
 	@ApiField("ali_trust_score")
 	private AliTrustScore aliTrustScore;
 
+	/**
+	 * <p>Setter for the field <code>aliTrustScore</code>.</p>
+	 *
+	 * @param aliTrustScore a {@link cn.felord.wepay.ali.sdk.api.domain.AliTrustScore} object.
+	 */
 	public void setAliTrustScore(AliTrustScore aliTrustScore) {
 		this.aliTrustScore = aliTrustScore;
 	}
+	/**
+	 * <p>Getter for the field <code>aliTrustScore</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AliTrustScore} object.
+	 */
 	public AliTrustScore getAliTrustScore( ) {
 		return this.aliTrustScore;
 	}

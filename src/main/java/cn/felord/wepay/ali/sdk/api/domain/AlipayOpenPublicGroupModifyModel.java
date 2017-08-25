@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 用户分组修改接口
  *
  * @author auto create
- * @since 1.0, 2017-06-27 17:51:56
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicGroupModifyModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class AlipayOpenPublicGroupModifyModel extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId() {
 		return this.groupId;
 	}
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelRule</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ComplexLabelRule> getLabelRule() {
 		return this.labelRule;
 	}
+	/**
+	 * <p>Setter for the field <code>labelRule</code>.</p>
+	 *
+	 * @param labelRule a {@link java.util.List} object.
+	 */
 	public void setLabelRule(List<ComplexLabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}

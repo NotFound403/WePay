@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trust.user.report.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-04 11:36:24
+ * @version $Id: $Id
  */
 public class AlipayTrustUserReportGetResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayTrustUserReportGetResponse extends AlipayResponse {
 	@ApiField("report")
 	private String report;
 
+	/**
+	 * <p>Setter for the field <code>report</code>.</p>
+	 *
+	 * @param report a {@link java.lang.String} object.
+	 */
 	public void setReport(String report) {
 		this.report = report;
 	}
+	/**
+	 * <p>Getter for the field <code>report</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReport( ) {
 		return this.report;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.auth.order.voucher.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 21:50:22
+ * @version $Id: $Id
  */
 public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 
@@ -46,37 +46,87 @@ public class AlipayFundAuthOrderVoucherCreateResponse extends AlipayResponse {
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
+	/**
+	 * <p>Setter for the field <code>codeType</code>.</p>
+	 *
+	 * @param codeType a {@link java.lang.String} object.
+	 */
 	public void setCodeType(String codeType) {
 		this.codeType = codeType;
 	}
+	/**
+	 * <p>Getter for the field <code>codeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodeType( ) {
 		return this.codeType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>codeUrl</code>.</p>
+	 *
+	 * @param codeUrl a {@link java.lang.String} object.
+	 */
 	public void setCodeUrl(String codeUrl) {
 		this.codeUrl = codeUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>codeUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodeUrl( ) {
 		return this.codeUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>codeValue</code>.</p>
+	 *
+	 * @param codeValue a {@link java.lang.String} object.
+	 */
 	public void setCodeValue(String codeValue) {
 		this.codeValue = codeValue;
 	}
+	/**
+	 * <p>Getter for the field <code>codeValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodeValue( ) {
 		return this.codeValue;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo( ) {
 		return this.outRequestNo;
 	}

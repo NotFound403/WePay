@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 合约通用查询接口
  *
  * @author auto create
- * @since 1.0, 2016-09-09 20:38:43
+ * @version $Id: $Id
  */
 public class AntProdpaasArrangementCommonQueryModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AntProdpaasArrangementCommonQueryModel extends AlipayObject {
 	@ApiField("arrangement_no_querier")
 	private ArrangementNoQuerier arrangementNoQuerier;
 
+	/**
+	 * <p>Getter for the field <code>arrangementBaseSelector</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementBaseSelector} object.
+	 */
 	public ArrangementBaseSelector getArrangementBaseSelector() {
 		return this.arrangementBaseSelector;
 	}
+	/**
+	 * <p>Setter for the field <code>arrangementBaseSelector</code>.</p>
+	 *
+	 * @param arrangementBaseSelector a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementBaseSelector} object.
+	 */
 	public void setArrangementBaseSelector(ArrangementBaseSelector arrangementBaseSelector) {
 		this.arrangementBaseSelector = arrangementBaseSelector;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arrangementConditionGroupSelector</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementConditionGroupSelector} object.
+	 */
 	public ArrangementConditionGroupSelector getArrangementConditionGroupSelector() {
 		return this.arrangementConditionGroupSelector;
 	}
+	/**
+	 * <p>Setter for the field <code>arrangementConditionGroupSelector</code>.</p>
+	 *
+	 * @param arrangementConditionGroupSelector a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementConditionGroupSelector} object.
+	 */
 	public void setArrangementConditionGroupSelector(ArrangementConditionGroupSelector arrangementConditionGroupSelector) {
 		this.arrangementConditionGroupSelector = arrangementConditionGroupSelector;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arrangementInvolvedPartyQuerier</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementInvolvedPartyQuerier} object.
+	 */
 	public ArrangementInvolvedPartyQuerier getArrangementInvolvedPartyQuerier() {
 		return this.arrangementInvolvedPartyQuerier;
 	}
+	/**
+	 * <p>Setter for the field <code>arrangementInvolvedPartyQuerier</code>.</p>
+	 *
+	 * @param arrangementInvolvedPartyQuerier a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementInvolvedPartyQuerier} object.
+	 */
 	public void setArrangementInvolvedPartyQuerier(ArrangementInvolvedPartyQuerier arrangementInvolvedPartyQuerier) {
 		this.arrangementInvolvedPartyQuerier = arrangementInvolvedPartyQuerier;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arrangementNoQuerier</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementNoQuerier} object.
+	 */
 	public ArrangementNoQuerier getArrangementNoQuerier() {
 		return this.arrangementNoQuerier;
 	}
+	/**
+	 * <p>Setter for the field <code>arrangementNoQuerier</code>.</p>
+	 *
+	 * @param arrangementNoQuerier a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementNoQuerier} object.
+	 */
 	public void setArrangementNoQuerier(ArrangementNoQuerier arrangementNoQuerier) {
 		this.arrangementNoQuerier = arrangementNoQuerier;
 	}

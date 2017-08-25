@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 阶梯优惠
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:49
+ * @version $Id: $Id
  */
 public class StagedDiscountDstCampPrizeModel extends AlipayObject {
 
@@ -41,30 +41,70 @@ public class StagedDiscountDstCampPrizeModel extends AlipayObject {
 	@ApiField("max_discount_amt")
 	private String maxDiscountAmt;
 
+	/**
+	 * <p>Getter for the field <code>budgetId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBudgetId() {
 		return this.budgetId;
 	}
+	/**
+	 * <p>Setter for the field <code>budgetId</code>.</p>
+	 *
+	 * @param budgetId a {@link java.lang.String} object.
+	 */
 	public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>discountRateModelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DiscountRateModel> getDiscountRateModelList() {
 		return this.discountRateModelList;
 	}
+	/**
+	 * <p>Setter for the field <code>discountRateModelList</code>.</p>
+	 *
+	 * @param discountRateModelList a {@link java.util.List} object.
+	 */
 	public void setDiscountRateModelList(List<DiscountRateModel> discountRateModelList) {
 		this.discountRateModelList = discountRateModelList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.String} object.
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxDiscountAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxDiscountAmt() {
 		return this.maxDiscountAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>maxDiscountAmt</code>.</p>
+	 *
+	 * @param maxDiscountAmt a {@link java.lang.String} object.
+	 */
 	public void setMaxDiscountAmt(String maxDiscountAmt) {
 		this.maxDiscountAmt = maxDiscountAmt;
 	}

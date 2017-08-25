@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.deposit.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-12-15 11:37:56
+ * @version $Id: $Id
  */
 public class AlipayCommerceCityfacilitatorDepositQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayCommerceCityfacilitatorDepositQueryResponse extends AlipayRes
 	@ApiField("recharge_bill")
 	private List<RechargeBill> rechargeBills;
 
+	/**
+	 * <p>Setter for the field <code>rechargeBills</code>.</p>
+	 *
+	 * @param rechargeBills a {@link java.util.List} object.
+	 */
 	public void setRechargeBills(List<RechargeBill> rechargeBills) {
 		this.rechargeBills = rechargeBills;
 	}
+	/**
+	 * <p>Getter for the field <code>rechargeBills</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RechargeBill> getRechargeBills( ) {
 		return this.rechargeBills;
 	}

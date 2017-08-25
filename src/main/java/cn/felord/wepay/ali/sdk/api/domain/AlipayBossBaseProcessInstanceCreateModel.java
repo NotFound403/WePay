@@ -1,164 +1,285 @@
 package cn.felord.wepay.ali.sdk.api.domain;
 
-import java.util.List;
-
 import cn.felord.wepay.ali.sdk.api.AlipayObject;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
+
+import java.util.List;
 
 /**
  * 创建流程实例
  *
  * @author auto create
- * @since 1.0, 2017-03-03 11:29:15
+ * @version $Id: $Id
  */
 public class AlipayBossBaseProcessInstanceCreateModel extends AlipayObject {
 
-	private static final long serialVersionUID = 1186273776849371389L;
+    private static final long serialVersionUID = 1186273776849371389L;
 
-	/**
-	 * 加签内容
-	 */
-	@ApiListField("add_sign_content")
-	@ApiField("b_p_open_api_add_sign_content")
-	private List<BPOpenApiAddSignContent> addSignContent;
+    /**
+     * 加签内容
+     */
+    @ApiListField("add_sign_content")
+    @ApiField("b_p_open_api_add_sign_content")
+    private List<BPOpenApiAddSignContent> addSignContent;
 
-	/**
-	 * 业务上下文，JSON格式
-	 */
-	@ApiField("context")
-	private String context;
+    /**
+     * 业务上下文，JSON格式
+     */
+    @ApiField("context")
+    private String context;
 
-	/**
-	 * 创建人的域账号
-	 */
-	@ApiField("creator")
-	private String creator;
+    /**
+     * 创建人的域账号
+     */
+    @ApiField("creator")
+    private String creator;
 
-	/**
-	 * 描述信息
-	 */
-	@ApiField("description")
-	private String description;
+    /**
+     * 描述信息
+     */
+    @ApiField("description")
+    private String description;
 
-	/**
-	 * 2088账号
-	 */
-	@ApiField("ip_role_id")
-	private String ipRoleId;
+    /**
+     * 2088账号
+     */
+    @ApiField("ip_role_id")
+    private String ipRoleId;
 
-	/**
-	 * 流程配置名称。需要先在流程平台配置流程
-	 */
-	@ApiField("name")
-	private String name;
+    /**
+     * 流程配置名称。需要先在流程平台配置流程
+     */
+    @ApiField("name")
+    private String name;
 
-	/**
-	 * 优先级，数字越大优先级越高，最大不超过29
-	 */
-	@ApiField("priority")
-	private Long priority;
+    /**
+     * 优先级，数字越大优先级越高，最大不超过29
+     */
+    @ApiField("priority")
+    private Long priority;
 
-	/**
-	 * 流程全局唯一ID，和业务一一对应
-	 */
-	@ApiField("puid")
-	private BPOpenApiPUID puid;
+    /**
+     * 流程全局唯一ID，和业务一一对应
+     */
+    @ApiField("puid")
+    private BPOpenApiPUID puid;
 
-	/**
-	 * 前置流程从哪个节点发起的本流程
-	 */
-	@ApiField("source_node_name")
-	private String sourceNodeName;
+    /**
+     * 前置流程从哪个节点发起的本流程
+     */
+    @ApiField("source_node_name")
+    private String sourceNodeName;
 
-	/**
-	 * 前置流程的PUID。用于串连起两个流程
-	 */
-	@ApiField("source_puid")
-	private String sourcePuid;
+    /**
+     * 前置流程的PUID。用于串连起两个流程
+     */
+    @ApiField("source_puid")
+    private String sourcePuid;
 
-	/**
-	 * 子流程的上下文。每一个上下文都使用JSON格式
-	 */
-	@ApiListField("sub_contexts")
-	@ApiField("string")
-	private List<String> subContexts;
+    /**
+     * 子流程的上下文。每一个上下文都使用JSON格式
+     */
+    @ApiListField("sub_contexts")
+    @ApiField("string")
+    private List<String> subContexts;
 
-	public List<BPOpenApiAddSignContent> getAddSignContent() {
-		return this.addSignContent;
-	}
-	public void setAddSignContent(List<BPOpenApiAddSignContent> addSignContent) {
-		this.addSignContent = addSignContent;
-	}
+    /**
+     * Gets add sign content.
+     *
+     * @return the add sign content
+     */
+    public List<BPOpenApiAddSignContent> getAddSignContent() {
+        return this.addSignContent;
+    }
 
-	public String getContext() {
-		return this.context;
-	}
-	public void setContext(String context) {
-		this.context = context;
-	}
+    /**
+     * Sets add sign content.
+     *
+     * @param addSignContent the add sign content
+     */
+    public void setAddSignContent(List<BPOpenApiAddSignContent> addSignContent) {
+        this.addSignContent = addSignContent;
+    }
 
-	public String getCreator() {
-		return this.creator;
-	}
-	public void setCreator(String creator) {
-		this.creator = creator;
-	}
+    /**
+     * Gets context.
+     *
+     * @return the context
+     */
+    public String getContext() {
+        return this.context;
+    }
 
-	public String getDescription() {
-		return this.description;
-	}
-	public void setDescription(String description) {
-		this.description = description;
-	}
+    /**
+     * Sets context.
+     *
+     * @param context the context
+     */
+    public void setContext(String context) {
+        this.context = context;
+    }
 
-	public String getIpRoleId() {
-		return this.ipRoleId;
-	}
-	public void setIpRoleId(String ipRoleId) {
-		this.ipRoleId = ipRoleId;
-	}
+    /**
+     * Gets creator.
+     *
+     * @return the creator
+     */
+    public String getCreator() {
+        return this.creator;
+    }
 
-	public String getName() {
-		return this.name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
+    /**
+     * Sets creator.
+     *
+     * @param creator the creator
+     */
+    public void setCreator(String creator) {
+        this.creator = creator;
+    }
 
-	public Long getPriority() {
-		return this.priority;
-	}
-	public void setPriority(Long priority) {
-		this.priority = priority;
-	}
+    /**
+     * Gets description.
+     *
+     * @return the description
+     */
+    public String getDescription() {
+        return this.description;
+    }
 
-	public BPOpenApiPUID getPuid() {
-		return this.puid;
-	}
-	public void setPuid(BPOpenApiPUID puid) {
-		this.puid = puid;
-	}
+    /**
+     * Sets description.
+     *
+     * @param description the description
+     */
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
-	public String getSourceNodeName() {
-		return this.sourceNodeName;
-	}
-	public void setSourceNodeName(String sourceNodeName) {
-		this.sourceNodeName = sourceNodeName;
-	}
+    /**
+     * Gets ip role id.
+     *
+     * @return the ip role id
+     */
+    public String getIpRoleId() {
+        return this.ipRoleId;
+    }
 
-	public String getSourcePuid() {
-		return this.sourcePuid;
-	}
-	public void setSourcePuid(String sourcePuid) {
-		this.sourcePuid = sourcePuid;
-	}
+    /**
+     * Sets ip role id.
+     *
+     * @param ipRoleId the ip role id
+     */
+    public void setIpRoleId(String ipRoleId) {
+        this.ipRoleId = ipRoleId;
+    }
 
-	public List<String> getSubContexts() {
-		return this.subContexts;
-	}
-	public void setSubContexts(List<String> subContexts) {
-		this.subContexts = subContexts;
-	}
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
+        return this.name;
+    }
+
+    /**
+     * Sets name.
+     *
+     * @param name the name
+     */
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    /**
+     * Gets priority.
+     *
+     * @return the priority
+     */
+    public Long getPriority() {
+        return this.priority;
+    }
+
+    /**
+     * Sets priority.
+     *
+     * @param priority the priority
+     */
+    public void setPriority(Long priority) {
+        this.priority = priority;
+    }
+
+    /**
+     * Gets puid.
+     *
+     * @return the puid
+     */
+    public BPOpenApiPUID getPuid() {
+        return this.puid;
+    }
+
+    /**
+     * Sets puid.
+     *
+     * @param puid the puid
+     */
+    public void setPuid(BPOpenApiPUID puid) {
+        this.puid = puid;
+    }
+
+    /**
+     * Gets source node name.
+     *
+     * @return the source node name
+     */
+    public String getSourceNodeName() {
+        return this.sourceNodeName;
+    }
+
+    /**
+     * Sets source node name.
+     *
+     * @param sourceNodeName the source node name
+     */
+    public void setSourceNodeName(String sourceNodeName) {
+        this.sourceNodeName = sourceNodeName;
+    }
+
+    /**
+     * Gets source puid.
+     *
+     * @return the source puid
+     */
+    public String getSourcePuid() {
+        return this.sourcePuid;
+    }
+
+    /**
+     * Sets source puid.
+     *
+     * @param sourcePuid the source puid
+     */
+    public void setSourcePuid(String sourcePuid) {
+        this.sourcePuid = sourcePuid;
+    }
+
+    /**
+     * Gets sub contexts.
+     *
+     * @return the sub contexts
+     */
+    public List<String> getSubContexts() {
+        return this.subContexts;
+    }
+
+    /**
+     * Sets sub contexts.
+     *
+     * @param subContexts the sub contexts
+     */
+    public void setSubContexts(List<String> subContexts) {
+        this.subContexts = subContexts;
+    }
 
 }

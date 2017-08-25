@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 外部商户可通过此接口创建支付宝用户的打赏订单，而后通过支付宝快捷支付对此订单进行支付完成打赏。（不支持企业用户）
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:18
+ * @version $Id: $Id
  */
 public class AlipayFundTransThirdpartyRewardCreateModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class AlipayFundTransThirdpartyRewardCreateModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtParam() {
 		return this.extParam;
 	}
+	/**
+	 * <p>Setter for the field <code>extParam</code>.</p>
+	 *
+	 * @param extParam a {@link java.lang.String} object.
+	 */
 	public void setExtParam(String extParam) {
 		this.extParam = extParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutNo() {
 		return this.outNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outNo</code>.</p>
+	 *
+	 * @param outNo a {@link java.lang.String} object.
+	 */
 	public void setOutNo(String outNo) {
 		this.outNo = outNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>receiverUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverUserId() {
 		return this.receiverUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>receiverUserId</code>.</p>
+	 *
+	 * @param receiverUserId a {@link java.lang.String} object.
+	 */
 	public void setReceiverUserId(String receiverUserId) {
 		this.receiverUserId = receiverUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>scene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getScene() {
 		return this.scene;
 	}
+	/**
+	 * <p>Setter for the field <code>scene</code>.</p>
+	 *
+	 * @param scene a {@link java.lang.String} object.
+	 */
 	public void setScene(String scene) {
 		this.scene = scene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>senderUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSenderUserId() {
 		return this.senderUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>senderUserId</code>.</p>
+	 *
+	 * @param senderUserId a {@link java.lang.String} object.
+	 */
 	public void setSenderUserId(String senderUserId) {
 		this.senderUserId = senderUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

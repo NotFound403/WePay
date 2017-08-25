@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 分佣任务的标的信息
  *
  * @author auto create
- * @since 1.0, 2017-01-13 11:53:39
+ * @version $Id: $Id
  */
 public class KbAdvertMissionSubject extends AlipayObject {
 
@@ -36,23 +36,53 @@ voucher-券
 	@ApiField("subject_type")
 	private String subjectType;
 
+	/**
+	 * <p>Getter for the field <code>commissionClauseList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbAdvertCommissionClause> getCommissionClauseList() {
 		return this.commissionClauseList;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionClauseList</code>.</p>
+	 *
+	 * @param commissionClauseList a {@link java.util.List} object.
+	 */
 	public void setCommissionClauseList(List<KbAdvertCommissionClause> commissionClauseList) {
 		this.commissionClauseList = commissionClauseList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subjectBizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubjectBizId() {
 		return this.subjectBizId;
 	}
+	/**
+	 * <p>Setter for the field <code>subjectBizId</code>.</p>
+	 *
+	 * @param subjectBizId a {@link java.lang.String} object.
+	 */
 	public void setSubjectBizId(String subjectBizId) {
 		this.subjectBizId = subjectBizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subjectType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubjectType() {
 		return this.subjectType;
 	}
+	/**
+	 * <p>Setter for the field <code>subjectType</code>.</p>
+	 *
+	 * @param subjectType a {@link java.lang.String} object.
+	 */
 	public void setSubjectType(String subjectType) {
 		this.subjectType = subjectType;
 	}

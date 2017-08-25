@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.pay request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 16:45:48
+ * @version $Id: $Id
  */
 public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPdeductPayResponse> {
 
@@ -81,86 +81,206 @@ public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPded
 	 */
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>agentChannel</code>.</p>
+	 *
+	 * @param agentChannel a {@link java.lang.String} object.
+	 */
 	public void setAgentChannel(String agentChannel) {
 		this.agentChannel = agentChannel;
 	}
+	/**
+	 * <p>Getter for the field <code>agentChannel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgentChannel() {
 		return this.agentChannel;
 	}
 
+	/**
+	 * <p>Setter for the field <code>agentCode</code>.</p>
+	 *
+	 * @param agentCode a {@link java.lang.String} object.
+	 */
 	public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
+	/**
+	 * <p>Getter for the field <code>agentCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgentCode() {
 		return this.agentCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId() {
 		return this.agreementId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>billDate</code>.</p>
+	 *
+	 * @param billDate a {@link java.lang.String} object.
+	 */
 	public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
+	/**
+	 * <p>Getter for the field <code>billDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillDate() {
 		return this.billDate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>billKey</code>.</p>
+	 *
+	 * @param billKey a {@link java.lang.String} object.
+	 */
 	public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
+	/**
+	 * <p>Getter for the field <code>billKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillKey() {
 		return this.billKey;
 	}
 
+	/**
+	 * <p>Setter for the field <code>extendField</code>.</p>
+	 *
+	 * @param extendField a {@link java.lang.String} object.
+	 */
 	public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
+	/**
+	 * <p>Getter for the field <code>extendField</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendField() {
 		return this.extendField;
 	}
 
+	/**
+	 * <p>Setter for the field <code>fineAmount</code>.</p>
+	 *
+	 * @param fineAmount a {@link java.lang.String} object.
+	 */
 	public void setFineAmount(String fineAmount) {
 		this.fineAmount = fineAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>fineAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFineAmount() {
 		return this.fineAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payAmount</code>.</p>
+	 *
+	 * @param payAmount a {@link java.lang.String} object.
+	 */
 	public void setPayAmount(String payAmount) {
 		this.payAmount = payAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>payAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayAmount() {
 		return this.payAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pid</code>.</p>
+	 *
+	 * @param pid a {@link java.lang.String} object.
+	 */
 	public void setPid(String pid) {
 		this.pid = pid;
 	}
+	/**
+	 * <p>Getter for the field <code>pid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPid() {
 		return this.pid;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
@@ -172,58 +292,104 @@ public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPded
 	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }	
 
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.ebpp.pdeduct.pay";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("agent_channel", this.agentChannel);
@@ -244,6 +410,12 @@ public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPded
 		return txtParams;
 	}
 
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -251,28 +423,45 @@ public class AlipayEbppPdeductPayRequest implements AlipayRequest<AlipayEbppPded
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayEbppPdeductPayResponse> getResponseClass() {
 		return AlipayEbppPdeductPayResponse.class;
 	}
 	
 
+    /**
+     * <p>isNeedEncrypt.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

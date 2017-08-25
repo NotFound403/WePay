@@ -27,38 +27,22 @@ import java.util.Map.Entry;
 public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
 
     private static final String DEFAULT_CHARSET = AlipayConstants.CHARSET_UTF8;
-    private static final String METHOD_POST     = "POST";
-    private static final String METHOD_GET      = "GET";
-
-    private String              serverUrl;
-    private String              appId;
-    private String              privateKey;
-    private String              prodCode;
-    private String              format          = AlipayConstants.FORMAT_JSON;
-    private String              sign_type       = AlipayConstants.SIGN_TYPE_RSA;
-
-    private String              charset;
-
-    private int                 connectTimeout  = 3000;
-    private int                 readTimeout     = 15000;
-
-    private static class DefaultTrustManager implements X509TrustManager {
-        public X509Certificate[] getAcceptedIssuers() {
-            return null;
-        }
-
-        public void checkClientTrusted(X509Certificate[] chain,
-                                       String authType) throws CertificateException {
-        }
-
-        public void checkServerTrusted(X509Certificate[] chain,
-                                       String authType) throws CertificateException {
-        }
-    }
+    private static final String METHOD_POST = "POST";
+    private static final String METHOD_GET = "GET";
 
     static {
         Security.setProperty("jdk.certpath.disabledAlgorithms", "");
     }
+
+    private String serverUrl;
+    private String appId;
+    private String privateKey;
+    private String prodCode;
+    private String format = AlipayConstants.FORMAT_JSON;
+    private String sign_type = AlipayConstants.SIGN_TYPE_RSA;
+    private String charset;
+    private int connectTimeout = 3000;
+    private int readTimeout = 15000;
 
     /**
      * Instantiates a new Alipay mobile public multi media client.
@@ -120,123 +104,6 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         this.sign_type = signType;
     }
 
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.AlipayClient#execute(cn.felord.wepay.ali.sdk.api.AlipayRequest)
-     */
-    public <T extends AlipayResponse> T execute(AlipayRequest<T> request) throws AlipayApiException {
-        return execute(request, null);
-    }
-
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.AlipayClient#execute(cn.felord.wepay.ali.sdk.api.AlipayRequest, java.lang.String)
-     */
-    public <T extends AlipayResponse> T execute(AlipayRequest<T> request,
-                                                String accessToken) throws AlipayApiException {
-
-        return execute(request, accessToken, null);
-    }
-
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.AlipayClient#execute(AlipayRequest, String, String)
-     */
-    public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
-                                                String appAuthToken) throws AlipayApiException {
-
-        return _execute(request, accessToken, appAuthToken);
-    }
-
-    private <T extends AlipayResponse> T _execute(AlipayRequest<T> request, String authToken,
-                                                  String appAuthToken) throws AlipayApiException {
-
-        return doGet(request, appAuthToken);
-    }
-
-    /**
-     * Do get t.
-     *
-     * @param <T>          the type parameter
-     * @param request      the request
-     * @param appAuthToken the app auth token
-     * @return the t
-     * @throws AlipayApiException the alipay api exception
-     */
-    public <T extends AlipayResponse> T doGet(AlipayRequest<T> request,
-                                              String appAuthToken) throws AlipayApiException {
-
-        if (StringUtils.isEmpty(charset)) {
-            charset = AlipayConstants.CHARSET_UTF8;
-        }
-
-        RequestParametersHolder requestHolder = new RequestParametersHolder();
-        AlipayHashMap appParams = new AlipayHashMap(request.getTextParams());
-
-        // 仅当API包含biz_content参数且值为空时，序列化bizModel填充bizContent
-        try {
-            if (request.getClass().getMethod("getBizContent") != null
-                && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
-                && request.getBizModel() != null) {
-                appParams.put(AlipayConstants.BIZ_CONTENT_KEY,
-                    new JSONWriter().write(request.getBizModel(), true));
-            }
-        } catch (NoSuchMethodException e) {
-            // 找不到getBizContent则什么都不做
-        } catch (SecurityException e) {
-            AlipayLogger.logBizError(e);
-        }
-
-        if (!StringUtils.isEmpty(appAuthToken)) {
-            appParams.put(AlipayConstants.APP_AUTH_TOKEN, appAuthToken);
-        }
-
-        requestHolder.setApplicationParams(appParams);
-
-        AlipayHashMap protocalMustParams = new AlipayHashMap();
-        protocalMustParams.put(AlipayConstants.METHOD, request.getApiMethodName());
-        protocalMustParams.put(AlipayConstants.VERSION, request.getApiVersion());
-        protocalMustParams.put(AlipayConstants.APP_ID, this.appId);
-        protocalMustParams.put(AlipayConstants.SIGN_TYPE, this.sign_type);
-        protocalMustParams.put("charset", charset);
-
-        Long timestamp = System.currentTimeMillis();
-        DateFormat df = new SimpleDateFormat(AlipayConstants.DATE_TIME_FORMAT);
-        df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
-        protocalMustParams.put(AlipayConstants.TIMESTAMP, df.format(new Date(timestamp)));
-        protocalMustParams.put(AlipayConstants.FORMAT, format);
-        requestHolder.setProtocalMustParams(protocalMustParams);
-
-        if (AlipayConstants.SIGN_TYPE_RSA.equals(this.sign_type)) {
-
-            String signContent = AlipaySignature.getSignatureContent(requestHolder);
-
-            protocalMustParams.put(AlipayConstants.SIGN,
-                AlipaySignature.rsaSign(signContent, privateKey, charset));
-
-        } else if (AlipayConstants.SIGN_TYPE_RSA2.equals(this.sign_type)) {
-
-            String signContent = AlipaySignature.getSignatureContent(requestHolder);
-
-            protocalMustParams.put(AlipayConstants.SIGN,
-                AlipaySignature.rsa256Sign(signContent, privateKey, charset));
-
-        } else {
-            protocalMustParams.put(AlipayConstants.SIGN, "");
-        }
-
-        AlipayMobilePublicMultiMediaDownloadResponse rsp = null;
-        try {
-
-            if (request instanceof AlipayMobilePublicMultiMediaDownloadRequest) {
-                OutputStream outputStream = ((AlipayMobilePublicMultiMediaDownloadRequest) request)
-                    .getOutputStream();
-                rsp = doGet(serverUrl, requestHolder, charset, connectTimeout, readTimeout,
-                    outputStream);
-            }
-        } catch (IOException e) {
-            throw new AlipayApiException(e);
-        }
-        return (T) rsp;
-    }
-
     /**
      * Do get alipay mobile public multi media download response.
      *
@@ -247,8 +114,8 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
      * @param readTimeout    the read timeout
      * @param output         the output
      * @return alipay mobile public multi media download response
-     * @throws AlipayApiException the alipay api exception
-     * @throws IOException        the io exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws java.io.IOException        the io exception
      */
     @SuppressWarnings("unchecked")
     public static AlipayMobilePublicMultiMediaDownloadResponse doGet(String url,
@@ -257,7 +124,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
                                                                      int connectTimeout,
                                                                      int readTimeout,
                                                                      OutputStream output) throws AlipayApiException,
-                                                                                          IOException {
+            IOException {
         HttpURLConnection conn = null;
         AlipayMobilePublicMultiMediaDownloadResponse response = null;
 
@@ -292,10 +159,10 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
             try {
                 if (conn.getResponseCode() == 200) {
                     if (conn.getContentType() != null
-                        && conn.getContentType().toLowerCase().contains("text/plain")) {
+                            && conn.getContentType().toLowerCase().contains("text/plain")) {
                         String rsp = getResponseAsString(conn);
                         ObjectJsonParser<AlipayMobilePublicMultiMediaDownloadResponse> parser = new ObjectJsonParser<AlipayMobilePublicMultiMediaDownloadResponse>(
-                            AlipayMobilePublicMultiMediaDownloadResponse.class);
+                                AlipayMobilePublicMultiMediaDownloadResponse.class);
                         response = parser.parse(rsp);
                         response.setBody(rsp);
                         response.setParams(appParams);
@@ -307,7 +174,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
                     response.setCode("200");
                     response.setMsg("成功");
                     response.setBody(
-                        "{\"alipay_mobile_public_multimedia_download_response\":{\"code\":200,\"msg\":\"成功\"}}");
+                            "{\"alipay_mobile_public_multimedia_download_response\":{\"code\":200,\"msg\":\"成功\"}}");
                     response.setParams(appParams);
                 } else {
                     response = new AlipayMobilePublicMultiMediaDownloadResponse();
@@ -340,8 +207,8 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
             SSLContext ctx = null;
             try {
                 ctx = SSLContext.getInstance("TLS");
-                ctx.init(new KeyManager[0], new TrustManager[] { new DefaultTrustManager() },
-                    new SecureRandom());
+                ctx.init(new KeyManager[0], new TrustManager[]{new DefaultTrustManager()},
+                        new SecureRandom());
             } catch (Exception e) {
                 throw new IOException(e);
             }
@@ -371,7 +238,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
      *
      * @param conn the conn
      * @return the response as string
-     * @throws IOException the io exception
+     * @throws java.io.IOException the io exception
      */
     protected static String getResponseAsString(HttpURLConnection conn) throws IOException {
         String charset = getResponseCharset(conn.getContentType());
@@ -469,7 +336,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
      * @param params  the params
      * @param charset the charset
      * @return the string
-     * @throws IOException the io exception
+     * @throws java.io.IOException the io exception
      */
     public static String buildQuery(Map<String, String> params, String charset) throws IOException {
         if (params == null || params.isEmpty()) {
@@ -502,7 +369,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
      * Split url query map.
      *
      * @param query the query
-     * @return map
+     * @return map map
      */
     public static Map<String, String> splitUrlQuery(String query) {
         Map<String, String> result = new HashMap<String, String>();
@@ -520,22 +387,150 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
         return result;
     }
 
+    /** {@inheritDoc} */
+    public <T extends AlipayResponse> T execute(AlipayRequest<T> request) throws AlipayApiException {
+        return execute(request, null);
+    }
+
+    /** {@inheritDoc} */
+    public <T extends AlipayResponse> T execute(AlipayRequest<T> request,
+                                                String accessToken) throws AlipayApiException {
+
+        return execute(request, accessToken, null);
+    }
+
+    /** {@inheritDoc} */
+    public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
+                                                String appAuthToken) throws AlipayApiException {
+
+        return _execute(request, accessToken, appAuthToken);
+    }
+
+    private <T extends AlipayResponse> T _execute(AlipayRequest<T> request, String authToken,
+                                                  String appAuthToken) throws AlipayApiException {
+
+        return doGet(request, appAuthToken);
+    }
+
+    /**
+     * Do get t.
+     *
+     * @param request      the request
+     * @param appAuthToken the app auth token
+     * @return the t
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     */
+    public <T extends AlipayResponse> T doGet(AlipayRequest<T> request,
+                                              String appAuthToken) throws AlipayApiException {
+
+        if (StringUtils.isEmpty(charset)) {
+            charset = AlipayConstants.CHARSET_UTF8;
+        }
+
+        RequestParametersHolder requestHolder = new RequestParametersHolder();
+        AlipayHashMap appParams = new AlipayHashMap(request.getTextParams());
+
+        // 仅当API包含biz_content参数且值为空时，序列化bizModel填充bizContent
+        try {
+            if (request.getClass().getMethod("getBizContent") != null
+                    && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
+                    && request.getBizModel() != null) {
+                appParams.put(AlipayConstants.BIZ_CONTENT_KEY,
+                        new JSONWriter().write(request.getBizModel(), true));
+            }
+        } catch (NoSuchMethodException e) {
+            // 找不到getBizContent则什么都不做
+        } catch (SecurityException e) {
+            AlipayLogger.logBizError(e);
+        }
+
+        if (!StringUtils.isEmpty(appAuthToken)) {
+            appParams.put(AlipayConstants.APP_AUTH_TOKEN, appAuthToken);
+        }
+
+        requestHolder.setApplicationParams(appParams);
+
+        AlipayHashMap protocalMustParams = new AlipayHashMap();
+        protocalMustParams.put(AlipayConstants.METHOD, request.getApiMethodName());
+        protocalMustParams.put(AlipayConstants.VERSION, request.getApiVersion());
+        protocalMustParams.put(AlipayConstants.APP_ID, this.appId);
+        protocalMustParams.put(AlipayConstants.SIGN_TYPE, this.sign_type);
+        protocalMustParams.put("charset", charset);
+
+        Long timestamp = System.currentTimeMillis();
+        DateFormat df = new SimpleDateFormat(AlipayConstants.DATE_TIME_FORMAT);
+        df.setTimeZone(TimeZone.getTimeZone(AlipayConstants.DATE_TIMEZONE));
+        protocalMustParams.put(AlipayConstants.TIMESTAMP, df.format(new Date(timestamp)));
+        protocalMustParams.put(AlipayConstants.FORMAT, format);
+        requestHolder.setProtocalMustParams(protocalMustParams);
+
+        if (AlipayConstants.SIGN_TYPE_RSA.equals(this.sign_type)) {
+
+            String signContent = AlipaySignature.getSignatureContent(requestHolder);
+
+            protocalMustParams.put(AlipayConstants.SIGN,
+                    AlipaySignature.rsaSign(signContent, privateKey, charset));
+
+        } else if (AlipayConstants.SIGN_TYPE_RSA2.equals(this.sign_type)) {
+
+            String signContent = AlipaySignature.getSignatureContent(requestHolder);
+
+            protocalMustParams.put(AlipayConstants.SIGN,
+                    AlipaySignature.rsa256Sign(signContent, privateKey, charset));
+
+        } else {
+            protocalMustParams.put(AlipayConstants.SIGN, "");
+        }
+
+        AlipayMobilePublicMultiMediaDownloadResponse rsp = null;
+        try {
+
+            if (request instanceof AlipayMobilePublicMultiMediaDownloadRequest) {
+                OutputStream outputStream = ((AlipayMobilePublicMultiMediaDownloadRequest) request)
+                        .getOutputStream();
+                rsp = doGet(serverUrl, requestHolder, charset, connectTimeout, readTimeout,
+                        outputStream);
+            }
+        } catch (IOException e) {
+            throw new AlipayApiException(e);
+        }
+        return (T) rsp;
+    }
+
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request) throws AlipayApiException {
         return null;
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request,
                                                     String method) throws AlipayApiException {
         return null;
     }
 
+    /** {@inheritDoc} */
     public <TR extends AlipayResponse, T extends AlipayRequest<TR>> TR parseAppSyncResult(Map<String, String> result,
                                                                                           Class<T> requsetClazz) throws AlipayApiException {
         return null;
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T sdkExecute(AlipayRequest<T> request) throws AlipayApiException {
         return null;
+    }
+
+    private static class DefaultTrustManager implements X509TrustManager {
+        public X509Certificate[] getAcceptedIssuers() {
+            return null;
+        }
+
+        public void checkClientTrusted(X509Certificate[] chain,
+                                       String authType) throws CertificateException {
+        }
+
+        public void checkServerTrusted(X509Certificate[] chain,
+                                       String authType) throws CertificateException {
+        }
     }
 
 }

@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 理赔受理
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:54:40
+ * @version $Id: $Id
  */
 public class AlipayInsSceneClaimApplyModel extends AlipayObject {
 
@@ -81,79 +81,189 @@ public class AlipayInsSceneClaimApplyModel extends AlipayObject {
 	@ApiField("reporter")
 	private InsPerson reporter;
 
+	/**
+	 * <p>Getter for the field <code>accidentAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccidentAddress() {
 		return this.accidentAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>accidentAddress</code>.</p>
+	 *
+	 * @param accidentAddress a {@link java.lang.String} object.
+	 */
 	public void setAccidentAddress(String accidentAddress) {
 		this.accidentAddress = accidentAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accidentDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccidentDesc() {
 		return this.accidentDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>accidentDesc</code>.</p>
+	 *
+	 * @param accidentDesc a {@link java.lang.String} object.
+	 */
 	public void setAccidentDesc(String accidentDesc) {
 		this.accidentDesc = accidentDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accidentTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getAccidentTime() {
 		return this.accidentTime;
 	}
+	/**
+	 * <p>Setter for the field <code>accidentTime</code>.</p>
+	 *
+	 * @param accidentTime a {@link java.util.Date} object.
+	 */
 	public void setAccidentTime(Date accidentTime) {
 		this.accidentTime = accidentTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>beneficiary</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public InsPerson getBeneficiary() {
 		return this.beneficiary;
 	}
+	/**
+	 * <p>Setter for the field <code>beneficiary</code>.</p>
+	 *
+	 * @param beneficiary a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public void setBeneficiary(InsPerson beneficiary) {
 		this.beneficiary = beneficiary;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billTitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillTitle() {
 		return this.billTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>billTitle</code>.</p>
+	 *
+	 * @param billTitle a {@link java.lang.String} object.
+	 */
 	public void setBillTitle(String billTitle) {
 		this.billTitle = billTitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizData() {
 		return this.bizData;
 	}
+	/**
+	 * <p>Setter for the field <code>bizData</code>.</p>
+	 *
+	 * @param bizData a {@link java.lang.String} object.
+	 */
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claimFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getClaimFee() {
 		return this.claimFee;
 	}
+	/**
+	 * <p>Setter for the field <code>claimFee</code>.</p>
+	 *
+	 * @param claimFee a {@link java.lang.Long} object.
+	 */
 	public void setClaimFee(Long claimFee) {
 		this.claimFee = claimFee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode;
 	}
+	/**
+	 * <p>Setter for the field <code>prodCode</code>.</p>
+	 *
+	 * @param prodCode a {@link java.lang.String} object.
+	 */
 	public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reporter</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public InsPerson getReporter() {
 		return this.reporter;
 	}
+	/**
+	 * <p>Setter for the field <code>reporter</code>.</p>
+	 *
+	 * @param reporter a {@link cn.felord.wepay.ali.sdk.api.domain.InsPerson} object.
+	 */
 	public void setReporter(InsPerson reporter) {
 		this.reporter = reporter;
 	}

@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.account.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:46:14
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicAccountDeleteResponse extends AlipayResponse {
 

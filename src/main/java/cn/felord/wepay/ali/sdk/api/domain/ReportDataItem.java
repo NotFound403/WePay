@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 报表数据信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class ReportDataItem extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class ReportDataItem extends AlipayObject {
 	@ApiField("row_data")
 	private String rowData;
 
+	/**
+	 * <p>Getter for the field <code>rowData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRowData() {
 		return this.rowData;
 	}
+	/**
+	 * <p>Setter for the field <code>rowData</code>.</p>
+	 *
+	 * @param rowData a {@link java.lang.String} object.
+	 */
 	public void setRowData(String rowData) {
 		this.rowData = rowData;
 	}

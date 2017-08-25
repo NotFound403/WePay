@@ -25,7 +25,7 @@ import java.util.StringTokenizer;
  * Encapsulating XML common operations.
  *
  * @author carver
- * @since 1.0, Jun 12, 2007
+ * @version $Id: $Id
  */
 public final class XmlUtils {
 
@@ -39,7 +39,7 @@ public final class XmlUtils {
      * Creates a new document instance.
      *
      * @return a new document instance
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static Document newDocument() throws AlipayApiException {
         Document doc = null;
@@ -58,7 +58,7 @@ public final class XmlUtils {
      *
      * @param file the XML file instance
      * @return the document instance representing the entire XML document
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static Document getDocument(File file) throws AlipayApiException {
         InputStream in = getInputStream(file);
@@ -70,7 +70,7 @@ public final class XmlUtils {
      *
      * @param in the XML file input stream
      * @return the document instance representing the entire XML document
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static Document getDocument(InputStream in) throws AlipayApiException {
         Document doc = null;
@@ -103,7 +103,7 @@ public final class XmlUtils {
      *
      * @param tagName the name of the root element
      * @return a new element instance
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static Element createRootElement(String tagName) throws AlipayApiException {
         Document doc = newDocument();
@@ -117,10 +117,10 @@ public final class XmlUtils {
      *
      * @param in the XML file input stream
      * @return the root element of parsed document
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static Element getRootElementFromStream(InputStream in)
- throws AlipayApiException {
+            throws AlipayApiException {
         return getDocument(in).getDocumentElement();
     }
 
@@ -129,20 +129,20 @@ public final class XmlUtils {
      *
      * @param file the file
      * @return the root element of parsed document
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static Element getRootElementFromFile(File file)
- throws AlipayApiException {
+            throws AlipayApiException {
         return getDocument(file).getDocumentElement();
     }
 
-	/**
+    /**
      * Gets the encoding pattern from given XML file.
      *
      * @param text the context of the XML file
      * @return the encoding pattern string of given XML file
      */
-	private static String getEncoding(String text) {
+    private static String getEncoding(String text) {
         String result = "UTF-8";//默认编码格式
 
         String xml = text.trim();
@@ -172,10 +172,10 @@ public final class XmlUtils {
      *
      * @param payload the XML payload representing the XML file.
      * @return the root element of parsed document
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static Element getRootElementFromString(String payload)
- throws AlipayApiException {
+            throws AlipayApiException {
         if (payload == null || payload.trim().length() < 1) {
             throw new AlipayApiException("XML_PAYLOAD_EMPTY");
         }
@@ -183,8 +183,8 @@ public final class XmlUtils {
         byte[] bytes = null;
 
         try {
-        	payload = StringUtils.stripNonValidXMLCharacters(payload);
-			String encodeString = getEncoding(payload);
+            payload = StringUtils.stripNonValidXMLCharacters(payload);
+            String encodeString = getEncoding(payload);
             bytes = payload.getBytes(encodeString);
         } catch (UnsupportedEncodingException e) {
             throw new AlipayApiException("XML_ENCODE_ERROR", e);
@@ -280,21 +280,21 @@ public final class XmlUtils {
      * @return value of the first child element, NULL if tag not exists
      */
     public static String getElementValue(Element parent, String tagName) {
-		Element element = getChildElement(parent, tagName);
-		if (element != null) {
-			NodeList nodes = element.getChildNodes();
-			if (nodes != null && nodes.getLength() > 0) {
-				for (int i = 0; i < nodes.getLength(); i++) {
-					Node node = nodes.item(i);
-					if (node instanceof Text) {
-						return ((Text) node).getData();
-					}
-				}
-			}
-		}
+        Element element = getChildElement(parent, tagName);
+        if (element != null) {
+            NodeList nodes = element.getChildNodes();
+            if (nodes != null && nodes.getLength() > 0) {
+                for (int i = 0; i < nodes.getLength(); i++) {
+                    Node node = nodes.item(i);
+                    if (node instanceof Text) {
+                        return ((Text) node).getData();
+                    }
+                }
+            }
+        }
 
-		return null;
-	}
+        return null;
+    }
 
     /**
      * Gets the text value of current element.
@@ -303,20 +303,20 @@ public final class XmlUtils {
      * @return text value of the element, NULL if element not exists
      */
     public static String getElementValue(Element element) {
-		if (element != null) {
-			NodeList nodes = element.getChildNodes();
-			if (nodes != null && nodes.getLength() > 0) {
-				for (int i = 0; i < nodes.getLength(); i++) {
-					Node node = nodes.item(i);
-					if (node instanceof Text) {
-						return ((Text) node).getData();
-					}
-				}
-			}
-		}
+        if (element != null) {
+            NodeList nodes = element.getChildNodes();
+            if (nodes != null && nodes.getLength() > 0) {
+                for (int i = 0; i < nodes.getLength(); i++) {
+                    Node node = nodes.item(i);
+                    if (node instanceof Text) {
+                        return ((Text) node).getData();
+                    }
+                }
+            }
+        }
 
-		return null;
-	}
+        return null;
+    }
 
     /**
      * Appends the child element to the parent element.
@@ -340,7 +340,7 @@ public final class XmlUtils {
      * @return the child element added to the parent element
      */
     public static Element appendElement(Element parent, String tagName,
-            String value) {
+                                        String value) {
         Element child = appendElement(parent, tagName);
         child.appendChild(child.getOwnerDocument().createTextNode(value));
         return child;
@@ -366,7 +366,7 @@ public final class XmlUtils {
      * @return the CDATA element added to the parent element
      */
     public static Element appendCDATAElement(Element parent, String tagName,
-            String value) {
+                                             String value) {
         Element child = appendElement(parent, tagName);
         if (value == null) { // avoid "null" word in the XML payload
             value = "";
@@ -382,7 +382,7 @@ public final class XmlUtils {
      *
      * @param node the node/element instance to convert
      * @return the XML payload representing the node/element
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String childNodeToString(Node node) throws AlipayApiException {
         String payload = null;
@@ -410,7 +410,7 @@ public final class XmlUtils {
      *
      * @param node the node/document/element instance to convert
      * @return the XML payload representing the node/document/element
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String nodeToString(Node node) throws AlipayApiException {
         String payload = null;
@@ -439,7 +439,7 @@ public final class XmlUtils {
      *
      * @param file the XML file instance
      * @return the XML payload representing the XML file
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String xmlToString(File file) throws AlipayApiException {
         Element root = getRootElementFromFile(file);
@@ -451,7 +451,7 @@ public final class XmlUtils {
      *
      * @param in the XML file input stream
      * @return the payload represents the XML file
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String xmlToString(InputStream in) throws AlipayApiException {
         Element root = getRootElementFromStream(in);
@@ -463,7 +463,7 @@ public final class XmlUtils {
      *
      * @param doc  the XML node/document/element to save
      * @param file the XML file to save
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static void saveToXml(Node doc, File file) throws AlipayApiException {
         OutputStream out = null;
@@ -498,10 +498,10 @@ public final class XmlUtils {
      *
      * @param doc        the XML document to validate
      * @param schemaFile the XML schema file instance
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static void validateXml(Node doc, File schemaFile)
- throws AlipayApiException {
+            throws AlipayApiException {
         validateXml(doc, getInputStream(schemaFile));
     }
 
@@ -510,10 +510,10 @@ public final class XmlUtils {
      *
      * @param doc          the XML document to validate
      * @param schemaStream the XML schema file input stream
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static void validateXml(Node doc, InputStream schemaStream)
- throws AlipayApiException {
+            throws AlipayApiException {
         try {
             Source source = new StreamSource(schemaStream);
             Schema schema = SchemaFactory.newInstance(
@@ -542,10 +542,10 @@ public final class XmlUtils {
      * @param payload  the XML payload to convert
      * @param xsltFile the XML stylesheet file
      * @return the transformed XHTML/HTML format string
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String xmlToHtml(String payload, File xsltFile)
- throws AlipayApiException {
+            throws AlipayApiException {
         String result = null;
 
         try {
@@ -577,7 +577,7 @@ public final class XmlUtils {
      * @param schemaLocation the XML schema file location URI
      */
     public static void setNamespace(Element element, String namespace,
-            String schemaLocation) {
+                                    String schemaLocation) {
         element.setAttributeNS(XMLConstants.XMLNS_ATTRIBUTE_NS_URI,
                 XMLConstants.XMLNS_ATTRIBUTE, namespace);
         element.setAttributeNS(XMLConstants.XMLNS_ATTRIBUTE_NS_URI, XMLNS_XSI,
@@ -591,7 +591,7 @@ public final class XmlUtils {
      *
      * @param payload the XML payload to encode
      * @return the encoded XML payload
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String encodeXml(String payload) throws AlipayApiException {
         Element root = createRootElement(XMLConstants.XML_NS_PREFIX);

@@ -10,9 +10,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.refund response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-19 20:31:51
+ * @version $Id: $Id
  */
 public class AlipayTradeRefundResponse extends AlipayResponse {
 
@@ -86,79 +86,189 @@ public class AlipayTradeRefundResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Setter for the field <code>buyerLogonId</code>.</p>
+	 *
+	 * @param buyerLogonId a {@link java.lang.String} object.
+	 */
 	public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerLogonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerLogonId( ) {
 		return this.buyerLogonId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerUserId</code>.</p>
+	 *
+	 * @param buyerUserId a {@link java.lang.String} object.
+	 */
 	public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerUserId( ) {
 		return this.buyerUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>fundChange</code>.</p>
+	 *
+	 * @param fundChange a {@link java.lang.String} object.
+	 */
 	public void setFundChange(String fundChange) {
 		this.fundChange = fundChange;
 	}
+	/**
+	 * <p>Getter for the field <code>fundChange</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundChange( ) {
 		return this.fundChange;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtRefundPay</code>.</p>
+	 *
+	 * @param gmtRefundPay a {@link java.util.Date} object.
+	 */
 	public void setGmtRefundPay(Date gmtRefundPay) {
 		this.gmtRefundPay = gmtRefundPay;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtRefundPay</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtRefundPay( ) {
 		return this.gmtRefundPay;
 	}
 
+	/**
+	 * <p>Setter for the field <code>openId</code>.</p>
+	 *
+	 * @param openId a {@link java.lang.String} object.
+	 */
 	public void setOpenId(String openId) {
 		this.openId = openId;
 	}
+	/**
+	 * <p>Getter for the field <code>openId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpenId( ) {
 		return this.openId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>refundDetailItemList</code>.</p>
+	 *
+	 * @param refundDetailItemList a {@link java.util.List} object.
+	 */
 	public void setRefundDetailItemList(List<TradeFundBill> refundDetailItemList) {
 		this.refundDetailItemList = refundDetailItemList;
 	}
+	/**
+	 * <p>Getter for the field <code>refundDetailItemList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<TradeFundBill> getRefundDetailItemList( ) {
 		return this.refundDetailItemList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>refundFee</code>.</p>
+	 *
+	 * @param refundFee a {@link java.lang.String} object.
+	 */
 	public void setRefundFee(String refundFee) {
 		this.refundFee = refundFee;
 	}
+	/**
+	 * <p>Getter for the field <code>refundFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundFee( ) {
 		return this.refundFee;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sendBackFee</code>.</p>
+	 *
+	 * @param sendBackFee a {@link java.lang.String} object.
+	 */
 	public void setSendBackFee(String sendBackFee) {
 		this.sendBackFee = sendBackFee;
 	}
+	/**
+	 * <p>Getter for the field <code>sendBackFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSendBackFee( ) {
 		return this.sendBackFee;
 	}
 
+	/**
+	 * <p>Setter for the field <code>storeName</code>.</p>
+	 *
+	 * @param storeName a {@link java.lang.String} object.
+	 */
 	public void setStoreName(String storeName) {
 		this.storeName = storeName;
 	}
+	/**
+	 * <p>Getter for the field <code>storeName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreName( ) {
 		return this.storeName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}

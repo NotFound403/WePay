@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保险理赔案件材料上传确认
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:40
+ * @version $Id: $Id
  */
 public class AlipayInsSceneClaimAttachmentConfirmModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayInsSceneClaimAttachmentConfirmModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> uploadFiles;
 
+	/**
+	 * <p>Getter for the field <code>claimReportNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClaimReportNo() {
 		return this.claimReportNo;
 	}
+	/**
+	 * <p>Setter for the field <code>claimReportNo</code>.</p>
+	 *
+	 * @param claimReportNo a {@link java.lang.String} object.
+	 */
 	public void setClaimReportNo(String claimReportNo) {
 		this.claimReportNo = claimReportNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uploadFiles</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getUploadFiles() {
 		return this.uploadFiles;
 	}
+	/**
+	 * <p>Setter for the field <code>uploadFiles</code>.</p>
+	 *
+	 * @param uploadFiles a {@link java.util.List} object.
+	 */
 	public void setUploadFiles(List<String> uploadFiles) {
 		this.uploadFiles = uploadFiles;
 	}

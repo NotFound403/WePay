@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 报表可过滤字段条件
  *
  * @author auto create
- * @since 1.0, 2017-06-16 20:33:21
+ * @version $Id: $Id
  */
 public class ReportCondition extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class ReportCondition extends AlipayObject {
 	@ApiField("operate")
 	private String operate;
 
+	/**
+	 * <p>Getter for the field <code>key</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getKey() {
 		return this.key;
 	}
+	/**
+	 * <p>Setter for the field <code>key</code>.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 */
 	public void setKey(String key) {
 		this.key = key;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperate() {
 		return this.operate;
 	}
+	/**
+	 * <p>Setter for the field <code>operate</code>.</p>
+	 *
+	 * @param operate a {@link java.lang.String} object.
+	 */
 	public void setOperate(String operate) {
 		this.operate = operate;
 	}

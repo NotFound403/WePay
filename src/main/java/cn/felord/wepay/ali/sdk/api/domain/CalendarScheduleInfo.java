@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 服务者的时间表信息
  *
  * @author auto create
- * @since 1.0, 2017-01-16 11:50:27
+ * @version $Id: $Id
  */
 public class CalendarScheduleInfo extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class CalendarScheduleInfo extends AlipayObject {
 	@ApiField("unit")
 	private String unit;
 
+	/**
+	 * <p>Getter for the field <code>duration</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getDuration() {
 		return this.duration;
 	}
+	/**
+	 * <p>Setter for the field <code>duration</code>.</p>
+	 *
+	 * @param duration a {@link java.lang.Long} object.
+	 */
 	public void setDuration(Long duration) {
 		this.duration = duration;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schedule</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ScheduleInfo> getSchedule() {
 		return this.schedule;
 	}
+	/**
+	 * <p>Setter for the field <code>schedule</code>.</p>
+	 *
+	 * @param schedule a {@link java.util.List} object.
+	 */
 	public void setSchedule(List<ScheduleInfo> schedule) {
 		this.schedule = schedule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>unit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUnit() {
 		return this.unit;
 	}
+	/**
+	 * <p>Setter for the field <code>unit</code>.</p>
+	 *
+	 * @param unit a {@link java.lang.String} object.
+	 */
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户日计步数查询
  *
  * @author auto create
- * @since 1.0, 2017-06-15 10:19:47
+ * @version $Id: $Id
  */
 public class AlipayUserStepcounterQueryModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayUserStepcounterQueryModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>countDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCountDate() {
 		return this.countDate;
 	}
+	/**
+	 * <p>Setter for the field <code>countDate</code>.</p>
+	 *
+	 * @param countDate a {@link java.lang.String} object.
+	 */
 	public void setCountDate(String countDate) {
 		this.countDate = countDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId() {
 		return this.partnerId;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeZone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimeZone() {
 		return this.timeZone;
 	}
+	/**
+	 * <p>Setter for the field <code>timeZone</code>.</p>
+	 *
+	 * @param timeZone a {@link java.lang.String} object.
+	 */
 	public void setTimeZone(String timeZone) {
 		this.timeZone = timeZone;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

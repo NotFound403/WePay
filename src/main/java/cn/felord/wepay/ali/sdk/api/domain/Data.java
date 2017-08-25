@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 用于查询用户数据
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class Data extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class Data extends AlipayObject {
 	@ApiField("string")
 	private List<String> userIdList;
 
+	/**
+	 * <p>Getter for the field <code>userIdList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getUserIdList() {
 		return this.userIdList;
 	}
+	/**
+	 * <p>Setter for the field <code>userIdList</code>.</p>
+	 *
+	 * @param userIdList a {@link java.util.List} object.
+	 */
 	public void setUserIdList(List<String> userIdList) {
 		this.userIdList = userIdList;
 	}

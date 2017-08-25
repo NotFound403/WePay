@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户智能活动配置方案接口
  *
  * @author auto create
- * @since 1.0, 2017-04-13 10:58:55
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataSmartactivityConfigModel extends AlipayObject {
 
@@ -24,9 +24,19 @@ SUPER_ITEM  建议打造单品爆款(适用于菜品营销)
 	@ApiField("diagnose_code")
 	private String diagnoseCode;
 
+	/**
+	 * <p>Getter for the field <code>diagnoseCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDiagnoseCode() {
 		return this.diagnoseCode;
 	}
+	/**
+	 * <p>Setter for the field <code>diagnoseCode</code>.</p>
+	 *
+	 * @param diagnoseCode a {@link java.lang.String} object.
+	 */
 	public void setDiagnoseCode(String diagnoseCode) {
 		this.diagnoseCode = diagnoseCode;
 	}

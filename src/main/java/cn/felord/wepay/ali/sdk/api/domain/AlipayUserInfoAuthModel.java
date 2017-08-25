@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 用户登陆授权
  *
  * @author auto create
- * @since 1.0, 2016-12-13 17:20:12
+ * @version $Id: $Id
  */
 public class AlipayUserInfoAuthModel extends AlipayObject {
 
@@ -32,16 +32,36 @@ auth_user：以auth_user为scope发起的网页授权，是用来获取用户的
 	@ApiField("state")
 	private String state;
 
+	/**
+	 * <p>Getter for the field <code>scopes</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getScopes() {
 		return this.scopes;
 	}
+	/**
+	 * <p>Setter for the field <code>scopes</code>.</p>
+	 *
+	 * @param scopes a {@link java.util.List} object.
+	 */
 	public void setScopes(List<String> scopes) {
 		this.scopes = scopes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>state</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getState() {
 		return this.state;
 	}
+	/**
+	 * <p>Setter for the field <code>state</code>.</p>
+	 *
+	 * @param state a {@link java.lang.String} object.
+	 */
 	public void setState(String state) {
 		this.state = state;
 	}

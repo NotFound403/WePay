@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.transport.offlinepay.userblacklist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-20 21:41:42
+ * @version $Id: $Id
  */
 public class AlipayCommerceTransportOfflinepayUserblacklistQueryResponse extends AlipayResponse {
 
@@ -23,9 +23,19 @@ public class AlipayCommerceTransportOfflinepayUserblacklistQueryResponse extends
 	@ApiField("string")
 	private List<String> blackList;
 
+	/**
+	 * <p>Setter for the field <code>blackList</code>.</p>
+	 *
+	 * @param blackList a {@link java.util.List} object.
+	 */
 	public void setBlackList(List<String> blackList) {
 		this.blackList = blackList;
 	}
+	/**
+	 * <p>Getter for the field <code>blackList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getBlackList( ) {
 		return this.blackList;
 	}

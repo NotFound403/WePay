@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 支付宝营销优惠立减活动操作
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:48:01
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 
@@ -133,128 +133,308 @@ public class AlipayMarketingCampaignDiscountOperateModel extends AlipayObject {
 	@ApiField("staged_discount_dst_camp_prize_model")
 	private StagedDiscountDstCampPrizeModel stagedDiscountDstCampPrizeModel;
 
+	/**
+	 * <p>Getter for the field <code>campCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampCode() {
 		return this.campCode;
 	}
+	/**
+	 * <p>Setter for the field <code>campCode</code>.</p>
+	 *
+	 * @param campCode a {@link java.lang.String} object.
+	 */
 	public void setCampCode(String campCode) {
 		this.campCode = campCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampDesc() {
 		return this.campDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>campDesc</code>.</p>
+	 *
+	 * @param campDesc a {@link java.lang.String} object.
+	 */
 	public void setCampDesc(String campDesc) {
 		this.campDesc = campDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId() {
 		return this.campId;
 	}
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampName() {
 		return this.campName;
 	}
+	/**
+	 * <p>Setter for the field <code>campName</code>.</p>
+	 *
+	 * @param campName a {@link java.lang.String} object.
+	 */
 	public void setCampName(String campName) {
 		this.campName = campName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campSlogan</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampSlogan() {
 		return this.campSlogan;
 	}
+	/**
+	 * <p>Setter for the field <code>campSlogan</code>.</p>
+	 *
+	 * @param campSlogan a {@link java.lang.String} object.
+	 */
 	public void setCampSlogan(String campSlogan) {
 		this.campSlogan = campSlogan;
 	}
 
+	/**
+	 * <p>Getter for the field <code>discountDstCampPrizeModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.DiscountDstCampPrizeModel} object.
+	 */
 	public DiscountDstCampPrizeModel getDiscountDstCampPrizeModel() {
 		return this.discountDstCampPrizeModel;
 	}
+	/**
+	 * <p>Setter for the field <code>discountDstCampPrizeModel</code>.</p>
+	 *
+	 * @param discountDstCampPrizeModel a {@link cn.felord.wepay.ali.sdk.api.domain.DiscountDstCampPrizeModel} object.
+	 */
 	public void setDiscountDstCampPrizeModel(DiscountDstCampPrizeModel discountDstCampPrizeModel) {
 		this.discountDstCampPrizeModel = discountDstCampPrizeModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dstCampRuleModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.DstCampRuleModel} object.
+	 */
 	public DstCampRuleModel getDstCampRuleModel() {
 		return this.dstCampRuleModel;
 	}
+	/**
+	 * <p>Setter for the field <code>dstCampRuleModel</code>.</p>
+	 *
+	 * @param dstCampRuleModel a {@link cn.felord.wepay.ali.sdk.api.domain.DstCampRuleModel} object.
+	 */
 	public void setDstCampRuleModel(DstCampRuleModel dstCampRuleModel) {
 		this.dstCampRuleModel = dstCampRuleModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dstCampSubTimeModelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DateAreaModel> getDstCampSubTimeModelList() {
 		return this.dstCampSubTimeModelList;
 	}
+	/**
+	 * <p>Setter for the field <code>dstCampSubTimeModelList</code>.</p>
+	 *
+	 * @param dstCampSubTimeModelList a {@link java.util.List} object.
+	 */
 	public void setDstCampSubTimeModelList(List<DateAreaModel> dstCampSubTimeModelList) {
 		this.dstCampSubTimeModelList = dstCampSubTimeModelList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtEnd</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtEnd() {
 		return this.gmtEnd;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtEnd</code>.</p>
+	 *
+	 * @param gmtEnd a {@link java.lang.String} object.
+	 */
 	public void setGmtEnd(String gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtStart() {
 		return this.gmtStart;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @param gmtStart a {@link java.lang.String} object.
+	 */
 	public void setGmtStart(String gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateType() {
 		return this.operateType;
 	}
+	/**
+	 * <p>Setter for the field <code>operateType</code>.</p>
+	 *
+	 * @param operateType a {@link java.lang.String} object.
+	 */
 	public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeType() {
 		return this.prizeType;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeType</code>.</p>
+	 *
+	 * @param prizeType a {@link java.lang.String} object.
+	 */
 	public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>randomDiscountDstCampPrizeModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.RandomDiscountDstCampPrizeModel} object.
+	 */
 	public RandomDiscountDstCampPrizeModel getRandomDiscountDstCampPrizeModel() {
 		return this.randomDiscountDstCampPrizeModel;
 	}
+	/**
+	 * <p>Setter for the field <code>randomDiscountDstCampPrizeModel</code>.</p>
+	 *
+	 * @param randomDiscountDstCampPrizeModel a {@link cn.felord.wepay.ali.sdk.api.domain.RandomDiscountDstCampPrizeModel} object.
+	 */
 	public void setRandomDiscountDstCampPrizeModel(RandomDiscountDstCampPrizeModel randomDiscountDstCampPrizeModel) {
 		this.randomDiscountDstCampPrizeModel = randomDiscountDstCampPrizeModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reduceDstCampPrizeModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ReduceDstCampPrizeModel} object.
+	 */
 	public ReduceDstCampPrizeModel getReduceDstCampPrizeModel() {
 		return this.reduceDstCampPrizeModel;
 	}
+	/**
+	 * <p>Setter for the field <code>reduceDstCampPrizeModel</code>.</p>
+	 *
+	 * @param reduceDstCampPrizeModel a {@link cn.felord.wepay.ali.sdk.api.domain.ReduceDstCampPrizeModel} object.
+	 */
 	public void setReduceDstCampPrizeModel(ReduceDstCampPrizeModel reduceDstCampPrizeModel) {
 		this.reduceDstCampPrizeModel = reduceDstCampPrizeModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reduceToDiscountDstCampPrizeModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ReduceToDiscountDstCampPrizeModel} object.
+	 */
 	public ReduceToDiscountDstCampPrizeModel getReduceToDiscountDstCampPrizeModel() {
 		return this.reduceToDiscountDstCampPrizeModel;
 	}
+	/**
+	 * <p>Setter for the field <code>reduceToDiscountDstCampPrizeModel</code>.</p>
+	 *
+	 * @param reduceToDiscountDstCampPrizeModel a {@link cn.felord.wepay.ali.sdk.api.domain.ReduceToDiscountDstCampPrizeModel} object.
+	 */
 	public void setReduceToDiscountDstCampPrizeModel(ReduceToDiscountDstCampPrizeModel reduceToDiscountDstCampPrizeModel) {
 		this.reduceToDiscountDstCampPrizeModel = reduceToDiscountDstCampPrizeModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resetZeroDstCampPrizeModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ResetZeroDstCampPrizeModel} object.
+	 */
 	public ResetZeroDstCampPrizeModel getResetZeroDstCampPrizeModel() {
 		return this.resetZeroDstCampPrizeModel;
 	}
+	/**
+	 * <p>Setter for the field <code>resetZeroDstCampPrizeModel</code>.</p>
+	 *
+	 * @param resetZeroDstCampPrizeModel a {@link cn.felord.wepay.ali.sdk.api.domain.ResetZeroDstCampPrizeModel} object.
+	 */
 	public void setResetZeroDstCampPrizeModel(ResetZeroDstCampPrizeModel resetZeroDstCampPrizeModel) {
 		this.resetZeroDstCampPrizeModel = resetZeroDstCampPrizeModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>singleDstCampPrizeModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.SingleDstCampPrizeModel} object.
+	 */
 	public SingleDstCampPrizeModel getSingleDstCampPrizeModel() {
 		return this.singleDstCampPrizeModel;
 	}
+	/**
+	 * <p>Setter for the field <code>singleDstCampPrizeModel</code>.</p>
+	 *
+	 * @param singleDstCampPrizeModel a {@link cn.felord.wepay.ali.sdk.api.domain.SingleDstCampPrizeModel} object.
+	 */
 	public void setSingleDstCampPrizeModel(SingleDstCampPrizeModel singleDstCampPrizeModel) {
 		this.singleDstCampPrizeModel = singleDstCampPrizeModel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>stagedDiscountDstCampPrizeModel</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.StagedDiscountDstCampPrizeModel} object.
+	 */
 	public StagedDiscountDstCampPrizeModel getStagedDiscountDstCampPrizeModel() {
 		return this.stagedDiscountDstCampPrizeModel;
 	}
+	/**
+	 * <p>Setter for the field <code>stagedDiscountDstCampPrizeModel</code>.</p>
+	 *
+	 * @param stagedDiscountDstCampPrizeModel a {@link cn.felord.wepay.ali.sdk.api.domain.StagedDiscountDstCampPrizeModel} object.
+	 */
 	public void setStagedDiscountDstCampPrizeModel(StagedDiscountDstCampPrizeModel stagedDiscountDstCampPrizeModel) {
 		this.stagedDiscountDstCampPrizeModel = stagedDiscountDstCampPrizeModel;
 	}

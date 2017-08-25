@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.crowd.detail.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-21 17:30:29
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignCrowdDetailQueryResponse extends AlipayResponse {
 
@@ -28,16 +28,36 @@ value：标签对应的值
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Setter for the field <code>crowdGroupInfo</code>.</p>
+	 *
+	 * @param crowdGroupInfo a {@link java.lang.String} object.
+	 */
 	public void setCrowdGroupInfo(String crowdGroupInfo) {
 		this.crowdGroupInfo = crowdGroupInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>crowdGroupInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdGroupInfo( ) {
 		return this.crowdGroupInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName( ) {
 		return this.name;
 	}

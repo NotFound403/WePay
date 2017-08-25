@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.std.mock.listsmlist.api response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:34:02
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicStdMockListsmlistApiResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayMobilePublicStdMockListsmlistApiResponse extends AlipayRespon
 	@ApiField("list_list_sm_mock_model")
 	private List<ListListSmMockModel> listSmModelList;
 
+	/**
+	 * <p>Setter for the field <code>listSmModelList</code>.</p>
+	 *
+	 * @param listSmModelList a {@link java.util.List} object.
+	 */
 	public void setListSmModelList(List<ListListSmMockModel> listSmModelList) {
 		this.listSmModelList = listSmModelList;
 	}
+	/**
+	 * <p>Getter for the field <code>listSmModelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ListListSmMockModel> getListSmModelList( ) {
 		return this.listSmModelList;
 	}

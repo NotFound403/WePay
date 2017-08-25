@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券使用外部交易信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class VoucherUserExternalTradeInfo extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class VoucherUserExternalTradeInfo extends AlipayObject {
 	@ApiField("external_trade_no")
 	private String externalTradeNo;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>consumeDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConsumeDate() {
 		return this.consumeDate;
 	}
+	/**
+	 * <p>Setter for the field <code>consumeDate</code>.</p>
+	 *
+	 * @param consumeDate a {@link java.lang.String} object.
+	 */
 	public void setConsumeDate(String consumeDate) {
 		this.consumeDate = consumeDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>consumeShopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConsumeShopId() {
 		return this.consumeShopId;
 	}
+	/**
+	 * <p>Setter for the field <code>consumeShopId</code>.</p>
+	 *
+	 * @param consumeShopId a {@link java.lang.String} object.
+	 */
 	public void setConsumeShopId(String consumeShopId) {
 		this.consumeShopId = consumeShopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalTradeNo() {
 		return this.externalTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>externalTradeNo</code>.</p>
+	 *
+	 * @param externalTradeNo a {@link java.lang.String} object.
+	 */
 	public void setExternalTradeNo(String externalTradeNo) {
 		this.externalTradeNo = externalTradeNo;
 	}

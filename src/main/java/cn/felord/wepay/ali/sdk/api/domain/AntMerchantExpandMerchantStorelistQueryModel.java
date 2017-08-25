@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户外部门店查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-20 21:12:59
+ * @version $Id: $Id
  */
 public class AntMerchantExpandMerchantStorelistQueryModel extends AlipayObject {
 
@@ -41,30 +41,70 @@ public class AntMerchantExpandMerchantStorelistQueryModel extends AlipayObject {
 	@ApiField("pid")
 	private String pid;
 
+	/**
+	 * <p>Getter for the field <code>isIncludeCognate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsIncludeCognate() {
 		return this.isIncludeCognate;
 	}
+	/**
+	 * <p>Setter for the field <code>isIncludeCognate</code>.</p>
+	 *
+	 * @param isIncludeCognate a {@link java.lang.String} object.
+	 */
 	public void setIsIncludeCognate(String isIncludeCognate) {
 		this.isIncludeCognate = isIncludeCognate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNum() {
 		return this.pageNum;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNum</code>.</p>
+	 *
+	 * @param pageNum a {@link java.lang.Long} object.
+	 */
 	public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPid() {
 		return this.pid;
 	}
+	/**
+	 * <p>Setter for the field <code>pid</code>.</p>
+	 *
+	 * @param pid a {@link java.lang.String} object.
+	 */
 	public void setPid(String pid) {
 		this.pid = pid;
 	}

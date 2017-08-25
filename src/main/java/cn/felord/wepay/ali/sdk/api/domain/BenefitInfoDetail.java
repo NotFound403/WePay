@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 权益信息
  *
  * @author auto create
- * @since 1.0, 2017-04-16 12:12:18
+ * @version $Id: $Id
  */
 public class BenefitInfoDetail extends AlipayObject {
 
@@ -42,30 +42,70 @@ COUPON：券
 	@ApiField("description")
 	private String description;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitType() {
 		return this.benefitType;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitType</code>.</p>
+	 *
+	 * @param benefitType a {@link java.lang.String} object.
+	 */
 	public void setBenefitType(String benefitType) {
 		this.benefitType = benefitType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCount() {
 		return this.count;
 	}
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.String} object.
+	 */
 	public void setCount(String count) {
 		this.count = count;
 	}
 
+	/**
+	 * <p>Getter for the field <code>description</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDescription() {
 		return this.description;
 	}
+	/**
+	 * <p>Setter for the field <code>description</code>.</p>
+	 *
+	 * @param description a {@link java.lang.String} object.
+	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}

@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 集分宝账户流水详情
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class PointAccountLog extends AlipayObject {
 
@@ -75,72 +75,172 @@ public class PointAccountLog extends AlipayObject {
 	@ApiField("trans_memo")
 	private String transMemo;
 
+	/**
+	 * <p>Getter for the field <code>accountLogId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountLogId() {
 		return this.accountLogId;
 	}
+	/**
+	 * <p>Setter for the field <code>accountLogId</code>.</p>
+	 *
+	 * @param accountLogId a {@link java.lang.String} object.
+	 */
 	public void setAccountLogId(String accountLogId) {
 		this.accountLogId = accountLogId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>balance</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getBalance() {
 		return this.balance;
 	}
+	/**
+	 * <p>Setter for the field <code>balance</code>.</p>
+	 *
+	 * @param balance a {@link java.lang.Long} object.
+	 */
 	public void setBalance(Long balance) {
 		this.balance = balance;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pointAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPointAmount() {
 		return this.pointAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>pointAmount</code>.</p>
+	 *
+	 * @param pointAmount a {@link java.lang.Long} object.
+	 */
 	public void setPointAmount(Long pointAmount) {
 		this.pointAmount = pointAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subTransCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubTransCode() {
 		return this.subTransCode;
 	}
+	/**
+	 * <p>Setter for the field <code>subTransCode</code>.</p>
+	 *
+	 * @param subTransCode a {@link java.lang.String} object.
+	 */
 	public void setSubTransCode(String subTransCode) {
 		this.subTransCode = subTransCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subTransCodeCn</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubTransCodeCn() {
 		return this.subTransCodeCn;
 	}
+	/**
+	 * <p>Setter for the field <code>subTransCodeCn</code>.</p>
+	 *
+	 * @param subTransCodeCn a {@link java.lang.String} object.
+	 */
 	public void setSubTransCodeCn(String subTransCodeCn) {
 		this.subTransCodeCn = subTransCodeCn;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransCode() {
 		return this.transCode;
 	}
+	/**
+	 * <p>Setter for the field <code>transCode</code>.</p>
+	 *
+	 * @param transCode a {@link java.lang.String} object.
+	 */
 	public void setTransCode(String transCode) {
 		this.transCode = transCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getTransDate() {
 		return this.transDate;
 	}
+	/**
+	 * <p>Setter for the field <code>transDate</code>.</p>
+	 *
+	 * @param transDate a {@link java.util.Date} object.
+	 */
 	public void setTransDate(Date transDate) {
 		this.transDate = transDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransMemo() {
 		return this.transMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>transMemo</code>.</p>
+	 *
+	 * @param transMemo a {@link java.lang.String} object.
+	 */
 	public void setTransMemo(String transMemo) {
 		this.transMemo = transMemo;
 	}

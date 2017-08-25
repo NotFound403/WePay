@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.provider.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-13 16:27:35
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataProviderModifyResponse extends AlipayResponse {
 

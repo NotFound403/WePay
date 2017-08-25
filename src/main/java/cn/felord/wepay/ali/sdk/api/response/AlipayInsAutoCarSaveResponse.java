@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ins.auto.car.save response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-18 15:27:46
+ * @version $Id: $Id
  */
 public class AlipayInsAutoCarSaveResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayInsAutoCarSaveResponse extends AlipayResponse {
 	@ApiField("car_no")
 	private String carNo;
 
+	/**
+	 * <p>Setter for the field <code>carNo</code>.</p>
+	 *
+	 * @param carNo a {@link java.lang.String} object.
+	 */
 	public void setCarNo(String carNo) {
 		this.carNo = carNo;
 	}
+	/**
+	 * <p>Getter for the field <code>carNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCarNo( ) {
 		return this.carNo;
 	}

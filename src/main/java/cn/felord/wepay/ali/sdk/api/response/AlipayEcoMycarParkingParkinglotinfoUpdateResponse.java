@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.parking.parkinglotinfo.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-22 15:57:40
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateResponse extends AlipayResponse {
 

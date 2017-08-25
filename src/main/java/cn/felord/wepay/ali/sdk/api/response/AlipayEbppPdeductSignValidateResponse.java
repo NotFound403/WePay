@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.sign.validate response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-30 14:31:02
+ * @version $Id: $Id
  */
 public class AlipayEbppPdeductSignValidateResponse extends AlipayResponse {
 

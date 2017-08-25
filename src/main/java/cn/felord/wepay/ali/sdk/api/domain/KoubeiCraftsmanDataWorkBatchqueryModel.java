@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 手艺人作品信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:33:13
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataWorkBatchqueryModel extends AlipayObject {
 
@@ -47,37 +47,87 @@ public class KoubeiCraftsmanDataWorkBatchqueryModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> workIds;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
+	/**
+	 * <p>Setter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @param craftsmanId a {@link java.lang.String} object.
+	 */
 	public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNo() {
 		return this.pageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNo</code>.</p>
+	 *
+	 * @param pageNo a {@link java.lang.String} object.
+	 */
 	public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.String} object.
+	 */
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>workIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getWorkIds() {
 		return this.workIds;
 	}
+	/**
+	 * <p>Setter for the field <code>workIds</code>.</p>
+	 *
+	 * @param workIds a {@link java.util.List} object.
+	 */
 	public void setWorkIds(List<String> workIds) {
 		this.workIds = workIds;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 标签组发圈人条件
  *
  * @author auto create
- * @since 1.0, 2016-12-02 15:56:25
+ * @version $Id: $Id
  */
 public class LabelContext extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class LabelContext extends AlipayObject {
 	@ApiField("a")
 	private LabelFilter a;
 
+	/**
+	 * <p>Getter for the field <code>a</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.LabelFilter} object.
+	 */
 	public LabelFilter getA() {
 		return this.a;
 	}
+	/**
+	 * <p>Setter for the field <code>a</code>.</p>
+	 *
+	 * @param a a {@link cn.felord.wepay.ali.sdk.api.domain.LabelFilter} object.
+	 */
 	public void setA(LabelFilter a) {
 		this.a = a;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.contract.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-29 11:34:32
+ * @version $Id: $Id
  */
 public class AlipayEcapiprodDrawndnContractGetResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayEcapiprodDrawndnContractGetResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Setter for the field <code>contractContent</code>.</p>
+	 *
+	 * @param contractContent a {@link java.lang.String} object.
+	 */
 	public void setContractContent(String contractContent) {
 		this.contractContent = contractContent;
 	}
+	/**
+	 * <p>Getter for the field <code>contractContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContractContent( ) {
 		return this.contractContent;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contractNo</code>.</p>
+	 *
+	 * @param contractNo a {@link java.lang.String} object.
+	 */
 	public void setContractNo(String contractNo) {
 		this.contractNo = contractNo;
 	}
+	/**
+	 * <p>Getter for the field <code>contractNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContractNo( ) {
 		return this.contractNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId( ) {
 		return this.requestId;
 	}

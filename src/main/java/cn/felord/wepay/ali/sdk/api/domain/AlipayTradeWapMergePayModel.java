@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * H5合并支付接口2.0
  *
  * @author auto create
- * @since 1.0, 2017-03-14 19:15:29
+ * @version $Id: $Id
  */
 public class AlipayTradeWapMergePayModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayTradeWapMergePayModel extends AlipayObject {
 	@ApiField("pre_order_no")
 	private String preOrderNo;
 
+	/**
+	 * <p>Getter for the field <code>preOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPreOrderNo() {
 		return this.preOrderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>preOrderNo</code>.</p>
+	 *
+	 * @param preOrderNo a {@link java.lang.String} object.
+	 */
 	public void setPreOrderNo(String preOrderNo) {
 		this.preOrderNo = preOrderNo;
 	}

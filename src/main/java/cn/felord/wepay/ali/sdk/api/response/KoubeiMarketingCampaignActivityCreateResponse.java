@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.activity.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-25 11:30:53
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignActivityCreateResponse extends AlipayResponse {
 
@@ -36,23 +36,53 @@ STARTED，活动已启动
 	@ApiField("camp_status")
 	private String campStatus;
 
+	/**
+	 * <p>Setter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @param auditStatus a {@link java.lang.String} object.
+	 */
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditStatus( ) {
 		return this.auditStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId( ) {
 		return this.campId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campStatus</code>.</p>
+	 *
+	 * @param campStatus a {@link java.lang.String} object.
+	 */
 	public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>campStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampStatus( ) {
 		return this.campStatus;
 	}

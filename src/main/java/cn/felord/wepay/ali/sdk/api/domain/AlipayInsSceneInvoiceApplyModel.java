@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险发票申请
  *
  * @author auto create
- * @since 1.0, 2017-03-30 11:59:29
+ * @version $Id: $Id
  */
 public class AlipayInsSceneInvoiceApplyModel extends AlipayObject {
 
@@ -63,58 +63,138 @@ public class AlipayInsSceneInvoiceApplyModel extends AlipayObject {
 	@ApiField("out_request_no")
 	private String outRequestNo;
 
+	/**
+	 * <p>Getter for the field <code>deliveryType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliveryType() {
 		return this.deliveryType;
 	}
+	/**
+	 * <p>Setter for the field <code>deliveryType</code>.</p>
+	 *
+	 * @param deliveryType a {@link java.lang.String} object.
+	 */
 	public void setDeliveryType(String deliveryType) {
 		this.deliveryType = deliveryType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceAddressee</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsAddressee} object.
+	 */
 	public InsAddressee getInvoiceAddressee() {
 		return this.invoiceAddressee;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceAddressee</code>.</p>
+	 *
+	 * @param invoiceAddressee a {@link cn.felord.wepay.ali.sdk.api.domain.InsAddressee} object.
+	 */
 	public void setInvoiceAddressee(InsAddressee invoiceAddressee) {
 		this.invoiceAddressee = invoiceAddressee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceApplyItem</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsInvoiceApplyItem} object.
+	 */
 	public InsInvoiceApplyItem getInvoiceApplyItem() {
 		return this.invoiceApplyItem;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceApplyItem</code>.</p>
+	 *
+	 * @param invoiceApplyItem a {@link cn.felord.wepay.ali.sdk.api.domain.InsInvoiceApplyItem} object.
+	 */
 	public void setInvoiceApplyItem(InsInvoiceApplyItem invoiceApplyItem) {
 		this.invoiceApplyItem = invoiceApplyItem;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getInvoiceDate() {
 		return this.invoiceDate;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceDate</code>.</p>
+	 *
+	 * @param invoiceDate a {@link java.util.Date} object.
+	 */
 	public void setInvoiceDate(Date invoiceDate) {
 		this.invoiceDate = invoiceDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceTitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInvoiceTitle() {
 		return this.invoiceTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceTitle</code>.</p>
+	 *
+	 * @param invoiceTitle a {@link java.lang.String} object.
+	 */
 	public void setInvoiceTitle(String invoiceTitle) {
 		this.invoiceTitle = invoiceTitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInvoiceType() {
 		return this.invoiceType;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceType</code>.</p>
+	 *
+	 * @param invoiceType a {@link java.lang.String} object.
+	 */
 	public void setInvoiceType(String invoiceType) {
 		this.invoiceType = invoiceType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}

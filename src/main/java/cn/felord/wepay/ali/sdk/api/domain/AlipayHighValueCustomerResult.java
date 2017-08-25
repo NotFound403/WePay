@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 活跃高价值用户返回
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @version $Id: $Id
  */
 public class AlipayHighValueCustomerResult extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayHighValueCustomerResult extends AlipayObject {
 	@ApiField("level")
 	private String level;
 
+	/**
+	 * <p>Getter for the field <code>level</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLevel() {
 		return this.level;
 	}
+	/**
+	 * <p>Setter for the field <code>level</code>.</p>
+	 *
+	 * @param level a {@link java.lang.String} object.
+	 */
 	public void setLevel(String level) {
 		this.level = level;
 	}

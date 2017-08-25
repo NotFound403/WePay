@@ -26,28 +26,23 @@ import java.util.TimeZone;
  */
 public class DefaultAlipayClient implements AlipayClient {
 
-    private String serverUrl;
-    private String appId;
-    private String privateKey;
-    private String prodCode;
-    private String format         = AlipayConstants.FORMAT_JSON;
-    private String sign_type      = AlipayConstants.SIGN_TYPE_RSA;
-
-    private String encryptType    = AlipayConstants.ENCRYPT_TYPE_AES;
-
-    private String encryptKey;
-
-    private String alipayPublicKey;
-
-    private String charset;
-
-    private int    connectTimeout = 3000;
-    private int    readTimeout    = 15000;
-
     static {
         //清除安全设置
         Security.setProperty("jdk.certpath.disabledAlgorithms", "");
     }
+
+    private String serverUrl;
+    private String appId;
+    private String privateKey;
+    private String prodCode;
+    private String format = AlipayConstants.FORMAT_JSON;
+    private String sign_type = AlipayConstants.SIGN_TYPE_RSA;
+    private String encryptType = AlipayConstants.ENCRYPT_TYPE_AES;
+    private String encryptKey;
+    private String alipayPublicKey;
+    private String charset;
+    private int connectTimeout = 3000;
+    private int readTimeout = 15000;
 
     /**
      * Instantiates a new Default alipay client.
@@ -152,16 +147,19 @@ public class DefaultAlipayClient implements AlipayClient {
         this.encryptKey = encryptKey;
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T execute(AlipayRequest<T> request) throws AlipayApiException {
         return execute(request, null);
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T execute(AlipayRequest<T> request,
                                                 String accessToken) throws AlipayApiException {
 
         return execute(request, accessToken, null);
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
                                                 String appAuthToken) throws AlipayApiException {
 
@@ -175,10 +173,12 @@ public class DefaultAlipayClient implements AlipayClient {
         return _execute(request, parser, accessToken, appAuthToken);
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request) throws AlipayApiException {
         return pageExecute(request, "POST");
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request,
                                                     String httpMethod) throws AlipayApiException {
         RequestParametersHolder requestHolder = getRequestHolderWithSign(request, null, null);
@@ -204,6 +204,7 @@ public class DefaultAlipayClient implements AlipayClient {
         return rsp;
     }
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T sdkExecute(AlipayRequest<T> request) throws AlipayApiException {
         RequestParametersHolder requestHolder = getRequestHolderWithSign(request, null, null);
         // 打印完整请求报文
@@ -223,6 +224,7 @@ public class DefaultAlipayClient implements AlipayClient {
         return rsp;
     }
 
+    /** {@inheritDoc} */
     public <TR extends AlipayResponse, T extends AlipayRequest<TR>> TR parseAppSyncResult(Map<String, String> result,
                                                                                           Class<T> requsetClazz) throws AlipayApiException {
         TR tRsp = null;
@@ -274,7 +276,7 @@ public class DefaultAlipayClient implements AlipayClient {
 
     /**
      * 组装接口参数，处理加密、签名逻辑
-     * 
+     *
      * @param request
      * @param accessToken
      * @param appAuthToken
@@ -290,10 +292,10 @@ public class DefaultAlipayClient implements AlipayClient {
         // 仅当API包含biz_content参数且值为空时，序列化bizModel填充bizContent
         try {
             if (request.getClass().getMethod("getBizContent") != null
-                && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
-                && request.getBizModel() != null) {
+                    && StringUtils.isEmpty(appParams.get(AlipayConstants.BIZ_CONTENT_KEY))
+                    && request.getBizModel() != null) {
                 appParams.put(AlipayConstants.BIZ_CONTENT_KEY,
-                    new JSONWriter().write(request.getBizModel(), true));
+                        new JSONWriter().write(request.getBizModel(), true));
             }
         } catch (NoSuchMethodException e) {
             // 找不到getBizContent则什么都不做
@@ -313,12 +315,12 @@ public class DefaultAlipayClient implements AlipayClient {
             if (!StringUtils.areNotEmpty(this.encryptKey, this.encryptType)) {
 
                 throw new AlipayApiException("API请求要求加密，则必须设置密钥和密钥类型：encryptKey=" + encryptKey
-                                             + ",encryptType=" + encryptType);
+                        + ",encryptType=" + encryptType);
             }
 
             String encryptContent = AlipayEncrypt.encryptContent(
-                appParams.get(AlipayConstants.BIZ_CONTENT_KEY), this.encryptType, this.encryptKey,
-                this.charset);
+                    appParams.get(AlipayConstants.BIZ_CONTENT_KEY), this.encryptType, this.encryptKey,
+                    this.charset);
 
             appParams.put(AlipayConstants.BIZ_CONTENT_KEY, encryptContent);
         }
@@ -365,7 +367,7 @@ public class DefaultAlipayClient implements AlipayClient {
 
             String signContent = AlipaySignature.getSignatureContent(requestHolder);
             protocalMustParams.put(AlipayConstants.SIGN,
-                AlipaySignature.rsaSign(signContent, privateKey, charset, this.sign_type));
+                    AlipaySignature.rsaSign(signContent, privateKey, charset, this.sign_type));
 
         } else {
             protocalMustParams.put(AlipayConstants.SIGN, "");
@@ -375,7 +377,7 @@ public class DefaultAlipayClient implements AlipayClient {
 
     /**
      * 获取POST请求的base url
-     * 
+     *
      * @param requestHolder
      * @return
      * @throws AlipayApiException
@@ -384,7 +386,7 @@ public class DefaultAlipayClient implements AlipayClient {
         StringBuffer urlSb = new StringBuffer(serverUrl);
         try {
             String sysMustQuery = WebUtils.buildQuery(requestHolder.getProtocalMustParams(),
-                charset);
+                    charset);
             String sysOptQuery = WebUtils.buildQuery(requestHolder.getProtocalOptParams(), charset);
 
             urlSb.append("?");
@@ -402,7 +404,7 @@ public class DefaultAlipayClient implements AlipayClient {
 
     /**
      * GET模式下获取跳转链接
-     * 
+     *
      * @param requestHolder
      * @return
      * @throws AlipayApiException
@@ -431,7 +433,7 @@ public class DefaultAlipayClient implements AlipayClient {
 
     /**
      * 拼装sdk调用时所传参数
-     * 
+     *
      * @param requestHolder
      * @return
      * @throws AlipayApiException
@@ -504,7 +506,7 @@ public class DefaultAlipayClient implements AlipayClient {
                                                                   String appAuthToken) throws AlipayApiException {
         Map<String, Object> result = new HashMap<String, Object>();
         RequestParametersHolder requestHolder = getRequestHolderWithSign(request, accessToken,
-            appAuthToken);
+                appAuthToken);
 
         String url = getRequestUrl(requestHolder);
 
@@ -519,10 +521,10 @@ public class DefaultAlipayClient implements AlipayClient {
                 AlipayUploadRequest<T> uRequest = (AlipayUploadRequest<T>) request;
                 Map<String, FileItem> fileParams = AlipayUtils.cleanupMap(uRequest.getFileParams());
                 rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), fileParams,
-                    charset, connectTimeout, readTimeout);
+                        charset, connectTimeout, readTimeout);
             } else {
                 rsp = WebUtils.doPost(url, requestHolder.getApplicationParams(), charset,
-                    connectTimeout, readTimeout);
+                        connectTimeout, readTimeout);
             }
         } catch (IOException e) {
             throw new AlipayApiException(e);
@@ -536,8 +538,8 @@ public class DefaultAlipayClient implements AlipayClient {
     }
 
     /**
-     *  检查响应签名
-     * 
+     * 检查响应签名
+     *
      * @param request
      * @param parser
      * @param responseBody
@@ -559,25 +561,25 @@ public class DefaultAlipayClient implements AlipayClient {
             }
 
             if (responseIsSucess
-                || (!responseIsSucess && !StringUtils.isEmpty(signItem.getSign()))) {
+                    || (!responseIsSucess && !StringUtils.isEmpty(signItem.getSign()))) {
 
                 boolean rsaCheckContent = AlipaySignature.rsaCheck(signItem.getSignSourceDate(),
-                    signItem.getSign(), this.alipayPublicKey, this.charset, this.sign_type);
+                        signItem.getSign(), this.alipayPublicKey, this.charset, this.sign_type);
 
                 if (!rsaCheckContent) {
 
                     // 针对JSON \/问题，替换/后再尝试做一次验证
                     if (!StringUtils.isEmpty(signItem.getSignSourceDate())
-                        && signItem.getSignSourceDate().contains("\\/")) {
+                            && signItem.getSignSourceDate().contains("\\/")) {
 
                         String srouceData = signItem.getSignSourceDate().replace("\\/", "/");
 
                         boolean jsonCheck = AlipaySignature.rsaCheck(srouceData, signItem.getSign(),
-                            this.alipayPublicKey, this.charset, this.sign_type);
+                                this.alipayPublicKey, this.charset, this.sign_type);
 
                         if (!jsonCheck) {
                             throw new AlipayApiException(
-                                "sign check fail: check Sign and Data Fail！JSON also！");
+                                    "sign check fail: check Sign and Data Fail！JSON also！");
                         }
                     } else {
 
@@ -590,8 +592,8 @@ public class DefaultAlipayClient implements AlipayClient {
     }
 
     /**
-     *  解密响应
-     * 
+     * 解密响应
+     *
      * @param request
      * @param rt
      * @param parser
@@ -611,7 +613,7 @@ public class DefaultAlipayClient implements AlipayClient {
 
             // 解密原始串
             realBody = parser.encryptSourceData(request, responseBody, this.format,
-                this.encryptType, this.encryptKey, this.charset);
+                    this.encryptType, this.encryptKey, this.charset);
         } else {
 
             // 解析原内容串

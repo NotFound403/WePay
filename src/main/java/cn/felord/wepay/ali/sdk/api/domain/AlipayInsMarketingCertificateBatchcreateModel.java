@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保险凭证批量创建
  *
  * @author auto create
- * @since 1.0, 2016-10-13 19:50:45
+ * @version $Id: $Id
  */
 public class AlipayInsMarketingCertificateBatchcreateModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayInsMarketingCertificateBatchcreateModel extends AlipayObject 
 	@ApiField("ins_create_certificate_request")
 	private List<InsCreateCertificateRequest> insCreateCertificateRequests;
 
+	/**
+	 * <p>Getter for the field <code>insCreateCertificateRequests</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsCreateCertificateRequest> getInsCreateCertificateRequests() {
 		return this.insCreateCertificateRequests;
 	}
+	/**
+	 * <p>Setter for the field <code>insCreateCertificateRequests</code>.</p>
+	 *
+	 * @param insCreateCertificateRequests a {@link java.util.List} object.
+	 */
 	public void setInsCreateCertificateRequests(List<InsCreateCertificateRequest> insCreateCertificateRequests) {
 		this.insCreateCertificateRequests = insCreateCertificateRequests;
 	}

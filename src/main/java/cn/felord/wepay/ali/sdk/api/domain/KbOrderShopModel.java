@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑在线购买订单-购买店铺模型
  *
  * @author auto create
- * @since 1.0, 2016-11-18 13:11:04
+ * @version $Id: $Id
  */
 public class KbOrderShopModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KbOrderShopModel extends AlipayObject {
 	@ApiField("store_id")
 	private String storeId;
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopName() {
 		return this.shopName;
 	}
+	/**
+	 * <p>Setter for the field <code>shopName</code>.</p>
+	 *
+	 * @param shopName a {@link java.lang.String} object.
+	 */
 	public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId() {
 		return this.storeId;
 	}
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 为服务窗合作伙伴（如YunOS），提供操作服务窗菜单的功能
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:14
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPartnerMenuOperateModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class AlipayOpenPublicPartnerMenuOperateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>actionParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionParam() {
 		return this.actionParam;
 	}
+	/**
+	 * <p>Setter for the field <code>actionParam</code>.</p>
+	 *
+	 * @param actionParam a {@link java.lang.String} object.
+	 */
 	public void setActionParam(String actionParam) {
 		this.actionParam = actionParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionType() {
 		return this.actionType;
 	}
+	/**
+	 * <p>Setter for the field <code>actionType</code>.</p>
+	 *
+	 * @param actionType a {@link java.lang.String} object.
+	 */
 	public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId() {
 		return this.agreementId;
 	}
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publicId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicId() {
 		return this.publicId;
 	}
+	/**
+	 * <p>Setter for the field <code>publicId</code>.</p>
+	 *
+	 * @param publicId a {@link java.lang.String} object.
+	 */
 	public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thirdAccountId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThirdAccountId() {
 		return this.thirdAccountId;
 	}
+	/**
+	 * <p>Setter for the field <code>thirdAccountId</code>.</p>
+	 *
+	 * @param thirdAccountId a {@link java.lang.String} object.
+	 */
 	public void setThirdAccountId(String thirdAccountId) {
 		this.thirdAccountId = thirdAccountId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

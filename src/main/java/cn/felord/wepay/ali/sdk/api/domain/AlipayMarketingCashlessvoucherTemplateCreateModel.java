@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户券模板创建接口
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:26:36
+ * @version $Id: $Id
  */
 public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObject {
 
@@ -99,100 +99,240 @@ public class AlipayMarketingCashlessvoucherTemplateCreateModel extends AlipayObj
 	@ApiField("voucher_valid_period")
 	private String voucherValidPeriod;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>brandName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandName() {
 		return this.brandName;
 	}
+	/**
+	 * <p>Setter for the field <code>brandName</code>.</p>
+	 *
+	 * @param brandName a {@link java.lang.String} object.
+	 */
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extensionInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtensionInfo() {
 		return this.extensionInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extensionInfo</code>.</p>
+	 *
+	 * @param extensionInfo a {@link java.lang.String} object.
+	 */
 	public void setExtensionInfo(String extensionInfo) {
 		this.extensionInfo = extensionInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>floorAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFloorAmount() {
 		return this.floorAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>floorAmount</code>.</p>
+	 *
+	 * @param floorAmount a {@link java.lang.String} object.
+	 */
 	public void setFloorAmount(String floorAmount) {
 		this.floorAmount = floorAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>notifyUri</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUri() {
 		return this.notifyUri;
 	}
+	/**
+	 * <p>Setter for the field <code>notifyUri</code>.</p>
+	 *
+	 * @param notifyUri a {@link java.lang.String} object.
+	 */
 	public void setNotifyUri(String notifyUri) {
 		this.notifyUri = notifyUri;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @param publishEndTime a {@link java.util.Date} object.
+	 */
 	public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishStartTime() {
 		return this.publishStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @param publishStartTime a {@link java.util.Date} object.
+	 */
 	public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleConf</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleConf() {
 		return this.ruleConf;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleConf</code>.</p>
+	 *
+	 * @param ruleConf a {@link java.lang.String} object.
+	 */
 	public void setRuleConf(String ruleConf) {
 		this.ruleConf = ruleConf;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherAvailableTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherAvailableTime() {
 		return this.voucherAvailableTime;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherAvailableTime</code>.</p>
+	 *
+	 * @param voucherAvailableTime a {@link java.lang.String} object.
+	 */
 	public void setVoucherAvailableTime(String voucherAvailableTime) {
 		this.voucherAvailableTime = voucherAvailableTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherDescription</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherDescription() {
 		return this.voucherDescription;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherDescription</code>.</p>
+	 *
+	 * @param voucherDescription a {@link java.lang.String} object.
+	 */
 	public void setVoucherDescription(String voucherDescription) {
 		this.voucherDescription = voucherDescription;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherQuantity</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getVoucherQuantity() {
 		return this.voucherQuantity;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherQuantity</code>.</p>
+	 *
+	 * @param voucherQuantity a {@link java.lang.Long} object.
+	 */
 	public void setVoucherQuantity(Long voucherQuantity) {
 		this.voucherQuantity = voucherQuantity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherType() {
 		return this.voucherType;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherType</code>.</p>
+	 *
+	 * @param voucherType a {@link java.lang.String} object.
+	 */
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherValidPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherValidPeriod() {
 		return this.voucherValidPeriod;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherValidPeriod</code>.</p>
+	 *
+	 * @param voucherValidPeriod a {@link java.lang.String} object.
+	 */
 	public void setVoucherValidPeriod(String voucherValidPeriod) {
 		this.voucherValidPeriod = voucherValidPeriod;
 	}

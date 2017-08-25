@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 手艺人作品
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:32:38
+ * @version $Id: $Id
  */
 public class CraftsmanWorkCreateOpenModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class CraftsmanWorkCreateOpenModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>duration</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getDuration() {
 		return this.duration;
 	}
+	/**
+	 * <p>Setter for the field <code>duration</code>.</p>
+	 *
+	 * @param duration a {@link java.lang.Long} object.
+	 */
 	public void setDuration(Long duration) {
 		this.duration = duration;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mediaId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMediaId() {
 		return this.mediaId;
 	}
+	/**
+	 * <p>Setter for the field <code>mediaId</code>.</p>
+	 *
+	 * @param mediaId a {@link java.lang.String} object.
+	 */
 	public void setMediaId(String mediaId) {
 		this.mediaId = mediaId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mediaType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMediaType() {
 		return this.mediaType;
 	}
+	/**
+	 * <p>Setter for the field <code>mediaType</code>.</p>
+	 *
+	 * @param mediaType a {@link java.lang.String} object.
+	 */
 	public void setMediaType(String mediaType) {
 		this.mediaType = mediaType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outWorkId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutWorkId() {
 		return this.outWorkId;
 	}
+	/**
+	 * <p>Setter for the field <code>outWorkId</code>.</p>
+	 *
+	 * @param outWorkId a {@link java.lang.String} object.
+	 */
 	public void setOutWorkId(String outWorkId) {
 		this.outWorkId = outWorkId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

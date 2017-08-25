@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 获取关注者列表
  *
  * @author auto create
- * @since 1.0, 2016-12-20 10:26:41
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicFollowBatchqueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenPublicFollowBatchqueryModel extends AlipayObject {
 	@ApiField("next_user_id")
 	private String nextUserId;
 
+	/**
+	 * <p>Getter for the field <code>nextUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNextUserId() {
 		return this.nextUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>nextUserId</code>.</p>
+	 *
+	 * @param nextUserId a {@link java.lang.String} object.
+	 */
 	public void setNextUserId(String nextUserId) {
 		this.nextUserId = nextUserId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 账户互通产品查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:42:37
+ * @version $Id: $Id
  */
 public class AlipayUserCustomerIdentifyModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayUserCustomerIdentifyModel extends AlipayObject {
 	@ApiField("principal")
 	private AlipayUserPrincipalInfo principal;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>deviceInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayUserDeviceInfo} object.
+	 */
 	public AlipayUserDeviceInfo getDeviceInfo() {
 		return this.deviceInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>deviceInfo</code>.</p>
+	 *
+	 * @param deviceInfo a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayUserDeviceInfo} object.
+	 */
 	public void setDeviceInfo(AlipayUserDeviceInfo deviceInfo) {
 		this.deviceInfo = deviceInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>principal</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayUserPrincipalInfo} object.
+	 */
 	public AlipayUserPrincipalInfo getPrincipal() {
 		return this.principal;
 	}
+	/**
+	 * <p>Setter for the field <code>principal</code>.</p>
+	 *
+	 * @param principal a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayUserPrincipalInfo} object.
+	 */
 	public void setPrincipal(AlipayUserPrincipalInfo principal) {
 		this.principal = principal;
 	}

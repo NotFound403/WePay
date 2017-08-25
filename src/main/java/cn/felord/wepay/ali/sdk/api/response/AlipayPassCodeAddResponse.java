@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pass.code.add response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-06-12 17:16:12
+ * @version $Id: $Id
  */
 public class AlipayPassCodeAddResponse extends AlipayResponse {
 
@@ -35,23 +35,49 @@ public class AlipayPassCodeAddResponse extends AlipayResponse {
 	@ApiField("success")
 	private Boolean success;
 
+	/**
+	 * <p>Setter for the field <code>bizResult</code>.</p>
+	 *
+	 * @param bizResult a {@link java.util.List} object.
+	 */
 	public void setBizResult(List<String> bizResult) {
 		this.bizResult = bizResult;
 	}
+	/**
+	 * <p>Getter for the field <code>bizResult</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getBizResult( ) {
 		return this.bizResult;
 	}
 
+	/** {@inheritDoc} */
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>errorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorCode( ) {
 		return this.errorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>success</code>.</p>
+	 *
+	 * @param success a {@link java.lang.Boolean} object.
+	 */
 	public void setSuccess(Boolean success) {
 		this.success = success;
 	}
+	/**
+	 * <p>Getter for the field <code>success</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSuccess( ) {
 		return this.success;
 	}

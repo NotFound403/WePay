@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询客户完整贷款方案
  *
  * @author auto create
- * @since 1.0, 2017-03-10 17:07:31
+ * @version $Id: $Id
  */
 public class MybankCreditLoantradeLoanschemeFullQueryModel extends AlipayObject {
 
@@ -93,93 +93,223 @@ public class MybankCreditLoantradeLoanschemeFullQueryModel extends AlipayObject 
 	@ApiField("trans_in_account")
 	private MyBkAccountVO transInAccount;
 
+	/**
+	 * <p>Getter for the field <code>alipayId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayId() {
 		return this.alipayId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayId</code>.</p>
+	 *
+	 * @param alipayId a {@link java.lang.String} object.
+	 */
 	public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyAmt() {
 		return this.applyAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>applyAmt</code>.</p>
+	 *
+	 * @param applyAmt a {@link java.lang.String} object.
+	 */
 	public void setApplyAmt(String applyAmt) {
 		this.applyAmt = applyAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getApplyDate() {
 		return this.applyDate;
 	}
+	/**
+	 * <p>Setter for the field <code>applyDate</code>.</p>
+	 *
+	 * @param applyDate a {@link java.util.Date} object.
+	 */
 	public void setApplyDate(Date applyDate) {
 		this.applyDate = applyDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>creditNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreditNo() {
 		return this.creditNo;
 	}
+	/**
+	 * <p>Setter for the field <code>creditNo</code>.</p>
+	 *
+	 * @param creditNo a {@link java.lang.String} object.
+	 */
 	public void setCreditNo(String creditNo) {
 		this.creditNo = creditNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>custGroup</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCustGroup() {
 		return this.custGroup;
 	}
+	/**
+	 * <p>Setter for the field <code>custGroup</code>.</p>
+	 *
+	 * @param custGroup a {@link java.lang.String} object.
+	 */
 	public void setCustGroup(String custGroup) {
 		this.custGroup = custGroup;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ipId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIpId() {
 		return this.ipId;
 	}
+	/**
+	 * <p>Setter for the field <code>ipId</code>.</p>
+	 *
+	 * @param ipId a {@link java.lang.String} object.
+	 */
 	public void setIpId(String ipId) {
 		this.ipId = ipId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIpRoleId() {
 		return this.ipRoleId;
 	}
+	/**
+	 * <p>Setter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @param ipRoleId a {@link java.lang.String} object.
+	 */
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanPolicyCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanPolicyCode() {
 		return this.loanPolicyCode;
 	}
+	/**
+	 * <p>Setter for the field <code>loanPolicyCode</code>.</p>
+	 *
+	 * @param loanPolicyCode a {@link java.lang.String} object.
+	 */
 	public void setLoanPolicyCode(String loanPolicyCode) {
 		this.loanPolicyCode = loanPolicyCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanTerm</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getLoanTerm() {
 		return this.loanTerm;
 	}
+	/**
+	 * <p>Setter for the field <code>loanTerm</code>.</p>
+	 *
+	 * @param loanTerm a {@link java.lang.Long} object.
+	 */
 	public void setLoanTerm(Long loanTerm) {
 		this.loanTerm = loanTerm;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanTermUnit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanTermUnit() {
 		return this.loanTermUnit;
 	}
+	/**
+	 * <p>Setter for the field <code>loanTermUnit</code>.</p>
+	 *
+	 * @param loanTermUnit a {@link java.lang.String} object.
+	 */
 	public void setLoanTermUnit(String loanTermUnit) {
 		this.loanTermUnit = loanTermUnit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>repayMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRepayMode() {
 		return this.repayMode;
 	}
+	/**
+	 * <p>Setter for the field <code>repayMode</code>.</p>
+	 *
+	 * @param repayMode a {@link java.lang.String} object.
+	 */
 	public void setRepayMode(String repayMode) {
 		this.repayMode = repayMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>salePdCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSalePdCode() {
 		return this.salePdCode;
 	}
+	/**
+	 * <p>Setter for the field <code>salePdCode</code>.</p>
+	 *
+	 * @param salePdCode a {@link java.lang.String} object.
+	 */
 	public void setSalePdCode(String salePdCode) {
 		this.salePdCode = salePdCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transInAccount</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MyBkAccountVO} object.
+	 */
 	public MyBkAccountVO getTransInAccount() {
 		return this.transInAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>transInAccount</code>.</p>
+	 *
+	 * @param transInAccount a {@link cn.felord.wepay.ali.sdk.api.domain.MyBkAccountVO} object.
+	 */
 	public void setTransInAccount(MyBkAccountVO transInAccount) {
 		this.transInAccount = transInAccount;
 	}

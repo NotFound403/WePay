@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 服务窗创建带参二维码接口，场景信息
  *
  * @author auto create
- * @since 1.0, 2016-08-10 17:27:01
+ * @version $Id: $Id
  */
 public class Scene extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class Scene extends AlipayObject {
 	@ApiField("scene_id")
 	private String sceneId;
 
+	/**
+	 * <p>Getter for the field <code>sceneId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneId() {
 		return this.sceneId;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneId</code>.</p>
+	 *
+	 * @param sceneId a {@link java.lang.String} object.
+	 */
 	public void setSceneId(String sceneId) {
 		this.sceneId = sceneId;
 	}

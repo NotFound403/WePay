@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 分页查询Leads、门店、商品相关操作流水信息
  *
  * @author auto create
- * @since 1.0, 2017-07-06 11:11:37
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketApplyorderBatchqueryModel extends AlipayObject {
 
@@ -92,86 +92,206 @@ public class AlipayOfflineMarketApplyorderBatchqueryModel extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>action</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAction() {
 		return this.action;
 	}
+	/**
+	 * <p>Setter for the field <code>action</code>.</p>
+	 *
+	 * @param action a {@link java.lang.String} object.
+	 */
 	public void setAction(String action) {
 		this.action = action;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getApplyIds() {
 		return this.applyIds;
 	}
+	/**
+	 * <p>Setter for the field <code>applyIds</code>.</p>
+	 *
+	 * @param applyIds a {@link java.util.List} object.
+	 */
 	public void setApplyIds(List<String> applyIds) {
 		this.applyIds = applyIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizId() {
 		return this.bizId;
 	}
+	/**
+	 * <p>Setter for the field <code>bizId</code>.</p>
+	 *
+	 * @param bizId a {@link java.lang.String} object.
+	 */
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpId() {
 		return this.opId;
 	}
+	/**
+	 * <p>Setter for the field <code>opId</code>.</p>
+	 *
+	 * @param opId a {@link java.lang.String} object.
+	 */
 	public void setOpId(String opId) {
 		this.opId = opId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opRole</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpRole() {
 		return this.opRole;
 	}
+	/**
+	 * <p>Setter for the field <code>opRole</code>.</p>
+	 *
+	 * @param opRole a {@link java.lang.String} object.
+	 */
 	public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNo() {
 		return this.pageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNo</code>.</p>
+	 *
+	 * @param pageNo a {@link java.lang.Long} object.
+	 */
 	public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getRequestIds() {
 		return this.requestIds;
 	}
+	/**
+	 * <p>Setter for the field <code>requestIds</code>.</p>
+	 *
+	 * @param requestIds a {@link java.util.List} object.
+	 */
 	public void setRequestIds(List<String> requestIds) {
 		this.requestIds = requestIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

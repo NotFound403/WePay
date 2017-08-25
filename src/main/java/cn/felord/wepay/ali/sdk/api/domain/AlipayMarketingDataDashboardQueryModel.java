@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 仪表盘查询
  *
  * @author auto create
- * @since 1.0, 2017-01-18 22:20:38
+ * @version $Id: $Id
  */
 public class AlipayMarketingDataDashboardQueryModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayMarketingDataDashboardQueryModel extends AlipayObject {
 	@ApiField("dashboard_param")
 	private List<DashboardParam> param;
 
+	/**
+	 * <p>Getter for the field <code>dashboardId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDashboardId() {
 		return this.dashboardId;
 	}
+	/**
+	 * <p>Setter for the field <code>dashboardId</code>.</p>
+	 *
+	 * @param dashboardId a {@link java.lang.String} object.
+	 */
 	public void setDashboardId(String dashboardId) {
 		this.dashboardId = dashboardId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>param</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DashboardParam> getParam() {
 		return this.param;
 	}
+	/**
+	 * <p>Setter for the field <code>param</code>.</p>
+	 *
+	 * @param param a {@link java.util.List} object.
+	 */
 	public void setParam(List<DashboardParam> param) {
 		this.param = param;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 发票抬头
  *
  * @author auto create
- * @since 1.0, 2017-03-15 15:25:34
+ * @version $Id: $Id
  */
 public class InvoiceTitleModel extends AlipayObject {
 
@@ -89,79 +89,189 @@ CORPORATION（公司抬头）
 	@ApiField("user_mobile")
 	private String userMobile;
 
+	/**
+	 * <p>Getter for the field <code>isDefault</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getIsDefault() {
 		return this.isDefault;
 	}
+	/**
+	 * <p>Setter for the field <code>isDefault</code>.</p>
+	 *
+	 * @param isDefault a {@link java.lang.Boolean} object.
+	 */
 	public void setIsDefault(Boolean isDefault) {
 		this.isDefault = isDefault;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>openBankAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpenBankAccount() {
 		return this.openBankAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>openBankAccount</code>.</p>
+	 *
+	 * @param openBankAccount a {@link java.lang.String} object.
+	 */
 	public void setOpenBankAccount(String openBankAccount) {
 		this.openBankAccount = openBankAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>openBankName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpenBankName() {
 		return this.openBankName;
 	}
+	/**
+	 * <p>Setter for the field <code>openBankName</code>.</p>
+	 *
+	 * @param openBankName a {@link java.lang.String} object.
+	 */
 	public void setOpenBankName(String openBankName) {
 		this.openBankName = openBankName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>taxRegisterNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTaxRegisterNo() {
 		return this.taxRegisterNo;
 	}
+	/**
+	 * <p>Setter for the field <code>taxRegisterNo</code>.</p>
+	 *
+	 * @param taxRegisterNo a {@link java.lang.String} object.
+	 */
 	public void setTaxRegisterNo(String taxRegisterNo) {
 		this.taxRegisterNo = taxRegisterNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>titleName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitleName() {
 		return this.titleName;
 	}
+	/**
+	 * <p>Setter for the field <code>titleName</code>.</p>
+	 *
+	 * @param titleName a {@link java.lang.String} object.
+	 */
 	public void setTitleName(String titleName) {
 		this.titleName = titleName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>titleType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitleType() {
 		return this.titleType;
 	}
+	/**
+	 * <p>Setter for the field <code>titleType</code>.</p>
+	 *
+	 * @param titleType a {@link java.lang.String} object.
+	 */
 	public void setTitleType(String titleType) {
 		this.titleType = titleType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserAddress() {
 		return this.userAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>userAddress</code>.</p>
+	 *
+	 * @param userAddress a {@link java.lang.String} object.
+	 */
 	public void setUserAddress(String userAddress) {
 		this.userAddress = userAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserEmail() {
 		return this.userEmail;
 	}
+	/**
+	 * <p>Setter for the field <code>userEmail</code>.</p>
+	 *
+	 * @param userEmail a {@link java.lang.String} object.
+	 */
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserMobile() {
 		return this.userMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>userMobile</code>.</p>
+	 *
+	 * @param userMobile a {@link java.lang.String} object.
+	 */
 	public void setUserMobile(String userMobile) {
 		this.userMobile = userMobile;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.provider.equipment.auth.remove response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-29 17:01:40
+ * @version $Id: $Id
  */
 public class AlipayOfflineProviderEquipmentAuthRemoveResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayOfflineProviderEquipmentAuthRemoveResponse extends AlipayResp
 	@ApiField("merchant_pid")
 	private String merchantPid;
 
+	/**
+	 * <p>Setter for the field <code>deviceId</code>.</p>
+	 *
+	 * @param deviceId a {@link java.lang.String} object.
+	 */
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
+	/**
+	 * <p>Getter for the field <code>deviceId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeviceId( ) {
 		return this.deviceId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>merchantPid</code>.</p>
+	 *
+	 * @param merchantPid a {@link java.lang.String} object.
+	 */
 	public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
+	/**
+	 * <p>Getter for the field <code>merchantPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantPid( ) {
 		return this.merchantPid;
 	}

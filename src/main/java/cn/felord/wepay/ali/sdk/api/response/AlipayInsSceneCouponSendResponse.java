@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ins.scene.coupon.send response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-23 21:17:32
+ * @version $Id: $Id
  */
 public class AlipayInsSceneCouponSendResponse extends AlipayResponse {
 
@@ -40,30 +40,70 @@ public class AlipayInsSceneCouponSendResponse extends AlipayResponse {
 	@ApiField("product")
 	private InsProduct product;
 
+	/**
+	 * <p>Setter for the field <code>certificate</code>.</p>
+	 *
+	 * @param certificate a {@link cn.felord.wepay.ali.sdk.api.domain.InsCertificate} object.
+	 */
 	public void setCertificate(InsCertificate certificate) {
 		this.certificate = certificate;
 	}
+	/**
+	 * <p>Getter for the field <code>certificate</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsCertificate} object.
+	 */
 	public InsCertificate getCertificate( ) {
 		return this.certificate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>compaignId</code>.</p>
+	 *
+	 * @param compaignId a {@link java.lang.String} object.
+	 */
 	public void setCompaignId(String compaignId) {
 		this.compaignId = compaignId;
 	}
+	/**
+	 * <p>Getter for the field <code>compaignId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCompaignId( ) {
 		return this.compaignId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>flowId</code>.</p>
+	 *
+	 * @param flowId a {@link java.lang.String} object.
+	 */
 	public void setFlowId(String flowId) {
 		this.flowId = flowId;
 	}
+	/**
+	 * <p>Getter for the field <code>flowId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFlowId( ) {
 		return this.flowId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>product</code>.</p>
+	 *
+	 * @param product a {@link cn.felord.wepay.ali.sdk.api.domain.InsProduct} object.
+	 */
 	public void setProduct(InsProduct product) {
 		this.product = product;
 	}
+	/**
+	 * <p>Getter for the field <code>product</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsProduct} object.
+	 */
 	public InsProduct getProduct( ) {
 		return this.product;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝用户联通开卡订单信息同步接口
  *
  * @author auto create
- * @since 1.0, 2016-12-22 21:53:37
+ * @version $Id: $Id
  */
 public class AlipayUserUnicomOrderInfoSyncModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class AlipayUserUnicomOrderInfoSyncModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>gmtOrderChange</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtOrderChange() {
 		return this.gmtOrderChange;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtOrderChange</code>.</p>
+	 *
+	 * @param gmtOrderChange a {@link java.lang.String} object.
+	 */
 	public void setGmtOrderChange(String gmtOrderChange) {
 		this.gmtOrderChange = gmtOrderChange;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderOperateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderOperateType() {
 		return this.orderOperateType;
 	}
+	/**
+	 * <p>Setter for the field <code>orderOperateType</code>.</p>
+	 *
+	 * @param orderOperateType a {@link java.lang.String} object.
+	 */
 	public void setOrderOperateType(String orderOperateType) {
 		this.orderOperateType = orderOperateType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>phoneNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPhoneNo() {
 		return this.phoneNo;
 	}
+	/**
+	 * <p>Setter for the field <code>phoneNo</code>.</p>
+	 *
+	 * @param phoneNo a {@link java.lang.String} object.
+	 */
 	public void setPhoneNo(String phoneNo) {
 		this.phoneNo = phoneNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductName() {
 		return this.productName;
 	}
+	/**
+	 * <p>Setter for the field <code>productName</code>.</p>
+	 *
+	 * @param productName a {@link java.lang.String} object.
+	 */
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>secKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSecKey() {
 		return this.secKey;
 	}
+	/**
+	 * <p>Setter for the field <code>secKey</code>.</p>
+	 *
+	 * @param secKey a {@link java.lang.String} object.
+	 */
 	public void setSecKey(String secKey) {
 		this.secKey = secKey;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

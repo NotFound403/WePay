@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 标签修改接口
  *
  * @author auto create
- * @since 1.0, 2017-06-27 17:51:29
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeLabelModifyModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenPublicLifeLabelModifyModel extends AlipayObject {
 	@ApiField("label_name")
 	private String labelName;
 
+	/**
+	 * <p>Getter for the field <code>labelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabelId() {
 		return this.labelId;
 	}
+	/**
+	 * <p>Setter for the field <code>labelId</code>.</p>
+	 *
+	 * @param labelId a {@link java.lang.String} object.
+	 */
 	public void setLabelId(String labelId) {
 		this.labelId = labelId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabelName() {
 		return this.labelName;
 	}
+	/**
+	 * <p>Setter for the field <code>labelName</code>.</p>
+	 *
+	 * @param labelName a {@link java.lang.String} object.
+	 */
 	public void setLabelName(String labelName) {
 		this.labelName = labelName;
 	}

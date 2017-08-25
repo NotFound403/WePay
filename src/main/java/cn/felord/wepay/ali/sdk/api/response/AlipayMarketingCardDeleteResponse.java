@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:40:06
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardDeleteResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCardDeleteResponse extends AlipayResponse {
 	@ApiField("biz_serial_no")
 	private String bizSerialNo;
 
+	/**
+	 * <p>Setter for the field <code>bizSerialNo</code>.</p>
+	 *
+	 * @param bizSerialNo a {@link java.lang.String} object.
+	 */
 	public void setBizSerialNo(String bizSerialNo) {
 		this.bizSerialNo = bizSerialNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizSerialNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizSerialNo( ) {
 		return this.bizSerialNo;
 	}

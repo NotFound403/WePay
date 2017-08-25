@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 物业社区业主信息
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:15:02
+ * @version $Id: $Id
  */
 public class CplifeResidentInfo extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class CplifeResidentInfo extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>entityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityId() {
 		return this.entityId;
 	}
+	/**
+	 * <p>Setter for the field <code>entityId</code>.</p>
+	 *
+	 * @param entityId a {@link java.lang.String} object.
+	 */
 	public void setEntityId(String entityId) {
 		this.entityId = entityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>idcardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdcardNo() {
 		return this.idcardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>idcardNo</code>.</p>
+	 *
+	 * @param idcardNo a {@link java.lang.String} object.
+	 */
 	public void setIdcardNo(String idcardNo) {
 		this.idcardNo = idcardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outEntityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutEntityId() {
 		return this.outEntityId;
 	}
+	/**
+	 * <p>Setter for the field <code>outEntityId</code>.</p>
+	 *
+	 * @param outEntityId a {@link java.lang.String} object.
+	 */
 	public void setOutEntityId(String outEntityId) {
 		this.outEntityId = outEntityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outResidentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutResidentId() {
 		return this.outResidentId;
 	}
+	/**
+	 * <p>Setter for the field <code>outResidentId</code>.</p>
+	 *
+	 * @param outResidentId a {@link java.lang.String} object.
+	 */
 	public void setOutResidentId(String outResidentId) {
 		this.outResidentId = outResidentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

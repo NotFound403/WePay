@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.applyorder.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-06 11:11:47
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopApplyorderCancelResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOfflineMarketShopApplyorderCancelResponse extends AlipayRespo
 	@ApiField("apply_id")
 	private String applyId;
 
+	/**
+	 * <p>Setter for the field <code>applyId</code>.</p>
+	 *
+	 * @param applyId a {@link java.lang.String} object.
+	 */
 	public void setApplyId(String applyId) {
 		this.applyId = applyId;
 	}
+	/**
+	 * <p>Getter for the field <code>applyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyId( ) {
 		return this.applyId;
 	}

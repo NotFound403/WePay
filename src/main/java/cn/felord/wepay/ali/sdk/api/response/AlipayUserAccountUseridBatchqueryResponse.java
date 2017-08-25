@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.account.userid.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-06 21:37:53
+ * @version $Id: $Id
  */
 public class AlipayUserAccountUseridBatchqueryResponse extends AlipayResponse {
 
@@ -23,9 +23,19 @@ public class AlipayUserAccountUseridBatchqueryResponse extends AlipayResponse {
 	@ApiField("string")
 	private List<String> userIdList;
 
+	/**
+	 * <p>Setter for the field <code>userIdList</code>.</p>
+	 *
+	 * @param userIdList a {@link java.util.List} object.
+	 */
 	public void setUserIdList(List<String> userIdList) {
 		this.userIdList = userIdList;
 	}
+	/**
+	 * <p>Getter for the field <code>userIdList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getUserIdList( ) {
 		return this.userIdList;
 	}

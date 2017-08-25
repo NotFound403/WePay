@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 提供给ISV、开发者创建广告的接口，创建广告后投放渠道包括钱包APP，聚牛APP等，投放支持的APP应用
  *
  * @author auto create
- * @since 1.0, 2017-04-01 13:07:53
+ * @version $Id: $Id
  */
 public class AlipayMarketingCdpAdvertiseCreateModel extends AlipayObject {
 
@@ -64,58 +64,138 @@ public class AlipayMarketingCdpAdvertiseCreateModel extends AlipayObject {
 	@ApiField("start_time")
 	private Date startTime;
 
+	/**
+	 * <p>Getter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionUrl() {
 		return this.actionUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @param actionUrl a {@link java.lang.String} object.
+	 */
 	public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>adCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdCode() {
 		return this.adCode;
 	}
+	/**
+	 * <p>Setter for the field <code>adCode</code>.</p>
+	 *
+	 * @param adCode a {@link java.lang.String} object.
+	 */
 	public void setAdCode(String adCode) {
 		this.adCode = adCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>adRules</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdRules() {
 		return this.adRules;
 	}
+	/**
+	 * <p>Setter for the field <code>adRules</code>.</p>
+	 *
+	 * @param adRules a {@link java.lang.String} object.
+	 */
 	public void setAdRules(String adRules) {
 		this.adRules = adRules;
 	}
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentType() {
 		return this.contentType;
 	}
+	/**
+	 * <p>Setter for the field <code>contentType</code>.</p>
+	 *
+	 * @param contentType a {@link java.lang.String} object.
+	 */
 	public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>height</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHeight() {
 		return this.height;
 	}
+	/**
+	 * <p>Setter for the field <code>height</code>.</p>
+	 *
+	 * @param height a {@link java.lang.String} object.
+	 */
 	public void setHeight(String height) {
 		this.height = height;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}

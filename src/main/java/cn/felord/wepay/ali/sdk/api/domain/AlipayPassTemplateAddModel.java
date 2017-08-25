@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 卡券模板创建
  *
  * @author auto create
- * @since 1.0, 2017-07-24 12:07:58
+ * @version $Id: $Id
  */
 public class AlipayPassTemplateAddModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayPassTemplateAddModel extends AlipayObject {
 	@ApiField("unique_id")
 	private String uniqueId;
 
+	/**
+	 * <p>Getter for the field <code>tplContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTplContent() {
 		return this.tplContent;
 	}
+	/**
+	 * <p>Setter for the field <code>tplContent</code>.</p>
+	 *
+	 * @param tplContent a {@link java.lang.String} object.
+	 */
 	public void setTplContent(String tplContent) {
 		this.tplContent = tplContent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uniqueId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUniqueId() {
 		return this.uniqueId;
 	}
+	/**
+	 * <p>Setter for the field <code>uniqueId</code>.</p>
+	 *
+	 * @param uniqueId a {@link java.lang.String} object.
+	 */
 	public void setUniqueId(String uniqueId) {
 		this.uniqueId = uniqueId;
 	}

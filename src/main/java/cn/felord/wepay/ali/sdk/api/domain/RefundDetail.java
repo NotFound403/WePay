@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 退款明细信息
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:26
+ * @version $Id: $Id
  */
 public class RefundDetail extends AlipayObject {
 
@@ -53,44 +53,104 @@ public class RefundDetail extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Getter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundAmount() {
 		return this.refundAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @param refundAmount a {@link java.lang.String} object.
+	 */
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundMemo() {
 		return this.refundMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>refundMemo</code>.</p>
+	 *
+	 * @param refundMemo a {@link java.lang.String} object.
+	 */
 	public void setRefundMemo(String refundMemo) {
 		this.refundMemo = refundMemo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundRoyaltys</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RefundRoyaltyInfo> getRefundRoyaltys() {
 		return this.refundRoyaltys;
 	}
+	/**
+	 * <p>Setter for the field <code>refundRoyaltys</code>.</p>
+	 *
+	 * @param refundRoyaltys a {@link java.util.List} object.
+	 */
 	public void setRefundRoyaltys(List<RefundRoyaltyInfo> refundRoyaltys) {
 		this.refundRoyaltys = refundRoyaltys;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundSupplAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundSupplAmount() {
 		return this.refundSupplAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>refundSupplAmount</code>.</p>
+	 *
+	 * @param refundSupplAmount a {@link java.lang.String} object.
+	 */
 	public void setRefundSupplAmount(String refundSupplAmount) {
 		this.refundSupplAmount = refundSupplAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundSupplMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundSupplMemo() {
 		return this.refundSupplMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>refundSupplMemo</code>.</p>
+	 *
+	 * @param refundSupplMemo a {@link java.lang.String} object.
+	 */
 	public void setRefundSupplMemo(String refundSupplMemo) {
 		this.refundSupplMemo = refundSupplMemo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}

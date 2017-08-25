@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-13 15:53:40
+ * @version $Id: $Id
  */
 public class KoubeiItemModifyResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class KoubeiItemModifyResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId( ) {
 		return this.itemId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId( ) {
 		return this.requestId;
 	}

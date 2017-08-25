@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 行业关注名单普惠版
  *
  * @author auto create
- * @since 1.0, 2017-05-09 16:11:51
+ * @version $Id: $Id
  */
 public class ZhimaCreditWatchlistBriefGetModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class ZhimaCreditWatchlistBriefGetModel extends AlipayObject {
 	@ApiField("transaction_id")
 	private String transactionId;
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertType() {
 		return this.certType;
 	}
+	/**
+	 * <p>Setter for the field <code>certType</code>.</p>
+	 *
+	 * @param certType a {@link java.lang.String} object.
+	 */
 	public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transactionId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransactionId() {
 		return this.transactionId;
 	}
+	/**
+	 * <p>Setter for the field <code>transactionId</code>.</p>
+	 *
+	 * @param transactionId a {@link java.lang.String} object.
+	 */
 	public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}

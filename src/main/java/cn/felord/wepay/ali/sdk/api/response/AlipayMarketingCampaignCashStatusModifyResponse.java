@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.status.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:01
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignCashStatusModifyResponse extends AlipayResponse {
 

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.maintain.order.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-21 12:12:55
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarMaintainOrderCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayEcoMycarMaintainOrderCreateResponse extends AlipayResponse {
 	@ApiField("order_no")
 	private String orderNo;
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}

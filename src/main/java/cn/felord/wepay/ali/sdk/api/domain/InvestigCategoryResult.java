@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 数据项的调查结果
  *
  * @author auto create
- * @since 1.0, 2017-05-31 13:44:00
+ * @version $Id: $Id
  */
 public class InvestigCategoryResult extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class InvestigCategoryResult extends AlipayObject {
 	@ApiField("investig_category_data")
 	private List<InvestigCategoryData> categoryResult;
 
+	/**
+	 * <p>Getter for the field <code>category</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategory() {
 		return this.category;
 	}
+	/**
+	 * <p>Setter for the field <code>category</code>.</p>
+	 *
+	 * @param category a {@link java.lang.String} object.
+	 */
 	public void setCategory(String category) {
 		this.category = category;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryResult</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InvestigCategoryData> getCategoryResult() {
 		return this.categoryResult;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryResult</code>.</p>
+	 *
+	 * @param categoryResult a {@link java.util.List} object.
+	 */
 	public void setCategoryResult(List<InvestigCategoryData> categoryResult) {
 		this.categoryResult = categoryResult;
 	}

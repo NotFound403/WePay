@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.activity.report.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-20 14:23:46
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataActivityReportQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiMarketingDataActivityReportQueryResponse extends AlipayRespon
 	@ApiField("report_data")
 	private String reportData;
 
+	/**
+	 * <p>Setter for the field <code>reportData</code>.</p>
+	 *
+	 * @param reportData a {@link java.lang.String} object.
+	 */
 	public void setReportData(String reportData) {
 		this.reportData = reportData;
 	}
+	/**
+	 * <p>Getter for the field <code>reportData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportData( ) {
 		return this.reportData;
 	}

@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 上传投放消息
  *
  * @author auto create
- * @since 1.0, 2016-09-21 11:31:27
+ * @version $Id: $Id
  */
 public class AlipayEcoCmsCdataUploadModel extends AlipayObject {
 
@@ -96,79 +96,189 @@ op_code,channel,version共同确定
 	@ApiField("target_id")
 	private String targetId;
 
+	/**
+	 * <p>Getter for the field <code>attribute</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAttribute() {
 		return this.attribute;
 	}
+	/**
+	 * <p>Setter for the field <code>attribute</code>.</p>
+	 *
+	 * @param attribute a {@link java.lang.String} object.
+	 */
 	public void setAttribute(String attribute) {
 		this.attribute = attribute;
 	}
 
+	/**
+	 * <p>Getter for the field <code>category</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategory() {
 		return this.category;
 	}
+	/**
+	 * <p>Setter for the field <code>category</code>.</p>
+	 *
+	 * @param category a {@link java.lang.String} object.
+	 */
 	public void setCategory(String category) {
 		this.category = category;
 	}
 
+	/**
+	 * <p>Getter for the field <code>expTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getExpTime() {
 		return this.expTime;
 	}
+	/**
+	 * <p>Setter for the field <code>expTime</code>.</p>
+	 *
+	 * @param expTime a {@link java.util.Date} object.
+	 */
 	public void setExpTime(Date expTime) {
 		this.expTime = expTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchId() {
 		return this.merchId;
 	}
+	/**
+	 * <p>Setter for the field <code>merchId</code>.</p>
+	 *
+	 * @param merchId a {@link java.lang.String} object.
+	 */
 	public void setMerchId(String merchId) {
 		this.merchId = merchId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpData() {
 		return this.opData;
 	}
+	/**
+	 * <p>Setter for the field <code>opData</code>.</p>
+	 *
+	 * @param opData a {@link java.lang.String} object.
+	 */
 	public void setOpData(String opData) {
 		this.opData = opData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sceneData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneData() {
 		return this.sceneData;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneData</code>.</p>
+	 *
+	 * @param sceneData a {@link java.lang.String} object.
+	 */
 	public void setSceneData(String sceneData) {
 		this.sceneData = sceneData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>syn</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSyn() {
 		return this.syn;
 	}
+	/**
+	 * <p>Setter for the field <code>syn</code>.</p>
+	 *
+	 * @param syn a {@link java.lang.Boolean} object.
+	 */
 	public void setSyn(Boolean syn) {
 		this.syn = syn;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tV</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String gettV() {
 		return this.tV;
 	}
+	/**
+	 * <p>Setter for the field <code>tV</code>.</p>
+	 *
+	 * @param tV a {@link java.lang.String} object.
+	 */
 	public void settV(String tV) {
 		this.tV = tV;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tamplateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTamplateId() {
 		return this.tamplateId;
 	}
+	/**
+	 * <p>Setter for the field <code>tamplateId</code>.</p>
+	 *
+	 * @param tamplateId a {@link java.lang.Long} object.
+	 */
 	public void setTamplateId(Long tamplateId) {
 		this.tamplateId = tamplateId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetId() {
 		return this.targetId;
 	}
+	/**
+	 * <p>Setter for the field <code>targetId</code>.</p>
+	 *
+	 * @param targetId a {@link java.lang.String} object.
+	 */
 	public void setTargetId(String targetId) {
 		this.targetId = targetId;
 	}

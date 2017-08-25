@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 洗车保养订单的商品
  *
  * @author auto create
- * @since 1.0, 2017-04-12 11:48:53
+ * @version $Id: $Id
  */
 public class MaintainBizOrderGoods extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class MaintainBizOrderGoods extends AlipayObject {
 	@ApiField("sale_num")
 	private Long saleNum;
 
+	/**
+	 * <p>Getter for the field <code>goodsImage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGoodsImage() {
 		return this.goodsImage;
 	}
+	/**
+	 * <p>Setter for the field <code>goodsImage</code>.</p>
+	 *
+	 * @param goodsImage a {@link java.lang.String} object.
+	 */
 	public void setGoodsImage(String goodsImage) {
 		this.goodsImage = goodsImage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderGoodsId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderGoodsId() {
 		return this.orderGoodsId;
 	}
+	/**
+	 * <p>Setter for the field <code>orderGoodsId</code>.</p>
+	 *
+	 * @param orderGoodsId a {@link java.lang.String} object.
+	 */
 	public void setOrderGoodsId(String orderGoodsId) {
 		this.orderGoodsId = orderGoodsId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>originalCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginalCost() {
 		return this.originalCost;
 	}
+	/**
+	 * <p>Setter for the field <code>originalCost</code>.</p>
+	 *
+	 * @param originalCost a {@link java.lang.String} object.
+	 */
 	public void setOriginalCost(String originalCost) {
 		this.originalCost = originalCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outGoodsNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutGoodsNo() {
 		return this.outGoodsNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outGoodsNo</code>.</p>
+	 *
+	 * @param outGoodsNo a {@link java.lang.String} object.
+	 */
 	public void setOutGoodsNo(String outGoodsNo) {
 		this.outGoodsNo = outGoodsNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outPackageId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutPackageId() {
 		return this.outPackageId;
 	}
+	/**
+	 * <p>Setter for the field <code>outPackageId</code>.</p>
+	 *
+	 * @param outPackageId a {@link java.lang.String} object.
+	 */
 	public void setOutPackageId(String outPackageId) {
 		this.outPackageId = outPackageId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>packageName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPackageName() {
 		return this.packageName;
 	}
+	/**
+	 * <p>Setter for the field <code>packageName</code>.</p>
+	 *
+	 * @param packageName a {@link java.lang.String} object.
+	 */
 	public void setPackageName(String packageName) {
 		this.packageName = packageName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>realCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealCost() {
 		return this.realCost;
 	}
+	/**
+	 * <p>Setter for the field <code>realCost</code>.</p>
+	 *
+	 * @param realCost a {@link java.lang.String} object.
+	 */
 	public void setRealCost(String realCost) {
 		this.realCost = realCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>saleNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getSaleNum() {
 		return this.saleNum;
 	}
+	/**
+	 * <p>Setter for the field <code>saleNum</code>.</p>
+	 *
+	 * @param saleNum a {@link java.lang.Long} object.
+	 */
 	public void setSaleNum(Long saleNum) {
 		this.saleNum = saleNum;
 	}

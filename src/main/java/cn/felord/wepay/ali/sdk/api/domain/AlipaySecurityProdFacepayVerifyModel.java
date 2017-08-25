@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 人脸支付验证接口
  *
  * @author auto create
- * @since 1.0, 2017-03-04 14:23:39
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFacepayVerifyModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class AlipaySecurityProdFacepayVerifyModel extends AlipayObject {
 	@ApiField("user_auth_type")
 	private String userAuthType;
 
+	/**
+	 * <p>Getter for the field <code>checkCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCheckCode() {
 		return this.checkCode;
 	}
+	/**
+	 * <p>Setter for the field <code>checkCode</code>.</p>
+	 *
+	 * @param checkCode a {@link java.lang.String} object.
+	 */
 	public void setCheckCode(String checkCode) {
 		this.checkCode = checkCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>faceImage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFaceImage() {
 		return this.faceImage;
 	}
+	/**
+	 * <p>Setter for the field <code>faceImage</code>.</p>
+	 *
+	 * @param faceImage a {@link java.lang.String} object.
+	 */
 	public void setFaceImage(String faceImage) {
 		this.faceImage = faceImage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ftoken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFtoken() {
 		return this.ftoken;
 	}
+	/**
+	 * <p>Setter for the field <code>ftoken</code>.</p>
+	 *
+	 * @param ftoken a {@link java.lang.String} object.
+	 */
 	public void setFtoken(String ftoken) {
 		this.ftoken = ftoken;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId() {
 		return this.storeId;
 	}
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userAuthId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserAuthId() {
 		return this.userAuthId;
 	}
+	/**
+	 * <p>Setter for the field <code>userAuthId</code>.</p>
+	 *
+	 * @param userAuthId a {@link java.lang.String} object.
+	 */
 	public void setUserAuthId(String userAuthId) {
 		this.userAuthId = userAuthId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userAuthType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserAuthType() {
 		return this.userAuthType;
 	}
+	/**
+	 * <p>Setter for the field <code>userAuthType</code>.</p>
+	 *
+	 * @param userAuthType a {@link java.lang.String} object.
+	 */
 	public void setUserAuthType(String userAuthType) {
 		this.userAuthType = userAuthType;
 	}

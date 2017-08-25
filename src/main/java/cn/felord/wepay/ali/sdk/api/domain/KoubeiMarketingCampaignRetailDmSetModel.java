@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 快消店铺展位内容上下架接口
  *
  * @author auto create
- * @since 1.0, 2017-05-16 17:02:51
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignRetailDmSetModel extends AlipayObject {
 
@@ -33,23 +33,53 @@ public class KoubeiMarketingCampaignRetailDmSetModel extends AlipayObject {
 	@ApiField("operate_type")
 	private String operateType;
 
+	/**
+	 * <p>Getter for the field <code>campaignEndTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getCampaignEndTime() {
 		return this.campaignEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>campaignEndTime</code>.</p>
+	 *
+	 * @param campaignEndTime a {@link java.util.Date} object.
+	 */
 	public void setCampaignEndTime(Date campaignEndTime) {
 		this.campaignEndTime = campaignEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentId() {
 		return this.contentId;
 	}
+	/**
+	 * <p>Setter for the field <code>contentId</code>.</p>
+	 *
+	 * @param contentId a {@link java.lang.String} object.
+	 */
 	public void setContentId(String contentId) {
 		this.contentId = contentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateType() {
 		return this.operateType;
 	}
+	/**
+	 * <p>Setter for the field <code>operateType</code>.</p>
+	 *
+	 * @param operateType a {@link java.lang.String} object.
+	 */
 	public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.lottery.present.send response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 14:37:10
+ * @version $Id: $Id
  */
 public class AlipayCommerceLotteryPresentSendResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayCommerceLotteryPresentSendResponse extends AlipayResponse {
 	@ApiField("send_result")
 	private Boolean sendResult;
 
+	/**
+	 * <p>Setter for the field <code>sendResult</code>.</p>
+	 *
+	 * @param sendResult a {@link java.lang.Boolean} object.
+	 */
 	public void setSendResult(Boolean sendResult) {
 		this.sendResult = sendResult;
 	}
+	/**
+	 * <p>Getter for the field <code>sendResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSendResult( ) {
 		return this.sendResult;
 	}

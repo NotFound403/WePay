@@ -7,8 +7,6 @@ package cn.felord.wepay.common.pay;
  * @version v1.0.0
  * @since 2017 /7/19  14:10
  */
-
-
 public interface PayConfig {
     /**
      * Gets appid.

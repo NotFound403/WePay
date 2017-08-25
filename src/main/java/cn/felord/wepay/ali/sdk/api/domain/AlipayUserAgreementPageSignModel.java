@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝个人协议页面签约接口
  *
  * @author auto create
- * @since 1.0, 2017-07-12 15:43:21
+ * @version $Id: $Id
  */
 public class AlipayUserAgreementPageSignModel extends AlipayObject {
 
@@ -98,86 +98,206 @@ public class AlipayUserAgreementPageSignModel extends AlipayObject {
 	@ApiField("zm_auth_params")
 	private ZmAuthParams zmAuthParams;
 
+	/**
+	 * <p>Getter for the field <code>accessParams</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AccessParams} object.
+	 */
 	public AccessParams getAccessParams() {
 		return this.accessParams;
 	}
+	/**
+	 * <p>Setter for the field <code>accessParams</code>.</p>
+	 *
+	 * @param accessParams a {@link cn.felord.wepay.ali.sdk.api.domain.AccessParams} object.
+	 */
 	public void setAccessParams(AccessParams accessParams) {
 		this.accessParams = accessParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalAgreementNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalAgreementNo() {
 		return this.externalAgreementNo;
 	}
+	/**
+	 * <p>Setter for the field <code>externalAgreementNo</code>.</p>
+	 *
+	 * @param externalAgreementNo a {@link java.lang.String} object.
+	 */
 	public void setExternalAgreementNo(String externalAgreementNo) {
 		this.externalAgreementNo = externalAgreementNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalLogonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalLogonId() {
 		return this.externalLogonId;
 	}
+	/**
+	 * <p>Setter for the field <code>externalLogonId</code>.</p>
+	 *
+	 * @param externalLogonId a {@link java.lang.String} object.
+	 */
 	public void setExternalLogonId(String externalLogonId) {
 		this.externalLogonId = externalLogonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identityParams</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.IdentityParams} object.
+	 */
 	public IdentityParams getIdentityParams() {
 		return this.identityParams;
 	}
+	/**
+	 * <p>Setter for the field <code>identityParams</code>.</p>
+	 *
+	 * @param identityParams a {@link cn.felord.wepay.ali.sdk.api.domain.IdentityParams} object.
+	 */
 	public void setIdentityParams(IdentityParams identityParams) {
 		this.identityParams = identityParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>personalProductCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPersonalProductCode() {
 		return this.personalProductCode;
 	}
+	/**
+	 * <p>Setter for the field <code>personalProductCode</code>.</p>
+	 *
+	 * @param personalProductCode a {@link java.lang.String} object.
+	 */
 	public void setPersonalProductCode(String personalProductCode) {
 		this.personalProductCode = personalProductCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodParams</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ProdParams} object.
+	 */
 	public ProdParams getProdParams() {
 		return this.prodParams;
 	}
+	/**
+	 * <p>Setter for the field <code>prodParams</code>.</p>
+	 *
+	 * @param prodParams a {@link cn.felord.wepay.ali.sdk.api.domain.ProdParams} object.
+	 */
 	public void setProdParams(ProdParams prodParams) {
 		this.prodParams = prodParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>promoParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPromoParams() {
 		return this.promoParams;
 	}
+	/**
+	 * <p>Setter for the field <code>promoParams</code>.</p>
+	 *
+	 * @param promoParams a {@link java.lang.String} object.
+	 */
 	public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>signScene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSignScene() {
 		return this.signScene;
 	}
+	/**
+	 * <p>Setter for the field <code>signScene</code>.</p>
+	 *
+	 * @param signScene a {@link java.lang.String} object.
+	 */
 	public void setSignScene(String signScene) {
 		this.signScene = signScene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>signValidityPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSignValidityPeriod() {
 		return this.signValidityPeriod;
 	}
+	/**
+	 * <p>Setter for the field <code>signValidityPeriod</code>.</p>
+	 *
+	 * @param signValidityPeriod a {@link java.lang.String} object.
+	 */
 	public void setSignValidityPeriod(String signValidityPeriod) {
 		this.signValidityPeriod = signValidityPeriod;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thirdPartyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThirdPartyType() {
 		return this.thirdPartyType;
 	}
+	/**
+	 * <p>Setter for the field <code>thirdPartyType</code>.</p>
+	 *
+	 * @param thirdPartyType a {@link java.lang.String} object.
+	 */
 	public void setThirdPartyType(String thirdPartyType) {
 		this.thirdPartyType = thirdPartyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>zmAuthParams</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ZmAuthParams} object.
+	 */
 	public ZmAuthParams getZmAuthParams() {
 		return this.zmAuthParams;
 	}
+	/**
+	 * <p>Setter for the field <code>zmAuthParams</code>.</p>
+	 *
+	 * @param zmAuthParams a {@link cn.felord.wepay.ali.sdk.api.domain.ZmAuthParams} object.
+	 */
 	public void setZmAuthParams(ZmAuthParams zmAuthParams) {
 		this.zmAuthParams = zmAuthParams;
 	}

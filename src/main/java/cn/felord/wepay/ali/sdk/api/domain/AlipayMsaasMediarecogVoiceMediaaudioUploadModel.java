@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 媒体实时上传音频流接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:17
+ * @version $Id: $Id
  */
 public class AlipayMsaasMediarecogVoiceMediaaudioUploadModel extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class AlipayMsaasMediarecogVoiceMediaaudioUploadModel extends AlipayObjec
 	@ApiField("vtype")
 	private String vtype;
 
+	/**
+	 * <p>Getter for the field <code>data</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getData() {
 		return this.data;
 	}
+	/**
+	 * <p>Setter for the field <code>data</code>.</p>
+	 *
+	 * @param data a {@link java.lang.String} object.
+	 */
 	public void setData(String data) {
 		this.data = data;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extinfoA</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtinfoA() {
 		return this.extinfoA;
 	}
+	/**
+	 * <p>Setter for the field <code>extinfoA</code>.</p>
+	 *
+	 * @param extinfoA a {@link java.lang.String} object.
+	 */
 	public void setExtinfoA(String extinfoA) {
 		this.extinfoA = extinfoA;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extinfoB</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtinfoB() {
 		return this.extinfoB;
 	}
+	/**
+	 * <p>Setter for the field <code>extinfoB</code>.</p>
+	 *
+	 * @param extinfoB a {@link java.lang.String} object.
+	 */
 	public void setExtinfoB(String extinfoB) {
 		this.extinfoB = extinfoB;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extinfoC</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtinfoC() {
 		return this.extinfoC;
 	}
+	/**
+	 * <p>Setter for the field <code>extinfoC</code>.</p>
+	 *
+	 * @param extinfoC a {@link java.lang.String} object.
+	 */
 	public void setExtinfoC(String extinfoC) {
 		this.extinfoC = extinfoC;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extinfoD</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtinfoD() {
 		return this.extinfoD;
 	}
+	/**
+	 * <p>Setter for the field <code>extinfoD</code>.</p>
+	 *
+	 * @param extinfoD a {@link java.lang.String} object.
+	 */
 	public void setExtinfoD(String extinfoD) {
 		this.extinfoD = extinfoD;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labeltime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabeltime() {
 		return this.labeltime;
 	}
+	/**
+	 * <p>Setter for the field <code>labeltime</code>.</p>
+	 *
+	 * @param labeltime a {@link java.lang.String} object.
+	 */
 	public void setLabeltime(String labeltime) {
 		this.labeltime = labeltime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>vname</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVname() {
 		return this.vname;
 	}
+	/**
+	 * <p>Setter for the field <code>vname</code>.</p>
+	 *
+	 * @param vname a {@link java.lang.String} object.
+	 */
 	public void setVname(String vname) {
 		this.vname = vname;
 	}
 
+	/**
+	 * <p>Getter for the field <code>vtype</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVtype() {
 		return this.vtype;
 	}
+	/**
+	 * <p>Setter for the field <code>vtype</code>.</p>
+	 *
+	 * @param vtype a {@link java.lang.String} object.
+	 */
 	public void setVtype(String vtype) {
 		this.vtype = vtype;
 	}

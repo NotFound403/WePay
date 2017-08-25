@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 品类信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class ExtCategory extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class ExtCategory extends AlipayObject {
 	@ApiField("parent_id")
 	private String parentId;
 
+	/**
+	 * <p>Getter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryCode() {
 		return this.categoryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @param categoryCode a {@link java.lang.String} object.
+	 */
 	public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParentId() {
 		return this.parentId;
 	}
+	/**
+	 * <p>Setter for the field <code>parentId</code>.</p>
+	 *
+	 * @param parentId a {@link java.lang.String} object.
+	 */
 	public void setParentId(String parentId) {
 		this.parentId = parentId;
 	}

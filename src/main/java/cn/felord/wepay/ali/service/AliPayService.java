@@ -27,22 +27,23 @@ import java.util.Map;
  * @version v1.0.0
  * @since 2017/8/16  16:10
  */
-
-
 public class AliPayService implements Payable {
 
     private AliPayConfig aliPayConfig;
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByMicro(Params payRequestParams) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByJsApi(Params payRequestParams) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByApp(Params payRequestParams) throws PayException {
         AlipayClient alipayClient = alipayClientBuilder();
@@ -64,41 +65,49 @@ public class AliPayService implements Payable {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> nativeModeOneCallback(HttpServletRequest request, HttpServletResponse response, NativeBusiness nativeBusinessWrapper) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> nativeModeTwo(Params payRequestParams, HttpServletResponse response) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> payByH5(Params payRequestParams) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> orderQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> closeOrder(String outTradeNo) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> refundQuery(String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> refund(RefundRequestParams refundRequestParams) throws PayException {
         return null;
     }
 
+    /** {@inheritDoc} */
     @Override
     public Map<String, Object> billDownload(String billDate) throws PayException {
         return null;

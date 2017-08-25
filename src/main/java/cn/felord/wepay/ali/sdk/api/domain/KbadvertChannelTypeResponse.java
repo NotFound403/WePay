@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 渠道类型配置
  *
  * @author auto create
- * @since 1.0, 2017-03-03 10:41:20
+ * @version $Id: $Id
  */
 public class KbadvertChannelTypeResponse extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KbadvertChannelTypeResponse extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>order</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrder() {
 		return this.order;
 	}
+	/**
+	 * <p>Setter for the field <code>order</code>.</p>
+	 *
+	 * @param order a {@link java.lang.String} object.
+	 */
 	public void setOrder(String order) {
 		this.order = order;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

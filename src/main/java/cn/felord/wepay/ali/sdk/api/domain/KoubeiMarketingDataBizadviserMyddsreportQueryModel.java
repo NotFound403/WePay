@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * mydds 数据服务处理器
  *
  * @author auto create
- * @since 1.0, 2017-07-21 10:27:25
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataBizadviserMyddsreportQueryModel extends AlipayObject {
 
@@ -34,16 +34,36 @@ memberType会员类型，1:会员、2:潜客。
 	@ApiField("uniq_key")
 	private String uniqKey;
 
+	/**
+	 * <p>Getter for the field <code>reqParameters</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReqParameters() {
 		return this.reqParameters;
 	}
+	/**
+	 * <p>Setter for the field <code>reqParameters</code>.</p>
+	 *
+	 * @param reqParameters a {@link java.lang.String} object.
+	 */
 	public void setReqParameters(String reqParameters) {
 		this.reqParameters = reqParameters;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uniqKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUniqKey() {
 		return this.uniqKey;
 	}
+	/**
+	 * <p>Setter for the field <code>uniqKey</code>.</p>
+	 *
+	 * @param uniqKey a {@link java.lang.String} object.
+	 */
 	public void setUniqKey(String uniqKey) {
 		this.uniqKey = uniqKey;
 	}

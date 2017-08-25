@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝风控数据查询接口
  *
  * @author auto create
- * @since 1.0, 2017-04-10 11:36:36
+ * @version $Id: $Id
  */
 public class AlipaySecurityDataInfoSecuritydataQueryModel extends AlipayObject {
 
@@ -54,37 +54,87 @@ phone,预留手机号
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>bizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizId() {
 		return this.bizId;
 	}
+	/**
+	 * <p>Setter for the field <code>bizId</code>.</p>
+	 *
+	 * @param bizId a {@link java.lang.String} object.
+	 */
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ext</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExt() {
 		return this.ext;
 	}
+	/**
+	 * <p>Setter for the field <code>ext</code>.</p>
+	 *
+	 * @param ext a {@link java.lang.String} object.
+	 */
 	public void setExt(String ext) {
 		this.ext = ext;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
+	/**
+	 * <p>Getter for the field <code>systemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSystemName() {
 		return this.systemName;
 	}
+	/**
+	 * <p>Setter for the field <code>systemName</code>.</p>
+	 *
+	 * @param systemName a {@link java.lang.String} object.
+	 */
 	public void setSystemName(String systemName) {
 		this.systemName = systemName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

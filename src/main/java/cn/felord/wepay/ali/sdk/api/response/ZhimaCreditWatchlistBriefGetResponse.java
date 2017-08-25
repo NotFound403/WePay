@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.watchlist.brief.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-06 14:40:56
+ * @version $Id: $Id
  */
 public class ZhimaCreditWatchlistBriefGetResponse extends AlipayResponse {
 
@@ -31,16 +31,36 @@ N/A 无法评估该用户逾期状况，例如未获得用户授权。
 	@ApiField("level")
 	private String level;
 
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo( ) {
 		return this.bizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>level</code>.</p>
+	 *
+	 * @param level a {@link java.lang.String} object.
+	 */
 	public void setLevel(String level) {
 		this.level = level;
 	}
+	/**
+	 * <p>Getter for the field <code>level</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLevel( ) {
 		return this.level;
 	}

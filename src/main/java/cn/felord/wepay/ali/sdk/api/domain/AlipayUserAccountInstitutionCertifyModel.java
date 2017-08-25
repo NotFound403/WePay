@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户检测(机构名 + 支付宝外标）是否存在，如果存在返回对应的uid
  *
  * @author auto create
- * @since 1.0, 2017-02-10 10:27:11
+ * @version $Id: $Id
  */
 public class AlipayUserAccountInstitutionCertifyModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayUserAccountInstitutionCertifyModel extends AlipayObject {
 	@ApiField("logon_id")
 	private String logonId;
 
+	/**
+	 * <p>Getter for the field <code>institutionName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInstitutionName() {
 		return this.institutionName;
 	}
+	/**
+	 * <p>Setter for the field <code>institutionName</code>.</p>
+	 *
+	 * @param institutionName a {@link java.lang.String} object.
+	 */
 	public void setInstitutionName(String institutionName) {
 		this.institutionName = institutionName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑业务授权令牌查询
  *
  * @author auto create
- * @since 1.0, 2017-05-10 16:11:45
+ * @version $Id: $Id
  */
 public class KoubeiMemberDataOauthQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KoubeiMemberDataOauthQueryModel extends AlipayObject {
 	@ApiField("ext_info")
 	private String extInfo;
 
+	/**
+	 * <p>Getter for the field <code>authType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthType() {
 		return this.authType;
 	}
+	/**
+	 * <p>Setter for the field <code>authType</code>.</p>
+	 *
+	 * @param authType a {@link java.lang.String} object.
+	 */
 	public void setAuthType(String authType) {
 		this.authType = authType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}

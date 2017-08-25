@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询余利宝行情信息（七日年化收益率、万份收益金额）
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:17
+ * @version $Id: $Id
  */
 public class MybankFinanceYulibaoPriceQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class MybankFinanceYulibaoPriceQueryModel extends AlipayObject {
 	@ApiField("start_date")
 	private String startDate;
 
+	/**
+	 * <p>Getter for the field <code>endDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEndDate() {
 		return this.endDate;
 	}
+	/**
+	 * <p>Setter for the field <code>endDate</code>.</p>
+	 *
+	 * @param endDate a {@link java.lang.String} object.
+	 */
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fundCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundCode() {
 		return this.fundCode;
 	}
+	/**
+	 * <p>Setter for the field <code>fundCode</code>.</p>
+	 *
+	 * @param fundCode a {@link java.lang.String} object.
+	 */
 	public void setFundCode(String fundCode) {
 		this.fundCode = fundCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStartDate() {
 		return this.startDate;
 	}
+	/**
+	 * <p>Setter for the field <code>startDate</code>.</p>
+	 *
+	 * @param startDate a {@link java.lang.String} object.
+	 */
 	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}

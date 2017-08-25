@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-21 14:30:36
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardUpdateResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayMarketingCardUpdateResponse extends AlipayResponse {
 	@ApiField("result_code")
 	private String resultCode;
 
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode( ) {
 		return this.resultCode;
 	}

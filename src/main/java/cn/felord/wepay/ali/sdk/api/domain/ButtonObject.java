@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 菜单对象模型
  *
  * @author auto create
- * @since 1.0, 2017-07-04 11:09:00
+ * @version $Id: $Id
  */
 public class ButtonObject extends AlipayObject {
 
@@ -57,37 +57,87 @@ consumption——点击查看用户与生活号管理员账号之间的消费记
 	@ApiField("sub_button")
 	private List<SubButton> subButton;
 
+	/**
+	 * <p>Getter for the field <code>actionParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionParam() {
 		return this.actionParam;
 	}
+	/**
+	 * <p>Setter for the field <code>actionParam</code>.</p>
+	 *
+	 * @param actionParam a {@link java.lang.String} object.
+	 */
 	public void setActionParam(String actionParam) {
 		this.actionParam = actionParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionType() {
 		return this.actionType;
 	}
+	/**
+	 * <p>Setter for the field <code>actionType</code>.</p>
+	 *
+	 * @param actionType a {@link java.lang.String} object.
+	 */
 	public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>icon</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIcon() {
 		return this.icon;
 	}
+	/**
+	 * <p>Setter for the field <code>icon</code>.</p>
+	 *
+	 * @param icon a {@link java.lang.String} object.
+	 */
 	public void setIcon(String icon) {
 		this.icon = icon;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subButton</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<SubButton> getSubButton() {
 		return this.subButton;
 	}
+	/**
+	 * <p>Setter for the field <code>subButton</code>.</p>
+	 *
+	 * @param subButton a {@link java.util.List} object.
+	 */
 	public void setSubButton(List<SubButton> subButton) {
 		this.subButton = subButton;
 	}

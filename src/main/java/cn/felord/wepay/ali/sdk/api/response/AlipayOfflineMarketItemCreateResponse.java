@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.item.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:55
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketItemCreateResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayOfflineMarketItemCreateResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId( ) {
 		return this.itemId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId( ) {
 		return this.requestId;
 	}

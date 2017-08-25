@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.marketing.voucher.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:07
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketingVoucherCreateResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayOfflineMarketingVoucherCreateResponse extends AlipayResponse 
 	@ApiField("voucher_id")
 	private String voucherId;
 
+	/**
+	 * <p>Setter for the field <code>activityId</code>.</p>
+	 *
+	 * @param activityId a {@link java.lang.String} object.
+	 */
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
+	/**
+	 * <p>Getter for the field <code>activityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActivityId( ) {
 		return this.activityId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherId</code>.</p>
+	 *
+	 * @param voucherId a {@link java.lang.String} object.
+	 */
 	public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherId( ) {
 		return this.voucherId;
 	}

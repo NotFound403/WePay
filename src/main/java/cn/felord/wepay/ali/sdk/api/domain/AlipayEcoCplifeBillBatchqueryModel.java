@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 物业费账单数据批量查询
  *
  * @author auto create
- * @since 1.0, 2017-01-18 16:46:05
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillBatchqueryModel extends AlipayObject {
 
@@ -80,65 +80,155 @@ OUT_OF_DATE - 未支付且已过缴费截止日期
 	@ApiField("release_day")
 	private String releaseDay;
 
+	/**
+	 * <p>Getter for the field <code>acctPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAcctPeriod() {
 		return this.acctPeriod;
 	}
+	/**
+	 * <p>Setter for the field <code>acctPeriod</code>.</p>
+	 *
+	 * @param acctPeriod a {@link java.lang.String} object.
+	 */
 	public void setAcctPeriod(String acctPeriod) {
 		this.acctPeriod = acctPeriod;
 	}
 
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId() {
 		return this.batchId;
 	}
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillStatus() {
 		return this.billStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>billStatus</code>.</p>
+	 *
+	 * @param billStatus a {@link java.lang.String} object.
+	 */
 	public void setBillStatus(String billStatus) {
 		this.billStatus = billStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>costType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCostType() {
 		return this.costType;
 	}
+	/**
+	 * <p>Setter for the field <code>costType</code>.</p>
+	 *
+	 * @param costType a {@link java.lang.String} object.
+	 */
 	public void setCostType(String costType) {
 		this.costType = costType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRoomId() {
 		return this.outRoomId;
 	}
+	/**
+	 * <p>Setter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @param outRoomId a {@link java.lang.String} object.
+	 */
 	public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNum() {
 		return this.pageNum;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNum</code>.</p>
+	 *
+	 * @param pageNum a {@link java.lang.Long} object.
+	 */
 	public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>releaseDay</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReleaseDay() {
 		return this.releaseDay;
 	}
+	/**
+	 * <p>Setter for the field <code>releaseDay</code>.</p>
+	 *
+	 * @param releaseDay a {@link java.lang.String} object.
+	 */
 	public void setReleaseDay(String releaseDay) {
 		this.releaseDay = releaseDay;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.platform.openid.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-06 17:38:21
+ * @version $Id: $Id
  */
 public class AlipayPlatformOpenidGetResponse extends AlipayResponse {
 
@@ -32,23 +32,45 @@ public class AlipayPlatformOpenidGetResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/**
+	 * <p>Setter for the field <code>dict</code>.</p>
+	 *
+	 * @param dict a {@link java.lang.String} object.
+	 */
 	public void setDict(String dict) {
 		this.dict = dict;
 	}
+	/**
+	 * <p>Getter for the field <code>dict</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDict( ) {
 		return this.dict;
 	}
 
+	/** {@inheritDoc} */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg( ) {
 		return this.msg;
 	}

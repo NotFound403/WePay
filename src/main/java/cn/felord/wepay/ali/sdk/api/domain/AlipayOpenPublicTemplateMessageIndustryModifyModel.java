@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 模板消息行业设置修改接口
  *
  * @author auto create
- * @since 1.0, 2016-01-12 18:12:52
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicTemplateMessageIndustryModifyModel extends AlipayObject {
 
@@ -79,30 +79,70 @@ IT科技/网络游戏	10001/20106
 	@ApiField("secondary_industry_name")
 	private String secondaryIndustryName;
 
+	/**
+	 * <p>Getter for the field <code>primaryIndustryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrimaryIndustryCode() {
 		return this.primaryIndustryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>primaryIndustryCode</code>.</p>
+	 *
+	 * @param primaryIndustryCode a {@link java.lang.String} object.
+	 */
 	public void setPrimaryIndustryCode(String primaryIndustryCode) {
 		this.primaryIndustryCode = primaryIndustryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>primaryIndustryName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrimaryIndustryName() {
 		return this.primaryIndustryName;
 	}
+	/**
+	 * <p>Setter for the field <code>primaryIndustryName</code>.</p>
+	 *
+	 * @param primaryIndustryName a {@link java.lang.String} object.
+	 */
 	public void setPrimaryIndustryName(String primaryIndustryName) {
 		this.primaryIndustryName = primaryIndustryName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>secondaryIndustryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSecondaryIndustryCode() {
 		return this.secondaryIndustryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>secondaryIndustryCode</code>.</p>
+	 *
+	 * @param secondaryIndustryCode a {@link java.lang.String} object.
+	 */
 	public void setSecondaryIndustryCode(String secondaryIndustryCode) {
 		this.secondaryIndustryCode = secondaryIndustryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>secondaryIndustryName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSecondaryIndustryName() {
 		return this.secondaryIndustryName;
 	}
+	/**
+	 * <p>Setter for the field <code>secondaryIndustryName</code>.</p>
+	 *
+	 * @param secondaryIndustryName a {@link java.lang.String} object.
+	 */
 	public void setSecondaryIndustryName(String secondaryIndustryName) {
 		this.secondaryIndustryName = secondaryIndustryName;
 	}

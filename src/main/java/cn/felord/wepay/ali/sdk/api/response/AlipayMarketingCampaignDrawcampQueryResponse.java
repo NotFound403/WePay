@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.drawcamp.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-23 14:22:15
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDrawcampQueryResponse extends AlipayResponse {
 
@@ -140,142 +140,342 @@ CAMP_SYS_TRIGGER：系统触发，必须配置实时人群验证规则（如：�
 	@ApiField("user_rule_id")
 	private String userRuleId;
 
+	/**
+	 * <p>Setter for the field <code>accountCount</code>.</p>
+	 *
+	 * @param accountCount a {@link java.lang.String} object.
+	 */
 	public void setAccountCount(String accountCount) {
 		this.accountCount = accountCount;
 	}
+	/**
+	 * <p>Getter for the field <code>accountCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountCount( ) {
 		return this.accountCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>appidCount</code>.</p>
+	 *
+	 * @param appidCount a {@link java.lang.String} object.
+	 */
 	public void setAppidCount(String appidCount) {
 		this.appidCount = appidCount;
 	}
+	/**
+	 * <p>Getter for the field <code>appidCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppidCount( ) {
 		return this.appidCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>awardCount</code>.</p>
+	 *
+	 * @param awardCount a {@link java.lang.String} object.
+	 */
 	public void setAwardCount(String awardCount) {
 		this.awardCount = awardCount;
 	}
+	/**
+	 * <p>Getter for the field <code>awardCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAwardCount( ) {
 		return this.awardCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>awardRate</code>.</p>
+	 *
+	 * @param awardRate a {@link java.lang.String} object.
+	 */
 	public void setAwardRate(String awardRate) {
 		this.awardRate = awardRate;
 	}
+	/**
+	 * <p>Getter for the field <code>awardRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAwardRate( ) {
 		return this.awardRate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campCode</code>.</p>
+	 *
+	 * @param campCode a {@link java.lang.String} object.
+	 */
 	public void setCampCode(String campCode) {
 		this.campCode = campCode;
 	}
+	/**
+	 * <p>Getter for the field <code>campCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampCode( ) {
 		return this.campCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campEndTime</code>.</p>
+	 *
+	 * @param campEndTime a {@link java.lang.String} object.
+	 */
 	public void setCampEndTime(String campEndTime) {
 		this.campEndTime = campEndTime;
 	}
+	/**
+	 * <p>Getter for the field <code>campEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampEndTime( ) {
 		return this.campEndTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId( ) {
 		return this.campId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campName</code>.</p>
+	 *
+	 * @param campName a {@link java.lang.String} object.
+	 */
 	public void setCampName(String campName) {
 		this.campName = campName;
 	}
+	/**
+	 * <p>Getter for the field <code>campName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampName( ) {
 		return this.campName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campStartTime</code>.</p>
+	 *
+	 * @param campStartTime a {@link java.lang.String} object.
+	 */
 	public void setCampStartTime(String campStartTime) {
 		this.campStartTime = campStartTime;
 	}
+	/**
+	 * <p>Getter for the field <code>campStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampStartTime( ) {
 		return this.campStartTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>campStatus</code>.</p>
+	 *
+	 * @param campStatus a {@link java.lang.String} object.
+	 */
 	public void setCampStatus(String campStatus) {
 		this.campStatus = campStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>campStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampStatus( ) {
 		return this.campStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>certRuleId</code>.</p>
+	 *
+	 * @param certRuleId a {@link java.lang.String} object.
+	 */
 	public void setCertRuleId(String certRuleId) {
 		this.certRuleId = certRuleId;
 	}
+	/**
+	 * <p>Getter for the field <code>certRuleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertRuleId( ) {
 		return this.certRuleId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>certificationCount</code>.</p>
+	 *
+	 * @param certificationCount a {@link java.lang.String} object.
+	 */
 	public void setCertificationCount(String certificationCount) {
 		this.certificationCount = certificationCount;
 	}
+	/**
+	 * <p>Getter for the field <code>certificationCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertificationCount( ) {
 		return this.certificationCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>creator</code>.</p>
+	 *
+	 * @param creator a {@link java.lang.String} object.
+	 */
 	public void setCreator(String creator) {
 		this.creator = creator;
 	}
+	/**
+	 * <p>Getter for the field <code>creator</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreator( ) {
 		return this.creator;
 	}
 
+	/**
+	 * <p>Setter for the field <code>crowdRuleId</code>.</p>
+	 *
+	 * @param crowdRuleId a {@link java.lang.String} object.
+	 */
 	public void setCrowdRuleId(String crowdRuleId) {
 		this.crowdRuleId = crowdRuleId;
 	}
+	/**
+	 * <p>Getter for the field <code>crowdRuleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdRuleId( ) {
 		return this.crowdRuleId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>mobileCount</code>.</p>
+	 *
+	 * @param mobileCount a {@link java.lang.String} object.
+	 */
 	public void setMobileCount(String mobileCount) {
 		this.mobileCount = mobileCount;
 	}
+	/**
+	 * <p>Getter for the field <code>mobileCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobileCount( ) {
 		return this.mobileCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>prizeList</code>.</p>
+	 *
+	 * @param prizeList a {@link java.util.List} object.
+	 */
 	public void setPrizeList(List<MpPrizeInfoModel> prizeList) {
 		this.prizeList = prizeList;
 	}
+	/**
+	 * <p>Getter for the field <code>prizeList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<MpPrizeInfoModel> getPrizeList( ) {
 		return this.prizeList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>promoRuleId</code>.</p>
+	 *
+	 * @param promoRuleId a {@link java.lang.String} object.
+	 */
 	public void setPromoRuleId(String promoRuleId) {
 		this.promoRuleId = promoRuleId;
 	}
+	/**
+	 * <p>Getter for the field <code>promoRuleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPromoRuleId( ) {
 		return this.promoRuleId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>triggerType</code>.</p>
+	 *
+	 * @param triggerType a {@link java.lang.String} object.
+	 */
 	public void setTriggerType(String triggerType) {
 		this.triggerType = triggerType;
 	}
+	/**
+	 * <p>Getter for the field <code>triggerType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTriggerType( ) {
 		return this.triggerType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>triggerUserRuleId</code>.</p>
+	 *
+	 * @param triggerUserRuleId a {@link java.lang.String} object.
+	 */
 	public void setTriggerUserRuleId(String triggerUserRuleId) {
 		this.triggerUserRuleId = triggerUserRuleId;
 	}
+	/**
+	 * <p>Getter for the field <code>triggerUserRuleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTriggerUserRuleId( ) {
 		return this.triggerUserRuleId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userRuleId</code>.</p>
+	 *
+	 * @param userRuleId a {@link java.lang.String} object.
+	 */
 	public void setUserRuleId(String userRuleId) {
 		this.userRuleId = userRuleId;
 	}
+	/**
+	 * <p>Getter for the field <code>userRuleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserRuleId( ) {
 		return this.userRuleId;
 	}

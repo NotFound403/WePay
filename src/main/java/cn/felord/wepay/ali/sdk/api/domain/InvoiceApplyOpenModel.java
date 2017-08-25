@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 发票申请模型
  *
  * @author auto create
- * @since 1.0, 2017-05-09 14:11:07
+ * @version $Id: $Id
  */
 public class InvoiceApplyOpenModel extends AlipayObject {
 
@@ -162,170 +162,410 @@ public class InvoiceApplyOpenModel extends AlipayObject {
 	@ApiField("trade_date")
 	private String tradeDate;
 
+	/**
+	 * <p>Getter for the field <code>checker</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChecker() {
 		return this.checker;
 	}
+	/**
+	 * <p>Setter for the field <code>checker</code>.</p>
+	 *
+	 * @param checker a {@link java.lang.String} object.
+	 */
 	public void setChecker(String checker) {
 		this.checker = checker;
 	}
 
+	/**
+	 * <p>Getter for the field <code>clerk</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClerk() {
 		return this.clerk;
 	}
+	/**
+	 * <p>Setter for the field <code>clerk</code>.</p>
+	 *
+	 * @param clerk a {@link java.lang.String} object.
+	 */
 	public void setClerk(String clerk) {
 		this.clerk = clerk;
 	}
 
+	/**
+	 * <p>Getter for the field <code>exTaxAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExTaxAmount() {
 		return this.exTaxAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>exTaxAmount</code>.</p>
+	 *
+	 * @param exTaxAmount a {@link java.lang.String} object.
+	 */
 	public void setExTaxAmount(String exTaxAmount) {
 		this.exTaxAmount = exTaxAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInvoiceAmount() {
 		return this.invoiceAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceAmount</code>.</p>
+	 *
+	 * @param invoiceAmount a {@link java.lang.String} object.
+	 */
 	public void setInvoiceAmount(String invoiceAmount) {
 		this.invoiceAmount = invoiceAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceContent</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InvoiceItemApplyOpenModel> getInvoiceContent() {
 		return this.invoiceContent;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceContent</code>.</p>
+	 *
+	 * @param invoiceContent a {@link java.util.List} object.
+	 */
 	public void setInvoiceContent(List<InvoiceItemApplyOpenModel> invoiceContent) {
 		this.invoiceContent = invoiceContent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceKind</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInvoiceKind() {
 		return this.invoiceKind;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceKind</code>.</p>
+	 *
+	 * @param invoiceKind a {@link java.lang.String} object.
+	 */
 	public void setInvoiceKind(String invoiceKind) {
 		this.invoiceKind = invoiceKind;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInvoiceMemo() {
 		return this.invoiceMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceMemo</code>.</p>
+	 *
+	 * @param invoiceMemo a {@link java.lang.String} object.
+	 */
 	public void setInvoiceMemo(String invoiceMemo) {
 		this.invoiceMemo = invoiceMemo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceTitle</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InvoiceTitleApplyOpenModel} object.
+	 */
 	public InvoiceTitleApplyOpenModel getInvoiceTitle() {
 		return this.invoiceTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceTitle</code>.</p>
+	 *
+	 * @param invoiceTitle a {@link cn.felord.wepay.ali.sdk.api.domain.InvoiceTitleApplyOpenModel} object.
+	 */
 	public void setInvoiceTitle(InvoiceTitleApplyOpenModel invoiceTitle) {
 		this.invoiceTitle = invoiceTitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>oriBlueInvCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriBlueInvCode() {
 		return this.oriBlueInvCode;
 	}
+	/**
+	 * <p>Setter for the field <code>oriBlueInvCode</code>.</p>
+	 *
+	 * @param oriBlueInvCode a {@link java.lang.String} object.
+	 */
 	public void setOriBlueInvCode(String oriBlueInvCode) {
 		this.oriBlueInvCode = oriBlueInvCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>oriBlueInvNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriBlueInvNo() {
 		return this.oriBlueInvNo;
 	}
+	/**
+	 * <p>Setter for the field <code>oriBlueInvNo</code>.</p>
+	 *
+	 * @param oriBlueInvNo a {@link java.lang.String} object.
+	 */
 	public void setOriBlueInvNo(String oriBlueInvNo) {
 		this.oriBlueInvNo = oriBlueInvNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outApplyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutApplyId() {
 		return this.outApplyId;
 	}
+	/**
+	 * <p>Setter for the field <code>outApplyId</code>.</p>
+	 *
+	 * @param outApplyId a {@link java.lang.String} object.
+	 */
 	public void setOutApplyId(String outApplyId) {
 		this.outApplyId = outApplyId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payee</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayee() {
 		return this.payee;
 	}
+	/**
+	 * <p>Setter for the field <code>payee</code>.</p>
+	 *
+	 * @param payee a {@link java.lang.String} object.
+	 */
 	public void setPayee(String payee) {
 		this.payee = payee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeAddress() {
 		return this.payeeAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeAddress</code>.</p>
+	 *
+	 * @param payeeAddress a {@link java.lang.String} object.
+	 */
 	public void setPayeeAddress(String payeeAddress) {
 		this.payeeAddress = payeeAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeBankAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeBankAccount() {
 		return this.payeeBankAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeBankAccount</code>.</p>
+	 *
+	 * @param payeeBankAccount a {@link java.lang.String} object.
+	 */
 	public void setPayeeBankAccount(String payeeBankAccount) {
 		this.payeeBankAccount = payeeBankAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeBankName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeBankName() {
 		return this.payeeBankName;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeBankName</code>.</p>
+	 *
+	 * @param payeeBankName a {@link java.lang.String} object.
+	 */
 	public void setPayeeBankName(String payeeBankName) {
 		this.payeeBankName = payeeBankName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeRegisterName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeRegisterName() {
 		return this.payeeRegisterName;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeRegisterName</code>.</p>
+	 *
+	 * @param payeeRegisterName a {@link java.lang.String} object.
+	 */
 	public void setPayeeRegisterName(String payeeRegisterName) {
 		this.payeeRegisterName = payeeRegisterName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeRegisterNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeRegisterNo() {
 		return this.payeeRegisterNo;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeRegisterNo</code>.</p>
+	 *
+	 * @param payeeRegisterNo a {@link java.lang.String} object.
+	 */
 	public void setPayeeRegisterNo(String payeeRegisterNo) {
 		this.payeeRegisterNo = payeeRegisterNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeTel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeTel() {
 		return this.payeeTel;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeTel</code>.</p>
+	 *
+	 * @param payeeTel a {@link java.lang.String} object.
+	 */
 	public void setPayeeTel(String payeeTel) {
 		this.payeeTel = payeeTel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerContactEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerContactEmail() {
 		return this.payerContactEmail;
 	}
+	/**
+	 * <p>Setter for the field <code>payerContactEmail</code>.</p>
+	 *
+	 * @param payerContactEmail a {@link java.lang.String} object.
+	 */
 	public void setPayerContactEmail(String payerContactEmail) {
 		this.payerContactEmail = payerContactEmail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerContactMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerContactMobile() {
 		return this.payerContactMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>payerContactMobile</code>.</p>
+	 *
+	 * @param payerContactMobile a {@link java.lang.String} object.
+	 */
 	public void setPayerContactMobile(String payerContactMobile) {
 		this.payerContactMobile = payerContactMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sumTaxAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSumTaxAmount() {
 		return this.sumTaxAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>sumTaxAmount</code>.</p>
+	 *
+	 * @param sumTaxAmount a {@link java.lang.String} object.
+	 */
 	public void setSumTaxAmount(String sumTaxAmount) {
 		this.sumTaxAmount = sumTaxAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>taxToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTaxToken() {
 		return this.taxToken;
 	}
+	/**
+	 * <p>Setter for the field <code>taxToken</code>.</p>
+	 *
+	 * @param taxToken a {@link java.lang.String} object.
+	 */
 	public void setTaxToken(String taxToken) {
 		this.taxToken = taxToken;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeDate() {
 		return this.tradeDate;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeDate</code>.</p>
+	 *
+	 * @param tradeDate a {@link java.lang.String} object.
+	 */
 	public void setTradeDate(String tradeDate) {
 		this.tradeDate = tradeDate;
 	}

@@ -17,8 +17,6 @@ import java.util.Map;
  * @version v1.0.0
  * @since 2017 /8/7  12:48
  */
-
-
 public class WeChatPayCallback implements Callback {
     private static final Logger log = LoggerFactory.getLogger(WeChatPayCallback.class);
     private HttpServletRequest request;
@@ -35,6 +33,7 @@ public class WeChatPayCallback implements Callback {
         this.response = response;
     }
 
+    /** {@inheritDoc} */
     @Override
     public void payCallback() {
         Map<String, Object> result = HttpKit.resolveRequestData(request);
@@ -48,6 +47,7 @@ public class WeChatPayCallback implements Callback {
         }
     }
 
+    /** {@inheritDoc} */
     @Override
     public HttpServletRequest getRequest() {
         return request;

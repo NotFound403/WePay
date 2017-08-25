@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * xwbtest
  *
  * @author auto create
- * @since 1.0, 2017-07-20 15:51:58
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdXwbtestPurchaseModel extends AlipayObject {
 
@@ -53,44 +53,104 @@ public class AlipaySecurityProdXwbtestPurchaseModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>add</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdd() {
 		return this.add;
 	}
+	/**
+	 * <p>Setter for the field <code>add</code>.</p>
+	 *
+	 * @param add a {@link java.lang.String} object.
+	 */
 	public void setAdd(String add) {
 		this.add = add;
 	}
 
+	/**
+	 * <p>Getter for the field <code>address</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddress() {
 		return this.address;
 	}
+	/**
+	 * <p>Setter for the field <code>address</code>.</p>
+	 *
+	 * @param address a {@link java.lang.String} object.
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
 
+	/**
+	 * <p>Getter for the field <code>idcard</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdcard() {
 		return this.idcard;
 	}
+	/**
+	 * <p>Setter for the field <code>idcard</code>.</p>
+	 *
+	 * @param idcard a {@link java.lang.String} object.
+	 */
 	public void setIdcard(String idcard) {
 		this.idcard = idcard;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sdf</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayKeyanClass} object.
+	 */
 	public AlipayKeyanClass getSdf() {
 		return this.sdf;
 	}
+	/**
+	 * <p>Setter for the field <code>sdf</code>.</p>
+	 *
+	 * @param sdf a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayKeyanClass} object.
+	 */
 	public void setSdf(AlipayKeyanClass sdf) {
 		this.sdf = sdf;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sdfx</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getSdfx() {
 		return this.sdfx;
 	}
+	/**
+	 * <p>Setter for the field <code>sdfx</code>.</p>
+	 *
+	 * @param sdfx a {@link java.util.List} object.
+	 */
 	public void setSdfx(List<String> sdfx) {
 		this.sdfx = sdfx;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

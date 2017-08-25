@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝pass更新卡券实例接口
  *
  * @author auto create
- * @since 1.0, 2017-07-24 12:08:25
+ * @version $Id: $Id
  */
 public class AlipayPassInstanceUpdateModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class AlipayPassInstanceUpdateModel extends AlipayObject {
 	@ApiField("verify_type")
 	private String verifyType;
 
+	/**
+	 * <p>Getter for the field <code>channelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelId() {
 		return this.channelId;
 	}
+	/**
+	 * <p>Setter for the field <code>channelId</code>.</p>
+	 *
+	 * @param channelId a {@link java.lang.String} object.
+	 */
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serialNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSerialNumber() {
 		return this.serialNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>serialNumber</code>.</p>
+	 *
+	 * @param serialNumber a {@link java.lang.String} object.
+	 */
 	public void setSerialNumber(String serialNumber) {
 		this.serialNumber = serialNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tplParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTplParams() {
 		return this.tplParams;
 	}
+	/**
+	 * <p>Setter for the field <code>tplParams</code>.</p>
+	 *
+	 * @param tplParams a {@link java.lang.String} object.
+	 */
 	public void setTplParams(String tplParams) {
 		this.tplParams = tplParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>verifyCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVerifyCode() {
 		return this.verifyCode;
 	}
+	/**
+	 * <p>Setter for the field <code>verifyCode</code>.</p>
+	 *
+	 * @param verifyCode a {@link java.lang.String} object.
+	 */
 	public void setVerifyCode(String verifyCode) {
 		this.verifyCode = verifyCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>verifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVerifyType() {
 		return this.verifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>verifyType</code>.</p>
+	 *
+	 * @param verifyType a {@link java.lang.String} object.
+	 */
 	public void setVerifyType(String verifyType) {
 		this.verifyType = verifyType;
 	}

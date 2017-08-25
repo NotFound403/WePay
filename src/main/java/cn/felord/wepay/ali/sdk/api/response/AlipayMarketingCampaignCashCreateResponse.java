@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:08
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignCashCreateResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayMarketingCampaignCashCreateResponse extends AlipayResponse {
 	@ApiField("pay_url")
 	private String payUrl;
 
+	/**
+	 * <p>Setter for the field <code>crowdNo</code>.</p>
+	 *
+	 * @param crowdNo a {@link java.lang.String} object.
+	 */
 	public void setCrowdNo(String crowdNo) {
 		this.crowdNo = crowdNo;
 	}
+	/**
+	 * <p>Getter for the field <code>crowdNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdNo( ) {
 		return this.crowdNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>originCrowdNo</code>.</p>
+	 *
+	 * @param originCrowdNo a {@link java.lang.String} object.
+	 */
 	public void setOriginCrowdNo(String originCrowdNo) {
 		this.originCrowdNo = originCrowdNo;
 	}
+	/**
+	 * <p>Getter for the field <code>originCrowdNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginCrowdNo( ) {
 		return this.originCrowdNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payUrl</code>.</p>
+	 *
+	 * @param payUrl a {@link java.lang.String} object.
+	 */
 	public void setPayUrl(String payUrl) {
 		this.payUrl = payUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>payUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayUrl( ) {
 		return this.payUrl;
 	}

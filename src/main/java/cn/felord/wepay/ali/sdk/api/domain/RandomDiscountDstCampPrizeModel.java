@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 随机立减奖品模型
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:49
+ * @version $Id: $Id
  */
 public class RandomDiscountDstCampPrizeModel extends AlipayObject {
 
@@ -42,30 +42,70 @@ public class RandomDiscountDstCampPrizeModel extends AlipayObject {
 	@ApiField("max_random_discount_rate")
 	private String maxRandomDiscountRate;
 
+	/**
+	 * <p>Getter for the field <code>budgetId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBudgetId() {
 		return this.budgetId;
 	}
+	/**
+	 * <p>Setter for the field <code>budgetId</code>.</p>
+	 *
+	 * @param budgetId a {@link java.lang.String} object.
+	 */
 	public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>discountRandomModelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DiscountRandomModel> getDiscountRandomModelList() {
 		return this.discountRandomModelList;
 	}
+	/**
+	 * <p>Setter for the field <code>discountRandomModelList</code>.</p>
+	 *
+	 * @param discountRandomModelList a {@link java.util.List} object.
+	 */
 	public void setDiscountRandomModelList(List<DiscountRandomModel> discountRandomModelList) {
 		this.discountRandomModelList = discountRandomModelList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.String} object.
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxRandomDiscountRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxRandomDiscountRate() {
 		return this.maxRandomDiscountRate;
 	}
+	/**
+	 * <p>Setter for the field <code>maxRandomDiscountRate</code>.</p>
+	 *
+	 * @param maxRandomDiscountRate a {@link java.lang.String} object.
+	 */
 	public void setMaxRandomDiscountRate(String maxRandomDiscountRate) {
 		this.maxRandomDiscountRate = maxRandomDiscountRate;
 	}

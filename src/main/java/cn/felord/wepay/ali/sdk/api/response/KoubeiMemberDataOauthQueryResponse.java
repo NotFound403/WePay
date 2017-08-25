@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.member.data.oauth.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-10 16:11:45
+ * @version $Id: $Id
  */
 public class KoubeiMemberDataOauthQueryResponse extends AlipayResponse {
 
@@ -38,30 +38,70 @@ public class KoubeiMemberDataOauthQueryResponse extends AlipayResponse {
 	@ApiField("operator_type")
 	private String operatorType;
 
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operatorId</code>.</p>
+	 *
+	 * @param operatorId a {@link java.lang.String} object.
+	 */
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
+	/**
+	 * <p>Getter for the field <code>operatorId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorId( ) {
 		return this.operatorId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operatorPartnerId</code>.</p>
+	 *
+	 * @param operatorPartnerId a {@link java.lang.String} object.
+	 */
 	public void setOperatorPartnerId(String operatorPartnerId) {
 		this.operatorPartnerId = operatorPartnerId;
 	}
+	/**
+	 * <p>Getter for the field <code>operatorPartnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorPartnerId( ) {
 		return this.operatorPartnerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operatorType</code>.</p>
+	 *
+	 * @param operatorType a {@link java.lang.String} object.
+	 */
 	public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
+	/**
+	 * <p>Getter for the field <code>operatorType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorType( ) {
 		return this.operatorType;
 	}

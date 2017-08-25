@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.template.message.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:44:54
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicTemplateMessageGetResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayOpenPublicTemplateMessageGetResponse extends AlipayResponse {
 	@ApiField("template")
 	private String template;
 
+	/**
+	 * <p>Setter for the field <code>msgTemplateId</code>.</p>
+	 *
+	 * @param msgTemplateId a {@link java.lang.String} object.
+	 */
 	public void setMsgTemplateId(String msgTemplateId) {
 		this.msgTemplateId = msgTemplateId;
 	}
+	/**
+	 * <p>Getter for the field <code>msgTemplateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsgTemplateId( ) {
 		return this.msgTemplateId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>template</code>.</p>
+	 *
+	 * @param template a {@link java.lang.String} object.
+	 */
 	public void setTemplate(String template) {
 		this.template = template;
 	}
+	/**
+	 * <p>Getter for the field <code>template</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplate( ) {
 		return this.template;
 	}

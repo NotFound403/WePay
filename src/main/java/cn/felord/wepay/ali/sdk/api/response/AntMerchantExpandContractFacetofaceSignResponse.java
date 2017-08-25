@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.contract.facetoface.sign response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-14 12:07:19
+ * @version $Id: $Id
  */
 public class AntMerchantExpandContractFacetofaceSignResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AntMerchantExpandContractFacetofaceSignResponse extends AlipayRespo
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.roominfo.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-24 11:24:31
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeRoominfoQueryResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayEcoCplifeRoominfoQueryResponse extends AlipayResponse {
 	@ApiField("total_room_number")
 	private Long totalRoomNumber;
 
+	/**
+	 * <p>Setter for the field <code>roomInfo</code>.</p>
+	 *
+	 * @param roomInfo a {@link java.util.List} object.
+	 */
 	public void setRoomInfo(List<CplifeRoomDetail> roomInfo) {
 		this.roomInfo = roomInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>roomInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CplifeRoomDetail> getRoomInfo( ) {
 		return this.roomInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalRoomNumber</code>.</p>
+	 *
+	 * @param totalRoomNumber a {@link java.lang.Long} object.
+	 */
 	public void setTotalRoomNumber(Long totalRoomNumber) {
 		this.totalRoomNumber = totalRoomNumber;
 	}
+	/**
+	 * <p>Getter for the field <code>totalRoomNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalRoomNumber( ) {
 		return this.totalRoomNumber;
 	}

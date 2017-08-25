@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.retail.dm.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-16 17:02:42
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataRetailDmQueryResponse extends AlipayResponse {
 
@@ -42,30 +42,70 @@ public class KoubeiMarketingDataRetailDmQueryResponse extends AlipayResponse {
 	@ApiField("item_name")
 	private String itemName;
 
+	/**
+	 * <p>Setter for the field <code>contentId</code>.</p>
+	 *
+	 * @param contentId a {@link java.lang.String} object.
+	 */
 	public void setContentId(String contentId) {
 		this.contentId = contentId;
 	}
+	/**
+	 * <p>Getter for the field <code>contentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentId( ) {
 		return this.contentId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>dmMarketingDatas</code>.</p>
+	 *
+	 * @param dmMarketingDatas a {@link java.util.List} object.
+	 */
 	public void setDmMarketingDatas(List<DmActivityShopData> dmMarketingDatas) {
 		this.dmMarketingDatas = dmMarketingDatas;
 	}
+	/**
+	 * <p>Getter for the field <code>dmMarketingDatas</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DmActivityShopData> getDmMarketingDatas( ) {
 		return this.dmMarketingDatas;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemCode</code>.</p>
+	 *
+	 * @param itemCode a {@link java.lang.String} object.
+	 */
 	public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
 	}
+	/**
+	 * <p>Getter for the field <code>itemCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemCode( ) {
 		return this.itemCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemName</code>.</p>
+	 *
+	 * @param itemName a {@link java.lang.String} object.
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
+	/**
+	 * <p>Getter for the field <code>itemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemName( ) {
 		return this.itemName;
 	}

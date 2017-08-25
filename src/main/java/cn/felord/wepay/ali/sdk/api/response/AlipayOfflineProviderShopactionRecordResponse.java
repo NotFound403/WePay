@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.provider.shopaction.record response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-08 10:03:38
+ * @version $Id: $Id
  */
 public class AlipayOfflineProviderShopactionRecordResponse extends AlipayResponse {
 

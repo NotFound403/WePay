@@ -8,9 +8,10 @@ import cn.felord.wepay.common.pay.PayType;
  * Description:
  * Date: 17-8-14
  * Time: 下午11:18
+ *
+ * @author lenovo
+ * @version $Id: $Id
  */
-
-
 public enum AliPayTypeEnum implements PayType {
     /**
      * 统一收单交易退款查询.
@@ -49,6 +50,7 @@ public enum AliPayTypeEnum implements PayType {
      */
     ORDER_QUERY("alipay.trade.query");
 
+    /** Constant <code>ALI_PAY_URL="https://openapi.alipay.com/gateway.do"</code> */
     private static final String ALI_PAY_URL = "https://openapi.alipay.com/gateway.do";
     private final String method;
 
@@ -56,11 +58,13 @@ public enum AliPayTypeEnum implements PayType {
         this.method = method;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getType() {
         return method;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getApi() {
         return ALI_PAY_URL;

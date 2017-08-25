@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.promo.ticket.push response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-12 09:57:45
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarPromoTicketPushResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayEcoMycarPromoTicketPushResponse extends AlipayResponse {
 	@ApiField("sp_apply_no")
 	private String spApplyNo;
 
+	/**
+	 * <p>Setter for the field <code>spApplyNo</code>.</p>
+	 *
+	 * @param spApplyNo a {@link java.lang.String} object.
+	 */
 	public void setSpApplyNo(String spApplyNo) {
 		this.spApplyNo = spApplyNo;
 	}
+	/**
+	 * <p>Getter for the field <code>spApplyNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSpApplyNo( ) {
 		return this.spApplyNo;
 	}

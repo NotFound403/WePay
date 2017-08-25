@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * ebpp通用订单查询
  *
  * @author auto create
- * @since 1.0, 2017-07-20 17:39:54
+ * @version $Id: $Id
  */
 public class AlipayEbppCommonBillQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEbppCommonBillQueryModel extends AlipayObject {
 	@ApiField("bill_no")
 	private String billNo;
 
+	/**
+	 * <p>Getter for the field <code>billNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillNo() {
 		return this.billNo;
 	}
+	/**
+	 * <p>Setter for the field <code>billNo</code>.</p>
+	 *
+	 * @param billNo a {@link java.lang.String} object.
+	 */
 	public void setBillNo(String billNo) {
 		this.billNo = billNo;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 芝麻数据传入初始化
  *
  * @author auto create
- * @since 1.0, 2017-05-27 22:38:45
+ * @version $Id: $Id
  */
 public class ZhimaMerchantDataUploadInitializeModel extends AlipayObject {
 
@@ -28,9 +28,19 @@ public class ZhimaMerchantDataUploadInitializeModel extends AlipayObject {
 	@ApiField("scene_code")
 	private String sceneCode;
 
+	/**
+	 * <p>Getter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @param sceneCode a {@link java.lang.String} object.
+	 */
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}

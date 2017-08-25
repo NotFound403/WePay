@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.sync response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:55:14
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillSyncResponse extends AlipayResponse {
 

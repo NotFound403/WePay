@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券核销的叠加标识
  *
  * @author auto create
- * @since 1.0, 2016-10-31 12:00:30
+ * @version $Id: $Id
  */
 public class MergeVerifyConfig extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class MergeVerifyConfig extends AlipayObject {
 	@ApiField("general_merge_single")
 	private Boolean generalMergeSingle;
 
+	/**
+	 * <p>Getter for the field <code>generalMergeOthers</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getGeneralMergeOthers() {
 		return this.generalMergeOthers;
 	}
+	/**
+	 * <p>Setter for the field <code>generalMergeOthers</code>.</p>
+	 *
+	 * @param generalMergeOthers a {@link java.lang.Boolean} object.
+	 */
 	public void setGeneralMergeOthers(Boolean generalMergeOthers) {
 		this.generalMergeOthers = generalMergeOthers;
 	}
 
+	/**
+	 * <p>Getter for the field <code>generalMergeSingle</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getGeneralMergeSingle() {
 		return this.generalMergeSingle;
 	}
+	/**
+	 * <p>Setter for the field <code>generalMergeSingle</code>.</p>
+	 *
+	 * @param generalMergeSingle a {@link java.lang.Boolean} object.
+	 */
 	public void setGeneralMergeSingle(Boolean generalMergeSingle) {
 		this.generalMergeSingle = generalMergeSingle;
 	}

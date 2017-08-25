@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.label.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-27 17:51:44
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeLabelBatchqueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayOpenPublicLifeLabelBatchqueryResponse extends AlipayResponse 
 	@ApiField("life_label")
 	private List<LifeLabel> labels;
 
+	/**
+	 * <p>Setter for the field <code>labels</code>.</p>
+	 *
+	 * @param labels a {@link java.util.List} object.
+	 */
 	public void setLabels(List<LifeLabel> labels) {
 		this.labels = labels;
 	}
+	/**
+	 * <p>Getter for the field <code>labels</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<LifeLabel> getLabels( ) {
 		return this.labels;
 	}

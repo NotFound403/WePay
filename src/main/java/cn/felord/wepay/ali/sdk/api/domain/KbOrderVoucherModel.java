@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑订单商品凭证模型
  *
  * @author auto create
- * @since 1.0, 2016-11-18 13:11:04
+ * @version $Id: $Id
  */
 public class KbOrderVoucherModel extends AlipayObject {
 
@@ -69,65 +69,155 @@ public class KbOrderVoucherModel extends AlipayObject {
 	@ApiField("voucher_id")
 	private String voucherId;
 
+	/**
+	 * <p>Getter for the field <code>expireDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getExpireDate() {
 		return this.expireDate;
 	}
+	/**
+	 * <p>Setter for the field <code>expireDate</code>.</p>
+	 *
+	 * @param expireDate a {@link java.util.Date} object.
+	 */
 	public void setExpireDate(Date expireDate) {
 		this.expireDate = expireDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fundsVoucherNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundsVoucherNo() {
 		return this.fundsVoucherNo;
 	}
+	/**
+	 * <p>Setter for the field <code>fundsVoucherNo</code>.</p>
+	 *
+	 * @param fundsVoucherNo a {@link java.lang.String} object.
+	 */
 	public void setFundsVoucherNo(String fundsVoucherNo) {
 		this.fundsVoucherNo = fundsVoucherNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId() {
 		return this.itemId;
 	}
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundReason() {
 		return this.refundReason;
 	}
+	/**
+	 * <p>Setter for the field <code>refundReason</code>.</p>
+	 *
+	 * @param refundReason a {@link java.lang.String} object.
+	 */
 	public void setRefundReason(String refundReason) {
 		this.refundReason = refundReason;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundType() {
 		return this.refundType;
 	}
+	/**
+	 * <p>Setter for the field <code>refundType</code>.</p>
+	 *
+	 * @param refundType a {@link java.lang.String} object.
+	 */
 	public void setRefundType(String refundType) {
 		this.refundType = refundType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId() {
 		return this.storeId;
 	}
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherId() {
 		return this.voucherId;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherId</code>.</p>
+	 *
+	 * @param voucherId a {@link java.lang.String} object.
+	 */
 	public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}

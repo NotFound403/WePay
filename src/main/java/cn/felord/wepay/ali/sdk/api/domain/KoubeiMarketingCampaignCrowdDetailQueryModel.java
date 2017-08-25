@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑商户人群组详情查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-21 17:30:29
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignCrowdDetailQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiMarketingCampaignCrowdDetailQueryModel extends AlipayObject {
 	@ApiField("crowd_group_id")
 	private String crowdGroupId;
 
+	/**
+	 * <p>Getter for the field <code>crowdGroupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdGroupId() {
 		return this.crowdGroupId;
 	}
+	/**
+	 * <p>Setter for the field <code>crowdGroupId</code>.</p>
+	 *
+	 * @param crowdGroupId a {@link java.lang.String} object.
+	 */
 	public void setCrowdGroupId(String crowdGroupId) {
 		this.crowdGroupId = crowdGroupId;
 	}

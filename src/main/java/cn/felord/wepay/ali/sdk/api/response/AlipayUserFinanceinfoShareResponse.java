@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.financeinfo.share response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-16 16:54:10
+ * @version $Id: $Id
  */
 public class AlipayUserFinanceinfoShareResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayUserFinanceinfoShareResponse extends AlipayResponse {
 	@ApiField("alipay_user_credit_card")
 	private List<AlipayUserCreditCard> creditCardList;
 
+	/**
+	 * <p>Setter for the field <code>creditCardList</code>.</p>
+	 *
+	 * @param creditCardList a {@link java.util.List} object.
+	 */
 	public void setCreditCardList(List<AlipayUserCreditCard> creditCardList) {
 		this.creditCardList = creditCardList;
 	}
+	/**
+	 * <p>Getter for the field <code>creditCardList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AlipayUserCreditCard> getCreditCardList( ) {
 		return this.creditCardList;
 	}

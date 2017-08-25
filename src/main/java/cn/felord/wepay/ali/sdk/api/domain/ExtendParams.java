@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 业务扩展参数
  *
  * @author auto create
- * @since 1.0, 2017-06-06 18:11:24
+ * @version $Id: $Id
  */
 public class ExtendParams extends AlipayObject {
 
@@ -32,23 +32,53 @@ public class ExtendParams extends AlipayObject {
 	@ApiField("sys_service_provider_id")
 	private String sysServiceProviderId;
 
+	/**
+	 * <p>Getter for the field <code>hbFqNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHbFqNum() {
 		return this.hbFqNum;
 	}
+	/**
+	 * <p>Setter for the field <code>hbFqNum</code>.</p>
+	 *
+	 * @param hbFqNum a {@link java.lang.String} object.
+	 */
 	public void setHbFqNum(String hbFqNum) {
 		this.hbFqNum = hbFqNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>hbFqSellerPercent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHbFqSellerPercent() {
 		return this.hbFqSellerPercent;
 	}
+	/**
+	 * <p>Setter for the field <code>hbFqSellerPercent</code>.</p>
+	 *
+	 * @param hbFqSellerPercent a {@link java.lang.String} object.
+	 */
 	public void setHbFqSellerPercent(String hbFqSellerPercent) {
 		this.hbFqSellerPercent = hbFqSellerPercent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sysServiceProviderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSysServiceProviderId() {
 		return this.sysServiceProviderId;
 	}
+	/**
+	 * <p>Setter for the field <code>sysServiceProviderId</code>.</p>
+	 *
+	 * @param sysServiceProviderId a {@link java.lang.String} object.
+	 */
 	public void setSysServiceProviderId(String sysServiceProviderId) {
 		this.sysServiceProviderId = sysServiceProviderId;
 	}

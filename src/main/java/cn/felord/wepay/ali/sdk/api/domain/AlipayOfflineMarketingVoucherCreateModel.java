@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券模板创建
  *
  * @author auto create
- * @since 1.0, 2016-06-23 17:38:07
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketingVoucherCreateModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class AlipayOfflineMarketingVoucherCreateModel extends AlipayObject {
 	@ApiField("voucher_info")
 	private VoucherInfo voucherInfo;
 
+	/**
+	 * <p>Getter for the field <code>budgetInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.BudgetInfo} object.
+	 */
 	public BudgetInfo getBudgetInfo() {
 		return this.budgetInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>budgetInfo</code>.</p>
+	 *
+	 * @param budgetInfo a {@link cn.felord.wepay.ali.sdk.api.domain.BudgetInfo} object.
+	 */
 	public void setBudgetInfo(BudgetInfo budgetInfo) {
 		this.budgetInfo = budgetInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>codeInventoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodeInventoryId() {
 		return this.codeInventoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>codeInventoryId</code>.</p>
+	 *
+	 * @param codeInventoryId a {@link java.lang.String} object.
+	 */
 	public void setCodeInventoryId(String codeInventoryId) {
 		this.codeInventoryId = codeInventoryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>getRule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.GetRuleInfo} object.
+	 */
 	public GetRuleInfo getGetRule() {
 		return this.getRule;
 	}
+	/**
+	 * <p>Setter for the field <code>getRule</code>.</p>
+	 *
+	 * @param getRule a {@link cn.felord.wepay.ali.sdk.api.domain.GetRuleInfo} object.
+	 */
 	public void setGetRule(GetRuleInfo getRule) {
 		this.getRule = getRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.VoucherInfo} object.
+	 */
 	public VoucherInfo getVoucherInfo() {
 		return this.voucherInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherInfo</code>.</p>
+	 *
+	 * @param voucherInfo a {@link cn.felord.wepay.ali.sdk.api.domain.VoucherInfo} object.
+	 */
 	public void setVoucherInfo(VoucherInfo voucherInfo) {
 		this.voucherInfo = voucherInfo;
 	}

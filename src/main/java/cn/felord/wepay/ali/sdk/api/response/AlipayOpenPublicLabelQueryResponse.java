@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.label.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:50:28
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLabelQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayOpenPublicLabelQueryResponse extends AlipayResponse {
 	@ApiField("public_label")
 	private List<PublicLabel> labelList;
 
+	/**
+	 * <p>Setter for the field <code>labelList</code>.</p>
+	 *
+	 * @param labelList a {@link java.util.List} object.
+	 */
 	public void setLabelList(List<PublicLabel> labelList) {
 		this.labelList = labelList;
 	}
+	/**
+	 * <p>Getter for the field <code>labelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PublicLabel> getLabelList( ) {
 		return this.labelList;
 	}

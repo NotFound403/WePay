@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 发布物业通知公告
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:39
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeNoticePublishModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayEcoCplifeNoticePublishModel extends AlipayObject {
 	@ApiField("notice_details")
 	private CplifeNoticeDetail noticeDetails;
 
+	/**
+	 * <p>Getter for the field <code>communityIdSet</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getCommunityIdSet() {
 		return this.communityIdSet;
 	}
+	/**
+	 * <p>Setter for the field <code>communityIdSet</code>.</p>
+	 *
+	 * @param communityIdSet a {@link java.util.List} object.
+	 */
 	public void setCommunityIdSet(List<String> communityIdSet) {
 		this.communityIdSet = communityIdSet;
 	}
 
+	/**
+	 * <p>Getter for the field <code>noticeDetails</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CplifeNoticeDetail} object.
+	 */
 	public CplifeNoticeDetail getNoticeDetails() {
 		return this.noticeDetails;
 	}
+	/**
+	 * <p>Setter for the field <code>noticeDetails</code>.</p>
+	 *
+	 * @param noticeDetails a {@link cn.felord.wepay.ali.sdk.api.domain.CplifeNoticeDetail} object.
+	 */
 	public void setNoticeDetails(CplifeNoticeDetail noticeDetails) {
 		this.noticeDetails = noticeDetails;
 	}

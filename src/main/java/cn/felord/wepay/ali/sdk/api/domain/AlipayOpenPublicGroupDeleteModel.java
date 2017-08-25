@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户分组删除接口
  *
  * @author auto create
- * @since 1.0, 2017-06-14 11:01:33
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicGroupDeleteModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenPublicGroupDeleteModel extends AlipayObject {
 	@ApiField("group_id")
 	private String groupId;
 
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId() {
 		return this.groupId;
 	}
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}

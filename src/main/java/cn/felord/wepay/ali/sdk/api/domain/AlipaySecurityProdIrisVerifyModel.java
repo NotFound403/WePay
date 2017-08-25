@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 线下场景虹膜信息注册
  *
  * @author auto create
- * @since 1.0, 2017-07-17 10:14:45
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdIrisVerifyModel extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class AlipaySecurityProdIrisVerifyModel extends AlipayObject {
 	@ApiField("person_id")
 	private String personId;
 
+	/**
+	 * <p>Getter for the field <code>bizToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizToken() {
 		return this.bizToken;
 	}
+	/**
+	 * <p>Setter for the field <code>bizToken</code>.</p>
+	 *
+	 * @param bizToken a {@link java.lang.String} object.
+	 */
 	public void setBizToken(String bizToken) {
 		this.bizToken = bizToken;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId() {
 		return this.groupId;
 	}
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>irisStr</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIrisStr() {
 		return this.irisStr;
 	}
+	/**
+	 * <p>Setter for the field <code>irisStr</code>.</p>
+	 *
+	 * @param irisStr a {@link java.lang.String} object.
+	 */
 	public void setIrisStr(String irisStr) {
 		this.irisStr = irisStr;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateType() {
 		return this.operateType;
 	}
+	/**
+	 * <p>Setter for the field <code>operateType</code>.</p>
+	 *
+	 * @param operateType a {@link java.lang.String} object.
+	 */
 	public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outAppFlag</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutAppFlag() {
 		return this.outAppFlag;
 	}
+	/**
+	 * <p>Setter for the field <code>outAppFlag</code>.</p>
+	 *
+	 * @param outAppFlag a {@link java.lang.String} object.
+	 */
 	public void setOutAppFlag(String outAppFlag) {
 		this.outAppFlag = outAppFlag;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>personId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPersonId() {
 		return this.personId;
 	}
+	/**
+	 * <p>Setter for the field <code>personId</code>.</p>
+	 *
+	 * @param personId a {@link java.lang.String} object.
+	 */
 	public void setPersonId(String personId) {
 		this.personId = personId;
 	}

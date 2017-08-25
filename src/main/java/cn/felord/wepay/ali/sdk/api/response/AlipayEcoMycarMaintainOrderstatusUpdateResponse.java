@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.maintain.orderstatus.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-21 12:12:48
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarMaintainOrderstatusUpdateResponse extends AlipayResponse {
 

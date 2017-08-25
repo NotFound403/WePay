@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 删除物业小区住户信息
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:56
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeResidentinfoDeleteModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayEcoCplifeResidentinfoDeleteModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> outResidentIdSet;
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outResidentIdSet</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getOutResidentIdSet() {
 		return this.outResidentIdSet;
 	}
+	/**
+	 * <p>Setter for the field <code>outResidentIdSet</code>.</p>
+	 *
+	 * @param outResidentIdSet a {@link java.util.List} object.
+	 */
 	public void setOutResidentIdSet(List<String> outResidentIdSet) {
 		this.outResidentIdSet = outResidentIdSet;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 撤销订单
  *
  * @author auto create
- * @since 1.0, 2016-10-17 16:44:44
+ * @version $Id: $Id
  */
 public class AlipayCreditAutofinanceLoanCloseModel extends AlipayObject {
 
@@ -46,37 +46,87 @@ public class AlipayCreditAutofinanceLoanCloseModel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>applyno</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyno() {
 		return this.applyno;
 	}
+	/**
+	 * <p>Setter for the field <code>applyno</code>.</p>
+	 *
+	 * @param applyno a {@link java.lang.String} object.
+	 */
 	public void setApplyno(String applyno) {
 		this.applyno = applyno;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orgcode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrgcode() {
 		return this.orgcode;
 	}
+	/**
+	 * <p>Setter for the field <code>orgcode</code>.</p>
+	 *
+	 * @param orgcode a {@link java.lang.String} object.
+	 */
 	public void setOrgcode(String orgcode) {
 		this.orgcode = orgcode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outorderno</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutorderno() {
 		return this.outorderno;
 	}
+	/**
+	 * <p>Setter for the field <code>outorderno</code>.</p>
+	 *
+	 * @param outorderno a {@link java.lang.String} object.
+	 */
 	public void setOutorderno(String outorderno) {
 		this.outorderno = outorderno;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reson</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReson() {
 		return this.reson;
 	}
+	/**
+	 * <p>Setter for the field <code>reson</code>.</p>
+	 *
+	 * @param reson a {@link java.lang.String} object.
+	 */
 	public void setReson(String reson) {
 		this.reson = reson;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

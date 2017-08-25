@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.test response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-01-14 17:47:44
+ * @version $Id: $Id
  */
 public class AlipayUserTestResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayUserTestResponse extends AlipayResponse {
 	@ApiField("ret1")
 	private String ret1;
 
+	/**
+	 * <p>Setter for the field <code>ret1</code>.</p>
+	 *
+	 * @param ret1 a {@link java.lang.String} object.
+	 */
 	public void setRet1(String ret1) {
 		this.ret1 = ret1;
 	}
+	/**
+	 * <p>Getter for the field <code>ret1</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRet1( ) {
 		return this.ret1;
 	}

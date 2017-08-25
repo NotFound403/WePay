@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 门店摘要信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-02-17 14:20:04
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopSummaryBatchqueryModel extends AlipayObject {
 
@@ -61,51 +61,121 @@ KB_PROMOTER：口碑客推广者
 	@ApiField("shop_status")
 	private String shopStatus;
 
+	/**
+	 * <p>Getter for the field <code>opRole</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpRole() {
 		return this.opRole;
 	}
+	/**
+	 * <p>Setter for the field <code>opRole</code>.</p>
+	 *
+	 * @param opRole a {@link java.lang.String} object.
+	 */
 	public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNo() {
 		return this.pageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNo</code>.</p>
+	 *
+	 * @param pageNo a {@link java.lang.Long} object.
+	 */
 	public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>queryType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQueryType() {
 		return this.queryType;
 	}
+	/**
+	 * <p>Setter for the field <code>queryType</code>.</p>
+	 *
+	 * @param queryType a {@link java.lang.String} object.
+	 */
 	public void setQueryType(String queryType) {
 		this.queryType = queryType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>relatedPartnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRelatedPartnerId() {
 		return this.relatedPartnerId;
 	}
+	/**
+	 * <p>Setter for the field <code>relatedPartnerId</code>.</p>
+	 *
+	 * @param relatedPartnerId a {@link java.lang.String} object.
+	 */
 	public void setRelatedPartnerId(String relatedPartnerId) {
 		this.relatedPartnerId = relatedPartnerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopStatus() {
 		return this.shopStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>shopStatus</code>.</p>
+	 *
+	 * @param shopStatus a {@link java.lang.String} object.
+	 */
 	public void setShopStatus(String shopStatus) {
 		this.shopStatus = shopStatus;
 	}

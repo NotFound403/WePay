@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 内容风险识别接口服务-命中结果
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class InfoSecHitDetectItem extends AlipayObject {
 
@@ -48,30 +48,70 @@ public class InfoSecHitDetectItem extends AlipayObject {
 	@ApiField("hit_detect_resource")
 	private String hitDetectResource;
 
+	/**
+	 * <p>Getter for the field <code>detectResourceLevel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetectResourceLevel() {
 		return this.detectResourceLevel;
 	}
+	/**
+	 * <p>Setter for the field <code>detectResourceLevel</code>.</p>
+	 *
+	 * @param detectResourceLevel a {@link java.lang.String} object.
+	 */
 	public void setDetectResourceLevel(String detectResourceLevel) {
 		this.detectResourceLevel = detectResourceLevel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>detectTypeCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetectTypeCode() {
 		return this.detectTypeCode;
 	}
+	/**
+	 * <p>Setter for the field <code>detectTypeCode</code>.</p>
+	 *
+	 * @param detectTypeCode a {@link java.lang.String} object.
+	 */
 	public void setDetectTypeCode(String detectTypeCode) {
 		this.detectTypeCode = detectTypeCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>hitContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHitContent() {
 		return this.hitContent;
 	}
+	/**
+	 * <p>Setter for the field <code>hitContent</code>.</p>
+	 *
+	 * @param hitContent a {@link java.lang.String} object.
+	 */
 	public void setHitContent(String hitContent) {
 		this.hitContent = hitContent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>hitDetectResource</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHitDetectResource() {
 		return this.hitDetectResource;
 	}
+	/**
+	 * <p>Setter for the field <code>hitDetectResource</code>.</p>
+	 *
+	 * @param hitDetectResource a {@link java.lang.String} object.
+	 */
 	public void setHitDetectResource(String hitDetectResource) {
 		this.hitDetectResource = hitDetectResource;
 	}

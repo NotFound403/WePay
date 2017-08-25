@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.member.brandowner.name.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-06 10:48:20
+ * @version $Id: $Id
  */
 public class KoubeiMemberBrandownerNameQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiMemberBrandownerNameQueryResponse extends AlipayResponse {
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName( ) {
 		return this.name;
 	}

@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.account.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-11 15:47:48
+ * @version $Id: $Id
  */
 public class AlipayUserAccountGetResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayUserAccountGetResponse extends AlipayResponse {
 	@ApiField("alipay_account")
 	private AlipayAccount alipayAccount;
 
+	/**
+	 * <p>Setter for the field <code>alipayAccount</code>.</p>
+	 *
+	 * @param alipayAccount a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayAccount} object.
+	 */
 	public void setAlipayAccount(AlipayAccount alipayAccount) {
 		this.alipayAccount = alipayAccount;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayAccount</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayAccount} object.
+	 */
 	public AlipayAccount getAlipayAccount( ) {
 		return this.alipayAccount;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 手艺人作品发布接口
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:32:38
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataWorkCreateModel extends AlipayObject {
 
@@ -42,30 +42,70 @@ public class KoubeiCraftsmanDataWorkCreateModel extends AlipayObject {
 	@ApiField("craftsman_work_create_open_model")
 	private List<CraftsmanWorkCreateOpenModel> works;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
+	/**
+	 * <p>Setter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @param craftsmanId a {@link java.lang.String} object.
+	 */
 	public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getShopIds() {
 		return this.shopIds;
 	}
+	/**
+	 * <p>Setter for the field <code>shopIds</code>.</p>
+	 *
+	 * @param shopIds a {@link java.util.List} object.
+	 */
 	public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>works</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CraftsmanWorkCreateOpenModel> getWorks() {
 		return this.works;
 	}
+	/**
+	 * <p>Setter for the field <code>works</code>.</p>
+	 *
+	 * @param works a {@link java.util.List} object.
+	 */
 	public void setWorks(List<CraftsmanWorkCreateOpenModel> works) {
 		this.works = works;
 	}

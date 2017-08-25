@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 创建凤蝶H5应用
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:17
+ * @version $Id: $Id
  */
 public class AlipayMarketingToolFengdieActivityCreateModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayMarketingToolFengdieActivityCreateModel extends AlipayObject 
 	@ApiField("template_id")
 	private Long templateId;
 
+	/**
+	 * <p>Getter for the field <code>activity</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.FengdieActivityCreateData} object.
+	 */
 	public FengdieActivityCreateData getActivity() {
 		return this.activity;
 	}
+	/**
+	 * <p>Setter for the field <code>activity</code>.</p>
+	 *
+	 * @param activity a {@link cn.felord.wepay.ali.sdk.api.domain.FengdieActivityCreateData} object.
+	 */
 	public void setActivity(FengdieActivityCreateData activity) {
 		this.activity = activity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.Long} object.
+	 */
 	public void setTemplateId(Long templateId) {
 		this.templateId = templateId;
 	}

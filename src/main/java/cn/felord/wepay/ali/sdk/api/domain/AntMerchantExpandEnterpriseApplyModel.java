@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户入驻接口
  *
  * @author auto create
- * @since 1.0, 2016-09-26 13:19:59
+ * @version $Id: $Id
  */
 public class AntMerchantExpandEnterpriseApplyModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class AntMerchantExpandEnterpriseApplyModel extends AlipayObject {
 	@ApiField("shop_info")
 	private ShopInfo shopInfo;
 
+	/**
+	 * <p>Getter for the field <code>baseInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.BaseInfo} object.
+	 */
 	public BaseInfo getBaseInfo() {
 		return this.baseInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>baseInfo</code>.</p>
+	 *
+	 * @param baseInfo a {@link cn.felord.wepay.ali.sdk.api.domain.BaseInfo} object.
+	 */
 	public void setBaseInfo(BaseInfo baseInfo) {
 		this.baseInfo = baseInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessBankAccountInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.BusinessBankAccountInfo} object.
+	 */
 	public BusinessBankAccountInfo getBusinessBankAccountInfo() {
 		return this.businessBankAccountInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>businessBankAccountInfo</code>.</p>
+	 *
+	 * @param businessBankAccountInfo a {@link cn.felord.wepay.ali.sdk.api.domain.BusinessBankAccountInfo} object.
+	 */
 	public void setBusinessBankAccountInfo(BusinessBankAccountInfo businessBankAccountInfo) {
 		this.businessBankAccountInfo = businessBankAccountInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.BusinessLicenceInfo} object.
+	 */
 	public BusinessLicenceInfo getBusinessLicenseInfo() {
 		return this.businessLicenseInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseInfo</code>.</p>
+	 *
+	 * @param businessLicenseInfo a {@link cn.felord.wepay.ali.sdk.api.domain.BusinessLicenceInfo} object.
+	 */
 	public void setBusinessLicenseInfo(BusinessLicenceInfo businessLicenseInfo) {
 		this.businessLicenseInfo = businessLicenseInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>legalRepresentativeInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.LegalRepresentativeInfo} object.
+	 */
 	public LegalRepresentativeInfo getLegalRepresentativeInfo() {
 		return this.legalRepresentativeInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>legalRepresentativeInfo</code>.</p>
+	 *
+	 * @param legalRepresentativeInfo a {@link cn.felord.wepay.ali.sdk.api.domain.LegalRepresentativeInfo} object.
+	 */
 	public void setLegalRepresentativeInfo(LegalRepresentativeInfo legalRepresentativeInfo) {
 		this.legalRepresentativeInfo = legalRepresentativeInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loginId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoginId() {
 		return this.loginId;
 	}
+	/**
+	 * <p>Setter for the field <code>loginId</code>.</p>
+	 *
+	 * @param loginId a {@link java.lang.String} object.
+	 */
 	public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ShopInfo} object.
+	 */
 	public ShopInfo getShopInfo() {
 		return this.shopInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>shopInfo</code>.</p>
+	 *
+	 * @param shopInfo a {@link cn.felord.wepay.ali.sdk.api.domain.ShopInfo} object.
+	 */
 	public void setShopInfo(ShopInfo shopInfo) {
 		this.shopInfo = shopInfo;
 	}

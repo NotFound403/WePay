@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.parking.cardbarcode.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-14 15:08:57
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingCardbarcodeCreateResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayEcoMycarParkingCardbarcodeCreateResponse extends AlipayRespon
 	@ApiField("q_rcode")
 	private List<QRcode> qrcodes;
 
+	/**
+	 * <p>Setter for the field <code>qrcodes</code>.</p>
+	 *
+	 * @param qrcodes a {@link java.util.List} object.
+	 */
 	public void setQrcodes(List<QRcode> qrcodes) {
 		this.qrcodes = qrcodes;
 	}
+	/**
+	 * <p>Getter for the field <code>qrcodes</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<QRcode> getQrcodes( ) {
 		return this.qrcodes;
 	}

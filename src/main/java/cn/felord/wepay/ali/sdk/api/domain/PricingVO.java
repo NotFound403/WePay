@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 源汇率
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class PricingVO extends AlipayObject {
 
@@ -151,163 +151,393 @@ public class PricingVO extends AlipayObject {
 	@ApiField("valid_timestamp")
 	private String validTimestamp;
 
+	/**
+	 * <p>Getter for the field <code>bid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBid() {
 		return this.bid;
 	}
+	/**
+	 * <p>Setter for the field <code>bid</code>.</p>
+	 *
+	 * @param bid a {@link java.lang.String} object.
+	 */
 	public void setBid(String bid) {
 		this.bid = bid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>currency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCurrency() {
 		return this.currency;
 	}
+	/**
+	 * <p>Setter for the field <code>currency</code>.</p>
+	 *
+	 * @param currency a {@link java.lang.String} object.
+	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
+	/**
+	 * <p>Getter for the field <code>currencyUnit</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrencyUnit() {
 		return this.currencyUnit;
 	}
+	/**
+	 * <p>Setter for the field <code>currencyUnit</code>.</p>
+	 *
+	 * @param currencyUnit a {@link java.lang.Long} object.
+	 */
 	public void setCurrencyUnit(Long currencyUnit) {
 		this.currencyUnit = currencyUnit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>expiryTimestamp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExpiryTimestamp() {
 		return this.expiryTimestamp;
 	}
+	/**
+	 * <p>Setter for the field <code>expiryTimestamp</code>.</p>
+	 *
+	 * @param expiryTimestamp a {@link java.lang.String} object.
+	 */
 	public void setExpiryTimestamp(String expiryTimestamp) {
 		this.expiryTimestamp = expiryTimestamp;
 	}
 
+	/**
+	 * <p>Getter for the field <code>generateTimestamp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGenerateTimestamp() {
 		return this.generateTimestamp;
 	}
+	/**
+	 * <p>Setter for the field <code>generateTimestamp</code>.</p>
+	 *
+	 * @param generateTimestamp a {@link java.lang.String} object.
+	 */
 	public void setGenerateTimestamp(String generateTimestamp) {
 		this.generateTimestamp = generateTimestamp;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maturityDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaturityDate() {
 		return this.maturityDate;
 	}
+	/**
+	 * <p>Setter for the field <code>maturityDate</code>.</p>
+	 *
+	 * @param maturityDate a {@link java.lang.String} object.
+	 */
 	public void setMaturityDate(String maturityDate) {
 		this.maturityDate = maturityDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maximumBidAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getMaximumBidAmount() {
 		return this.maximumBidAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>maximumBidAmount</code>.</p>
+	 *
+	 * @param maximumBidAmount a {@link java.lang.Long} object.
+	 */
 	public void setMaximumBidAmount(Long maximumBidAmount) {
 		this.maximumBidAmount = maximumBidAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maximumOfferAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getMaximumOfferAmount() {
 		return this.maximumOfferAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>maximumOfferAmount</code>.</p>
+	 *
+	 * @param maximumOfferAmount a {@link java.lang.Long} object.
+	 */
 	public void setMaximumOfferAmount(Long maximumOfferAmount) {
 		this.maximumOfferAmount = maximumOfferAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMid() {
 		return this.mid;
 	}
+	/**
+	 * <p>Setter for the field <code>mid</code>.</p>
+	 *
+	 * @param mid a {@link java.lang.String} object.
+	 */
 	public void setMid(String mid) {
 		this.mid = mid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>minimumBidAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getMinimumBidAmount() {
 		return this.minimumBidAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>minimumBidAmount</code>.</p>
+	 *
+	 * @param minimumBidAmount a {@link java.lang.Long} object.
+	 */
 	public void setMinimumBidAmount(Long minimumBidAmount) {
 		this.minimumBidAmount = minimumBidAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>minimumOfferAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getMinimumOfferAmount() {
 		return this.minimumOfferAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>minimumOfferAmount</code>.</p>
+	 *
+	 * @param minimumOfferAmount a {@link java.lang.Long} object.
+	 */
 	public void setMinimumOfferAmount(Long minimumOfferAmount) {
 		this.minimumOfferAmount = minimumOfferAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>offer</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOffer() {
 		return this.offer;
 	}
+	/**
+	 * <p>Setter for the field <code>offer</code>.</p>
+	 *
+	 * @param offer a {@link java.lang.String} object.
+	 */
 	public void setOffer(String offer) {
 		this.offer = offer;
 	}
 
+	/**
+	 * <p>Getter for the field <code>period</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPeriod() {
 		return this.period;
 	}
+	/**
+	 * <p>Setter for the field <code>period</code>.</p>
+	 *
+	 * @param period a {@link java.lang.String} object.
+	 */
 	public void setPeriod(String period) {
 		this.period = period;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rateReferenceId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRateReferenceId() {
 		return this.rateReferenceId;
 	}
+	/**
+	 * <p>Setter for the field <code>rateReferenceId</code>.</p>
+	 *
+	 * @param rateReferenceId a {@link java.lang.String} object.
+	 */
 	public void setRateReferenceId(String rateReferenceId) {
 		this.rateReferenceId = rateReferenceId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRateType() {
 		return this.rateType;
 	}
+	/**
+	 * <p>Setter for the field <code>rateType</code>.</p>
+	 *
+	 * @param rateType a {@link java.lang.String} object.
+	 */
 	public void setRateType(String rateType) {
 		this.rateType = rateType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>spotBid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSpotBid() {
 		return this.spotBid;
 	}
+	/**
+	 * <p>Setter for the field <code>spotBid</code>.</p>
+	 *
+	 * @param spotBid a {@link java.lang.String} object.
+	 */
 	public void setSpotBid(String spotBid) {
 		this.spotBid = spotBid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>spotMid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSpotMid() {
 		return this.spotMid;
 	}
+	/**
+	 * <p>Setter for the field <code>spotMid</code>.</p>
+	 *
+	 * @param spotMid a {@link java.lang.String} object.
+	 */
 	public void setSpotMid(String spotMid) {
 		this.spotMid = spotMid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>spotOffer</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSpotOffer() {
 		return this.spotOffer;
 	}
+	/**
+	 * <p>Setter for the field <code>spotOffer</code>.</p>
+	 *
+	 * @param spotOffer a {@link java.lang.String} object.
+	 */
 	public void setSpotOffer(String spotOffer) {
 		this.spotOffer = spotOffer;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTimestamp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStartTimestamp() {
 		return this.startTimestamp;
 	}
+	/**
+	 * <p>Setter for the field <code>startTimestamp</code>.</p>
+	 *
+	 * @param startTimestamp a {@link java.lang.String} object.
+	 */
 	public void setStartTimestamp(String startTimestamp) {
 		this.startTimestamp = startTimestamp;
 	}
 
+	/**
+	 * <p>Getter for the field <code>symbol</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSymbol() {
 		return this.symbol;
 	}
+	/**
+	 * <p>Setter for the field <code>symbol</code>.</p>
+	 *
+	 * @param symbol a {@link java.lang.String} object.
+	 */
 	public void setSymbol(String symbol) {
 		this.symbol = symbol;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thresholdTimestamp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThresholdTimestamp() {
 		return this.thresholdTimestamp;
 	}
+	/**
+	 * <p>Setter for the field <code>thresholdTimestamp</code>.</p>
+	 *
+	 * @param thresholdTimestamp a {@link java.lang.String} object.
+	 */
 	public void setThresholdTimestamp(String thresholdTimestamp) {
 		this.thresholdTimestamp = thresholdTimestamp;
 	}
 
+	/**
+	 * <p>Getter for the field <code>validTimestamp</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValidTimestamp() {
 		return this.validTimestamp;
 	}
+	/**
+	 * <p>Setter for the field <code>validTimestamp</code>.</p>
+	 *
+	 * @param validTimestamp a {@link java.lang.String} object.
+	 */
 	public void setValidTimestamp(String validTimestamp) {
 		this.validTimestamp = validTimestamp;
 	}

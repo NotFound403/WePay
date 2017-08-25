@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.tags.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 14:16:08
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignTagsQueryResponse extends AlipayResponse {
 
@@ -26,9 +26,19 @@ label:描述信息
 	@ApiField("tags")
 	private String tags;
 
+	/**
+	 * <p>Setter for the field <code>tags</code>.</p>
+	 *
+	 * @param tags a {@link java.lang.String} object.
+	 */
 	public void setTags(String tags) {
 		this.tags = tags;
 	}
+	/**
+	 * <p>Getter for the field <code>tags</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTags( ) {
 		return this.tags;
 	}

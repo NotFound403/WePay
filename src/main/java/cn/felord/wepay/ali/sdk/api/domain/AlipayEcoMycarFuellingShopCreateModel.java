@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 加油站门店信息增加接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:01
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarFuellingShopCreateModel extends AlipayObject {
 
@@ -79,79 +79,189 @@ public class AlipayEcoMycarFuellingShopCreateModel extends AlipayObject {
 	@ApiField("shop_status")
 	private String shopStatus;
 
+	/**
+	 * <p>Getter for the field <code>address</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddress() {
 		return this.address;
 	}
+	/**
+	 * <p>Setter for the field <code>address</code>.</p>
+	 *
+	 * @param address a {@link java.lang.String} object.
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityCode() {
 		return this.cityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>cityCode</code>.</p>
+	 *
+	 * @param cityCode a {@link java.lang.String} object.
+	 */
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>districtCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDistrictCode() {
 		return this.districtCode;
 	}
+	/**
+	 * <p>Setter for the field <code>districtCode</code>.</p>
+	 *
+	 * @param districtCode a {@link java.lang.String} object.
+	 */
 	public void setDistrictCode(String districtCode) {
 		this.districtCode = districtCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>lat</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLat() {
 		return this.lat;
 	}
+	/**
+	 * <p>Setter for the field <code>lat</code>.</p>
+	 *
+	 * @param lat a {@link java.lang.String} object.
+	 */
 	public void setLat(String lat) {
 		this.lat = lat;
 	}
 
+	/**
+	 * <p>Getter for the field <code>lon</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLon() {
 		return this.lon;
 	}
+	/**
+	 * <p>Setter for the field <code>lon</code>.</p>
+	 *
+	 * @param lon a {@link java.lang.String} object.
+	 */
 	public void setLon(String lon) {
 		this.lon = lon;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outShopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutShopId() {
 		return this.outShopId;
 	}
+	/**
+	 * <p>Setter for the field <code>outShopId</code>.</p>
+	 *
+	 * @param outShopId a {@link java.lang.String} object.
+	 */
 	public void setOutShopId(String outShopId) {
 		this.outShopId = outShopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayUrl() {
 		return this.payUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>payUrl</code>.</p>
+	 *
+	 * @param payUrl a {@link java.lang.String} object.
+	 */
 	public void setPayUrl(String payUrl) {
 		this.payUrl = payUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>poiId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPoiId() {
 		return this.poiId;
 	}
+	/**
+	 * <p>Setter for the field <code>poiId</code>.</p>
+	 *
+	 * @param poiId a {@link java.lang.String} object.
+	 */
 	public void setPoiId(String poiId) {
 		this.poiId = poiId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProvinceCode() {
 		return this.provinceCode;
 	}
+	/**
+	 * <p>Setter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @param provinceCode a {@link java.lang.String} object.
+	 */
 	public void setProvinceCode(String provinceCode) {
 		this.provinceCode = provinceCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopName() {
 		return this.shopName;
 	}
+	/**
+	 * <p>Setter for the field <code>shopName</code>.</p>
+	 *
+	 * @param shopName a {@link java.lang.String} object.
+	 */
 	public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopStatus() {
 		return this.shopStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>shopStatus</code>.</p>
+	 *
+	 * @param shopStatus a {@link java.lang.String} object.
+	 */
 	public void setShopStatus(String shopStatus) {
 		this.shopStatus = shopStatus;
 	}

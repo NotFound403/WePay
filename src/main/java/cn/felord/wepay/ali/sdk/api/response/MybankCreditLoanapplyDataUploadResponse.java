@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.credit.loanapply.data.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-11 14:09:08
+ * @version $Id: $Id
  */
 public class MybankCreditLoanapplyDataUploadResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class MybankCreditLoanapplyDataUploadResponse extends AlipayResponse {
 	@ApiField("data_id")
 	private String dataId;
 
+	/**
+	 * <p>Setter for the field <code>dataId</code>.</p>
+	 *
+	 * @param dataId a {@link java.lang.String} object.
+	 */
 	public void setDataId(String dataId) {
 		this.dataId = dataId;
 	}
+	/**
+	 * <p>Getter for the field <code>dataId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDataId( ) {
 		return this.dataId;
 	}

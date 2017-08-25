@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.risk.detect response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-04 14:55:25
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskDetectResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipaySecurityRiskDetectResponse extends AlipayResponse {
 	@ApiField("risk_level")
 	private Long riskLevel;
 
+	/**
+	 * <p>Setter for the field <code>riskCode</code>.</p>
+	 *
+	 * @param riskCode a {@link java.lang.String} object.
+	 */
 	public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
+	/**
+	 * <p>Getter for the field <code>riskCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRiskCode( ) {
 		return this.riskCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>riskLevel</code>.</p>
+	 *
+	 * @param riskLevel a {@link java.lang.Long} object.
+	 */
 	public void setRiskLevel(Long riskLevel) {
 		this.riskLevel = riskLevel;
 	}
+	/**
+	 * <p>Getter for the field <code>riskLevel</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRiskLevel( ) {
 		return this.riskLevel;
 	}

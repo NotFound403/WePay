@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 洗车保养服务商品
  *
  * @author auto create
- * @since 1.0, 2017-04-12 11:49:05
+ * @version $Id: $Id
  */
 public class MaitainShopProduct extends AlipayObject {
 
@@ -139,86 +139,206 @@ public class MaitainShopProduct extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>offPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOffPrice() {
 		return this.offPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>offPrice</code>.</p>
+	 *
+	 * @param offPrice a {@link java.lang.String} object.
+	 */
 	public void setOffPrice(String offPrice) {
 		this.offPrice = offPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>origPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrigPrice() {
 		return this.origPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>origPrice</code>.</p>
+	 *
+	 * @param origPrice a {@link java.lang.String} object.
+	 */
 	public void setOrigPrice(String origPrice) {
 		this.origPrice = origPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outPrivilegeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutPrivilegeId() {
 		return this.outPrivilegeId;
 	}
+	/**
+	 * <p>Setter for the field <code>outPrivilegeId</code>.</p>
+	 *
+	 * @param outPrivilegeId a {@link java.lang.String} object.
+	 */
 	public void setOutPrivilegeId(String outPrivilegeId) {
 		this.outPrivilegeId = outPrivilegeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outShopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutShopId() {
 		return this.outShopId;
 	}
+	/**
+	 * <p>Setter for the field <code>outShopId</code>.</p>
+	 *
+	 * @param outShopId a {@link java.lang.String} object.
+	 */
 	public void setOutShopId(String outShopId) {
 		this.outShopId = outShopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>privilegeCloseTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrivilegeCloseTime() {
 		return this.privilegeCloseTime;
 	}
+	/**
+	 * <p>Setter for the field <code>privilegeCloseTime</code>.</p>
+	 *
+	 * @param privilegeCloseTime a {@link java.lang.String} object.
+	 */
 	public void setPrivilegeCloseTime(String privilegeCloseTime) {
 		this.privilegeCloseTime = privilegeCloseTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>privilegePrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrivilegePrice() {
 		return this.privilegePrice;
 	}
+	/**
+	 * <p>Setter for the field <code>privilegePrice</code>.</p>
+	 *
+	 * @param privilegePrice a {@link java.lang.String} object.
+	 */
 	public void setPrivilegePrice(String privilegePrice) {
 		this.privilegePrice = privilegePrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>privilegeStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrivilegeStartTime() {
 		return this.privilegeStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>privilegeStartTime</code>.</p>
+	 *
+	 * @param privilegeStartTime a {@link java.lang.String} object.
+	 */
 	public void setPrivilegeStartTime(String privilegeStartTime) {
 		this.privilegeStartTime = privilegeStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>privilegeTags</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrivilegeTags() {
 		return this.privilegeTags;
 	}
+	/**
+	 * <p>Setter for the field <code>privilegeTags</code>.</p>
+	 *
+	 * @param privilegeTags a {@link java.lang.String} object.
+	 */
 	public void setPrivilegeTags(String privilegeTags) {
 		this.privilegeTags = privilegeTags;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductDesc() {
 		return this.productDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>productDesc</code>.</p>
+	 *
+	 * @param productDesc a {@link java.lang.String} object.
+	 */
 	public void setProductDesc(String productDesc) {
 		this.productDesc = productDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductName() {
 		return this.productName;
 	}
+	/**
+	 * <p>Setter for the field <code>productName</code>.</p>
+	 *
+	 * @param productName a {@link java.lang.String} object.
+	 */
 	public void setProductName(String productName) {
 		this.productName = productName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceCategoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getServiceCategoryId() {
 		return this.serviceCategoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceCategoryId</code>.</p>
+	 *
+	 * @param serviceCategoryId a {@link java.lang.Long} object.
+	 */
 	public void setServiceCategoryId(Long serviceCategoryId) {
 		this.serviceCategoryId = serviceCategoryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

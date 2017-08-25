@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.debark.apply response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-17 14:04:17
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeDebarkApplyResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicLifeDebarkApplyResponse extends AlipayResponse {
 	@ApiField("result")
 	private String result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult( ) {
 		return this.result;
 	}

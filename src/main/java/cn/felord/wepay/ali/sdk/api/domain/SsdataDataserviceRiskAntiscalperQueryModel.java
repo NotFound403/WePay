@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 蚁盾反黄牛服务
  *
  * @author auto create
- * @since 1.0, 2017-06-29 21:11:28
+ * @version $Id: $Id
  */
 public class SsdataDataserviceRiskAntiscalperQueryModel extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class SsdataDataserviceRiskAntiscalperQueryModel extends AlipayObject {
 	@ApiField("umid")
 	private String umid;
 
+	/**
+	 * <p>Getter for the field <code>apdid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApdid() {
 		return this.apdid;
 	}
+	/**
+	 * <p>Setter for the field <code>apdid</code>.</p>
+	 *
+	 * @param apdid a {@link java.lang.String} object.
+	 */
 	public void setApdid(String apdid) {
 		this.apdid = apdid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ip</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIp() {
 		return this.ip;
 	}
+	/**
+	 * <p>Setter for the field <code>ip</code>.</p>
+	 *
+	 * @param ip a {@link java.lang.String} object.
+	 */
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId() {
 		return this.partnerId;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>phone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPhone() {
 		return this.phone;
 	}
+	/**
+	 * <p>Setter for the field <code>phone</code>.</p>
+	 *
+	 * @param phone a {@link java.lang.String} object.
+	 */
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
 
+	/**
+	 * <p>Getter for the field <code>riskCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRiskCode() {
 		return this.riskCode;
 	}
+	/**
+	 * <p>Setter for the field <code>riskCode</code>.</p>
+	 *
+	 * @param riskCode a {@link java.lang.String} object.
+	 */
 	public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @param sceneCode a {@link java.lang.String} object.
+	 */
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sysVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSysVersion() {
 		return this.sysVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>sysVersion</code>.</p>
+	 *
+	 * @param sysVersion a {@link java.lang.String} object.
+	 */
 	public void setSysVersion(String sysVersion) {
 		this.sysVersion = sysVersion;
 	}
 
+	/**
+	 * <p>Getter for the field <code>umid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUmid() {
 		return this.umid;
 	}
+	/**
+	 * <p>Setter for the field <code>umid</code>.</p>
+	 *
+	 * @param umid a {@link java.lang.String} object.
+	 */
 	public void setUmid(String umid) {
 		this.umid = umid;
 	}

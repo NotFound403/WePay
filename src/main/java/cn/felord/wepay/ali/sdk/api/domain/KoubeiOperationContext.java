@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * context 保存操作者信息
  *
  * @author auto create
- * @since 1.0, 2016-12-22 09:37:28
+ * @version $Id: $Id
  */
 public class KoubeiOperationContext extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiOperationContext extends AlipayObject {
 	@ApiField("op_role")
 	private String opRole;
 
+	/**
+	 * <p>Getter for the field <code>opRole</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpRole() {
 		return this.opRole;
 	}
+	/**
+	 * <p>Setter for the field <code>opRole</code>.</p>
+	 *
+	 * @param opRole a {@link java.lang.String} object.
+	 */
 	public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}

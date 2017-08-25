@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统标的
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:12
+ * @version $Id: $Id
  */
 public class KbAdvertSubjectResponse extends AlipayObject {
 
@@ -33,23 +33,53 @@ voucher-券
 	@ApiField("voucher")
 	private KbAdvertSubjectVoucherResponse voucher;
 
+	/**
+	 * <p>Getter for the field <code>commissionClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClauseResponse} object.
+	 */
 	public KbAdvertCommissionClauseResponse getCommissionClause() {
 		return this.commissionClause;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionClause</code>.</p>
+	 *
+	 * @param commissionClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClauseResponse} object.
+	 */
 	public void setCommissionClause(KbAdvertCommissionClauseResponse commissionClause) {
 		this.commissionClause = commissionClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucher</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertSubjectVoucherResponse} object.
+	 */
 	public KbAdvertSubjectVoucherResponse getVoucher() {
 		return this.voucher;
 	}
+	/**
+	 * <p>Setter for the field <code>voucher</code>.</p>
+	 *
+	 * @param voucher a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertSubjectVoucherResponse} object.
+	 */
 	public void setVoucher(KbAdvertSubjectVoucherResponse voucher) {
 		this.voucher = voucher;
 	}

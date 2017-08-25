@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑客渠道管理接口
  *
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:56
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionChannelModifyModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class KoubeiAdvertCommissionChannelModifyModel extends AlipayObject {
 	@ApiField("kb_advert_modify_channel_request")
 	private List<KbAdvertModifyChannelRequest> channels;
 
+	/**
+	 * <p>Getter for the field <code>channels</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbAdvertModifyChannelRequest> getChannels() {
 		return this.channels;
 	}
+	/**
+	 * <p>Setter for the field <code>channels</code>.</p>
+	 *
+	 * @param channels a {@link java.util.List} object.
+	 */
 	public void setChannels(List<KbAdvertModifyChannelRequest> channels) {
 		this.channels = channels;
 	}

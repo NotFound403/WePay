@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.precreate response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-09 15:29:09
+ * @version $Id: $Id
  */
 public class AlipayTradePrecreateResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayTradePrecreateResponse extends AlipayResponse {
 	@ApiField("qr_code")
 	private String qrCode;
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>qrCode</code>.</p>
+	 *
+	 * @param qrCode a {@link java.lang.String} object.
+	 */
 	public void setQrCode(String qrCode) {
 		this.qrCode = qrCode;
 	}
+	/**
+	 * <p>Getter for the field <code>qrCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCode( ) {
 		return this.qrCode;
 	}

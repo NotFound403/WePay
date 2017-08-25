@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 会员卡删卡
  *
  * @author auto create
- * @since 1.0, 2017-06-23 09:40:06
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardDeleteModel extends AlipayObject {
 
@@ -51,37 +51,87 @@ BIZ_CARD：支付宝卡号
 	@ApiField("target_card_no_type")
 	private String targetCardNoType;
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSerialNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSerialNo() {
 		return this.outSerialNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outSerialNo</code>.</p>
+	 *
+	 * @param outSerialNo a {@link java.lang.String} object.
+	 */
 	public void setOutSerialNo(String outSerialNo) {
 		this.outSerialNo = outSerialNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reasonCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReasonCode() {
 		return this.reasonCode;
 	}
+	/**
+	 * <p>Setter for the field <code>reasonCode</code>.</p>
+	 *
+	 * @param reasonCode a {@link java.lang.String} object.
+	 */
 	public void setReasonCode(String reasonCode) {
 		this.reasonCode = reasonCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetCardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetCardNo() {
 		return this.targetCardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>targetCardNo</code>.</p>
+	 *
+	 * @param targetCardNo a {@link java.lang.String} object.
+	 */
 	public void setTargetCardNo(String targetCardNo) {
 		this.targetCardNo = targetCardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetCardNoType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetCardNoType() {
 		return this.targetCardNoType;
 	}
+	/**
+	 * <p>Setter for the field <code>targetCardNoType</code>.</p>
+	 *
+	 * @param targetCardNoType a {@link java.lang.String} object.
+	 */
 	public void setTargetCardNoType(String targetCardNoType) {
 		this.targetCardNoType = targetCardNoType;
 	}

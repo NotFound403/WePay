@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.recruit.shop.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-19 14:48:59
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignRecruitShopQueryResponse extends AlipayResponse {
 
@@ -36,23 +36,53 @@ public class KoubeiMarketingCampaignRecruitShopQueryResponse extends AlipayRespo
 	@ApiField("recruit_shop_info")
 	private List<RecruitShopInfo> shopInfo;
 
+	/**
+	 * <p>Setter for the field <code>planId</code>.</p>
+	 *
+	 * @param planId a {@link java.lang.String} object.
+	 */
 	public void setPlanId(String planId) {
 		this.planId = planId;
 	}
+	/**
+	 * <p>Getter for the field <code>planId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPlanId( ) {
 		return this.planId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopCount</code>.</p>
+	 *
+	 * @param shopCount a {@link java.lang.String} object.
+	 */
 	public void setShopCount(String shopCount) {
 		this.shopCount = shopCount;
 	}
+	/**
+	 * <p>Getter for the field <code>shopCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopCount( ) {
 		return this.shopCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopInfo</code>.</p>
+	 *
+	 * @param shopInfo a {@link java.util.List} object.
+	 */
 	public void setShopInfo(List<RecruitShopInfo> shopInfo) {
 		this.shopInfo = shopInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>shopInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RecruitShopInfo> getShopInfo( ) {
 		return this.shopInfo;
 	}

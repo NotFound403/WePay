@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 厂商支付授权时上传设备数据接口，目前主要包含三星支付。com
  *
  * @author auto create
- * @since 1.0, 2016-05-19 17:02:20
+ * @version $Id: $Id
  */
 public class AlipayTradeVendorpayDevicedataUploadModel extends AlipayObject {
 
@@ -79,79 +79,189 @@ public class AlipayTradeVendorpayDevicedataUploadModel extends AlipayObject {
 	@ApiField("vendor")
 	private String vendor;
 
+	/**
+	 * <p>Getter for the field <code>appPackageName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppPackageName() {
 		return this.appPackageName;
 	}
+	/**
+	 * <p>Setter for the field <code>appPackageName</code>.</p>
+	 *
+	 * @param appPackageName a {@link java.lang.String} object.
+	 */
 	public void setAppPackageName(String appPackageName) {
 		this.appPackageName = appPackageName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imei</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImei() {
 		return this.imei;
 	}
+	/**
+	 * <p>Setter for the field <code>imei</code>.</p>
+	 *
+	 * @param imei a {@link java.lang.String} object.
+	 */
 	public void setImei(String imei) {
 		this.imei = imei;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imsi</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImsi() {
 		return this.imsi;
 	}
+	/**
+	 * <p>Setter for the field <code>imsi</code>.</p>
+	 *
+	 * @param imsi a {@link java.lang.String} object.
+	 */
 	public void setImsi(String imsi) {
 		this.imsi = imsi;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mac</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMac() {
 		return this.mac;
 	}
+	/**
+	 * <p>Setter for the field <code>mac</code>.</p>
+	 *
+	 * @param mac a {@link java.lang.String} object.
+	 */
 	public void setMac(String mac) {
 		this.mac = mac;
 	}
 
+	/**
+	 * <p>Getter for the field <code>machineType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMachineType() {
 		return this.machineType;
 	}
+	/**
+	 * <p>Setter for the field <code>machineType</code>.</p>
+	 *
+	 * @param machineType a {@link java.lang.String} object.
+	 */
 	public void setMachineType(String machineType) {
 		this.machineType = machineType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>phoneSysVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPhoneSysVersion() {
 		return this.phoneSysVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>phoneSysVersion</code>.</p>
+	 *
+	 * @param phoneSysVersion a {@link java.lang.String} object.
+	 */
 	public void setPhoneSysVersion(String phoneSysVersion) {
 		this.phoneSysVersion = phoneSysVersion;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publicKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicKey() {
 		return this.publicKey;
 	}
+	/**
+	 * <p>Setter for the field <code>publicKey</code>.</p>
+	 *
+	 * @param publicKey a {@link java.lang.String} object.
+	 */
 	public void setPublicKey(String publicKey) {
 		this.publicKey = publicKey;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tidsource</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTidsource() {
 		return this.tidsource;
 	}
+	/**
+	 * <p>Setter for the field <code>tidsource</code>.</p>
+	 *
+	 * @param tidsource a {@link java.lang.String} object.
+	 */
 	public void setTidsource(String tidsource) {
 		this.tidsource = tidsource;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uuid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUuid() {
 		return this.uuid;
 	}
+	/**
+	 * <p>Setter for the field <code>uuid</code>.</p>
+	 *
+	 * @param uuid a {@link java.lang.String} object.
+	 */
 	public void setUuid(String uuid) {
 		this.uuid = uuid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>vendor</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVendor() {
 		return this.vendor;
 	}
+	/**
+	 * <p>Setter for the field <code>vendor</code>.</p>
+	 *
+	 * @param vendor a {@link java.lang.String} object.
+	 */
 	public void setVendor(String vendor) {
 		this.vendor = vendor;
 	}

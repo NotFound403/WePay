@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑客分佣创建
  *
  * @author auto create
- * @since 1.0, 2017-04-11 14:04:51
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionMissionCreateModel extends AlipayObject {
 
@@ -74,51 +74,121 @@ group_id：为ext_info中的SMART_PROMO_GROUP_ID(方案组ID),
 	@ApiField("smart_promo")
 	private KbadvertSmartPromoRequest smartPromo;
 
+	/**
+	 * <p>Getter for the field <code>commissionClause</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbAdvertCommissionClause> getCommissionClause() {
 		return this.commissionClause;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionClause</code>.</p>
+	 *
+	 * @param commissionClause a {@link java.util.List} object.
+	 */
 	public void setCommissionClause(List<KbAdvertCommissionClause> commissionClause) {
 		this.commissionClause = commissionClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identify</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentify() {
 		return this.identify;
 	}
+	/**
+	 * <p>Setter for the field <code>identify</code>.</p>
+	 *
+	 * @param identify a {@link java.lang.String} object.
+	 */
 	public void setIdentify(String identify) {
 		this.identify = identify;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentifyType() {
 		return this.identifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>identifyType</code>.</p>
+	 *
+	 * @param identifyType a {@link java.lang.String} object.
+	 */
 	public void setIdentifyType(String identifyType) {
 		this.identifyType = identifyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operatorId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorId() {
 		return this.operatorId;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorId</code>.</p>
+	 *
+	 * @param operatorId a {@link java.lang.String} object.
+	 */
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operatorType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorType() {
 		return this.operatorType;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorType</code>.</p>
+	 *
+	 * @param operatorType a {@link java.lang.String} object.
+	 */
 	public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>smartPromo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbadvertSmartPromoRequest} object.
+	 */
 	public KbadvertSmartPromoRequest getSmartPromo() {
 		return this.smartPromo;
 	}
+	/**
+	 * <p>Setter for the field <code>smartPromo</code>.</p>
+	 *
+	 * @param smartPromo a {@link cn.felord.wepay.ali.sdk.api.domain.KbadvertSmartPromoRequest} object.
+	 */
 	public void setSmartPromo(KbadvertSmartPromoRequest smartPromo) {
 		this.smartPromo = smartPromo;
 	}

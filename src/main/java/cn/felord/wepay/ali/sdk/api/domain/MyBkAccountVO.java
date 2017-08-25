@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 账号信息
  *
  * @author auto create
- * @since 1.0, 2017-05-19 11:45:40
+ * @version $Id: $Id
  */
 public class MyBkAccountVO extends AlipayObject {
 
@@ -79,79 +79,189 @@ public class MyBkAccountVO extends AlipayObject {
 	@ApiField("refuse_code")
 	private String refuseCode;
 
+	/**
+	 * <p>Getter for the field <code>accountExtNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountExtNo() {
 		return this.accountExtNo;
 	}
+	/**
+	 * <p>Setter for the field <code>accountExtNo</code>.</p>
+	 *
+	 * @param accountExtNo a {@link java.lang.String} object.
+	 */
 	public void setAccountExtNo(String accountExtNo) {
 		this.accountExtNo = accountExtNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountFipBranchCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountFipBranchCode() {
 		return this.accountFipBranchCode;
 	}
+	/**
+	 * <p>Setter for the field <code>accountFipBranchCode</code>.</p>
+	 *
+	 * @param accountFipBranchCode a {@link java.lang.String} object.
+	 */
 	public void setAccountFipBranchCode(String accountFipBranchCode) {
 		this.accountFipBranchCode = accountFipBranchCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountFipCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountFipCode() {
 		return this.accountFipCode;
 	}
+	/**
+	 * <p>Setter for the field <code>accountFipCode</code>.</p>
+	 *
+	 * @param accountFipCode a {@link java.lang.String} object.
+	 */
 	public void setAccountFipCode(String accountFipCode) {
 		this.accountFipCode = accountFipCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountFipName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountFipName() {
 		return this.accountFipName;
 	}
+	/**
+	 * <p>Setter for the field <code>accountFipName</code>.</p>
+	 *
+	 * @param accountFipName a {@link java.lang.String} object.
+	 */
 	public void setAccountFipName(String accountFipName) {
 		this.accountFipName = accountFipName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountNo() {
 		return this.accountNo;
 	}
+	/**
+	 * <p>Setter for the field <code>accountNo</code>.</p>
+	 *
+	 * @param accountNo a {@link java.lang.String} object.
+	 */
 	public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountType() {
 		return this.accountType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountType</code>.</p>
+	 *
+	 * @param accountType a {@link java.lang.String} object.
+	 */
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>available</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAvailable() {
 		return this.available;
 	}
+	/**
+	 * <p>Setter for the field <code>available</code>.</p>
+	 *
+	 * @param available a {@link java.lang.String} object.
+	 */
 	public void setAvailable(String available) {
 		this.available = available;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bankCardCategory</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBankCardCategory() {
 		return this.bankCardCategory;
 	}
+	/**
+	 * <p>Setter for the field <code>bankCardCategory</code>.</p>
+	 *
+	 * @param bankCardCategory a {@link java.lang.String} object.
+	 */
 	public void setBankCardCategory(String bankCardCategory) {
 		this.bankCardCategory = bankCardCategory;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardHolderName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardHolderName() {
 		return this.cardHolderName;
 	}
+	/**
+	 * <p>Setter for the field <code>cardHolderName</code>.</p>
+	 *
+	 * @param cardHolderName a {@link java.lang.String} object.
+	 */
 	public void setCardHolderName(String cardHolderName) {
 		this.cardHolderName = cardHolderName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>grantChannel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGrantChannel() {
 		return this.grantChannel;
 	}
+	/**
+	 * <p>Setter for the field <code>grantChannel</code>.</p>
+	 *
+	 * @param grantChannel a {@link java.lang.String} object.
+	 */
 	public void setGrantChannel(String grantChannel) {
 		this.grantChannel = grantChannel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refuseCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefuseCode() {
 		return this.refuseCode;
 	}
+	/**
+	 * <p>Setter for the field <code>refuseCode</code>.</p>
+	 *
+	 * @param refuseCode a {@link java.lang.String} object.
+	 */
 	public void setRefuseCode(String refuseCode) {
 		this.refuseCode = refuseCode;
 	}

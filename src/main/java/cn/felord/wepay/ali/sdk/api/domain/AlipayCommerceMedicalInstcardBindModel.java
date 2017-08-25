@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用于支付宝用户通过医院服务窗绑定当地社保卡
  *
  * @author auto create
- * @since 1.0, 2017-06-09 11:56:55
+ * @version $Id: $Id
  */
 public class AlipayCommerceMedicalInstcardBindModel extends AlipayObject {
 
@@ -26,16 +26,36 @@ http://www.stats.gov.cn/tjsj/tjbz/xzqhdm
 	@ApiField("return_url")
 	private String returnUrl;
 
+	/**
+	 * <p>Getter for the field <code>cityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityCode() {
 		return this.cityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>cityCode</code>.</p>
+	 *
+	 * @param cityCode a {@link java.lang.String} object.
+	 */
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @param returnUrl a {@link java.lang.String} object.
+	 */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}

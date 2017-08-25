@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 推广数据结构
  *
  * @author auto create
- * @since 1.0, 2017-02-16 20:40:10
+ * @version $Id: $Id
  */
 public class PromoteDataModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class PromoteDataModel extends AlipayObject {
 	@ApiField("commission_amount")
 	private String commissionAmount;
 
+	/**
+	 * <p>Getter for the field <code>checkedVoucherNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCheckedVoucherNum() {
 		return this.checkedVoucherNum;
 	}
+	/**
+	 * <p>Setter for the field <code>checkedVoucherNum</code>.</p>
+	 *
+	 * @param checkedVoucherNum a {@link java.lang.Long} object.
+	 */
 	public void setCheckedVoucherNum(Long checkedVoucherNum) {
 		this.checkedVoucherNum = checkedVoucherNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>claimVoucherNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getClaimVoucherNum() {
 		return this.claimVoucherNum;
 	}
+	/**
+	 * <p>Setter for the field <code>claimVoucherNum</code>.</p>
+	 *
+	 * @param claimVoucherNum a {@link java.lang.Long} object.
+	 */
 	public void setClaimVoucherNum(Long claimVoucherNum) {
 		this.claimVoucherNum = claimVoucherNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>commissionAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommissionAmount() {
 		return this.commissionAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionAmount</code>.</p>
+	 *
+	 * @param commissionAmount a {@link java.lang.String} object.
+	 */
 	public void setCommissionAmount(String commissionAmount) {
 		this.commissionAmount = commissionAmount;
 	}

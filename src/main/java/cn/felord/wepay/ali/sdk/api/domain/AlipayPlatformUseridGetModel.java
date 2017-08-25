@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 根据OpenId获取UserId
  *
  * @author auto create
- * @since 1.0, 2016-02-19 20:04:41
+ * @version $Id: $Id
  */
 public class AlipayPlatformUseridGetModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayPlatformUseridGetModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> openIds;
 
+	/**
+	 * <p>Getter for the field <code>openIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getOpenIds() {
 		return this.openIds;
 	}
+	/**
+	 * <p>Setter for the field <code>openIds</code>.</p>
+	 *
+	 * @param openIds a {@link java.util.List} object.
+	 */
 	public void setOpenIds(List<String> openIds) {
 		this.openIds = openIds;
 	}

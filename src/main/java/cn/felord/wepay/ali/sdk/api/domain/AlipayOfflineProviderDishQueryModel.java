@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑菜品热度查询
  *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:32
+ * @version $Id: $Id
  */
 public class AlipayOfflineProviderDishQueryModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class AlipayOfflineProviderDishQueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Getter for the field <code>dishTypeName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDishTypeName() {
 		return this.dishTypeName;
 	}
+	/**
+	 * <p>Setter for the field <code>dishTypeName</code>.</p>
+	 *
+	 * @param dishTypeName a {@link java.lang.String} object.
+	 */
 	public void setDishTypeName(String dishTypeName) {
 		this.dishTypeName = dishTypeName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderBy</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderBy() {
 		return this.orderBy;
 	}
+	/**
+	 * <p>Setter for the field <code>orderBy</code>.</p>
+	 *
+	 * @param orderBy a {@link java.lang.String} object.
+	 */
 	public void setOrderBy(String orderBy) {
 		this.orderBy = orderBy;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outerDishId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOuterDishId() {
 		return this.outerDishId;
 	}
+	/**
+	 * <p>Setter for the field <code>outerDishId</code>.</p>
+	 *
+	 * @param outerDishId a {@link java.lang.String} object.
+	 */
 	public void setOuterDishId(String outerDishId) {
 		this.outerDishId = outerDishId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>page</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPage() {
 		return this.page;
 	}
+	/**
+	 * <p>Setter for the field <code>page</code>.</p>
+	 *
+	 * @param page a {@link java.lang.Long} object.
+	 */
 	public void setPage(Long page) {
 		this.page = page;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}

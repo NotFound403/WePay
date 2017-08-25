@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保额
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:49:26
+ * @version $Id: $Id
  */
 public class InsSumInsured extends AlipayObject {
 
@@ -47,37 +47,87 @@ public class InsSumInsured extends AlipayObject {
 	@ApiField("number")
 	private List<Long> sumInsureds;
 
+	/**
+	 * <p>Getter for the field <code>defaultValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getDefaultValue() {
 		return this.defaultValue;
 	}
+	/**
+	 * <p>Setter for the field <code>defaultValue</code>.</p>
+	 *
+	 * @param defaultValue a {@link java.lang.Long} object.
+	 */
 	public void setDefaultValue(Long defaultValue) {
 		this.defaultValue = defaultValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getMaxValue() {
 		return this.maxValue;
 	}
+	/**
+	 * <p>Setter for the field <code>maxValue</code>.</p>
+	 *
+	 * @param maxValue a {@link java.lang.Long} object.
+	 */
 	public void setMaxValue(Long maxValue) {
 		this.maxValue = maxValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>minValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getMinValue() {
 		return this.minValue;
 	}
+	/**
+	 * <p>Setter for the field <code>minValue</code>.</p>
+	 *
+	 * @param minValue a {@link java.lang.Long} object.
+	 */
 	public void setMinValue(Long minValue) {
 		this.minValue = minValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sumInsuredType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSumInsuredType() {
 		return this.sumInsuredType;
 	}
+	/**
+	 * <p>Setter for the field <code>sumInsuredType</code>.</p>
+	 *
+	 * @param sumInsuredType a {@link java.lang.String} object.
+	 */
 	public void setSumInsuredType(String sumInsuredType) {
 		this.sumInsuredType = sumInsuredType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sumInsureds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Long> getSumInsureds() {
 		return this.sumInsureds;
 	}
+	/**
+	 * <p>Setter for the field <code>sumInsureds</code>.</p>
+	 *
+	 * @param sumInsureds a {@link java.util.List} object.
+	 */
 	public void setSumInsureds(List<Long> sumInsureds) {
 		this.sumInsureds = sumInsureds;
 	}

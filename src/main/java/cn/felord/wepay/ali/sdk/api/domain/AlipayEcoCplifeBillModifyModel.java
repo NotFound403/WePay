@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 修改已上传的物业费账单数据
  *
  * @author auto create
- * @since 1.0, 2017-01-18 16:45:48
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillModifyModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayEcoCplifeBillModifyModel extends AlipayObject {
 	@ApiField("community_id")
 	private String communityId;
 
+	/**
+	 * <p>Getter for the field <code>billEntryList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CPBillModifySet> getBillEntryList() {
 		return this.billEntryList;
 	}
+	/**
+	 * <p>Setter for the field <code>billEntryList</code>.</p>
+	 *
+	 * @param billEntryList a {@link java.util.List} object.
+	 */
 	public void setBillEntryList(List<CPBillModifySet> billEntryList) {
 		this.billEntryList = billEntryList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}

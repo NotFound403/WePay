@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统创建或者删除广告内容时的请求参数
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:46
+ * @version $Id: $Id
  */
 public class KbAdvertSpecialAdvContentRequest extends AlipayObject {
 
@@ -26,16 +26,36 @@ public class KbAdvertSpecialAdvContentRequest extends AlipayObject {
 	@ApiField("content_type")
 	private String contentType;
 
+	/**
+	 * <p>Getter for the field <code>contentPasswordModify</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertContentPasswordModify} object.
+	 */
 	public KbAdvertContentPasswordModify getContentPasswordModify() {
 		return this.contentPasswordModify;
 	}
+	/**
+	 * <p>Setter for the field <code>contentPasswordModify</code>.</p>
+	 *
+	 * @param contentPasswordModify a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertContentPasswordModify} object.
+	 */
 	public void setContentPasswordModify(KbAdvertContentPasswordModify contentPasswordModify) {
 		this.contentPasswordModify = contentPasswordModify;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentType() {
 		return this.contentType;
 	}
+	/**
+	 * <p>Setter for the field <code>contentType</code>.</p>
+	 *
+	 * @param contentType a {@link java.lang.String} object.
+	 */
 	public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}

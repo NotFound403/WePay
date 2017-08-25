@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.order.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-30 11:55:47
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderCancelResponse extends AlipayResponse {
 

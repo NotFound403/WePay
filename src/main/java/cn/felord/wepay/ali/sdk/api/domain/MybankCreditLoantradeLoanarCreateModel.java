@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 机构代客户签署合约并放款
  *
  * @author auto create
- * @since 1.0, 2017-05-27 13:37:02
+ * @version $Id: $Id
  */
 public class MybankCreditLoantradeLoanarCreateModel extends AlipayObject {
 
@@ -190,177 +190,427 @@ D：日
 	@ApiField("trans_memo")
 	private String transMemo;
 
+	/**
+	 * <p>Getter for the field <code>accountExtNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountExtNo() {
 		return this.accountExtNo;
 	}
+	/**
+	 * <p>Setter for the field <code>accountExtNo</code>.</p>
+	 *
+	 * @param accountExtNo a {@link java.lang.String} object.
+	 */
 	public void setAccountExtNo(String accountExtNo) {
 		this.accountExtNo = accountExtNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountFinCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountFinCode() {
 		return this.accountFinCode;
 	}
+	/**
+	 * <p>Setter for the field <code>accountFinCode</code>.</p>
+	 *
+	 * @param accountFinCode a {@link java.lang.String} object.
+	 */
 	public void setAccountFinCode(String accountFinCode) {
 		this.accountFinCode = accountFinCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountFinName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountFinName() {
 		return this.accountFinName;
 	}
+	/**
+	 * <p>Setter for the field <code>accountFinName</code>.</p>
+	 *
+	 * @param accountFinName a {@link java.lang.String} object.
+	 */
 	public void setAccountFinName(String accountFinName) {
 		this.accountFinName = accountFinName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountFinType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountFinType() {
 		return this.accountFinType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountFinType</code>.</p>
+	 *
+	 * @param accountFinType a {@link java.lang.String} object.
+	 */
 	public void setAccountFinType(String accountFinType) {
 		this.accountFinType = accountFinType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountName() {
 		return this.accountName;
 	}
+	/**
+	 * <p>Setter for the field <code>accountName</code>.</p>
+	 *
+	 * @param accountName a {@link java.lang.String} object.
+	 */
 	public void setAccountName(String accountName) {
 		this.accountName = accountName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountNo() {
 		return this.accountNo;
 	}
+	/**
+	 * <p>Setter for the field <code>accountNo</code>.</p>
+	 *
+	 * @param accountNo a {@link java.lang.String} object.
+	 */
 	public void setAccountNo(String accountNo) {
 		this.accountNo = accountNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountType() {
 		return this.accountType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountType</code>.</p>
+	 *
+	 * @param accountType a {@link java.lang.String} object.
+	 */
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>alipayId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayId() {
 		return this.alipayId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayId</code>.</p>
+	 *
+	 * @param alipayId a {@link java.lang.String} object.
+	 */
 	public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyAmt() {
 		return this.applyAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>applyAmt</code>.</p>
+	 *
+	 * @param applyAmt a {@link java.lang.String} object.
+	 */
 	public void setApplyAmt(String applyAmt) {
 		this.applyAmt = applyAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bsnNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBsnNo() {
 		return this.bsnNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bsnNo</code>.</p>
+	 *
+	 * @param bsnNo a {@link java.lang.String} object.
+	 */
 	public void setBsnNo(String bsnNo) {
 		this.bsnNo = bsnNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>creditNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreditNo() {
 		return this.creditNo;
 	}
+	/**
+	 * <p>Setter for the field <code>creditNo</code>.</p>
+	 *
+	 * @param creditNo a {@link java.lang.String} object.
+	 */
 	public void setCreditNo(String creditNo) {
 		this.creditNo = creditNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>custGroup</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCustGroup() {
 		return this.custGroup;
 	}
+	/**
+	 * <p>Setter for the field <code>custGroup</code>.</p>
+	 *
+	 * @param custGroup a {@link java.lang.String} object.
+	 */
 	public void setCustGroup(String custGroup) {
 		this.custGroup = custGroup;
 	}
 
+	/**
+	 * <p>Getter for the field <code>grantChannel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGrantChannel() {
 		return this.grantChannel;
 	}
+	/**
+	 * <p>Setter for the field <code>grantChannel</code>.</p>
+	 *
+	 * @param grantChannel a {@link java.lang.String} object.
+	 */
 	public void setGrantChannel(String grantChannel) {
 		this.grantChannel = grantChannel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>industry</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIndustry() {
 		return this.industry;
 	}
+	/**
+	 * <p>Setter for the field <code>industry</code>.</p>
+	 *
+	 * @param industry a {@link java.lang.String} object.
+	 */
 	public void setIndustry(String industry) {
 		this.industry = industry;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ipId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIpId() {
 		return this.ipId;
 	}
+	/**
+	 * <p>Setter for the field <code>ipId</code>.</p>
+	 *
+	 * @param ipId a {@link java.lang.String} object.
+	 */
 	public void setIpId(String ipId) {
 		this.ipId = ipId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIpRoleId() {
 		return this.ipRoleId;
 	}
+	/**
+	 * <p>Setter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @param ipRoleId a {@link java.lang.String} object.
+	 */
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanPolicyCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanPolicyCode() {
 		return this.loanPolicyCode;
 	}
+	/**
+	 * <p>Setter for the field <code>loanPolicyCode</code>.</p>
+	 *
+	 * @param loanPolicyCode a {@link java.lang.String} object.
+	 */
 	public void setLoanPolicyCode(String loanPolicyCode) {
 		this.loanPolicyCode = loanPolicyCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanTerm</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getLoanTerm() {
 		return this.loanTerm;
 	}
+	/**
+	 * <p>Setter for the field <code>loanTerm</code>.</p>
+	 *
+	 * @param loanTerm a {@link java.lang.Long} object.
+	 */
 	public void setLoanTerm(Long loanTerm) {
 		this.loanTerm = loanTerm;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanTermUnit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanTermUnit() {
 		return this.loanTermUnit;
 	}
+	/**
+	 * <p>Setter for the field <code>loanTermUnit</code>.</p>
+	 *
+	 * @param loanTermUnit a {@link java.lang.String} object.
+	 */
 	public void setLoanTermUnit(String loanTermUnit) {
 		this.loanTermUnit = loanTermUnit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pdCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPdCode() {
 		return this.pdCode;
 	}
+	/**
+	 * <p>Setter for the field <code>pdCode</code>.</p>
+	 *
+	 * @param pdCode a {@link java.lang.String} object.
+	 */
 	public void setPdCode(String pdCode) {
 		this.pdCode = pdCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pdVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPdVersion() {
 		return this.pdVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>pdVersion</code>.</p>
+	 *
+	 * @param pdVersion a {@link java.lang.String} object.
+	 */
 	public void setPdVersion(String pdVersion) {
 		this.pdVersion = pdVersion;
 	}
 
+	/**
+	 * <p>Getter for the field <code>repayMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRepayMode() {
 		return this.repayMode;
 	}
+	/**
+	 * <p>Setter for the field <code>repayMode</code>.</p>
+	 *
+	 * @param repayMode a {@link java.lang.String} object.
+	 */
 	public void setRepayMode(String repayMode) {
 		this.repayMode = repayMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sign</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSign() {
 		return this.sign;
 	}
+	/**
+	 * <p>Setter for the field <code>sign</code>.</p>
+	 *
+	 * @param sign a {@link java.lang.String} object.
+	 */
 	public void setSign(String sign) {
 		this.sign = sign;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransMemo() {
 		return this.transMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>transMemo</code>.</p>
+	 *
+	 * @param transMemo a {@link java.lang.String} object.
+	 */
 	public void setTransMemo(String transMemo) {
 		this.transMemo = transMemo;
 	}

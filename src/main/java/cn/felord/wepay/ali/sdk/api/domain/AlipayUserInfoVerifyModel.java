@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝会员信息验证
  *
  * @author auto create
- * @since 1.0, 2017-06-14 10:16:09
+ * @version $Id: $Id
  */
 public class AlipayUserInfoVerifyModel extends AlipayObject {
 
@@ -35,9 +35,19 @@ public class AlipayUserInfoVerifyModel extends AlipayObject {
 	@ApiField("request")
 	private String request;
 
+	/**
+	 * <p>Getter for the field <code>request</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequest() {
 		return this.request;
 	}
+	/**
+	 * <p>Setter for the field <code>request</code>.</p>
+	 *
+	 * @param request a {@link java.lang.String} object.
+	 */
 	public void setRequest(String request) {
 		this.request = request;
 	}

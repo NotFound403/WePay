@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.bill.downloadurl.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 11:43:02
+ * @version $Id: $Id
  */
 public class AlipayDataBillDownloadurlGetResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayDataBillDownloadurlGetResponse extends AlipayResponse {
 	@ApiField("bill_download_url")
 	private String billDownloadUrl;
 
+	/**
+	 * <p>Setter for the field <code>billDownloadUrl</code>.</p>
+	 *
+	 * @param billDownloadUrl a {@link java.lang.String} object.
+	 */
 	public void setBillDownloadUrl(String billDownloadUrl) {
 		this.billDownloadUrl = billDownloadUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>billDownloadUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillDownloadUrl( ) {
 		return this.billDownloadUrl;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 统一对外错误码测试测试
  *
  * @author auto create
- * @since 1.0, 2016-05-11 19:51:24
+ * @version $Id: $Id
  */
 public class AlipayOpenAppCodetesttestModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenAppCodetesttestModel extends AlipayObject {
 	@ApiField("testtestparam")
 	private String testtestparam;
 
+	/**
+	 * <p>Getter for the field <code>testparam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTestparam() {
 		return this.testparam;
 	}
+	/**
+	 * <p>Setter for the field <code>testparam</code>.</p>
+	 *
+	 * @param testparam a {@link java.lang.String} object.
+	 */
 	public void setTestparam(String testparam) {
 		this.testparam = testparam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>testtestparam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTesttestparam() {
 		return this.testtestparam;
 	}
+	/**
+	 * <p>Setter for the field <code>testtestparam</code>.</p>
+	 *
+	 * @param testtestparam a {@link java.lang.String} object.
+	 */
 	public void setTesttestparam(String testtestparam) {
 		this.testtestparam = testtestparam;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.group.crowd.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 15:10:43
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicGroupCrowdQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicGroupCrowdQueryResponse extends AlipayResponse {
 	@ApiField("count")
 	private String count;
 
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.String} object.
+	 */
 	public void setCount(String count) {
 		this.count = count;
 	}
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCount( ) {
 		return this.count;
 	}

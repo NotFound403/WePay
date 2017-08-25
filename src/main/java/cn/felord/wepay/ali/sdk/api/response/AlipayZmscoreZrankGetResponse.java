@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zmscore.zrank.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:12
+ * @version $Id: $Id
  */
 public class AlipayZmscoreZrankGetResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayZmscoreZrankGetResponse extends AlipayResponse {
 	@ApiField("zm_score_zrank")
 	private AlipayZmScoreZrankResult zmScoreZrank;
 
+	/**
+	 * <p>Setter for the field <code>zmScoreZrank</code>.</p>
+	 *
+	 * @param zmScoreZrank a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayZmScoreZrankResult} object.
+	 */
 	public void setZmScoreZrank(AlipayZmScoreZrankResult zmScoreZrank) {
 		this.zmScoreZrank = zmScoreZrank;
 	}
+	/**
+	 * <p>Getter for the field <code>zmScoreZrank</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayZmScoreZrankResult} object.
+	 */
 	public AlipayZmScoreZrankResult getZmScoreZrank( ) {
 		return this.zmScoreZrank;
 	}

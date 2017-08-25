@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券模板批量查询响应
  *
  * @author auto create
- * @since 1.0, 2017-03-28 22:18:14
+ * @version $Id: $Id
  */
 public class VoucherTemplateLiteInfo extends AlipayObject {
 
@@ -57,51 +57,121 @@ public class VoucherTemplateLiteInfo extends AlipayObject {
 	@ApiField("voucher_name")
 	private String voucherName;
 
+	/**
+	 * <p>Getter for the field <code>activateTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getActivateTime() {
 		return this.activateTime;
 	}
+	/**
+	 * <p>Setter for the field <code>activateTime</code>.</p>
+	 *
+	 * @param activateTime a {@link java.util.Date} object.
+	 */
 	public void setActivateTime(Date activateTime) {
 		this.activateTime = activateTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>createTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getCreateTime() {
 		return this.createTime;
 	}
+	/**
+	 * <p>Setter for the field <code>createTime</code>.</p>
+	 *
+	 * @param createTime a {@link java.util.Date} object.
+	 */
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @param publishEndTime a {@link java.util.Date} object.
+	 */
 	public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishStartTime() {
 		return this.publishStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishStartTime</code>.</p>
+	 *
+	 * @param publishStartTime a {@link java.util.Date} object.
+	 */
 	public void setPublishStartTime(Date publishStartTime) {
 		this.publishStartTime = publishStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherName() {
 		return this.voucherName;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherName</code>.</p>
+	 *
+	 * @param voucherName a {@link java.lang.String} object.
+	 */
 	public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}

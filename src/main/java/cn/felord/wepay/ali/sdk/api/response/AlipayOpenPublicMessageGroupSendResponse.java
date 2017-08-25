@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.message.group.send response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-04 11:09:34
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMessageGroupSendResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicMessageGroupSendResponse extends AlipayResponse {
 	@ApiField("message_id")
 	private String messageId;
 
+	/**
+	 * <p>Setter for the field <code>messageId</code>.</p>
+	 *
+	 * @param messageId a {@link java.lang.String} object.
+	 */
 	public void setMessageId(String messageId) {
 		this.messageId = messageId;
 	}
+	/**
+	 * <p>Getter for the field <code>messageId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMessageId( ) {
 		return this.messageId;
 	}

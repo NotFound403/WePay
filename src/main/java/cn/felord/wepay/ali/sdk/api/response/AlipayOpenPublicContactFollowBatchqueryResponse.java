@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.contact.follow.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:56:17
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicContactFollowBatchqueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayOpenPublicContactFollowBatchqueryResponse extends AlipayRespo
 	@ApiField("contact_follower")
 	private List<ContactFollower> contactFollowList;
 
+	/**
+	 * <p>Setter for the field <code>contactFollowList</code>.</p>
+	 *
+	 * @param contactFollowList a {@link java.util.List} object.
+	 */
 	public void setContactFollowList(List<ContactFollower> contactFollowList) {
 		this.contactFollowList = contactFollowList;
 	}
+	/**
+	 * <p>Getter for the field <code>contactFollowList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ContactFollower> getContactFollowList( ) {
 		return this.contactFollowList;
 	}

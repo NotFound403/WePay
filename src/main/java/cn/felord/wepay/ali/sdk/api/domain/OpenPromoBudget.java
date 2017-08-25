@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 开放活动－预算
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class OpenPromoBudget extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class OpenPromoBudget extends AlipayObject {
 	@ApiField("budget_type")
 	private String budgetType;
 
+	/**
+	 * <p>Getter for the field <code>budgetTotal</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBudgetTotal() {
 		return this.budgetTotal;
 	}
+	/**
+	 * <p>Setter for the field <code>budgetTotal</code>.</p>
+	 *
+	 * @param budgetTotal a {@link java.lang.String} object.
+	 */
 	public void setBudgetTotal(String budgetTotal) {
 		this.budgetTotal = budgetTotal;
 	}
 
+	/**
+	 * <p>Getter for the field <code>budgetType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBudgetType() {
 		return this.budgetType;
 	}
+	/**
+	 * <p>Setter for the field <code>budgetType</code>.</p>
+	 *
+	 * @param budgetType a {@link java.lang.String} object.
+	 */
 	public void setBudgetType(String budgetType) {
 		this.budgetType = budgetType;
 	}

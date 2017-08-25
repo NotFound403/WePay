@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cdp.advertise.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-01 15:29:02
+ * @version $Id: $Id
  */
 public class AlipayMarketingCdpAdvertiseCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCdpAdvertiseCreateResponse extends AlipayResponse {
 	@ApiField("ad_id")
 	private String adId;
 
+	/**
+	 * <p>Setter for the field <code>adId</code>.</p>
+	 *
+	 * @param adId a {@link java.lang.String} object.
+	 */
 	public void setAdId(String adId) {
 		this.adId = adId;
 	}
+	/**
+	 * <p>Getter for the field <code>adId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdId( ) {
 		return this.adId;
 	}

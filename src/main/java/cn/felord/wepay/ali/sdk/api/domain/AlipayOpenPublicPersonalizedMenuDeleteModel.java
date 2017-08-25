@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 个性化菜单删除
  *
  * @author auto create
- * @since 1.0, 2017-05-25 11:40:15
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPersonalizedMenuDeleteModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenPublicPersonalizedMenuDeleteModel extends AlipayObject {
 	@ApiField("menu_key")
 	private String menuKey;
 
+	/**
+	 * <p>Getter for the field <code>menuKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMenuKey() {
 		return this.menuKey;
 	}
+	/**
+	 * <p>Setter for the field <code>menuKey</code>.</p>
+	 *
+	 * @param menuKey a {@link java.lang.String} object.
+	 */
 	public void setMenuKey(String menuKey) {
 		this.menuKey = menuKey;
 	}

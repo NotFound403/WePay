@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统推广详情
  *
  * @author auto create
- * @since 1.0, 2017-01-13 18:49:18
+ * @version $Id: $Id
  */
 public class KbAdvertAdvResponse extends AlipayObject {
 
@@ -38,30 +38,70 @@ public class KbAdvertAdvResponse extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>advId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdvId() {
 		return this.advId;
 	}
+	/**
+	 * <p>Setter for the field <code>advId</code>.</p>
+	 *
+	 * @param advId a {@link java.lang.String} object.
+	 */
 	public void setAdvId(String advId) {
 		this.advId = advId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>singleVoucher</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertAdvSingleVoucherResponse} object.
+	 */
 	public KbAdvertAdvSingleVoucherResponse getSingleVoucher() {
 		return this.singleVoucher;
 	}
+	/**
+	 * <p>Setter for the field <code>singleVoucher</code>.</p>
+	 *
+	 * @param singleVoucher a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertAdvSingleVoucherResponse} object.
+	 */
 	public void setSingleVoucher(KbAdvertAdvSingleVoucherResponse singleVoucher) {
 		this.singleVoucher = singleVoucher;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

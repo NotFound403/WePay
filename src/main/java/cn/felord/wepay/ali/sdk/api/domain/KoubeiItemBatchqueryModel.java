@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑商品查询
  *
  * @author auto create
- * @since 1.0, 2017-05-31 21:37:14
+ * @version $Id: $Id
  */
 public class KoubeiItemBatchqueryModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class KoubeiItemBatchqueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemIds</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemIds() {
 		return this.itemIds;
 	}
+	/**
+	 * <p>Setter for the field <code>itemIds</code>.</p>
+	 *
+	 * @param itemIds a {@link java.lang.String} object.
+	 */
 	public void setItemIds(String itemIds) {
 		this.itemIds = itemIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operationContext</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KoubeiOperationContext} object.
+	 */
 	public KoubeiOperationContext getOperationContext() {
 		return this.operationContext;
 	}
+	/**
+	 * <p>Setter for the field <code>operationContext</code>.</p>
+	 *
+	 * @param operationContext a {@link cn.felord.wepay.ali.sdk.api.domain.KoubeiOperationContext} object.
+	 */
 	public void setOperationContext(KoubeiOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNo() {
 		return this.pageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNo</code>.</p>
+	 *
+	 * @param pageNo a {@link java.lang.String} object.
+	 */
 	public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}

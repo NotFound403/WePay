@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 物业社区平台房屋信息Mapping关系.
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:09:00
+ * @version $Id: $Id
  */
 public class CplifeRoomInfoResp extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class CplifeRoomInfoResp extends AlipayObject {
 	@ApiField("room_id")
 	private String roomId;
 
+	/**
+	 * <p>Getter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRoomId() {
 		return this.outRoomId;
 	}
+	/**
+	 * <p>Setter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @param outRoomId a {@link java.lang.String} object.
+	 */
 	public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>roomId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRoomId() {
 		return this.roomId;
 	}
+	/**
+	 * <p>Setter for the field <code>roomId</code>.</p>
+	 *
+	 * @param roomId a {@link java.lang.String} object.
+	 */
 	public void setRoomId(String roomId) {
 		this.roomId = roomId;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.credit.score.brief.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-06 14:40:27
+ * @version $Id: $Id
  */
 public class ZhimaCreditScoreBriefGetResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class ZhimaCreditScoreBriefGetResponse extends AlipayResponse {
 	@ApiField("is_admittance")
 	private String isAdmittance;
 
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo( ) {
 		return this.bizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isAdmittance</code>.</p>
+	 *
+	 * @param isAdmittance a {@link java.lang.String} object.
+	 */
 	public void setIsAdmittance(String isAdmittance) {
 		this.isAdmittance = isAdmittance;
 	}
+	/**
+	 * <p>Getter for the field <code>isAdmittance</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsAdmittance( ) {
 		return this.isAdmittance;
 	}

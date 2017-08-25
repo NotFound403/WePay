@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 删除资金券模板
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:27:18
+ * @version $Id: $Id
  */
 public class AlipayMarketingVoucherTemplateDeleteModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayMarketingVoucherTemplateDeleteModel extends AlipayObject {
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}

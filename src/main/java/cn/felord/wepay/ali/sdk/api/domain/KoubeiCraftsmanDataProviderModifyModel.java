@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 修改手艺人信息接口
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:27:35
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataProviderModifyModel extends AlipayObject {
 
@@ -92,86 +92,206 @@ public class KoubeiCraftsmanDataProviderModifyModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>avatar</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAvatar() {
 		return this.avatar;
 	}
+	/**
+	 * <p>Setter for the field <code>avatar</code>.</p>
+	 *
+	 * @param avatar a {@link java.lang.String} object.
+	 */
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
 
+	/**
+	 * <p>Getter for the field <code>careerBegin</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCareerBegin() {
 		return this.careerBegin;
 	}
+	/**
+	 * <p>Setter for the field <code>careerBegin</code>.</p>
+	 *
+	 * @param careerBegin a {@link java.lang.String} object.
+	 */
 	public void setCareerBegin(String careerBegin) {
 		this.careerBegin = careerBegin;
 	}
 
+	/**
+	 * <p>Getter for the field <code>careers</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getCareers() {
 		return this.careers;
 	}
+	/**
+	 * <p>Setter for the field <code>careers</code>.</p>
+	 *
+	 * @param careers a {@link java.util.List} object.
+	 */
 	public void setCareers(List<String> careers) {
 		this.careers = careers;
 	}
 
+	/**
+	 * <p>Getter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
+	/**
+	 * <p>Setter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @param craftsmanId a {@link java.lang.String} object.
+	 */
 	public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>introduction</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIntroduction() {
 		return this.introduction;
 	}
+	/**
+	 * <p>Setter for the field <code>introduction</code>.</p>
+	 *
+	 * @param introduction a {@link java.lang.String} object.
+	 */
 	public void setIntroduction(String introduction) {
 		this.introduction = introduction;
 	}
 
+	/**
+	 * <p>Getter for the field <code>nickName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNickName() {
 		return this.nickName;
 	}
+	/**
+	 * <p>Setter for the field <code>nickName</code>.</p>
+	 *
+	 * @param nickName a {@link java.lang.String} object.
+	 */
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outCraftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutCraftsmanId() {
 		return this.outCraftsmanId;
 	}
+	/**
+	 * <p>Setter for the field <code>outCraftsmanId</code>.</p>
+	 *
+	 * @param outCraftsmanId a {@link java.lang.String} object.
+	 */
 	public void setOutCraftsmanId(String outCraftsmanId) {
 		this.outCraftsmanId = outCraftsmanId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopRelations</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CraftsmanShopRelationOpenModel> getShopRelations() {
 		return this.shopRelations;
 	}
+	/**
+	 * <p>Setter for the field <code>shopRelations</code>.</p>
+	 *
+	 * @param shopRelations a {@link java.util.List} object.
+	 */
 	public void setShopRelations(List<CraftsmanShopRelationOpenModel> shopRelations) {
 		this.shopRelations = shopRelations;
 	}
 
+	/**
+	 * <p>Getter for the field <code>specialities</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getSpecialities() {
 		return this.specialities;
 	}
+	/**
+	 * <p>Setter for the field <code>specialities</code>.</p>
+	 *
+	 * @param specialities a {@link java.util.List} object.
+	 */
 	public void setSpecialities(List<String> specialities) {
 		this.specialities = specialities;
 	}
 
+	/**
+	 * <p>Getter for the field <code>telNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTelNum() {
 		return this.telNum;
 	}
+	/**
+	 * <p>Setter for the field <code>telNum</code>.</p>
+	 *
+	 * @param telNum a {@link java.lang.String} object.
+	 */
 	public void setTelNum(String telNum) {
 		this.telNum = telNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统创建口令红包模型
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:46
+ * @version $Id: $Id
  */
 public class KbAdvertContentPasswordModify extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class KbAdvertContentPasswordModify extends AlipayObject {
 	@ApiField("voucher_logo_id")
 	private String voucherLogoId;
 
+	/**
+	 * <p>Getter for the field <code>backgroundImgId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBackgroundImgId() {
 		return this.backgroundImgId;
 	}
+	/**
+	 * <p>Setter for the field <code>backgroundImgId</code>.</p>
+	 *
+	 * @param backgroundImgId a {@link java.lang.String} object.
+	 */
 	public void setBackgroundImgId(String backgroundImgId) {
 		this.backgroundImgId = backgroundImgId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>brandName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrandName() {
 		return this.brandName;
 	}
+	/**
+	 * <p>Setter for the field <code>brandName</code>.</p>
+	 *
+	 * @param brandName a {@link java.lang.String} object.
+	 */
 	public void setBrandName(String brandName) {
 		this.brandName = brandName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>password</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassword() {
 		return this.password;
 	}
+	/**
+	 * <p>Setter for the field <code>password</code>.</p>
+	 *
+	 * @param password a {@link java.lang.String} object.
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherLogoId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherLogoId() {
 		return this.voucherLogoId;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherLogoId</code>.</p>
+	 *
+	 * @param voucherLogoId a {@link java.lang.String} object.
+	 */
 	public void setVoucherLogoId(String voucherLogoId) {
 		this.voucherLogoId = voucherLogoId;
 	}

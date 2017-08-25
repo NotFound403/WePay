@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.discount.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-11 15:21:56
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopDiscountQueryResponse extends AlipayResponse {
 
@@ -31,16 +31,36 @@ public class AlipayOfflineMarketShopDiscountQueryResponse extends AlipayResponse
 	@ApiField("shop_discount_info")
 	private List<ShopDiscountInfo> itemList;
 
+	/**
+	 * <p>Setter for the field <code>discountList</code>.</p>
+	 *
+	 * @param discountList a {@link java.util.List} object.
+	 */
 	public void setDiscountList(List<ShopDiscountInfo> discountList) {
 		this.discountList = discountList;
 	}
+	/**
+	 * <p>Getter for the field <code>discountList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ShopDiscountInfo> getDiscountList( ) {
 		return this.discountList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemList</code>.</p>
+	 *
+	 * @param itemList a {@link java.util.List} object.
+	 */
 	public void setItemList(List<ShopDiscountInfo> itemList) {
 		this.itemList = itemList;
 	}
+	/**
+	 * <p>Getter for the field <code>itemList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ShopDiscountInfo> getItemList( ) {
 		return this.itemList;
 	}

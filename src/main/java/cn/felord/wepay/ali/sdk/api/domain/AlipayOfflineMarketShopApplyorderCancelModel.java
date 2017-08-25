@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 申请流水撤销
  *
  * @author auto create
- * @since 1.0, 2017-07-06 11:11:47
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopApplyorderCancelModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayOfflineMarketShopApplyorderCancelModel extends AlipayObject {
 	@ApiField("order_id")
 	private String orderId;
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpId() {
 		return this.opId;
 	}
+	/**
+	 * <p>Setter for the field <code>opId</code>.</p>
+	 *
+	 * @param opId a {@link java.lang.String} object.
+	 */
 	public void setOpId(String opId) {
 		this.opId = opId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderId() {
 		return this.orderId;
 	}
+	/**
+	 * <p>Setter for the field <code>orderId</code>.</p>
+	 *
+	 * @param orderId a {@link java.lang.String} object.
+	 */
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}

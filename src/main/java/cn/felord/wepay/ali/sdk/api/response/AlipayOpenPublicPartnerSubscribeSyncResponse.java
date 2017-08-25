@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.partner.subscribe.sync response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:24:36
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPartnerSubscribeSyncResponse extends AlipayResponse {
 

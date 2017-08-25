@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.personalized.extension.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-01 11:26:57
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicPersonalizedExtensionCreateResponse extends AlipayR
 	@ApiField("extension_key")
 	private String extensionKey;
 
+	/**
+	 * <p>Setter for the field <code>extensionKey</code>.</p>
+	 *
+	 * @param extensionKey a {@link java.lang.String} object.
+	 */
 	public void setExtensionKey(String extensionKey) {
 		this.extensionKey = extensionKey;
 	}
+	/**
+	 * <p>Getter for the field <code>extensionKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtensionKey( ) {
 		return this.extensionKey;
 	}

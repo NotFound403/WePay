@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝个人代扣协议查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-12 16:31:09
+ * @version $Id: $Id
  */
 public class AlipayUserAgreementQueryModel extends AlipayObject {
 
@@ -65,51 +65,121 @@ public class AlipayUserAgreementQueryModel extends AlipayObject {
 	@ApiField("third_party_type")
 	private String thirdPartyType;
 
+	/**
+	 * <p>Getter for the field <code>agreementNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementNo() {
 		return this.agreementNo;
 	}
+	/**
+	 * <p>Setter for the field <code>agreementNo</code>.</p>
+	 *
+	 * @param agreementNo a {@link java.lang.String} object.
+	 */
 	public void setAgreementNo(String agreementNo) {
 		this.agreementNo = agreementNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>alipayLogonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayLogonId() {
 		return this.alipayLogonId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayLogonId</code>.</p>
+	 *
+	 * @param alipayLogonId a {@link java.lang.String} object.
+	 */
 	public void setAlipayLogonId(String alipayLogonId) {
 		this.alipayLogonId = alipayLogonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @param alipayUserId a {@link java.lang.String} object.
+	 */
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalAgreementNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalAgreementNo() {
 		return this.externalAgreementNo;
 	}
+	/**
+	 * <p>Setter for the field <code>externalAgreementNo</code>.</p>
+	 *
+	 * @param externalAgreementNo a {@link java.lang.String} object.
+	 */
 	public void setExternalAgreementNo(String externalAgreementNo) {
 		this.externalAgreementNo = externalAgreementNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>personalProductCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPersonalProductCode() {
 		return this.personalProductCode;
 	}
+	/**
+	 * <p>Setter for the field <code>personalProductCode</code>.</p>
+	 *
+	 * @param personalProductCode a {@link java.lang.String} object.
+	 */
 	public void setPersonalProductCode(String personalProductCode) {
 		this.personalProductCode = personalProductCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>signScene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSignScene() {
 		return this.signScene;
 	}
+	/**
+	 * <p>Setter for the field <code>signScene</code>.</p>
+	 *
+	 * @param signScene a {@link java.lang.String} object.
+	 */
 	public void setSignScene(String signScene) {
 		this.signScene = signScene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thirdPartyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThirdPartyType() {
 		return this.thirdPartyType;
 	}
+	/**
+	 * <p>Setter for the field <code>thirdPartyType</code>.</p>
+	 *
+	 * @param thirdPartyType a {@link java.lang.String} object.
+	 */
 	public void setThirdPartyType(String thirdPartyType) {
 		this.thirdPartyType = thirdPartyType;
 	}

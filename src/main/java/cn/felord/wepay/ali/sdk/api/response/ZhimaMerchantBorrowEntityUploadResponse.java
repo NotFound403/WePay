@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.borrow.entity.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-17 19:04:38
+ * @version $Id: $Id
  */
 public class ZhimaMerchantBorrowEntityUploadResponse extends AlipayResponse {
 

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.acquire.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-05-28 11:58:01
+ * @version $Id: $Id
  */
 public class AlipayAcquireQueryResponse extends AlipayResponse {
 
@@ -71,58 +71,138 @@ PROCESS_EXCEPTION：处理异常
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Setter for the field <code>buyerLogonId</code>.</p>
+	 *
+	 * @param buyerLogonId a {@link java.lang.String} object.
+	 */
 	public void setBuyerLogonId(String buyerLogonId) {
 		this.buyerLogonId = buyerLogonId;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerLogonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerLogonId( ) {
 		return this.buyerLogonId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerUserId</code>.</p>
+	 *
+	 * @param buyerUserId a {@link java.lang.String} object.
+	 */
 	public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerUserId( ) {
 		return this.buyerUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @param detailErrorCode a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorCode(String detailErrorCode) {
 		this.detailErrorCode = detailErrorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorCode( ) {
 		return this.detailErrorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @param detailErrorDes a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorDes(String detailErrorDes) {
 		this.detailErrorDes = detailErrorDes;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorDes( ) {
 		return this.detailErrorDes;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>partner</code>.</p>
+	 *
+	 * @param partner a {@link java.lang.String} object.
+	 */
 	public void setPartner(String partner) {
 		this.partner = partner;
 	}
+	/**
+	 * <p>Getter for the field <code>partner</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartner( ) {
 		return this.partner;
 	}
 
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode( ) {
 		return this.resultCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}

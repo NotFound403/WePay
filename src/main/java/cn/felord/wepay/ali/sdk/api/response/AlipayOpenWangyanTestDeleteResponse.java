@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.wangyan.test.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-06 15:27:01
+ * @version $Id: $Id
  */
 public class AlipayOpenWangyanTestDeleteResponse extends AlipayResponse {
 

@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.work.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-13 16:33:05
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataWorkDeleteResponse extends AlipayResponse {
 

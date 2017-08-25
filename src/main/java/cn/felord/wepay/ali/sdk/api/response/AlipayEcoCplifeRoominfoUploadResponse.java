@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.roominfo.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:11
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeRoominfoUploadResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayEcoCplifeRoominfoUploadResponse extends AlipayResponse {
 	@ApiField("cplife_room_info_resp")
 	private List<CplifeRoomInfoResp> roomInfoSet;
 
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId( ) {
 		return this.communityId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>roomInfoSet</code>.</p>
+	 *
+	 * @param roomInfoSet a {@link java.util.List} object.
+	 */
 	public void setRoomInfoSet(List<CplifeRoomInfoResp> roomInfoSet) {
 		this.roomInfoSet = roomInfoSet;
 	}
+	/**
+	 * <p>Getter for the field <code>roomInfoSet</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CplifeRoomInfoResp> getRoomInfoSet( ) {
 		return this.roomInfoSet;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ins.scene.application.issue.confirm response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-18 11:34:53
+ * @version $Id: $Id
  */
 public class AlipayInsSceneApplicationIssueConfirmResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayInsSceneApplicationIssueConfirmResponse extends AlipayRespons
 	@ApiField("application_no")
 	private String applicationNo;
 
+	/**
+	 * <p>Setter for the field <code>applicationNo</code>.</p>
+	 *
+	 * @param applicationNo a {@link java.lang.String} object.
+	 */
 	public void setApplicationNo(String applicationNo) {
 		this.applicationNo = applicationNo;
 	}
+	/**
+	 * <p>Getter for the field <code>applicationNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplicationNo( ) {
 		return this.applicationNo;
 	}

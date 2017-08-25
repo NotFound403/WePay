@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:52:02
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillDeleteResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayEcoCplifeBillDeleteResponse extends AlipayResponse {
 	@ApiField("c_p_alive_bill_entry_set")
 	private List<CPAliveBillEntrySet> aliveBillEntryList;
 
+	/**
+	 * <p>Setter for the field <code>aliveBillEntryList</code>.</p>
+	 *
+	 * @param aliveBillEntryList a {@link java.util.List} object.
+	 */
 	public void setAliveBillEntryList(List<CPAliveBillEntrySet> aliveBillEntryList) {
 		this.aliveBillEntryList = aliveBillEntryList;
 	}
+	/**
+	 * <p>Getter for the field <code>aliveBillEntryList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CPAliveBillEntrySet> getAliveBillEntryList( ) {
 		return this.aliveBillEntryList;
 	}

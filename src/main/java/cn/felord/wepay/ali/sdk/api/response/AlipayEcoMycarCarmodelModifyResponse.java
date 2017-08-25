@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.carmodel.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:39
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarCarmodelModifyResponse extends AlipayResponse {
 

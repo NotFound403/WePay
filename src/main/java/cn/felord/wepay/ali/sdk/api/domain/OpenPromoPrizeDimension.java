@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 周期性使用时段规则
  *
  * @author auto create
- * @since 1.0, 2016-03-14 15:03:10
+ * @version $Id: $Id
  */
 public class OpenPromoPrizeDimension extends AlipayObject {
 
@@ -31,16 +31,36 @@ MIOD：表示 每天X分钟[0,1439]
 	@ApiField("number")
 	private List<Long> values;
 
+	/**
+	 * <p>Getter for the field <code>dimension</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDimension() {
 		return this.dimension;
 	}
+	/**
+	 * <p>Setter for the field <code>dimension</code>.</p>
+	 *
+	 * @param dimension a {@link java.lang.String} object.
+	 */
 	public void setDimension(String dimension) {
 		this.dimension = dimension;
 	}
 
+	/**
+	 * <p>Getter for the field <code>values</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Long> getValues() {
 		return this.values;
 	}
+	/**
+	 * <p>Setter for the field <code>values</code>.</p>
+	 *
+	 * @param values a {@link java.util.List} object.
+	 */
 	public void setValues(List<Long> values) {
 		this.values = values;
 	}

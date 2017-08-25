@@ -9,8 +9,6 @@ package cn.felord.wepay.common.exception;
  * @version v1.0.0
  * @since 2017 /7/19  17:13
  */
-
-
 public class PayException extends Exception {
     private static final long serialVersionUID = -5439722412045261617L;
 

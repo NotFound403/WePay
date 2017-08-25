@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 停车卡查询收费信息
  *
  * @author auto create
- * @since 1.0, 2016-07-05 15:57:26
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingCardidQueryModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayEcoMycarParkingCardidQueryModel extends AlipayObject {
 	@ApiField("transaction_no")
 	private String transactionNo;
 
+	/**
+	 * <p>Getter for the field <code>carNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCarNumber() {
 		return this.carNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>carNumber</code>.</p>
+	 *
+	 * @param carNumber a {@link java.lang.String} object.
+	 */
 	public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingId() {
 		return this.parkingId;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingId</code>.</p>
+	 *
+	 * @param parkingId a {@link java.lang.String} object.
+	 */
 	public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>selTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSelTime() {
 		return this.selTime;
 	}
+	/**
+	 * <p>Setter for the field <code>selTime</code>.</p>
+	 *
+	 * @param selTime a {@link java.lang.String} object.
+	 */
 	public void setSelTime(String selTime) {
 		this.selTime = selTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transactionNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransactionNo() {
 		return this.transactionNo;
 	}
+	/**
+	 * <p>Setter for the field <code>transactionNo</code>.</p>
+	 *
+	 * @param transactionNo a {@link java.lang.String} object.
+	 */
 	public void setTransactionNo(String transactionNo) {
 		this.transactionNo = transactionNo;
 	}

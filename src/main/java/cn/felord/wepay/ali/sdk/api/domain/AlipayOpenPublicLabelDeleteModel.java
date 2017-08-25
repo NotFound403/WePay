@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 公众号标签管理-删除标签
  *
  * @author auto create
- * @since 1.0, 2016-08-10 17:27:10
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLabelDeleteModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenPublicLabelDeleteModel extends AlipayObject {
 	@ApiField("id")
 	private String id;
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.String} object.
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}

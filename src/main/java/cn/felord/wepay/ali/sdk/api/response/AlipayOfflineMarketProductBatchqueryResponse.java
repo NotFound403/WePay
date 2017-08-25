@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.product.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 11:43:44
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketProductBatchqueryResponse extends AlipayResponse {
 
@@ -35,23 +35,53 @@ public class AlipayOfflineMarketProductBatchqueryResponse extends AlipayResponse
 	@ApiField("total_pageno")
 	private Long totalPageno;
 
+	/**
+	 * <p>Setter for the field <code>currentPageno</code>.</p>
+	 *
+	 * @param currentPageno a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPageno(Long currentPageno) {
 		this.currentPageno = currentPageno;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPageno</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPageno( ) {
 		return this.currentPageno;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemIds</code>.</p>
+	 *
+	 * @param itemIds a {@link java.util.List} object.
+	 */
 	public void setItemIds(List<String> itemIds) {
 		this.itemIds = itemIds;
 	}
+	/**
+	 * <p>Getter for the field <code>itemIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getItemIds( ) {
 		return this.itemIds;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalPageno</code>.</p>
+	 *
+	 * @param totalPageno a {@link java.lang.Long} object.
+	 */
 	public void setTotalPageno(Long totalPageno) {
 		this.totalPageno = totalPageno;
 	}
+	/**
+	 * <p>Getter for the field <code>totalPageno</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalPageno( ) {
 		return this.totalPageno;
 	}

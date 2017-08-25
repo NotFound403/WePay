@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.residentinfo.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-02 18:15:55
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeResidentinfoUploadResponse extends AlipayResponse {
 

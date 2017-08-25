@@ -19,10 +19,11 @@ import java.util.*;
  * JSON格式转换器。
  *
  * @author carver.gu
- * @since 1.0, Apr 11, 2010
+ * @version $Id: $Id
  */
 public class JsonConverter implements Converter {
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T toResponse(String rsp, Class<T> clazz)
                                                                               throws AlipayApiException {
         JSONReader reader = new JSONValidatingReader(new ExceptionErrorListener());
@@ -47,7 +48,7 @@ public class JsonConverter implements Converter {
      * @param json  JSON格式的数据
      * @param clazz 泛型领域类型
      * @return 领域对象 t
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public <T> T fromJson(final Map<?, ?> json, Class<T> clazz) throws AlipayApiException {
         return Converters.convert(clazz, new Reader() {
@@ -128,9 +129,7 @@ public class JsonConverter implements Converter {
         });
     }
 
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.internal.mapping.Converter#getSignItem(cn.felord.wepay.ali.sdk.api.AlipayRequest, String)
-     */
+    /** {@inheritDoc} */
     public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
                                                                               throws AlipayApiException {
 
@@ -224,9 +223,7 @@ public class JsonConverter implements Converter {
         return (String) rootJson.get(AlipayConstants.SIGN);
     }
 
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.internal.mapping.Converter#encryptSourceData(cn.felord.wepay.ali.sdk.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
-     */
+    /** {@inheritDoc} */
     public String encryptSourceData(AlipayRequest<?> request, String body, String format,
                                     String encryptType, String encryptKey, String charset)
                                                                                           throws AlipayApiException {

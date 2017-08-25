@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataservice.code.reco response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:04
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceCodeRecoResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayDataDataserviceCodeRecoResponse extends AlipayResponse {
 	@ApiField("result")
 	private AlipayCodeRecoResult result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayCodeRecoResult} object.
+	 */
 	public void setResult(AlipayCodeRecoResult result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayCodeRecoResult} object.
+	 */
 	public AlipayCodeRecoResult getResult( ) {
 		return this.result;
 	}

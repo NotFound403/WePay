@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.parking.vehicle.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-03 11:52:20
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingVehicleQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayEcoMycarParkingVehicleQueryResponse extends AlipayResponse {
 	@ApiField("car_number")
 	private String carNumber;
 
+	/**
+	 * <p>Setter for the field <code>carNumber</code>.</p>
+	 *
+	 * @param carNumber a {@link java.lang.String} object.
+	 */
 	public void setCarNumber(String carNumber) {
 		this.carNumber = carNumber;
 	}
+	/**
+	 * <p>Getter for the field <code>carNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCarNumber( ) {
 		return this.carNumber;
 	}

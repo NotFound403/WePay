@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 卡类型对象
  *
  * @author auto create
- * @since 1.0, 2015-09-22 11:04:47
+ * @version $Id: $Id
  */
 public class CardTypeVO extends AlipayObject {
 
@@ -33,16 +33,36 @@ NSTFA("非标准对公账户")
 	@ApiField("description")
 	private String description;
 
+	/**
+	 * <p>Getter for the field <code>cardType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardType() {
 		return this.cardType;
 	}
+	/**
+	 * <p>Setter for the field <code>cardType</code>.</p>
+	 *
+	 * @param cardType a {@link java.lang.String} object.
+	 */
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>description</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDescription() {
 		return this.description;
 	}
+	/**
+	 * <p>Setter for the field <code>description</code>.</p>
+	 *
+	 * @param description a {@link java.lang.String} object.
+	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}

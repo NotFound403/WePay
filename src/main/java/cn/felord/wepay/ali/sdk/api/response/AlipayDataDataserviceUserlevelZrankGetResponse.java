@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.data.dataservice.userlevel.zrank.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:08
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceUserlevelZrankGetResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayDataDataserviceUserlevelZrankGetResponse extends AlipayRespon
 	@ApiField("result")
 	private AlipayHighValueCustomerResult result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayHighValueCustomerResult} object.
+	 */
 	public void setResult(AlipayHighValueCustomerResult result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayHighValueCustomerResult} object.
+	 */
 	public AlipayHighValueCustomerResult getResult( ) {
 		return this.result;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.lottery.typelist.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 14:38:00
+ * @version $Id: $Id
  */
 public class AlipayCommerceLotteryTypelistQueryResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayCommerceLotteryTypelistQueryResponse extends AlipayResponse {
 	@ApiField("total_result")
 	private Long totalResult;
 
+	/**
+	 * <p>Setter for the field <code>results</code>.</p>
+	 *
+	 * @param results a {@link java.util.List} object.
+	 */
 	public void setResults(List<LotteryType> results) {
 		this.results = results;
 	}
+	/**
+	 * <p>Getter for the field <code>results</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<LotteryType> getResults( ) {
 		return this.results;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalResult</code>.</p>
+	 *
+	 * @param totalResult a {@link java.lang.Long} object.
+	 */
 	public void setTotalResult(Long totalResult) {
 		this.totalResult = totalResult;
 	}
+	/**
+	 * <p>Getter for the field <code>totalResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalResult( ) {
 		return this.totalResult;
 	}

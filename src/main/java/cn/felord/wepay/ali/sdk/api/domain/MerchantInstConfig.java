@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户的机构配置信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class MerchantInstConfig extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class MerchantInstConfig extends AlipayObject {
 	@ApiField("zh_name")
 	private String zhName;
 
+	/**
+	 * <p>Getter for the field <code>enName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnName() {
 		return this.enName;
 	}
+	/**
+	 * <p>Setter for the field <code>enName</code>.</p>
+	 *
+	 * @param enName a {@link java.lang.String} object.
+	 */
 	public void setEnName(String enName) {
 		this.enName = enName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderType() {
 		return this.orderType;
 	}
+	/**
+	 * <p>Setter for the field <code>orderType</code>.</p>
+	 *
+	 * @param orderType a {@link java.lang.String} object.
+	 */
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>scene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getScene() {
 		return this.scene;
 	}
+	/**
+	 * <p>Setter for the field <code>scene</code>.</p>
+	 *
+	 * @param scene a {@link java.lang.String} object.
+	 */
 	public void setScene(String scene) {
 		this.scene = scene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>zhName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getZhName() {
 		return this.zhName;
 	}
+	/**
+	 * <p>Setter for the field <code>zhName</code>.</p>
+	 *
+	 * @param zhName a {@link java.lang.String} object.
+	 */
 	public void setZhName(String zhName) {
 		this.zhName = zhName;
 	}

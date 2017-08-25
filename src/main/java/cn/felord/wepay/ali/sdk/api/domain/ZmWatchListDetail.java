@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 行业关注名单详情
  *
  * @author auto create
- * @since 1.0, 2017-06-08 18:05:14
+ * @version $Id: $Id
  */
 public class ZmWatchListDetail extends AlipayObject {
 
@@ -77,58 +77,138 @@ AJ	公共事业。
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>bizCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizCode() {
 		return this.bizCode;
 	}
+	/**
+	 * <p>Setter for the field <code>bizCode</code>.</p>
+	 *
+	 * @param bizCode a {@link java.lang.String} object.
+	 */
 	public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ZmWatchListExtendInfo> getExtendInfo() {
 		return this.extendInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extendInfo</code>.</p>
+	 *
+	 * @param extendInfo a {@link java.util.List} object.
+	 */
 	public void setExtendInfo(List<ZmWatchListExtendInfo> extendInfo) {
 		this.extendInfo = extendInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refreshTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getRefreshTime() {
 		return this.refreshTime;
 	}
+	/**
+	 * <p>Setter for the field <code>refreshTime</code>.</p>
+	 *
+	 * @param refreshTime a {@link java.util.Date} object.
+	 */
 	public void setRefreshTime(Date refreshTime) {
 		this.refreshTime = refreshTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>settlement</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSettlement() {
 		return this.settlement;
 	}
+	/**
+	 * <p>Setter for the field <code>settlement</code>.</p>
+	 *
+	 * @param settlement a {@link java.lang.Boolean} object.
+	 */
 	public void setSettlement(Boolean settlement) {
 		this.settlement = settlement;
 	}
 
+	/**
+	 * <p>Getter for the field <code>statement</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatement() {
 		return this.statement;
 	}
+	/**
+	 * <p>Setter for the field <code>statement</code>.</p>
+	 *
+	 * @param statement a {@link java.lang.String} object.
+	 */
 	public void setStatement(String statement) {
 		this.statement = statement;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 即时到账批量退款接口
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:26
+ * @version $Id: $Id
  */
 public class AlipayTradeBatchRefundModel extends AlipayObject {
 
@@ -52,37 +52,87 @@ N：不可使用冻结金额退款；
 	@ApiField("use_freeze_amount")
 	private String useFreezeAmount;
 
+	/**
+	 * <p>Getter for the field <code>batchNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchNo() {
 		return this.batchNo;
 	}
+	/**
+	 * <p>Setter for the field <code>batchNo</code>.</p>
+	 *
+	 * @param batchNo a {@link java.lang.String} object.
+	 */
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>batchNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchNum() {
 		return this.batchNum;
 	}
+	/**
+	 * <p>Setter for the field <code>batchNum</code>.</p>
+	 *
+	 * @param batchNum a {@link java.lang.String} object.
+	 */
 	public void setBatchNum(String batchNum) {
 		this.batchNum = batchNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>detailData</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RefundDetail> getDetailData() {
 		return this.detailData;
 	}
+	/**
+	 * <p>Setter for the field <code>detailData</code>.</p>
+	 *
+	 * @param detailData a {@link java.util.List} object.
+	 */
 	public void setDetailData(List<RefundDetail> detailData) {
 		this.detailData = detailData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundDate() {
 		return this.refundDate;
 	}
+	/**
+	 * <p>Setter for the field <code>refundDate</code>.</p>
+	 *
+	 * @param refundDate a {@link java.lang.String} object.
+	 */
 	public void setRefundDate(String refundDate) {
 		this.refundDate = refundDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>useFreezeAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUseFreezeAmount() {
 		return this.useFreezeAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>useFreezeAmount</code>.</p>
+	 *
+	 * @param useFreezeAmount a {@link java.lang.String} object.
+	 */
 	public void setUseFreezeAmount(String useFreezeAmount) {
 		this.useFreezeAmount = useFreezeAmount;
 	}

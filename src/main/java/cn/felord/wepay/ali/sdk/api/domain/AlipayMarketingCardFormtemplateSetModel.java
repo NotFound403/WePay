@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 开卡组件表单配置
  *
  * @author auto create
- * @since 1.0, 2017-06-01 15:08:54
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardFormtemplateSetModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayMarketingCardFormtemplateSetModel extends AlipayObject {
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * <p>Getter for the field <code>fields</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.OpenFormFieldDO} object.
+	 */
 	public OpenFormFieldDO getFields() {
 		return this.fields;
 	}
+	/**
+	 * <p>Setter for the field <code>fields</code>.</p>
+	 *
+	 * @param fields a {@link cn.felord.wepay.ali.sdk.api.domain.OpenFormFieldDO} object.
+	 */
 	public void setFields(OpenFormFieldDO fields) {
 		this.fields = fields;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}

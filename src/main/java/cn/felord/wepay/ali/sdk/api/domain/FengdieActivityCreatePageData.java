@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 凤蝶创建H5页面初始化数据
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:17
+ * @version $Id: $Id
  */
 public class FengdieActivityCreatePageData extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class FengdieActivityCreatePageData extends AlipayObject {
 	@ApiField("schema_data")
 	private String schemaData;
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>schemaData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSchemaData() {
 		return this.schemaData;
 	}
+	/**
+	 * <p>Setter for the field <code>schemaData</code>.</p>
+	 *
+	 * @param schemaData a {@link java.lang.String} object.
+	 */
 	public void setSchemaData(String schemaData) {
 		this.schemaData = schemaData;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 小程序生成推广二维码接口
  *
  * @author auto create
- * @since 1.0, 2017-07-06 17:41:17
+ * @version $Id: $Id
  */
 public class AlipayOpenAppQrcodeCreateModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayOpenAppQrcodeCreateModel extends AlipayObject {
 	@ApiField("url_param")
 	private String urlParam;
 
+	/**
+	 * <p>Getter for the field <code>describe</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDescribe() {
 		return this.describe;
 	}
+	/**
+	 * <p>Setter for the field <code>describe</code>.</p>
+	 *
+	 * @param describe a {@link java.lang.String} object.
+	 */
 	public void setDescribe(String describe) {
 		this.describe = describe;
 	}
 
+	/**
+	 * <p>Getter for the field <code>queryParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQueryParam() {
 		return this.queryParam;
 	}
+	/**
+	 * <p>Setter for the field <code>queryParam</code>.</p>
+	 *
+	 * @param queryParam a {@link java.lang.String} object.
+	 */
 	public void setQueryParam(String queryParam) {
 		this.queryParam = queryParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>urlParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrlParam() {
 		return this.urlParam;
 	}
+	/**
+	 * <p>Setter for the field <code>urlParam</code>.</p>
+	 *
+	 * @param urlParam a {@link java.lang.String} object.
+	 */
 	public void setUrlParam(String urlParam) {
 		this.urlParam = urlParam;
 	}

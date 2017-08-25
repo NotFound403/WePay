@@ -28,8 +28,6 @@ import java.util.Map;
  * @version v1.0.0
  * @since 2017 /7/19  15:36
  */
-
-
 public class HttpKit {
     private static final Logger log = LoggerFactory.getLogger(HttpKit.class);
 

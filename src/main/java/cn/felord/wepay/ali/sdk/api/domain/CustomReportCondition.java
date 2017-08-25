@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 自定义报表规则条件信息
  *
  * @author auto create
- * @since 1.0, 2016-12-05 17:13:15
+ * @version $Id: $Id
  */
 public class CustomReportCondition extends AlipayObject {
 
@@ -62,51 +62,121 @@ public class CustomReportCondition extends AlipayObject {
 	@ApiField("sort_tags")
 	private String sortTags;
 
+	/**
+	 * <p>Getter for the field <code>conditionKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConditionKey() {
 		return this.conditionKey;
 	}
+	/**
+	 * <p>Setter for the field <code>conditionKey</code>.</p>
+	 *
+	 * @param conditionKey a {@link java.lang.String} object.
+	 */
 	public void setConditionKey(String conditionKey) {
 		this.conditionKey = conditionKey;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dataTags</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DataTag> getDataTags() {
 		return this.dataTags;
 	}
+	/**
+	 * <p>Setter for the field <code>dataTags</code>.</p>
+	 *
+	 * @param dataTags a {@link java.util.List} object.
+	 */
 	public void setDataTags(List<DataTag> dataTags) {
 		this.dataTags = dataTags;
 	}
 
+	/**
+	 * <p>Getter for the field <code>filterTags</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<FilterTag> getFilterTags() {
 		return this.filterTags;
 	}
+	/**
+	 * <p>Setter for the field <code>filterTags</code>.</p>
+	 *
+	 * @param filterTags a {@link java.util.List} object.
+	 */
 	public void setFilterTags(List<FilterTag> filterTags) {
 		this.filterTags = filterTags;
 	}
 
+	/**
+	 * <p>Getter for the field <code>groupTags</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupTags() {
 		return this.groupTags;
 	}
+	/**
+	 * <p>Setter for the field <code>groupTags</code>.</p>
+	 *
+	 * @param groupTags a {@link java.lang.String} object.
+	 */
 	public void setGroupTags(String groupTags) {
 		this.groupTags = groupTags;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sortTags</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSortTags() {
 		return this.sortTags;
 	}
+	/**
+	 * <p>Setter for the field <code>sortTags</code>.</p>
+	 *
+	 * @param sortTags a {@link java.lang.String} object.
+	 */
 	public void setSortTags(String sortTags) {
 		this.sortTags = sortTags;
 	}

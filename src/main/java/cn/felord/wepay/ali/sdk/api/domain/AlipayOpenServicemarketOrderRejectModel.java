@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 服务商拒绝接单
  *
  * @author auto create
- * @since 1.0, 2016-08-25 11:11:47
+ * @version $Id: $Id
  */
 public class AlipayOpenServicemarketOrderRejectModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenServicemarketOrderRejectModel extends AlipayObject {
 	@ApiField("reject_reason")
 	private String rejectReason;
 
+	/**
+	 * <p>Getter for the field <code>commodityOrderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommodityOrderId() {
 		return this.commodityOrderId;
 	}
+	/**
+	 * <p>Setter for the field <code>commodityOrderId</code>.</p>
+	 *
+	 * @param commodityOrderId a {@link java.lang.String} object.
+	 */
 	public void setCommodityOrderId(String commodityOrderId) {
 		this.commodityOrderId = commodityOrderId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rejectReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRejectReason() {
 		return this.rejectReason;
 	}
+	/**
+	 * <p>Setter for the field <code>rejectReason</code>.</p>
+	 *
+	 * @param rejectReason a {@link java.lang.String} object.
+	 */
 	public void setRejectReason(String rejectReason) {
 		this.rejectReason = rejectReason;
 	}

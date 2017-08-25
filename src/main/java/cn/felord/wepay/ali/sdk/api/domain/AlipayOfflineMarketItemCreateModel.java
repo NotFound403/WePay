@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 系统商需要通过该接口在口碑平台帮助商户创建商品。
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:55
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketItemCreateModel extends AlipayObject {
 
@@ -122,121 +122,291 @@ public class AlipayOfflineMarketItemCreateModel extends AlipayObject {
 	@ApiField("weight")
 	private Long weight;
 
+	/**
+	 * <p>Getter for the field <code>auditRule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemAuditRule} object.
+	 */
 	public AlipayItemAuditRule getAuditRule() {
 		return this.auditRule;
 	}
+	/**
+	 * <p>Setter for the field <code>auditRule</code>.</p>
+	 *
+	 * @param auditRule a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemAuditRule} object.
+	 */
 	public void setAuditRule(AlipayItemAuditRule auditRule) {
 		this.auditRule = auditRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cover</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCover() {
 		return this.cover;
 	}
+	/**
+	 * <p>Setter for the field <code>cover</code>.</p>
+	 *
+	 * @param cover a {@link java.lang.String} object.
+	 */
 	public void setCover(String cover) {
 		this.cover = cover;
 	}
 
+	/**
+	 * <p>Getter for the field <code>descriptions</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AlipayItemDescription> getDescriptions() {
 		return this.descriptions;
 	}
+	/**
+	 * <p>Setter for the field <code>descriptions</code>.</p>
+	 *
+	 * @param descriptions a {@link java.util.List} object.
+	 */
 	public void setDescriptions(List<AlipayItemDescription> descriptions) {
 		this.descriptions = descriptions;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtEnd</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtEnd() {
 		return this.gmtEnd;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtEnd</code>.</p>
+	 *
+	 * @param gmtEnd a {@link java.util.Date} object.
+	 */
 	public void setGmtEnd(Date gmtEnd) {
 		this.gmtEnd = gmtEnd;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtStart() {
 		return this.gmtStart;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtStart</code>.</p>
+	 *
+	 * @param gmtStart a {@link java.util.Date} object.
+	 */
 	public void setGmtStart(Date gmtStart) {
 		this.gmtStart = gmtStart;
 	}
 
+	/**
+	 * <p>Getter for the field <code>inventory</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getInventory() {
 		return this.inventory;
 	}
+	/**
+	 * <p>Setter for the field <code>inventory</code>.</p>
+	 *
+	 * @param inventory a {@link java.lang.Long} object.
+	 */
 	public void setInventory(Long inventory) {
 		this.inventory = inventory;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isAutoExpanded</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getIsAutoExpanded() {
 		return this.isAutoExpanded;
 	}
+	/**
+	 * <p>Setter for the field <code>isAutoExpanded</code>.</p>
+	 *
+	 * @param isAutoExpanded a {@link java.lang.Boolean} object.
+	 */
 	public void setIsAutoExpanded(Boolean isAutoExpanded) {
 		this.isAutoExpanded = isAutoExpanded;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemType() {
 		return this.itemType;
 	}
+	/**
+	 * <p>Setter for the field <code>itemType</code>.</p>
+	 *
+	 * @param itemType a {@link java.lang.String} object.
+	 */
 	public void setItemType(String itemType) {
 		this.itemType = itemType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operateNotifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateNotifyUrl() {
 		return this.operateNotifyUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>operateNotifyUrl</code>.</p>
+	 *
+	 * @param operateNotifyUrl a {@link java.lang.String} object.
+	 */
 	public void setOperateNotifyUrl(String operateNotifyUrl) {
 		this.operateNotifyUrl = operateNotifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operationContext</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemOperationContext} object.
+	 */
 	public AlipayItemOperationContext getOperationContext() {
 		return this.operationContext;
 	}
+	/**
+	 * <p>Setter for the field <code>operationContext</code>.</p>
+	 *
+	 * @param operationContext a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemOperationContext} object.
+	 */
 	public void setOperationContext(AlipayItemOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
+	/**
+	 * <p>Getter for the field <code>purchaseMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPurchaseMode() {
 		return this.purchaseMode;
 	}
+	/**
+	 * <p>Setter for the field <code>purchaseMode</code>.</p>
+	 *
+	 * @param purchaseMode a {@link java.lang.String} object.
+	 */
 	public void setPurchaseMode(String purchaseMode) {
 		this.purchaseMode = purchaseMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>salesRule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemSalesRule} object.
+	 */
 	public AlipayItemSalesRule getSalesRule() {
 		return this.salesRule;
 	}
+	/**
+	 * <p>Setter for the field <code>salesRule</code>.</p>
+	 *
+	 * @param salesRule a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemSalesRule} object.
+	 */
 	public void setSalesRule(AlipayItemSalesRule salesRule) {
 		this.salesRule = salesRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopList</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopList() {
 		return this.shopList;
 	}
+	/**
+	 * <p>Setter for the field <code>shopList</code>.</p>
+	 *
+	 * @param shopList a {@link java.lang.String} object.
+	 */
 	public void setShopList(String shopList) {
 		this.shopList = shopList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherTemplete</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemVoucherTemplete} object.
+	 */
 	public AlipayItemVoucherTemplete getVoucherTemplete() {
 		return this.voucherTemplete;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherTemplete</code>.</p>
+	 *
+	 * @param voucherTemplete a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemVoucherTemplete} object.
+	 */
 	public void setVoucherTemplete(AlipayItemVoucherTemplete voucherTemplete) {
 		this.voucherTemplete = voucherTemplete;
 	}
 
+	/**
+	 * <p>Getter for the field <code>weight</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getWeight() {
 		return this.weight;
 	}
+	/**
+	 * <p>Setter for the field <code>weight</code>.</p>
+	 *
+	 * @param weight a {@link java.lang.Long} object.
+	 */
 	public void setWeight(Long weight) {
 		this.weight = weight;
 	}

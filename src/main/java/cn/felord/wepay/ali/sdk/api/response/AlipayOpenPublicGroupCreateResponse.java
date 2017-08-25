@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.group.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 15:10:37
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicGroupCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicGroupCreateResponse extends AlipayResponse {
 	@ApiField("group_id")
 	private String groupId;
 
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId( ) {
 		return this.groupId;
 	}

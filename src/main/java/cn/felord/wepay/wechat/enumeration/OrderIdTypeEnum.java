@@ -8,8 +8,6 @@ package cn.felord.wepay.wechat.enumeration;
  * @version v1.0.0
  * @since 2017 /8/4  15:18
  */
-
-
 public enum OrderIdTypeEnum {
     /**
      * 微信订单号.

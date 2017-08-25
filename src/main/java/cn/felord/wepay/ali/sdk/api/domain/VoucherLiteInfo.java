@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券简要信息
  *
  * @author auto create
- * @since 1.0, 2017-03-28 22:18:02
+ * @version $Id: $Id
  */
 public class VoucherLiteInfo extends AlipayObject {
 
@@ -39,30 +39,70 @@ public class VoucherLiteInfo extends AlipayObject {
 	@ApiField("voucher_id")
 	private String voucherId;
 
+	/**
+	 * <p>Getter for the field <code>sendTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getSendTime() {
 		return this.sendTime;
 	}
+	/**
+	 * <p>Setter for the field <code>sendTime</code>.</p>
+	 *
+	 * @param sendTime a {@link java.util.Date} object.
+	 */
 	public void setSendTime(Date sendTime) {
 		this.sendTime = sendTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherId() {
 		return this.voucherId;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherId</code>.</p>
+	 *
+	 * @param voucherId a {@link java.lang.String} object.
+	 */
 	public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}

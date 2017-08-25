@@ -16,9 +16,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.template.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-16 13:31:45
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardTemplateQueryResponse extends AlipayResponse {
 
@@ -115,93 +115,223 @@ OUT_MEMBER_CARD：外部权益卡
 	@ApiField("template_style_info")
 	private TemplateStyleInfoDTO templateStyleInfo;
 
+	/**
+	 * <p>Setter for the field <code>bizNoPrefix</code>.</p>
+	 *
+	 * @param bizNoPrefix a {@link java.lang.String} object.
+	 */
 	public void setBizNoPrefix(String bizNoPrefix) {
 		this.bizNoPrefix = bizNoPrefix;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNoPrefix</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNoPrefix( ) {
 		return this.bizNoPrefix;
 	}
 
+	/**
+	 * <p>Setter for the field <code>bizNoSuffixLen</code>.</p>
+	 *
+	 * @param bizNoSuffixLen a {@link java.lang.String} object.
+	 */
 	public void setBizNoSuffixLen(String bizNoSuffixLen) {
 		this.bizNoSuffixLen = bizNoSuffixLen;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNoSuffixLen</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNoSuffixLen( ) {
 		return this.bizNoSuffixLen;
 	}
 
+	/**
+	 * <p>Setter for the field <code>cardLevelConfs</code>.</p>
+	 *
+	 * @param cardLevelConfs a {@link java.util.List} object.
+	 */
 	public void setCardLevelConfs(List<TemplateCardLevelConfDTO> cardLevelConfs) {
 		this.cardLevelConfs = cardLevelConfs;
 	}
+	/**
+	 * <p>Getter for the field <code>cardLevelConfs</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<TemplateCardLevelConfDTO> getCardLevelConfs( ) {
 		return this.cardLevelConfs;
 	}
 
+	/**
+	 * <p>Setter for the field <code>cardType</code>.</p>
+	 *
+	 * @param cardType a {@link java.lang.String} object.
+	 */
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
 	}
+	/**
+	 * <p>Getter for the field <code>cardType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardType( ) {
 		return this.cardType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>columnInfoList</code>.</p>
+	 *
+	 * @param columnInfoList a {@link java.util.List} object.
+	 */
 	public void setColumnInfoList(List<TemplateColumnInfoDTO> columnInfoList) {
 		this.columnInfoList = columnInfoList;
 	}
+	/**
+	 * <p>Getter for the field <code>columnInfoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<TemplateColumnInfoDTO> getColumnInfoList( ) {
 		return this.columnInfoList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>fieldRuleList</code>.</p>
+	 *
+	 * @param fieldRuleList a {@link java.util.List} object.
+	 */
 	public void setFieldRuleList(List<TemplateFieldRuleDTO> fieldRuleList) {
 		this.fieldRuleList = fieldRuleList;
 	}
+	/**
+	 * <p>Getter for the field <code>fieldRuleList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<TemplateFieldRuleDTO> getFieldRuleList( ) {
 		return this.fieldRuleList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>mdcodeNotifyConf</code>.</p>
+	 *
+	 * @param mdcodeNotifyConf a {@link cn.felord.wepay.ali.sdk.api.domain.TemplateMdcodeNotifyConfDTO} object.
+	 */
 	public void setMdcodeNotifyConf(TemplateMdcodeNotifyConfDTO mdcodeNotifyConf) {
 		this.mdcodeNotifyConf = mdcodeNotifyConf;
 	}
+	/**
+	 * <p>Getter for the field <code>mdcodeNotifyConf</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.TemplateMdcodeNotifyConfDTO} object.
+	 */
 	public TemplateMdcodeNotifyConfDTO getMdcodeNotifyConf( ) {
 		return this.mdcodeNotifyConf;
 	}
 
+	/**
+	 * <p>Setter for the field <code>openCardConf</code>.</p>
+	 *
+	 * @param openCardConf a {@link cn.felord.wepay.ali.sdk.api.domain.TemplateOpenCardConfDTO} object.
+	 */
 	public void setOpenCardConf(TemplateOpenCardConfDTO openCardConf) {
 		this.openCardConf = openCardConf;
 	}
+	/**
+	 * <p>Getter for the field <code>openCardConf</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.TemplateOpenCardConfDTO} object.
+	 */
 	public TemplateOpenCardConfDTO getOpenCardConf( ) {
 		return this.openCardConf;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pubChannels</code>.</p>
+	 *
+	 * @param pubChannels a {@link java.util.List} object.
+	 */
 	public void setPubChannels(List<PubChannelDTO> pubChannels) {
 		this.pubChannels = pubChannels;
 	}
+	/**
+	 * <p>Getter for the field <code>pubChannels</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PubChannelDTO> getPubChannels( ) {
 		return this.pubChannels;
 	}
 
+	/**
+	 * <p>Setter for the field <code>serviceLabelList</code>.</p>
+	 *
+	 * @param serviceLabelList a {@link java.util.List} object.
+	 */
 	public void setServiceLabelList(List<String> serviceLabelList) {
 		this.serviceLabelList = serviceLabelList;
 	}
+	/**
+	 * <p>Getter for the field <code>serviceLabelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getServiceLabelList( ) {
 		return this.serviceLabelList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopIds</code>.</p>
+	 *
+	 * @param shopIds a {@link java.util.List} object.
+	 */
 	public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
+	/**
+	 * <p>Getter for the field <code>shopIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getShopIds( ) {
 		return this.shopIds;
 	}
 
+	/**
+	 * <p>Setter for the field <code>templateBenefitInfo</code>.</p>
+	 *
+	 * @param templateBenefitInfo a {@link java.util.List} object.
+	 */
 	public void setTemplateBenefitInfo(List<TemplateBenefitInfoDTO> templateBenefitInfo) {
 		this.templateBenefitInfo = templateBenefitInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>templateBenefitInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<TemplateBenefitInfoDTO> getTemplateBenefitInfo( ) {
 		return this.templateBenefitInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>templateStyleInfo</code>.</p>
+	 *
+	 * @param templateStyleInfo a {@link cn.felord.wepay.ali.sdk.api.domain.TemplateStyleInfoDTO} object.
+	 */
 	public void setTemplateStyleInfo(TemplateStyleInfoDTO templateStyleInfo) {
 		this.templateStyleInfo = templateStyleInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>templateStyleInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.TemplateStyleInfoDTO} object.
+	 */
 	public TemplateStyleInfoDTO getTemplateStyleInfo( ) {
 		return this.templateStyleInfo;
 	}

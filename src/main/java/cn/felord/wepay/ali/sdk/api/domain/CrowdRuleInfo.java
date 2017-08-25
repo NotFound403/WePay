@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 圈人规则信息
  *
  * @author auto create
- * @since 1.0, 2016-12-12 17:43:08
+ * @version $Id: $Id
  */
 public class CrowdRuleInfo extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class CrowdRuleInfo extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>ruledesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuledesc() {
 		return this.ruledesc;
 	}
+	/**
+	 * <p>Setter for the field <code>ruledesc</code>.</p>
+	 *
+	 * @param ruledesc a {@link java.lang.String} object.
+	 */
 	public void setRuledesc(String ruledesc) {
 		this.ruledesc = ruledesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleid() {
 		return this.ruleid;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleid</code>.</p>
+	 *
+	 * @param ruleid a {@link java.lang.String} object.
+	 */
 	public void setRuleid(String ruleid) {
 		this.ruleid = ruleid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

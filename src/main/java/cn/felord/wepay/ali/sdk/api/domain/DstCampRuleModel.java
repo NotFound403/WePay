@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 优惠规则
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:49
+ * @version $Id: $Id
  */
 public class DstCampRuleModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class DstCampRuleModel extends AlipayObject {
 	@ApiField("voucher_id")
 	private String voucherId;
 
+	/**
+	 * <p>Getter for the field <code>alipayCashier</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayCashier() {
 		return this.alipayCashier;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayCashier</code>.</p>
+	 *
+	 * @param alipayCashier a {@link java.lang.String} object.
+	 */
 	public void setAlipayCashier(String alipayCashier) {
 		this.alipayCashier = alipayCashier;
 	}
 
+	/**
+	 * <p>Getter for the field <code>discountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDiscountType() {
 		return this.discountType;
 	}
+	/**
+	 * <p>Setter for the field <code>discountType</code>.</p>
+	 *
+	 * @param discountType a {@link java.lang.String} object.
+	 */
 	public void setDiscountType(String discountType) {
 		this.discountType = discountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.String} object.
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeCountPerAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeCountPerAccount() {
 		return this.prizeCountPerAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeCountPerAccount</code>.</p>
+	 *
+	 * @param prizeCountPerAccount a {@link java.lang.String} object.
+	 */
 	public void setPrizeCountPerAccount(String prizeCountPerAccount) {
 		this.prizeCountPerAccount = prizeCountPerAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductType() {
 		return this.productType;
 	}
+	/**
+	 * <p>Setter for the field <code>productType</code>.</p>
+	 *
+	 * @param productType a {@link java.lang.String} object.
+	 */
 	public void setProductType(String productType) {
 		this.productType = productType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleUuid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleUuid() {
 		return this.ruleUuid;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleUuid</code>.</p>
+	 *
+	 * @param ruleUuid a {@link java.lang.String} object.
+	 */
 	public void setRuleUuid(String ruleUuid) {
 		this.ruleUuid = ruleUuid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherId() {
 		return this.voucherId;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherId</code>.</p>
+	 *
+	 * @param voucherId a {@link java.lang.String} object.
+	 */
 	public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.voucher.generate response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-03 16:10:34
+ * @version $Id: $Id
  */
 public class AlipayCommerceCityfacilitatorVoucherGenerateResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayCommerceCityfacilitatorVoucherGenerateResponse extends Alipay
 	@ApiField("ticket_no")
 	private String ticketNo;
 
+	/**
+	 * <p>Setter for the field <code>expiredDate</code>.</p>
+	 *
+	 * @param expiredDate a {@link java.lang.String} object.
+	 */
 	public void setExpiredDate(String expiredDate) {
 		this.expiredDate = expiredDate;
 	}
+	/**
+	 * <p>Getter for the field <code>expiredDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExpiredDate( ) {
 		return this.expiredDate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>qrCodeNo</code>.</p>
+	 *
+	 * @param qrCodeNo a {@link java.lang.String} object.
+	 */
 	public void setQrCodeNo(String qrCodeNo) {
 		this.qrCodeNo = qrCodeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>qrCodeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCodeNo( ) {
 		return this.qrCodeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>ticketNo</code>.</p>
+	 *
+	 * @param ticketNo a {@link java.lang.String} object.
+	 */
 	public void setTicketNo(String ticketNo) {
 		this.ticketNo = ticketNo;
 	}
+	/**
+	 * <p>Getter for the field <code>ticketNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTicketNo( ) {
 		return this.ticketNo;
 	}

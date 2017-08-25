@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 开放活动接口活动
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class OpenPromoCamp extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class OpenPromoCamp extends AlipayObject {
 	@ApiField("camp_type")
 	private String campType;
 
+	/**
+	 * <p>Getter for the field <code>campAlias</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampAlias() {
 		return this.campAlias;
 	}
+	/**
+	 * <p>Setter for the field <code>campAlias</code>.</p>
+	 *
+	 * @param campAlias a {@link java.lang.String} object.
+	 */
 	public void setCampAlias(String campAlias) {
 		this.campAlias = campAlias;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampDesc() {
 		return this.campDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>campDesc</code>.</p>
+	 *
+	 * @param campDesc a {@link java.lang.String} object.
+	 */
 	public void setCampDesc(String campDesc) {
 		this.campDesc = campDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampEndTime() {
 		return this.campEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>campEndTime</code>.</p>
+	 *
+	 * @param campEndTime a {@link java.lang.String} object.
+	 */
 	public void setCampEndTime(String campEndTime) {
 		this.campEndTime = campEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampName() {
 		return this.campName;
 	}
+	/**
+	 * <p>Setter for the field <code>campName</code>.</p>
+	 *
+	 * @param campName a {@link java.lang.String} object.
+	 */
 	public void setCampName(String campName) {
 		this.campName = campName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampStartTime() {
 		return this.campStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>campStartTime</code>.</p>
+	 *
+	 * @param campStartTime a {@link java.lang.String} object.
+	 */
 	public void setCampStartTime(String campStartTime) {
 		this.campStartTime = campStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampType() {
 		return this.campType;
 	}
+	/**
+	 * <p>Setter for the field <code>campType</code>.</p>
+	 *
+	 * @param campType a {@link java.lang.String} object.
+	 */
 	public void setCampType(String campType) {
 		this.campType = campType;
 	}

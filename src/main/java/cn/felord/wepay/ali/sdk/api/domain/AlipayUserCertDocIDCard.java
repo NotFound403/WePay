@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 证照中心身份证
  *
  * @author auto create
- * @since 1.0, 2017-05-25 14:02:44
+ * @version $Id: $Id
  */
 public class AlipayUserCertDocIDCard extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class AlipayUserCertDocIDCard extends AlipayObject {
 	@ApiField("number")
 	private String number;
 
+	/**
+	 * <p>Getter for the field <code>encodedImgEmblem</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEncodedImgEmblem() {
 		return this.encodedImgEmblem;
 	}
+	/**
+	 * <p>Setter for the field <code>encodedImgEmblem</code>.</p>
+	 *
+	 * @param encodedImgEmblem a {@link java.lang.String} object.
+	 */
 	public void setEncodedImgEmblem(String encodedImgEmblem) {
 		this.encodedImgEmblem = encodedImgEmblem;
 	}
 
+	/**
+	 * <p>Getter for the field <code>encodedImgIdentity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEncodedImgIdentity() {
 		return this.encodedImgIdentity;
 	}
+	/**
+	 * <p>Setter for the field <code>encodedImgIdentity</code>.</p>
+	 *
+	 * @param encodedImgIdentity a {@link java.lang.String} object.
+	 */
 	public void setEncodedImgIdentity(String encodedImgIdentity) {
 		this.encodedImgIdentity = encodedImgIdentity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>expireDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExpireDate() {
 		return this.expireDate;
 	}
+	/**
+	 * <p>Setter for the field <code>expireDate</code>.</p>
+	 *
+	 * @param expireDate a {@link java.lang.String} object.
+	 */
 	public void setExpireDate(String expireDate) {
 		this.expireDate = expireDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>number</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNumber() {
 		return this.number;
 	}
+	/**
+	 * <p>Setter for the field <code>number</code>.</p>
+	 *
+	 * @param number a {@link java.lang.String} object.
+	 */
 	public void setNumber(String number) {
 		this.number = number;
 	}

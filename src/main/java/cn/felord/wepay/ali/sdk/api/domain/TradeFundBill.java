@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 交易支付的渠道属性
  *
  * @author auto create
- * @since 1.0, 2017-06-06 18:11:24
+ * @version $Id: $Id
  */
 public class TradeFundBill extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class TradeFundBill extends AlipayObject {
 	@ApiField("real_amount")
 	private String realAmount;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fundChannel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundChannel() {
 		return this.fundChannel;
 	}
+	/**
+	 * <p>Setter for the field <code>fundChannel</code>.</p>
+	 *
+	 * @param fundChannel a {@link java.lang.String} object.
+	 */
 	public void setFundChannel(String fundChannel) {
 		this.fundChannel = fundChannel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fundType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundType() {
 		return this.fundType;
 	}
+	/**
+	 * <p>Setter for the field <code>fundType</code>.</p>
+	 *
+	 * @param fundType a {@link java.lang.String} object.
+	 */
 	public void setFundType(String fundType) {
 		this.fundType = fundType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>realAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealAmount() {
 		return this.realAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>realAmount</code>.</p>
+	 *
+	 * @param realAmount a {@link java.lang.String} object.
+	 */
 	public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}

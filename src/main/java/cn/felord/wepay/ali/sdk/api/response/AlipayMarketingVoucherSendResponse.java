@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.voucher.send response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-19 11:26:53
+ * @version $Id: $Id
  */
 public class AlipayMarketingVoucherSendResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayMarketingVoucherSendResponse extends AlipayResponse {
 	@ApiField("voucher_id")
 	private String voucherId;
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherId</code>.</p>
+	 *
+	 * @param voucherId a {@link java.lang.String} object.
+	 */
 	public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherId( ) {
 		return this.voucherId;
 	}

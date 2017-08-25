@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 订单状态变更通知接口
  *
  * @author auto create
- * @since 1.0, 2016-11-16 10:04:05
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarMaintainBizorderstatusUpdateModel extends AlipayObject {
 
@@ -96,79 +96,189 @@ public class AlipayEcoMycarMaintainBizorderstatusUpdateModel extends AlipayObjec
 	@ApiField("sender_addr")
 	private String senderAddr;
 
+	/**
+	 * <p>Getter for the field <code>alipayTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayTradeNo() {
 		return this.alipayTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayTradeNo</code>.</p>
+	 *
+	 * @param alipayTradeNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayTradeNo(String alipayTradeNo) {
 		this.alipayTradeNo = alipayTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizStatusTxt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizStatusTxt() {
 		return this.bizStatusTxt;
 	}
+	/**
+	 * <p>Setter for the field <code>bizStatusTxt</code>.</p>
+	 *
+	 * @param bizStatusTxt a {@link java.lang.String} object.
+	 */
 	public void setBizStatusTxt(String bizStatusTxt) {
 		this.bizStatusTxt = bizStatusTxt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>industryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIndustryCode() {
 		return this.industryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>industryCode</code>.</p>
+	 *
+	 * @param industryCode a {@link java.lang.String} object.
+	 */
 	public void setIndustryCode(String industryCode) {
 		this.industryCode = industryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logisticsCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogisticsCode() {
 		return this.logisticsCode;
 	}
+	/**
+	 * <p>Setter for the field <code>logisticsCode</code>.</p>
+	 *
+	 * @param logisticsCode a {@link java.lang.String} object.
+	 */
 	public void setLogisticsCode(String logisticsCode) {
 		this.logisticsCode = logisticsCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logisticsCompany</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogisticsCompany() {
 		return this.logisticsCompany;
 	}
+	/**
+	 * <p>Setter for the field <code>logisticsCompany</code>.</p>
+	 *
+	 * @param logisticsCompany a {@link java.lang.String} object.
+	 */
 	public void setLogisticsCompany(String logisticsCompany) {
 		this.logisticsCompany = logisticsCompany;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logisticsNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogisticsNo() {
 		return this.logisticsNo;
 	}
+	/**
+	 * <p>Setter for the field <code>logisticsNo</code>.</p>
+	 *
+	 * @param logisticsNo a {@link java.lang.String} object.
+	 */
 	public void setLogisticsNo(String logisticsNo) {
 		this.logisticsNo = logisticsNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderStatus() {
 		return this.orderStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @param orderStatus a {@link java.lang.String} object.
+	 */
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayAccount() {
 		return this.payAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>payAccount</code>.</p>
+	 *
+	 * @param payAccount a {@link java.lang.String} object.
+	 */
 	public void setPayAccount(String payAccount) {
 		this.payAccount = payAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayTime() {
 		return this.payTime;
 	}
+	/**
+	 * <p>Setter for the field <code>payTime</code>.</p>
+	 *
+	 * @param payTime a {@link java.lang.String} object.
+	 */
 	public void setPayTime(String payTime) {
 		this.payTime = payTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>senderAddr</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSenderAddr() {
 		return this.senderAddr;
 	}
+	/**
+	 * <p>Setter for the field <code>senderAddr</code>.</p>
+	 *
+	 * @param senderAddr a {@link java.lang.String} object.
+	 */
 	public void setSenderAddr(String senderAddr) {
 		this.senderAddr = senderAddr;
 	}

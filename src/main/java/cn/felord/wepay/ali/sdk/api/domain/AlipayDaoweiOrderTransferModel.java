@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 订单状态推进接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:01:25
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderTransferModel extends AlipayObject {
 
@@ -32,23 +32,53 @@ public class AlipayDaoweiOrderTransferModel extends AlipayObject {
 	@ApiField("order_no")
 	private String orderNo;
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderAction</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderAction() {
 		return this.orderAction;
 	}
+	/**
+	 * <p>Setter for the field <code>orderAction</code>.</p>
+	 *
+	 * @param orderAction a {@link java.lang.String} object.
+	 */
 	public void setOrderAction(String orderAction) {
 		this.orderAction = orderAction;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 报表行对象
  *
  * @author auto create
- * @since 1.0, 2016-10-28 10:26:15
+ * @version $Id: $Id
  */
 public class AlisisReportRow extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlisisReportRow extends AlipayObject {
 	@ApiField("alisis_report_column")
 	private List<AlisisReportColumn> rowData;
 
+	/**
+	 * <p>Getter for the field <code>rowData</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AlisisReportColumn> getRowData() {
 		return this.rowData;
 	}
+	/**
+	 * <p>Setter for the field <code>rowData</code>.</p>
+	 *
+	 * @param rowData a {@link java.util.List} object.
+	 */
 	public void setRowData(List<AlisisReportColumn> rowData) {
 		this.rowData = rowData;
 	}

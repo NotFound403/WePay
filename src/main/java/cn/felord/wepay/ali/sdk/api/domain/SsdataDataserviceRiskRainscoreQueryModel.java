@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 蚁盾风险评分服务新版
  *
  * @author auto create
- * @since 1.0, 2017-06-26 11:43:02
+ * @version $Id: $Id
  */
 public class SsdataDataserviceRiskRainscoreQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class SsdataDataserviceRiskRainscoreQueryModel extends AlipayObject {
 	@ApiField("version")
 	private String version;
 
+	/**
+	 * <p>Getter for the field <code>account</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccount() {
 		return this.account;
 	}
+	/**
+	 * <p>Setter for the field <code>account</code>.</p>
+	 *
+	 * @param account a {@link java.lang.String} object.
+	 */
 	public void setAccount(String account) {
 		this.account = account;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountType() {
 		return this.accountType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountType</code>.</p>
+	 *
+	 * @param accountType a {@link java.lang.String} object.
+	 */
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>version</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVersion() {
 		return this.version;
 	}
+	/**
+	 * <p>Setter for the field <code>version</code>.</p>
+	 *
+	 * @param version a {@link java.lang.String} object.
+	 */
 	public void setVersion(String version) {
 		this.version = version;
 	}

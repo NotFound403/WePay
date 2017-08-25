@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑活动二维码查询接口
  *
  * @author auto create
- * @since 1.0, 2017-04-18 11:55:05
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignQrcodeQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiMarketingCampaignQrcodeQueryModel extends AlipayObject {
 	@ApiField("camp_id")
 	private String campId;
 
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId() {
 		return this.campId;
 	}
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}

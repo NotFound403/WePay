@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.member.retailer.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-06 10:47:45
+ * @version $Id: $Id
  */
 public class KoubeiMemberRetailerQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiMemberRetailerQueryResponse extends AlipayResponse {
 	@ApiField("retailer")
 	private List<Retailer> retailerList;
 
+	/**
+	 * <p>Setter for the field <code>retailerList</code>.</p>
+	 *
+	 * @param retailerList a {@link java.util.List} object.
+	 */
 	public void setRetailerList(List<Retailer> retailerList) {
 		this.retailerList = retailerList;
 	}
+	/**
+	 * <p>Getter for the field <code>retailerList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Retailer> getRetailerList( ) {
 		return this.retailerList;
 	}

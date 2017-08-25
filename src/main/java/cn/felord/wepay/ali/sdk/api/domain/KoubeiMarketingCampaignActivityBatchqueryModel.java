@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑营销活动列表查询
  *
  * @author auto create
- * @since 1.0, 2016-12-27 19:35:52
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignActivityBatchqueryModel extends AlipayObject {
 
@@ -47,37 +47,87 @@ public class KoubeiMarketingCampaignActivityBatchqueryModel extends AlipayObject
 	@ApiField("condition")
 	private List<Condition> queryCriterias;
 
+	/**
+	 * <p>Getter for the field <code>operatorId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorId() {
 		return this.operatorId;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorId</code>.</p>
+	 *
+	 * @param operatorId a {@link java.lang.String} object.
+	 */
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operatorType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorType() {
 		return this.operatorType;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorType</code>.</p>
+	 *
+	 * @param operatorType a {@link java.lang.String} object.
+	 */
 	public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNumber() {
 		return this.pageNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNumber</code>.</p>
+	 *
+	 * @param pageNumber a {@link java.lang.String} object.
+	 */
 	public void setPageNumber(String pageNumber) {
 		this.pageNumber = pageNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.String} object.
+	 */
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>queryCriterias</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Condition> getQueryCriterias() {
 		return this.queryCriterias;
 	}
+	/**
+	 * <p>Setter for the field <code>queryCriterias</code>.</p>
+	 *
+	 * @param queryCriterias a {@link java.util.List} object.
+	 */
 	public void setQueryCriterias(List<Condition> queryCriterias) {
 		this.queryCriterias = queryCriterias;
 	}

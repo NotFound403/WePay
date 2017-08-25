@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * isv 回传的门店商品信息查询接口
  *
  * @author auto create
- * @since 1.0, 2017-04-14 18:19:47
+ * @version $Id: $Id
  */
 public class KoubeiRetailShopitemBatchqueryModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class KoubeiRetailShopitemBatchqueryModel extends AlipayObject {
 	@ApiField("request_ext_shop_item_query")
 	private List<RequestExtShopItemQuery> shopItems;
 
+	/**
+	 * <p>Getter for the field <code>shopItems</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RequestExtShopItemQuery> getShopItems() {
 		return this.shopItems;
 	}
+	/**
+	 * <p>Setter for the field <code>shopItems</code>.</p>
+	 *
+	 * @param shopItems a {@link java.util.List} object.
+	 */
 	public void setShopItems(List<RequestExtShopItemQuery> shopItems) {
 		this.shopItems = shopItems;
 	}

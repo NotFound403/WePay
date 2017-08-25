@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.data.feedbackurl.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-16 15:46:19
+ * @version $Id: $Id
  */
 public class ZhimaDataFeedbackurlQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class ZhimaDataFeedbackurlQueryResponse extends AlipayResponse {
 	@ApiField("feedback_url")
 	private String feedbackUrl;
 
+	/**
+	 * <p>Setter for the field <code>feedbackUrl</code>.</p>
+	 *
+	 * @param feedbackUrl a {@link java.lang.String} object.
+	 */
 	public void setFeedbackUrl(String feedbackUrl) {
 		this.feedbackUrl = feedbackUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>feedbackUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFeedbackUrl( ) {
 		return this.feedbackUrl;
 	}

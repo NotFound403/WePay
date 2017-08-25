@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 数据资产平台对输数据实验室提供的结果
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class CustomerEntity extends AlipayObject {
 
@@ -47,37 +47,87 @@ public class CustomerEntity extends AlipayObject {
 	@ApiField("customer_tag")
 	private List<CustomerTag> tags;
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.String} object.
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tags</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CustomerTag> getTags() {
 		return this.tags;
 	}
+	/**
+	 * <p>Setter for the field <code>tags</code>.</p>
+	 *
+	 * @param tags a {@link java.util.List} object.
+	 */
 	public void setTags(List<CustomerTag> tags) {
 		this.tags = tags;
 	}

@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.order.refund response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-20 14:02:08
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderRefundResponse extends AlipayResponse {
 

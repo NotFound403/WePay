@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.micropay.order.freeze response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-06 17:49:00
+ * @version $Id: $Id
  */
 public class AlipayMicropayOrderFreezeResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayMicropayOrderFreezeResponse extends AlipayResponse {
 	@ApiField("micro_pay_order_detail")
 	private MicroPayOrderDetail microPayOrderDetail;
 
+	/**
+	 * <p>Setter for the field <code>microPayOrderDetail</code>.</p>
+	 *
+	 * @param microPayOrderDetail a {@link cn.felord.wepay.ali.sdk.api.domain.MicroPayOrderDetail} object.
+	 */
 	public void setMicroPayOrderDetail(MicroPayOrderDetail microPayOrderDetail) {
 		this.microPayOrderDetail = microPayOrderDetail;
 	}
+	/**
+	 * <p>Getter for the field <code>microPayOrderDetail</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MicroPayOrderDetail} object.
+	 */
 	public MicroPayOrderDetail getMicroPayOrderDetail( ) {
 		return this.microPayOrderDetail;
 	}

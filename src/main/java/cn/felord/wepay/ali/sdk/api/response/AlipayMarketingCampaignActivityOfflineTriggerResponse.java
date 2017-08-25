@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.activity.offline.trigger response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 19:07:28
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignActivityOfflineTriggerResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCampaignActivityOfflineTriggerResponse extends Alipa
 	@ApiField("out_prize_id")
 	private String outPrizeId;
 
+	/**
+	 * <p>Setter for the field <code>outPrizeId</code>.</p>
+	 *
+	 * @param outPrizeId a {@link java.lang.String} object.
+	 */
 	public void setOutPrizeId(String outPrizeId) {
 		this.outPrizeId = outPrizeId;
 	}
+	/**
+	 * <p>Getter for the field <code>outPrizeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutPrizeId( ) {
 		return this.outPrizeId;
 	}

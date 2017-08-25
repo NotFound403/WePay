@@ -8,9 +8,10 @@ import java.lang.annotation.Annotation;
  * Description:
  * Date: 17-8-23
  * Time: 下午9:58
+ *
+ * @author lenovo
+ * @version $Id: $Id
  */
-
-
 public class AnnotationUtil {
 
     private AnnotationUtil() {
@@ -19,7 +20,6 @@ public class AnnotationUtil {
     /**
      * 获取类中的某种注解
      *
-     * @param <A>             the type parameter
      * @param clazz           the clazz
      * @param annotationClazz the annotation clazz
      * @return the a

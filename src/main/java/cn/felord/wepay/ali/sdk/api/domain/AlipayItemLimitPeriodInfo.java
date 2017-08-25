@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 商品适用信息
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:55
+ * @version $Id: $Id
  */
 public class AlipayItemLimitPeriodInfo extends AlipayObject {
 
@@ -44,23 +44,53 @@ ALL（整个销售周期）
 	@ApiField("number")
 	private List<Long> value;
 
+	/**
+	 * <p>Getter for the field <code>rule</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRule() {
 		return this.rule;
 	}
+	/**
+	 * <p>Setter for the field <code>rule</code>.</p>
+	 *
+	 * @param rule a {@link java.lang.String} object.
+	 */
 	public void setRule(String rule) {
 		this.rule = rule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>unit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUnit() {
 		return this.unit;
 	}
+	/**
+	 * <p>Setter for the field <code>unit</code>.</p>
+	 *
+	 * @param unit a {@link java.lang.String} object.
+	 */
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>value</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Long> getValue() {
 		return this.value;
 	}
+	/**
+	 * <p>Setter for the field <code>value</code>.</p>
+	 *
+	 * @param value a {@link java.util.List} object.
+	 */
 	public void setValue(List<Long> value) {
 		this.value = value;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 支持的功能
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:37
+ * @version $Id: $Id
  */
 public class SupportFunction extends AlipayObject {
 
@@ -41,30 +41,70 @@ public class SupportFunction extends AlipayObject {
 	@ApiField("goto_url")
 	private String gotoUrl;
 
+	/**
+	 * <p>Getter for the field <code>cardName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardName() {
 		return this.cardName;
 	}
+	/**
+	 * <p>Setter for the field <code>cardName</code>.</p>
+	 *
+	 * @param cardName a {@link java.lang.String} object.
+	 */
 	public void setCardName(String cardName) {
 		this.cardName = cardName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardType() {
 		return this.cardType;
 	}
+	/**
+	 * <p>Setter for the field <code>cardType</code>.</p>
+	 *
+	 * @param cardType a {@link java.lang.String} object.
+	 */
 	public void setCardType(String cardType) {
 		this.cardType = cardType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>functionType</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getFunctionType() {
 		return this.functionType;
 	}
+	/**
+	 * <p>Setter for the field <code>functionType</code>.</p>
+	 *
+	 * @param functionType a {@link java.util.List} object.
+	 */
 	public void setFunctionType(List<String> functionType) {
 		this.functionType = functionType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gotoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGotoUrl() {
 		return this.gotoUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>gotoUrl</code>.</p>
+	 *
+	 * @param gotoUrl a {@link java.lang.String} object.
+	 */
 	public void setGotoUrl(String gotoUrl) {
 		this.gotoUrl = gotoUrl;
 	}

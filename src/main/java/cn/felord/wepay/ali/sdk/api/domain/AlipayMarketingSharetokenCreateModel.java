@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝吱口令发放接口
  *
  * @author auto create
- * @since 1.0, 2017-03-03 21:08:21
+ * @version $Id: $Id
  */
 public class AlipayMarketingSharetokenCreateModel extends AlipayObject {
 
@@ -81,79 +81,189 @@ public class AlipayMarketingSharetokenCreateModel extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>bizLinkedId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizLinkedId() {
 		return this.bizLinkedId;
 	}
+	/**
+	 * <p>Setter for the field <code>bizLinkedId</code>.</p>
+	 *
+	 * @param bizLinkedId a {@link java.lang.String} object.
+	 */
 	public void setBizLinkedId(String bizLinkedId) {
 		this.bizLinkedId = bizLinkedId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>btnLeft</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBtnLeft() {
 		return this.btnLeft;
 	}
+	/**
+	 * <p>Setter for the field <code>btnLeft</code>.</p>
+	 *
+	 * @param btnLeft a {@link java.lang.String} object.
+	 */
 	public void setBtnLeft(String btnLeft) {
 		this.btnLeft = btnLeft;
 	}
 
+	/**
+	 * <p>Getter for the field <code>btnLeftHref</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBtnLeftHref() {
 		return this.btnLeftHref;
 	}
+	/**
+	 * <p>Setter for the field <code>btnLeftHref</code>.</p>
+	 *
+	 * @param btnLeftHref a {@link java.lang.String} object.
+	 */
 	public void setBtnLeftHref(String btnLeftHref) {
 		this.btnLeftHref = btnLeftHref;
 	}
 
+	/**
+	 * <p>Getter for the field <code>btnRight</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBtnRight() {
 		return this.btnRight;
 	}
+	/**
+	 * <p>Setter for the field <code>btnRight</code>.</p>
+	 *
+	 * @param btnRight a {@link java.lang.String} object.
+	 */
 	public void setBtnRight(String btnRight) {
 		this.btnRight = btnRight;
 	}
 
+	/**
+	 * <p>Getter for the field <code>btnRightHref</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBtnRightHref() {
 		return this.btnRightHref;
 	}
+	/**
+	 * <p>Setter for the field <code>btnRightHref</code>.</p>
+	 *
+	 * @param btnRightHref a {@link java.lang.String} object.
+	 */
 	public void setBtnRightHref(String btnRightHref) {
 		this.btnRightHref = btnRightHref;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>icon</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIcon() {
 		return this.icon;
 	}
+	/**
+	 * <p>Setter for the field <code>icon</code>.</p>
+	 *
+	 * @param icon a {@link java.lang.String} object.
+	 */
 	public void setIcon(String icon) {
 		this.icon = icon;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartDate() {
 		return this.startDate;
 	}
+	/**
+	 * <p>Setter for the field <code>startDate</code>.</p>
+	 *
+	 * @param startDate a {@link java.util.Date} object.
+	 */
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeout</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTimeout() {
 		return this.timeout;
 	}
+	/**
+	 * <p>Setter for the field <code>timeout</code>.</p>
+	 *
+	 * @param timeout a {@link java.lang.Long} object.
+	 */
 	public void setTimeout(Long timeout) {
 		this.timeout = timeout;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

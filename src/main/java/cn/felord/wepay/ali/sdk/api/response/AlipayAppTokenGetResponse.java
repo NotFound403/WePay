@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.app.token.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-13 19:13:06
+ * @version $Id: $Id
  */
 public class AlipayAppTokenGetResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayAppTokenGetResponse extends AlipayResponse {
 	@ApiField("expires_in")
 	private Long expiresIn;
 
+	/**
+	 * <p>Setter for the field <code>appAccessToken</code>.</p>
+	 *
+	 * @param appAccessToken a {@link java.lang.String} object.
+	 */
 	public void setAppAccessToken(String appAccessToken) {
 		this.appAccessToken = appAccessToken;
 	}
+	/**
+	 * <p>Getter for the field <code>appAccessToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppAccessToken( ) {
 		return this.appAccessToken;
 	}
 
+	/**
+	 * <p>Setter for the field <code>expiresIn</code>.</p>
+	 *
+	 * @param expiresIn a {@link java.lang.Long} object.
+	 */
 	public void setExpiresIn(Long expiresIn) {
 		this.expiresIn = expiresIn;
 	}
+	/**
+	 * <p>Getter for the field <code>expiresIn</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getExpiresIn( ) {
 		return this.expiresIn;
 	}

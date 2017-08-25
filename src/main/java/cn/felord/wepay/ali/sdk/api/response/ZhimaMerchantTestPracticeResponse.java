@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.test.practice response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-30 10:16:33
+ * @version $Id: $Id
  */
 public class ZhimaMerchantTestPracticeResponse extends AlipayResponse {
 
@@ -27,16 +27,36 @@ public class ZhimaMerchantTestPracticeResponse extends AlipayResponse {
 	@ApiField("sss")
 	private String sss;
 
+	/**
+	 * <p>Setter for the field <code>dddd</code>.</p>
+	 *
+	 * @param dddd a {@link cn.felord.wepay.ali.sdk.api.domain.XXXXsdasdasd} object.
+	 */
 	public void setDddd(XXXXsdasdasd dddd) {
 		this.dddd = dddd;
 	}
+	/**
+	 * <p>Getter for the field <code>dddd</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.XXXXsdasdasd} object.
+	 */
 	public XXXXsdasdasd getDddd( ) {
 		return this.dddd;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sss</code>.</p>
+	 *
+	 * @param sss a {@link java.lang.String} object.
+	 */
 	public void setSss(String sss) {
 		this.sss = sss;
 	}
+	/**
+	 * <p>Getter for the field <code>sss</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSss( ) {
 		return this.sss;
 	}

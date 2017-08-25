@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 广告效果分析接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:17
+ * @version $Id: $Id
  */
 public class AlipayMarketingCdpAdvertiseReportQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayMarketingCdpAdvertiseReportQueryModel extends AlipayObject {
 	@ApiField("ad_id")
 	private String adId;
 
+	/**
+	 * <p>Getter for the field <code>adId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdId() {
 		return this.adId;
 	}
+	/**
+	 * <p>Setter for the field <code>adId</code>.</p>
+	 *
+	 * @param adId a {@link java.lang.String} object.
+	 */
 	public void setAdId(String adId) {
 		this.adId = adId;
 	}

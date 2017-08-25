@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 批量退款明细结果
  *
  * @author auto create
- * @since 1.0, 2016-11-21 12:06:39
+ * @version $Id: $Id
  */
 public class BatchRefundDetailResult extends AlipayObject {
 
@@ -95,93 +95,223 @@ public class BatchRefundDetailResult extends AlipayObject {
 	@ApiField("unfreeze_details")
 	private RefundUnfreezeResult unfreezeDetails;
 
+	/**
+	 * <p>Getter for the field <code>batchNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchNo() {
 		return this.batchNo;
 	}
+	/**
+	 * <p>Setter for the field <code>batchNo</code>.</p>
+	 *
+	 * @param batchNo a {@link java.lang.String} object.
+	 */
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dbackStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDbackStatus() {
 		return this.dbackStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>dbackStatus</code>.</p>
+	 *
+	 * @param dbackStatus a {@link java.lang.String} object.
+	 */
 	public void setDbackStatus(String dbackStatus) {
 		this.dbackStatus = dbackStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>estBankAckTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEstBankAckTime() {
 		return this.estBankAckTime;
 	}
+	/**
+	 * <p>Setter for the field <code>estBankAckTime</code>.</p>
+	 *
+	 * @param estBankAckTime a {@link java.lang.String} object.
+	 */
 	public void setEstBankAckTime(String estBankAckTime) {
 		this.estBankAckTime = estBankAckTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>estBankReceiptTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEstBankReceiptTime() {
 		return this.estBankReceiptTime;
 	}
+	/**
+	 * <p>Setter for the field <code>estBankReceiptTime</code>.</p>
+	 *
+	 * @param estBankReceiptTime a {@link java.lang.String} object.
+	 */
 	public void setEstBankReceiptTime(String estBankReceiptTime) {
 		this.estBankReceiptTime = estBankReceiptTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>hasDepositBack</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getHasDepositBack() {
 		return this.hasDepositBack;
 	}
+	/**
+	 * <p>Setter for the field <code>hasDepositBack</code>.</p>
+	 *
+	 * @param hasDepositBack a {@link java.lang.Boolean} object.
+	 */
 	public void setHasDepositBack(Boolean hasDepositBack) {
 		this.hasDepositBack = hasDepositBack;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundAmount() {
 		return this.refundAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @param refundAmount a {@link java.lang.String} object.
+	 */
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundRoyaltys</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RefundRoyaltyResult> getRefundRoyaltys() {
 		return this.refundRoyaltys;
 	}
+	/**
+	 * <p>Setter for the field <code>refundRoyaltys</code>.</p>
+	 *
+	 * @param refundRoyaltys a {@link java.util.List} object.
+	 */
 	public void setRefundRoyaltys(List<RefundRoyaltyResult> refundRoyaltys) {
 		this.refundRoyaltys = refundRoyaltys;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundSupplAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundSupplAmount() {
 		return this.refundSupplAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>refundSupplAmount</code>.</p>
+	 *
+	 * @param refundSupplAmount a {@link java.lang.String} object.
+	 */
 	public void setRefundSupplAmount(String refundSupplAmount) {
 		this.refundSupplAmount = refundSupplAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundSupplResultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundSupplResultCode() {
 		return this.refundSupplResultCode;
 	}
+	/**
+	 * <p>Setter for the field <code>refundSupplResultCode</code>.</p>
+	 *
+	 * @param refundSupplResultCode a {@link java.lang.String} object.
+	 */
 	public void setRefundSupplResultCode(String refundSupplResultCode) {
 		this.refundSupplResultCode = refundSupplResultCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>restSupplAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRestSupplAmount() {
 		return this.restSupplAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>restSupplAmount</code>.</p>
+	 *
+	 * @param restSupplAmount a {@link java.lang.String} object.
+	 */
 	public void setRestSupplAmount(String restSupplAmount) {
 		this.restSupplAmount = restSupplAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode() {
 		return this.resultCode;
 	}
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>unfreezeDetails</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.RefundUnfreezeResult} object.
+	 */
 	public RefundUnfreezeResult getUnfreezeDetails() {
 		return this.unfreezeDetails;
 	}
+	/**
+	 * <p>Setter for the field <code>unfreezeDetails</code>.</p>
+	 *
+	 * @param unfreezeDetails a {@link cn.felord.wepay.ali.sdk.api.domain.RefundUnfreezeResult} object.
+	 */
 	public void setUnfreezeDetails(RefundUnfreezeResult unfreezeDetails) {
 		this.unfreezeDetails = unfreezeDetails;
 	}

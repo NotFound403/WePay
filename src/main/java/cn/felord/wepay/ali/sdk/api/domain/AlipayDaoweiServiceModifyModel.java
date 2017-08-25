@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 创建或更新服务信息接口
  *
  * @author auto create
- * @since 1.0, 2017-03-17 17:48:10
+ * @version $Id: $Id
  */
 public class AlipayDaoweiServiceModifyModel extends AlipayObject {
 
@@ -181,177 +181,427 @@ out_sku_id是在sku中定义的外部商品库存单位信息ID,该配置表示o
 	@ApiField("unit_price")
 	private String unitPrice;
 
+	/**
+	 * <p>Getter for the field <code>assuranceDesc</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AssuranceInfo> getAssuranceDesc() {
 		return this.assuranceDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>assuranceDesc</code>.</p>
+	 *
+	 * @param assuranceDesc a {@link java.util.List} object.
+	 */
 	public void setAssuranceDesc(List<AssuranceInfo> assuranceDesc) {
 		this.assuranceDesc = assuranceDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>attention</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CommonDescInfo> getAttention() {
 		return this.attention;
 	}
+	/**
+	 * <p>Setter for the field <code>attention</code>.</p>
+	 *
+	 * @param attention a {@link java.util.List} object.
+	 */
 	public void setAttention(List<CommonDescInfo> attention) {
 		this.attention = attention;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryCode() {
 		return this.categoryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @param categoryCode a {@link java.lang.String} object.
+	 */
 	public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityCode() {
 		return this.cityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>cityCode</code>.</p>
+	 *
+	 * @param cityCode a {@link java.lang.String} object.
+	 */
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CommonDescInfo> getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.util.List} object.
+	 */
 	public void setDesc(List<CommonDescInfo> desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>districtCodeList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getDistrictCodeList() {
 		return this.districtCodeList;
 	}
+	/**
+	 * <p>Setter for the field <code>districtCodeList</code>.</p>
+	 *
+	 * @param districtCodeList a {@link java.util.List} object.
+	 */
 	public void setDistrictCodeList(List<String> districtCodeList) {
 		this.districtCodeList = districtCodeList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imageUrls</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getImageUrls() {
 		return this.imageUrls;
 	}
+	/**
+	 * <p>Setter for the field <code>imageUrls</code>.</p>
+	 *
+	 * @param imageUrls a {@link java.util.List} object.
+	 */
 	public void setImageUrls(List<String> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
 
+	/**
+	 * <p>Getter for the field <code>latitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLatitude() {
 		return this.latitude;
 	}
+	/**
+	 * <p>Setter for the field <code>latitude</code>.</p>
+	 *
+	 * @param latitude a {@link java.lang.String} object.
+	 */
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>longitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLongitude() {
 		return this.longitude;
 	}
+	/**
+	 * <p>Setter for the field <code>longitude</code>.</p>
+	 *
+	 * @param longitude a {@link java.lang.String} object.
+	 */
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMode() {
 		return this.mode;
 	}
+	/**
+	 * <p>Setter for the field <code>mode</code>.</p>
+	 *
+	 * @param mode a {@link java.lang.String} object.
+	 */
 	public void setMode(String mode) {
 		this.mode = mode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outServiceId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutServiceId() {
 		return this.outServiceId;
 	}
+	/**
+	 * <p>Setter for the field <code>outServiceId</code>.</p>
+	 *
+	 * @param outServiceId a {@link java.lang.String} object.
+	 */
 	public void setOutServiceId(String outServiceId) {
 		this.outServiceId = outServiceId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSpId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSpId() {
 		return this.outSpId;
 	}
+	/**
+	 * <p>Setter for the field <code>outSpId</code>.</p>
+	 *
+	 * @param outSpId a {@link java.lang.String} object.
+	 */
 	public void setOutSpId(String outSpId) {
 		this.outSpId = outSpId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>priceDesc</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CommonDescInfo> getPriceDesc() {
 		return this.priceDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>priceDesc</code>.</p>
+	 *
+	 * @param priceDesc a {@link java.util.List} object.
+	 */
 	public void setPriceDesc(List<CommonDescInfo> priceDesc) {
 		this.priceDesc = priceDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>priceDimType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPriceDimType() {
 		return this.priceDimType;
 	}
+	/**
+	 * <p>Setter for the field <code>priceDimType</code>.</p>
+	 *
+	 * @param priceDimType a {@link java.lang.String} object.
+	 */
 	public void setPriceDimType(String priceDimType) {
 		this.priceDimType = priceDimType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>processDesc</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CommonDescInfo> getProcessDesc() {
 		return this.processDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>processDesc</code>.</p>
+	 *
+	 * @param processDesc a {@link java.util.List} object.
+	 */
 	public void setProcessDesc(List<CommonDescInfo> processDesc) {
 		this.processDesc = processDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>property</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<SkuPropertyInfo> getProperty() {
 		return this.property;
 	}
+	/**
+	 * <p>Setter for the field <code>property</code>.</p>
+	 *
+	 * @param property a {@link java.util.List} object.
+	 */
 	public void setProperty(List<SkuPropertyInfo> property) {
 		this.property = property;
 	}
 
+	/**
+	 * <p>Getter for the field <code>quantity</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getQuantity() {
 		return this.quantity;
 	}
+	/**
+	 * <p>Setter for the field <code>quantity</code>.</p>
+	 *
+	 * @param quantity a {@link java.lang.Long} object.
+	 */
 	public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServiceName() {
 		return this.serviceName;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceName</code>.</p>
+	 *
+	 * @param serviceName a {@link java.lang.String} object.
+	 */
 	public void setServiceName(String serviceName) {
 		this.serviceName = serviceName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceRange</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServiceRange() {
 		return this.serviceRange;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceRange</code>.</p>
+	 *
+	 * @param serviceRange a {@link java.lang.String} object.
+	 */
 	public void setServiceRange(String serviceRange) {
 		this.serviceRange = serviceRange;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sku</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<SkuDescInfo> getSku() {
 		return this.sku;
 	}
+	/**
+	 * <p>Setter for the field <code>sku</code>.</p>
+	 *
+	 * @param sku a {@link java.util.List} object.
+	 */
 	public void setSku(List<SkuDescInfo> sku) {
 		this.sku = sku;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tags</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTags() {
 		return this.tags;
 	}
+	/**
+	 * <p>Setter for the field <code>tags</code>.</p>
+	 *
+	 * @param tags a {@link java.lang.String} object.
+	 */
 	public void setTags(String tags) {
 		this.tags = tags;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/**
+	 * <p>Getter for the field <code>unit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUnit() {
 		return this.unit;
 	}
+	/**
+	 * <p>Setter for the field <code>unit</code>.</p>
+	 *
+	 * @param unit a {@link java.lang.String} object.
+	 */
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>unitPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUnitPrice() {
 		return this.unitPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>unitPrice</code>.</p>
+	 *
+	 * @param unitPrice a {@link java.lang.String} object.
+	 */
 	public void setUnitPrice(String unitPrice) {
 		this.unitPrice = unitPrice;
 	}

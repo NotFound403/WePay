@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.account.add response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 15:25:33
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicAccountAddResponse extends AlipayResponse {
 
@@ -32,23 +32,45 @@ public class AlipayMobilePublicAccountAddResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/** {@inheritDoc} */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg( ) {
 		return this.msg;
 	}

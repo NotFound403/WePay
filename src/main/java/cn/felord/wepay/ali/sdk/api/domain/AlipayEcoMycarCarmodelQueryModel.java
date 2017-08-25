@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询车型详情信息接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 14:24:28
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarCarmodelQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEcoMycarCarmodelQueryModel extends AlipayObject {
 	@ApiField("model_id")
 	private String modelId;
 
+	/**
+	 * <p>Getter for the field <code>modelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getModelId() {
 		return this.modelId;
 	}
+	/**
+	 * <p>Setter for the field <code>modelId</code>.</p>
+	 *
+	 * @param modelId a {@link java.lang.String} object.
+	 */
 	public void setModelId(String modelId) {
 		this.modelId = modelId;
 	}

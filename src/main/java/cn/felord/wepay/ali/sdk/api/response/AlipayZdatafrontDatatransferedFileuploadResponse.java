@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdatafront.datatransfered.fileupload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-02 14:41:11
+ * @version $Id: $Id
  */
 public class AlipayZdatafrontDatatransferedFileuploadResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayZdatafrontDatatransferedFileuploadResponse extends AlipayResp
 	@ApiField("success")
 	private String success;
 
+	/**
+	 * <p>Setter for the field <code>resultData</code>.</p>
+	 *
+	 * @param resultData a {@link java.lang.String} object.
+	 */
 	public void setResultData(String resultData) {
 		this.resultData = resultData;
 	}
+	/**
+	 * <p>Getter for the field <code>resultData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultData( ) {
 		return this.resultData;
 	}
 
+	/**
+	 * <p>Setter for the field <code>success</code>.</p>
+	 *
+	 * @param success a {@link java.lang.String} object.
+	 */
 	public void setSuccess(String success) {
 		this.success = success;
 	}
+	/**
+	 * <p>Getter for the field <code>success</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSuccess( ) {
 		return this.success;
 	}

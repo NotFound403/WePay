@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 字段
  *
  * @author auto create
- * @since 1.0, 2017-06-08 15:02:24
+ * @version $Id: $Id
  */
 public class KeyanColumn extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KeyanColumn extends AlipayObject {
 	@ApiField("password")
 	private String password;
 
+	/**
+	 * <p>Getter for the field <code>password</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassword() {
 		return this.password;
 	}
+	/**
+	 * <p>Setter for the field <code>password</code>.</p>
+	 *
+	 * @param password a {@link java.lang.String} object.
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}

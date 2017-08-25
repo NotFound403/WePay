@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 信用借还借用实体数据上传接口
  *
  * @author auto create
- * @since 1.0, 2017-07-17 19:04:38
+ * @version $Id: $Id
  */
 public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 
@@ -106,107 +106,257 @@ public class ZhimaMerchantBorrowEntityUploadModel extends AlipayObject {
 	@ApiField("upload_time")
 	private String uploadTime;
 
+	/**
+	 * <p>Getter for the field <code>addressDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddressDesc() {
 		return this.addressDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>addressDesc</code>.</p>
+	 *
+	 * @param addressDesc a {@link java.lang.String} object.
+	 */
 	public void setAddressDesc(String addressDesc) {
 		this.addressDesc = addressDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>canBorrow</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCanBorrow() {
 		return this.canBorrow;
 	}
+	/**
+	 * <p>Setter for the field <code>canBorrow</code>.</p>
+	 *
+	 * @param canBorrow a {@link java.lang.String} object.
+	 */
 	public void setCanBorrow(String canBorrow) {
 		this.canBorrow = canBorrow;
 	}
 
+	/**
+	 * <p>Getter for the field <code>canBorrowCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCanBorrowCnt() {
 		return this.canBorrowCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>canBorrowCnt</code>.</p>
+	 *
+	 * @param canBorrowCnt a {@link java.lang.String} object.
+	 */
 	public void setCanBorrowCnt(String canBorrowCnt) {
 		this.canBorrowCnt = canBorrowCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryCode() {
 		return this.categoryCode;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryCode</code>.</p>
+	 *
+	 * @param categoryCode a {@link java.lang.String} object.
+	 */
 	public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>collectRent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCollectRent() {
 		return this.collectRent;
 	}
+	/**
+	 * <p>Setter for the field <code>collectRent</code>.</p>
+	 *
+	 * @param collectRent a {@link java.lang.String} object.
+	 */
 	public void setCollectRent(String collectRent) {
 		this.collectRent = collectRent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactNumber() {
 		return this.contactNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>contactNumber</code>.</p>
+	 *
+	 * @param contactNumber a {@link java.lang.String} object.
+	 */
 	public void setContactNumber(String contactNumber) {
 		this.contactNumber = contactNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityCode() {
 		return this.entityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>entityCode</code>.</p>
+	 *
+	 * @param entityCode a {@link java.lang.String} object.
+	 */
 	public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityName() {
 		return this.entityName;
 	}
+	/**
+	 * <p>Setter for the field <code>entityName</code>.</p>
+	 *
+	 * @param entityName a {@link java.lang.String} object.
+	 */
 	public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>latitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLatitude() {
 		return this.latitude;
 	}
+	/**
+	 * <p>Setter for the field <code>latitude</code>.</p>
+	 *
+	 * @param latitude a {@link java.lang.String} object.
+	 */
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>longitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLongitude() {
 		return this.longitude;
 	}
+	/**
+	 * <p>Setter for the field <code>longitude</code>.</p>
+	 *
+	 * @param longitude a {@link java.lang.String} object.
+	 */
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>officeHoursDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOfficeHoursDesc() {
 		return this.officeHoursDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>officeHoursDesc</code>.</p>
+	 *
+	 * @param officeHoursDesc a {@link java.lang.String} object.
+	 */
 	public void setOfficeHoursDesc(String officeHoursDesc) {
 		this.officeHoursDesc = officeHoursDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rentDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRentDesc() {
 		return this.rentDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>rentDesc</code>.</p>
+	 *
+	 * @param rentDesc a {@link java.lang.String} object.
+	 */
 	public void setRentDesc(String rentDesc) {
 		this.rentDesc = rentDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalBorrowCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalBorrowCnt() {
 		return this.totalBorrowCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>totalBorrowCnt</code>.</p>
+	 *
+	 * @param totalBorrowCnt a {@link java.lang.String} object.
+	 */
 	public void setTotalBorrowCnt(String totalBorrowCnt) {
 		this.totalBorrowCnt = totalBorrowCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uploadTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUploadTime() {
 		return this.uploadTime;
 	}
+	/**
+	 * <p>Setter for the field <code>uploadTime</code>.</p>
+	 *
+	 * @param uploadTime a {@link java.lang.String} object.
+	 */
 	public void setUploadTime(String uploadTime) {
 		this.uploadTime = uploadTime;
 	}

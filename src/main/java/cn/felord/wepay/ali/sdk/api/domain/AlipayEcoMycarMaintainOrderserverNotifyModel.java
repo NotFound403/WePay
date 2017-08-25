@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 订单内容变更接口
  *
  * @author auto create
- * @since 1.0, 2016-11-16 10:03:34
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarMaintainOrderserverNotifyModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoMycarMaintainOrderserverNotifyModel extends AlipayObject {
 	@ApiField("order_no")
 	private String orderNo;
 
+	/**
+	 * <p>Getter for the field <code>changeCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChangeCost() {
 		return this.changeCost;
 	}
+	/**
+	 * <p>Setter for the field <code>changeCost</code>.</p>
+	 *
+	 * @param changeCost a {@link java.lang.String} object.
+	 */
 	public void setChangeCost(String changeCost) {
 		this.changeCost = changeCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>changeDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChangeDesc() {
 		return this.changeDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>changeDesc</code>.</p>
+	 *
+	 * @param changeDesc a {@link java.lang.String} object.
+	 */
 	public void setChangeDesc(String changeDesc) {
 		this.changeDesc = changeDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}

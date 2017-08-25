@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑广告系统推广详情(单张券)
  *
  * @author auto create
- * @since 1.0, 2017-01-16 16:13:33
+ * @version $Id: $Id
  */
 public class KbAdvertAdvSingleVoucherResponse extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class KbAdvertAdvSingleVoucherResponse extends AlipayObject {
 	@ApiField("voucher")
 	private KbAdvertSubjectVoucherResponse voucher;
 
+	/**
+	 * <p>Getter for the field <code>advContentList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbAdvertAdvContentResponse> getAdvContentList() {
 		return this.advContentList;
 	}
+	/**
+	 * <p>Setter for the field <code>advContentList</code>.</p>
+	 *
+	 * @param advContentList a {@link java.util.List} object.
+	 */
 	public void setAdvContentList(List<KbAdvertAdvContentResponse> advContentList) {
 		this.advContentList = advContentList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertAdvContent} object.
+	 */
 	public KbAdvertAdvContent getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertAdvContent} object.
+	 */
 	public void setContent(KbAdvertAdvContent content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucher</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertSubjectVoucherResponse} object.
+	 */
 	public KbAdvertSubjectVoucherResponse getVoucher() {
 		return this.voucher;
 	}
+	/**
+	 * <p>Setter for the field <code>voucher</code>.</p>
+	 *
+	 * @param voucher a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertSubjectVoucherResponse} object.
+	 */
 	public void setVoucher(KbAdvertSubjectVoucherResponse voucher) {
 		this.voucher = voucher;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 个性化扩展区删除接口
  *
  * @author auto create
- * @since 1.0, 2017-06-28 10:40:08
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPersonalizedExtensionDeleteModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenPublicPersonalizedExtensionDeleteModel extends AlipayObje
 	@ApiField("extension_key")
 	private String extensionKey;
 
+	/**
+	 * <p>Getter for the field <code>extensionKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtensionKey() {
 		return this.extensionKey;
 	}
+	/**
+	 * <p>Setter for the field <code>extensionKey</code>.</p>
+	 *
+	 * @param extensionKey a {@link java.lang.String} object.
+	 */
 	public void setExtensionKey(String extensionKey) {
 		this.extensionKey = extensionKey;
 	}

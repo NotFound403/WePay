@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 分佣任务推广接口
  *
  * @author auto create
- * @since 1.0, 2017-02-15 10:06:08
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionMissionPromoteModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ voucher-券
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Getter for the field <code>identify</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentify() {
 		return this.identify;
 	}
+	/**
+	 * <p>Setter for the field <code>identify</code>.</p>
+	 *
+	 * @param identify a {@link java.lang.String} object.
+	 */
 	public void setIdentify(String identify) {
 		this.identify = identify;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentifyType() {
 		return this.identifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>identifyType</code>.</p>
+	 *
+	 * @param identifyType a {@link java.lang.String} object.
+	 */
 	public void setIdentifyType(String identifyType) {
 		this.identifyType = identifyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}

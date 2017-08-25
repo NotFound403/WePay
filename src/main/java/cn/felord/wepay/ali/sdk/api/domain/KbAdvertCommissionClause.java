@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 任务条款抽象模型
  *
  * @author auto create
- * @since 1.0, 2017-01-20 17:41:05
+ * @version $Id: $Id
  */
 public class KbAdvertCommissionClause extends AlipayObject {
 
@@ -40,30 +40,70 @@ MISSION_CLAIM_CLAUSE:专属认领人条款
 	@ApiField("quota_clause")
 	private KbAdvertQuotaCommissionClause quotaClause;
 
+	/**
+	 * <p>Getter for the field <code>clauseType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClauseType() {
 		return this.clauseType;
 	}
+	/**
+	 * <p>Setter for the field <code>clauseType</code>.</p>
+	 *
+	 * @param clauseType a {@link java.lang.String} object.
+	 */
 	public void setClauseType(String clauseType) {
 		this.clauseType = clauseType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>percentageClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertPercentageCommissionClause} object.
+	 */
 	public KbAdvertPercentageCommissionClause getPercentageClause() {
 		return this.percentageClause;
 	}
+	/**
+	 * <p>Setter for the field <code>percentageClause</code>.</p>
+	 *
+	 * @param percentageClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertPercentageCommissionClause} object.
+	 */
 	public void setPercentageClause(KbAdvertPercentageCommissionClause percentageClause) {
 		this.percentageClause = percentageClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>preserveClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertPreserveCommissionClause} object.
+	 */
 	public KbAdvertPreserveCommissionClause getPreserveClause() {
 		return this.preserveClause;
 	}
+	/**
+	 * <p>Setter for the field <code>preserveClause</code>.</p>
+	 *
+	 * @param preserveClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertPreserveCommissionClause} object.
+	 */
 	public void setPreserveClause(KbAdvertPreserveCommissionClause preserveClause) {
 		this.preserveClause = preserveClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>quotaClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertQuotaCommissionClause} object.
+	 */
 	public KbAdvertQuotaCommissionClause getQuotaClause() {
 		return this.quotaClause;
 	}
+	/**
+	 * <p>Setter for the field <code>quotaClause</code>.</p>
+	 *
+	 * @param quotaClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertQuotaCommissionClause} object.
+	 */
 	public void setQuotaClause(KbAdvertQuotaCommissionClause quotaClause) {
 		this.quotaClause = quotaClause;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 分佣推广信息查询接口
  *
  * @author auto create
- * @since 1.0, 2017-02-16 10:37:02
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionAdvertQueryModel extends AlipayObject {
 
@@ -35,16 +35,36 @@ voucher-券
 	@ApiField("identify_type")
 	private String identifyType;
 
+	/**
+	 * <p>Getter for the field <code>identifies</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getIdentifies() {
 		return this.identifies;
 	}
+	/**
+	 * <p>Setter for the field <code>identifies</code>.</p>
+	 *
+	 * @param identifies a {@link java.util.List} object.
+	 */
 	public void setIdentifies(List<String> identifies) {
 		this.identifies = identifies;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentifyType() {
 		return this.identifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>identifyType</code>.</p>
+	 *
+	 * @param identifyType a {@link java.lang.String} object.
+	 */
 	public void setIdentifyType(String identifyType) {
 		this.identifyType = identifyType;
 	}

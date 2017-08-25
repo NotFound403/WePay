@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商圈主页地址创建修改接口
  *
  * @author auto create
- * @since 1.0, 2017-05-03 16:24:50
+ * @version $Id: $Id
  */
 public class KoubeiShopMallPageModifyModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KoubeiShopMallPageModifyModel extends AlipayObject {
 	@ApiField("out_biz_id")
 	private String outBizId;
 
+	/**
+	 * <p>Getter for the field <code>mallId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMallId() {
 		return this.mallId;
 	}
+	/**
+	 * <p>Setter for the field <code>mallId</code>.</p>
+	 *
+	 * @param mallId a {@link java.lang.String} object.
+	 */
 	public void setMallId(String mallId) {
 		this.mallId = mallId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mallUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMallUrl() {
 		return this.mallUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>mallUrl</code>.</p>
+	 *
+	 * @param mallUrl a {@link java.lang.String} object.
+	 */
 	public void setMallUrl(String mallUrl) {
 		this.mallUrl = mallUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizId() {
 		return this.outBizId;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizId</code>.</p>
+	 *
+	 * @param outBizId a {@link java.lang.String} object.
+	 */
 	public void setOutBizId(String outBizId) {
 		this.outBizId = outBizId;
 	}

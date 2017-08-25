@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保单查询
  *
  * @author auto create
- * @since 1.0, 2016-12-29 17:48:49
+ * @version $Id: $Id
  */
 public class AlipayInsSceneApplicationQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayInsSceneApplicationQueryModel extends AlipayObject {
 	@ApiField("prod_code")
 	private String prodCode;
 
+	/**
+	 * <p>Getter for the field <code>applicationNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplicationNo() {
 		return this.applicationNo;
 	}
+	/**
+	 * <p>Setter for the field <code>applicationNo</code>.</p>
+	 *
+	 * @param applicationNo a {@link java.lang.String} object.
+	 */
 	public void setApplicationNo(String applicationNo) {
 		this.applicationNo = applicationNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode;
 	}
+	/**
+	 * <p>Setter for the field <code>prodCode</code>.</p>
+	 *
+	 * @param prodCode a {@link java.lang.String} object.
+	 */
 	public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
 	}

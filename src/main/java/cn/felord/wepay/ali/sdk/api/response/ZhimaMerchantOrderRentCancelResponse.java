@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-25 14:34:16
+ * @version $Id: $Id
  */
 public class ZhimaMerchantOrderRentCancelResponse extends AlipayResponse {
 

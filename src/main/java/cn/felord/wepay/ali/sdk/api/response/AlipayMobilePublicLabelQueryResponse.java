@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.label.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 20:00:13
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicLabelQueryResponse extends AlipayResponse {
 
@@ -35,23 +35,45 @@ public class AlipayMobilePublicLabelQueryResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/**
+	 * <p>Setter for the field <code>labels</code>.</p>
+	 *
+	 * @param labels a {@link java.util.List} object.
+	 */
 	public void setLabels(List<String> labels) {
 		this.labels = labels;
 	}
+	/**
+	 * <p>Getter for the field <code>labels</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getLabels( ) {
 		return this.labels;
 	}
 
+	/** {@inheritDoc} */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg( ) {
 		return this.msg;
 	}

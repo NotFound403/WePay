@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户数据同步
  *
  * @author auto create
- * @since 1.0, 2017-05-26 21:53:59
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskCustomerriskSendModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipaySecurityRiskCustomerriskSendModel extends AlipayObject {
 	@ApiField("mobile")
 	private String mobile;
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}

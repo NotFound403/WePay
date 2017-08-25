@@ -21,10 +21,10 @@ package cn.felord.wepay.ali.sdk.api.internal.util.codec;
 
 /**
  * Provides Base64 encoding and decoding as defined by RFC 2045.
- * 
- * <p>This class implements section <cite>6.8. Base64 Content-Transfer-Encoding</cite> 
- * from RFC 2045 <cite>Multipurpose Internet Mail Extensions (MIME) Part One: 
- * Format of Internet Message Bodies</cite> by Freed and Borenstein.</p> 
+ *
+ * <p>This class implements section <cite>6.8. Base64 Content-Transfer-Encoding</cite>
+ * from RFC 2045 <cite>Multipurpose Internet Mail Extensions (MIME) Part One:
+ * Format of Internet Message Bodies</cite> by Freed and Borenstein.</p>
  *
  * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>
  * @author Apache Software Foundation
@@ -132,11 +132,7 @@ public class Base64 implements BinaryEncoder, BinaryDecoder {
     private static boolean isBase64(byte octect) {
         if (octect == PAD) {
             return true;
-        } else if (base64Alphabet[octect] == -1) {
-            return false;
-        } else {
-            return true;
-        }
+        } else return base64Alphabet[octect] != -1;
     }
 
     /**
@@ -189,16 +185,12 @@ public class Base64 implements BinaryEncoder, BinaryDecoder {
 
 
     /**
+     * {@inheritDoc}
+     *
      * Decodes an Object using the base64 algorithm.  This method
      * is provided in order to satisfy the requirements of the
      * Decoder interface, and will throw a DecoderException if the
      * supplied object is not of type byte[].
-     *
-     * @param pObject Object to decode
-     * @return An object (of type byte[]) containing the 
-     *         binary data which corresponds to the byte[] supplied.
-     * @throws DecoderException if the parameter supplied is not
-     *                          of type byte[]
      */
     public Object decode(Object pObject) throws DecoderException {
         if (!(pObject instanceof byte[])) {
@@ -489,16 +481,12 @@ public class Base64 implements BinaryEncoder, BinaryDecoder {
     // Implementation of the Encoder Interface
 
     /**
+     * {@inheritDoc}
+     *
      * Encodes an Object using the base64 algorithm.  This method
      * is provided in order to satisfy the requirements of the
      * Encoder interface, and will throw an EncoderException if the
      * supplied object is not of type byte[].
-     *
-     * @param pObject Object to encode
-     * @return An object (of type byte[]) containing the 
-     *         base64 encoded data which corresponds to the byte[] supplied.
-     * @throws EncoderException if the parameter supplied is not
-     *                          of type byte[]
      */
     public Object encode(Object pObject) throws EncoderException {
         if (!(pObject instanceof byte[])) {

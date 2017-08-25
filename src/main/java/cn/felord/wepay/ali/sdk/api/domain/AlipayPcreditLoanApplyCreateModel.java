@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户申贷
  *
  * @author auto create
- * @since 1.0, 2016-08-25 10:32:50
+ * @version $Id: $Id
  */
 public class AlipayPcreditLoanApplyCreateModel extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class AlipayPcreditLoanApplyCreateModel extends AlipayObject {
 	@ApiField("scene")
 	private String scene;
 
+	/**
+	 * <p>Getter for the field <code>applyAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyAmt() {
 		return this.applyAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>applyAmt</code>.</p>
+	 *
+	 * @param applyAmt a {@link java.lang.String} object.
+	 */
 	public void setApplyAmt(String applyAmt) {
 		this.applyAmt = applyAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ratio</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRatio() {
 		return this.ratio;
 	}
+	/**
+	 * <p>Setter for the field <code>ratio</code>.</p>
+	 *
+	 * @param ratio a {@link java.lang.Long} object.
+	 */
 	public void setRatio(Long ratio) {
 		this.ratio = ratio;
 	}
 
+	/**
+	 * <p>Getter for the field <code>scene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getScene() {
 		return this.scene;
 	}
+	/**
+	 * <p>Setter for the field <code>scene</code>.</p>
+	 *
+	 * @param scene a {@link java.lang.String} object.
+	 */
 	public void setScene(String scene) {
 		this.scene = scene;
 	}

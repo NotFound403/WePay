@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.community.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-30 20:48:59
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeCommunityCreateResponse extends AlipayResponse {
 
@@ -50,23 +50,53 @@ OFFLINE - 下线
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId( ) {
 		return this.communityId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>nextAction</code>.</p>
+	 *
+	 * @param nextAction a {@link java.lang.String} object.
+	 */
 	public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
+	/**
+	 * <p>Getter for the field <code>nextAction</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNextAction( ) {
 		return this.nextAction;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}

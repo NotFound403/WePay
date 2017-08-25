@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 合约基本信息选择器，根据产品编码，合约状态编码来过滤合约
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class ArrangementBaseSelector extends AlipayObject {
 
@@ -55,44 +55,104 @@ public class ArrangementBaseSelector extends AlipayObject {
 	@ApiField("select_pd_name")
 	private Boolean selectPdName;
 
+	/**
+	 * <p>Getter for the field <code>arStatuses</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getArStatuses() {
 		return this.arStatuses;
 	}
+	/**
+	 * <p>Setter for the field <code>arStatuses</code>.</p>
+	 *
+	 * @param arStatuses a {@link java.util.List} object.
+	 */
 	public void setArStatuses(List<String> arStatuses) {
 		this.arStatuses = arStatuses;
 	}
 
+	/**
+	 * <p>Getter for the field <code>markType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMarkType() {
 		return this.markType;
 	}
+	/**
+	 * <p>Setter for the field <code>markType</code>.</p>
+	 *
+	 * @param markType a {@link java.lang.String} object.
+	 */
 	public void setMarkType(String markType) {
 		this.markType = markType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pdCodes</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getPdCodes() {
 		return this.pdCodes;
 	}
+	/**
+	 * <p>Setter for the field <code>pdCodes</code>.</p>
+	 *
+	 * @param pdCodes a {@link java.util.List} object.
+	 */
 	public void setPdCodes(List<String> pdCodes) {
 		this.pdCodes = pdCodes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pdMarks</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getPdMarks() {
 		return this.pdMarks;
 	}
+	/**
+	 * <p>Setter for the field <code>pdMarks</code>.</p>
+	 *
+	 * @param pdMarks a {@link java.util.List} object.
+	 */
 	public void setPdMarks(List<String> pdMarks) {
 		this.pdMarks = pdMarks;
 	}
 
+	/**
+	 * <p>Getter for the field <code>selectPdMark</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSelectPdMark() {
 		return this.selectPdMark;
 	}
+	/**
+	 * <p>Setter for the field <code>selectPdMark</code>.</p>
+	 *
+	 * @param selectPdMark a {@link java.lang.Boolean} object.
+	 */
 	public void setSelectPdMark(Boolean selectPdMark) {
 		this.selectPdMark = selectPdMark;
 	}
 
+	/**
+	 * <p>Getter for the field <code>selectPdName</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSelectPdName() {
 		return this.selectPdName;
 	}
+	/**
+	 * <p>Setter for the field <code>selectPdName</code>.</p>
+	 *
+	 * @param selectPdName a {@link java.lang.Boolean} object.
+	 */
 	public void setSelectPdName(Boolean selectPdName) {
 		this.selectPdName = selectPdName;
 	}

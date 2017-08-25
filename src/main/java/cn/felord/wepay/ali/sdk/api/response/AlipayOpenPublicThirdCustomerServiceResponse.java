@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.third.customer.service response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 12:11:15
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicThirdCustomerServiceResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicThirdCustomerServiceResponse extends AlipayResponse
 	@ApiField("public_name")
 	private String publicName;
 
+	/**
+	 * <p>Setter for the field <code>publicName</code>.</p>
+	 *
+	 * @param publicName a {@link java.lang.String} object.
+	 */
 	public void setPublicName(String publicName) {
 		this.publicName = publicName;
 	}
+	/**
+	 * <p>Getter for the field <code>publicName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicName( ) {
 		return this.publicName;
 	}

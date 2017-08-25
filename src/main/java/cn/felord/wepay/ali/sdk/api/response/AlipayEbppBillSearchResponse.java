@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.bill.search response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 17:13:40
+ * @version $Id: $Id
  */
 public class AlipayEbppBillSearchResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayEbppBillSearchResponse extends AlipayResponse {
 	@ApiField("query_inst_bill_info")
 	private List<QueryInstBillInfo> instBillInfoList;
 
+	/**
+	 * <p>Setter for the field <code>cachekey</code>.</p>
+	 *
+	 * @param cachekey a {@link java.lang.String} object.
+	 */
 	public void setCachekey(String cachekey) {
 		this.cachekey = cachekey;
 	}
+	/**
+	 * <p>Getter for the field <code>cachekey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCachekey( ) {
 		return this.cachekey;
 	}
 
+	/**
+	 * <p>Setter for the field <code>instBillInfoList</code>.</p>
+	 *
+	 * @param instBillInfoList a {@link java.util.List} object.
+	 */
 	public void setInstBillInfoList(List<QueryInstBillInfo> instBillInfoList) {
 		this.instBillInfoList = instBillInfoList;
 	}
+	/**
+	 * <p>Getter for the field <code>instBillInfoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<QueryInstBillInfo> getInstBillInfoList( ) {
 		return this.instBillInfoList;
 	}

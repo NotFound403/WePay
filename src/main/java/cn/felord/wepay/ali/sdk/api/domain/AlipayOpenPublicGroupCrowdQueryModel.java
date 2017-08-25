@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 人群数量查询
  *
  * @author auto create
- * @since 1.0, 2017-07-14 15:10:43
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicGroupCrowdQueryModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayOpenPublicGroupCrowdQueryModel extends AlipayObject {
 	@ApiField("complex_label_rule")
 	private List<ComplexLabelRule> labelRule;
 
+	/**
+	 * <p>Getter for the field <code>labelRule</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ComplexLabelRule> getLabelRule() {
 		return this.labelRule;
 	}
+	/**
+	 * <p>Setter for the field <code>labelRule</code>.</p>
+	 *
+	 * @param labelRule a {@link java.util.List} object.
+	 */
 	public void setLabelRule(List<ComplexLabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}

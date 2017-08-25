@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 单笔转账到银行账户接口
  *
  * @author auto create
- * @since 1.0, 2017-01-18 21:54:25
+ * @version $Id: $Id
  */
 public class AlipayFundTransTobankTransferModel extends AlipayObject {
 
@@ -119,100 +119,240 @@ public class AlipayFundTransTobankTransferModel extends AlipayObject {
 	@ApiField("time_liness")
 	private String timeLiness;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeAccountName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeAccountName() {
 		return this.payeeAccountName;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeAccountName</code>.</p>
+	 *
+	 * @param payeeAccountName a {@link java.lang.String} object.
+	 */
 	public void setPayeeAccountName(String payeeAccountName) {
 		this.payeeAccountName = payeeAccountName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeAccountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeAccountType() {
 		return this.payeeAccountType;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeAccountType</code>.</p>
+	 *
+	 * @param payeeAccountType a {@link java.lang.String} object.
+	 */
 	public void setPayeeAccountType(String payeeAccountType) {
 		this.payeeAccountType = payeeAccountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeBankCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeBankCode() {
 		return this.payeeBankCode;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeBankCode</code>.</p>
+	 *
+	 * @param payeeBankCode a {@link java.lang.String} object.
+	 */
 	public void setPayeeBankCode(String payeeBankCode) {
 		this.payeeBankCode = payeeBankCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeCardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeCardNo() {
 		return this.payeeCardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeCardNo</code>.</p>
+	 *
+	 * @param payeeCardNo a {@link java.lang.String} object.
+	 */
 	public void setPayeeCardNo(String payeeCardNo) {
 		this.payeeCardNo = payeeCardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeInstBranchName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeInstBranchName() {
 		return this.payeeInstBranchName;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeInstBranchName</code>.</p>
+	 *
+	 * @param payeeInstBranchName a {@link java.lang.String} object.
+	 */
 	public void setPayeeInstBranchName(String payeeInstBranchName) {
 		this.payeeInstBranchName = payeeInstBranchName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeInstCity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeInstCity() {
 		return this.payeeInstCity;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeInstCity</code>.</p>
+	 *
+	 * @param payeeInstCity a {@link java.lang.String} object.
+	 */
 	public void setPayeeInstCity(String payeeInstCity) {
 		this.payeeInstCity = payeeInstCity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeInstName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeInstName() {
 		return this.payeeInstName;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeInstName</code>.</p>
+	 *
+	 * @param payeeInstName a {@link java.lang.String} object.
+	 */
 	public void setPayeeInstName(String payeeInstName) {
 		this.payeeInstName = payeeInstName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeInstProvince</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeInstProvince() {
 		return this.payeeInstProvince;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeInstProvince</code>.</p>
+	 *
+	 * @param payeeInstProvince a {@link java.lang.String} object.
+	 */
 	public void setPayeeInstProvince(String payeeInstProvince) {
 		this.payeeInstProvince = payeeInstProvince;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerRealName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerRealName() {
 		return this.payerRealName;
 	}
+	/**
+	 * <p>Setter for the field <code>payerRealName</code>.</p>
+	 *
+	 * @param payerRealName a {@link java.lang.String} object.
+	 */
 	public void setPayerRealName(String payerRealName) {
 		this.payerRealName = payerRealName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>remark</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRemark() {
 		return this.remark;
 	}
+	/**
+	 * <p>Setter for the field <code>remark</code>.</p>
+	 *
+	 * @param remark a {@link java.lang.String} object.
+	 */
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeLiness</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimeLiness() {
 		return this.timeLiness;
 	}
+	/**
+	 * <p>Setter for the field <code>timeLiness</code>.</p>
+	 *
+	 * @param timeLiness a {@link java.lang.String} object.
+	 */
 	public void setTimeLiness(String timeLiness) {
 		this.timeLiness = timeLiness;
 	}

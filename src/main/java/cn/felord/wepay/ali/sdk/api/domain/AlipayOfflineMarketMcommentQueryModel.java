@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询交易评价信息
  *
  * @author auto create
- * @since 1.0, 2016-06-13 20:25:02
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketMcommentQueryModel extends AlipayObject {
 
@@ -34,23 +34,53 @@ public class AlipayOfflineMarketMcommentQueryModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Getter for the field <code>opRole</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpRole() {
 		return this.opRole;
 	}
+	/**
+	 * <p>Setter for the field <code>opRole</code>.</p>
+	 *
+	 * @param opRole a {@link java.lang.String} object.
+	 */
 	public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId() {
 		return this.partnerId;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}

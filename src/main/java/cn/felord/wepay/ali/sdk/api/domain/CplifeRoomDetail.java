@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 物业社区小区房屋信息详情.
  *
  * @author auto create
- * @since 1.0, 2016-12-02 18:01:14
+ * @version $Id: $Id
  */
 public class CplifeRoomDetail extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class CplifeRoomDetail extends AlipayObject {
 	@ApiField("unit")
 	private String unit;
 
+	/**
+	 * <p>Getter for the field <code>address</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddress() {
 		return this.address;
 	}
+	/**
+	 * <p>Setter for the field <code>address</code>.</p>
+	 *
+	 * @param address a {@link java.lang.String} object.
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
 
+	/**
+	 * <p>Getter for the field <code>building</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuilding() {
 		return this.building;
 	}
+	/**
+	 * <p>Setter for the field <code>building</code>.</p>
+	 *
+	 * @param building a {@link java.lang.String} object.
+	 */
 	public void setBuilding(String building) {
 		this.building = building;
 	}
 
+	/**
+	 * <p>Getter for the field <code>group</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroup() {
 		return this.group;
 	}
+	/**
+	 * <p>Setter for the field <code>group</code>.</p>
+	 *
+	 * @param group a {@link java.lang.String} object.
+	 */
 	public void setGroup(String group) {
 		this.group = group;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRoomId() {
 		return this.outRoomId;
 	}
+	/**
+	 * <p>Setter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @param outRoomId a {@link java.lang.String} object.
+	 */
 	public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>room</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRoom() {
 		return this.room;
 	}
+	/**
+	 * <p>Setter for the field <code>room</code>.</p>
+	 *
+	 * @param room a {@link java.lang.String} object.
+	 */
 	public void setRoom(String room) {
 		this.room = room;
 	}
 
+	/**
+	 * <p>Getter for the field <code>roomId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRoomId() {
 		return this.roomId;
 	}
+	/**
+	 * <p>Setter for the field <code>roomId</code>.</p>
+	 *
+	 * @param roomId a {@link java.lang.String} object.
+	 */
 	public void setRoomId(String roomId) {
 		this.roomId = roomId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>unit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUnit() {
 		return this.unit;
 	}
+	/**
+	 * <p>Setter for the field <code>unit</code>.</p>
+	 *
+	 * @param unit a {@link java.lang.String} object.
+	 */
 	public void setUnit(String unit) {
 		this.unit = unit;
 	}

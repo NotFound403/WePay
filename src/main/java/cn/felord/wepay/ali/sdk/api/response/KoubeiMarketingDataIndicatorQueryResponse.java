@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.indicator.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-08 11:55:20
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataIndicatorQueryResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class KoubeiMarketingDataIndicatorQueryResponse extends AlipayResponse {
 	@ApiField("total_size")
 	private String totalSize;
 
+	/**
+	 * <p>Setter for the field <code>indicatorInfos</code>.</p>
+	 *
+	 * @param indicatorInfos a {@link java.lang.String} object.
+	 */
 	public void setIndicatorInfos(String indicatorInfos) {
 		this.indicatorInfos = indicatorInfos;
 	}
+	/**
+	 * <p>Getter for the field <code>indicatorInfos</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIndicatorInfos( ) {
 		return this.indicatorInfos;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalSize</code>.</p>
+	 *
+	 * @param totalSize a {@link java.lang.String} object.
+	 */
 	public void setTotalSize(String totalSize) {
 		this.totalSize = totalSize;
 	}
+	/**
+	 * <p>Getter for the field <code>totalSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalSize( ) {
 		return this.totalSize;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 外部应用根据用户当前地理位置查询附近商家信息
  *
  * @author auto create
- * @since 1.0, 2016-07-12 19:37:01
+ * @version $Id: $Id
  */
 public class AlipayMarketingCdpRecommendQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayMarketingCdpRecommendQueryModel extends AlipayObject {
 	@ApiField("logon_id")
 	private String logonId;
 
+	/**
+	 * <p>Getter for the field <code>adCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdCode() {
 		return this.adCode;
 	}
+	/**
+	 * <p>Setter for the field <code>adCode</code>.</p>
+	 *
+	 * @param adCode a {@link java.lang.String} object.
+	 */
 	public void setAdCode(String adCode) {
 		this.adCode = adCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}

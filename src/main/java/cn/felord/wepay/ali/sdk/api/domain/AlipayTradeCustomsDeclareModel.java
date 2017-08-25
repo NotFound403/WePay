@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 统一收单报关接口
  *
  * @author auto create
- * @since 1.0, 2016-11-09 19:11:51
+ * @version $Id: $Id
  */
 public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 
@@ -69,65 +69,155 @@ public class AlipayTradeCustomsDeclareModel extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>buyerInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CustomsDeclareBuyerInfo} object.
+	 */
 	public CustomsDeclareBuyerInfo getBuyerInfo() {
 		return this.buyerInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerInfo</code>.</p>
+	 *
+	 * @param buyerInfo a {@link cn.felord.wepay.ali.sdk.api.domain.CustomsDeclareBuyerInfo} object.
+	 */
 	public void setBuyerInfo(CustomsDeclareBuyerInfo buyerInfo) {
 		this.buyerInfo = buyerInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>customsPlace</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCustomsPlace() {
 		return this.customsPlace;
 	}
+	/**
+	 * <p>Setter for the field <code>customsPlace</code>.</p>
+	 *
+	 * @param customsPlace a {@link java.lang.String} object.
+	 */
 	public void setCustomsPlace(String customsPlace) {
 		this.customsPlace = customsPlace;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isSplit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsSplit() {
 		return this.isSplit;
 	}
+	/**
+	 * <p>Setter for the field <code>isSplit</code>.</p>
+	 *
+	 * @param isSplit a {@link java.lang.String} object.
+	 */
 	public void setIsSplit(String isSplit) {
 		this.isSplit = isSplit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantCustomsCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantCustomsCode() {
 		return this.merchantCustomsCode;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantCustomsCode</code>.</p>
+	 *
+	 * @param merchantCustomsCode a {@link java.lang.String} object.
+	 */
 	public void setMerchantCustomsCode(String merchantCustomsCode) {
 		this.merchantCustomsCode = merchantCustomsCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantCustomsName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantCustomsName() {
 		return this.merchantCustomsName;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantCustomsName</code>.</p>
+	 *
+	 * @param merchantCustomsName a {@link java.lang.String} object.
+	 */
 	public void setMerchantCustomsName(String merchantCustomsName) {
 		this.merchantCustomsName = merchantCustomsName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subOutBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubOutBizNo() {
 		return this.subOutBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>subOutBizNo</code>.</p>
+	 *
+	 * @param subOutBizNo a {@link java.lang.String} object.
+	 */
 	public void setSubOutBizNo(String subOutBizNo) {
 		this.subOutBizNo = subOutBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}

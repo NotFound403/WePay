@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 模板栏位信息
  *
  * @author auto create
- * @since 1.0, 2016-12-28 15:26:46
+ * @version $Id: $Id
  */
 public class TemplateColumnInfoDTO extends AlipayObject {
 
@@ -50,37 +50,87 @@ TELEPHOME：联系方式
 	@ApiField("value")
 	private String value;
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>moreInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MoreInfoDTO} object.
+	 */
 	public MoreInfoDTO getMoreInfo() {
 		return this.moreInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>moreInfo</code>.</p>
+	 *
+	 * @param moreInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MoreInfoDTO} object.
+	 */
 	public void setMoreInfo(MoreInfoDTO moreInfo) {
 		this.moreInfo = moreInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateType() {
 		return this.operateType;
 	}
+	/**
+	 * <p>Setter for the field <code>operateType</code>.</p>
+	 *
+	 * @param operateType a {@link java.lang.String} object.
+	 */
 	public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * <p>Getter for the field <code>value</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValue() {
 		return this.value;
 	}
+	/**
+	 * <p>Setter for the field <code>value</code>.</p>
+	 *
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void setValue(String value) {
 		this.value = value;
 	}

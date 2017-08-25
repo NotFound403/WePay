@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 唤起凤蝶H5编辑器
  *
  * @author auto create
- * @since 1.0, 2017-04-10 10:25:08
+ * @version $Id: $Id
  */
 public class AlipayMarketingToolFengdieEditorQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayMarketingToolFengdieEditorQueryModel extends AlipayObject {
 	@ApiField("redirect_url")
 	private String redirectUrl;
 
+	/**
+	 * <p>Getter for the field <code>activityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getActivityId() {
 		return this.activityId;
 	}
+	/**
+	 * <p>Setter for the field <code>activityId</code>.</p>
+	 *
+	 * @param activityId a {@link java.lang.Long} object.
+	 */
 	public void setActivityId(Long activityId) {
 		this.activityId = activityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>redirectUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRedirectUrl() {
 		return this.redirectUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>redirectUrl</code>.</p>
+	 *
+	 * @param redirectUrl a {@link java.lang.String} object.
+	 */
 	public void setRedirectUrl(String redirectUrl) {
 		this.redirectUrl = redirectUrl;
 	}

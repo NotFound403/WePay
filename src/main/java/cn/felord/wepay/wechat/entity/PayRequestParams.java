@@ -15,8 +15,6 @@ import java.io.Serializable;
  * @version v1.0.0
  * @since 2017 /7/17  14:14
  */
-
-
 public class PayRequestParams implements Params, Serializable {
     private static final long serialVersionUID = 8926973745023186819L;
     // 微信开放平台审核通过的应用APPID 必传
@@ -69,32 +67,62 @@ public class PayRequestParams implements Params, Serializable {
     private String auth_code;
 
 
+    /**
+     * <p>Setter for the field <code>appid</code>.</p>
+     *
+     * @param appId a {@link java.lang.String} object.
+     */
     public void setAppid(String appId) {
         this.appid = appId;
     }
 
 
+    /**
+     * <p>Setter for the field <code>mch_id</code>.</p>
+     *
+     * @param mchId a {@link java.lang.String} object.
+     */
     public void setMch_id(String mchId) {
         this.mch_id = mchId;
     }
 
 
+    /**
+     * <p>Setter for the field <code>notify_url</code>.</p>
+     *
+     * @param notifyUrl a {@link java.lang.String} object.
+     */
     public void setNotify_url(String notifyUrl) {
         this.notify_url = notifyUrl;
     }
 
 
+    /**
+     * <p>Setter for the field <code>sign_type</code>.</p>
+     *
+     * @param signType a {@link java.lang.String} object.
+     */
     public void setSign_type(String signType) {
         this.sign_type = signType;
     }
 
 
 
+    /**
+     * <p>Setter for the field <code>openid</code>.</p>
+     *
+     * @param openId a {@link java.lang.String} object.
+     */
     public void setOpenid(String openId) {
         this.openid = openId;
     }
 
 
+    /**
+     * <p>Setter for the field <code>product_id</code>.</p>
+     *
+     * @param productId a {@link java.lang.String} object.
+     */
     public void setProduct_id(String productId) {
         this.product_id = productId;
     }
@@ -307,6 +335,11 @@ public class PayRequestParams implements Params, Serializable {
     }
 
 
+    /**
+     * <p>Setter for the field <code>trade_type</code>.</p>
+     *
+     * @param payType a {@link cn.felord.wepay.common.pay.PayType} object.
+     */
     public void setTrade_type(PayType payType) {
         this.trade_type = payType.getType();
     }
@@ -483,6 +516,7 @@ public class PayRequestParams implements Params, Serializable {
         this.scene_info = ObjectUtils.beanToJson(sceneInfo);
     }
 
+    /** {@inheritDoc} */
     @Override
     public String toString() {
         return "{" +

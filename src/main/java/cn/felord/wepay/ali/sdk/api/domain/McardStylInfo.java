@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 会员卡卡面样式
  *
  * @author auto create
- * @since 1.0, 2017-06-06 17:13:14
+ * @version $Id: $Id
  */
 public class McardStylInfo extends AlipayObject {
 
@@ -39,23 +39,53 @@ public class McardStylInfo extends AlipayObject {
 	@ApiField("logo_id")
 	private String logoId;
 
+	/**
+	 * <p>Getter for the field <code>backgroundId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBackgroundId() {
 		return this.backgroundId;
 	}
+	/**
+	 * <p>Setter for the field <code>backgroundId</code>.</p>
+	 *
+	 * @param backgroundId a {@link java.lang.String} object.
+	 */
 	public void setBackgroundId(String backgroundId) {
 		this.backgroundId = backgroundId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bgColor</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBgColor() {
 		return this.bgColor;
 	}
+	/**
+	 * <p>Setter for the field <code>bgColor</code>.</p>
+	 *
+	 * @param bgColor a {@link java.lang.String} object.
+	 */
 	public void setBgColor(String bgColor) {
 		this.bgColor = bgColor;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logoId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogoId() {
 		return this.logoId;
 	}
+	/**
+	 * <p>Setter for the field <code>logoId</code>.</p>
+	 *
+	 * @param logoId a {@link java.lang.String} object.
+	 */
 	public void setLogoId(String logoId) {
 		this.logoId = logoId;
 	}

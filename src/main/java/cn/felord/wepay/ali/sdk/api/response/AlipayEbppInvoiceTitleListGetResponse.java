@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.invoice.title.list.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 16:47:33
+ * @version $Id: $Id
  */
 public class AlipayEbppInvoiceTitleListGetResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayEbppInvoiceTitleListGetResponse extends AlipayResponse {
 	@ApiField("invoice_title_model")
 	private List<InvoiceTitleModel> titleList;
 
+	/**
+	 * <p>Setter for the field <code>titleList</code>.</p>
+	 *
+	 * @param titleList a {@link java.util.List} object.
+	 */
 	public void setTitleList(List<InvoiceTitleModel> titleList) {
 		this.titleList = titleList;
 	}
+	/**
+	 * <p>Getter for the field <code>titleList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InvoiceTitleModel> getTitleList( ) {
 		return this.titleList;
 	}

@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.credit.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-04-02 16:44:25
+ * @version $Id: $Id
  */
 public class AlipayEcapiprodCreditGetResponse extends AlipayResponse {
 
@@ -27,16 +27,36 @@ public class AlipayEcapiprodCreditGetResponse extends AlipayResponse {
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Setter for the field <code>creditResult</code>.</p>
+	 *
+	 * @param creditResult a {@link cn.felord.wepay.ali.sdk.api.domain.CreditResult} object.
+	 */
 	public void setCreditResult(CreditResult creditResult) {
 		this.creditResult = creditResult;
 	}
+	/**
+	 * <p>Getter for the field <code>creditResult</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CreditResult} object.
+	 */
 	public CreditResult getCreditResult( ) {
 		return this.creditResult;
 	}
 
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId( ) {
 		return this.requestId;
 	}

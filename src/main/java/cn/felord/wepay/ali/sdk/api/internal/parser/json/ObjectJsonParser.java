@@ -9,30 +9,39 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.Converter;
 
 /**
  * 单个JSON对象解释器。
- * 
+ *
  * @author carver.gu
- * @since 1.0, Apr 11, 2010
+ * @version $Id: $Id
  */
 public class ObjectJsonParser<T extends AlipayResponse> implements AlipayParser<T> {
 
     private Class<T> clazz;
 
+    /**
+     * <p>Constructor for ObjectJsonParser.</p>
+     *
+     * @param clazz a {@link java.lang.Class} object.
+     */
     public ObjectJsonParser(Class<T> clazz) {
         this.clazz = clazz;
     }
 
+    /** {@inheritDoc} */
     public T parse(String rsp) throws AlipayApiException {
         Converter converter = new JsonConverter();
         return converter.toResponse(rsp, clazz);
     }
 
+    /**
+     * <p>getResponseClass.</p>
+     *
+     * @return a {@link java.lang.Class} object.
+     */
     public Class<T> getResponseClass() {
         return clazz;
     }
 
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.AlipayParser#getSignItem(cn.felord.wepay.ali.sdk.api.AlipayRequest, String)
-     */
+    /** {@inheritDoc} */
     public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
                                                                               throws AlipayApiException {
 
@@ -41,9 +50,7 @@ public class ObjectJsonParser<T extends AlipayResponse> implements AlipayParser<
         return converter.getSignItem(request, responseBody);
     }
 
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.AlipayParser#encryptSourceData(cn.felord.wepay.ali.sdk.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
-     */
+    /** {@inheritDoc} */
     public String encryptSourceData(AlipayRequest<?> request, String body, String format,
                                        String encryptType, String encryptKey, String charset)
                                                                                              throws AlipayApiException {

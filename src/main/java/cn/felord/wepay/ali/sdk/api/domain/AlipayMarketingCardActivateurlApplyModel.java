@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 会员卡领卡链接获取接口
  *
  * @author auto create
- * @since 1.0, 2017-07-21 20:48:40
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardActivateurlApplyModel extends AlipayObject {
 
@@ -38,30 +38,70 @@ public class AlipayMarketingCardActivateurlApplyModel extends AlipayObject {
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * <p>Getter for the field <code>callback</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCallback() {
 		return this.callback;
 	}
+	/**
+	 * <p>Setter for the field <code>callback</code>.</p>
+	 *
+	 * @param callback a {@link java.lang.String} object.
+	 */
 	public void setCallback(String callback) {
 		this.callback = callback;
 	}
 
+	/**
+	 * <p>Getter for the field <code>followAppId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFollowAppId() {
 		return this.followAppId;
 	}
+	/**
+	 * <p>Setter for the field <code>followAppId</code>.</p>
+	 *
+	 * @param followAppId a {@link java.lang.String} object.
+	 */
 	public void setFollowAppId(String followAppId) {
 		this.followAppId = followAppId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outString</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutString() {
 		return this.outString;
 	}
+	/**
+	 * <p>Setter for the field <code>outString</code>.</p>
+	 *
+	 * @param outString a {@link java.lang.String} object.
+	 */
 	public void setOutString(String outString) {
 		this.outString = outString;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}

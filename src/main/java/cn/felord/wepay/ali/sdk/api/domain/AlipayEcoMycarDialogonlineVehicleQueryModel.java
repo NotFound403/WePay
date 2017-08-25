@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 获取用户车辆信息
  *
  * @author auto create
- * @since 1.0, 2016-11-16 10:03:12
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarDialogonlineVehicleQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEcoMycarDialogonlineVehicleQueryModel extends AlipayObject {
 	@ApiField("vi_id")
 	private String viId;
 
+	/**
+	 * <p>Getter for the field <code>viId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getViId() {
 		return this.viId;
 	}
+	/**
+	 * <p>Setter for the field <code>viId</code>.</p>
+	 *
+	 * @param viId a {@link java.lang.String} object.
+	 */
 	public void setViId(String viId) {
 		this.viId = viId;
 	}

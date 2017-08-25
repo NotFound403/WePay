@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.repaymentrecord.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-29 11:34:40
+ * @version $Id: $Id
  */
 public class AlipayEcapiprodDrawndnRepaymentrecordQueryResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayEcapiprodDrawndnRepaymentrecordQueryResponse extends AlipayRe
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Setter for the field <code>repaymentRecords</code>.</p>
+	 *
+	 * @param repaymentRecords a {@link java.util.List} object.
+	 */
 	public void setRepaymentRecords(List<RepaymentRecords> repaymentRecords) {
 		this.repaymentRecords = repaymentRecords;
 	}
+	/**
+	 * <p>Getter for the field <code>repaymentRecords</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RepaymentRecords> getRepaymentRecords( ) {
 		return this.repaymentRecords;
 	}
 
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId( ) {
 		return this.requestId;
 	}

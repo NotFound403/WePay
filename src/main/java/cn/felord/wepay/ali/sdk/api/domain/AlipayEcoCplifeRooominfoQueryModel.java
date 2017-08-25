@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询小区房屋信息列表
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:41
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeRooominfoQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoCplifeRooominfoQueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNum() {
 		return this.pageNum;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNum</code>.</p>
+	 *
+	 * @param pageNum a {@link java.lang.Long} object.
+	 */
 	public void setPageNum(Long pageNum) {
 		this.pageNum = pageNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}

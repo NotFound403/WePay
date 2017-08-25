@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 医院科室信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class MedicalHospitalDeptInfo extends AlipayObject {
 
@@ -45,37 +45,87 @@ public class MedicalHospitalDeptInfo extends AlipayObject {
 	@ApiField("partner_code")
 	private String partnerCode;
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>location</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLocation() {
 		return this.location;
 	}
+	/**
+	 * <p>Setter for the field <code>location</code>.</p>
+	 *
+	 * @param location a {@link java.lang.String} object.
+	 */
 	public void setLocation(String location) {
 		this.location = location;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parentName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParentName() {
 		return this.parentName;
 	}
+	/**
+	 * <p>Setter for the field <code>parentName</code>.</p>
+	 *
+	 * @param parentName a {@link java.lang.String} object.
+	 */
 	public void setParentName(String parentName) {
 		this.parentName = parentName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerCode() {
 		return this.partnerCode;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerCode</code>.</p>
+	 *
+	 * @param partnerCode a {@link java.lang.String} object.
+	 */
 	public void setPartnerCode(String partnerCode) {
 		this.partnerCode = partnerCode;
 	}

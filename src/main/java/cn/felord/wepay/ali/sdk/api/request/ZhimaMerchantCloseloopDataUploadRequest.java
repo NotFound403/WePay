@@ -11,9 +11,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: zhima.merchant.closeloop.data.upload request
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 14:12:15
+ * @version $Id: $Id
  */
 public class ZhimaMerchantCloseloopDataUploadRequest implements AlipayUploadRequest<ZhimaMerchantCloseloopDataUploadResponse> {
 
@@ -65,51 +65,121 @@ public class ZhimaMerchantCloseloopDataUploadRequest implements AlipayUploadRequ
 	 */
 	private String sceneCode;
 
+	/**
+	 * <p>Setter for the field <code>bizExtParams</code>.</p>
+	 *
+	 * @param bizExtParams a {@link java.lang.String} object.
+	 */
 	public void setBizExtParams(String bizExtParams) {
 		this.bizExtParams = bizExtParams;
 	}
+	/**
+	 * <p>Getter for the field <code>bizExtParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizExtParams() {
 		return this.bizExtParams;
 	}
 
+	/**
+	 * <p>Setter for the field <code>columns</code>.</p>
+	 *
+	 * @param columns a {@link java.lang.String} object.
+	 */
 	public void setColumns(String columns) {
 		this.columns = columns;
 	}
+	/**
+	 * <p>Getter for the field <code>columns</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getColumns() {
 		return this.columns;
 	}
 
+	/**
+	 * <p>Setter for the field <code>file</code>.</p>
+	 *
+	 * @param file a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public void setFile(FileItem file) {
 		this.file = file;
 	}
+	/**
+	 * <p>Getter for the field <code>file</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public FileItem getFile() {
 		return this.file;
 	}
 
+	/**
+	 * <p>Setter for the field <code>fileCharset</code>.</p>
+	 *
+	 * @param fileCharset a {@link java.lang.String} object.
+	 */
 	public void setFileCharset(String fileCharset) {
 		this.fileCharset = fileCharset;
 	}
+	/**
+	 * <p>Getter for the field <code>fileCharset</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFileCharset() {
 		return this.fileCharset;
 	}
 
+	/**
+	 * <p>Setter for the field <code>primaryKeyColumns</code>.</p>
+	 *
+	 * @param primaryKeyColumns a {@link java.lang.String} object.
+	 */
 	public void setPrimaryKeyColumns(String primaryKeyColumns) {
 		this.primaryKeyColumns = primaryKeyColumns;
 	}
+	/**
+	 * <p>Getter for the field <code>primaryKeyColumns</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrimaryKeyColumns() {
 		return this.primaryKeyColumns;
 	}
 
+	/**
+	 * <p>Setter for the field <code>records</code>.</p>
+	 *
+	 * @param records a {@link java.lang.String} object.
+	 */
 	public void setRecords(String records) {
 		this.records = records;
 	}
+	/**
+	 * <p>Getter for the field <code>records</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecords() {
 		return this.records;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @param sceneCode a {@link java.lang.String} object.
+	 */
 	public void setSceneCode(String sceneCode) {
 		this.sceneCode = sceneCode;
 	}
+	/**
+	 * <p>Getter for the field <code>sceneCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneCode() {
 		return this.sceneCode;
 	}
@@ -121,57 +191,103 @@ public class ZhimaMerchantCloseloopDataUploadRequest implements AlipayUploadRequ
     private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 	
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }
 	
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 	
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
     
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "zhima.merchant.closeloop.data.upload";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("biz_ext_params", this.bizExtParams);
@@ -186,6 +302,12 @@ public class ZhimaMerchantCloseloopDataUploadRequest implements AlipayUploadRequ
 		return txtParams;
 	}
 	
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -193,33 +315,55 @@ public class ZhimaMerchantCloseloopDataUploadRequest implements AlipayUploadRequ
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getFileParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
 		params.put("file", this.file);
 		return params;
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<ZhimaMerchantCloseloopDataUploadResponse> getResponseClass() {
 		return ZhimaMerchantCloseloopDataUploadResponse.class;
 	}
 	
+	 /**
+	  * <p>isNeedEncrypt.</p>
+	  *
+	  * @return a boolean.
+	  */
 	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 创建AA收款、江湖救急、活动收款等，调用此接口获取收款详情
  *
  * @author auto create
- * @since 1.0, 2017-02-13 17:29:50
+ * @version $Id: $Id
  */
 public class AlipayFundTransBatchQuerybatchModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayFundTransBatchQuerybatchModel extends AlipayObject {
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Getter for the field <code>batchNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchNo() {
 		return this.batchNo;
 	}
+	/**
+	 * <p>Setter for the field <code>batchNo</code>.</p>
+	 *
+	 * @param batchNo a {@link java.lang.String} object.
+	 */
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken() {
 		return this.token;
 	}
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}

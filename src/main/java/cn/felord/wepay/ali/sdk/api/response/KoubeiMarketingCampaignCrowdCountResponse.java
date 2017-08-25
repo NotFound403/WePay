@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.crowd.count response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-29 11:19:53
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignCrowdCountResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class KoubeiMarketingCampaignCrowdCountResponse extends AlipayResponse {
 	@ApiField("summary_values")
 	private String summaryValues;
 
+	/**
+	 * <p>Setter for the field <code>dimensionValues</code>.</p>
+	 *
+	 * @param dimensionValues a {@link java.lang.String} object.
+	 */
 	public void setDimensionValues(String dimensionValues) {
 		this.dimensionValues = dimensionValues;
 	}
+	/**
+	 * <p>Getter for the field <code>dimensionValues</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDimensionValues( ) {
 		return this.dimensionValues;
 	}
 
+	/**
+	 * <p>Setter for the field <code>summaryValues</code>.</p>
+	 *
+	 * @param summaryValues a {@link java.lang.String} object.
+	 */
 	public void setSummaryValues(String summaryValues) {
 		this.summaryValues = summaryValues;
 	}
+	/**
+	 * <p>Getter for the field <code>summaryValues</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSummaryValues( ) {
 		return this.summaryValues;
 	}

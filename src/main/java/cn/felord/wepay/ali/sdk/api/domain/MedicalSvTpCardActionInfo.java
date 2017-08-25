@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 医疗服务平台card行动点信息
  *
  * @author auto create
- * @since 1.0, 2016-11-16 15:16:21
+ * @version $Id: $Id
  */
 public class MedicalSvTpCardActionInfo extends AlipayObject {
 
@@ -32,23 +32,53 @@ public class MedicalSvTpCardActionInfo extends AlipayObject {
 	@ApiField("action_url")
 	private String actionUrl;
 
+	/**
+	 * <p>Getter for the field <code>actionCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionCode() {
 		return this.actionCode;
 	}
+	/**
+	 * <p>Setter for the field <code>actionCode</code>.</p>
+	 *
+	 * @param actionCode a {@link java.lang.String} object.
+	 */
 	public void setActionCode(String actionCode) {
 		this.actionCode = actionCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionName() {
 		return this.actionName;
 	}
+	/**
+	 * <p>Setter for the field <code>actionName</code>.</p>
+	 *
+	 * @param actionName a {@link java.lang.String} object.
+	 */
 	public void setActionName(String actionName) {
 		this.actionName = actionName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionUrl() {
 		return this.actionUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @param actionUrl a {@link java.lang.String} object.
+	 */
 	public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
 	}

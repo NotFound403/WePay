@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 创建网商会员
  *
  * @author auto create
- * @since 1.0, 2017-07-10 18:20:40
+ * @version $Id: $Id
  */
 public class MybankCreditUserRoleCreateModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class MybankCreditUserRoleCreateModel extends AlipayObject {
 	@ApiField("scene_type")
 	private String sceneType;
 
+	/**
+	 * <p>Getter for the field <code>entityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityCode() {
 		return this.entityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>entityCode</code>.</p>
+	 *
+	 * @param entityCode a {@link java.lang.String} object.
+	 */
 	public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityName() {
 		return this.entityName;
 	}
+	/**
+	 * <p>Setter for the field <code>entityName</code>.</p>
+	 *
+	 * @param entityName a {@link java.lang.String} object.
+	 */
 	public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityType() {
 		return this.entityType;
 	}
+	/**
+	 * <p>Setter for the field <code>entityType</code>.</p>
+	 *
+	 * @param entityType a {@link java.lang.String} object.
+	 */
 	public void setEntityType(String entityType) {
 		this.entityType = entityType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtData() {
 		return this.extData;
 	}
+	/**
+	 * <p>Setter for the field <code>extData</code>.</p>
+	 *
+	 * @param extData a {@link java.lang.String} object.
+	 */
 	public void setExtData(String extData) {
 		this.extData = extData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sceneType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSceneType() {
 		return this.sceneType;
 	}
+	/**
+	 * <p>Setter for the field <code>sceneType</code>.</p>
+	 *
+	 * @param sceneType a {@link java.lang.String} object.
+	 */
 	public void setSceneType(String sceneType) {
 		this.sceneType = sceneType;
 	}

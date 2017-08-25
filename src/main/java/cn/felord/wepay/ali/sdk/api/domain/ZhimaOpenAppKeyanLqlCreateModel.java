@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * keyantestoneone
  *
  * @author auto create
- * @since 1.0, 2017-06-28 11:41:24
+ * @version $Id: $Id
  */
 public class ZhimaOpenAppKeyanLqlCreateModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class ZhimaOpenAppKeyanLqlCreateModel extends AlipayObject {
 	@ApiField("cert_no")
 	private String certNo;
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}

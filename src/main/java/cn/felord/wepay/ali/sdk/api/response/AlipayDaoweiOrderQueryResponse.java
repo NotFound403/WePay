@@ -10,9 +10,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-20 14:00:38
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderQueryResponse extends AlipayResponse {
 
@@ -104,100 +104,240 @@ public class AlipayDaoweiOrderQueryResponse extends AlipayResponse {
 	@ApiField("total_amount")
 	private String totalAmount;
 
+	/**
+	 * <p>Setter for the field <code>buyerUserId</code>.</p>
+	 *
+	 * @param buyerUserId a {@link java.lang.String} object.
+	 */
 	public void setBuyerUserId(String buyerUserId) {
 		this.buyerUserId = buyerUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerUserId( ) {
 		return this.buyerUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @param gmtCreate a {@link java.lang.String} object.
+	 */
 	public void setGmtCreate(String gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @param gmtModified a {@link java.lang.String} object.
+	 */
 	public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtModified( ) {
 		return this.gmtModified;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtPayment</code>.</p>
+	 *
+	 * @param gmtPayment a {@link java.lang.String} object.
+	 */
 	public void setGmtPayment(String gmtPayment) {
 		this.gmtPayment = gmtPayment;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtPayment</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtPayment( ) {
 		return this.gmtPayment;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtRefund</code>.</p>
+	 *
+	 * @param gmtRefund a {@link java.lang.String} object.
+	 */
 	public void setGmtRefund(String gmtRefund) {
 		this.gmtRefund = gmtRefund;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtRefund</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtRefund( ) {
 		return this.gmtRefund;
 	}
 
+	/**
+	 * <p>Setter for the field <code>logisticsInfo</code>.</p>
+	 *
+	 * @param logisticsInfo a {@link cn.felord.wepay.ali.sdk.api.domain.OrderLogisticsInfo} object.
+	 */
 	public void setLogisticsInfo(OrderLogisticsInfo logisticsInfo) {
 		this.logisticsInfo = logisticsInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>logisticsInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.OrderLogisticsInfo} object.
+	 */
 	public OrderLogisticsInfo getLogisticsInfo( ) {
 		return this.logisticsInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo( ) {
 		return this.memo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @param orderStatus a {@link java.lang.String} object.
+	 */
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>paymentAmount</code>.</p>
+	 *
+	 * @param paymentAmount a {@link java.lang.String} object.
+	 */
 	public void setPaymentAmount(String paymentAmount) {
 		this.paymentAmount = paymentAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>paymentAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPaymentAmount( ) {
 		return this.paymentAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>realAmount</code>.</p>
+	 *
+	 * @param realAmount a {@link java.lang.String} object.
+	 */
 	public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>realAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealAmount( ) {
 		return this.realAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @param refundAmount a {@link java.lang.String} object.
+	 */
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundAmount( ) {
 		return this.refundAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>serviceOrderList</code>.</p>
+	 *
+	 * @param serviceOrderList a {@link java.util.List} object.
+	 */
 	public void setServiceOrderList(List<ServiceOrderInfo> serviceOrderList) {
 		this.serviceOrderList = serviceOrderList;
 	}
+	/**
+	 * <p>Getter for the field <code>serviceOrderList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ServiceOrderInfo> getServiceOrderList( ) {
 		return this.serviceOrderList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}

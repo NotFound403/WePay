@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.complete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-24 14:06:51
+ * @version $Id: $Id
  */
 public class ZhimaMerchantOrderRentCompleteResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class ZhimaMerchantOrderRentCompleteResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>alipayFundOrderNo</code>.</p>
+	 *
+	 * @param alipayFundOrderNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayFundOrderNo(String alipayFundOrderNo) {
 		this.alipayFundOrderNo = alipayFundOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayFundOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayFundOrderNo( ) {
 		return this.alipayFundOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 指纹校验初始化
  *
  * @author auto create
- * @since 1.0, 2017-01-12 17:27:23
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFingerprintVerifyInitializeModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipaySecurityProdFingerprintVerifyInitializeModel extends AlipayOb
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Getter for the field <code>ifaaVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIfaaVersion() {
 		return this.ifaaVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>ifaaVersion</code>.</p>
+	 *
+	 * @param ifaaVersion a {@link java.lang.String} object.
+	 */
 	public void setIfaaVersion(String ifaaVersion) {
 		this.ifaaVersion = ifaaVersion;
 	}
 
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken() {
 		return this.token;
 	}
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}

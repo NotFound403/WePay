@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询签约信息接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:16:45
+ * @version $Id: $Id
  */
 public class AlipayEbppProdmodeSignQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEbppProdmodeSignQueryModel extends AlipayObject {
 	@ApiField("prod_code")
 	private String prodCode;
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode;
 	}
+	/**
+	 * <p>Setter for the field <code>prodCode</code>.</p>
+	 *
+	 * @param prodCode a {@link java.lang.String} object.
+	 */
 	public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
 	}

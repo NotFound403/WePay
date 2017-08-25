@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * OpenApiRoyaltyDetailInfoPojo
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class OpenApiRoyaltyDetailInfoPojo extends AlipayObject {
 	@ApiField("trans_out")
 	private String transOut;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.Long} object.
+	 */
 	public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>amountPercentage</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAmountPercentage() {
 		return this.amountPercentage;
 	}
+	/**
+	 * <p>Setter for the field <code>amountPercentage</code>.</p>
+	 *
+	 * @param amountPercentage a {@link java.lang.Long} object.
+	 */
 	public void setAmountPercentage(Long amountPercentage) {
 		this.amountPercentage = amountPercentage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transIn</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransIn() {
 		return this.transIn;
 	}
+	/**
+	 * <p>Setter for the field <code>transIn</code>.</p>
+	 *
+	 * @param transIn a {@link java.lang.String} object.
+	 */
 	public void setTransIn(String transIn) {
 		this.transIn = transIn;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transOut</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransOut() {
 		return this.transOut;
 	}
+	/**
+	 * <p>Setter for the field <code>transOut</code>.</p>
+	 *
+	 * @param transOut a {@link java.lang.String} object.
+	 */
 	public void setTransOut(String transOut) {
 		this.transOut = transOut;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 芝麻信用评分
  *
  * @author auto create
- * @since 1.0, 2017-06-12 14:16:29
+ * @version $Id: $Id
  */
 public class ZhimaCreditScoreGetModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class ZhimaCreditScoreGetModel extends AlipayObject {
 	@ApiField("transaction_id")
 	private String transactionId;
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transactionId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransactionId() {
 		return this.transactionId;
 	}
+	/**
+	 * <p>Setter for the field <code>transactionId</code>.</p>
+	 *
+	 * @param transactionId a {@link java.lang.String} object.
+	 */
 	public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}

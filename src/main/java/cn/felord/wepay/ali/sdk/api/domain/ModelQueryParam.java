@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 模型查询参数
  *
  * @author auto create
- * @since 1.0, 2017-04-27 14:36:26
+ * @version $Id: $Id
  */
 public class ModelQueryParam extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class ModelQueryParam extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
+	/**
+	 * <p>Getter for the field <code>key</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getKey() {
 		return this.key;
 	}
+	/**
+	 * <p>Setter for the field <code>key</code>.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 */
 	public void setKey(String key) {
 		this.key = key;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperate() {
 		return this.operate;
 	}
+	/**
+	 * <p>Setter for the field <code>operate</code>.</p>
+	 *
+	 * @param operate a {@link java.lang.String} object.
+	 */
 	public void setOperate(String operate) {
 		this.operate = operate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>value</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValue() {
 		return this.value;
 	}
+	/**
+	 * <p>Setter for the field <code>value</code>.</p>
+	 *
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void setValue(String value) {
 		this.value = value;
 	}

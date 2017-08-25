@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 修改技师信息
  *
  * @author auto create
- * @since 1.0, 2016-10-13 14:02:30
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarDialogonlineAnswererUpdateModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEcoMycarDialogonlineAnswererUpdateModel extends AlipayObject 
 	@ApiField("answer_status")
 	private String answerStatus;
 
+	/**
+	 * <p>Getter for the field <code>answerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAnswerId() {
 		return this.answerId;
 	}
+	/**
+	 * <p>Setter for the field <code>answerId</code>.</p>
+	 *
+	 * @param answerId a {@link java.lang.String} object.
+	 */
 	public void setAnswerId(String answerId) {
 		this.answerId = answerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>answerStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAnswerStatus() {
 		return this.answerStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>answerStatus</code>.</p>
+	 *
+	 * @param answerStatus a {@link java.lang.String} object.
+	 */
 	public void setAnswerStatus(String answerStatus) {
 		this.answerStatus = answerStatus;
 	}

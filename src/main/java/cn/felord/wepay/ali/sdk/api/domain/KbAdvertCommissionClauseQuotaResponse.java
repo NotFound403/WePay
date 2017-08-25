@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统分佣规则（定额）
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:12
+ * @version $Id: $Id
  */
 public class KbAdvertCommissionClauseQuotaResponse extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KbAdvertCommissionClauseQuotaResponse extends AlipayObject {
 	@ApiField("quota_amount")
 	private String quotaAmount;
 
+	/**
+	 * <p>Getter for the field <code>quotaAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQuotaAmount() {
 		return this.quotaAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>quotaAmount</code>.</p>
+	 *
+	 * @param quotaAmount a {@link java.lang.String} object.
+	 */
 	public void setQuotaAmount(String quotaAmount) {
 		this.quotaAmount = quotaAmount;
 	}

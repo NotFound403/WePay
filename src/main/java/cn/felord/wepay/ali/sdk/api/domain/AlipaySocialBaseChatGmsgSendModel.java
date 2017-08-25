@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 支付宝群聊发消息
  *
  * @author auto create
- * @since 1.0, 2017-07-24 14:51:04
+ * @version $Id: $Id
  */
 public class AlipaySocialBaseChatGmsgSendModel extends AlipayObject {
 
@@ -103,86 +103,206 @@ public class AlipaySocialBaseChatGmsgSendModel extends AlipayObject {
 	@ApiField("template_data")
 	private String templateData;
 
+	/**
+	 * <p>Getter for the field <code>bizMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizMemo() {
 		return this.bizMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizMemo</code>.</p>
+	 *
+	 * @param bizMemo a {@link java.lang.String} object.
+	 */
 	public void setBizMemo(String bizMemo) {
 		this.bizMemo = bizMemo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>clientMsgId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClientMsgId() {
 		return this.clientMsgId;
 	}
+	/**
+	 * <p>Setter for the field <code>clientMsgId</code>.</p>
+	 *
+	 * @param clientMsgId a {@link java.lang.String} object.
+	 */
 	public void setClientMsgId(String clientMsgId) {
 		this.clientMsgId = clientMsgId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>deliveryMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliveryMode() {
 		return this.deliveryMode;
 	}
+	/**
+	 * <p>Setter for the field <code>deliveryMode</code>.</p>
+	 *
+	 * @param deliveryMode a {@link java.lang.String} object.
+	 */
 	public void setDeliveryMode(String deliveryMode) {
 		this.deliveryMode = deliveryMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>hiddenSide</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHiddenSide() {
 		return this.hiddenSide;
 	}
+	/**
+	 * <p>Setter for the field <code>hiddenSide</code>.</p>
+	 *
+	 * @param hiddenSide a {@link java.lang.String} object.
+	 */
 	public void setHiddenSide(String hiddenSide) {
 		this.hiddenSide = hiddenSide;
 	}
 
+	/**
+	 * <p>Getter for the field <code>link</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLink() {
 		return this.link;
 	}
+	/**
+	 * <p>Setter for the field <code>link</code>.</p>
+	 *
+	 * @param link a {@link java.lang.String} object.
+	 */
 	public void setLink(String link) {
 		this.link = link;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pushStr</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPushStr() {
 		return this.pushStr;
 	}
+	/**
+	 * <p>Setter for the field <code>pushStr</code>.</p>
+	 *
+	 * @param pushStr a {@link java.lang.String} object.
+	 */
 	public void setPushStr(String pushStr) {
 		this.pushStr = pushStr;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rangeUsers</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getRangeUsers() {
 		return this.rangeUsers;
 	}
+	/**
+	 * <p>Setter for the field <code>rangeUsers</code>.</p>
+	 *
+	 * @param rangeUsers a {@link java.util.List} object.
+	 */
 	public void setRangeUsers(List<String> rangeUsers) {
 		this.rangeUsers = rangeUsers;
 	}
 
+	/**
+	 * <p>Getter for the field <code>receiverId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverId() {
 		return this.receiverId;
 	}
+	/**
+	 * <p>Setter for the field <code>receiverId</code>.</p>
+	 *
+	 * @param receiverId a {@link java.lang.String} object.
+	 */
 	public void setReceiverId(String receiverId) {
 		this.receiverId = receiverId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>receiverUsertype</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiverUsertype() {
 		return this.receiverUsertype;
 	}
+	/**
+	 * <p>Setter for the field <code>receiverUsertype</code>.</p>
+	 *
+	 * @param receiverUsertype a {@link java.lang.String} object.
+	 */
 	public void setReceiverUsertype(String receiverUsertype) {
 		this.receiverUsertype = receiverUsertype;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateCode() {
 		return this.templateCode;
 	}
+	/**
+	 * <p>Setter for the field <code>templateCode</code>.</p>
+	 *
+	 * @param templateCode a {@link java.lang.String} object.
+	 */
 	public void setTemplateCode(String templateCode) {
 		this.templateCode = templateCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateData() {
 		return this.templateData;
 	}
+	/**
+	 * <p>Setter for the field <code>templateData</code>.</p>
+	 *
+	 * @param templateData a {@link java.lang.String} object.
+	 */
 	public void setTemplateData(String templateData) {
 		this.templateData = templateData;
 	}

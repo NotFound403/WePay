@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.service.price.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-12 10:29:34
+ * @version $Id: $Id
  */
 public class AlipayDaoweiServicePriceModifyResponse extends AlipayResponse {
 

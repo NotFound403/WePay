@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 流程全局唯一ID
  *
  * @author auto create
- * @since 1.0, 2017-03-03 11:29:15
+ * @version $Id: $Id
  */
 public class BPOpenApiPUID extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class BPOpenApiPUID extends AlipayObject {
 	@ApiField("unique_key")
 	private String uniqueKey;
 
+	/**
+	 * <p>Getter for the field <code>appName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppName() {
 		return this.appName;
 	}
+	/**
+	 * <p>Setter for the field <code>appName</code>.</p>
+	 *
+	 * @param appName a {@link java.lang.String} object.
+	 */
 	public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizId() {
 		return this.bizId;
 	}
+	/**
+	 * <p>Setter for the field <code>bizId</code>.</p>
+	 *
+	 * @param bizId a {@link java.lang.String} object.
+	 */
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uniqueKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUniqueKey() {
 		return this.uniqueKey;
 	}
+	/**
+	 * <p>Setter for the field <code>uniqueKey</code>.</p>
+	 *
+	 * @param uniqueKey a {@link java.lang.String} object.
+	 */
 	public void setUniqueKey(String uniqueKey) {
 		this.uniqueKey = uniqueKey;
 	}

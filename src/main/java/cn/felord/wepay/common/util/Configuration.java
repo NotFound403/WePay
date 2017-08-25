@@ -23,36 +23,16 @@ public abstract class Configuration {
     private static final Logger log = LoggerFactory.getLogger(Configuration.class);
 
 
-    /**
-     * Read   map.
-     *
-     * @return the map
-     * @throws PayException the pay exception
-     */
-    public Map<Object, Object> read() throws PayException {
-
-        ConfigProperties configProperties = AnnotationUtil.getAnnotation(this.getClass(), ConfigProperties.class);
-        String fileName = "weChatConfig";
-        if (configProperties != null) {
-            fileName = configProperties.fileName();
-        }
-        Properties props = new Properties();
-        try (InputStream in = Configuration.class.getClassLoader().getResourceAsStream(fileName + ".properties")) {
-            props.load(in);
-        } catch (FileNotFoundException e) {
-            log.debug("weChatConfig.properties  is not found", e);
-        } catch (IOException e) {
-            log.debug("read weChatConfig.properties IOException", e);
-        }
-
-        String[] keys = {"appId", "mchId", "secretKey", "signType", "notifyUrl", "certPath"};
-        for (String key : keys) {
-            String value = props.getProperty(key);
-            if ("".equals(value) || value == null) {
-                throw new PayException("配置文件中 必配参数 " + key + " 未找到");
+    private static void verifyProperties(String devMode, Properties props) throws PayException {
+        if ("true".equals(devMode)) {
+            String[] keys = {"appId", "mchId", "secretKey", "signType", "certPath"};
+            for (String key : keys) {
+                String value = props.getProperty(key);
+                if ("".equals(value) || value == null) {
+                    throw new PayException("require param  " + key + "  in properties is  not found");
+                }
             }
         }
-        return props;
     }
 
     /**
@@ -72,17 +52,48 @@ public abstract class Configuration {
         try (InputStream in = Configuration.class.getClassLoader().getResourceAsStream(fileName + ".properties")) {
             props.load(in);
         } catch (FileNotFoundException e) {
-            log.debug("weChatConfig.properties  is not found", e);
+            log.debug(fileName + ".properties  is not found", e);
         } catch (IOException e) {
-            log.debug("read weChatConfig.properties IOException", e);
+            log.debug("read " + fileName + ".properties IOException", e);
+        }
+        String devMode = props.getProperty("devMode");
+        if ("true".equals(devMode)) {
+            verifyProperties(devMode, props);
+        }
+        return props;
+    }
+
+
+    /**
+     * Read   map.
+     *
+     * @return the map
+     * @throws PayException the pay exception
+     */
+    public Map<Object, Object> read() throws PayException {
+
+        ConfigProperties configProperties = AnnotationUtil.getAnnotation(this.getClass(), ConfigProperties.class);
+        String fileName = "weChatConfig";
+        String notifyUrl = null;
+        if (configProperties != null) {
+            fileName = configProperties.fileName();
+            notifyUrl = configProperties.notifyUrl();
+        }
+        Properties props = new Properties();
+        try (InputStream in = Configuration.class.getClassLoader().getResourceAsStream(fileName + ".properties")) {
+            props.load(in);
+        } catch (FileNotFoundException e) {
+            log.debug(fileName + ".properties  is not found", e);
+        } catch (IOException e) {
+            log.debug("read  " + fileName + ".properties IOException", e);
         }
 
-        String[] keys = {"appId", "mchId", "secretKey", "signType", "notifyUrl", "certPath"};
-        for (String key : keys) {
-            String value = props.getProperty(key);
-            if ("".equals(value) || value == null) {
-                throw new PayException("配置文件中 必配参数 " + key + " 未找到");
-            }
+        String devMode = props.getProperty("devMode");
+        if (notifyUrl != null && !"".equals(notifyUrl)) {
+            props.setProperty("notifyUrl", notifyUrl);
+        }
+        if ("true".equals(devMode)) {
+            verifyProperties(devMode, props);
         }
         return props;
     }

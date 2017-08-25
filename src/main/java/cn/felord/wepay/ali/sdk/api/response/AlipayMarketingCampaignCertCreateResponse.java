@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cert.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-23 14:21:57
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignCertCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCampaignCertCreateResponse extends AlipayResponse {
 	@ApiField("lot_number")
 	private String lotNumber;
 
+	/**
+	 * <p>Setter for the field <code>lotNumber</code>.</p>
+	 *
+	 * @param lotNumber a {@link java.lang.String} object.
+	 */
 	public void setLotNumber(String lotNumber) {
 		this.lotNumber = lotNumber;
 	}
+	/**
+	 * <p>Getter for the field <code>lotNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLotNumber( ) {
 		return this.lotNumber;
 	}

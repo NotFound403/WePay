@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 用户分组创建接口
  *
  * @author auto create
- * @since 1.0, 2017-07-14 15:10:36
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicGroupCreateModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayOpenPublicGroupCreateModel extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Getter for the field <code>labelRule</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ComplexLabelRule> getLabelRule() {
 		return this.labelRule;
 	}
+	/**
+	 * <p>Setter for the field <code>labelRule</code>.</p>
+	 *
+	 * @param labelRule a {@link java.util.List} object.
+	 */
 	public void setLabelRule(List<ComplexLabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.benefit.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:40:27
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardBenefitDeleteResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCardBenefitDeleteResponse extends AlipayResponse {
 	@ApiField("result")
 	private Boolean result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.Boolean} object.
+	 */
 	public void setResult(Boolean result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getResult( ) {
 		return this.result;
 	}

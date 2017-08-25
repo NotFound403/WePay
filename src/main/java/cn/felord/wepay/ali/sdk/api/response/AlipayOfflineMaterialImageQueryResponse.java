@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.material.image.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-10-15 13:59:49
+ * @version $Id: $Id
  */
 public class AlipayOfflineMaterialImageQueryResponse extends AlipayResponse {
 

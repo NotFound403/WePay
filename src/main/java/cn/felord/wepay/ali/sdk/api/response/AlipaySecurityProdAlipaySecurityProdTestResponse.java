@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.alipay.security.prod.test response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-03 17:43:31
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdAlipaySecurityProdTestResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipaySecurityProdAlipaySecurityProdTestResponse extends AlipayResp
 	@ApiField("admin")
 	private String admin;
 
+	/**
+	 * <p>Setter for the field <code>admin</code>.</p>
+	 *
+	 * @param admin a {@link java.lang.String} object.
+	 */
 	public void setAdmin(String admin) {
 		this.admin = admin;
 	}
+	/**
+	 * <p>Getter for the field <code>admin</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdmin( ) {
 		return this.admin;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 受托无线端支付接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 14:06:41
+ * @version $Id: $Id
  */
 public class AlipayFundCouponOrderAppPayModel extends AlipayObject {
 
@@ -54,44 +54,104 @@ public class AlipayFundCouponOrderAppPayModel extends AlipayObject {
 	@ApiField("pay_timeout")
 	private String payTimeout;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extraParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtraParam() {
 		return this.extraParam;
 	}
+	/**
+	 * <p>Setter for the field <code>extraParam</code>.</p>
+	 *
+	 * @param extraParam a {@link java.lang.String} object.
+	 */
 	public void setExtraParam(String extraParam) {
 		this.extraParam = extraParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderTitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderTitle() {
 		return this.orderTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>orderTitle</code>.</p>
+	 *
+	 * @param orderTitle a {@link java.lang.String} object.
+	 */
 	public void setOrderTitle(String orderTitle) {
 		this.orderTitle = orderTitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNo() {
 		return this.outRequestNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNo</code>.</p>
+	 *
+	 * @param outRequestNo a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNo(String outRequestNo) {
 		this.outRequestNo = outRequestNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payTimeout</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayTimeout() {
 		return this.payTimeout;
 	}
+	/**
+	 * <p>Setter for the field <code>payTimeout</code>.</p>
+	 *
+	 * @param payTimeout a {@link java.lang.String} object.
+	 */
 	public void setPayTimeout(String payTimeout) {
 		this.payTimeout = payTimeout;
 	}

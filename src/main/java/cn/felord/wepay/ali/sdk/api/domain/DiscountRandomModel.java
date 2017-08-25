@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 随机立减折扣幅度模型
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:49
+ * @version $Id: $Id
  */
 public class DiscountRandomModel extends AlipayObject {
 
@@ -32,23 +32,53 @@ public class DiscountRandomModel extends AlipayObject {
 	@ApiField("probability")
 	private String probability;
 
+	/**
+	 * <p>Getter for the field <code>maxAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxAmount() {
 		return this.maxAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>maxAmount</code>.</p>
+	 *
+	 * @param maxAmount a {@link java.lang.String} object.
+	 */
 	public void setMaxAmount(String maxAmount) {
 		this.maxAmount = maxAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>minAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMinAmount() {
 		return this.minAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>minAmount</code>.</p>
+	 *
+	 * @param minAmount a {@link java.lang.String} object.
+	 */
 	public void setMinAmount(String minAmount) {
 		this.minAmount = minAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>probability</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProbability() {
 		return this.probability;
 	}
+	/**
+	 * <p>Setter for the field <code>probability</code>.</p>
+	 *
+	 * @param probability a {@link java.lang.String} object.
+	 */
 	public void setProbability(String probability) {
 		this.probability = probability;
 	}

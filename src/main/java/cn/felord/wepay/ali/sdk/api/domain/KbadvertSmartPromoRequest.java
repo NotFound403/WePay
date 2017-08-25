@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 智能营销推荐信息
  *
  * @author auto create
- * @since 1.0, 2017-04-11 14:04:51
+ * @version $Id: $Id
  */
 public class KbadvertSmartPromoRequest extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class KbadvertSmartPromoRequest extends AlipayObject {
 	@ApiField("plan_id")
 	private String planId;
 
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId() {
 		return this.groupId;
 	}
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>planId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPlanId() {
 		return this.planId;
 	}
+	/**
+	 * <p>Setter for the field <code>planId</code>.</p>
+	 *
+	 * @param planId a {@link java.lang.String} object.
+	 */
 	public void setPlanId(String planId) {
 		this.planId = planId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 营销奖品模型
  *
  * @author auto create
- * @since 1.0, 2017-03-23 14:22:15
+ * @version $Id: $Id
  */
 public class MpPrizeInfoModel extends AlipayObject {
 
@@ -73,72 +73,172 @@ public class MpPrizeInfoModel extends AlipayObject {
 	@ApiField("prize_type")
 	private String prizeType;
 
+	/**
+	 * <p>Getter for the field <code>certlotNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertlotNumber() {
 		return this.certlotNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>certlotNumber</code>.</p>
+	 *
+	 * @param certlotNumber a {@link java.lang.String} object.
+	 */
 	public void setCertlotNumber(String certlotNumber) {
 		this.certlotNumber = certlotNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>frequencyCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFrequencyCount() {
 		return this.frequencyCount;
 	}
+	/**
+	 * <p>Setter for the field <code>frequencyCount</code>.</p>
+	 *
+	 * @param frequencyCount a {@link java.lang.String} object.
+	 */
 	public void setFrequencyCount(String frequencyCount) {
 		this.frequencyCount = frequencyCount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>frequencyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFrequencyType() {
 		return this.frequencyType;
 	}
+	/**
+	 * <p>Setter for the field <code>frequencyType</code>.</p>
+	 *
+	 * @param frequencyType a {@link java.lang.String} object.
+	 */
 	public void setFrequencyType(String frequencyType) {
 		this.frequencyType = frequencyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeEndTime() {
 		return this.prizeEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeEndTime</code>.</p>
+	 *
+	 * @param prizeEndTime a {@link java.lang.String} object.
+	 */
 	public void setPrizeEndTime(String prizeEndTime) {
 		this.prizeEndTime = prizeEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeId() {
 		return this.prizeId;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeId</code>.</p>
+	 *
+	 * @param prizeId a {@link java.lang.String} object.
+	 */
 	public void setPrizeId(String prizeId) {
 		this.prizeId = prizeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeMaxAwardLimit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeMaxAwardLimit() {
 		return this.prizeMaxAwardLimit;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeMaxAwardLimit</code>.</p>
+	 *
+	 * @param prizeMaxAwardLimit a {@link java.lang.String} object.
+	 */
 	public void setPrizeMaxAwardLimit(String prizeMaxAwardLimit) {
 		this.prizeMaxAwardLimit = prizeMaxAwardLimit;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeName() {
 		return this.prizeName;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeName</code>.</p>
+	 *
+	 * @param prizeName a {@link java.lang.String} object.
+	 */
 	public void setPrizeName(String prizeName) {
 		this.prizeName = prizeName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeStartTime() {
 		return this.prizeStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeStartTime</code>.</p>
+	 *
+	 * @param prizeStartTime a {@link java.lang.String} object.
+	 */
 	public void setPrizeStartTime(String prizeStartTime) {
 		this.prizeStartTime = prizeStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeTotal</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeTotal() {
 		return this.prizeTotal;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeTotal</code>.</p>
+	 *
+	 * @param prizeTotal a {@link java.lang.String} object.
+	 */
 	public void setPrizeTotal(String prizeTotal) {
 		this.prizeTotal = prizeTotal;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeType() {
 		return this.prizeType;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeType</code>.</p>
+	 *
+	 * @param prizeType a {@link java.lang.String} object.
+	 */
 	public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}

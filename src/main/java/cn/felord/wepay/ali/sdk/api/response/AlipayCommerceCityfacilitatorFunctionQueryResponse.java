@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.function.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-12-15 11:19:03
+ * @version $Id: $Id
  */
 public class AlipayCommerceCityfacilitatorFunctionQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayCommerceCityfacilitatorFunctionQueryResponse extends AlipayRe
 	@ApiField("support_function")
 	private List<SupportFunction> functions;
 
+	/**
+	 * <p>Setter for the field <code>functions</code>.</p>
+	 *
+	 * @param functions a {@link java.util.List} object.
+	 */
 	public void setFunctions(List<SupportFunction> functions) {
 		this.functions = functions;
 	}
+	/**
+	 * <p>Getter for the field <code>functions</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<SupportFunction> getFunctions( ) {
 		return this.functions;
 	}

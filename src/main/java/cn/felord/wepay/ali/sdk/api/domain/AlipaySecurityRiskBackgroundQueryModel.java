@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 人员风险背景调查
  *
  * @author auto create
- * @since 1.0, 2017-05-31 19:27:57
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskBackgroundQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipaySecurityRiskBackgroundQueryModel extends AlipayObject {
 	@ApiField("partner_name")
 	private String partnerName;
 
+	/**
+	 * <p>Getter for the field <code>params</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParams() {
 		return this.params;
 	}
+	/**
+	 * <p>Setter for the field <code>params</code>.</p>
+	 *
+	 * @param params a {@link java.lang.String} object.
+	 */
 	public void setParams(String params) {
 		this.params = params;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerName() {
 		return this.partnerName;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerName</code>.</p>
+	 *
+	 * @param partnerName a {@link java.lang.String} object.
+	 */
 	public void setPartnerName(String partnerName) {
 		this.partnerName = partnerName;
 	}

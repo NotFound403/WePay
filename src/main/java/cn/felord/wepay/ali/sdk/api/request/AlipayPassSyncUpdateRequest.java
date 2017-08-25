@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.pass.sync.update request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-01 15:32:40
+ * @version $Id: $Id
  */
 public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSyncUpdateResponse> {
 
@@ -53,51 +53,121 @@ public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSync
 	 */
 	private String verifyType;
 
+	/**
+	 * <p>Setter for the field <code>channelId</code>.</p>
+	 *
+	 * @param channelId a {@link java.lang.String} object.
+	 */
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
+	/**
+	 * <p>Getter for the field <code>channelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelId() {
 		return this.channelId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pass</code>.</p>
+	 *
+	 * @param pass a {@link java.lang.String} object.
+	 */
 	public void setPass(String pass) {
 		this.pass = pass;
 	}
+	/**
+	 * <p>Getter for the field <code>pass</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPass() {
 		return this.pass;
 	}
 
+	/**
+	 * <p>Setter for the field <code>serialNumber</code>.</p>
+	 *
+	 * @param serialNumber a {@link java.lang.String} object.
+	 */
 	public void setSerialNumber(String serialNumber) {
 		this.serialNumber = serialNumber;
 	}
+	/**
+	 * <p>Getter for the field <code>serialNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSerialNumber() {
 		return this.serialNumber;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
 
+	/**
+	 * <p>Setter for the field <code>verifyCode</code>.</p>
+	 *
+	 * @param verifyCode a {@link java.lang.String} object.
+	 */
 	public void setVerifyCode(String verifyCode) {
 		this.verifyCode = verifyCode;
 	}
+	/**
+	 * <p>Getter for the field <code>verifyCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVerifyCode() {
 		return this.verifyCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>verifyType</code>.</p>
+	 *
+	 * @param verifyType a {@link java.lang.String} object.
+	 */
 	public void setVerifyType(String verifyType) {
 		this.verifyType = verifyType;
 	}
+	/**
+	 * <p>Getter for the field <code>verifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVerifyType() {
 		return this.verifyType;
 	}
@@ -109,58 +179,104 @@ public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSync
 	private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }	
 
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.pass.sync.update";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("channel_id", this.channelId);
@@ -176,6 +292,12 @@ public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSync
 		return txtParams;
 	}
 
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -183,28 +305,45 @@ public class AlipayPassSyncUpdateRequest implements AlipayRequest<AlipayPassSync
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayPassSyncUpdateResponse> getResponseClass() {
 		return AlipayPassSyncUpdateResponse.class;
 	}
 	
 
+    /**
+     * <p>isNeedEncrypt.</p>
+     *
+     * @return a boolean.
+     */
     public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

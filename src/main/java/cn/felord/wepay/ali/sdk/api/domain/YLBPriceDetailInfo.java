@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 余利宝行情信息数据结构
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class YLBPriceDetailInfo extends AlipayObject {
 
@@ -33,23 +33,53 @@ public class YLBPriceDetailInfo extends AlipayObject {
 	@ApiField("tenthousand_income")
 	private String tenthousandIncome;
 
+	/**
+	 * <p>Getter for the field <code>priceDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPriceDate() {
 		return this.priceDate;
 	}
+	/**
+	 * <p>Setter for the field <code>priceDate</code>.</p>
+	 *
+	 * @param priceDate a {@link java.util.Date} object.
+	 */
 	public void setPriceDate(Date priceDate) {
 		this.priceDate = priceDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sevendaysYeildRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSevendaysYeildRate() {
 		return this.sevendaysYeildRate;
 	}
+	/**
+	 * <p>Setter for the field <code>sevendaysYeildRate</code>.</p>
+	 *
+	 * @param sevendaysYeildRate a {@link java.lang.String} object.
+	 */
 	public void setSevendaysYeildRate(String sevendaysYeildRate) {
 		this.sevendaysYeildRate = sevendaysYeildRate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tenthousandIncome</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTenthousandIncome() {
 		return this.tenthousandIncome;
 	}
+	/**
+	 * <p>Setter for the field <code>tenthousandIncome</code>.</p>
+	 *
+	 * @param tenthousandIncome a {@link java.lang.String} object.
+	 */
 	public void setTenthousandIncome(String tenthousandIncome) {
 		this.tenthousandIncome = tenthousandIncome;
 	}

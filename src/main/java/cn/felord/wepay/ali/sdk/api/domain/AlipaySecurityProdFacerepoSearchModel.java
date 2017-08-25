@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 人脸1:N服务搜索接口
  *
  * @author auto create
- * @since 1.0, 2016-06-30 08:29:21
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFacerepoSearchModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipaySecurityProdFacerepoSearchModel extends AlipayObject {
 	@ApiField("group_id")
 	private String groupId;
 
+	/**
+	 * <p>Getter for the field <code>bizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizId() {
 		return this.bizId;
 	}
+	/**
+	 * <p>Setter for the field <code>bizId</code>.</p>
+	 *
+	 * @param bizId a {@link java.lang.String} object.
+	 */
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>faceStr</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFaceStr() {
 		return this.faceStr;
 	}
+	/**
+	 * <p>Setter for the field <code>faceStr</code>.</p>
+	 *
+	 * @param faceStr a {@link java.lang.String} object.
+	 */
 	public void setFaceStr(String faceStr) {
 		this.faceStr = faceStr;
 	}
 
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId() {
 		return this.groupId;
 	}
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}

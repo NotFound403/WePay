@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询报关详细信息
  *
  * @author auto create
- * @since 1.0, 2016-11-09 19:11:58
+ * @version $Id: $Id
  */
 public class AlipayTradeCustomsQueryModel extends AlipayObject {
 
@@ -20,9 +20,19 @@ public class AlipayTradeCustomsQueryModel extends AlipayObject {
 	@ApiField("out_request_nos")
 	private String outRequestNos;
 
+	/**
+	 * <p>Getter for the field <code>outRequestNos</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRequestNos() {
 		return this.outRequestNos;
 	}
+	/**
+	 * <p>Setter for the field <code>outRequestNos</code>.</p>
+	 *
+	 * @param outRequestNos a {@link java.lang.String} object.
+	 */
 	public void setOutRequestNos(String outRequestNos) {
 		this.outRequestNos = outRequestNos;
 	}

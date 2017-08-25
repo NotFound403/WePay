@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 预发03150725
  *
  * @author auto create
- * @since 1.0, 2017-07-25 09:12:04
+ * @version $Id: $Id
  */
 public class AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayOpenAppYufanlingsanyaowuYufalingsanyaowuQueryModel extends Al
 	@ApiField("string")
 	private List<String> provinceCode;
 
+	/**
+	 * <p>Getter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getProvinceCode() {
 		return this.provinceCode;
 	}
+	/**
+	 * <p>Setter for the field <code>provinceCode</code>.</p>
+	 *
+	 * @param provinceCode a {@link java.util.List} object.
+	 */
 	public void setProvinceCode(List<String> provinceCode) {
 		this.provinceCode = provinceCode;
 	}

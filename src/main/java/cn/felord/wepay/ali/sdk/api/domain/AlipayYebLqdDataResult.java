@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 余额宝负债端预测数据
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class AlipayYebLqdDataResult extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayYebLqdDataResult extends AlipayObject {
 	@ApiField("target_date")
 	private String targetDate;
 
+	/**
+	 * <p>Getter for the field <code>predictPurchaseAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPredictPurchaseAmt() {
 		return this.predictPurchaseAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>predictPurchaseAmt</code>.</p>
+	 *
+	 * @param predictPurchaseAmt a {@link java.lang.String} object.
+	 */
 	public void setPredictPurchaseAmt(String predictPurchaseAmt) {
 		this.predictPurchaseAmt = predictPurchaseAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>predictRedeemAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPredictRedeemAmt() {
 		return this.predictRedeemAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>predictRedeemAmt</code>.</p>
+	 *
+	 * @param predictRedeemAmt a {@link java.lang.String} object.
+	 */
 	public void setPredictRedeemAmt(String predictRedeemAmt) {
 		this.predictRedeemAmt = predictRedeemAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetDate() {
 		return this.targetDate;
 	}
+	/**
+	 * <p>Setter for the field <code>targetDate</code>.</p>
+	 *
+	 * @param targetDate a {@link java.lang.String} object.
+	 */
 	public void setTargetDate(String targetDate) {
 		this.targetDate = targetDate;
 	}

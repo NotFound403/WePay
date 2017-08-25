@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 更新物流公司非服务区接口
  *
  * @author auto create
- * @since 1.0, 2017-04-06 18:05:03
+ * @version $Id: $Id
  */
 public class AlipayEcoLogisticsExpressNonserviceModifyModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayEcoLogisticsExpressNonserviceModifyModel extends AlipayObject
 	@ApiField("logis_merch_code")
 	private String logisMerchCode;
 
+	/**
+	 * <p>Getter for the field <code>areaCodes</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AreaCode> getAreaCodes() {
 		return this.areaCodes;
 	}
+	/**
+	 * <p>Setter for the field <code>areaCodes</code>.</p>
+	 *
+	 * @param areaCodes a {@link java.util.List} object.
+	 */
 	public void setAreaCodes(List<AreaCode> areaCodes) {
 		this.areaCodes = areaCodes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logisMerchCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogisMerchCode() {
 		return this.logisMerchCode;
 	}
+	/**
+	 * <p>Setter for the field <code>logisMerchCode</code>.</p>
+	 *
+	 * @param logisMerchCode a {@link java.lang.String} object.
+	 */
 	public void setLogisMerchCode(String logisMerchCode) {
 		this.logisMerchCode = logisMerchCode;
 	}

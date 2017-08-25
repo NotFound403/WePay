@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.transport.offlinepay.key.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-20 21:41:51
+ * @version $Id: $Id
  */
 public class AlipayCommerceTransportOfflinepayKeyQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayCommerceTransportOfflinepayKeyQueryResponse extends AlipayRes
 	@ApiField("alipay_offline_pay_master_key")
 	private List<AlipayOfflinePayMasterKey> keys;
 
+	/**
+	 * <p>Setter for the field <code>keys</code>.</p>
+	 *
+	 * @param keys a {@link java.util.List} object.
+	 */
 	public void setKeys(List<AlipayOfflinePayMasterKey> keys) {
 		this.keys = keys;
 	}
+	/**
+	 * <p>Getter for the field <code>keys</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AlipayOfflinePayMasterKey> getKeys( ) {
 		return this.keys;
 	}

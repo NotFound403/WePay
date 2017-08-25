@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 余利宝历史交易查询
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:07:59
+ * @version $Id: $Id
  */
 public class MybankFinanceYulibaoTransHistoryQueryModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class MybankFinanceYulibaoTransHistoryQueryModel extends AlipayObject {
 	@ApiField("start_date")
 	private String startDate;
 
+	/**
+	 * <p>Getter for the field <code>endDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEndDate() {
 		return this.endDate;
 	}
+	/**
+	 * <p>Setter for the field <code>endDate</code>.</p>
+	 *
+	 * @param endDate a {@link java.lang.String} object.
+	 */
 	public void setEndDate(String endDate) {
 		this.endDate = endDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fundCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundCode() {
 		return this.fundCode;
 	}
+	/**
+	 * <p>Setter for the field <code>fundCode</code>.</p>
+	 *
+	 * @param fundCode a {@link java.lang.String} object.
+	 */
 	public void setFundCode(String fundCode) {
 		this.fundCode = fundCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>page</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPage() {
 		return this.page;
 	}
+	/**
+	 * <p>Setter for the field <code>page</code>.</p>
+	 *
+	 * @param page a {@link java.lang.Long} object.
+	 */
 	public void setPage(Long page) {
 		this.page = page;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStartDate() {
 		return this.startDate;
 	}
+	/**
+	 * <p>Setter for the field <code>startDate</code>.</p>
+	 *
+	 * @param startDate a {@link java.lang.String} object.
+	 */
 	public void setStartDate(String startDate) {
 		this.startDate = startDate;
 	}

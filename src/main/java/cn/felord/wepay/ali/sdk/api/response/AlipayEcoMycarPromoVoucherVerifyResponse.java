@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.promo.voucher.verify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-24 22:03:31
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarPromoVoucherVerifyResponse extends AlipayResponse {
 

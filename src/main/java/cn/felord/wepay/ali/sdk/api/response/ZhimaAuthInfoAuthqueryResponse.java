@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.auth.info.authquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-08 10:37:18
+ * @version $Id: $Id
  */
 public class ZhimaAuthInfoAuthqueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class ZhimaAuthInfoAuthqueryResponse extends AlipayResponse {
 	@ApiField("authorized")
 	private Boolean authorized;
 
+	/**
+	 * <p>Setter for the field <code>authorized</code>.</p>
+	 *
+	 * @param authorized a {@link java.lang.Boolean} object.
+	 */
 	public void setAuthorized(Boolean authorized) {
 		this.authorized = authorized;
 	}
+	/**
+	 * <p>Getter for the field <code>authorized</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getAuthorized( ) {
 		return this.authorized;
 	}

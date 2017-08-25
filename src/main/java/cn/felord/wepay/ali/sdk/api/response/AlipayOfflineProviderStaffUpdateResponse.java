@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.provider.staff.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-16 16:12:42
+ * @version $Id: $Id
  */
 public class AlipayOfflineProviderStaffUpdateResponse extends AlipayResponse {
 
@@ -44,37 +44,87 @@ public class AlipayOfflineProviderStaffUpdateResponse extends AlipayResponse {
 	@ApiField("staff_id")
 	private String staffId;
 
+	/**
+	 * <p>Setter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @param errorMsg a {@link java.lang.String} object.
+	 */
 	public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
+	/**
+	 * <p>Getter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorMsg( ) {
 		return this.errorMsg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operateResult</code>.</p>
+	 *
+	 * @param operateResult a {@link java.lang.String} object.
+	 */
 	public void setOperateResult(String operateResult) {
 		this.operateResult = operateResult;
 	}
+	/**
+	 * <p>Getter for the field <code>operateResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateResult( ) {
 		return this.operateResult;
 	}
 
+	/**
+	 * <p>Setter for the field <code>operateType</code>.</p>
+	 *
+	 * @param operateType a {@link java.lang.String} object.
+	 */
 	public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}
+	/**
+	 * <p>Getter for the field <code>operateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateType( ) {
 		return this.operateType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pid</code>.</p>
+	 *
+	 * @param pid a {@link java.lang.String} object.
+	 */
 	public void setPid(String pid) {
 		this.pid = pid;
 	}
+	/**
+	 * <p>Getter for the field <code>pid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPid( ) {
 		return this.pid;
 	}
 
+	/**
+	 * <p>Setter for the field <code>staffId</code>.</p>
+	 *
+	 * @param staffId a {@link java.lang.String} object.
+	 */
 	public void setStaffId(String staffId) {
 		this.staffId = staffId;
 	}
+	/**
+	 * <p>Getter for the field <code>staffId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStaffId( ) {
 		return this.staffId;
 	}

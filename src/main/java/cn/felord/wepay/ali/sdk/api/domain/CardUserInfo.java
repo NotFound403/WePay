@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 持卡人信息
  *
  * @author auto create
- * @since 1.0, 2017-06-07 13:29:46
+ * @version $Id: $Id
  */
 public class CardUserInfo extends AlipayObject {
 
@@ -27,16 +27,36 @@ public class CardUserInfo extends AlipayObject {
 	@ApiField("user_uni_id_type")
 	private String userUniIdType;
 
+	/**
+	 * <p>Getter for the field <code>userUniId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserUniId() {
 		return this.userUniId;
 	}
+	/**
+	 * <p>Setter for the field <code>userUniId</code>.</p>
+	 *
+	 * @param userUniId a {@link java.lang.String} object.
+	 */
 	public void setUserUniId(String userUniId) {
 		this.userUniId = userUniId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userUniIdType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserUniIdType() {
 		return this.userUniIdType;
 	}
+	/**
+	 * <p>Setter for the field <code>userUniIdType</code>.</p>
+	 *
+	 * @param userUniIdType a {@link java.lang.String} object.
+	 */
 	public void setUserUniIdType(String userUniIdType) {
 		this.userUniIdType = userUniIdType;
 	}

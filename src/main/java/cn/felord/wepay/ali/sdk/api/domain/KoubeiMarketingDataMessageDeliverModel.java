@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 一键营销商家中心PUSH消息接口
  *
  * @author auto create
- * @since 1.0, 2016-09-07 16:01:59
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataMessageDeliverModel extends AlipayObject {
 
@@ -36,23 +36,53 @@ CHANNEL发送渠道，对应value值为：MSGBOX消息盒子，PUSH手机消息�
 	@ApiField("msg_type")
 	private String msgType;
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>msgType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsgType() {
 		return this.msgType;
 	}
+	/**
+	 * <p>Setter for the field <code>msgType</code>.</p>
+	 *
+	 * @param msgType a {@link java.lang.String} object.
+	 */
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}

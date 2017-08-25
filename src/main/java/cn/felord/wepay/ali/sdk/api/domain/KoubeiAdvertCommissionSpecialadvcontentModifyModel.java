@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 特殊广告内容修改接口
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:46
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionSpecialadvcontentModifyModel extends AlipayObject {
 
@@ -43,30 +43,70 @@ delete：表示删除特殊广告内容
 	@ApiField("modify_type")
 	private String modifyType;
 
+	/**
+	 * <p>Getter for the field <code>advId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdvId() {
 		return this.advId;
 	}
+	/**
+	 * <p>Setter for the field <code>advId</code>.</p>
+	 *
+	 * @param advId a {@link java.lang.String} object.
+	 */
 	public void setAdvId(String advId) {
 		this.advId = advId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>channelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelId() {
 		return this.channelId;
 	}
+	/**
+	 * <p>Setter for the field <code>channelId</code>.</p>
+	 *
+	 * @param channelId a {@link java.lang.String} object.
+	 */
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbAdvertSpecialAdvContentRequest> getContentList() {
 		return this.contentList;
 	}
+	/**
+	 * <p>Setter for the field <code>contentList</code>.</p>
+	 *
+	 * @param contentList a {@link java.util.List} object.
+	 */
 	public void setContentList(List<KbAdvertSpecialAdvContentRequest> contentList) {
 		this.contentList = contentList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>modifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getModifyType() {
 		return this.modifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>modifyType</code>.</p>
+	 *
+	 * @param modifyType a {@link java.lang.String} object.
+	 */
 	public void setModifyType(String modifyType) {
 		this.modifyType = modifyType;
 	}

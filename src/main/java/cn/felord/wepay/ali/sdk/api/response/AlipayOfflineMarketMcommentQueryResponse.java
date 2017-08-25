@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.mcomment.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-13 20:25:02
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketMcommentQueryResponse extends AlipayResponse {
 
@@ -45,30 +45,70 @@ public class AlipayOfflineMarketMcommentQueryResponse extends AlipayResponse {
 	@ApiField("score")
 	private Long score;
 
+	/**
+	 * <p>Setter for the field <code>commentId</code>.</p>
+	 *
+	 * @param commentId a {@link java.lang.String} object.
+	 */
 	public void setCommentId(String commentId) {
 		this.commentId = commentId;
 	}
+	/**
+	 * <p>Getter for the field <code>commentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommentId( ) {
 		return this.commentId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>commentStatus</code>.</p>
+	 *
+	 * @param commentStatus a {@link java.lang.String} object.
+	 */
 	public void setCommentStatus(String commentStatus) {
 		this.commentStatus = commentStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>commentStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommentStatus( ) {
 		return this.commentStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>commentTime</code>.</p>
+	 *
+	 * @param commentTime a {@link java.util.Date} object.
+	 */
 	public void setCommentTime(Date commentTime) {
 		this.commentTime = commentTime;
 	}
+	/**
+	 * <p>Getter for the field <code>commentTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getCommentTime( ) {
 		return this.commentTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>score</code>.</p>
+	 *
+	 * @param score a {@link java.lang.Long} object.
+	 */
 	public void setScore(Long score) {
 		this.score = score;
 	}
+	/**
+	 * <p>Getter for the field <code>score</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getScore( ) {
 		return this.score;
 	}

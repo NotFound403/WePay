@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 服务商接单操作
  *
  * @author auto create
- * @since 1.0, 2016-08-25 11:11:41
+ * @version $Id: $Id
  */
 public class AlipayOpenServicemarketOrderAcceptModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenServicemarketOrderAcceptModel extends AlipayObject {
 	@ApiField("commodity_order_id")
 	private String commodityOrderId;
 
+	/**
+	 * <p>Getter for the field <code>commodityOrderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommodityOrderId() {
 		return this.commodityOrderId;
 	}
+	/**
+	 * <p>Setter for the field <code>commodityOrderId</code>.</p>
+	 *
+	 * @param commodityOrderId a {@link java.lang.String} object.
+	 */
 	public void setCommodityOrderId(String commodityOrderId) {
 		this.commodityOrderId = commodityOrderId;
 	}

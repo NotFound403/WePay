@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 自定义报表过滤标签
  *
  * @author auto create
- * @since 1.0, 2016-12-05 17:13:15
+ * @version $Id: $Id
  */
 public class FilterTag extends AlipayObject {
 
@@ -26,16 +26,36 @@ public class FilterTag extends AlipayObject {
 	@ApiField("filter_items")
 	private String filterItems;
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>filterItems</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFilterItems() {
 		return this.filterItems;
 	}
+	/**
+	 * <p>Setter for the field <code>filterItems</code>.</p>
+	 *
+	 * @param filterItems a {@link java.lang.String} object.
+	 */
 	public void setFilterItems(String filterItems) {
 		this.filterItems = filterItems;
 	}

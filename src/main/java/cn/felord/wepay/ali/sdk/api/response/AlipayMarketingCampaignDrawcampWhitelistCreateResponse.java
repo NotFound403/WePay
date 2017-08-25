@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.drawcamp.whitelist.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-23 14:21:46
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDrawcampWhitelistCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCampaignDrawcampWhitelistCreateResponse extends Alip
 	@ApiField("camp_result")
 	private Boolean campResult;
 
+	/**
+	 * <p>Setter for the field <code>campResult</code>.</p>
+	 *
+	 * @param campResult a {@link java.lang.Boolean} object.
+	 */
 	public void setCampResult(Boolean campResult) {
 		this.campResult = campResult;
 	}
+	/**
+	 * <p>Getter for the field <code>campResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getCampResult( ) {
 		return this.campResult;
 	}

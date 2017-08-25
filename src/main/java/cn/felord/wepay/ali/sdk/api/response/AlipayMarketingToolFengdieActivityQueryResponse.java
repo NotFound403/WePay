@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.tool.fengdie.activity.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:11
+ * @version $Id: $Id
  */
 public class AlipayMarketingToolFengdieActivityQueryResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayMarketingToolFengdieActivityQueryResponse extends AlipayRespo
 	@ApiField("activity")
 	private FengdieActivity activity;
 
+	/**
+	 * <p>Setter for the field <code>activity</code>.</p>
+	 *
+	 * @param activity a {@link cn.felord.wepay.ali.sdk.api.domain.FengdieActivity} object.
+	 */
 	public void setActivity(FengdieActivity activity) {
 		this.activity = activity;
 	}
+	/**
+	 * <p>Getter for the field <code>activity</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.FengdieActivity} object.
+	 */
 	public FengdieActivity getActivity( ) {
 		return this.activity;
 	}

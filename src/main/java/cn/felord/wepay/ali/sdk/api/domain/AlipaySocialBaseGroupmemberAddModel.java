@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 支付宝增加群成员
  *
  * @author auto create
- * @since 1.0, 2016-08-25 10:46:44
+ * @version $Id: $Id
  */
 public class AlipaySocialBaseGroupmemberAddModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class AlipaySocialBaseGroupmemberAddModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> userIds;
 
+	/**
+	 * <p>Getter for the field <code>friendValidate</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getFriendValidate() {
 		return this.friendValidate;
 	}
+	/**
+	 * <p>Setter for the field <code>friendValidate</code>.</p>
+	 *
+	 * @param friendValidate a {@link java.lang.Boolean} object.
+	 */
 	public void setFriendValidate(Boolean friendValidate) {
 		this.friendValidate = friendValidate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId() {
 		return this.groupId;
 	}
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getUserIds() {
 		return this.userIds;
 	}
+	/**
+	 * <p>Setter for the field <code>userIds</code>.</p>
+	 *
+	 * @param userIds a {@link java.util.List} object.
+	 */
 	public void setUserIds(List<String> userIds) {
 		this.userIds = userIds;
 	}

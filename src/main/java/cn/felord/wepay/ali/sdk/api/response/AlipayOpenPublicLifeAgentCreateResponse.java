@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.agent.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-17 12:23:29
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeAgentCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicLifeAgentCreateResponse extends AlipayResponse {
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}

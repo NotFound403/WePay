@@ -5,7 +5,7 @@ package cn.felord.wepay.ali.sdk.api;
  *
  * @param <T> the type parameter
  * @author carver.gu
- * @since 1.0, Apr 11, 2010
+ * @version $Id: $Id
  */
 public interface AlipayParser<T extends AlipayResponse> {
 
@@ -14,17 +14,17 @@ public interface AlipayParser<T extends AlipayResponse> {
      *
      * @param rsp 响应字符串
      * @return 领域对象 t
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
-    public T parse(String rsp) throws AlipayApiException;
+    T parse(String rsp) throws AlipayApiException;
 
     /**
      * 获取响应类类型。
      *
      * @return the response class
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
-    public Class<T> getResponseClass() throws AlipayApiException;
+    Class<T> getResponseClass() throws AlipayApiException;
 
     /**
      * 获取响应内的签名数据
@@ -32,10 +32,10 @@ public interface AlipayParser<T extends AlipayResponse> {
      * @param request      the request
      * @param responseBody the response body
      * @return sign item
-     * @throws AlipayApiException the alipay api exception
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
-    public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
-                                                                              throws AlipayApiException;
+    SignItem getSignItem(AlipayRequest<?> request, String responseBody)
+            throws AlipayApiException;
 
     /**
      * 获取实际串：如果是加密内容则返回内容已经是解密后的实际内容了
@@ -46,11 +46,11 @@ public interface AlipayParser<T extends AlipayResponse> {
      * @param encryptType the encrypt type
      * @param encryptKey  the encrypt key
      * @param charset     the charset
-     * @return string
-     * @throws AlipayApiException the alipay api exception
+     * @return string string
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
-    public String encryptSourceData(AlipayRequest<?> request, String body, String format,
-                                    String encryptType, String encryptKey, String charset)
-                                                                                          throws AlipayApiException;
+    String encryptSourceData(AlipayRequest<?> request, String body, String format,
+                             String encryptType, String encryptKey, String charset)
+            throws AlipayApiException;
 
 }

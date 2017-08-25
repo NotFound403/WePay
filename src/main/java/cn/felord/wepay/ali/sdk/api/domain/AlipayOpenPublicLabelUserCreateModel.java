@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户增加标签接口
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:14
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLabelUserCreateModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenPublicLabelUserCreateModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>labelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getLabelId() {
 		return this.labelId;
 	}
+	/**
+	 * <p>Setter for the field <code>labelId</code>.</p>
+	 *
+	 * @param labelId a {@link java.lang.Long} object.
+	 */
 	public void setLabelId(Long labelId) {
 		this.labelId = labelId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

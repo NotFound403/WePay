@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询寄件价格接口
  *
  * @author auto create
- * @since 1.0, 2017-04-06 18:04:51
+ * @version $Id: $Id
  */
 public class AlipayEcoLogisticsExpressPriceQueryModel extends AlipayObject {
 
@@ -52,37 +52,87 @@ STANDARD：标准快递。这是寄件平台默认支持的产品分类，如有
 	@ApiField("to_code")
 	private String toCode;
 
+	/**
+	 * <p>Getter for the field <code>areaType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAreaType() {
 		return this.areaType;
 	}
+	/**
+	 * <p>Setter for the field <code>areaType</code>.</p>
+	 *
+	 * @param areaType a {@link java.lang.String} object.
+	 */
 	public void setAreaType(String areaType) {
 		this.areaType = areaType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fromCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFromCode() {
 		return this.fromCode;
 	}
+	/**
+	 * <p>Setter for the field <code>fromCode</code>.</p>
+	 *
+	 * @param fromCode a {@link java.lang.String} object.
+	 */
 	public void setFromCode(String fromCode) {
 		this.fromCode = fromCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logisMerchCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogisMerchCode() {
 		return this.logisMerchCode;
 	}
+	/**
+	 * <p>Setter for the field <code>logisMerchCode</code>.</p>
+	 *
+	 * @param logisMerchCode a {@link java.lang.String} object.
+	 */
 	public void setLogisMerchCode(String logisMerchCode) {
 		this.logisMerchCode = logisMerchCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productTypeCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductTypeCode() {
 		return this.productTypeCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productTypeCode</code>.</p>
+	 *
+	 * @param productTypeCode a {@link java.lang.String} object.
+	 */
 	public void setProductTypeCode(String productTypeCode) {
 		this.productTypeCode = productTypeCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>toCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToCode() {
 		return this.toCode;
 	}
+	/**
+	 * <p>Setter for the field <code>toCode</code>.</p>
+	 *
+	 * @param toCode a {@link java.lang.String} object.
+	 */
 	public void setToCode(String toCode) {
 		this.toCode = toCode;
 	}

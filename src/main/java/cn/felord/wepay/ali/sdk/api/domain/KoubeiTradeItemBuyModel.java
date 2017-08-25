@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 获取购特车scheme
  *
  * @author auto create
- * @since 1.0, 2017-04-24 10:31:44
+ * @version $Id: $Id
  */
 public class KoubeiTradeItemBuyModel extends AlipayObject {
 
@@ -88,86 +88,206 @@ public class KoubeiTradeItemBuyModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Getter for the field <code>buyerPhoneNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerPhoneNumber() {
 		return this.buyerPhoneNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerPhoneNumber</code>.</p>
+	 *
+	 * @param buyerPhoneNumber a {@link java.lang.String} object.
+	 */
 	public void setBuyerPhoneNumber(String buyerPhoneNumber) {
 		this.buyerPhoneNumber = buyerPhoneNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>buyerUserName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerUserName() {
 		return this.buyerUserName;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerUserName</code>.</p>
+	 *
+	 * @param buyerUserName a {@link java.lang.String} object.
+	 */
 	public void setBuyerUserName(String buyerUserName) {
 		this.buyerUserName = buyerUserName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>currentPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCurrentPrice() {
 		return this.currentPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>currentPrice</code>.</p>
+	 *
+	 * @param currentPrice a {@link java.lang.String} object.
+	 */
 	public void setCurrentPrice(String currentPrice) {
 		this.currentPrice = currentPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId() {
 		return this.itemId;
 	}
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginalPrice() {
 		return this.originalPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @param originalPrice a {@link java.lang.String} object.
+	 */
 	public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId() {
 		return this.partnerId;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>quantity</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getQuantity() {
 		return this.quantity;
 	}
+	/**
+	 * <p>Setter for the field <code>quantity</code>.</p>
+	 *
+	 * @param quantity a {@link java.lang.Long} object.
+	 */
 	public void setQuantity(Long quantity) {
 		this.quantity = quantity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reserveEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReserveEndTime() {
 		return this.reserveEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>reserveEndTime</code>.</p>
+	 *
+	 * @param reserveEndTime a {@link java.lang.String} object.
+	 */
 	public void setReserveEndTime(String reserveEndTime) {
 		this.reserveEndTime = reserveEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reserveStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReserveStartTime() {
 		return this.reserveStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>reserveStartTime</code>.</p>
+	 *
+	 * @param reserveStartTime a {@link java.lang.String} object.
+	 */
 	public void setReserveStartTime(String reserveStartTime) {
 		this.reserveStartTime = reserveStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}

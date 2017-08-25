@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 如果有创建AA收款，江湖救急等业务场景的话，可以调用该接口进行批次单据的创建
  *
  * @author auto create
- * @since 1.0, 2016-10-27 16:40:29
+ * @version $Id: $Id
  */
 public class AlipayFundTransBatchCreatesinglebatchModel extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class AlipayFundTransBatchCreatesinglebatchModel extends AlipayObject {
 	@ApiField("show_items_total")
 	private String showItemsTotal;
 
+	/**
+	 * <p>Getter for the field <code>batchMemo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchMemo() {
 		return this.batchMemo;
 	}
+	/**
+	 * <p>Setter for the field <code>batchMemo</code>.</p>
+	 *
+	 * @param batchMemo a {@link java.lang.String} object.
+	 */
 	public void setBatchMemo(String batchMemo) {
 		this.batchMemo = batchMemo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>createUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreateUserId() {
 		return this.createUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>createUserId</code>.</p>
+	 *
+	 * @param createUserId a {@link java.lang.String} object.
+	 */
 	public void setCreateUserId(String createUserId) {
 		this.createUserId = createUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtParam() {
 		return this.extParam;
 	}
+	/**
+	 * <p>Setter for the field <code>extParam</code>.</p>
+	 *
+	 * @param extParam a {@link java.lang.String} object.
+	 */
 	public void setExtParam(String extParam) {
 		this.extParam = extParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payAmountSingle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayAmountSingle() {
 		return this.payAmountSingle;
 	}
+	/**
+	 * <p>Setter for the field <code>payAmountSingle</code>.</p>
+	 *
+	 * @param payAmountSingle a {@link java.lang.String} object.
+	 */
 	public void setPayAmountSingle(String payAmountSingle) {
 		this.payAmountSingle = payAmountSingle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payAmountTotal</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayAmountTotal() {
 		return this.payAmountTotal;
 	}
+	/**
+	 * <p>Setter for the field <code>payAmountTotal</code>.</p>
+	 *
+	 * @param payAmountTotal a {@link java.lang.String} object.
+	 */
 	public void setPayAmountTotal(String payAmountTotal) {
 		this.payAmountTotal = payAmountTotal;
 	}
 
+	/**
+	 * <p>Getter for the field <code>realItemsTotal</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealItemsTotal() {
 		return this.realItemsTotal;
 	}
+	/**
+	 * <p>Setter for the field <code>realItemsTotal</code>.</p>
+	 *
+	 * @param realItemsTotal a {@link java.lang.String} object.
+	 */
 	public void setRealItemsTotal(String realItemsTotal) {
 		this.realItemsTotal = realItemsTotal;
 	}
 
+	/**
+	 * <p>Getter for the field <code>showItemsTotal</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShowItemsTotal() {
 		return this.showItemsTotal;
 	}
+	/**
+	 * <p>Setter for the field <code>showItemsTotal</code>.</p>
+	 *
+	 * @param showItemsTotal a {@link java.lang.String} object.
+	 */
 	public void setShowItemsTotal(String showItemsTotal) {
 		this.showItemsTotal = showItemsTotal;
 	}

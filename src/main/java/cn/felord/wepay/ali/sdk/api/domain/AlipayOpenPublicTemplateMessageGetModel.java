@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 模板消息领取接口
  *
  * @author auto create
- * @since 1.0, 2016-12-02 16:32:06
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicTemplateMessageGetModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenPublicTemplateMessageGetModel extends AlipayObject {
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 采集数据上报
  *
  * @author auto create
- * @since 1.0, 2017-04-11 11:14:05
+ * @version $Id: $Id
  */
 public class AlipayPcreditUserProfileSendModel extends AlipayObject {
 
@@ -48,37 +48,87 @@ FAIL-失败
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo() {
 		return this.bizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemKey() {
 		return this.itemKey;
 	}
+	/**
+	 * <p>Setter for the field <code>itemKey</code>.</p>
+	 *
+	 * @param itemKey a {@link java.lang.String} object.
+	 */
 	public void setItemKey(String itemKey) {
 		this.itemKey = itemKey;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>params</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParams() {
 		return this.params;
 	}
+	/**
+	 * <p>Setter for the field <code>params</code>.</p>
+	 *
+	 * @param params a {@link java.lang.String} object.
+	 */
 	public void setParams(String params) {
 		this.params = params;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

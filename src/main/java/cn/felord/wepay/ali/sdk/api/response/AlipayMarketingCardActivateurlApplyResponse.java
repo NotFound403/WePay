@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.activateurl.apply response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-21 20:48:40
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardActivateurlApplyResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCardActivateurlApplyResponse extends AlipayResponse 
 	@ApiField("apply_card_url")
 	private String applyCardUrl;
 
+	/**
+	 * <p>Setter for the field <code>applyCardUrl</code>.</p>
+	 *
+	 * @param applyCardUrl a {@link java.lang.String} object.
+	 */
 	public void setApplyCardUrl(String applyCardUrl) {
 		this.applyCardUrl = applyCardUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>applyCardUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyCardUrl( ) {
 		return this.applyCardUrl;
 	}

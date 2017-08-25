@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.contract.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-06 20:23:18
+ * @version $Id: $Id
  */
 public class AlipayUserContractGetResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayUserContractGetResponse extends AlipayResponse {
 	@ApiField("alipay_contract")
 	private AlipayContract alipayContract;
 
+	/**
+	 * <p>Setter for the field <code>alipayContract</code>.</p>
+	 *
+	 * @param alipayContract a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayContract} object.
+	 */
 	public void setAlipayContract(AlipayContract alipayContract) {
 		this.alipayContract = alipayContract;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayContract</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayContract} object.
+	 */
 	public AlipayContract getAlipayContract( ) {
 		return this.alipayContract;
 	}

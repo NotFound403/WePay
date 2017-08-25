@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险机构
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:49:26
+ * @version $Id: $Id
  */
 public class InsMerchant extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class InsMerchant extends AlipayObject {
 	@ApiField("short_name")
 	private String shortName;
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>servicePhone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServicePhone() {
 		return this.servicePhone;
 	}
+	/**
+	 * <p>Setter for the field <code>servicePhone</code>.</p>
+	 *
+	 * @param servicePhone a {@link java.lang.String} object.
+	 */
 	public void setServicePhone(String servicePhone) {
 		this.servicePhone = servicePhone;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shortName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShortName() {
 		return this.shortName;
 	}
+	/**
+	 * <p>Setter for the field <code>shortName</code>.</p>
+	 *
+	 * @param shortName a {@link java.lang.String} object.
+	 */
 	public void setShortName(String shortName) {
 		this.shortName = shortName;
 	}

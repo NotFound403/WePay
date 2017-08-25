@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 服务窗基础信息修改接口
  *
  * @author auto create
- * @since 1.0, 2016-08-10 17:27:20
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicInfoModifyModel extends AlipayObject {
 
@@ -53,44 +53,104 @@ public class AlipayOpenPublicInfoModifyModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> shopPics;
 
+	/**
+	 * <p>Getter for the field <code>appName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppName() {
 		return this.appName;
 	}
+	/**
+	 * <p>Setter for the field <code>appName</code>.</p>
+	 *
+	 * @param appName a {@link java.lang.String} object.
+	 */
 	public void setAppName(String appName) {
 		this.appName = appName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>authPic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthPic() {
 		return this.authPic;
 	}
+	/**
+	 * <p>Setter for the field <code>authPic</code>.</p>
+	 *
+	 * @param authPic a {@link java.lang.String} object.
+	 */
 	public void setAuthPic(String authPic) {
 		this.authPic = authPic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>licenseUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLicenseUrl() {
 		return this.licenseUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>licenseUrl</code>.</p>
+	 *
+	 * @param licenseUrl a {@link java.lang.String} object.
+	 */
 	public void setLicenseUrl(String licenseUrl) {
 		this.licenseUrl = licenseUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogoUrl() {
 		return this.logoUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>logoUrl</code>.</p>
+	 *
+	 * @param logoUrl a {@link java.lang.String} object.
+	 */
 	public void setLogoUrl(String logoUrl) {
 		this.logoUrl = logoUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publicGreeting</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicGreeting() {
 		return this.publicGreeting;
 	}
+	/**
+	 * <p>Setter for the field <code>publicGreeting</code>.</p>
+	 *
+	 * @param publicGreeting a {@link java.lang.String} object.
+	 */
 	public void setPublicGreeting(String publicGreeting) {
 		this.publicGreeting = publicGreeting;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopPics</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getShopPics() {
 		return this.shopPics;
 	}
+	/**
+	 * <p>Setter for the field <code>shopPics</code>.</p>
+	 *
+	 * @param shopPics a {@link java.util.List} object.
+	 */
 	public void setShopPics(List<String> shopPics) {
 		this.shopPics = shopPics;
 	}

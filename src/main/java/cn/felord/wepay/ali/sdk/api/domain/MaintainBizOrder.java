@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 洗车保养的订单
  *
  * @author auto create
- * @since 1.0, 2016-11-16 10:03:46
+ * @version $Id: $Id
  */
 public class MaintainBizOrder extends AlipayObject {
 
@@ -78,37 +78,87 @@ public class MaintainBizOrder extends AlipayObject {
 	@ApiField("service_category_id")
 	private Long serviceCategoryId;
 
+	/**
+	 * <p>Getter for the field <code>originCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginCost() {
 		return this.originCost;
 	}
+	/**
+	 * <p>Setter for the field <code>originCost</code>.</p>
+	 *
+	 * @param originCost a {@link java.lang.String} object.
+	 */
 	public void setOriginCost(String originCost) {
 		this.originCost = originCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outProductId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutProductId() {
 		return this.outProductId;
 	}
+	/**
+	 * <p>Setter for the field <code>outProductId</code>.</p>
+	 *
+	 * @param outProductId a {@link java.lang.String} object.
+	 */
 	public void setOutProductId(String outProductId) {
 		this.outProductId = outProductId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>realCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealCost() {
 		return this.realCost;
 	}
+	/**
+	 * <p>Setter for the field <code>realCost</code>.</p>
+	 *
+	 * @param realCost a {@link java.lang.String} object.
+	 */
 	public void setRealCost(String realCost) {
 		this.realCost = realCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>saleNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getSaleNum() {
 		return this.saleNum;
 	}
+	/**
+	 * <p>Setter for the field <code>saleNum</code>.</p>
+	 *
+	 * @param saleNum a {@link java.lang.Long} object.
+	 */
 	public void setSaleNum(Long saleNum) {
 		this.saleNum = saleNum;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceCategoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getServiceCategoryId() {
 		return this.serviceCategoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceCategoryId</code>.</p>
+	 *
+	 * @param serviceCategoryId a {@link java.lang.Long} object.
+	 */
 	public void setServiceCategoryId(Long serviceCategoryId) {
 		this.serviceCategoryId = serviceCategoryId;
 	}

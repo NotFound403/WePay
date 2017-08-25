@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询微客任务视图
  *
  * @author auto create
- * @since 1.0, 2017-04-25 14:22:41
+ * @version $Id: $Id
  */
 public class AlipayDaoweiWeikeTaskviewQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayDaoweiWeikeTaskviewQueryModel extends AlipayObject {
 	@ApiField("source")
 	private String source;
 
+	/**
+	 * <p>Getter for the field <code>cityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityCode() {
 		return this.cityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>cityCode</code>.</p>
+	 *
+	 * @param cityCode a {@link java.lang.String} object.
+	 */
 	public void setCityCode(String cityCode) {
 		this.cityCode = cityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>source</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSource() {
 		return this.source;
 	}
+	/**
+	 * <p>Setter for the field <code>source</code>.</p>
+	 *
+	 * @param source a {@link java.lang.String} object.
+	 */
 	public void setSource(String source) {
 		this.source = source;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 物业费账单数据批量上传
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:37:38
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillBatchUploadModel extends AlipayObject {
 
@@ -36,23 +36,53 @@ public class AlipayEcoCplifeBillBatchUploadModel extends AlipayObject {
 	@ApiField("community_id")
 	private String communityId;
 
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId() {
 		return this.batchId;
 	}
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billSet</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CPBillSet> getBillSet() {
 		return this.billSet;
 	}
+	/**
+	 * <p>Setter for the field <code>billSet</code>.</p>
+	 *
+	 * @param billSet a {@link java.util.List} object.
+	 */
 	public void setBillSet(List<CPBillSet> billSet) {
 		this.billSet = billSet;
 	}
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}

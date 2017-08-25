@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.extitem.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-06 10:48:09
+ * @version $Id: $Id
  */
 public class KoubeiItemExtitemBatchqueryResponse extends AlipayResponse {
 
@@ -42,30 +42,70 @@ public class KoubeiItemExtitemBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_size")
 	private String totalSize;
 
+	/**
+	 * <p>Setter for the field <code>modelList</code>.</p>
+	 *
+	 * @param modelList a {@link java.util.List} object.
+	 */
 	public void setModelList(List<ExtItem> modelList) {
 		this.modelList = modelList;
 	}
+	/**
+	 * <p>Getter for the field <code>modelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ExtItem> getModelList( ) {
 		return this.modelList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pageNum</code>.</p>
+	 *
+	 * @param pageNum a {@link java.lang.String} object.
+	 */
 	public void setPageNum(String pageNum) {
 		this.pageNum = pageNum;
 	}
+	/**
+	 * <p>Getter for the field <code>pageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNum( ) {
 		return this.pageNum;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.String} object.
+	 */
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageSize( ) {
 		return this.pageSize;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalSize</code>.</p>
+	 *
+	 * @param totalSize a {@link java.lang.String} object.
+	 */
 	public void setTotalSize(String totalSize) {
 		this.totalSize = totalSize;
 	}
+	/**
+	 * <p>Getter for the field <code>totalSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalSize( ) {
 		return this.totalSize;
 	}

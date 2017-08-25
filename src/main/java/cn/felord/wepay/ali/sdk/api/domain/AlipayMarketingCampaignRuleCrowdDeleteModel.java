@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 删除圈人规则
  *
  * @author auto create
- * @since 1.0, 2016-12-12 17:43:21
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignRuleCrowdDeleteModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayMarketingCampaignRuleCrowdDeleteModel extends AlipayObject {
 	@ApiField("ruleid")
 	private String ruleid;
 
+	/**
+	 * <p>Getter for the field <code>mpid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMpid() {
 		return this.mpid;
 	}
+	/**
+	 * <p>Setter for the field <code>mpid</code>.</p>
+	 *
+	 * @param mpid a {@link java.lang.String} object.
+	 */
 	public void setMpid(String mpid) {
 		this.mpid = mpid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleid() {
 		return this.ruleid;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleid</code>.</p>
+	 *
+	 * @param ruleid a {@link java.lang.String} object.
+	 */
 	public void setRuleid(String ruleid) {
 		this.ruleid = ruleid;
 	}

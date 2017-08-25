@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 手艺人门店关系
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:26:55
+ * @version $Id: $Id
  */
 public class CraftsmanShopRelationOpenModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class CraftsmanShopRelationOpenModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Getter for the field <code>recommendWeight</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecommendWeight() {
 		return this.recommendWeight;
 	}
+	/**
+	 * <p>Setter for the field <code>recommendWeight</code>.</p>
+	 *
+	 * @param recommendWeight a {@link java.lang.Long} object.
+	 */
 	public void setRecommendWeight(Long recommendWeight) {
 		this.recommendWeight = recommendWeight;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}

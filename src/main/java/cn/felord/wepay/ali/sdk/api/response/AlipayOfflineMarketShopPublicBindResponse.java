@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.public.bind response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:57:30
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopPublicBindResponse extends AlipayResponse {
 
@@ -35,23 +35,53 @@ public class AlipayOfflineMarketShopPublicBindResponse extends AlipayResponse {
 	@ApiField("total_success")
 	private Long totalSuccess;
 
+	/**
+	 * <p>Setter for the field <code>errorBindingShopIds</code>.</p>
+	 *
+	 * @param errorBindingShopIds a {@link java.util.List} object.
+	 */
 	public void setErrorBindingShopIds(List<String> errorBindingShopIds) {
 		this.errorBindingShopIds = errorBindingShopIds;
 	}
+	/**
+	 * <p>Getter for the field <code>errorBindingShopIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getErrorBindingShopIds( ) {
 		return this.errorBindingShopIds;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalError</code>.</p>
+	 *
+	 * @param totalError a {@link java.lang.Long} object.
+	 */
 	public void setTotalError(Long totalError) {
 		this.totalError = totalError;
 	}
+	/**
+	 * <p>Getter for the field <code>totalError</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalError( ) {
 		return this.totalError;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalSuccess</code>.</p>
+	 *
+	 * @param totalSuccess a {@link java.lang.Long} object.
+	 */
 	public void setTotalSuccess(Long totalSuccess) {
 		this.totalSuccess = totalSuccess;
 	}
+	/**
+	 * <p>Getter for the field <code>totalSuccess</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalSuccess( ) {
 		return this.totalSuccess;
 	}

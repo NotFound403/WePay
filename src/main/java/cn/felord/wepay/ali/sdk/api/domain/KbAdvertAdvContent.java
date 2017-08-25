@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统推广内容
  *
  * @author auto create
- * @since 1.0, 2017-02-15 13:57:59
+ * @version $Id: $Id
  */
 public class KbAdvertAdvContent extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class KbAdvertAdvContent extends AlipayObject {
 	@ApiField("link_url")
 	private String linkUrl;
 
+	/**
+	 * <p>Getter for the field <code>codec</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodec() {
 		return this.codec;
 	}
+	/**
+	 * <p>Setter for the field <code>codec</code>.</p>
+	 *
+	 * @param codec a {@link java.lang.String} object.
+	 */
 	public void setCodec(String codec) {
 		this.codec = codec;
 	}
 
+	/**
+	 * <p>Getter for the field <code>linkUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLinkUrl() {
 		return this.linkUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>linkUrl</code>.</p>
+	 *
+	 * @param linkUrl a {@link java.lang.String} object.
+	 */
 	public void setLinkUrl(String linkUrl) {
 		this.linkUrl = linkUrl;
 	}

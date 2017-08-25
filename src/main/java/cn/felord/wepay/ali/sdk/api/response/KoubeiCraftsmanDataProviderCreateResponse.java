@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.provider.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-13 16:26:55
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataProviderCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiCraftsmanDataProviderCreateResponse extends AlipayResponse {
 	@ApiField("craftsman_id")
 	private String craftsmanId;
 
+	/**
+	 * <p>Setter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @param craftsmanId a {@link java.lang.String} object.
+	 */
 	public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
+	/**
+	 * <p>Getter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCraftsmanId( ) {
 		return this.craftsmanId;
 	}

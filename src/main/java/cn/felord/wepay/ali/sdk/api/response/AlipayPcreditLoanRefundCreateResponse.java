@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pcredit.loan.refund.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-25 10:32:15
+ * @version $Id: $Id
  */
 public class AlipayPcreditLoanRefundCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayPcreditLoanRefundCreateResponse extends AlipayResponse {
 	@ApiField("loan_repay_no")
 	private String loanRepayNo;
 
+	/**
+	 * <p>Setter for the field <code>loanRepayNo</code>.</p>
+	 *
+	 * @param loanRepayNo a {@link java.lang.String} object.
+	 */
 	public void setLoanRepayNo(String loanRepayNo) {
 		this.loanRepayNo = loanRepayNo;
 	}
+	/**
+	 * <p>Getter for the field <code>loanRepayNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanRepayNo( ) {
 		return this.loanRepayNo;
 	}

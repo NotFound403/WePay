@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.order.settle response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 00:49:25
+ * @version $Id: $Id
  */
 public class AlipayTradeOrderSettleResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayTradeOrderSettleResponse extends AlipayResponse {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}

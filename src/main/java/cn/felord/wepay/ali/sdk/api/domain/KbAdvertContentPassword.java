@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统口令红包内容
  *
  * @author auto create
- * @since 1.0, 2017-02-15 13:57:59
+ * @version $Id: $Id
  */
 public class KbAdvertContentPassword extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class KbAdvertContentPassword extends AlipayObject {
 	@ApiField("share_page_url")
 	private String sharePageUrl;
 
+	/**
+	 * <p>Getter for the field <code>password</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassword() {
 		return this.password;
 	}
+	/**
+	 * <p>Setter for the field <code>password</code>.</p>
+	 *
+	 * @param password a {@link java.lang.String} object.
+	 */
 	public void setPassword(String password) {
 		this.password = password;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sharePageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSharePageUrl() {
 		return this.sharePageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>sharePageUrl</code>.</p>
+	 *
+	 * @param sharePageUrl a {@link java.lang.String} object.
+	 */
 	public void setSharePageUrl(String sharePageUrl) {
 		this.sharePageUrl = sharePageUrl;
 	}

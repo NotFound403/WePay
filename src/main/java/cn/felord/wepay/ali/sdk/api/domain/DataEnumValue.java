@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 自定义标签的枚举值信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class DataEnumValue extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class DataEnumValue extends AlipayObject {
 	@ApiField("value")
 	private String value;
 
+	/**
+	 * <p>Getter for the field <code>filterTags</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<FilterTag> getFilterTags() {
 		return this.filterTags;
 	}
+	/**
+	 * <p>Setter for the field <code>filterTags</code>.</p>
+	 *
+	 * @param filterTags a {@link java.util.List} object.
+	 */
 	public void setFilterTags(List<FilterTag> filterTags) {
 		this.filterTags = filterTags;
 	}
 
+	/**
+	 * <p>Getter for the field <code>label</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabel() {
 		return this.label;
 	}
+	/**
+	 * <p>Setter for the field <code>label</code>.</p>
+	 *
+	 * @param label a {@link java.lang.String} object.
+	 */
 	public void setLabel(String label) {
 		this.label = label;
 	}
 
+	/**
+	 * <p>Getter for the field <code>value</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValue() {
 		return this.value;
 	}
+	/**
+	 * <p>Setter for the field <code>value</code>.</p>
+	 *
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void setValue(String value) {
 		this.value = value;
 	}

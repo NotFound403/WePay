@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.consume.sync response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 14:51:37
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardConsumeSyncResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCardConsumeSyncResponse extends AlipayResponse {
 	@ApiField("external_card_no")
 	private String externalCardNo;
 
+	/**
+	 * <p>Setter for the field <code>externalCardNo</code>.</p>
+	 *
+	 * @param externalCardNo a {@link java.lang.String} object.
+	 */
 	public void setExternalCardNo(String externalCardNo) {
 		this.externalCardNo = externalCardNo;
 	}
+	/**
+	 * <p>Getter for the field <code>externalCardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalCardNo( ) {
 		return this.externalCardNo;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统分佣规则（比例）
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:12
+ * @version $Id: $Id
  */
 public class KbAdvertCommissionClausePercentageResponse extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class KbAdvertCommissionClausePercentageResponse extends AlipayObject {
 	@ApiField("max_limit")
 	private String maxLimit;
 
+	/**
+	 * <p>Getter for the field <code>commissionRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommissionRate() {
 		return this.commissionRate;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionRate</code>.</p>
+	 *
+	 * @param commissionRate a {@link java.lang.String} object.
+	 */
 	public void setCommissionRate(String commissionRate) {
 		this.commissionRate = commissionRate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxLimit</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxLimit() {
 		return this.maxLimit;
 	}
+	/**
+	 * <p>Setter for the field <code>maxLimit</code>.</p>
+	 *
+	 * @param maxLimit a {@link java.lang.String} object.
+	 */
 	public void setMaxLimit(String maxLimit) {
 		this.maxLimit = maxLimit;
 	}

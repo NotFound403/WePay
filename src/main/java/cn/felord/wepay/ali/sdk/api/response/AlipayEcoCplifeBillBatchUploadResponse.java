@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.batch.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:54:48
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillBatchUploadResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayEcoCplifeBillBatchUploadResponse extends AlipayResponse {
 	@ApiField("batch_id")
 	private String batchId;
 
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId( ) {
 		return this.batchId;
 	}

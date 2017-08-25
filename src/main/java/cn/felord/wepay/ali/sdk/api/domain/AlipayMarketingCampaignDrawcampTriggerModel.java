@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 营销抽奖活动触发
  *
  * @author auto create
- * @since 1.0, 2017-07-19 08:37:11
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDrawcampTriggerModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayMarketingCampaignDrawcampTriggerModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>bindMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBindMobile() {
 		return this.bindMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>bindMobile</code>.</p>
+	 *
+	 * @param bindMobile a {@link java.lang.String} object.
+	 */
 	public void setBindMobile(String bindMobile) {
 		this.bindMobile = bindMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId() {
 		return this.campId;
 	}
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campSource</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCampSource() {
 		return this.campSource;
 	}
+	/**
+	 * <p>Setter for the field <code>campSource</code>.</p>
+	 *
+	 * @param campSource a {@link java.lang.Long} object.
+	 */
 	public void setCampSource(Long campSource) {
 		this.campSource = campSource;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 标签信息模型
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:47:33
+ * @version $Id: $Id
  */
 public class LifeLabel extends AlipayObject {
 
@@ -71,65 +71,155 @@ public class LifeLabel extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>biz</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBiz() {
 		return this.biz;
 	}
+	/**
+	 * <p>Setter for the field <code>biz</code>.</p>
+	 *
+	 * @param biz a {@link java.lang.String} object.
+	 */
 	public void setBiz(String biz) {
 		this.biz = biz;
 	}
 
+	/**
+	 * <p>Getter for the field <code>category</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategory() {
 		return this.category;
 	}
+	/**
+	 * <p>Setter for the field <code>category</code>.</p>
+	 *
+	 * @param category a {@link java.lang.String} object.
+	 */
 	public void setCategory(String category) {
 		this.category = category;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dataType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDataType() {
 		return this.dataType;
 	}
+	/**
+	 * <p>Setter for the field <code>dataType</code>.</p>
+	 *
+	 * @param dataType a {@link java.lang.String} object.
+	 */
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabelCode() {
 		return this.labelCode;
 	}
+	/**
+	 * <p>Setter for the field <code>labelCode</code>.</p>
+	 *
+	 * @param labelCode a {@link java.lang.String} object.
+	 */
 	public void setLabelCode(String labelCode) {
 		this.labelCode = labelCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabelId() {
 		return this.labelId;
 	}
+	/**
+	 * <p>Setter for the field <code>labelId</code>.</p>
+	 *
+	 * @param labelId a {@link java.lang.String} object.
+	 */
 	public void setLabelId(String labelId) {
 		this.labelId = labelId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabelName() {
 		return this.labelName;
 	}
+	/**
+	 * <p>Setter for the field <code>labelName</code>.</p>
+	 *
+	 * @param labelName a {@link java.lang.String} object.
+	 */
 	public void setLabelName(String labelName) {
 		this.labelName = labelName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operator</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperator() {
 		return this.operator;
 	}
+	/**
+	 * <p>Setter for the field <code>operator</code>.</p>
+	 *
+	 * @param operator a {@link java.lang.String} object.
+	 */
 	public void setOperator(String operator) {
 		this.operator = operator;
 	}
 
+	/**
+	 * <p>Getter for the field <code>options</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Option> getOptions() {
 		return this.options;
 	}
+	/**
+	 * <p>Setter for the field <code>options</code>.</p>
+	 *
+	 * @param options a {@link java.util.List} object.
+	 */
 	public void setOptions(List<Option> options) {
 		this.options = options;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 库存量单位描述对象
  *
  * @author auto create
- * @since 1.0, 2017-03-17 17:48:10
+ * @version $Id: $Id
  */
 public class SkuDescInfo extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class SkuDescInfo extends AlipayObject {
 	@ApiField("out_sku_id")
 	private String outSkuId;
 
+	/**
+	 * <p>Getter for the field <code>city</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCity() {
 		return this.city;
 	}
+	/**
+	 * <p>Setter for the field <code>city</code>.</p>
+	 *
+	 * @param city a {@link java.lang.String} object.
+	 */
 	public void setCity(String city) {
 		this.city = city;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outPvId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutPvId() {
 		return this.outPvId;
 	}
+	/**
+	 * <p>Setter for the field <code>outPvId</code>.</p>
+	 *
+	 * @param outPvId a {@link java.lang.String} object.
+	 */
 	public void setOutPvId(String outPvId) {
 		this.outPvId = outPvId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSkuId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSkuId() {
 		return this.outSkuId;
 	}
+	/**
+	 * <p>Setter for the field <code>outSkuId</code>.</p>
+	 *
+	 * @param outSkuId a {@link java.lang.String} object.
+	 */
 	public void setOutSkuId(String outSkuId) {
 		this.outSkuId = outSkuId;
 	}

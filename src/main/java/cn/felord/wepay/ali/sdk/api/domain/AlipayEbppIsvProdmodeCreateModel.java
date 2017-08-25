@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 产品模型创建接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:16:58
+ * @version $Id: $Id
  */
 public class AlipayEbppIsvProdmodeCreateModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayEbppIsvProdmodeCreateModel extends AlipayObject {
 	@ApiField("biz_data")
 	private String bizData;
 
+	/**
+	 * <p>Getter for the field <code>bizData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizData() {
 		return this.bizData;
 	}
+	/**
+	 * <p>Setter for the field <code>bizData</code>.</p>
+	 *
+	 * @param bizData a {@link java.lang.String} object.
+	 */
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}

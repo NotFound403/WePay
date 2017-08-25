@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 物业费账单数据同步
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:19
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillSyncModel extends AlipayObject {
 
@@ -49,37 +49,87 @@ update：更改
 	@ApiField("operate_type")
 	private String operateType;
 
+	/**
+	 * <p>Getter for the field <code>billEntryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillEntryId() {
 		return this.billEntryId;
 	}
+	/**
+	 * <p>Setter for the field <code>billEntryId</code>.</p>
+	 *
+	 * @param billEntryId a {@link java.lang.String} object.
+	 */
 	public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>newDeadline</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNewDeadline() {
 		return this.newDeadline;
 	}
+	/**
+	 * <p>Setter for the field <code>newDeadline</code>.</p>
+	 *
+	 * @param newDeadline a {@link java.lang.String} object.
+	 */
 	public void setNewDeadline(String newDeadline) {
 		this.newDeadline = newDeadline;
 	}
 
+	/**
+	 * <p>Getter for the field <code>newEntryAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNewEntryAmount() {
 		return this.newEntryAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>newEntryAmount</code>.</p>
+	 *
+	 * @param newEntryAmount a {@link java.lang.String} object.
+	 */
 	public void setNewEntryAmount(String newEntryAmount) {
 		this.newEntryAmount = newEntryAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateType() {
 		return this.operateType;
 	}
+	/**
+	 * <p>Setter for the field <code>operateType</code>.</p>
+	 *
+	 * @param operateType a {@link java.lang.String} object.
+	 */
 	public void setOperateType(String operateType) {
 		this.operateType = operateType;
 	}

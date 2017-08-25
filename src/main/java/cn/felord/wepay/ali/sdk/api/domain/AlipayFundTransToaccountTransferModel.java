@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 单笔转账到支付宝账户接口
  *
  * @author auto create
- * @since 1.0, 2017-07-13 10:44:03
+ * @version $Id: $Id
  */
 public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 
@@ -77,65 +77,155 @@ public class AlipayFundTransToaccountTransferModel extends AlipayObject {
 	@ApiField("remark")
 	private String remark;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtParam() {
 		return this.extParam;
 	}
+	/**
+	 * <p>Setter for the field <code>extParam</code>.</p>
+	 *
+	 * @param extParam a {@link java.lang.String} object.
+	 */
 	public void setExtParam(String extParam) {
 		this.extParam = extParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeAccount() {
 		return this.payeeAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeAccount</code>.</p>
+	 *
+	 * @param payeeAccount a {@link java.lang.String} object.
+	 */
 	public void setPayeeAccount(String payeeAccount) {
 		this.payeeAccount = payeeAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeRealName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeRealName() {
 		return this.payeeRealName;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeRealName</code>.</p>
+	 *
+	 * @param payeeRealName a {@link java.lang.String} object.
+	 */
 	public void setPayeeRealName(String payeeRealName) {
 		this.payeeRealName = payeeRealName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayeeType() {
 		return this.payeeType;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeType</code>.</p>
+	 *
+	 * @param payeeType a {@link java.lang.String} object.
+	 */
 	public void setPayeeType(String payeeType) {
 		this.payeeType = payeeType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerRealName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerRealName() {
 		return this.payerRealName;
 	}
+	/**
+	 * <p>Setter for the field <code>payerRealName</code>.</p>
+	 *
+	 * @param payerRealName a {@link java.lang.String} object.
+	 */
 	public void setPayerRealName(String payerRealName) {
 		this.payerRealName = payerRealName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerShowName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerShowName() {
 		return this.payerShowName;
 	}
+	/**
+	 * <p>Setter for the field <code>payerShowName</code>.</p>
+	 *
+	 * @param payerShowName a {@link java.lang.String} object.
+	 */
 	public void setPayerShowName(String payerShowName) {
 		this.payerShowName = payerShowName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>remark</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRemark() {
 		return this.remark;
 	}
+	/**
+	 * <p>Setter for the field <code>remark</code>.</p>
+	 *
+	 * @param remark a {@link java.lang.String} object.
+	 */
 	public void setRemark(String remark) {
 		this.remark = remark;
 	}

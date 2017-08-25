@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.boss.prod.arrangement.offline.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 21:06:47
+ * @version $Id: $Id
  */
 public class AlipayBossProdArrangementOfflineQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayBossProdArrangementOfflineQueryResponse extends AlipayRespons
 	@ApiField("sign_status")
 	private String signStatus;
 
+	/**
+	 * <p>Setter for the field <code>signStatus</code>.</p>
+	 *
+	 * @param signStatus a {@link java.lang.String} object.
+	 */
 	public void setSignStatus(String signStatus) {
 		this.signStatus = signStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>signStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSignStatus( ) {
 		return this.signStatus;
 	}

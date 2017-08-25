@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 发送钉钉企业会话消息接口
  *
  * @author auto create
- * @since 1.0, 2016-11-29 12:55:20
+ * @version $Id: $Id
  */
 public class AlipayOpenAppMsgDingSendModel extends AlipayObject {
 
@@ -65,58 +65,138 @@ public class AlipayOpenAppMsgDingSendModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> userIds;
 
+	/**
+	 * <p>Getter for the field <code>agentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgentId() {
 		return this.agentId;
 	}
+	/**
+	 * <p>Setter for the field <code>agentId</code>.</p>
+	 *
+	 * @param agentId a {@link java.lang.String} object.
+	 */
 	public void setAgentId(String agentId) {
 		this.agentId = agentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gotoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGotoUrl() {
 		return this.gotoUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>gotoUrl</code>.</p>
+	 *
+	 * @param gotoUrl a {@link java.lang.String} object.
+	 */
 	public void setGotoUrl(String gotoUrl) {
 		this.gotoUrl = gotoUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageUrl() {
 		return this.imageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @param imageUrl a {@link java.lang.String} object.
+	 */
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>msgType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsgType() {
 		return this.msgType;
 	}
+	/**
+	 * <p>Setter for the field <code>msgType</code>.</p>
+	 *
+	 * @param msgType a {@link java.lang.String} object.
+	 */
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>receiver</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiver() {
 		return this.receiver;
 	}
+	/**
+	 * <p>Setter for the field <code>receiver</code>.</p>
+	 *
+	 * @param receiver a {@link java.lang.String} object.
+	 */
 	public void setReceiver(String receiver) {
 		this.receiver = receiver;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getUserIds() {
 		return this.userIds;
 	}
+	/**
+	 * <p>Setter for the field <code>userIds</code>.</p>
+	 *
+	 * @param userIds a {@link java.util.List} object.
+	 */
 	public void setUserIds(List<String> userIds) {
 		this.userIds = userIds;
 	}

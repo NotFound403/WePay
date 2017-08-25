@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 查询商品编码对应的商品是否存在
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:11
+ * @version $Id: $Id
  */
 public class KoubeiItemExtitemExistedQueryModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class KoubeiItemExtitemExistedQueryModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> codeList;
 
+	/**
+	 * <p>Getter for the field <code>codeList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getCodeList() {
 		return this.codeList;
 	}
+	/**
+	 * <p>Setter for the field <code>codeList</code>.</p>
+	 *
+	 * @param codeList a {@link java.util.List} object.
+	 */
 	public void setCodeList(List<String> codeList) {
 		this.codeList = codeList;
 	}

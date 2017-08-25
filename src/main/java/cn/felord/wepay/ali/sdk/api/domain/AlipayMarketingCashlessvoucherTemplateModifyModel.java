@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户券模板修改接口
  *
  * @author auto create
- * @since 1.0, 2017-06-19 11:26:27
+ * @version $Id: $Id
  */
 public class AlipayMarketingCashlessvoucherTemplateModifyModel extends AlipayObject {
 
@@ -39,30 +39,70 @@ public class AlipayMarketingCashlessvoucherTemplateModifyModel extends AlipayObj
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPublishEndTime() {
 		return this.publishEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>publishEndTime</code>.</p>
+	 *
+	 * @param publishEndTime a {@link java.util.Date} object.
+	 */
 	public void setPublishEndTime(Date publishEndTime) {
 		this.publishEndTime = publishEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleConf</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleConf() {
 		return this.ruleConf;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleConf</code>.</p>
+	 *
+	 * @param ruleConf a {@link java.lang.String} object.
+	 */
 	public void setRuleConf(String ruleConf) {
 		this.ruleConf = ruleConf;
 	}
 
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId() {
 		return this.templateId;
 	}
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}

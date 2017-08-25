@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 贴子发布接口职位供应商信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class EduSourceInfo extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class EduSourceInfo extends AlipayObject {
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Getter for the field <code>logo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogo() {
 		return this.logo;
 	}
+	/**
+	 * <p>Setter for the field <code>logo</code>.</p>
+	 *
+	 * @param logo a {@link java.lang.String} object.
+	 */
 	public void setLogo(String logo) {
 		this.logo = logo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.tool.points.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-10-09 11:45:18
+ * @version $Id: $Id
  */
 public class KoubeiMarketingToolPointsQueryResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class KoubeiMarketingToolPointsQueryResponse extends AlipayResponse {
 	@ApiField("total_points")
 	private String totalPoints;
 
+	/**
+	 * <p>Setter for the field <code>availablePoints</code>.</p>
+	 *
+	 * @param availablePoints a {@link java.lang.String} object.
+	 */
 	public void setAvailablePoints(String availablePoints) {
 		this.availablePoints = availablePoints;
 	}
+	/**
+	 * <p>Getter for the field <code>availablePoints</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAvailablePoints( ) {
 		return this.availablePoints;
 	}
 
+	/**
+	 * <p>Setter for the field <code>freezedPoints</code>.</p>
+	 *
+	 * @param freezedPoints a {@link java.lang.String} object.
+	 */
 	public void setFreezedPoints(String freezedPoints) {
 		this.freezedPoints = freezedPoints;
 	}
+	/**
+	 * <p>Getter for the field <code>freezedPoints</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFreezedPoints( ) {
 		return this.freezedPoints;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalPoints</code>.</p>
+	 *
+	 * @param totalPoints a {@link java.lang.String} object.
+	 */
 	public void setTotalPoints(String totalPoints) {
 		this.totalPoints = totalPoints;
 	}
+	/**
+	 * <p>Getter for the field <code>totalPoints</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalPoints( ) {
 		return this.totalPoints;
 	}

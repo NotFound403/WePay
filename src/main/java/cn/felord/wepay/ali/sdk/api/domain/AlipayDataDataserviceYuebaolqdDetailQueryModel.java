@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 余额宝负债端预测数据
  *
  * @author auto create
- * @since 1.0, 2016-10-15 18:47:07
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceYuebaolqdDetailQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayDataDataserviceYuebaolqdDetailQueryModel extends AlipayObject
 	@ApiField("report_date")
 	private String reportDate;
 
+	/**
+	 * <p>Getter for the field <code>reportDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportDate() {
 		return this.reportDate;
 	}
+	/**
+	 * <p>Setter for the field <code>reportDate</code>.</p>
+	 *
+	 * @param reportDate a {@link java.lang.String} object.
+	 */
 	public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
 	}

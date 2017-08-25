@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 个性化扩展区创建接口
  *
  * @author auto create
- * @since 1.0, 2017-06-01 11:26:57
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPersonalizedExtensionCreateModel extends AlipayObject {
 
@@ -30,16 +30,36 @@ public class AlipayOpenPublicPersonalizedExtensionCreateModel extends AlipayObje
 	@ApiField("label_rule")
 	private List<LabelRule> labelRule;
 
+	/**
+	 * <p>Getter for the field <code>areas</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ExtensionArea> getAreas() {
 		return this.areas;
 	}
+	/**
+	 * <p>Setter for the field <code>areas</code>.</p>
+	 *
+	 * @param areas a {@link java.util.List} object.
+	 */
 	public void setAreas(List<ExtensionArea> areas) {
 		this.areas = areas;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelRule</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<LabelRule> getLabelRule() {
 		return this.labelRule;
 	}
+	/**
+	 * <p>Setter for the field <code>labelRule</code>.</p>
+	 *
+	 * @param labelRule a {@link java.util.List} object.
+	 */
 	public void setLabelRule(List<LabelRule> labelRule) {
 		this.labelRule = labelRule;
 	}

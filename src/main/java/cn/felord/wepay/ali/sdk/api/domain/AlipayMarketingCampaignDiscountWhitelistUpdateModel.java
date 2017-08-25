@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 优惠活动白名单设置
  *
  * @author auto create
- * @since 1.0, 2017-03-03 16:47:53
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDiscountWhitelistUpdateModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayMarketingCampaignDiscountWhitelistUpdateModel extends AlipayO
 	@ApiField("user_white_list")
 	private String userWhiteList;
 
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId() {
 		return this.campId;
 	}
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userWhiteList</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserWhiteList() {
 		return this.userWhiteList;
 	}
+	/**
+	 * <p>Setter for the field <code>userWhiteList</code>.</p>
+	 *
+	 * @param userWhiteList a {@link java.lang.String} object.
+	 */
 	public void setUserWhiteList(String userWhiteList) {
 		this.userWhiteList = userWhiteList;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.agentcreate.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-17 12:23:39
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeAgentcreateQueryResponse extends AlipayResponse {
 
@@ -44,37 +44,87 @@ public class AlipayOpenPublicLifeAgentcreateQueryResponse extends AlipayResponse
 	@ApiField("refused_reason")
 	private String refusedReason;
 
+	/**
+	 * <p>Setter for the field <code>lifeAppId</code>.</p>
+	 *
+	 * @param lifeAppId a {@link java.lang.String} object.
+	 */
 	public void setLifeAppId(String lifeAppId) {
 		this.lifeAppId = lifeAppId;
 	}
+	/**
+	 * <p>Getter for the field <code>lifeAppId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLifeAppId( ) {
 		return this.lifeAppId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>merchantPid</code>.</p>
+	 *
+	 * @param merchantPid a {@link java.lang.String} object.
+	 */
 	public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
+	/**
+	 * <p>Getter for the field <code>merchantPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantPid( ) {
 		return this.merchantPid;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderStatusBizDesc</code>.</p>
+	 *
+	 * @param orderStatusBizDesc a {@link java.lang.String} object.
+	 */
 	public void setOrderStatusBizDesc(String orderStatusBizDesc) {
 		this.orderStatusBizDesc = orderStatusBizDesc;
 	}
+	/**
+	 * <p>Getter for the field <code>orderStatusBizDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderStatusBizDesc( ) {
 		return this.orderStatusBizDesc;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>refusedReason</code>.</p>
+	 *
+	 * @param refusedReason a {@link java.lang.String} object.
+	 */
 	public void setRefusedReason(String refusedReason) {
 		this.refusedReason = refusedReason;
 	}
+	/**
+	 * <p>Getter for the field <code>refusedReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefusedReason( ) {
 		return this.refusedReason;
 	}

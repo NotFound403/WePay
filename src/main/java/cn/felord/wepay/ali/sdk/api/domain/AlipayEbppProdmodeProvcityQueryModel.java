@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询省市地区接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:17:21
+ * @version $Id: $Id
  */
 public class AlipayEbppProdmodeProvcityQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEbppProdmodeProvcityQueryModel extends AlipayObject {
 	@ApiField("query_type")
 	private String queryType;
 
+	/**
+	 * <p>Getter for the field <code>adcode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdcode() {
 		return this.adcode;
 	}
+	/**
+	 * <p>Setter for the field <code>adcode</code>.</p>
+	 *
+	 * @param adcode a {@link java.lang.String} object.
+	 */
 	public void setAdcode(String adcode) {
 		this.adcode = adcode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>queryType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQueryType() {
 		return this.queryType;
 	}
+	/**
+	 * <p>Setter for the field <code>queryType</code>.</p>
+	 *
+	 * @param queryType a {@link java.lang.String} object.
+	 */
 	public void setQueryType(String queryType) {
 		this.queryType = queryType;
 	}

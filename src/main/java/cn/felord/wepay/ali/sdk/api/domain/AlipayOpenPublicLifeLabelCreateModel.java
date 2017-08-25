@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 创建标签接口
  *
  * @author auto create
- * @since 1.0, 2017-06-27 17:50:46
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeLabelCreateModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenPublicLifeLabelCreateModel extends AlipayObject {
 	@ApiField("label_name")
 	private String labelName;
 
+	/**
+	 * <p>Getter for the field <code>dataType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDataType() {
 		return this.dataType;
 	}
+	/**
+	 * <p>Setter for the field <code>dataType</code>.</p>
+	 *
+	 * @param dataType a {@link java.lang.String} object.
+	 */
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>labelName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabelName() {
 		return this.labelName;
 	}
+	/**
+	 * <p>Setter for the field <code>labelName</code>.</p>
+	 *
+	 * @param labelName a {@link java.lang.String} object.
+	 */
 	public void setLabelName(String labelName) {
 		this.labelName = labelName;
 	}

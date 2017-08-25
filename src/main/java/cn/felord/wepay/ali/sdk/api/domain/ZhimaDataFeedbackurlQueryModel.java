@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 获取数据反馈模板
  *
  * @author auto create
- * @since 1.0, 2017-02-16 15:46:19
+ * @version $Id: $Id
  */
 public class ZhimaDataFeedbackurlQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class ZhimaDataFeedbackurlQueryModel extends AlipayObject {
 	@ApiField("merchant_id")
 	private String merchantId;
 
+	/**
+	 * <p>Getter for the field <code>merchantId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantId() {
 		return this.merchantId;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantId</code>.</p>
+	 *
+	 * @param merchantId a {@link java.lang.String} object.
+	 */
 	public void setMerchantId(String merchantId) {
 		this.merchantId = merchantId;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.personal.apply response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-26 13:19:43
+ * @version $Id: $Id
  */
 public class AntMerchantExpandPersonalApplyResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AntMerchantExpandPersonalApplyResponse extends AlipayResponse {
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}

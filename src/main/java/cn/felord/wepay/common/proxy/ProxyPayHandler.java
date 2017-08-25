@@ -20,8 +20,6 @@ import static cn.felord.wepay.common.pay.Constant.PARAMS_KEY;
  * @version v1.0.0
  * @since 2017 /7/25  14:37
  */
-
-
 public class ProxyPayHandler implements InvocationHandler {
     private static final Logger log= LoggerFactory.getLogger(ProxyPayHandler.class);
     private Payable target;
@@ -49,6 +47,7 @@ public class ProxyPayHandler implements InvocationHandler {
         return (Payable) Proxy.newProxyInstance(classLoader, interfaceClazzs, this);
     }
 
+    /** {@inheritDoc} */
     @Override
     @SuppressWarnings("unchecked")
     public Object invoke(Object proxy, Method method, Object[] args) {

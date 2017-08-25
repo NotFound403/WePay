@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 保险产品对应的险种;
  *
  * @author auto create
- * @since 1.0, 2017-07-18 15:49:26
+ * @version $Id: $Id
  */
 public class InsProdCoverage extends AlipayObject {
 
@@ -60,51 +60,121 @@ public class InsProdCoverage extends AlipayObject {
 	@ApiField("sum_insured")
 	private InsSumInsured sumInsured;
 
+	/**
+	 * <p>Getter for the field <code>coverageDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCoverageDesc() {
 		return this.coverageDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>coverageDesc</code>.</p>
+	 *
+	 * @param coverageDesc a {@link java.lang.String} object.
+	 */
 	public void setCoverageDesc(String coverageDesc) {
 		this.coverageDesc = coverageDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>coverageName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCoverageName() {
 		return this.coverageName;
 	}
+	/**
+	 * <p>Setter for the field <code>coverageName</code>.</p>
+	 *
+	 * @param coverageName a {@link java.lang.String} object.
+	 */
 	public void setCoverageName(String coverageName) {
 		this.coverageName = coverageName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>coverageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCoverageNo() {
 		return this.coverageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>coverageNo</code>.</p>
+	 *
+	 * @param coverageNo a {@link java.lang.String} object.
+	 */
 	public void setCoverageNo(String coverageNo) {
 		this.coverageNo = coverageNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isFixedPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getIsFixedPeriod() {
 		return this.isFixedPeriod;
 	}
+	/**
+	 * <p>Setter for the field <code>isFixedPeriod</code>.</p>
+	 *
+	 * @param isFixedPeriod a {@link java.lang.Boolean} object.
+	 */
 	public void setIsFixedPeriod(Boolean isFixedPeriod) {
 		this.isFixedPeriod = isFixedPeriod;
 	}
 
+	/**
+	 * <p>Getter for the field <code>liabilities</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<InsLiability> getLiabilities() {
 		return this.liabilities;
 	}
+	/**
+	 * <p>Setter for the field <code>liabilities</code>.</p>
+	 *
+	 * @param liabilities a {@link java.util.List} object.
+	 */
 	public void setLiabilities(List<InsLiability> liabilities) {
 		this.liabilities = liabilities;
 	}
 
+	/**
+	 * <p>Getter for the field <code>periods</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getPeriods() {
 		return this.periods;
 	}
+	/**
+	 * <p>Setter for the field <code>periods</code>.</p>
+	 *
+	 * @param periods a {@link java.util.List} object.
+	 */
 	public void setPeriods(List<String> periods) {
 		this.periods = periods;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sumInsured</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InsSumInsured} object.
+	 */
 	public InsSumInsured getSumInsured() {
 		return this.sumInsured;
 	}
+	/**
+	 * <p>Setter for the field <code>sumInsured</code>.</p>
+	 *
+	 * @param sumInsured a {@link cn.felord.wepay.ali.sdk.api.domain.InsSumInsured} object.
+	 */
 	public void setSumInsured(InsSumInsured sumInsured) {
 		this.sumInsured = sumInsured;
 	}

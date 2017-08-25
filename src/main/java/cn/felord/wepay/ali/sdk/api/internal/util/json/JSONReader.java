@@ -10,9 +10,12 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 
- * 
+ *
+ *
  * 不能直接使用JSONReader，请用JSONValidatingReader，所以这里改为abstract修饰。
+ *
+ * @author lenovo
+ * @version $Id: $Id
  */
 public abstract class JSONReader {
 
@@ -20,8 +23,11 @@ public abstract class JSONReader {
     private static final Object ARRAY_END = new Object();
     private static final Object COLON = new Object();
     private static final Object COMMA = new Object();
+    /** Constant <code>FIRST=0</code> */
     public static final int FIRST = 0;
+    /** Constant <code>CURRENT=1</code> */
     public static final int CURRENT = 1;
+    /** Constant <code>NEXT=2</code> */
     public static final int NEXT = 2;
 
     private static Map<Character, Character> escapes = new HashMap<Character, Character>();
@@ -52,6 +58,13 @@ public abstract class JSONReader {
         }
     }
 
+    /**
+     * <p>read.</p>
+     *
+     * @param ci a {@link java.text.CharacterIterator} object.
+     * @param start a int.
+     * @return a {@link java.lang.Object} object.
+     */
     public Object read(CharacterIterator ci, int start) {
         it = ci;
         switch (start) {
@@ -68,10 +81,22 @@ public abstract class JSONReader {
         return read();
     }
 
+    /**
+     * <p>read.</p>
+     *
+     * @param it a {@link java.text.CharacterIterator} object.
+     * @return a {@link java.lang.Object} object.
+     */
     public Object read(CharacterIterator it) {
         return read(it, NEXT);
     }
 
+    /**
+     * <p>read.</p>
+     *
+     * @param string a {@link java.lang.String} object.
+     * @return a {@link java.lang.Object} object.
+     */
     public Object read(String string) {
         return read(new StringCharacterIterator(string), FIRST);
     }
@@ -163,8 +188,8 @@ public abstract class JSONReader {
  
         String s = buf.toString();
         return isFloatingPoint 
-            ? (length < 17) ? (Object)Double.valueOf(s) : new BigDecimal(s)
-            : (length < 19) ? (Object)Long.valueOf(s) : new BigInteger(s);
+            ? (length < 17) ? Double.valueOf(s) : new BigDecimal(s)
+            : (length < 19) ? Long.valueOf(s) : new BigInteger(s);
     }
  
     private int addDigits() {

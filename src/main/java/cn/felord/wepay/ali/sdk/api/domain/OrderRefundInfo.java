@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 第三方的订单退款明细：包括服务号和单个服务的退款金额
  *
  * @author auto create
- * @since 1.0, 2017-01-16 11:30:03
+ * @version $Id: $Id
  */
 public class OrderRefundInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class OrderRefundInfo extends AlipayObject {
 	@ApiField("service_order_no")
 	private String serviceOrderNo;
 
+	/**
+	 * <p>Getter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundAmount() {
 		return this.refundAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @param refundAmount a {@link java.lang.String} object.
+	 */
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServiceOrderNo() {
 		return this.serviceOrderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceOrderNo</code>.</p>
+	 *
+	 * @param serviceOrderNo a {@link java.lang.String} object.
+	 */
 	public void setServiceOrderNo(String serviceOrderNo) {
 		this.serviceOrderNo = serviceOrderNo;
 	}

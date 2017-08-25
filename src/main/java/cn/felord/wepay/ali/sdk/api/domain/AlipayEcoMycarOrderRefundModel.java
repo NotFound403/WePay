@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 发起退款
  *
  * @author auto create
- * @since 1.0, 2017-04-12 11:48:57
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarOrderRefundModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipayEcoMycarOrderRefundModel extends AlipayObject {
 	@ApiField("req_no")
 	private String reqNo;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundFee() {
 		return this.refundFee;
 	}
+	/**
+	 * <p>Setter for the field <code>refundFee</code>.</p>
+	 *
+	 * @param refundFee a {@link java.lang.String} object.
+	 */
 	public void setRefundFee(String refundFee) {
 		this.refundFee = refundFee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundReason() {
 		return this.refundReason;
 	}
+	/**
+	 * <p>Setter for the field <code>refundReason</code>.</p>
+	 *
+	 * @param refundReason a {@link java.lang.String} object.
+	 */
 	public void setRefundReason(String refundReason) {
 		this.refundReason = refundReason;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reqNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReqNo() {
 		return this.reqNo;
 	}
+	/**
+	 * <p>Setter for the field <code>reqNo</code>.</p>
+	 *
+	 * @param reqNo a {@link java.lang.String} object.
+	 */
 	public void setReqNo(String reqNo) {
 		this.reqNo = reqNo;
 	}

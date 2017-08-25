@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cashvoucher.template.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-20 19:56:22
+ * @version $Id: $Id
  */
 public class AlipayMarketingCashvoucherTemplateCreateResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayMarketingCashvoucherTemplateCreateResponse extends AlipayResp
 	@ApiField("template_id")
 	private String templateId;
 
+	/**
+	 * <p>Setter for the field <code>confirmUri</code>.</p>
+	 *
+	 * @param confirmUri a {@link java.lang.String} object.
+	 */
 	public void setConfirmUri(String confirmUri) {
 		this.confirmUri = confirmUri;
 	}
+	/**
+	 * <p>Getter for the field <code>confirmUri</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConfirmUri( ) {
 		return this.confirmUri;
 	}
 
+	/**
+	 * <p>Setter for the field <code>fundOrderNo</code>.</p>
+	 *
+	 * @param fundOrderNo a {@link java.lang.String} object.
+	 */
 	public void setFundOrderNo(String fundOrderNo) {
 		this.fundOrderNo = fundOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>fundOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundOrderNo( ) {
 		return this.fundOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>templateId</code>.</p>
+	 *
+	 * @param templateId a {@link java.lang.String} object.
+	 */
 	public void setTemplateId(String templateId) {
 		this.templateId = templateId;
 	}
+	/**
+	 * <p>Getter for the field <code>templateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateId( ) {
 		return this.templateId;
 	}

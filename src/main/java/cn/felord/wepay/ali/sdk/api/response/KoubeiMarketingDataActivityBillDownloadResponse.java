@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.activity.bill.download response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-11 19:58:38
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataActivityBillDownloadResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiMarketingDataActivityBillDownloadResponse extends AlipayRespo
 	@ApiField("url")
 	private String url;
 
+	/**
+	 * <p>Setter for the field <code>url</code>.</p>
+	 *
+	 * @param url a {@link java.lang.String} object.
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}
+	/**
+	 * <p>Getter for the field <code>url</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrl( ) {
 		return this.url;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 更新服务者可用时间接口
  *
  * @author auto create
- * @since 1.0, 2017-03-10 16:05:46
+ * @version $Id: $Id
  */
 public class AlipayDaoweiSpScheduleModifyModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayDaoweiSpScheduleModifyModel extends AlipayObject {
 	@ApiField("out_sp_id")
 	private String outSpId;
 
+	/**
+	 * <p>Getter for the field <code>calendarSchedule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CalendarScheduleInfo} object.
+	 */
 	public CalendarScheduleInfo getCalendarSchedule() {
 		return this.calendarSchedule;
 	}
+	/**
+	 * <p>Setter for the field <code>calendarSchedule</code>.</p>
+	 *
+	 * @param calendarSchedule a {@link cn.felord.wepay.ali.sdk.api.domain.CalendarScheduleInfo} object.
+	 */
 	public void setCalendarSchedule(CalendarScheduleInfo calendarSchedule) {
 		this.calendarSchedule = calendarSchedule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSpId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSpId() {
 		return this.outSpId;
 	}
+	/**
+	 * <p>Setter for the field <code>outSpId</code>.</p>
+	 *
+	 * @param outSpId a {@link java.lang.String} object.
+	 */
 	public void setOutSpId(String outSpId) {
 		this.outSpId = outSpId;
 	}

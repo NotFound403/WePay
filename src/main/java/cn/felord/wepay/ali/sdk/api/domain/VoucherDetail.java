@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券明细信息
  *
  * @author auto create
- * @since 1.0, 2017-07-24 16:15:18
+ * @version $Id: $Id
  */
 public class VoucherDetail extends AlipayObject {
 
@@ -77,72 +77,172 @@ ALIPAY_ITEM_VOUCHER - 单品优惠
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>id</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getId() {
 		return this.id;
 	}
+	/**
+	 * <p>Setter for the field <code>id</code>.</p>
+	 *
+	 * @param id a {@link java.lang.String} object.
+	 */
 	public void setId(String id) {
 		this.id = id;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantContribute</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantContribute() {
 		return this.merchantContribute;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantContribute</code>.</p>
+	 *
+	 * @param merchantContribute a {@link java.lang.String} object.
+	 */
 	public void setMerchantContribute(String merchantContribute) {
 		this.merchantContribute = merchantContribute;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>otherContribute</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOtherContribute() {
 		return this.otherContribute;
 	}
+	/**
+	 * <p>Setter for the field <code>otherContribute</code>.</p>
+	 *
+	 * @param otherContribute a {@link java.lang.String} object.
+	 */
 	public void setOtherContribute(String otherContribute) {
 		this.otherContribute = otherContribute;
 	}
 
+	/**
+	 * <p>Getter for the field <code>purchaseAntContribute</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPurchaseAntContribute() {
 		return this.purchaseAntContribute;
 	}
+	/**
+	 * <p>Setter for the field <code>purchaseAntContribute</code>.</p>
+	 *
+	 * @param purchaseAntContribute a {@link java.lang.String} object.
+	 */
 	public void setPurchaseAntContribute(String purchaseAntContribute) {
 		this.purchaseAntContribute = purchaseAntContribute;
 	}
 
+	/**
+	 * <p>Getter for the field <code>purchaseBuyerContribute</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPurchaseBuyerContribute() {
 		return this.purchaseBuyerContribute;
 	}
+	/**
+	 * <p>Setter for the field <code>purchaseBuyerContribute</code>.</p>
+	 *
+	 * @param purchaseBuyerContribute a {@link java.lang.String} object.
+	 */
 	public void setPurchaseBuyerContribute(String purchaseBuyerContribute) {
 		this.purchaseBuyerContribute = purchaseBuyerContribute;
 	}
 
+	/**
+	 * <p>Getter for the field <code>purchaseMerchantContribute</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPurchaseMerchantContribute() {
 		return this.purchaseMerchantContribute;
 	}
+	/**
+	 * <p>Setter for the field <code>purchaseMerchantContribute</code>.</p>
+	 *
+	 * @param purchaseMerchantContribute a {@link java.lang.String} object.
+	 */
 	public void setPurchaseMerchantContribute(String purchaseMerchantContribute) {
 		this.purchaseMerchantContribute = purchaseMerchantContribute;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

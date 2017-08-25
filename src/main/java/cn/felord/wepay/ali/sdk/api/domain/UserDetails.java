@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 家庭成员信息
  *
  * @author auto create
- * @since 1.0, 2016-12-28 17:54:37
+ * @version $Id: $Id
  */
 public class UserDetails extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class UserDetails extends AlipayObject {
 	@ApiField("user_relation")
 	private String userRelation;
 
+	/**
+	 * <p>Getter for the field <code>userChangeMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserChangeMobile() {
 		return this.userChangeMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>userChangeMobile</code>.</p>
+	 *
+	 * @param userChangeMobile a {@link java.lang.String} object.
+	 */
 	public void setUserChangeMobile(String userChangeMobile) {
 		this.userChangeMobile = userChangeMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserMobile() {
 		return this.userMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>userMobile</code>.</p>
+	 *
+	 * @param userMobile a {@link java.lang.String} object.
+	 */
 	public void setUserMobile(String userMobile) {
 		this.userMobile = userMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserName() {
 		return this.userName;
 	}
+	/**
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userRelation</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserRelation() {
 		return this.userRelation;
 	}
+	/**
+	 * <p>Setter for the field <code>userRelation</code>.</p>
+	 *
+	 * @param userRelation a {@link java.lang.String} object.
+	 */
 	public void setUserRelation(String userRelation) {
 		this.userRelation = userRelation;
 	}

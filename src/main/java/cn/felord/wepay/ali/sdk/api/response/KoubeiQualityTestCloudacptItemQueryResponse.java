@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.quality.test.cloudacpt.item.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-15 15:07:35
+ * @version $Id: $Id
  */
 public class KoubeiQualityTestCloudacptItemQueryResponse extends AlipayResponse {
 
@@ -78,65 +78,155 @@ public class KoubeiQualityTestCloudacptItemQueryResponse extends AlipayResponse 
 	@ApiField("pass_num")
 	private String passNum;
 
+	/**
+	 * <p>Setter for the field <code>activityId</code>.</p>
+	 *
+	 * @param activityId a {@link java.lang.String} object.
+	 */
 	public void setActivityId(String activityId) {
 		this.activityId = activityId;
 	}
+	/**
+	 * <p>Getter for the field <code>activityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActivityId( ) {
 		return this.activityId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId( ) {
 		return this.batchId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>batchStatus</code>.</p>
+	 *
+	 * @param batchStatus a {@link java.lang.String} object.
+	 */
 	public void setBatchStatus(String batchStatus) {
 		this.batchStatus = batchStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>batchStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchStatus( ) {
 		return this.batchStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>failList</code>.</p>
+	 *
+	 * @param failList a {@link java.util.List} object.
+	 */
 	public void setFailList(List<OpenItem> failList) {
 		this.failList = failList;
 	}
+	/**
+	 * <p>Getter for the field <code>failList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OpenItem> getFailList( ) {
 		return this.failList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>failNum</code>.</p>
+	 *
+	 * @param failNum a {@link java.lang.String} object.
+	 */
 	public void setFailNum(String failNum) {
 		this.failNum = failNum;
 	}
+	/**
+	 * <p>Getter for the field <code>failNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFailNum( ) {
 		return this.failNum;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemList</code>.</p>
+	 *
+	 * @param itemList a {@link java.util.List} object.
+	 */
 	public void setItemList(List<OpenItem> itemList) {
 		this.itemList = itemList;
 	}
+	/**
+	 * <p>Getter for the field <code>itemList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OpenItem> getItemList( ) {
 		return this.itemList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemNum</code>.</p>
+	 *
+	 * @param itemNum a {@link java.lang.String} object.
+	 */
 	public void setItemNum(String itemNum) {
 		this.itemNum = itemNum;
 	}
+	/**
+	 * <p>Getter for the field <code>itemNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemNum( ) {
 		return this.itemNum;
 	}
 
+	/**
+	 * <p>Setter for the field <code>passList</code>.</p>
+	 *
+	 * @param passList a {@link java.util.List} object.
+	 */
 	public void setPassList(List<OpenItem> passList) {
 		this.passList = passList;
 	}
+	/**
+	 * <p>Getter for the field <code>passList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OpenItem> getPassList( ) {
 		return this.passList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>passNum</code>.</p>
+	 *
+	 * @param passNum a {@link java.lang.String} object.
+	 */
 	public void setPassNum(String passNum) {
 		this.passNum = passNum;
 	}
+	/**
+	 * <p>Getter for the field <code>passNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassNum( ) {
 		return this.passNum;
 	}

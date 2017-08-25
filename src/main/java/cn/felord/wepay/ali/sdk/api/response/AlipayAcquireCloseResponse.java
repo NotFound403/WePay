@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.acquire.close response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-06-12 17:17:06
+ * @version $Id: $Id
  */
 public class AlipayAcquireCloseResponse extends AlipayResponse {
 
@@ -58,44 +58,104 @@ NKNOWN：结果未知
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Setter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @param detailErrorCode a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorCode(String detailErrorCode) {
 		this.detailErrorCode = detailErrorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorCode( ) {
 		return this.detailErrorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @param detailErrorDes a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorDes(String detailErrorDes) {
 		this.detailErrorDes = detailErrorDes;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorDes( ) {
 		return this.detailErrorDes;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isSuccess</code>.</p>
+	 *
+	 * @param isSuccess a {@link java.lang.String} object.
+	 */
 	public void setIsSuccess(String isSuccess) {
 		this.isSuccess = isSuccess;
 	}
+	/**
+	 * <p>Getter for the field <code>isSuccess</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsSuccess( ) {
 		return this.isSuccess;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode( ) {
 		return this.resultCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}

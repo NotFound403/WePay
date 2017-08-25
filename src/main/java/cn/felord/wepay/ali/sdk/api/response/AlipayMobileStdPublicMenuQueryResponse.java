@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.std.public.menu.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:30:12
+ * @version $Id: $Id
  */
 public class AlipayMobileStdPublicMenuQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMobileStdPublicMenuQueryResponse extends AlipayResponse {
 	@ApiField("all_menu_list")
 	private String allMenuList;
 
+	/**
+	 * <p>Setter for the field <code>allMenuList</code>.</p>
+	 *
+	 * @param allMenuList a {@link java.lang.String} object.
+	 */
 	public void setAllMenuList(String allMenuList) {
 		this.allMenuList = allMenuList;
 	}
+	/**
+	 * <p>Getter for the field <code>allMenuList</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAllMenuList( ) {
 		return this.allMenuList;
 	}

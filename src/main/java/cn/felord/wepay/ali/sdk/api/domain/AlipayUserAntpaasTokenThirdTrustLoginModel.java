@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 申请第三方app与蚂蚁通行证免登token
  *
  * @author auto create
- * @since 1.0, 2016-10-14 16:41:55
+ * @version $Id: $Id
  */
 public class AlipayUserAntpaasTokenThirdTrustLoginModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayUserAntpaasTokenThirdTrustLoginModel extends AlipayObject {
 	@ApiField("login_target")
 	private String loginTarget;
 
+	/**
+	 * <p>Getter for the field <code>loginTarget</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoginTarget() {
 		return this.loginTarget;
 	}
+	/**
+	 * <p>Setter for the field <code>loginTarget</code>.</p>
+	 *
+	 * @param loginTarget a {@link java.lang.String} object.
+	 */
 	public void setLoginTarget(String loginTarget) {
 		this.loginTarget = loginTarget;
 	}

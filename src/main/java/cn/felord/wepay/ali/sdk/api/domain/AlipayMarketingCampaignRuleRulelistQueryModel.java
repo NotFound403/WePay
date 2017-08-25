@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 圈人规则查询
  *
  * @author auto create
- * @since 1.0, 2016-12-19 15:27:36
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignRuleRulelistQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayMarketingCampaignRuleRulelistQueryModel extends AlipayObject 
 	@ApiField("pagesize")
 	private String pagesize;
 
+	/**
+	 * <p>Getter for the field <code>mpid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMpid() {
 		return this.mpid;
 	}
+	/**
+	 * <p>Setter for the field <code>mpid</code>.</p>
+	 *
+	 * @param mpid a {@link java.lang.String} object.
+	 */
 	public void setMpid(String mpid) {
 		this.mpid = mpid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageno</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageno() {
 		return this.pageno;
 	}
+	/**
+	 * <p>Setter for the field <code>pageno</code>.</p>
+	 *
+	 * @param pageno a {@link java.lang.String} object.
+	 */
 	public void setPageno(String pageno) {
 		this.pageno = pageno;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pagesize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPagesize() {
 		return this.pagesize;
 	}
+	/**
+	 * <p>Setter for the field <code>pagesize</code>.</p>
+	 *
+	 * @param pagesize a {@link java.lang.String} object.
+	 */
 	public void setPagesize(String pagesize) {
 		this.pagesize = pagesize;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.category.children.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-06 11:40:51
+ * @version $Id: $Id
  */
 public class KoubeiItemCategoryChildrenBatchqueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiItemCategoryChildrenBatchqueryResponse extends AlipayResponse
 	@ApiField("standard_category_info")
 	private List<StandardCategoryInfo> categoryList;
 
+	/**
+	 * <p>Setter for the field <code>categoryList</code>.</p>
+	 *
+	 * @param categoryList a {@link java.util.List} object.
+	 */
 	public void setCategoryList(List<StandardCategoryInfo> categoryList) {
 		this.categoryList = categoryList;
 	}
+	/**
+	 * <p>Getter for the field <code>categoryList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<StandardCategoryInfo> getCategoryList( ) {
 		return this.categoryList;
 	}

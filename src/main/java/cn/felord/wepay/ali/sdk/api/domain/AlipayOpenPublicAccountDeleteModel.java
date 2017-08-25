@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 解除绑定商户会员号
  *
  * @author auto create
- * @since 1.0, 2016-12-02 15:41:31
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicAccountDeleteModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenPublicAccountDeleteModel extends AlipayObject {
 	@ApiField("bind_account_no")
 	private String bindAccountNo;
 
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId() {
 		return this.agreementId;
 	}
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bindAccountNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBindAccountNo() {
 		return this.bindAccountNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bindAccountNo</code>.</p>
+	 *
+	 * @param bindAccountNo a {@link java.lang.String} object.
+	 */
 	public void setBindAccountNo(String bindAccountNo) {
 		this.bindAccountNo = bindAccountNo;
 	}

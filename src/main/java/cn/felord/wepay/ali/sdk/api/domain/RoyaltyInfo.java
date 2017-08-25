@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 分账信息
  *
  * @author auto create
- * @since 1.0, 2017-06-14 16:34:34
+ * @version $Id: $Id
  */
 public class RoyaltyInfo extends AlipayObject {
 
@@ -30,16 +30,36 @@ public class RoyaltyInfo extends AlipayObject {
 	@ApiField("royalty_type")
 	private String royaltyType;
 
+	/**
+	 * <p>Getter for the field <code>royaltyDetailInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<RoyaltyDetailInfos> getRoyaltyDetailInfos() {
 		return this.royaltyDetailInfos;
 	}
+	/**
+	 * <p>Setter for the field <code>royaltyDetailInfos</code>.</p>
+	 *
+	 * @param royaltyDetailInfos a {@link java.util.List} object.
+	 */
 	public void setRoyaltyDetailInfos(List<RoyaltyDetailInfos> royaltyDetailInfos) {
 		this.royaltyDetailInfos = royaltyDetailInfos;
 	}
 
+	/**
+	 * <p>Getter for the field <code>royaltyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRoyaltyType() {
 		return this.royaltyType;
 	}
+	/**
+	 * <p>Setter for the field <code>royaltyType</code>.</p>
+	 *
+	 * @param royaltyType a {@link java.lang.String} object.
+	 */
 	public void setRoyaltyType(String royaltyType) {
 		this.royaltyType = royaltyType;
 	}

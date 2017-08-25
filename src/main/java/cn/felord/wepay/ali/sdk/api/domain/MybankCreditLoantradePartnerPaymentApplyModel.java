@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 代收付-申请接口
  *
  * @author auto create
- * @since 1.0, 2017-06-14 15:31:40
+ * @version $Id: $Id
  */
 public class MybankCreditLoantradePartnerPaymentApplyModel extends AlipayObject {
 
@@ -90,86 +90,206 @@ public class MybankCreditLoantradePartnerPaymentApplyModel extends AlipayObject 
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.Long} object.
+	 */
 	public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizProductCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizProductCode() {
 		return this.bizProductCode;
 	}
+	/**
+	 * <p>Setter for the field <code>bizProductCode</code>.</p>
+	 *
+	 * @param bizProductCode a {@link java.lang.String} object.
+	 */
 	public void setBizProductCode(String bizProductCode) {
 		this.bizProductCode = bizProductCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loginAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoginAccount() {
 		return this.loginAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>loginAccount</code>.</p>
+	 *
+	 * @param loginAccount a {@link java.lang.String} object.
+	 */
 	public void setLoginAccount(String loginAccount) {
 		this.loginAccount = loginAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mybkOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMybkOrderNo() {
 		return this.mybkOrderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>mybkOrderNo</code>.</p>
+	 *
+	 * @param mybkOrderNo a {@link java.lang.String} object.
+	 */
 	public void setMybkOrderNo(String mybkOrderNo) {
 		this.mybkOrderNo = mybkOrderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutParam() {
 		return this.outParam;
 	}
+	/**
+	 * <p>Setter for the field <code>outParam</code>.</p>
+	 *
+	 * @param outParam a {@link java.lang.String} object.
+	 */
 	public void setOutParam(String outParam) {
 		this.outParam = outParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSeqNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSeqNo() {
 		return this.outSeqNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outSeqNo</code>.</p>
+	 *
+	 * @param outSeqNo a {@link java.lang.String} object.
+	 */
 	public void setOutSeqNo(String outSeqNo) {
 		this.outSeqNo = outSeqNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payeeAccountList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PaymentAccountInfo> getPayeeAccountList() {
 		return this.payeeAccountList;
 	}
+	/**
+	 * <p>Setter for the field <code>payeeAccountList</code>.</p>
+	 *
+	 * @param payeeAccountList a {@link java.util.List} object.
+	 */
 	public void setPayeeAccountList(List<PaymentAccountInfo> payeeAccountList) {
 		this.payeeAccountList = payeeAccountList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerAccountList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PaymentAccountInfo> getPayerAccountList() {
 		return this.payerAccountList;
 	}
+	/**
+	 * <p>Setter for the field <code>payerAccountList</code>.</p>
+	 *
+	 * @param payerAccountList a {@link java.util.List} object.
+	 */
 	public void setPayerAccountList(List<PaymentAccountInfo> payerAccountList) {
 		this.payerAccountList = payerAccountList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>paymentProductCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPaymentProductCode() {
 		return this.paymentProductCode;
 	}
+	/**
+	 * <p>Setter for the field <code>paymentProductCode</code>.</p>
+	 *
+	 * @param paymentProductCode a {@link java.lang.String} object.
+	 */
 	public void setPaymentProductCode(String paymentProductCode) {
 		this.paymentProductCode = paymentProductCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

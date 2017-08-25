@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 钱包扫码的产品上下文对象
  *
  * @author auto create
- * @since 1.0, 2017-04-28 11:12:12
+ * @version $Id: $Id
  */
 public class AlipayMarketingProductContext extends AlipayObject {
 
@@ -32,23 +32,53 @@ public class AlipayMarketingProductContext extends AlipayObject {
 	@ApiField("product_version")
 	private String productVersion;
 
+	/**
+	 * <p>Getter for the field <code>clientId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClientId() {
 		return this.clientId;
 	}
+	/**
+	 * <p>Setter for the field <code>clientId</code>.</p>
+	 *
+	 * @param clientId a {@link java.lang.String} object.
+	 */
 	public void setClientId(String clientId) {
 		this.clientId = clientId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>product</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProduct() {
 		return this.product;
 	}
+	/**
+	 * <p>Setter for the field <code>product</code>.</p>
+	 *
+	 * @param product a {@link java.lang.String} object.
+	 */
 	public void setProduct(String product) {
 		this.product = product;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductVersion() {
 		return this.productVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>productVersion</code>.</p>
+	 *
+	 * @param productVersion a {@link java.lang.String} object.
+	 */
 	public void setProductVersion(String productVersion) {
 		this.productVersion = productVersion;
 	}

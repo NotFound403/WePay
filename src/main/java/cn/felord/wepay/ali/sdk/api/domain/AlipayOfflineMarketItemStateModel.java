@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 通过此接口，商户可以出传入item_id与上下架标识，对商户创建的商品进行上架或下架处理
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:50
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketItemStateModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class AlipayOfflineMarketItemStateModel extends AlipayObject {
 	@ApiField("state_type")
 	private String stateType;
 
+	/**
+	 * <p>Getter for the field <code>auditRule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemAuditRule} object.
+	 */
 	public AlipayItemAuditRule getAuditRule() {
 		return this.auditRule;
 	}
+	/**
+	 * <p>Setter for the field <code>auditRule</code>.</p>
+	 *
+	 * @param auditRule a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemAuditRule} object.
+	 */
 	public void setAuditRule(AlipayItemAuditRule auditRule) {
 		this.auditRule = auditRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId() {
 		return this.itemId;
 	}
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operateNotifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperateNotifyUrl() {
 		return this.operateNotifyUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>operateNotifyUrl</code>.</p>
+	 *
+	 * @param operateNotifyUrl a {@link java.lang.String} object.
+	 */
 	public void setOperateNotifyUrl(String operateNotifyUrl) {
 		this.operateNotifyUrl = operateNotifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operationContext</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemOperationContext} object.
+	 */
 	public AlipayItemOperationContext getOperationContext() {
 		return this.operationContext;
 	}
+	/**
+	 * <p>Setter for the field <code>operationContext</code>.</p>
+	 *
+	 * @param operationContext a {@link cn.felord.wepay.ali.sdk.api.domain.AlipayItemOperationContext} object.
+	 */
 	public void setOperationContext(AlipayItemOperationContext operationContext) {
 		this.operationContext = operationContext;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>stateType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStateType() {
 		return this.stateType;
 	}
+	/**
+	 * <p>Setter for the field <code>stateType</code>.</p>
+	 *
+	 * @param stateType a {@link java.lang.String} object.
+	 */
 	public void setStateType(String stateType) {
 		this.stateType = stateType;
 	}

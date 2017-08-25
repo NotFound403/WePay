@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户附件信息
  *
  * @author auto create
- * @since 1.0, 2017-03-22 10:09:01
+ * @version $Id: $Id
  */
 public class AttachmentInfo extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AttachmentInfo extends AlipayObject {
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>attaUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAttaUrl() {
 		return this.attaUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>attaUrl</code>.</p>
+	 *
+	 * @param attaUrl a {@link java.lang.String} object.
+	 */
 	public void setAttaUrl(String attaUrl) {
 		this.attaUrl = attaUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

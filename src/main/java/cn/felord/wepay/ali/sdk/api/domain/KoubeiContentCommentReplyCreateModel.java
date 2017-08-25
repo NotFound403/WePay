@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 评价回复接口
  *
  * @author auto create
- * @since 1.0, 2017-03-14 22:26:53
+ * @version $Id: $Id
  */
 public class KoubeiContentCommentReplyCreateModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KoubeiContentCommentReplyCreateModel extends AlipayObject {
 	@ApiField("content")
 	private String content;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>commentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommentId() {
 		return this.commentId;
 	}
+	/**
+	 * <p>Setter for the field <code>commentId</code>.</p>
+	 *
+	 * @param commentId a {@link java.lang.String} object.
+	 */
 	public void setCommentId(String commentId) {
 		this.commentId = commentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}

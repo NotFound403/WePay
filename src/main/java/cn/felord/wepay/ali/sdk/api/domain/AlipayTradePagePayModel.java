@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 统一收单下单并支付页面接口
  *
  * @author auto create
- * @since 1.0, 2017-07-19 13:32:10
+ * @version $Id: $Id
  */
 public class AlipayTradePagePayModel extends AlipayObject {
 
@@ -178,163 +178,393 @@ public class AlipayTradePagePayModel extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
+	/**
+	 * <p>Getter for the field <code>agreementSignParams</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AgreementSignParams} object.
+	 */
 	public AgreementSignParams getAgreementSignParams() {
 		return this.agreementSignParams;
 	}
+	/**
+	 * <p>Setter for the field <code>agreementSignParams</code>.</p>
+	 *
+	 * @param agreementSignParams a {@link cn.felord.wepay.ali.sdk.api.domain.AgreementSignParams} object.
+	 */
 	public void setAgreementSignParams(AgreementSignParams agreementSignParams) {
 		this.agreementSignParams = agreementSignParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>body</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBody() {
 		return this.body;
 	}
+	/**
+	 * <p>Setter for the field <code>body</code>.</p>
+	 *
+	 * @param body a {@link java.lang.String} object.
+	 */
 	public void setBody(String body) {
 		this.body = body;
 	}
 
+	/**
+	 * <p>Getter for the field <code>disablePayChannels</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDisablePayChannels() {
 		return this.disablePayChannels;
 	}
+	/**
+	 * <p>Setter for the field <code>disablePayChannels</code>.</p>
+	 *
+	 * @param disablePayChannels a {@link java.lang.String} object.
+	 */
 	public void setDisablePayChannels(String disablePayChannels) {
 		this.disablePayChannels = disablePayChannels;
 	}
 
+	/**
+	 * <p>Getter for the field <code>enablePayChannels</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEnablePayChannels() {
 		return this.enablePayChannels;
 	}
+	/**
+	 * <p>Setter for the field <code>enablePayChannels</code>.</p>
+	 *
+	 * @param enablePayChannels a {@link java.lang.String} object.
+	 */
 	public void setEnablePayChannels(String enablePayChannels) {
 		this.enablePayChannels = enablePayChannels;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendParams</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ExtendParams} object.
+	 */
 	public ExtendParams getExtendParams() {
 		return this.extendParams;
 	}
+	/**
+	 * <p>Setter for the field <code>extendParams</code>.</p>
+	 *
+	 * @param extendParams a {@link cn.felord.wepay.ali.sdk.api.domain.ExtendParams} object.
+	 */
 	public void setExtendParams(ExtendParams extendParams) {
 		this.extendParams = extendParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>goodsDetail</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<GoodsDetail> getGoodsDetail() {
 		return this.goodsDetail;
 	}
+	/**
+	 * <p>Setter for the field <code>goodsDetail</code>.</p>
+	 *
+	 * @param goodsDetail a {@link java.util.List} object.
+	 */
 	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>goodsType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGoodsType() {
 		return this.goodsType;
 	}
+	/**
+	 * <p>Setter for the field <code>goodsType</code>.</p>
+	 *
+	 * @param goodsType a {@link java.lang.String} object.
+	 */
 	public void setGoodsType(String goodsType) {
 		this.goodsType = goodsType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>integrationType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIntegrationType() {
 		return this.integrationType;
 	}
+	/**
+	 * <p>Setter for the field <code>integrationType</code>.</p>
+	 *
+	 * @param integrationType a {@link java.lang.String} object.
+	 */
 	public void setIntegrationType(String integrationType) {
 		this.integrationType = integrationType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invoiceInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.InvoiceInfo} object.
+	 */
 	public InvoiceInfo getInvoiceInfo() {
 		return this.invoiceInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>invoiceInfo</code>.</p>
+	 *
+	 * @param invoiceInfo a {@link cn.felord.wepay.ali.sdk.api.domain.InvoiceInfo} object.
+	 */
 	public void setInvoiceInfo(InvoiceInfo invoiceInfo) {
 		this.invoiceInfo = invoiceInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>passbackParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassbackParams() {
 		return this.passbackParams;
 	}
+	/**
+	 * <p>Setter for the field <code>passbackParams</code>.</p>
+	 *
+	 * @param passbackParams a {@link java.lang.String} object.
+	 */
 	public void setPassbackParams(String passbackParams) {
 		this.passbackParams = passbackParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>promoParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPromoParams() {
 		return this.promoParams;
 	}
+	/**
+	 * <p>Setter for the field <code>promoParams</code>.</p>
+	 *
+	 * @param promoParams a {@link java.lang.String} object.
+	 */
 	public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>qrPayMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrPayMode() {
 		return this.qrPayMode;
 	}
+	/**
+	 * <p>Setter for the field <code>qrPayMode</code>.</p>
+	 *
+	 * @param qrPayMode a {@link java.lang.String} object.
+	 */
 	public void setQrPayMode(String qrPayMode) {
 		this.qrPayMode = qrPayMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>qrcodeWidth</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getQrcodeWidth() {
 		return this.qrcodeWidth;
 	}
+	/**
+	 * <p>Setter for the field <code>qrcodeWidth</code>.</p>
+	 *
+	 * @param qrcodeWidth a {@link java.lang.Long} object.
+	 */
 	public void setQrcodeWidth(Long qrcodeWidth) {
 		this.qrcodeWidth = qrcodeWidth;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestFromUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestFromUrl() {
 		return this.requestFromUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>requestFromUrl</code>.</p>
+	 *
+	 * @param requestFromUrl a {@link java.lang.String} object.
+	 */
 	public void setRequestFromUrl(String requestFromUrl) {
 		this.requestFromUrl = requestFromUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>royaltyInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.RoyaltyInfo} object.
+	 */
 	public RoyaltyInfo getRoyaltyInfo() {
 		return this.royaltyInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>royaltyInfo</code>.</p>
+	 *
+	 * @param royaltyInfo a {@link cn.felord.wepay.ali.sdk.api.domain.RoyaltyInfo} object.
+	 */
 	public void setRoyaltyInfo(RoyaltyInfo royaltyInfo) {
 		this.royaltyInfo = royaltyInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId() {
 		return this.storeId;
 	}
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subMerchant</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.SubMerchant} object.
+	 */
 	public SubMerchant getSubMerchant() {
 		return this.subMerchant;
 	}
+	/**
+	 * <p>Setter for the field <code>subMerchant</code>.</p>
+	 *
+	 * @param subMerchant a {@link cn.felord.wepay.ali.sdk.api.domain.SubMerchant} object.
+	 */
 	public void setSubMerchant(SubMerchant subMerchant) {
 		this.subMerchant = subMerchant;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeExpire</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimeExpire() {
 		return this.timeExpire;
 	}
+	/**
+	 * <p>Setter for the field <code>timeExpire</code>.</p>
+	 *
+	 * @param timeExpire a {@link java.lang.String} object.
+	 */
 	public void setTimeExpire(String timeExpire) {
 		this.timeExpire = timeExpire;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeoutExpress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimeoutExpress() {
 		return this.timeoutExpress;
 	}
+	/**
+	 * <p>Setter for the field <code>timeoutExpress</code>.</p>
+	 *
+	 * @param timeoutExpress a {@link java.lang.String} object.
+	 */
 	public void setTimeoutExpress(String timeoutExpress) {
 		this.timeoutExpress = timeoutExpress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount() {
 		return this.totalAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}

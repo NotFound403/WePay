@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝用户等级信息，暂时包含用户等级和登陆账号
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:41
+ * @version $Id: $Id
  */
 public class AlipayUserLevelInfo extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayUserLevelInfo extends AlipayObject {
 	@ApiField("user_level")
 	private String userLevel;
 
+	/**
+	 * <p>Getter for the field <code>loginId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoginId() {
 		return this.loginId;
 	}
+	/**
+	 * <p>Setter for the field <code>loginId</code>.</p>
+	 *
+	 * @param loginId a {@link java.lang.String} object.
+	 */
 	public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userLevel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserLevel() {
 		return this.userLevel;
 	}
+	/**
+	 * <p>Setter for the field <code>userLevel</code>.</p>
+	 *
+	 * @param userLevel a {@link java.lang.String} object.
+	 */
 	public void setUserLevel(String userLevel) {
 		this.userLevel = userLevel;
 	}

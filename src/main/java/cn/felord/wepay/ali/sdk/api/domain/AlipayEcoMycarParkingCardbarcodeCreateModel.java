@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 停车卡生成二维码
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:18
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingCardbarcodeCreateModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEcoMycarParkingCardbarcodeCreateModel extends AlipayObject {
 	@ApiField("parking_id")
 	private String parkingId;
 
+	/**
+	 * <p>Getter for the field <code>equipmentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEquipmentId() {
 		return this.equipmentId;
 	}
+	/**
+	 * <p>Setter for the field <code>equipmentId</code>.</p>
+	 *
+	 * @param equipmentId a {@link java.lang.String} object.
+	 */
 	public void setEquipmentId(String equipmentId) {
 		this.equipmentId = equipmentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingId() {
 		return this.parkingId;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingId</code>.</p>
+	 *
+	 * @param parkingId a {@link java.lang.String} object.
+	 */
 	public void setParkingId(String parkingId) {
 		this.parkingId = parkingId;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 服务插件扩展信息补充
  *
  * @author auto create
- * @since 1.0, 2016-12-22 23:46:32
+ * @version $Id: $Id
  */
 public class AlipayOpenServicemarketCommodityExtendinfosAddModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class AlipayOpenServicemarketCommodityExtendinfosAddModel extends AlipayO
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>commodityExtInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CommodityPublicExtInfos> getCommodityExtInfos() {
 		return this.commodityExtInfos;
 	}
+	/**
+	 * <p>Setter for the field <code>commodityExtInfos</code>.</p>
+	 *
+	 * @param commodityExtInfos a {@link java.util.List} object.
+	 */
 	public void setCommodityExtInfos(List<CommodityPublicExtInfos> commodityExtInfos) {
 		this.commodityExtInfos = commodityExtInfos;
 	}
 
+	/**
+	 * <p>Getter for the field <code>commodityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommodityId() {
 		return this.commodityId;
 	}
+	/**
+	 * <p>Setter for the field <code>commodityId</code>.</p>
+	 *
+	 * @param commodityId a {@link java.lang.String} object.
+	 */
 	public void setCommodityId(String commodityId) {
 		this.commodityId = commodityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

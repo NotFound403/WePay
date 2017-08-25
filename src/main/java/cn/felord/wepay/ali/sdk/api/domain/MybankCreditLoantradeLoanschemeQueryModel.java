@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 外部商业平台合作-查询可贷款方案
  *
  * @author auto create
- * @since 1.0, 2017-07-21 16:31:57
+ * @version $Id: $Id
  */
 public class MybankCreditLoantradeLoanschemeQueryModel extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class MybankCreditLoantradeLoanschemeQueryModel extends AlipayObject {
 	@ApiField("scen")
 	private String scen;
 
+	/**
+	 * <p>Getter for the field <code>biz</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBiz() {
 		return this.biz;
 	}
+	/**
+	 * <p>Setter for the field <code>biz</code>.</p>
+	 *
+	 * @param biz a {@link java.lang.String} object.
+	 */
 	public void setBiz(String biz) {
 		this.biz = biz;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo() {
 		return this.bizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityCode() {
 		return this.entityCode;
 	}
+	/**
+	 * <p>Setter for the field <code>entityCode</code>.</p>
+	 *
+	 * @param entityCode a {@link java.lang.String} object.
+	 */
 	public void setEntityCode(String entityCode) {
 		this.entityCode = entityCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityName() {
 		return this.entityName;
 	}
+	/**
+	 * <p>Setter for the field <code>entityName</code>.</p>
+	 *
+	 * @param entityName a {@link java.lang.String} object.
+	 */
 	public void setEntityName(String entityName) {
 		this.entityName = entityName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entityType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntityType() {
 		return this.entityType;
 	}
+	/**
+	 * <p>Setter for the field <code>entityType</code>.</p>
+	 *
+	 * @param entityType a {@link java.lang.String} object.
+	 */
 	public void setEntityType(String entityType) {
 		this.entityType = entityType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loanPolicyCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoanPolicyCode() {
 		return this.loanPolicyCode;
 	}
+	/**
+	 * <p>Setter for the field <code>loanPolicyCode</code>.</p>
+	 *
+	 * @param loanPolicyCode a {@link java.lang.String} object.
+	 */
 	public void setLoanPolicyCode(String loanPolicyCode) {
 		this.loanPolicyCode = loanPolicyCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>salePdCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSalePdCode() {
 		return this.salePdCode;
 	}
+	/**
+	 * <p>Setter for the field <code>salePdCode</code>.</p>
+	 *
+	 * @param salePdCode a {@link java.lang.String} object.
+	 */
 	public void setSalePdCode(String salePdCode) {
 		this.salePdCode = salePdCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>scen</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getScen() {
 		return this.scen;
 	}
+	/**
+	 * <p>Setter for the field <code>scen</code>.</p>
+	 *
+	 * @param scen a {@link java.lang.String} object.
+	 */
 	public void setScen(String scen) {
 		this.scen = scen;
 	}

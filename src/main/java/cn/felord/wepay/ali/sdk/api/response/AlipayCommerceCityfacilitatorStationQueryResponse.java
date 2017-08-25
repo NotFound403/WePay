@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.station.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-03 16:10:49
+ * @version $Id: $Id
  */
 public class AlipayCommerceCityfacilitatorStationQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayCommerceCityfacilitatorStationQueryResponse extends AlipayRes
 	@ApiField("station_detail_info")
 	private List<StationDetailInfo> supportStarts;
 
+	/**
+	 * <p>Setter for the field <code>supportStarts</code>.</p>
+	 *
+	 * @param supportStarts a {@link java.util.List} object.
+	 */
 	public void setSupportStarts(List<StationDetailInfo> supportStarts) {
 		this.supportStarts = supportStarts;
 	}
+	/**
+	 * <p>Getter for the field <code>supportStarts</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<StationDetailInfo> getSupportStarts( ) {
 		return this.supportStarts;
 	}

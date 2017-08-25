@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 获取好友列表信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:12
+ * @version $Id: $Id
  */
 public class AlipaySocialBaseRelationFriendsQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipaySocialBaseRelationFriendsQueryModel extends AlipayObject {
 	@ApiField("include_self")
 	private Boolean includeSelf;
 
+	/**
+	 * <p>Getter for the field <code>getType</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getGetType() {
 		return this.getType;
 	}
+	/**
+	 * <p>Setter for the field <code>getType</code>.</p>
+	 *
+	 * @param getType a {@link java.lang.Long} object.
+	 */
 	public void setGetType(Long getType) {
 		this.getType = getType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>includeSelf</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getIncludeSelf() {
 		return this.includeSelf;
 	}
+	/**
+	 * <p>Setter for the field <code>includeSelf</code>.</p>
+	 *
+	 * @param includeSelf a {@link java.lang.Boolean} object.
+	 */
 	public void setIncludeSelf(Boolean includeSelf) {
 		this.includeSelf = includeSelf;
 	}

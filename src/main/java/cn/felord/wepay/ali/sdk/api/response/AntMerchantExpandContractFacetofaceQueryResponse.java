@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: ant.merchant.expand.contract.facetoface.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-14 12:06:49
+ * @version $Id: $Id
  */
 public class AntMerchantExpandContractFacetofaceQueryResponse extends AlipayResponse {
 
@@ -45,37 +45,87 @@ public class AntMerchantExpandContractFacetofaceQueryResponse extends AlipayResp
 	@ApiField("out_biz_no")
 	private String outBizNo;
 
+	/**
+	 * <p>Setter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @param gmtCreate a {@link java.util.Date} object.
+	 */
 	public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderDetail</code>.</p>
+	 *
+	 * @param orderDetail a {@link java.lang.String} object.
+	 */
 	public void setOrderDetail(String orderDetail) {
 		this.orderDetail = orderDetail;
 	}
+	/**
+	 * <p>Getter for the field <code>orderDetail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderDetail( ) {
 		return this.orderDetail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @param orderStatus a {@link java.lang.String} object.
+	 */
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}

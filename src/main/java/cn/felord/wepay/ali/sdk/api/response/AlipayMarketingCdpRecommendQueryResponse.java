@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cdp.recommend.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-01 15:34:47
+ * @version $Id: $Id
  */
 public class AlipayMarketingCdpRecommendQueryResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayMarketingCdpRecommendQueryResponse extends AlipayResponse {
 	@ApiField("shop_info")
 	private String shopInfo;
 
+	/**
+	 * <p>Setter for the field <code>recommendId</code>.</p>
+	 *
+	 * @param recommendId a {@link java.lang.String} object.
+	 */
 	public void setRecommendId(String recommendId) {
 		this.recommendId = recommendId;
 	}
+	/**
+	 * <p>Getter for the field <code>recommendId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecommendId( ) {
 		return this.recommendId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shopInfo</code>.</p>
+	 *
+	 * @param shopInfo a {@link java.lang.String} object.
+	 */
 	public void setShopInfo(String shopInfo) {
 		this.shopInfo = shopInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>shopInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopInfo( ) {
 		return this.shopInfo;
 	}

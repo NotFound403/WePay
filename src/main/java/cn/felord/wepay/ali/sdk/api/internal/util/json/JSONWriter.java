@@ -24,6 +24,12 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
 import cn.felord.wepay.ali.sdk.api.internal.util.AlipayLogger;
 
+/**
+ * <p>JSONWriter class.</p>
+ *
+ * @author lenovo
+ * @version $Id: $Id
+ */
 public class JSONWriter {
 
     private StringBuffer  buf           = new StringBuffer();
@@ -31,41 +37,91 @@ public class JSONWriter {
     private boolean       emitClassName = true;
     private DateFormat    format;
 
+    /**
+     * <p>Constructor for JSONWriter.</p>
+     *
+     * @param emitClassName a boolean.
+     */
     public JSONWriter(boolean emitClassName) {
         this.emitClassName = emitClassName;
     }
 
+    /**
+     * <p>Constructor for JSONWriter.</p>
+     */
     public JSONWriter() {
         this(false);
     }
 
+    /**
+     * <p>Constructor for JSONWriter.</p>
+     *
+     * @param format a {@link java.text.DateFormat} object.
+     */
     public JSONWriter(DateFormat format) {
         this(false);
         this.format = format;
     }
 
+    /**
+     * <p>write.</p>
+     *
+     * @param object a {@link java.lang.Object} object.
+     * @return a {@link java.lang.String} object.
+     */
     public String write(Object object) {
         return write(object, false);
     }
 
+    /**
+     * <p>write.</p>
+     *
+     * @param object a {@link java.lang.Object} object.
+     * @param isApiModel a boolean.
+     * @return a {@link java.lang.String} object.
+     */
     public String write(Object object, boolean isApiModel) {
         buf.setLength(0);
         value(object, isApiModel);
         return buf.toString();
     }
 
+    /**
+     * <p>write.</p>
+     *
+     * @param n a long.
+     * @return a {@link java.lang.String} object.
+     */
     public String write(long n) {
         return String.valueOf(n);
     }
 
+    /**
+     * <p>write.</p>
+     *
+     * @param d a double.
+     * @return a {@link java.lang.String} object.
+     */
     public String write(double d) {
         return String.valueOf(d);
     }
 
+    /**
+     * <p>write.</p>
+     *
+     * @param c a char.
+     * @return a {@link java.lang.String} object.
+     */
     public String write(char c) {
         return "\"" + c + "\"";
     }
 
+    /**
+     * <p>write.</p>
+     *
+     * @param b a boolean.
+     * @return a {@link java.lang.String} object.
+     */
     public String write(boolean b) {
         return String.valueOf(b);
     }

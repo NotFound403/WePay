@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.tool.fengdie.template.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:23
+ * @version $Id: $Id
  */
 public class AlipayMarketingToolFengdieTemplateQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayMarketingToolFengdieTemplateQueryResponse extends AlipayRespo
 	@ApiField("fengdie_template")
 	private List<FengdieTemplate> template;
 
+	/**
+	 * <p>Setter for the field <code>template</code>.</p>
+	 *
+	 * @param template a {@link java.util.List} object.
+	 */
 	public void setTemplate(List<FengdieTemplate> template) {
 		this.template = template;
 	}
+	/**
+	 * <p>Getter for the field <code>template</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<FengdieTemplate> getTemplate( ) {
 		return this.template;
 	}

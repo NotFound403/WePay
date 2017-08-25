@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.asset.point.order.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 18:53:05
+ * @version $Id: $Id
  */
 public class AlipayAssetPointOrderCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayAssetPointOrderCreateResponse extends AlipayResponse {
 	@ApiField("alipay_order_no")
 	private String alipayOrderNo;
 
+	/**
+	 * <p>Setter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @param alipayOrderNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayOrderNo( ) {
 		return this.alipayOrderNo;
 	}

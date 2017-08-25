@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.content.comment.data.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:31
+ * @version $Id: $Id
  */
 public class KoubeiContentCommentDataBatchqueryResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class KoubeiContentCommentDataBatchqueryResponse extends AlipayResponse {
 	@ApiField("count")
 	private Long count;
 
+	/**
+	 * <p>Setter for the field <code>comments</code>.</p>
+	 *
+	 * @param comments a {@link java.util.List} object.
+	 */
 	public void setComments(List<CommentOpenModel> comments) {
 		this.comments = comments;
 	}
+	/**
+	 * <p>Getter for the field <code>comments</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CommentOpenModel> getComments( ) {
 		return this.comments;
 	}
 
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.Long} object.
+	 */
 	public void setCount(Long count) {
 		this.count = count;
 	}
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCount( ) {
 		return this.count;
 	}

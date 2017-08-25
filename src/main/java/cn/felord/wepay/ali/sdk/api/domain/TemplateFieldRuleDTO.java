@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 模板字段规则
  *
  * @author auto create
- * @since 1.0, 2016-12-28 15:26:46
+ * @version $Id: $Id
  */
 public class TemplateFieldRuleDTO extends AlipayObject {
 
@@ -42,23 +42,53 @@ ASSIGN_FROM_REQUEST：在开卡Reuqest请求中按rule_value取值，现在和fi
 	@ApiField("rule_value")
 	private String ruleValue;
 
+	/**
+	 * <p>Getter for the field <code>fieldName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFieldName() {
 		return this.fieldName;
 	}
+	/**
+	 * <p>Setter for the field <code>fieldName</code>.</p>
+	 *
+	 * @param fieldName a {@link java.lang.String} object.
+	 */
 	public void setFieldName(String fieldName) {
 		this.fieldName = fieldName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleName() {
 		return this.ruleName;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleName</code>.</p>
+	 *
+	 * @param ruleName a {@link java.lang.String} object.
+	 */
 	public void setRuleName(String ruleName) {
 		this.ruleName = ruleName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleValue() {
 		return this.ruleValue;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleValue</code>.</p>
+	 *
+	 * @param ruleValue a {@link java.lang.String} object.
+	 */
 	public void setRuleValue(String ruleValue) {
 		this.ruleValue = ruleValue;
 	}

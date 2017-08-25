@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 模板开卡配置
  *
  * @author auto create
- * @since 1.0, 2016-12-28 15:26:46
+ * @version $Id: $Id
  */
 public class TemplateOpenCardConfDTO extends AlipayObject {
 
@@ -38,30 +38,70 @@ MER：直连商户
 	@ApiField("source_app_id")
 	private String sourceAppId;
 
+	/**
+	 * <p>Getter for the field <code>conf</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConf() {
 		return this.conf;
 	}
+	/**
+	 * <p>Setter for the field <code>conf</code>.</p>
+	 *
+	 * @param conf a {@link java.lang.String} object.
+	 */
 	public void setConf(String conf) {
 		this.conf = conf;
 	}
 
+	/**
+	 * <p>Getter for the field <code>openCardSourceType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpenCardSourceType() {
 		return this.openCardSourceType;
 	}
+	/**
+	 * <p>Setter for the field <code>openCardSourceType</code>.</p>
+	 *
+	 * @param openCardSourceType a {@link java.lang.String} object.
+	 */
 	public void setOpenCardSourceType(String openCardSourceType) {
 		this.openCardSourceType = openCardSourceType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>openCardUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpenCardUrl() {
 		return this.openCardUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>openCardUrl</code>.</p>
+	 *
+	 * @param openCardUrl a {@link java.lang.String} object.
+	 */
 	public void setOpenCardUrl(String openCardUrl) {
 		this.openCardUrl = openCardUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sourceAppId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSourceAppId() {
 		return this.sourceAppId;
 	}
+	/**
+	 * <p>Setter for the field <code>sourceAppId</code>.</p>
+	 *
+	 * @param sourceAppId a {@link java.lang.String} object.
+	 */
 	public void setSourceAppId(String sourceAppId) {
 		this.sourceAppId = sourceAppId;
 	}

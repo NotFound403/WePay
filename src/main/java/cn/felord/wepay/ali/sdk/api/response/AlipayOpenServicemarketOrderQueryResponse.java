@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.servicemarket.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-01 16:20:58
+ * @version $Id: $Id
  */
 public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 
@@ -54,44 +54,104 @@ public class AlipayOpenServicemarketOrderQueryResponse extends AlipayResponse {
 	@ApiField("total_size")
 	private Long totalSize;
 
+	/**
+	 * <p>Setter for the field <code>commodityId</code>.</p>
+	 *
+	 * @param commodityId a {@link java.lang.String} object.
+	 */
 	public void setCommodityId(String commodityId) {
 		this.commodityId = commodityId;
 	}
+	/**
+	 * <p>Getter for the field <code>commodityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommodityId( ) {
 		return this.commodityId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>currentPage</code>.</p>
+	 *
+	 * @param currentPage a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPage(Long currentPage) {
 		this.currentPage = currentPage;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPage</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPage( ) {
 		return this.currentPage;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderItems</code>.</p>
+	 *
+	 * @param orderItems a {@link java.util.List} object.
+	 */
 	public void setOrderItems(List<OrderItem> orderItems) {
 		this.orderItems = orderItems;
 	}
+	/**
+	 * <p>Getter for the field <code>orderItems</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OrderItem> getOrderItems( ) {
 		return this.orderItems;
 	}
 
+	/**
+	 * <p>Setter for the field <code>specifications</code>.</p>
+	 *
+	 * @param specifications a {@link java.lang.String} object.
+	 */
 	public void setSpecifications(String specifications) {
 		this.specifications = specifications;
 	}
+	/**
+	 * <p>Getter for the field <code>specifications</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSpecifications( ) {
 		return this.specifications;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalSize</code>.</p>
+	 *
+	 * @param totalSize a {@link java.lang.Long} object.
+	 */
 	public void setTotalSize(Long totalSize) {
 		this.totalSize = totalSize;
 	}
+	/**
+	 * <p>Getter for the field <code>totalSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalSize( ) {
 		return this.totalSize;
 	}

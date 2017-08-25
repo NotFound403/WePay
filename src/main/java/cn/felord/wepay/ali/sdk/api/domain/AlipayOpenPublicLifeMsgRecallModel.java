@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 生活号消息撤回接口
  *
  * @author auto create
- * @since 1.0, 2016-12-19 20:51:25
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeMsgRecallModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenPublicLifeMsgRecallModel extends AlipayObject {
 	@ApiField("message_id")
 	private String messageId;
 
+	/**
+	 * <p>Getter for the field <code>messageId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMessageId() {
 		return this.messageId;
 	}
+	/**
+	 * <p>Setter for the field <code>messageId</code>.</p>
+	 *
+	 * @param messageId a {@link java.lang.String} object.
+	 */
 	public void setMessageId(String messageId) {
 		this.messageId = messageId;
 	}

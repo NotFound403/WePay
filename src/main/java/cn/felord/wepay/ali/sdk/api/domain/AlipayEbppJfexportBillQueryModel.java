@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询支付宝缴费订单
  *
  * @author auto create
- * @since 1.0, 2017-07-19 12:08:26
+ * @version $Id: $Id
  */
 public class AlipayEbppJfexportBillQueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEbppJfexportBillQueryModel extends AlipayObject {
 	@ApiField("extend_field")
 	private String extendField;
 
+	/**
+	 * <p>Getter for the field <code>billNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillNo() {
 		return this.billNo;
 	}
+	/**
+	 * <p>Setter for the field <code>billNo</code>.</p>
+	 *
+	 * @param billNo a {@link java.lang.String} object.
+	 */
 	public void setBillNo(String billNo) {
 		this.billNo = billNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendField</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendField() {
 		return this.extendField;
 	}
+	/**
+	 * <p>Setter for the field <code>extendField</code>.</p>
+	 *
+	 * @param extendField a {@link java.lang.String} object.
+	 */
 	public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}

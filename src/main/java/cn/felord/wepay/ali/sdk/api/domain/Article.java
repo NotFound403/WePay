@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 图文消息子消息
  *
  * @author auto create
- * @since 1.0, 2017-07-04 11:09:05
+ * @version $Id: $Id
  */
 public class Article extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class Article extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
+	/**
+	 * <p>Getter for the field <code>actionName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionName() {
 		return this.actionName;
 	}
+	/**
+	 * <p>Setter for the field <code>actionName</code>.</p>
+	 *
+	 * @param actionName a {@link java.lang.String} object.
+	 */
 	public void setActionName(String actionName) {
 		this.actionName = actionName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageUrl() {
 		return this.imageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @param imageUrl a {@link java.lang.String} object.
+	 */
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * <p>Getter for the field <code>url</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrl() {
 		return this.url;
 	}
+	/**
+	 * <p>Setter for the field <code>url</code>.</p>
+	 *
+	 * @param url a {@link java.lang.String} object.
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}

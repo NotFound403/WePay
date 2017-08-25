@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 提供给ISV、开发者修改广告的接口，修改广告后投放渠道包括钱包APP，聚牛APP等，投放支持的APP应用
  *
  * @author auto create
- * @since 1.0, 2016-07-18 16:42:04
+ * @version $Id: $Id
  */
 public class AlipayMarketingCdpAdvertiseModifyModel extends AlipayObject {
 
@@ -51,44 +51,104 @@ public class AlipayMarketingCdpAdvertiseModifyModel extends AlipayObject {
 	@ApiField("start_time")
 	private Date startTime;
 
+	/**
+	 * <p>Getter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionUrl() {
 		return this.actionUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @param actionUrl a {@link java.lang.String} object.
+	 */
 	public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>adId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdId() {
 		return this.adId;
 	}
+	/**
+	 * <p>Setter for the field <code>adId</code>.</p>
+	 *
+	 * @param adId a {@link java.lang.String} object.
+	 */
 	public void setAdId(String adId) {
 		this.adId = adId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.util.Date} object.
+	 */
 	public void setEndTime(Date endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>height</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getHeight() {
 		return this.height;
 	}
+	/**
+	 * <p>Setter for the field <code>height</code>.</p>
+	 *
+	 * @param height a {@link java.lang.String} object.
+	 */
 	public void setHeight(String height) {
 		this.height = height;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}

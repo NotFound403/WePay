@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 发票抬头查询模型
  *
  * @author auto create
- * @since 1.0, 2017-05-09 19:40:04
+ * @version $Id: $Id
  */
 public class InvoiceTitleQueryOpenModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class InvoiceTitleQueryOpenModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>payerAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerAddress() {
 		return this.payerAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>payerAddress</code>.</p>
+	 *
+	 * @param payerAddress a {@link java.lang.String} object.
+	 */
 	public void setPayerAddress(String payerAddress) {
 		this.payerAddress = payerAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerBankAccount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerBankAccount() {
 		return this.payerBankAccount;
 	}
+	/**
+	 * <p>Setter for the field <code>payerBankAccount</code>.</p>
+	 *
+	 * @param payerBankAccount a {@link java.lang.String} object.
+	 */
 	public void setPayerBankAccount(String payerBankAccount) {
 		this.payerBankAccount = payerBankAccount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerBankName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerBankName() {
 		return this.payerBankName;
 	}
+	/**
+	 * <p>Setter for the field <code>payerBankName</code>.</p>
+	 *
+	 * @param payerBankName a {@link java.lang.String} object.
+	 */
 	public void setPayerBankName(String payerBankName) {
 		this.payerBankName = payerBankName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerRegisterNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerRegisterNo() {
 		return this.payerRegisterNo;
 	}
+	/**
+	 * <p>Setter for the field <code>payerRegisterNo</code>.</p>
+	 *
+	 * @param payerRegisterNo a {@link java.lang.String} object.
+	 */
 	public void setPayerRegisterNo(String payerRegisterNo) {
 		this.payerRegisterNo = payerRegisterNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payerTel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayerTel() {
 		return this.payerTel;
 	}
+	/**
+	 * <p>Setter for the field <code>payerTel</code>.</p>
+	 *
+	 * @param payerTel a {@link java.lang.String} object.
+	 */
 	public void setPayerTel(String payerTel) {
 		this.payerTel = payerTel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>titleName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitleName() {
 		return this.titleName;
 	}
+	/**
+	 * <p>Setter for the field <code>titleName</code>.</p>
+	 *
+	 * @param titleName a {@link java.lang.String} object.
+	 */
 	public void setTitleName(String titleName) {
 		this.titleName = titleName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

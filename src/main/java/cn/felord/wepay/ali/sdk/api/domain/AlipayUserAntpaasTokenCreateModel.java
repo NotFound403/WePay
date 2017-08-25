@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 蚂蚁通行证注册
  *
  * @author auto create
- * @since 1.0, 2016-12-06 11:57:17
+ * @version $Id: $Id
  */
 public class AlipayUserAntpaasTokenCreateModel extends AlipayObject {
 
@@ -62,58 +62,138 @@ public class AlipayUserAntpaasTokenCreateModel extends AlipayObject {
 	@ApiField("user_type")
 	private String userType;
 
+	/**
+	 * <p>Getter for the field <code>bindMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBindMobile() {
 		return this.bindMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>bindMobile</code>.</p>
+	 *
+	 * @param bindMobile a {@link java.lang.String} object.
+	 */
 	public void setBindMobile(String bindMobile) {
 		this.bindMobile = bindMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>country</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCountry() {
 		return this.country;
 	}
+	/**
+	 * <p>Setter for the field <code>country</code>.</p>
+	 *
+	 * @param country a {@link java.lang.String} object.
+	 */
 	public void setCountry(String country) {
 		this.country = country;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loginPassword</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoginPassword() {
 		return this.loginPassword;
 	}
+	/**
+	 * <p>Setter for the field <code>loginPassword</code>.</p>
+	 *
+	 * @param loginPassword a {@link java.lang.String} object.
+	 */
 	public void setLoginPassword(String loginPassword) {
 		this.loginPassword = loginPassword;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>needSupply</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getNeedSupply() {
 		return this.needSupply;
 	}
+	/**
+	 * <p>Setter for the field <code>needSupply</code>.</p>
+	 *
+	 * @param needSupply a {@link java.lang.Boolean} object.
+	 */
 	public void setNeedSupply(Boolean needSupply) {
 		this.needSupply = needSupply;
 	}
 
+	/**
+	 * <p>Getter for the field <code>securityPassword</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSecurityPassword() {
 		return this.securityPassword;
 	}
+	/**
+	 * <p>Setter for the field <code>securityPassword</code>.</p>
+	 *
+	 * @param securityPassword a {@link java.lang.String} object.
+	 */
 	public void setSecurityPassword(String securityPassword) {
 		this.securityPassword = securityPassword;
 	}
 
+	/**
+	 * <p>Getter for the field <code>source</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSource() {
 		return this.source;
 	}
+	/**
+	 * <p>Setter for the field <code>source</code>.</p>
+	 *
+	 * @param source a {@link java.lang.String} object.
+	 */
 	public void setSource(String source) {
 		this.source = source;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserType() {
 		return this.userType;
 	}
+	/**
+	 * <p>Setter for the field <code>userType</code>.</p>
+	 *
+	 * @param userType a {@link java.lang.String} object.
+	 */
 	public void setUserType(String userType) {
 		this.userType = userType;
 	}

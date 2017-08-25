@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.fingerprint.apply response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-12 17:27:27
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFingerprintApplyResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipaySecurityProdFingerprintApplyResponse extends AlipayResponse {
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Setter for the field <code>authType</code>.</p>
+	 *
+	 * @param authType a {@link java.lang.String} object.
+	 */
 	public void setAuthType(String authType) {
 		this.authType = authType;
 	}
+	/**
+	 * <p>Getter for the field <code>authType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthType( ) {
 		return this.authType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deviceId</code>.</p>
+	 *
+	 * @param deviceId a {@link java.lang.String} object.
+	 */
 	public void setDeviceId(String deviceId) {
 		this.deviceId = deviceId;
 	}
+	/**
+	 * <p>Getter for the field <code>deviceId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeviceId( ) {
 		return this.deviceId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken( ) {
 		return this.token;
 	}

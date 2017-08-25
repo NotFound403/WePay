@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 创建或更新服务者信息接口
  *
  * @author auto create
- * @since 1.0, 2017-03-10 16:06:09
+ * @version $Id: $Id
  */
 public class AlipayDaoweiSpModifyModel extends AlipayObject {
 
@@ -92,86 +92,206 @@ DELETE（删除）
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>calendarSchedule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CalendarScheduleInfo} object.
+	 */
 	public CalendarScheduleInfo getCalendarSchedule() {
 		return this.calendarSchedule;
 	}
+	/**
+	 * <p>Setter for the field <code>calendarSchedule</code>.</p>
+	 *
+	 * @param calendarSchedule a {@link cn.felord.wepay.ali.sdk.api.domain.CalendarScheduleInfo} object.
+	 */
 	public void setCalendarSchedule(CalendarScheduleInfo calendarSchedule) {
 		this.calendarSchedule = calendarSchedule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertType() {
 		return this.certType;
 	}
+	/**
+	 * <p>Setter for the field <code>certType</code>.</p>
+	 *
+	 * @param certType a {@link java.lang.String} object.
+	 */
 	public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>licenseList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<LicenseInfo> getLicenseList() {
 		return this.licenseList;
 	}
+	/**
+	 * <p>Setter for the field <code>licenseList</code>.</p>
+	 *
+	 * @param licenseList a {@link java.util.List} object.
+	 */
 	public void setLicenseList(List<LicenseInfo> licenseList) {
 		this.licenseList = licenseList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>nickName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNickName() {
 		return this.nickName;
 	}
+	/**
+	 * <p>Setter for the field <code>nickName</code>.</p>
+	 *
+	 * @param nickName a {@link java.lang.String} object.
+	 */
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSpId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSpId() {
 		return this.outSpId;
 	}
+	/**
+	 * <p>Setter for the field <code>outSpId</code>.</p>
+	 *
+	 * @param outSpId a {@link java.lang.String} object.
+	 */
 	public void setOutSpId(String outSpId) {
 		this.outSpId = outSpId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>photoUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPhotoUrl() {
 		return this.photoUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>photoUrl</code>.</p>
+	 *
+	 * @param photoUrl a {@link java.lang.String} object.
+	 */
 	public void setPhotoUrl(String photoUrl) {
 		this.photoUrl = photoUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

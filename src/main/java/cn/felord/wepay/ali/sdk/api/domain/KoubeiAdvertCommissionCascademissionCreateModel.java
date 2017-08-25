@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑客级联分佣任务创建
  *
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:39
+ * @version $Id: $Id
  */
 public class KoubeiAdvertCommissionCascademissionCreateModel extends AlipayObject {
 
@@ -45,30 +45,70 @@ voucher：任务对应的券ID
 	@ApiField("name")
 	private String name;
 
+	/**
+	 * <p>Getter for the field <code>cascadeMissionConf</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CascadeMissionConfModel> getCascadeMissionConf() {
 		return this.cascadeMissionConf;
 	}
+	/**
+	 * <p>Setter for the field <code>cascadeMissionConf</code>.</p>
+	 *
+	 * @param cascadeMissionConf a {@link java.util.List} object.
+	 */
 	public void setCascadeMissionConf(List<CascadeMissionConfModel> cascadeMissionConf) {
 		this.cascadeMissionConf = cascadeMissionConf;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identify</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentify() {
 		return this.identify;
 	}
+	/**
+	 * <p>Setter for the field <code>identify</code>.</p>
+	 *
+	 * @param identify a {@link java.lang.String} object.
+	 */
 	public void setIdentify(String identify) {
 		this.identify = identify;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentifyType() {
 		return this.identifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>identifyType</code>.</p>
+	 *
+	 * @param identifyType a {@link java.lang.String} object.
+	 */
 	public void setIdentifyType(String identifyType) {
 		this.identifyType = identifyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}

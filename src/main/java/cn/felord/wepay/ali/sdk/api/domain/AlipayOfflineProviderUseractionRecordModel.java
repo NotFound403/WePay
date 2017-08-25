@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * isv 回传的用户操作行为信息调用接口
  *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:26
+ * @version $Id: $Id
  */
 public class AlipayOfflineProviderUseractionRecordModel extends AlipayObject {
 
@@ -104,100 +104,240 @@ public class AlipayOfflineProviderUseractionRecordModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>actionDetail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionDetail() {
 		return this.actionDetail;
 	}
+	/**
+	 * <p>Setter for the field <code>actionDetail</code>.</p>
+	 *
+	 * @param actionDetail a {@link java.lang.String} object.
+	 */
 	public void setActionDetail(String actionDetail) {
 		this.actionDetail = actionDetail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionOuterId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionOuterId() {
 		return this.actionOuterId;
 	}
+	/**
+	 * <p>Setter for the field <code>actionOuterId</code>.</p>
+	 *
+	 * @param actionOuterId a {@link java.lang.String} object.
+	 */
 	public void setActionOuterId(String actionOuterId) {
 		this.actionOuterId = actionOuterId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>actionType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionType() {
 		return this.actionType;
 	}
+	/**
+	 * <p>Setter for the field <code>actionType</code>.</p>
+	 *
+	 * @param actionType a {@link java.lang.String} object.
+	 */
 	public void setActionType(String actionType) {
 		this.actionType = actionType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>alipayAppId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayAppId() {
 		return this.alipayAppId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayAppId</code>.</p>
+	 *
+	 * @param alipayAppId a {@link java.lang.String} object.
+	 */
 	public void setAlipayAppId(String alipayAppId) {
 		this.alipayAppId = alipayAppId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dateTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDateTime() {
 		return this.dateTime;
 	}
+	/**
+	 * <p>Setter for the field <code>dateTime</code>.</p>
+	 *
+	 * @param dateTime a {@link java.lang.String} object.
+	 */
 	public void setDateTime(String dateTime) {
 		this.dateTime = dateTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>entity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEntity() {
 		return this.entity;
 	}
+	/**
+	 * <p>Setter for the field <code>entity</code>.</p>
+	 *
+	 * @param entity a {@link java.lang.String} object.
+	 */
 	public void setEntity(String entity) {
 		this.entity = entity;
 	}
 
+	/**
+	 * <p>Getter for the field <code>industry</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIndustry() {
 		return this.industry;
 	}
+	/**
+	 * <p>Setter for the field <code>industry</code>.</p>
+	 *
+	 * @param industry a {@link java.lang.String} object.
+	 */
 	public void setIndustry(String industry) {
 		this.industry = industry;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderChannel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderChannel() {
 		return this.orderChannel;
 	}
+	/**
+	 * <p>Setter for the field <code>orderChannel</code>.</p>
+	 *
+	 * @param orderChannel a {@link java.lang.String} object.
+	 */
 	public void setOrderChannel(String orderChannel) {
 		this.orderChannel = orderChannel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderType() {
 		return this.orderType;
 	}
+	/**
+	 * <p>Setter for the field <code>orderType</code>.</p>
+	 *
+	 * @param orderType a {@link java.lang.String} object.
+	 */
 	public void setOrderType(String orderType) {
 		this.orderType = orderType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outerShopDo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.OuterShopDO} object.
+	 */
 	public OuterShopDO getOuterShopDo() {
 		return this.outerShopDo;
 	}
+	/**
+	 * <p>Setter for the field <code>outerShopDo</code>.</p>
+	 *
+	 * @param outerShopDo a {@link cn.felord.wepay.ali.sdk.api.domain.OuterShopDO} object.
+	 */
 	public void setOuterShopDo(OuterShopDO outerShopDo) {
 		this.outerShopDo = outerShopDo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>platformUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPlatformUserId() {
 		return this.platformUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>platformUserId</code>.</p>
+	 *
+	 * @param platformUserId a {@link java.lang.String} object.
+	 */
 	public void setPlatformUserId(String platformUserId) {
 		this.platformUserId = platformUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>source</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSource() {
 		return this.source;
 	}
+	/**
+	 * <p>Setter for the field <code>source</code>.</p>
+	 *
+	 * @param source a {@link java.lang.String} object.
+	 */
 	public void setSource(String source) {
 		this.source = source;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

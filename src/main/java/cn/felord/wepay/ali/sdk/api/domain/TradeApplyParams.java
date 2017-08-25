@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 行业代理收单接口使用的交易相关参数
  *
  * @author auto create
- * @since 1.0, 2017-05-10 11:09:03
+ * @version $Id: $Id
  */
 public class TradeApplyParams extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class TradeApplyParams extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
+	/**
+	 * <p>Getter for the field <code>brokerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrokerId() {
 		return this.brokerId;
 	}
+	/**
+	 * <p>Setter for the field <code>brokerId</code>.</p>
+	 *
+	 * @param brokerId a {@link java.lang.String} object.
+	 */
 	public void setBrokerId(String brokerId) {
 		this.brokerId = brokerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>buyerName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerName() {
 		return this.buyerName;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerName</code>.</p>
+	 *
+	 * @param buyerName a {@link java.lang.String} object.
+	 */
 	public void setBuyerName(String buyerName) {
 		this.buyerName = buyerName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>currency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCurrency() {
 		return this.currency;
 	}
+	/**
+	 * <p>Setter for the field <code>currency</code>.</p>
+	 *
+	 * @param currency a {@link java.lang.String} object.
+	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
+	/**
+	 * <p>Getter for the field <code>expireTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExpireTime() {
 		return this.expireTime;
 	}
+	/**
+	 * <p>Setter for the field <code>expireTime</code>.</p>
+	 *
+	 * @param expireTime a {@link java.lang.String} object.
+	 */
 	public void setExpireTime(String expireTime) {
 		this.expireTime = expireTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>promoParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPromoParams() {
 		return this.promoParams;
 	}
+	/**
+	 * <p>Setter for the field <code>promoParams</code>.</p>
+	 *
+	 * @param promoParams a {@link java.lang.String} object.
+	 */
 	public void setPromoParams(String promoParams) {
 		this.promoParams = promoParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount() {
 		return this.totalAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}

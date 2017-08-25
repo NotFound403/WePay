@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.beacon.device.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-28 11:12:47
+ * @version $Id: $Id
  */
 public class AlipayMobileBeaconDeviceQueryResponse extends AlipayResponse {
 
@@ -33,23 +33,45 @@ public class AlipayMobileBeaconDeviceQueryResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
+	/**
+	 * <p>Setter for the field <code>beaconDeviceInfo</code>.</p>
+	 *
+	 * @param beaconDeviceInfo a {@link cn.felord.wepay.ali.sdk.api.domain.BeaconDeviceInfo} object.
+	 */
 	public void setBeaconDeviceInfo(BeaconDeviceInfo beaconDeviceInfo) {
 		this.beaconDeviceInfo = beaconDeviceInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>beaconDeviceInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.BeaconDeviceInfo} object.
+	 */
 	public BeaconDeviceInfo getBeaconDeviceInfo( ) {
 		return this.beaconDeviceInfo;
 	}
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/** {@inheritDoc} */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg( ) {
 		return this.msg;
 	}

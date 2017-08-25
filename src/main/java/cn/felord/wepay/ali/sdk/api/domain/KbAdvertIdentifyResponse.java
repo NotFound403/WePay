@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑广告系统主键结果
  *
  * @author auto create
- * @since 1.0, 2017-03-03 14:25:50
+ * @version $Id: $Id
  */
 public class KbAdvertIdentifyResponse extends AlipayObject {
 
@@ -65,44 +65,104 @@ isv.member_crowd_limit_not_match_error:会员专属，请先注册会员
 	@ApiField("identify_type")
 	private String identifyType;
 
+	/**
+	 * <p>Getter for the field <code>benefitIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getBenefitIds() {
 		return this.benefitIds;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitIds</code>.</p>
+	 *
+	 * @param benefitIds a {@link java.util.List} object.
+	 */
 	public void setBenefitIds(List<String> benefitIds) {
 		this.benefitIds = benefitIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitType() {
 		return this.benefitType;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitType</code>.</p>
+	 *
+	 * @param benefitType a {@link java.lang.String} object.
+	 */
 	public void setBenefitType(String benefitType) {
 		this.benefitType = benefitType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode() {
 		return this.code;
 	}
+	/**
+	 * <p>Setter for the field <code>code</code>.</p>
+	 *
+	 * @param code a {@link java.lang.String} object.
+	 */
 	public void setCode(String code) {
 		this.code = code;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identify</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentify() {
 		return this.identify;
 	}
+	/**
+	 * <p>Setter for the field <code>identify</code>.</p>
+	 *
+	 * @param identify a {@link java.lang.String} object.
+	 */
 	public void setIdentify(String identify) {
 		this.identify = identify;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentifyType() {
 		return this.identifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>identifyType</code>.</p>
+	 *
+	 * @param identifyType a {@link java.lang.String} object.
+	 */
 	public void setIdentifyType(String identifyType) {
 		this.identifyType = identifyType;
 	}

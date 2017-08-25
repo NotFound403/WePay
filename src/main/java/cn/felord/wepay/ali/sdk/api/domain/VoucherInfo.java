@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 券模板创建信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class VoucherInfo extends AlipayObject {
 
@@ -71,65 +71,155 @@ public class VoucherInfo extends AlipayObject {
 	@ApiField("voucher_type")
 	private String voucherType;
 
+	/**
+	 * <p>Getter for the field <code>canGiveFriend</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getCanGiveFriend() {
 		return this.canGiveFriend;
 	}
+	/**
+	 * <p>Setter for the field <code>canGiveFriend</code>.</p>
+	 *
+	 * @param canGiveFriend a {@link java.lang.Boolean} object.
+	 */
 	public void setCanGiveFriend(Boolean canGiveFriend) {
 		this.canGiveFriend = canGiveFriend;
 	}
 
+	/**
+	 * <p>Getter for the field <code>useRule</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.UseRuleInfo} object.
+	 */
 	public UseRuleInfo getUseRule() {
 		return this.useRule;
 	}
+	/**
+	 * <p>Setter for the field <code>useRule</code>.</p>
+	 *
+	 * @param useRule a {@link cn.felord.wepay.ali.sdk.api.domain.UseRuleInfo} object.
+	 */
 	public void setUseRule(UseRuleInfo useRule) {
 		this.useRule = useRule;
 	}
 
+	/**
+	 * <p>Getter for the field <code>validDate</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ValidDateInfo} object.
+	 */
 	public ValidDateInfo getValidDate() {
 		return this.validDate;
 	}
+	/**
+	 * <p>Setter for the field <code>validDate</code>.</p>
+	 *
+	 * @param validDate a {@link cn.felord.wepay.ali.sdk.api.domain.ValidDateInfo} object.
+	 */
 	public void setValidDate(ValidDateInfo validDate) {
 		this.validDate = validDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherDesc() {
 		return this.voucherDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherDesc</code>.</p>
+	 *
+	 * @param voucherDesc a {@link java.lang.String} object.
+	 */
 	public void setVoucherDesc(String voucherDesc) {
 		this.voucherDesc = voucherDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherImg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherImg() {
 		return this.voucherImg;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherImg</code>.</p>
+	 *
+	 * @param voucherImg a {@link java.lang.String} object.
+	 */
 	public void setVoucherImg(String voucherImg) {
 		this.voucherImg = voucherImg;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherLogo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherLogo() {
 		return this.voucherLogo;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherLogo</code>.</p>
+	 *
+	 * @param voucherLogo a {@link java.lang.String} object.
+	 */
 	public void setVoucherLogo(String voucherLogo) {
 		this.voucherLogo = voucherLogo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherName() {
 		return this.voucherName;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherName</code>.</p>
+	 *
+	 * @param voucherName a {@link java.lang.String} object.
+	 */
 	public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherTerms</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<VoucherTermInfo> getVoucherTerms() {
 		return this.voucherTerms;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherTerms</code>.</p>
+	 *
+	 * @param voucherTerms a {@link java.util.List} object.
+	 */
 	public void setVoucherTerms(List<VoucherTermInfo> voucherTerms) {
 		this.voucherTerms = voucherTerms;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherType() {
 		return this.voucherType;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherType</code>.</p>
+	 *
+	 * @param voucherType a {@link java.lang.String} object.
+	 */
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}

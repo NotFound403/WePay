@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 快消店铺展位内容创建接口
  *
  * @author auto create
- * @since 1.0, 2017-07-19 22:12:29
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignRetailDmCreateModel extends AlipayObject {
 
@@ -118,114 +118,274 @@ public class KoubeiMarketingCampaignRetailDmCreateModel extends AlipayObject {
 	@ApiField("thumbnail_image_id")
 	private String thumbnailImageId;
 
+	/**
+	 * <p>Getter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActionUrl() {
 		return this.actionUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>actionUrl</code>.</p>
+	 *
+	 * @param actionUrl a {@link java.lang.String} object.
+	 */
 	public void setActionUrl(String actionUrl) {
 		this.actionUrl = actionUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>activityEndTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getActivityEndTime() {
 		return this.activityEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>activityEndTime</code>.</p>
+	 *
+	 * @param activityEndTime a {@link java.util.Date} object.
+	 */
 	public void setActivityEndTime(Date activityEndTime) {
 		this.activityEndTime = activityEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>activityStartTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getActivityStartTime() {
 		return this.activityStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>activityStartTime</code>.</p>
+	 *
+	 * @param activityStartTime a {@link java.util.Date} object.
+	 */
 	public void setActivityStartTime(Date activityStartTime) {
 		this.activityStartTime = activityStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>brief</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBrief() {
 		return this.brief;
 	}
+	/**
+	 * <p>Setter for the field <code>brief</code>.</p>
+	 *
+	 * @param brief a {@link java.lang.String} object.
+	 */
 	public void setBrief(String brief) {
 		this.brief = brief;
 	}
 
+	/**
+	 * <p>Getter for the field <code>campaignType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampaignType() {
 		return this.campaignType;
 	}
+	/**
+	 * <p>Setter for the field <code>campaignType</code>.</p>
+	 *
+	 * @param campaignType a {@link java.lang.String} object.
+	 */
 	public void setCampaignType(String campaignType) {
 		this.campaignType = campaignType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>couponType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponType() {
 		return this.couponType;
 	}
+	/**
+	 * <p>Setter for the field <code>couponType</code>.</p>
+	 *
+	 * @param couponType a {@link java.lang.String} object.
+	 */
 	public void setCouponType(String couponType) {
 		this.couponType = couponType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>description</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDescription() {
 		return this.description;
 	}
+	/**
+	 * <p>Setter for the field <code>description</code>.</p>
+	 *
+	 * @param description a {@link java.lang.String} object.
+	 */
 	public void setDescription(String description) {
 		this.description = description;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo() {
 		return this.extInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imageId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageId() {
 		return this.imageId;
 	}
+	/**
+	 * <p>Setter for the field <code>imageId</code>.</p>
+	 *
+	 * @param imageId a {@link java.lang.String} object.
+	 */
 	public void setImageId(String imageId) {
 		this.imageId = imageId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemBrand</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemBrand() {
 		return this.itemBrand;
 	}
+	/**
+	 * <p>Setter for the field <code>itemBrand</code>.</p>
+	 *
+	 * @param itemBrand a {@link java.lang.String} object.
+	 */
 	public void setItemBrand(String itemBrand) {
 		this.itemBrand = itemBrand;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemCategory</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemCategory() {
 		return this.itemCategory;
 	}
+	/**
+	 * <p>Setter for the field <code>itemCategory</code>.</p>
+	 *
+	 * @param itemCategory a {@link java.lang.String} object.
+	 */
 	public void setItemCategory(String itemCategory) {
 		this.itemCategory = itemCategory;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemCode() {
 		return this.itemCode;
 	}
+	/**
+	 * <p>Setter for the field <code>itemCode</code>.</p>
+	 *
+	 * @param itemCode a {@link java.lang.String} object.
+	 */
 	public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemName() {
 		return this.itemName;
 	}
+	/**
+	 * <p>Setter for the field <code>itemName</code>.</p>
+	 *
+	 * @param itemName a {@link java.lang.String} object.
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memberOnly</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemberOnly() {
 		return this.memberOnly;
 	}
+	/**
+	 * <p>Setter for the field <code>memberOnly</code>.</p>
+	 *
+	 * @param memberOnly a {@link java.lang.String} object.
+	 */
 	public void setMemberOnly(String memberOnly) {
 		this.memberOnly = memberOnly;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getShopIds() {
 		return this.shopIds;
 	}
+	/**
+	 * <p>Setter for the field <code>shopIds</code>.</p>
+	 *
+	 * @param shopIds a {@link java.util.List} object.
+	 */
 	public void setShopIds(List<String> shopIds) {
 		this.shopIds = shopIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thumbnailImageId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThumbnailImageId() {
 		return this.thumbnailImageId;
 	}
+	/**
+	 * <p>Setter for the field <code>thumbnailImageId</code>.</p>
+	 *
+	 * @param thumbnailImageId a {@link java.lang.String} object.
+	 */
 	public void setThumbnailImageId(String thumbnailImageId) {
 		this.thumbnailImageId = thumbnailImageId;
 	}

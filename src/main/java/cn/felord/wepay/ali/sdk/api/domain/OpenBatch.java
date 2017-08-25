@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 云验收单品批次
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class OpenBatch extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class OpenBatch extends AlipayObject {
 	@ApiField("item_num")
 	private String itemNum;
 
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId() {
 		return this.batchId;
 	}
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>batchStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchStatus() {
 		return this.batchStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>batchStatus</code>.</p>
+	 *
+	 * @param batchStatus a {@link java.lang.String} object.
+	 */
 	public void setBatchStatus(String batchStatus) {
 		this.batchStatus = batchStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemNum() {
 		return this.itemNum;
 	}
+	/**
+	 * <p>Setter for the field <code>itemNum</code>.</p>
+	 *
+	 * @param itemNum a {@link java.lang.String} object.
+	 */
 	public void setItemNum(String itemNum) {
 		this.itemNum = itemNum;
 	}

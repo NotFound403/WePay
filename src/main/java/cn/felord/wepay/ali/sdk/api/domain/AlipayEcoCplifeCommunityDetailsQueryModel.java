@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询单个物业小区信息
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:36:24
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeCommunityDetailsQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEcoCplifeCommunityDetailsQueryModel extends AlipayObject {
 	@ApiField("community_id")
 	private String communityId;
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}

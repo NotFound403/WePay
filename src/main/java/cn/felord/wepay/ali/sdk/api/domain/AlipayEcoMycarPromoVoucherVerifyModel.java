@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 核销
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:18
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarPromoVoucherVerifyModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayEcoMycarPromoVoucherVerifyModel extends AlipayObject {
 	@ApiField("sms_code")
 	private String smsCode;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderStatus() {
 		return this.orderStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @param orderStatus a {@link java.lang.String} object.
+	 */
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>smsCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSmsCode() {
 		return this.smsCode;
 	}
+	/**
+	 * <p>Setter for the field <code>smsCode</code>.</p>
+	 *
+	 * @param smsCode a {@link java.lang.String} object.
+	 */
 	public void setSmsCode(String smsCode) {
 		this.smsCode = smsCode;
 	}

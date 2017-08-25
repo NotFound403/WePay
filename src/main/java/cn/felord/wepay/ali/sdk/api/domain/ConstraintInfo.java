@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 活动限制信息
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class ConstraintInfo extends AlipayObject {
 
@@ -70,51 +70,121 @@ public class ConstraintInfo extends AlipayObject {
 	@ApiField("user_win_frequency")
 	private String userWinFrequency;
 
+	/**
+	 * <p>Getter for the field <code>crowdGroupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdGroupId() {
 		return this.crowdGroupId;
 	}
+	/**
+	 * <p>Setter for the field <code>crowdGroupId</code>.</p>
+	 *
+	 * @param crowdGroupId a {@link java.lang.String} object.
+	 */
 	public void setCrowdGroupId(String crowdGroupId) {
 		this.crowdGroupId = crowdGroupId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>crowdRestriction</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdRestriction() {
 		return this.crowdRestriction;
 	}
+	/**
+	 * <p>Setter for the field <code>crowdRestriction</code>.</p>
+	 *
+	 * @param crowdRestriction a {@link java.lang.String} object.
+	 */
 	public void setCrowdRestriction(String crowdRestriction) {
 		this.crowdRestriction = crowdRestriction;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getItemIds() {
 		return this.itemIds;
 	}
+	/**
+	 * <p>Setter for the field <code>itemIds</code>.</p>
+	 *
+	 * @param itemIds a {@link java.util.List} object.
+	 */
 	public void setItemIds(List<String> itemIds) {
 		this.itemIds = itemIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>minCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMinCost() {
 		return this.minCost;
 	}
+	/**
+	 * <p>Setter for the field <code>minCost</code>.</p>
+	 *
+	 * @param minCost a {@link java.lang.String} object.
+	 */
 	public void setMinCost(String minCost) {
 		this.minCost = minCost;
 	}
 
+	/**
+	 * <p>Getter for the field <code>suitShops</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getSuitShops() {
 		return this.suitShops;
 	}
+	/**
+	 * <p>Setter for the field <code>suitShops</code>.</p>
+	 *
+	 * @param suitShops a {@link java.util.List} object.
+	 */
 	public void setSuitShops(List<String> suitShops) {
 		this.suitShops = suitShops;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userWinCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserWinCount() {
 		return this.userWinCount;
 	}
+	/**
+	 * <p>Setter for the field <code>userWinCount</code>.</p>
+	 *
+	 * @param userWinCount a {@link java.lang.String} object.
+	 */
 	public void setUserWinCount(String userWinCount) {
 		this.userWinCount = userWinCount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userWinFrequency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserWinFrequency() {
 		return this.userWinFrequency;
 	}
+	/**
+	 * <p>Setter for the field <code>userWinFrequency</code>.</p>
+	 *
+	 * @param userWinFrequency a {@link java.lang.String} object.
+	 */
 	public void setUserWinFrequency(String userWinFrequency) {
 		this.userWinFrequency = userWinFrequency;
 	}

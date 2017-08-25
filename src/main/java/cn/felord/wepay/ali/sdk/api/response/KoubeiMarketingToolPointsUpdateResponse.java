@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.tool.points.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-15 18:49:47
+ * @version $Id: $Id
  */
 public class KoubeiMarketingToolPointsUpdateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiMarketingToolPointsUpdateResponse extends AlipayResponse {
 	@ApiField("point_log_no")
 	private String pointLogNo;
 
+	/**
+	 * <p>Setter for the field <code>pointLogNo</code>.</p>
+	 *
+	 * @param pointLogNo a {@link java.lang.String} object.
+	 */
 	public void setPointLogNo(String pointLogNo) {
 		this.pointLogNo = pointLogNo;
 	}
+	/**
+	 * <p>Getter for the field <code>pointLogNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPointLogNo( ) {
 		return this.pointLogNo;
 	}

@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.crowd.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-21 17:30:40
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignCrowdDeleteResponse extends AlipayResponse {
 

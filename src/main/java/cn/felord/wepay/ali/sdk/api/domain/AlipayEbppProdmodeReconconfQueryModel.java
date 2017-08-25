@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 对账配置查询接口
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:17:25
+ * @version $Id: $Id
  */
 public class AlipayEbppProdmodeReconconfQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEbppProdmodeReconconfQueryModel extends AlipayObject {
 	@ApiField("chargeoff_code")
 	private String chargeoffCode;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>chargeoffCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChargeoffCode() {
 		return this.chargeoffCode;
 	}
+	/**
+	 * <p>Setter for the field <code>chargeoffCode</code>.</p>
+	 *
+	 * @param chargeoffCode a {@link java.lang.String} object.
+	 */
 	public void setChargeoffCode(String chargeoffCode) {
 		this.chargeoffCode = chargeoffCode;
 	}

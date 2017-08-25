@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 指纹注册初始化
  *
  * @author auto create
- * @since 1.0, 2017-01-12 17:27:31
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFingerprintApplyInitializeModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipaySecurityProdFingerprintApplyInitializeModel extends AlipayObj
 	@ApiField("ifaa_version")
 	private String ifaaVersion;
 
+	/**
+	 * <p>Getter for the field <code>authType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthType() {
 		return this.authType;
 	}
+	/**
+	 * <p>Setter for the field <code>authType</code>.</p>
+	 *
+	 * @param authType a {@link java.lang.String} object.
+	 */
 	public void setAuthType(String authType) {
 		this.authType = authType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ifaaVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIfaaVersion() {
 		return this.ifaaVersion;
 	}
+	/**
+	 * <p>Setter for the field <code>ifaaVersion</code>.</p>
+	 *
+	 * @param ifaaVersion a {@link java.lang.String} object.
+	 */
 	public void setIfaaVersion(String ifaaVersion) {
 		this.ifaaVersion = ifaaVersion;
 	}

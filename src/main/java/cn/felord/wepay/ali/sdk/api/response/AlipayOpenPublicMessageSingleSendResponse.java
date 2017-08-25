@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.message.single.send response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 11:45:50
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMessageSingleSendResponse extends AlipayResponse {
 

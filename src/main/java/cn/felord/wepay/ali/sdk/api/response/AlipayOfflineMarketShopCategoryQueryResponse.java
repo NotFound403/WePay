@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.market.shop.category.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-19 16:56:09
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopCategoryQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayOfflineMarketShopCategoryQueryResponse extends AlipayResponse
 	@ApiField("shop_category_config_info")
 	private List<ShopCategoryConfigInfo> shopCategoryConfigInfos;
 
+	/**
+	 * <p>Setter for the field <code>shopCategoryConfigInfos</code>.</p>
+	 *
+	 * @param shopCategoryConfigInfos a {@link java.util.List} object.
+	 */
 	public void setShopCategoryConfigInfos(List<ShopCategoryConfigInfo> shopCategoryConfigInfos) {
 		this.shopCategoryConfigInfos = shopCategoryConfigInfos;
 	}
+	/**
+	 * <p>Getter for the field <code>shopCategoryConfigInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ShopCategoryConfigInfo> getShopCategoryConfigInfos( ) {
 		return this.shopCategoryConfigInfos;
 	}

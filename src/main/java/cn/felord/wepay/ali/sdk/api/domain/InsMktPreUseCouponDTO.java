@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险营销预核销权益
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class InsMktPreUseCouponDTO extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class InsMktPreUseCouponDTO extends AlipayObject {
 	@ApiField("reason")
 	private String reason;
 
+	/**
+	 * <p>Getter for the field <code>assetId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAssetId() {
 		return this.assetId;
 	}
+	/**
+	 * <p>Setter for the field <code>assetId</code>.</p>
+	 *
+	 * @param assetId a {@link java.lang.String} object.
+	 */
 	public void setAssetId(String assetId) {
 		this.assetId = assetId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>couponId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponId() {
 		return this.couponId;
 	}
+	/**
+	 * <p>Setter for the field <code>couponId</code>.</p>
+	 *
+	 * @param couponId a {@link java.lang.String} object.
+	 */
 	public void setCouponId(String couponId) {
 		this.couponId = couponId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>couponType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponType() {
 		return this.couponType;
 	}
+	/**
+	 * <p>Setter for the field <code>couponType</code>.</p>
+	 *
+	 * @param couponType a {@link java.lang.String} object.
+	 */
 	public void setCouponType(String couponType) {
 		this.couponType = couponType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>couponValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponValue() {
 		return this.couponValue;
 	}
+	/**
+	 * <p>Setter for the field <code>couponValue</code>.</p>
+	 *
+	 * @param couponValue a {@link java.lang.String} object.
+	 */
 	public void setCouponValue(String couponValue) {
 		this.couponValue = couponValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>preUse</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getPreUse() {
 		return this.preUse;
 	}
+	/**
+	 * <p>Setter for the field <code>preUse</code>.</p>
+	 *
+	 * @param preUse a {@link java.lang.Boolean} object.
+	 */
 	public void setPreUse(Boolean preUse) {
 		this.preUse = preUse;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReason() {
 		return this.reason;
 	}
+	/**
+	 * <p>Setter for the field <code>reason</code>.</p>
+	 *
+	 * @param reason a {@link java.lang.String} object.
+	 */
 	public void setReason(String reason) {
 		this.reason = reason;
 	}

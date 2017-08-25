@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 仪表盘取消授权
  *
  * @author auto create
- * @since 1.0, 2017-01-18 22:20:19
+ * @version $Id: $Id
  */
 public class AlipayMarketingDataDashboardCancelModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayMarketingDataDashboardCancelModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> dashboardIds;
 
+	/**
+	 * <p>Getter for the field <code>dashboardIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getDashboardIds() {
 		return this.dashboardIds;
 	}
+	/**
+	 * <p>Setter for the field <code>dashboardIds</code>.</p>
+	 *
+	 * @param dashboardIds a {@link java.util.List} object.
+	 */
 	public void setDashboardIds(List<String> dashboardIds) {
 		this.dashboardIds = dashboardIds;
 	}

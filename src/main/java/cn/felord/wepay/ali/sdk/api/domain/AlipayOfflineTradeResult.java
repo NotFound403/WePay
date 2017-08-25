@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 脱机交易执行结果
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class AlipayOfflineTradeResult extends AlipayObject {
 
@@ -61,58 +61,138 @@ public class AlipayOfflineTradeResult extends AlipayObject {
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Getter for the field <code>errorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorCode() {
 		return this.errorCode;
 	}
+	/**
+	 * <p>Setter for the field <code>errorCode</code>.</p>
+	 *
+	 * @param errorCode a {@link java.lang.String} object.
+	 */
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>errorMessage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorMessage() {
 		return this.errorMessage;
 	}
+	/**
+	 * <p>Setter for the field <code>errorMessage</code>.</p>
+	 *
+	 * @param errorMessage a {@link java.lang.String} object.
+	 */
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>message</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMessage() {
 		return this.message;
 	}
+	/**
+	 * <p>Setter for the field <code>message</code>.</p>
+	 *
+	 * @param message a {@link java.lang.String} object.
+	 */
 	public void setMessage(String message) {
 		this.message = message;
 	}
 
+	/**
+	 * <p>Getter for the field <code>needRetry</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getNeedRetry() {
 		return this.needRetry;
 	}
+	/**
+	 * <p>Setter for the field <code>needRetry</code>.</p>
+	 *
+	 * @param needRetry a {@link java.lang.Boolean} object.
+	 */
 	public void setNeedRetry(Boolean needRetry) {
 		this.needRetry = needRetry;
 	}
 
+	/**
+	 * <p>Getter for the field <code>nextTryTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNextTryTime() {
 		return this.nextTryTime;
 	}
+	/**
+	 * <p>Setter for the field <code>nextTryTime</code>.</p>
+	 *
+	 * @param nextTryTime a {@link java.lang.String} object.
+	 */
 	public void setNextTryTime(String nextTryTime) {
 		this.nextTryTime = nextTryTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult() {
 		return this.result;
 	}
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}

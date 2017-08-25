@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.finance.yulibao.account.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-18 16:07:46
+ * @version $Id: $Id
  */
 public class MybankFinanceYulibaoAccountQueryResponse extends AlipayResponse {
 
@@ -45,37 +45,87 @@ public class MybankFinanceYulibaoAccountQueryResponse extends AlipayResponse {
 	@ApiField("ylb_profit_detail_info")
 	private YLBProfitDetailInfo ylbProfitDetailInfo;
 
+	/**
+	 * <p>Setter for the field <code>availableAmount</code>.</p>
+	 *
+	 * @param availableAmount a {@link java.lang.String} object.
+	 */
 	public void setAvailableAmount(String availableAmount) {
 		this.availableAmount = availableAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>availableAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAvailableAmount( ) {
 		return this.availableAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>freezeAmount</code>.</p>
+	 *
+	 * @param freezeAmount a {@link java.lang.String} object.
+	 */
 	public void setFreezeAmount(String freezeAmount) {
 		this.freezeAmount = freezeAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>freezeAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFreezeAmount( ) {
 		return this.freezeAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sysFreezeAmount</code>.</p>
+	 *
+	 * @param sysFreezeAmount a {@link java.lang.String} object.
+	 */
 	public void setSysFreezeAmount(String sysFreezeAmount) {
 		this.sysFreezeAmount = sysFreezeAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>sysFreezeAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSysFreezeAmount( ) {
 		return this.sysFreezeAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>ylbProfitDetailInfo</code>.</p>
+	 *
+	 * @param ylbProfitDetailInfo a {@link cn.felord.wepay.ali.sdk.api.domain.YLBProfitDetailInfo} object.
+	 */
 	public void setYlbProfitDetailInfo(YLBProfitDetailInfo ylbProfitDetailInfo) {
 		this.ylbProfitDetailInfo = ylbProfitDetailInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>ylbProfitDetailInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.YLBProfitDetailInfo} object.
+	 */
 	public YLBProfitDetailInfo getYlbProfitDetailInfo( ) {
 		return this.ylbProfitDetailInfo;
 	}

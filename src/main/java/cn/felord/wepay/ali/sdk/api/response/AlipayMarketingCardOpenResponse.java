@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.open response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-20 10:21:56
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardOpenResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayMarketingCardOpenResponse extends AlipayResponse {
 	@ApiField("card_info")
 	private MerchantCard cardInfo;
 
+	/**
+	 * <p>Setter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @param cardInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public void setCardInfo(MerchantCard cardInfo) {
 		this.cardInfo = cardInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>cardInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MerchantCard} object.
+	 */
 	public MerchantCard getCardInfo( ) {
 		return this.cardInfo;
 	}

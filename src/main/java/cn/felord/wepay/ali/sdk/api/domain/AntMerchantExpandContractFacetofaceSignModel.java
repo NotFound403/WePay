@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 开通当面付申请接口
  *
  * @author auto create
- * @since 1.0, 2017-06-14 12:07:18
+ * @version $Id: $Id
  */
 public class AntMerchantExpandContractFacetofaceSignModel extends AlipayObject {
 
@@ -84,79 +84,189 @@ public class AntMerchantExpandContractFacetofaceSignModel extends AlipayObject {
 	@ApiField("special_license_pic")
 	private String specialLicensePic;
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseAuthPic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseAuthPic() {
 		return this.businessLicenseAuthPic;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseAuthPic</code>.</p>
+	 *
+	 * @param businessLicenseAuthPic a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseAuthPic(String businessLicenseAuthPic) {
 		this.businessLicenseAuthPic = businessLicenseAuthPic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicenseNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicenseNo() {
 		return this.businessLicenseNo;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicenseNo</code>.</p>
+	 *
+	 * @param businessLicenseNo a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicenseNo(String businessLicenseNo) {
 		this.businessLicenseNo = businessLicenseNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>businessLicensePic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBusinessLicensePic() {
 		return this.businessLicensePic;
 	}
+	/**
+	 * <p>Setter for the field <code>businessLicensePic</code>.</p>
+	 *
+	 * @param businessLicensePic a {@link java.lang.String} object.
+	 */
 	public void setBusinessLicensePic(String businessLicensePic) {
 		this.businessLicensePic = businessLicensePic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactEmail() {
 		return this.contactEmail;
 	}
+	/**
+	 * <p>Setter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @param contactEmail a {@link java.lang.String} object.
+	 */
 	public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactMobile() {
 		return this.contactMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>contactMobile</code>.</p>
+	 *
+	 * @param contactMobile a {@link java.lang.String} object.
+	 */
 	public void setContactMobile(String contactMobile) {
 		this.contactMobile = contactMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactName() {
 		return this.contactName;
 	}
+	/**
+	 * <p>Setter for the field <code>contactName</code>.</p>
+	 *
+	 * @param contactName a {@link java.lang.String} object.
+	 */
 	public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mccCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMccCode() {
 		return this.mccCode;
 	}
+	/**
+	 * <p>Setter for the field <code>mccCode</code>.</p>
+	 *
+	 * @param mccCode a {@link java.lang.String} object.
+	 */
 	public void setMccCode(String mccCode) {
 		this.mccCode = mccCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopScenePic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopScenePic() {
 		return this.shopScenePic;
 	}
+	/**
+	 * <p>Setter for the field <code>shopScenePic</code>.</p>
+	 *
+	 * @param shopScenePic a {@link java.lang.String} object.
+	 */
 	public void setShopScenePic(String shopScenePic) {
 		this.shopScenePic = shopScenePic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopSignBoardPic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopSignBoardPic() {
 		return this.shopSignBoardPic;
 	}
+	/**
+	 * <p>Setter for the field <code>shopSignBoardPic</code>.</p>
+	 *
+	 * @param shopSignBoardPic a {@link java.lang.String} object.
+	 */
 	public void setShopSignBoardPic(String shopSignBoardPic) {
 		this.shopSignBoardPic = shopSignBoardPic;
 	}
 
+	/**
+	 * <p>Getter for the field <code>specialLicensePic</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSpecialLicensePic() {
 		return this.specialLicensePic;
 	}
+	/**
+	 * <p>Setter for the field <code>specialLicensePic</code>.</p>
+	 *
+	 * @param specialLicensePic a {@link java.lang.String} object.
+	 */
 	public void setSpecialLicensePic(String specialLicensePic) {
 		this.specialLicensePic = specialLicensePic;
 	}

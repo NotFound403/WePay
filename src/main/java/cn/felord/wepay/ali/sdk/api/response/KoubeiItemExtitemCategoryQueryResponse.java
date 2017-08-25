@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.extitem.category.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-06 10:47:52
+ * @version $Id: $Id
  */
 public class KoubeiItemExtitemCategoryQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiItemExtitemCategoryQueryResponse extends AlipayResponse {
 	@ApiField("ext_category")
 	private List<ExtCategory> categoryList;
 
+	/**
+	 * <p>Setter for the field <code>categoryList</code>.</p>
+	 *
+	 * @param categoryList a {@link java.util.List} object.
+	 */
 	public void setCategoryList(List<ExtCategory> categoryList) {
 		this.categoryList = categoryList;
 	}
+	/**
+	 * <p>Getter for the field <code>categoryList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ExtCategory> getCategoryList( ) {
 		return this.categoryList;
 	}

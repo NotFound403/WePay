@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 口碑商品交易凭证模板
  *
  * @author auto create
- * @since 1.0, 2017-07-13 16:06:09
+ * @version $Id: $Id
  */
 public class KoubeiTradeVoucherItemTemplete extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class KoubeiTradeVoucherItemTemplete extends AlipayObject {
 	@ApiField("validity_period")
 	private String validityPeriod;
 
+	/**
+	 * <p>Getter for the field <code>buyerNotes</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KoubeiItemDescription> getBuyerNotes() {
 		return this.buyerNotes;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerNotes</code>.</p>
+	 *
+	 * @param buyerNotes a {@link java.util.List} object.
+	 */
 	public void setBuyerNotes(List<KoubeiItemDescription> buyerNotes) {
 		this.buyerNotes = buyerNotes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>supportBook</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSupportBook() {
 		return this.supportBook;
 	}
+	/**
+	 * <p>Setter for the field <code>supportBook</code>.</p>
+	 *
+	 * @param supportBook a {@link java.lang.String} object.
+	 */
 	public void setSupportBook(String supportBook) {
 		this.supportBook = supportBook;
 	}
 
+	/**
+	 * <p>Getter for the field <code>validityPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValidityPeriod() {
 		return this.validityPeriod;
 	}
+	/**
+	 * <p>Setter for the field <code>validityPeriod</code>.</p>
+	 *
+	 * @param validityPeriod a {@link java.lang.String} object.
+	 */
 	public void setValidityPeriod(String validityPeriod) {
 		this.validityPeriod = validityPeriod;
 	}

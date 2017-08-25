@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.cdp.advertise.operate response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-01 15:31:43
+ * @version $Id: $Id
  */
 public class AlipayMarketingCdpAdvertiseOperateResponse extends AlipayResponse {
 

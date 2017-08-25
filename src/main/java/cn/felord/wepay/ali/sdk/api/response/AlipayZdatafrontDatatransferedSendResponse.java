@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdatafront.datatransfered.send response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-18 11:27:33
+ * @version $Id: $Id
  */
 public class AlipayZdatafrontDatatransferedSendResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayZdatafrontDatatransferedSendResponse extends AlipayResponse {
 	@ApiField("success")
 	private String success;
 
+	/**
+	 * <p>Setter for the field <code>success</code>.</p>
+	 *
+	 * @param success a {@link java.lang.String} object.
+	 */
 	public void setSuccess(String success) {
 		this.success = success;
 	}
+	/**
+	 * <p>Getter for the field <code>success</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSuccess( ) {
 		return this.success;
 	}

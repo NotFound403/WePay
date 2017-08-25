@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 系统商通过该接口可以查询所有门店的外部门店编号（系统商的门店编号）
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:51
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopBatchqueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOfflineMarketShopBatchqueryModel extends AlipayObject {
 	@ApiField("page_no")
 	private String pageNo;
 
+	/**
+	 * <p>Getter for the field <code>pageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNo() {
 		return this.pageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNo</code>.</p>
+	 *
+	 * @param pageNo a {@link java.lang.String} object.
+	 */
 	public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}

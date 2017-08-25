@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: monitor.heartbeat.syn response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-06 22:21:41
+ * @version $Id: $Id
  */
 public class MonitorHeartbeatSynResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class MonitorHeartbeatSynResponse extends AlipayResponse {
 	@ApiField("pid")
 	private String pid;
 
+	/**
+	 * <p>Setter for the field <code>pid</code>.</p>
+	 *
+	 * @param pid a {@link java.lang.String} object.
+	 */
 	public void setPid(String pid) {
 		this.pid = pid;
 	}
+	/**
+	 * <p>Getter for the field <code>pid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPid( ) {
 		return this.pid;
 	}

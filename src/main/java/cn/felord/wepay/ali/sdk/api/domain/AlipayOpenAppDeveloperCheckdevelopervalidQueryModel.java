@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝账号入驻开放平台有效性检查
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:07:28
+ * @version $Id: $Id
  */
 public class AlipayOpenAppDeveloperCheckdevelopervalidQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayOpenAppDeveloperCheckdevelopervalidQueryModel extends AlipayO
 	@ApiField("logon_id")
 	private String logonId;
 
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId() {
 		return this.logonId;
 	}
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}

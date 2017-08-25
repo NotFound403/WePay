@@ -31,8 +31,6 @@ import java.util.EnumMap;
  * @version v1.0.0
  * @since 2017 /8/8  13:21
  */
-
-
 public class QRCodeUtil {
     private static final Logger log = LoggerFactory.getLogger(QRCodeUtil.class);
     // logo图片宽度 高度

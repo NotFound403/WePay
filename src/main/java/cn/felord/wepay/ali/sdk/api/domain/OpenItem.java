@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 云验收单品
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class OpenItem extends AlipayObject {
 
@@ -34,23 +34,53 @@ public class OpenItem extends AlipayObject {
 	@ApiField("store_id")
 	private String storeId;
 
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId() {
 		return this.itemId;
 	}
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemStatus() {
 		return this.itemStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>itemStatus</code>.</p>
+	 *
+	 * @param itemStatus a {@link java.lang.String} object.
+	 */
 	public void setItemStatus(String itemStatus) {
 		this.itemStatus = itemStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>storeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStoreId() {
 		return this.storeId;
 	}
+	/**
+	 * <p>Setter for the field <code>storeId</code>.</p>
+	 *
+	 * @param storeId a {@link java.lang.String} object.
+	 */
 	public void setStoreId(String storeId) {
 		this.storeId = storeId;
 	}

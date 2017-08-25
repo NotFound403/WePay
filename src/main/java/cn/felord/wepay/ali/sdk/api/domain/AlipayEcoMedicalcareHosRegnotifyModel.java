@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 医疗行业医院挂号通知接口
  *
  * @author auto create
- * @since 1.0, 2016-10-12 10:09:59
+ * @version $Id: $Id
  */
 public class AlipayEcoMedicalcareHosRegnotifyModel extends AlipayObject {
 
@@ -174,135 +174,325 @@ REG_CANCEL，不可空
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cancelDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCancelDesc() {
 		return this.cancelDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>cancelDesc</code>.</p>
+	 *
+	 * @param cancelDesc a {@link java.lang.String} object.
+	 */
 	public void setCancelDesc(String cancelDesc) {
 		this.cancelDesc = cancelDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cancelReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCancelReason() {
 		return this.cancelReason;
 	}
+	/**
+	 * <p>Setter for the field <code>cancelReason</code>.</p>
+	 *
+	 * @param cancelReason a {@link java.lang.String} object.
+	 */
 	public void setCancelReason(String cancelReason) {
 		this.cancelReason = cancelReason;
 	}
 
+	/**
+	 * <p>Getter for the field <code>deptInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalHospitalDeptInfo} object.
+	 */
 	public MedicalHospitalDeptInfo getDeptInfo() {
 		return this.deptInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>deptInfo</code>.</p>
+	 *
+	 * @param deptInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalHospitalDeptInfo} object.
+	 */
 	public void setDeptInfo(MedicalHospitalDeptInfo deptInfo) {
 		this.deptInfo = deptInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>doctorInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalHospitalDoctorInfo} object.
+	 */
 	public MedicalHospitalDoctorInfo getDoctorInfo() {
 		return this.doctorInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>doctorInfo</code>.</p>
+	 *
+	 * @param doctorInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalHospitalDoctorInfo} object.
+	 */
 	public void setDoctorInfo(MedicalHospitalDoctorInfo doctorInfo) {
 		this.doctorInfo = doctorInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendParams() {
 		return this.extendParams;
 	}
+	/**
+	 * <p>Setter for the field <code>extendParams</code>.</p>
+	 *
+	 * @param extendParams a {@link java.lang.String} object.
+	 */
 	public void setExtendParams(String extendParams) {
 		this.extendParams = extendParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>hosInfo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalHospitalInfo} object.
+	 */
 	public MedicalHospitalInfo getHosInfo() {
 		return this.hosInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>hosInfo</code>.</p>
+	 *
+	 * @param hosInfo a {@link cn.felord.wepay.ali.sdk.api.domain.MedicalHospitalInfo} object.
+	 */
 	public void setHosInfo(MedicalHospitalInfo hosInfo) {
 		this.hosInfo = hosInfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>lineNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getLineNo() {
 		return this.lineNo;
 	}
+	/**
+	 * <p>Setter for the field <code>lineNo</code>.</p>
+	 *
+	 * @param lineNo a {@link java.lang.Long} object.
+	 */
 	public void setLineNo(Long lineNo) {
 		this.lineNo = lineNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>notifyTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getNotifyTime() {
 		return this.notifyTime;
 	}
+	/**
+	 * <p>Setter for the field <code>notifyTime</code>.</p>
+	 *
+	 * @param notifyTime a {@link java.util.Date} object.
+	 */
 	public void setNotifyTime(Date notifyTime) {
 		this.notifyTime = notifyTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperate() {
 		return this.operate;
 	}
+	/**
+	 * <p>Setter for the field <code>operate</code>.</p>
+	 *
+	 * @param operate a {@link java.lang.String} object.
+	 */
 	public void setOperate(String operate) {
 		this.operate = operate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderLink</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderLink() {
 		return this.orderLink;
 	}
+	/**
+	 * <p>Setter for the field <code>orderLink</code>.</p>
+	 *
+	 * @param orderLink a {@link java.lang.String} object.
+	 */
 	public void setOrderLink(String orderLink) {
 		this.orderLink = orderLink;
 	}
 
+	/**
+	 * <p>Getter for the field <code>patientCardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPatientCardNo() {
 		return this.patientCardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>patientCardNo</code>.</p>
+	 *
+	 * @param patientCardNo a {@link java.lang.String} object.
+	 */
 	public void setPatientCardNo(String patientCardNo) {
 		this.patientCardNo = patientCardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>patientCardType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPatientCardType() {
 		return this.patientCardType;
 	}
+	/**
+	 * <p>Setter for the field <code>patientCardType</code>.</p>
+	 *
+	 * @param patientCardType a {@link java.lang.String} object.
+	 */
 	public void setPatientCardType(String patientCardType) {
 		this.patientCardType = patientCardType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>patientName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPatientName() {
 		return this.patientName;
 	}
+	/**
+	 * <p>Setter for the field <code>patientName</code>.</p>
+	 *
+	 * @param patientName a {@link java.lang.String} object.
+	 */
 	public void setPatientName(String patientName) {
 		this.patientName = patientName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>regLink</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRegLink() {
 		return this.regLink;
 	}
+	/**
+	 * <p>Setter for the field <code>regLink</code>.</p>
+	 *
+	 * @param regLink a {@link java.lang.String} object.
+	 */
 	public void setRegLink(String regLink) {
 		this.regLink = regLink;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thirdNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThirdNo() {
 		return this.thirdNo;
 	}
+	/**
+	 * <p>Setter for the field <code>thirdNo</code>.</p>
+	 *
+	 * @param thirdNo a {@link java.lang.String} object.
+	 */
 	public void setThirdNo(String thirdNo) {
 		this.thirdNo = thirdNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>treatDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getTreatDate() {
 		return this.treatDate;
 	}
+	/**
+	 * <p>Setter for the field <code>treatDate</code>.</p>
+	 *
+	 * @param treatDate a {@link java.util.Date} object.
+	 */
 	public void setTreatDate(Date treatDate) {
 		this.treatDate = treatDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>treatDateExt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTreatDateExt() {
 		return this.treatDateExt;
 	}
+	/**
+	 * <p>Setter for the field <code>treatDateExt</code>.</p>
+	 *
+	 * @param treatDateExt a {@link java.lang.String} object.
+	 */
 	public void setTreatDateExt(String treatDateExt) {
 		this.treatDateExt = treatDateExt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

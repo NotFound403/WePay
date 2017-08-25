@@ -11,9 +11,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 
 /**
  * ALIPAY API: alipay.open.public.life.account.create request
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-08 12:04:26
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadRequest<AlipayOpenPublicLifeAccountCreateResponse> {
 
@@ -66,65 +66,155 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
 	 */
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>background</code>.</p>
+	 *
+	 * @param background a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public void setBackground(FileItem background) {
 		this.background = background;
 	}
+	/**
+	 * <p>Getter for the field <code>background</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public FileItem getBackground() {
 		return this.background;
 	}
 
+	/**
+	 * <p>Setter for the field <code>catagoryId</code>.</p>
+	 *
+	 * @param catagoryId a {@link java.lang.String} object.
+	 */
 	public void setCatagoryId(String catagoryId) {
 		this.catagoryId = catagoryId;
 	}
+	/**
+	 * <p>Getter for the field <code>catagoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCatagoryId() {
 		return this.catagoryId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @param contactEmail a {@link java.lang.String} object.
+	 */
 	public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
+	/**
+	 * <p>Getter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactEmail() {
 		return this.contactEmail;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contactTel</code>.</p>
+	 *
+	 * @param contactTel a {@link java.lang.String} object.
+	 */
 	public void setContactTel(String contactTel) {
 		this.contactTel = contactTel;
 	}
+	/**
+	 * <p>Getter for the field <code>contactTel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactTel() {
 		return this.contactTel;
 	}
 
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
 
+	/**
+	 * <p>Setter for the field <code>customerTel</code>.</p>
+	 *
+	 * @param customerTel a {@link java.lang.String} object.
+	 */
 	public void setCustomerTel(String customerTel) {
 		this.customerTel = customerTel;
 	}
+	/**
+	 * <p>Getter for the field <code>customerTel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCustomerTel() {
 		return this.customerTel;
 	}
 
+	/**
+	 * <p>Setter for the field <code>lifeName</code>.</p>
+	 *
+	 * @param lifeName a {@link java.lang.String} object.
+	 */
 	public void setLifeName(String lifeName) {
 		this.lifeName = lifeName;
 	}
+	/**
+	 * <p>Getter for the field <code>lifeName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLifeName() {
 		return this.lifeName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>logo</code>.</p>
+	 *
+	 * @param logo a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public void setLogo(FileItem logo) {
 		this.logo = logo;
 	}
+	/**
+	 * <p>Getter for the field <code>logo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.FileItem} object.
+	 */
 	public FileItem getLogo() {
 		return this.logo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
@@ -136,57 +226,103 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
     private boolean needEncrypt=false;
 	private AlipayObject bizModel=null;
 
+	/**
+	 * <p>Getter for the field <code>notifyUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyUrl() {
 		return this.notifyUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setNotifyUrl(String notifyUrl) {
 		this.notifyUrl = notifyUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>returnUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnUrl() {
 		return this.returnUrl;
 	}
 
+	/** {@inheritDoc} */
 	public void setReturnUrl(String returnUrl) {
 		this.returnUrl = returnUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>apiVersion</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiVersion() {
 		return this.apiVersion;
 	}
+	/** {@inheritDoc} */
 	public void setApiVersion(String apiVersion) {
 		this.apiVersion = apiVersion;
 	}
 
+	/** {@inheritDoc} */
 	public void setTerminalType(String terminalType){
 		this.terminalType=terminalType;
 	}
 	
+    /**
+     * <p>Getter for the field <code>terminalType</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalType(){
     	return this.terminalType;
     }
 
+    /** {@inheritDoc} */
     public void setTerminalInfo(String terminalInfo){
     	this.terminalInfo=terminalInfo;
     }
 
+    /**
+     * <p>Getter for the field <code>terminalInfo</code>.</p>
+     *
+     * @return a {@link java.lang.String} object.
+     */
     public String getTerminalInfo(){
     	return this.terminalInfo;
     }
 	
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode; 
 	}
 	
+	/** {@inheritDoc} */
 	public void setProdCode(String prodCode) {
 		this.prodCode=prodCode;
 	}
     
+	/**
+	 * <p>getApiMethodName.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApiMethodName() {
 		return "alipay.open.public.life.account.create";
 	}
 
+	/**
+	 * <p>getTextParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, String> getTextParams() {		
 		AlipayHashMap txtParams = new AlipayHashMap();
 		txtParams.put("catagory_id", this.catagoryId);
@@ -202,6 +338,12 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
 		return txtParams;
 	}
 	
+	/**
+	 * <p>putOtherTextParam.</p>
+	 *
+	 * @param key a {@link java.lang.String} object.
+	 * @param value a {@link java.lang.String} object.
+	 */
 	public void putOtherTextParam(String key, String value) {
 		if(this.udfParams == null) {
 			this.udfParams = new AlipayHashMap();
@@ -209,6 +351,11 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
 		this.udfParams.put(key, value);
 	}
 
+	/**
+	 * <p>getFileParams.</p>
+	 *
+	 * @return a {@link java.util.Map} object.
+	 */
 	public Map<String, FileItem> getFileParams() {
 		Map<String, FileItem> params = new HashMap<String, FileItem>();
 		params.put("background", this.background);
@@ -216,27 +363,44 @@ public class AlipayOpenPublicLifeAccountCreateRequest implements AlipayUploadReq
 		return params;
 	}
 
+	/**
+	 * <p>getResponseClass.</p>
+	 *
+	 * @return a {@link java.lang.Class} object.
+	 */
 	public Class<AlipayOpenPublicLifeAccountCreateResponse> getResponseClass() {
 		return AlipayOpenPublicLifeAccountCreateResponse.class;
 	}
 	
+	 /**
+	  * <p>isNeedEncrypt.</p>
+	  *
+	  * @return a boolean.
+	  */
 	 public boolean isNeedEncrypt() {
     
       return this.needEncrypt;
     }
 
 
+    /** {@inheritDoc} */
     public void setNeedEncrypt(boolean needEncrypt) {
     
          this.needEncrypt=needEncrypt;
     }
     
+    /**
+     * <p>Getter for the field <code>bizModel</code>.</p>
+     *
+     * @return a {@link cn.felord.wepay.ali.sdk.api.AlipayObject} object.
+     */
     public AlipayObject getBizModel() {
     
       return this.bizModel;
     }
 
 
+    /** {@inheritDoc} */
     public void setBizModel(AlipayObject bizModel) {
     
          this.bizModel=bizModel;

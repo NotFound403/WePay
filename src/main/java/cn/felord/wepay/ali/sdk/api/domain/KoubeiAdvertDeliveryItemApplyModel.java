@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑外部投放授权领券接口
  *
  * @author auto create
- * @since 1.0, 2017-06-16 14:14:58
+ * @version $Id: $Id
  */
 public class KoubeiAdvertDeliveryItemApplyModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class KoubeiAdvertDeliveryItemApplyModel extends AlipayObject {
 	@ApiField("tag")
 	private String tag;
 
+	/**
+	 * <p>Getter for the field <code>advId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdvId() {
 		return this.advId;
 	}
+	/**
+	 * <p>Setter for the field <code>advId</code>.</p>
+	 *
+	 * @param advId a {@link java.lang.String} object.
+	 */
 	public void setAdvId(String advId) {
 		this.advId = advId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>channelCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelCode() {
 		return this.channelCode;
 	}
+	/**
+	 * <p>Setter for the field <code>channelCode</code>.</p>
+	 *
+	 * @param channelCode a {@link java.lang.String} object.
+	 */
 	public void setChannelCode(String channelCode) {
 		this.channelCode = channelCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>channelId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelId() {
 		return this.channelId;
 	}
+	/**
+	 * <p>Setter for the field <code>channelId</code>.</p>
+	 *
+	 * @param channelId a {@link java.lang.String} object.
+	 */
 	public void setChannelId(String channelId) {
 		this.channelId = channelId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recommendId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecommendId() {
 		return this.recommendId;
 	}
+	/**
+	 * <p>Setter for the field <code>recommendId</code>.</p>
+	 *
+	 * @param recommendId a {@link java.lang.String} object.
+	 */
 	public void setRecommendId(String recommendId) {
 		this.recommendId = recommendId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tag</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTag() {
 		return this.tag;
 	}
+	/**
+	 * <p>Setter for the field <code>tag</code>.</p>
+	 *
+	 * @param tag a {@link java.lang.String} object.
+	 */
 	public void setTag(String tag) {
 		this.tag = tag;
 	}

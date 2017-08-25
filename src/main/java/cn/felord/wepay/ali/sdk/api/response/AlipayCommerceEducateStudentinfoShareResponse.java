@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.educate.studentinfo.share response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-19 14:49:22
+ * @version $Id: $Id
  */
 public class AlipayCommerceEducateStudentinfoShareResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayCommerceEducateStudentinfoShareResponse extends AlipayRespons
 	@ApiField("student_info_share_result")
 	private EduStudentInfoShareResult studentInfoShareResult;
 
+	/**
+	 * <p>Setter for the field <code>studentInfoShareResult</code>.</p>
+	 *
+	 * @param studentInfoShareResult a {@link cn.felord.wepay.ali.sdk.api.domain.EduStudentInfoShareResult} object.
+	 */
 	public void setStudentInfoShareResult(EduStudentInfoShareResult studentInfoShareResult) {
 		this.studentInfoShareResult = studentInfoShareResult;
 	}
+	/**
+	 * <p>Getter for the field <code>studentInfoShareResult</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.EduStudentInfoShareResult} object.
+	 */
 	public EduStudentInfoShareResult getStudentInfoShareResult( ) {
 		return this.studentInfoShareResult;
 	}

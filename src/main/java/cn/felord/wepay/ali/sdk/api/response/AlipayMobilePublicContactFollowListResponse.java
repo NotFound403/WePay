@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.contact.follow.list response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-19 20:51:46
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicContactFollowListResponse extends AlipayResponse {
 
@@ -29,16 +29,32 @@ public class AlipayMobilePublicContactFollowListResponse extends AlipayResponse 
 	@ApiField("string")
 	private List<String> contactFollowList;
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contactFollowList</code>.</p>
+	 *
+	 * @param contactFollowList a {@link java.util.List} object.
+	 */
 	public void setContactFollowList(List<String> contactFollowList) {
 		this.contactFollowList = contactFollowList;
 	}
+	/**
+	 * <p>Getter for the field <code>contactFollowList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getContactFollowList( ) {
 		return this.contactFollowList;
 	}

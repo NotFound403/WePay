@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 简单模型嵌套list
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class ListListSmMockModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class ListListSmMockModel extends AlipayObject {
 	@ApiField("simple_mock_model")
 	private List<SimpleMockModel> listSimpleModelList;
 
+	/**
+	 * <p>Getter for the field <code>listSimpleModelList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<SimpleMockModel> getListSimpleModelList() {
 		return this.listSimpleModelList;
 	}
+	/**
+	 * <p>Setter for the field <code>listSimpleModelList</code>.</p>
+	 *
+	 * @param listSimpleModelList a {@link java.util.List} object.
+	 */
 	public void setListSimpleModelList(List<SimpleMockModel> listSimpleModelList) {
 		this.listSimpleModelList = listSimpleModelList;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.basicservice.initialize response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-24 11:43:21
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBasicserviceInitializeResponse extends AlipayResponse {
 
@@ -43,23 +43,53 @@ WAIT_AUDITING - 等待审核
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Setter for the field <code>billPayAuthUrl</code>.</p>
+	 *
+	 * @param billPayAuthUrl a {@link java.lang.String} object.
+	 */
 	public void setBillPayAuthUrl(String billPayAuthUrl) {
 		this.billPayAuthUrl = billPayAuthUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>billPayAuthUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillPayAuthUrl( ) {
 		return this.billPayAuthUrl;
 	}
 
+	/**
+	 * <p>Setter for the field <code>nextAction</code>.</p>
+	 *
+	 * @param nextAction a {@link java.lang.String} object.
+	 */
 	public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
+	/**
+	 * <p>Getter for the field <code>nextAction</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNextAction( ) {
 		return this.nextAction;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}

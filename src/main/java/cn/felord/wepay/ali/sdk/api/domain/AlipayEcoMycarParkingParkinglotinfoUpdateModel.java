@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 修改停车场信息
  *
  * @author auto create
- * @since 1.0, 2016-12-22 15:57:39
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject {
 
@@ -151,163 +151,393 @@ public class AlipayEcoMycarParkingParkinglotinfoUpdateModel extends AlipayObject
 	@ApiField("shopingmall_id")
 	private String shopingmallId;
 
+	/**
+	 * <p>Getter for the field <code>cityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityId() {
 		return this.cityId;
 	}
+	/**
+	 * <p>Setter for the field <code>cityId</code>.</p>
+	 *
+	 * @param cityId a {@link java.lang.String} object.
+	 */
 	public void setCityId(String cityId) {
 		this.cityId = cityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactAlipay</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactAlipay() {
 		return this.contactAlipay;
 	}
+	/**
+	 * <p>Setter for the field <code>contactAlipay</code>.</p>
+	 *
+	 * @param contactAlipay a {@link java.lang.String} object.
+	 */
 	public void setContactAlipay(String contactAlipay) {
 		this.contactAlipay = contactAlipay;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactEmail() {
 		return this.contactEmail;
 	}
+	/**
+	 * <p>Setter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @param contactEmail a {@link java.lang.String} object.
+	 */
 	public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactMobile() {
 		return this.contactMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>contactMobile</code>.</p>
+	 *
+	 * @param contactMobile a {@link java.lang.String} object.
+	 */
 	public void setContactMobile(String contactMobile) {
 		this.contactMobile = contactMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactName() {
 		return this.contactName;
 	}
+	/**
+	 * <p>Setter for the field <code>contactName</code>.</p>
+	 *
+	 * @param contactName a {@link java.lang.String} object.
+	 */
 	public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactTel</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactTel() {
 		return this.contactTel;
 	}
+	/**
+	 * <p>Setter for the field <code>contactTel</code>.</p>
+	 *
+	 * @param contactTel a {@link java.lang.String} object.
+	 */
 	public void setContactTel(String contactTel) {
 		this.contactTel = contactTel;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactWeixin</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactWeixin() {
 		return this.contactWeixin;
 	}
+	/**
+	 * <p>Setter for the field <code>contactWeixin</code>.</p>
+	 *
+	 * @param contactWeixin a {@link java.lang.String} object.
+	 */
 	public void setContactWeixin(String contactWeixin) {
 		this.contactWeixin = contactWeixin;
 	}
 
+	/**
+	 * <p>Getter for the field <code>equipmentName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEquipmentName() {
 		return this.equipmentName;
 	}
+	/**
+	 * <p>Setter for the field <code>equipmentName</code>.</p>
+	 *
+	 * @param equipmentName a {@link java.lang.String} object.
+	 */
 	public void setEquipmentName(String equipmentName) {
 		this.equipmentName = equipmentName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>latitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLatitude() {
 		return this.latitude;
 	}
+	/**
+	 * <p>Setter for the field <code>latitude</code>.</p>
+	 *
+	 * @param latitude a {@link java.lang.String} object.
+	 */
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>longitude</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLongitude() {
 		return this.longitude;
 	}
+	/**
+	 * <p>Setter for the field <code>longitude</code>.</p>
+	 *
+	 * @param longitude a {@link java.lang.String} object.
+	 */
 	public void setLongitude(String longitude) {
 		this.longitude = longitude;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outParkingId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutParkingId() {
 		return this.outParkingId;
 	}
+	/**
+	 * <p>Setter for the field <code>outParkingId</code>.</p>
+	 *
+	 * @param outParkingId a {@link java.lang.String} object.
+	 */
 	public void setOutParkingId(String outParkingId) {
 		this.outParkingId = outParkingId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingAddress() {
 		return this.parkingAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingAddress</code>.</p>
+	 *
+	 * @param parkingAddress a {@link java.lang.String} object.
+	 */
 	public void setParkingAddress(String parkingAddress) {
 		this.parkingAddress = parkingAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingEndTime() {
 		return this.parkingEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingEndTime</code>.</p>
+	 *
+	 * @param parkingEndTime a {@link java.lang.String} object.
+	 */
 	public void setParkingEndTime(String parkingEndTime) {
 		this.parkingEndTime = parkingEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingFeeDescription</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingFeeDescription() {
 		return this.parkingFeeDescription;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingFeeDescription</code>.</p>
+	 *
+	 * @param parkingFeeDescription a {@link java.lang.String} object.
+	 */
 	public void setParkingFeeDescription(String parkingFeeDescription) {
 		this.parkingFeeDescription = parkingFeeDescription;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingId () {
 		return this.parkingId ;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingId</code>.</p>
+	 *
+	 * @param parkingId a {@link java.lang.String} object.
+	 */
 	public void setParkingId (String parkingId ) {
 		this.parkingId  = parkingId ;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingLotType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingLotType() {
 		return this.parkingLotType;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingLotType</code>.</p>
+	 *
+	 * @param parkingLotType a {@link java.lang.String} object.
+	 */
 	public void setParkingLotType(String parkingLotType) {
 		this.parkingLotType = parkingLotType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingName() {
 		return this.parkingName;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingName</code>.</p>
+	 *
+	 * @param parkingName a {@link java.lang.String} object.
+	 */
 	public void setParkingName(String parkingName) {
 		this.parkingName = parkingName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingNumber() {
 		return this.parkingNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingNumber</code>.</p>
+	 *
+	 * @param parkingNumber a {@link java.lang.String} object.
+	 */
 	public void setParkingNumber(String parkingNumber) {
 		this.parkingNumber = parkingNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingStartTime() {
 		return this.parkingStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingStartTime</code>.</p>
+	 *
+	 * @param parkingStartTime a {@link java.lang.String} object.
+	 */
 	public void setParkingStartTime(String parkingStartTime) {
 		this.parkingStartTime = parkingStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parkingType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParkingType() {
 		return this.parkingType;
 	}
+	/**
+	 * <p>Setter for the field <code>parkingType</code>.</p>
+	 *
+	 * @param parkingType a {@link java.lang.String} object.
+	 */
 	public void setParkingType(String parkingType) {
 		this.parkingType = parkingType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>payType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayType() {
 		return this.payType;
 	}
+	/**
+	 * <p>Setter for the field <code>payType</code>.</p>
+	 *
+	 * @param payType a {@link java.lang.String} object.
+	 */
 	public void setPayType(String payType) {
 		this.payType = payType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>paymentMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPaymentMode() {
 		return this.paymentMode;
 	}
+	/**
+	 * <p>Setter for the field <code>paymentMode</code>.</p>
+	 *
+	 * @param paymentMode a {@link java.lang.String} object.
+	 */
 	public void setPaymentMode(String paymentMode) {
 		this.paymentMode = paymentMode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopingmallId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopingmallId() {
 		return this.shopingmallId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopingmallId</code>.</p>
+	 *
+	 * @param shopingmallId a {@link java.lang.String} object.
+	 */
 	public void setShopingmallId(String shopingmallId) {
 		this.shopingmallId = shopingmallId;
 	}

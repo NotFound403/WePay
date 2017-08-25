@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecard.edu.public.bind response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-06-12 17:16:41
+ * @version $Id: $Id
  */
 public class AlipayEcardEduPublicBindResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayEcardEduPublicBindResponse extends AlipayResponse {
 	@ApiField("return_code")
 	private String returnCode;
 
+	/**
+	 * <p>Setter for the field <code>agentCode</code>.</p>
+	 *
+	 * @param agentCode a {@link java.lang.String} object.
+	 */
 	public void setAgentCode(String agentCode) {
 		this.agentCode = agentCode;
 	}
+	/**
+	 * <p>Getter for the field <code>agentCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgentCode( ) {
 		return this.agentCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>cardNo</code>.</p>
+	 *
+	 * @param cardNo a {@link java.lang.String} object.
+	 */
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
+	/**
+	 * <p>Getter for the field <code>cardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardNo( ) {
 		return this.cardNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>returnCode</code>.</p>
+	 *
+	 * @param returnCode a {@link java.lang.String} object.
+	 */
 	public void setReturnCode(String returnCode) {
 		this.returnCode = returnCode;
 	}
+	/**
+	 * <p>Getter for the field <code>returnCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReturnCode( ) {
 		return this.returnCode;
 	}

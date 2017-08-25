@@ -24,12 +24,13 @@ import cn.felord.wepay.ali.sdk.api.internal.util.XmlUtils;
 
 /**
  * JSON格式转换器。
- * 
+ *
  * @author carver.gu
- * @since 1.0, Apr 11, 2010
+ * @version $Id: $Id
  */
 public class XmlConverter implements Converter {
 
+    /** {@inheritDoc} */
     public <T extends AlipayResponse> T toResponse(String rsp, Class<T> clazz)
                                                                               throws AlipayApiException {
         Element root = XmlUtils.getRootElementFromString(rsp);
@@ -99,9 +100,7 @@ public class XmlConverter implements Converter {
         });
     }
 
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.internal.mapping.Converter#getSignItem(cn.felord.wepay.ali.sdk.api.AlipayRequest, String)
-     */
+    /** {@inheritDoc} */
     public SignItem getSignItem(AlipayRequest<?> request, String responseBody)
                                                                               throws AlipayApiException {
 
@@ -200,9 +199,7 @@ public class XmlConverter implements Converter {
         return body.substring(signDataStartIndex, signDataEndIndex);
     }
 
-    /** 
-     * @see cn.felord.wepay.ali.sdk.api.internal.mapping.Converter#encryptSourceData(cn.felord.wepay.ali.sdk.api.AlipayRequest, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)
-     */
+    /** {@inheritDoc} */
     public String encryptSourceData(AlipayRequest<?> request, String body, String format,
                                     String encryptType, String encryptKey, String charset)
                                                                                           throws AlipayApiException {

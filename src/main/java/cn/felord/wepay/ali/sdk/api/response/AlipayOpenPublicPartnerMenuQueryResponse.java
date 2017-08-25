@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.partner.menu.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:23:59
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPartnerMenuQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenPublicPartnerMenuQueryResponse extends AlipayResponse {
 	@ApiField("public_menu")
 	private String publicMenu;
 
+	/**
+	 * <p>Setter for the field <code>publicMenu</code>.</p>
+	 *
+	 * @param publicMenu a {@link java.lang.String} object.
+	 */
 	public void setPublicMenu(String publicMenu) {
 		this.publicMenu = publicMenu;
 	}
+	/**
+	 * <p>Getter for the field <code>publicMenu</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicMenu( ) {
 		return this.publicMenu;
 	}

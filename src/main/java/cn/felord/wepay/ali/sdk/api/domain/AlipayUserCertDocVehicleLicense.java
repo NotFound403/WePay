@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 电子证件产品行驶证
  *
  * @author auto create
- * @since 1.0, 2017-06-01 16:04:48
+ * @version $Id: $Id
  */
 public class AlipayUserCertDocVehicleLicense extends AlipayObject {
 
@@ -67,65 +67,155 @@ public class AlipayUserCertDocVehicleLicense extends AlipayObject {
 	@ApiField("vin")
 	private String vin;
 
+	/**
+	 * <p>Getter for the field <code>encodedImgMain</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEncodedImgMain() {
 		return this.encodedImgMain;
 	}
+	/**
+	 * <p>Setter for the field <code>encodedImgMain</code>.</p>
+	 *
+	 * @param encodedImgMain a {@link java.lang.String} object.
+	 */
 	public void setEncodedImgMain(String encodedImgMain) {
 		this.encodedImgMain = encodedImgMain;
 	}
 
+	/**
+	 * <p>Getter for the field <code>encodedImgVice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEncodedImgVice() {
 		return this.encodedImgVice;
 	}
+	/**
+	 * <p>Setter for the field <code>encodedImgVice</code>.</p>
+	 *
+	 * @param encodedImgVice a {@link java.lang.String} object.
+	 */
 	public void setEncodedImgVice(String encodedImgVice) {
 		this.encodedImgVice = encodedImgVice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>engineNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEngineNo() {
 		return this.engineNo;
 	}
+	/**
+	 * <p>Setter for the field <code>engineNo</code>.</p>
+	 *
+	 * @param engineNo a {@link java.lang.String} object.
+	 */
 	public void setEngineNo(String engineNo) {
 		this.engineNo = engineNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>issueDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIssueDate() {
 		return this.issueDate;
 	}
+	/**
+	 * <p>Setter for the field <code>issueDate</code>.</p>
+	 *
+	 * @param issueDate a {@link java.lang.String} object.
+	 */
 	public void setIssueDate(String issueDate) {
 		this.issueDate = issueDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>model</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getModel() {
 		return this.model;
 	}
+	/**
+	 * <p>Setter for the field <code>model</code>.</p>
+	 *
+	 * @param model a {@link java.lang.String} object.
+	 */
 	public void setModel(String model) {
 		this.model = model;
 	}
 
+	/**
+	 * <p>Getter for the field <code>owner</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOwner() {
 		return this.owner;
 	}
+	/**
+	 * <p>Setter for the field <code>owner</code>.</p>
+	 *
+	 * @param owner a {@link java.lang.String} object.
+	 */
 	public void setOwner(String owner) {
 		this.owner = owner;
 	}
 
+	/**
+	 * <p>Getter for the field <code>plateNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPlateNo() {
 		return this.plateNo;
 	}
+	/**
+	 * <p>Setter for the field <code>plateNo</code>.</p>
+	 *
+	 * @param plateNo a {@link java.lang.String} object.
+	 */
 	public void setPlateNo(String plateNo) {
 		this.plateNo = plateNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>registerDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRegisterDate() {
 		return this.registerDate;
 	}
+	/**
+	 * <p>Setter for the field <code>registerDate</code>.</p>
+	 *
+	 * @param registerDate a {@link java.lang.String} object.
+	 */
 	public void setRegisterDate(String registerDate) {
 		this.registerDate = registerDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>vin</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVin() {
 		return this.vin;
 	}
+	/**
+	 * <p>Setter for the field <code>vin</code>.</p>
+	 *
+	 * @param vin a {@link java.lang.String} object.
+	 */
 	public void setVin(String vin) {
 		this.vin = vin;
 	}

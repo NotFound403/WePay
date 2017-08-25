@@ -7,8 +7,6 @@ package cn.felord.wepay.common.pay;
  * @version v1.0.0
  * @since 2017 /7/17  11:32
  */
-
-
 public interface PayType {
     /**
      * 获取支付方式.

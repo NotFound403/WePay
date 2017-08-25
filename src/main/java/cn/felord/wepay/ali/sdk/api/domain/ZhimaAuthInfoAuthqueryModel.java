@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询是否授权的接口
  *
  * @author auto create
- * @since 1.0, 2016-09-21 19:49:58
+ * @version $Id: $Id
  */
 public class ZhimaAuthInfoAuthqueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class ZhimaAuthInfoAuthqueryModel extends AlipayObject {
 	@ApiField("identity_param")
 	private String identityParam;
 
+	/**
+	 * <p>Getter for the field <code>identityParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentityParam() {
 		return this.identityParam;
 	}
+	/**
+	 * <p>Setter for the field <code>identityParam</code>.</p>
+	 *
+	 * @param identityParam a {@link java.lang.String} object.
+	 */
 	public void setIdentityParam(String identityParam) {
 		this.identityParam = identityParam;
 	}

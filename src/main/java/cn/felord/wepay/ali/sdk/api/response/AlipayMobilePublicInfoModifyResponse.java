@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.info.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:44:30
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicInfoModifyResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayMobilePublicInfoModifyResponse extends AlipayResponse {
 	@ApiField("audit_status")
 	private String auditStatus;
 
+	/**
+	 * <p>Setter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @param auditDesc a {@link java.lang.String} object.
+	 */
 	public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
+	/**
+	 * <p>Getter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditDesc( ) {
 		return this.auditDesc;
 	}
 
+	/**
+	 * <p>Setter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @param auditStatus a {@link java.lang.String} object.
+	 */
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditStatus( ) {
 		return this.auditStatus;
 	}

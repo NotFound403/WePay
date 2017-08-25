@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ecapiprod.drawndn.paymentschedule.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-29 11:34:20
+ * @version $Id: $Id
  */
 public class AlipayEcapiprodDrawndnPaymentscheduleGetResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayEcapiprodDrawndnPaymentscheduleGetResponse extends AlipayResp
 	@ApiField("request_id")
 	private String requestId;
 
+	/**
+	 * <p>Setter for the field <code>paymentSchedules</code>.</p>
+	 *
+	 * @param paymentSchedules a {@link java.util.List} object.
+	 */
 	public void setPaymentSchedules(List<PaymentSchedule> paymentSchedules) {
 		this.paymentSchedules = paymentSchedules;
 	}
+	/**
+	 * <p>Getter for the field <code>paymentSchedules</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PaymentSchedule> getPaymentSchedules( ) {
 		return this.paymentSchedules;
 	}
 
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId( ) {
 		return this.requestId;
 	}

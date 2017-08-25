@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户动态码通知配置
  *
  * @author auto create
- * @since 1.0, 2017-06-15 01:40:05
+ * @version $Id: $Id
  */
 public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class TemplateMdcodeNotifyConfDTO extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
+	/**
+	 * <p>Getter for the field <code>extParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtParams() {
 		return this.extParams;
 	}
+	/**
+	 * <p>Setter for the field <code>extParams</code>.</p>
+	 *
+	 * @param extParams a {@link java.lang.String} object.
+	 */
 	public void setExtParams(String extParams) {
 		this.extParams = extParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>url</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrl() {
 		return this.url;
 	}
+	/**
+	 * <p>Setter for the field <code>url</code>.</p>
+	 *
+	 * @param url a {@link java.lang.String} object.
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}

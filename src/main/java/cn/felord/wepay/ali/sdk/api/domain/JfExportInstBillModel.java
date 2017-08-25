@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 输出的机构账单模型
  *
  * @author auto create
- * @since 1.0, 2017-07-19 12:08:56
+ * @version $Id: $Id
  */
 public class JfExportInstBillModel extends AlipayObject {
 
@@ -67,65 +67,155 @@ public class JfExportInstBillModel extends AlipayObject {
 	@ApiField("uniq_id")
 	private String uniqId;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.String} object.
+	 */
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>balance</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBalance() {
 		return this.balance;
 	}
+	/**
+	 * <p>Setter for the field <code>balance</code>.</p>
+	 *
+	 * @param balance a {@link java.lang.String} object.
+	 */
 	public void setBalance(String balance) {
 		this.balance = balance;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillDate() {
 		return this.billDate;
 	}
+	/**
+	 * <p>Setter for the field <code>billDate</code>.</p>
+	 *
+	 * @param billDate a {@link java.lang.String} object.
+	 */
 	public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billFines</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillFines() {
 		return this.billFines;
 	}
+	/**
+	 * <p>Setter for the field <code>billFines</code>.</p>
+	 *
+	 * @param billFines a {@link java.lang.String} object.
+	 */
 	public void setBillFines(String billFines) {
 		this.billFines = billFines;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillKey() {
 		return this.billKey;
 	}
+	/**
+	 * <p>Setter for the field <code>billKey</code>.</p>
+	 *
+	 * @param billKey a {@link java.lang.String} object.
+	 */
 	public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendField</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendField() {
 		return this.extendField;
 	}
+	/**
+	 * <p>Setter for the field <code>extendField</code>.</p>
+	 *
+	 * @param extendField a {@link java.lang.String} object.
+	 */
 	public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
 
+	/**
+	 * <p>Getter for the field <code>instBillNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInstBillNo() {
 		return this.instBillNo;
 	}
+	/**
+	 * <p>Setter for the field <code>instBillNo</code>.</p>
+	 *
+	 * @param instBillNo a {@link java.lang.String} object.
+	 */
 	public void setInstBillNo(String instBillNo) {
 		this.instBillNo = instBillNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ownerName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOwnerName() {
 		return this.ownerName;
 	}
+	/**
+	 * <p>Setter for the field <code>ownerName</code>.</p>
+	 *
+	 * @param ownerName a {@link java.lang.String} object.
+	 */
 	public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uniqId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUniqId() {
 		return this.uniqId;
 	}
+	/**
+	 * <p>Setter for the field <code>uniqId</code>.</p>
+	 *
+	 * @param uniqId a {@link java.lang.String} object.
+	 */
 	public void setUniqId(String uniqId) {
 		this.uniqId = uniqId;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 订单退款接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:02:08
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderRefundModel extends AlipayObject {
 
@@ -47,37 +47,87 @@ public class AlipayDaoweiOrderRefundModel extends AlipayObject {
 	@ApiField("order_refund_info")
 	private List<OrderRefundInfo> refundDetails;
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRefundId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRefundId() {
 		return this.outRefundId;
 	}
+	/**
+	 * <p>Setter for the field <code>outRefundId</code>.</p>
+	 *
+	 * @param outRefundId a {@link java.lang.String} object.
+	 */
 	public void setOutRefundId(String outRefundId) {
 		this.outRefundId = outRefundId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundAmount() {
 		return this.refundAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>refundAmount</code>.</p>
+	 *
+	 * @param refundAmount a {@link java.lang.String} object.
+	 */
 	public void setRefundAmount(String refundAmount) {
 		this.refundAmount = refundAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundDetails</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OrderRefundInfo> getRefundDetails() {
 		return this.refundDetails;
 	}
+	/**
+	 * <p>Setter for the field <code>refundDetails</code>.</p>
+	 *
+	 * @param refundDetails a {@link java.util.List} object.
+	 */
 	public void setRefundDetails(List<OrderRefundInfo> refundDetails) {
 		this.refundDetails = refundDetails;
 	}

@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 批量查询评价接口返回对象
  *
  * @author auto create
- * @since 1.0, 2017-03-03 10:40:31
+ * @version $Id: $Id
  */
 public class CommentOpenModel extends AlipayObject {
 
@@ -66,58 +66,138 @@ public class CommentOpenModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Getter for the field <code>commentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommentId() {
 		return this.commentId;
 	}
+	/**
+	 * <p>Setter for the field <code>commentId</code>.</p>
+	 *
+	 * @param commentId a {@link java.lang.String} object.
+	 */
 	public void setCommentId(String commentId) {
 		this.commentId = commentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>commentPublishTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getCommentPublishTime() {
 		return this.commentPublishTime;
 	}
+	/**
+	 * <p>Setter for the field <code>commentPublishTime</code>.</p>
+	 *
+	 * @param commentPublishTime a {@link java.util.Date} object.
+	 */
 	public void setCommentPublishTime(Date commentPublishTime) {
 		this.commentPublishTime = commentPublishTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCraftsmanId() {
 		return this.craftsmanId;
 	}
+	/**
+	 * <p>Setter for the field <code>craftsmanId</code>.</p>
+	 *
+	 * @param craftsmanId a {@link java.lang.String} object.
+	 */
 	public void setCraftsmanId(String craftsmanId) {
 		this.craftsmanId = craftsmanId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>images</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getImages() {
 		return this.images;
 	}
+	/**
+	 * <p>Setter for the field <code>images</code>.</p>
+	 *
+	 * @param images a {@link java.util.List} object.
+	 */
 	public void setImages(List<String> images) {
 		this.images = images;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reply</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CommentReplyOpenModel} object.
+	 */
 	public CommentReplyOpenModel getReply() {
 		return this.reply;
 	}
+	/**
+	 * <p>Setter for the field <code>reply</code>.</p>
+	 *
+	 * @param reply a {@link cn.felord.wepay.ali.sdk.api.domain.CommentReplyOpenModel} object.
+	 */
 	public void setReply(CommentReplyOpenModel reply) {
 		this.reply = reply;
 	}
 
+	/**
+	 * <p>Getter for the field <code>score</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getScore() {
 		return this.score;
 	}
+	/**
+	 * <p>Setter for the field <code>score</code>.</p>
+	 *
+	 * @param score a {@link java.lang.Long} object.
+	 */
 	public void setScore(Long score) {
 		this.score = score;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}

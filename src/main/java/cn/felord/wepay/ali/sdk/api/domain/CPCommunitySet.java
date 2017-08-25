@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 物业小区摘要信息列表
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:36:39
+ * @version $Id: $Id
  */
 public class CPCommunitySet extends AlipayObject {
 
@@ -41,30 +41,70 @@ OFFLINE - 下线
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantPid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantPid() {
 		return this.merchantPid;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantPid</code>.</p>
+	 *
+	 * @param merchantPid a {@link java.lang.String} object.
+	 */
 	public void setMerchantPid(String merchantPid) {
 		this.merchantPid = merchantPid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outCommunityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutCommunityId() {
 		return this.outCommunityId;
 	}
+	/**
+	 * <p>Setter for the field <code>outCommunityId</code>.</p>
+	 *
+	 * @param outCommunityId a {@link java.lang.String} object.
+	 */
 	public void setOutCommunityId(String outCommunityId) {
 		this.outCommunityId = outCommunityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

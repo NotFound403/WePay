@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.fund.trans.toaccount.transfer response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-13 10:44:03
+ * @version $Id: $Id
  */
 public class AlipayFundTransToaccountTransferResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayFundTransToaccountTransferResponse extends AlipayResponse {
 	@ApiField("pay_date")
 	private String payDate;
 
+	/**
+	 * <p>Setter for the field <code>orderId</code>.</p>
+	 *
+	 * @param orderId a {@link java.lang.String} object.
+	 */
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}
+	/**
+	 * <p>Getter for the field <code>orderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderId( ) {
 		return this.orderId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>payDate</code>.</p>
+	 *
+	 * @param payDate a {@link java.lang.String} object.
+	 */
 	public void setPayDate(String payDate) {
 		this.payDate = payDate;
 	}
+	/**
+	 * <p>Getter for the field <code>payDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayDate( ) {
 		return this.payDate;
 	}

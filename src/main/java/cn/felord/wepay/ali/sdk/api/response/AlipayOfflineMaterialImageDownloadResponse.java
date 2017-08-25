@@ -8,9 +8,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.material.image.download response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 11:37:33
+ * @version $Id: $Id
  */
 public class AlipayOfflineMaterialImageDownloadResponse extends AlipayResponse {
 
@@ -23,9 +23,19 @@ public class AlipayOfflineMaterialImageDownloadResponse extends AlipayResponse {
 	@ApiField("string")
 	private List<String> imageUrls;
 
+	/**
+	 * <p>Setter for the field <code>imageUrls</code>.</p>
+	 *
+	 * @param imageUrls a {@link java.util.List} object.
+	 */
 	public void setImageUrls(List<String> imageUrls) {
 		this.imageUrls = imageUrls;
 	}
+	/**
+	 * <p>Getter for the field <code>imageUrls</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getImageUrls( ) {
 		return this.imageUrls;
 	}

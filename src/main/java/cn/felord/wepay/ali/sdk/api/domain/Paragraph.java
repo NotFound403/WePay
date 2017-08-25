@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 段落
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class Paragraph extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class Paragraph extends AlipayObject {
 	@ApiField("text")
 	private String text;
 
+	/**
+	 * <p>Getter for the field <code>pictures</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Picture> getPictures() {
 		return this.pictures;
 	}
+	/**
+	 * <p>Setter for the field <code>pictures</code>.</p>
+	 *
+	 * @param pictures a {@link java.util.List} object.
+	 */
 	public void setPictures(List<Picture> pictures) {
 		this.pictures = pictures;
 	}
 
+	/**
+	 * <p>Getter for the field <code>text</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getText() {
 		return this.text;
 	}
+	/**
+	 * <p>Setter for the field <code>text</code>.</p>
+	 *
+	 * @param text a {@link java.lang.String} object.
+	 */
 	public void setText(String text) {
 		this.text = text;
 	}

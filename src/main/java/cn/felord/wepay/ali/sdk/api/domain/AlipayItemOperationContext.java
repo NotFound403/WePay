@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商品操作上下文
  *
  * @author auto create
- * @since 1.0, 2017-04-20 15:17:50
+ * @version $Id: $Id
  */
 public class AlipayItemOperationContext extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayItemOperationContext extends AlipayObject {
 	@ApiField("partner_id")
 	private String partnerId;
 
+	/**
+	 * <p>Getter for the field <code>creator</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCreator() {
 		return this.creator;
 	}
+	/**
+	 * <p>Setter for the field <code>creator</code>.</p>
+	 *
+	 * @param creator a {@link java.lang.String} object.
+	 */
 	public void setCreator(String creator) {
 		this.creator = creator;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opRole</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpRole() {
 		return this.opRole;
 	}
+	/**
+	 * <p>Setter for the field <code>opRole</code>.</p>
+	 *
+	 * @param opRole a {@link java.lang.String} object.
+	 */
 	public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId() {
 		return this.partnerId;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}

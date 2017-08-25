@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * ceshi moxing
  *
  * @author auto create
- * @since 1.0, 2017-07-20 15:39:52
+ * @version $Id: $Id
  */
 public class AlipayKeyanClass extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayKeyanClass extends AlipayObject {
 	@ApiField("user_name")
 	private String userName;
 
+	/**
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserName() {
 		return this.userName;
 	}
+	/**
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}

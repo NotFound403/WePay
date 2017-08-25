@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.customer.certification.initialize response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-04 18:48:14
+ * @version $Id: $Id
  */
 public class ZhimaCustomerCertificationInitializeResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class ZhimaCustomerCertificationInitializeResponse extends AlipayResponse
 	@ApiField("biz_no")
 	private String bizNo;
 
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo( ) {
 		return this.bizNo;
 	}

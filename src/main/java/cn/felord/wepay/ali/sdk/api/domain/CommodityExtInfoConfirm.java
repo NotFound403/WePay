@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 服务插件扩展信息BD审核结果
  *
  * @author auto create
- * @since 1.0, 2016-12-22 23:46:22
+ * @version $Id: $Id
  */
 public class CommodityExtInfoConfirm extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class CommodityExtInfoConfirm extends AlipayObject {
 	@ApiField("memo")
 	private String memo;
 
+	/**
+	 * <p>Getter for the field <code>cityStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCityStatus() {
 		return this.cityStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>cityStatus</code>.</p>
+	 *
+	 * @param cityStatus a {@link java.lang.String} object.
+	 */
 	public void setCityStatus(String cityStatus) {
 		this.cityStatus = cityStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>displayappId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDisplayappId() {
 		return this.displayappId;
 	}
+	/**
+	 * <p>Setter for the field <code>displayappId</code>.</p>
+	 *
+	 * @param displayappId a {@link java.lang.String} object.
+	 */
 	public void setDisplayappId(String displayappId) {
 		this.displayappId = displayappId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mappingDisplayappId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMappingDisplayappId() {
 		return this.mappingDisplayappId;
 	}
+	/**
+	 * <p>Setter for the field <code>mappingDisplayappId</code>.</p>
+	 *
+	 * @param mappingDisplayappId a {@link java.lang.String} object.
+	 */
 	public void setMappingDisplayappId(String mappingDisplayappId) {
 		this.mappingDisplayappId = mappingDisplayappId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}

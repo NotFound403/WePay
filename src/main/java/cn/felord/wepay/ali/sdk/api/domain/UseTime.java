@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 券可用时间
  *
  * @author auto create
- * @since 1.0, 2017-06-05 11:25:25
+ * @version $Id: $Id
  */
 public class UseTime extends AlipayObject {
 
@@ -36,23 +36,53 @@ public class UseTime extends AlipayObject {
 	@ApiField("values")
 	private String values;
 
+	/**
+	 * <p>Getter for the field <code>dimension</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDimension() {
 		return this.dimension;
 	}
+	/**
+	 * <p>Setter for the field <code>dimension</code>.</p>
+	 *
+	 * @param dimension a {@link java.lang.String} object.
+	 */
 	public void setDimension(String dimension) {
 		this.dimension = dimension;
 	}
 
+	/**
+	 * <p>Getter for the field <code>times</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimes() {
 		return this.times;
 	}
+	/**
+	 * <p>Setter for the field <code>times</code>.</p>
+	 *
+	 * @param times a {@link java.lang.String} object.
+	 */
 	public void setTimes(String times) {
 		this.times = times;
 	}
 
+	/**
+	 * <p>Getter for the field <code>values</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValues() {
 		return this.values;
 	}
+	/**
+	 * <p>Setter for the field <code>values</code>.</p>
+	 *
+	 * @param values a {@link java.lang.String} object.
+	 */
 	public void setValues(String values) {
 		this.values = values;
 	}

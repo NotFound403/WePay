@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 吱口令解码接口
  *
  * @author auto create
- * @since 1.0, 2016-12-22 21:53:37
+ * @version $Id: $Id
  */
 public class AlipayMarketingSharetokenDecodeModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayMarketingSharetokenDecodeModel extends AlipayObject {
 	@ApiField("token")
 	private String token;
 
+	/**
+	 * <p>Getter for the field <code>codeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodeType() {
 		return this.codeType;
 	}
+	/**
+	 * <p>Setter for the field <code>codeType</code>.</p>
+	 *
+	 * @param codeType a {@link java.lang.String} object.
+	 */
 	public void setCodeType(String codeType) {
 		this.codeType = codeType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtData() {
 		return this.extData;
 	}
+	/**
+	 * <p>Setter for the field <code>extData</code>.</p>
+	 *
+	 * @param extData a {@link java.lang.String} object.
+	 */
 	public void setExtData(String extData) {
 		this.extData = extData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>token</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToken() {
 		return this.token;
 	}
+	/**
+	 * <p>Setter for the field <code>token</code>.</p>
+	 *
+	 * @param token a {@link java.lang.String} object.
+	 */
 	public void setToken(String token) {
 		this.token = token;
 	}

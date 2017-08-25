@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 物业社区通知通告图片
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:39
+ * @version $Id: $Id
  */
 public class CplifeNoticeImg extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class CplifeNoticeImg extends AlipayObject {
 	@ApiField("thumbnail_url")
 	private String thumbnailUrl;
 
+	/**
+	 * <p>Getter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageUrl() {
 		return this.imageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @param imageUrl a {@link java.lang.String} object.
+	 */
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thumbnailUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThumbnailUrl() {
 		return this.thumbnailUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>thumbnailUrl</code>.</p>
+	 *
+	 * @param thumbnailUrl a {@link java.lang.String} object.
+	 */
 	public void setThumbnailUrl(String thumbnailUrl) {
 		this.thumbnailUrl = thumbnailUrl;
 	}

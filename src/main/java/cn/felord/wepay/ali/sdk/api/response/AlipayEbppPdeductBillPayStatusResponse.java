@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.ebpp.pdeduct.bill.pay.status response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-27 10:27:08
+ * @version $Id: $Id
  */
 public class AlipayEbppPdeductBillPayStatusResponse extends AlipayResponse {
 
@@ -53,44 +53,104 @@ public class AlipayEbppPdeductBillPayStatusResponse extends AlipayResponse {
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Setter for the field <code>agreementId</code>.</p>
+	 *
+	 * @param agreementId a {@link java.lang.String} object.
+	 */
 	public void setAgreementId(String agreementId) {
 		this.agreementId = agreementId;
 	}
+	/**
+	 * <p>Getter for the field <code>agreementId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAgreementId( ) {
 		return this.agreementId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderResultCode</code>.</p>
+	 *
+	 * @param orderResultCode a {@link java.lang.String} object.
+	 */
 	public void setOrderResultCode(String orderResultCode) {
 		this.orderResultCode = orderResultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>orderResultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderResultCode( ) {
 		return this.orderResultCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderResultMsg</code>.</p>
+	 *
+	 * @param orderResultMsg a {@link java.lang.String} object.
+	 */
 	public void setOrderResultMsg(String orderResultMsg) {
 		this.orderResultMsg = orderResultMsg;
 	}
+	/**
+	 * <p>Getter for the field <code>orderResultMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderResultMsg( ) {
 		return this.orderResultMsg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}

@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 芝麻信用风险记录详情
  *
  * @author auto create
- * @since 1.0, 2015-08-18 17:43:26
+ * @version $Id: $Id
  */
 public class ZhimaRiskDetail extends AlipayObject {
 
@@ -69,65 +69,155 @@ public class ZhimaRiskDetail extends AlipayObject {
 	@ApiField("update")
 	private Date update;
 
+	/**
+	 * <p>Getter for the field <code>dataType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDataType() {
 		return this.dataType;
 	}
+	/**
+	 * <p>Setter for the field <code>dataType</code>.</p>
+	 *
+	 * @param dataType a {@link java.lang.String} object.
+	 */
 	public void setDataType(String dataType) {
 		this.dataType = dataType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendinfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendinfo() {
 		return this.extendinfo;
 	}
+	/**
+	 * <p>Setter for the field <code>extendinfo</code>.</p>
+	 *
+	 * @param extendinfo a {@link java.lang.String} object.
+	 */
 	public void setExtendinfo(String extendinfo) {
 		this.extendinfo = extendinfo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>riskCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRiskCode() {
 		return this.riskCode;
 	}
+	/**
+	 * <p>Setter for the field <code>riskCode</code>.</p>
+	 *
+	 * @param riskCode a {@link java.lang.String} object.
+	 */
 	public void setRiskCode(String riskCode) {
 		this.riskCode = riskCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>riskType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRiskType() {
 		return this.riskType;
 	}
+	/**
+	 * <p>Setter for the field <code>riskType</code>.</p>
+	 *
+	 * @param riskType a {@link java.lang.String} object.
+	 */
 	public void setRiskType(String riskType) {
 		this.riskType = riskType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>settlement</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSettlement() {
 		return this.settlement;
 	}
+	/**
+	 * <p>Setter for the field <code>settlement</code>.</p>
+	 *
+	 * @param settlement a {@link java.lang.String} object.
+	 */
 	public void setSettlement(String settlement) {
 		this.settlement = settlement;
 	}
 
+	/**
+	 * <p>Getter for the field <code>statement</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatement() {
 		return this.statement;
 	}
+	/**
+	 * <p>Setter for the field <code>statement</code>.</p>
+	 *
+	 * @param statement a {@link java.lang.String} object.
+	 */
 	public void setStatement(String statement) {
 		this.statement = statement;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/**
+	 * <p>Getter for the field <code>update</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getUpdate() {
 		return this.update;
 	}
+	/**
+	 * <p>Setter for the field <code>update</code>.</p>
+	 *
+	 * @param update a {@link java.util.Date} object.
+	 */
 	public void setUpdate(Date update) {
 		this.update = update;
 	}

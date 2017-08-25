@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 根据条件查询推荐菜
  *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:41
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataDishdiagnoseBatchqueryModel extends AlipayObject {
 
@@ -38,30 +38,70 @@ public class KoubeiMarketingDataDishdiagnoseBatchqueryModel extends AlipayObject
 	@ApiField("report_date")
 	private String reportDate;
 
+	/**
+	 * <p>Getter for the field <code>itemDiagnoseType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemDiagnoseType() {
 		return this.itemDiagnoseType;
 	}
+	/**
+	 * <p>Setter for the field <code>itemDiagnoseType</code>.</p>
+	 *
+	 * @param itemDiagnoseType a {@link java.lang.String} object.
+	 */
 	public void setItemDiagnoseType(String itemDiagnoseType) {
 		this.itemDiagnoseType = itemDiagnoseType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageNo() {
 		return this.pageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNo</code>.</p>
+	 *
+	 * @param pageNo a {@link java.lang.Long} object.
+	 */
 	public void setPageNo(Long pageNo) {
 		this.pageNo = pageNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportDate() {
 		return this.reportDate;
 	}
+	/**
+	 * <p>Setter for the field <code>reportDate</code>.</p>
+	 *
+	 * @param reportDate a {@link java.lang.String} object.
+	 */
 	public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
 	}

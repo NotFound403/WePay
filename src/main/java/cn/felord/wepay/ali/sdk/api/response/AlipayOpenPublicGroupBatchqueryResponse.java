@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.group.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-14 11:01:42
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicGroupBatchqueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayOpenPublicGroupBatchqueryResponse extends AlipayResponse {
 	@ApiField("query_group")
 	private List<QueryGroup> groups;
 
+	/**
+	 * <p>Setter for the field <code>groups</code>.</p>
+	 *
+	 * @param groups a {@link java.util.List} object.
+	 */
 	public void setGroups(List<QueryGroup> groups) {
 		this.groups = groups;
 	}
+	/**
+	 * <p>Getter for the field <code>groups</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<QueryGroup> getGroups( ) {
 		return this.groups;
 	}

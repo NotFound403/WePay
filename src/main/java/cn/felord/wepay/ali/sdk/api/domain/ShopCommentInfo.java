@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 门店评分信息模型
  *
  * @author auto create
- * @since 1.0, 2017-02-15 10:04:25
+ * @version $Id: $Id
  */
 public class ShopCommentInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class ShopCommentInfo extends AlipayObject {
 	@ApiField("star")
 	private String star;
 
+	/**
+	 * <p>Getter for the field <code>score</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getScore() {
 		return this.score;
 	}
+	/**
+	 * <p>Setter for the field <code>score</code>.</p>
+	 *
+	 * @param score a {@link java.lang.String} object.
+	 */
 	public void setScore(String score) {
 		this.score = score;
 	}
 
+	/**
+	 * <p>Getter for the field <code>star</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStar() {
 		return this.star;
 	}
+	/**
+	 * <p>Setter for the field <code>star</code>.</p>
+	 *
+	 * @param star a {@link java.lang.String} object.
+	 */
 	public void setStar(String star) {
 		this.star = star;
 	}

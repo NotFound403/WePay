@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.account.freeze.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-11 15:48:05
+ * @version $Id: $Id
  */
 public class AlipayUserAccountFreezeGetResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayUserAccountFreezeGetResponse extends AlipayResponse {
 	@ApiField("total_results")
 	private String totalResults;
 
+	/**
+	 * <p>Setter for the field <code>freezeItems</code>.</p>
+	 *
+	 * @param freezeItems a {@link java.util.List} object.
+	 */
 	public void setFreezeItems(List<AccountFreeze> freezeItems) {
 		this.freezeItems = freezeItems;
 	}
+	/**
+	 * <p>Getter for the field <code>freezeItems</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AccountFreeze> getFreezeItems( ) {
 		return this.freezeItems;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalResults</code>.</p>
+	 *
+	 * @param totalResults a {@link java.lang.String} object.
+	 */
 	public void setTotalResults(String totalResults) {
 		this.totalResults = totalResults;
 	}
+	/**
+	 * <p>Getter for the field <code>totalResults</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalResults( ) {
 		return this.totalResults;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询机构英文名称
  *
  * @author auto create
- * @since 1.0, 2017-06-22 16:17:10
+ * @version $Id: $Id
  */
 public class AlipayEbppProdmodeInstshortnameQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEbppProdmodeInstshortnameQueryModel extends AlipayObject {
 	@ApiField("chargeinst_cn_name")
 	private String chargeinstCnName;
 
+	/**
+	 * <p>Getter for the field <code>chargeinstCnName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChargeinstCnName() {
 		return this.chargeinstCnName;
 	}
+	/**
+	 * <p>Setter for the field <code>chargeinstCnName</code>.</p>
+	 *
+	 * @param chargeinstCnName a {@link java.lang.String} object.
+	 */
 	public void setChargeinstCnName(String chargeinstCnName) {
 		this.chargeinstCnName = chargeinstCnName;
 	}

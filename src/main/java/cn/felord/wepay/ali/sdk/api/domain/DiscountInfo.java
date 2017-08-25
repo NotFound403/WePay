@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 广告投放优惠模型
  *
  * @author auto create
- * @since 1.0, 2017-06-21 11:45:12
+ * @version $Id: $Id
  */
 public class DiscountInfo extends AlipayObject {
 
@@ -150,156 +150,376 @@ public class DiscountInfo extends AlipayObject {
 	@ApiField("vol_type")
 	private String volType;
 
+	/**
+	 * <p>Getter for the field <code>applyCondition</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyCondition() {
 		return this.applyCondition;
 	}
+	/**
+	 * <p>Setter for the field <code>applyCondition</code>.</p>
+	 *
+	 * @param applyCondition a {@link java.lang.String} object.
+	 */
 	public void setApplyCondition(String applyCondition) {
 		this.applyCondition = applyCondition;
 	}
 
+	/**
+	 * <p>Getter for the field <code>buySendDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuySendDesc() {
 		return this.buySendDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>buySendDesc</code>.</p>
+	 *
+	 * @param buySendDesc a {@link java.lang.String} object.
+	 */
 	public void setBuySendDesc(String buySendDesc) {
 		this.buySendDesc = buySendDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>discount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDiscount() {
 		return this.discount;
 	}
+	/**
+	 * <p>Setter for the field <code>discount</code>.</p>
+	 *
+	 * @param discount a {@link java.lang.String} object.
+	 */
 	public void setDiscount(String discount) {
 		this.discount = discount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>distance</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDistance() {
 		return this.distance;
 	}
+	/**
+	 * <p>Setter for the field <code>distance</code>.</p>
+	 *
+	 * @param distance a {@link java.lang.String} object.
+	 */
 	public void setDistance(String distance) {
 		this.distance = distance;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.lang.String} object.
+	 */
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageUrl() {
 		return this.imageUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>imageUrl</code>.</p>
+	 *
+	 * @param imageUrl a {@link java.lang.String} object.
+	 */
 	public void setImageUrl(String imageUrl) {
 		this.imageUrl = imageUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId() {
 		return this.itemId;
 	}
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemName() {
 		return this.itemName;
 	}
+	/**
+	 * <p>Setter for the field <code>itemName</code>.</p>
+	 *
+	 * @param itemName a {@link java.lang.String} object.
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>label</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLabel() {
 		return this.label;
 	}
+	/**
+	 * <p>Setter for the field <code>label</code>.</p>
+	 *
+	 * @param label a {@link java.lang.String} object.
+	 */
 	public void setLabel(String label) {
 		this.label = label;
 	}
 
+	/**
+	 * <p>Getter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOriginalPrice() {
 		return this.originalPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>originalPrice</code>.</p>
+	 *
+	 * @param originalPrice a {@link java.lang.String} object.
+	 */
 	public void setOriginalPrice(String originalPrice) {
 		this.originalPrice = originalPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>perPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPerPrice() {
 		return this.perPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>perPrice</code>.</p>
+	 *
+	 * @param perPrice a {@link java.lang.String} object.
+	 */
 	public void setPerPrice(String perPrice) {
 		this.perPrice = perPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>price</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrice() {
 		return this.price;
 	}
+	/**
+	 * <p>Setter for the field <code>price</code>.</p>
+	 *
+	 * @param price a {@link java.lang.String} object.
+	 */
 	public void setPrice(String price) {
 		this.price = price;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReason() {
 		return this.reason;
 	}
+	/**
+	 * <p>Setter for the field <code>reason</code>.</p>
+	 *
+	 * @param reason a {@link java.lang.String} object.
+	 */
 	public void setReason(String reason) {
 		this.reason = reason;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendItemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSendItemName() {
 		return this.sendItemName;
 	}
+	/**
+	 * <p>Setter for the field <code>sendItemName</code>.</p>
+	 *
+	 * @param sendItemName a {@link java.lang.String} object.
+	 */
 	public void setSendItemName(String sendItemName) {
 		this.sendItemName = sendItemName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopName() {
 		return this.shopName;
 	}
+	/**
+	 * <p>Setter for the field <code>shopName</code>.</p>
+	 *
+	 * @param shopName a {@link java.lang.String} object.
+	 */
 	public void setShopName(String shopName) {
 		this.shopName = shopName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sold</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSold() {
 		return this.sold;
 	}
+	/**
+	 * <p>Setter for the field <code>sold</code>.</p>
+	 *
+	 * @param sold a {@link java.lang.String} object.
+	 */
 	public void setSold(String sold) {
 		this.sold = sold;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.util.Date} object.
+	 */
 	public void setStartTime(Date startTime) {
 		this.startTime = startTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thresholdPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThresholdPrice() {
 		return this.thresholdPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>thresholdPrice</code>.</p>
+	 *
+	 * @param thresholdPrice a {@link java.lang.String} object.
+	 */
 	public void setThresholdPrice(String thresholdPrice) {
 		this.thresholdPrice = thresholdPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>topPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTopPrice() {
 		return this.topPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>topPrice</code>.</p>
+	 *
+	 * @param topPrice a {@link java.lang.String} object.
+	 */
 	public void setTopPrice(String topPrice) {
 		this.topPrice = topPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}
 
+	/**
+	 * <p>Getter for the field <code>volType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVolType() {
 		return this.volType;
 	}
+	/**
+	 * <p>Setter for the field <code>volType</code>.</p>
+	 *
+	 * @param volType a {@link java.lang.String} object.
+	 */
 	public void setVolType(String volType) {
 		this.volType = volType;
 	}

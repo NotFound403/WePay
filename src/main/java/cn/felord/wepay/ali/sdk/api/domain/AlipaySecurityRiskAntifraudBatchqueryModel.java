@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 反舞弊风险批量查询
  *
  * @author auto create
- * @since 1.0, 2017-07-20 10:50:29
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskAntifraudBatchqueryModel extends AlipayObject {
 
@@ -36,23 +36,53 @@ public class AlipaySecurityRiskAntifraudBatchqueryModel extends AlipayObject {
 	@ApiField("string")
 	private List<String> staffList;
 
+	/**
+	 * <p>Getter for the field <code>companyList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getCompanyList() {
 		return this.companyList;
 	}
+	/**
+	 * <p>Setter for the field <code>companyList</code>.</p>
+	 *
+	 * @param companyList a {@link java.util.List} object.
+	 */
 	public void setCompanyList(List<String> companyList) {
 		this.companyList = companyList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>partnerName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerName() {
 		return this.partnerName;
 	}
+	/**
+	 * <p>Setter for the field <code>partnerName</code>.</p>
+	 *
+	 * @param partnerName a {@link java.lang.String} object.
+	 */
 	public void setPartnerName(String partnerName) {
 		this.partnerName = partnerName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>staffList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getStaffList() {
 		return this.staffList;
 	}
+	/**
+	 * <p>Setter for the field <code>staffList</code>.</p>
+	 *
+	 * @param staffList a {@link java.util.List} object.
+	 */
 	public void setStaffList(List<String> staffList) {
 		this.staffList = staffList;
 	}

@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 合约查询结果bean
  *
  * @author auto create
- * @since 1.0, 2017-03-10 17:03:54
+ * @version $Id: $Id
  */
 public class ArrangementOpenQueryResultVO extends AlipayObject {
 
@@ -55,44 +55,104 @@ public class ArrangementOpenQueryResultVO extends AlipayObject {
 	@ApiField("valid_date")
 	private Date validDate;
 
+	/**
+	 * <p>Getter for the field <code>arNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArNo() {
 		return this.arNo;
 	}
+	/**
+	 * <p>Setter for the field <code>arNo</code>.</p>
+	 *
+	 * @param arNo a {@link java.lang.String} object.
+	 */
 	public void setArNo(String arNo) {
 		this.arNo = arNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArStatus() {
 		return this.arStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>arStatus</code>.</p>
+	 *
+	 * @param arStatus a {@link java.lang.String} object.
+	 */
 	public void setArStatus(String arStatus) {
 		this.arStatus = arStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtData() {
 		return this.extData;
 	}
+	/**
+	 * <p>Setter for the field <code>extData</code>.</p>
+	 *
+	 * @param extData a {@link java.lang.String} object.
+	 */
 	public void setExtData(String extData) {
 		this.extData = extData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>invalidDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getInvalidDate() {
 		return this.invalidDate;
 	}
+	/**
+	 * <p>Setter for the field <code>invalidDate</code>.</p>
+	 *
+	 * @param invalidDate a {@link java.util.Date} object.
+	 */
 	public void setInvalidDate(Date invalidDate) {
 		this.invalidDate = invalidDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>signDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getSignDate() {
 		return this.signDate;
 	}
+	/**
+	 * <p>Setter for the field <code>signDate</code>.</p>
+	 *
+	 * @param signDate a {@link java.util.Date} object.
+	 */
 	public void setSignDate(Date signDate) {
 		this.signDate = signDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>validDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getValidDate() {
 		return this.validDate;
 	}
+	/**
+	 * <p>Setter for the field <code>validDate</code>.</p>
+	 *
+	 * @param validDate a {@link java.util.Date} object.
+	 */
 	public void setValidDate(Date validDate) {
 		this.validDate = validDate;
 	}

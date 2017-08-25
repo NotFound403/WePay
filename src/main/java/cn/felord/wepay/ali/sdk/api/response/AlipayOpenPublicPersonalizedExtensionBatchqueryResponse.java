@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.personalized.extension.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-27 18:17:28
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicPersonalizedExtensionBatchqueryResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayOpenPublicPersonalizedExtensionBatchqueryResponse extends Ali
 	@ApiField("query_extension")
 	private List<QueryExtension> extensions;
 
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.Long} object.
+	 */
 	public void setCount(Long count) {
 		this.count = count;
 	}
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCount( ) {
 		return this.count;
 	}
 
+	/**
+	 * <p>Setter for the field <code>extensions</code>.</p>
+	 *
+	 * @param extensions a {@link java.util.List} object.
+	 */
 	public void setExtensions(List<QueryExtension> extensions) {
 		this.extensions = extensions;
 	}
+	/**
+	 * <p>Getter for the field <code>extensions</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<QueryExtension> getExtensions( ) {
 		return this.extensions;
 	}

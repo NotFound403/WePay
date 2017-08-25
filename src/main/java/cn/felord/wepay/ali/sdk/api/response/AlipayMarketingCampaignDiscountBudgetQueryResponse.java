@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.discount.budget.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-08 12:53:45
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDiscountBudgetQueryResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class AlipayMarketingCampaignDiscountBudgetQueryResponse extends AlipayRe
 	@ApiField("used_amount")
 	private String usedAmount;
 
+	/**
+	 * <p>Setter for the field <code>budgetId</code>.</p>
+	 *
+	 * @param budgetId a {@link java.lang.String} object.
+	 */
 	public void setBudgetId(String budgetId) {
 		this.budgetId = budgetId;
 	}
+	/**
+	 * <p>Getter for the field <code>budgetId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBudgetId( ) {
 		return this.budgetId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>usedAmount</code>.</p>
+	 *
+	 * @param usedAmount a {@link java.lang.String} object.
+	 */
 	public void setUsedAmount(String usedAmount) {
 		this.usedAmount = usedAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>usedAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUsedAmount( ) {
 		return this.usedAmount;
 	}

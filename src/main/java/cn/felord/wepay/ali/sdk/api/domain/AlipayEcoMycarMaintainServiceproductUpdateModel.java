@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 洗车保养服务商品变更
  *
  * @author auto create
- * @since 1.0, 2017-04-12 11:49:05
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarMaintainServiceproductUpdateModel extends AlipayObject {
 
@@ -32,23 +32,53 @@ public class AlipayEcoMycarMaintainServiceproductUpdateModel extends AlipayObjec
 	@ApiField("shop_product")
 	private MaitainShopProduct shopProduct;
 
+	/**
+	 * <p>Getter for the field <code>operationType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperationType() {
 		return this.operationType;
 	}
+	/**
+	 * <p>Setter for the field <code>operationType</code>.</p>
+	 *
+	 * @param operationType a {@link java.lang.String} object.
+	 */
 	public void setOperationType(String operationType) {
 		this.operationType = operationType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outProductId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutProductId() {
 		return this.outProductId;
 	}
+	/**
+	 * <p>Setter for the field <code>outProductId</code>.</p>
+	 *
+	 * @param outProductId a {@link java.lang.String} object.
+	 */
 	public void setOutProductId(String outProductId) {
 		this.outProductId = outProductId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopProduct</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.MaitainShopProduct} object.
+	 */
 	public MaitainShopProduct getShopProduct() {
 		return this.shopProduct;
 	}
+	/**
+	 * <p>Setter for the field <code>shopProduct</code>.</p>
+	 *
+	 * @param shopProduct a {@link cn.felord.wepay.ali.sdk.api.domain.MaitainShopProduct} object.
+	 */
 	public void setShopProduct(MaitainShopProduct shopProduct) {
 		this.shopProduct = shopProduct;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 全息信用2.0中提供给上数业务用于查询支付宝用户的人脉因子和多头因子接口
  *
  * @author auto create
- * @since 1.0, 2017-07-21 16:40:25
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceHolographicFactorQueryModel extends AlipayObject {
 
@@ -83,44 +83,104 @@ public class AlipayDataDataserviceHolographicFactorQueryModel extends AlipayObje
 	@ApiField("user_name")
 	private String userName;
 
+	/**
+	 * <p>Getter for the field <code>bizId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizId() {
 		return this.bizId;
 	}
+	/**
+	 * <p>Setter for the field <code>bizId</code>.</p>
+	 *
+	 * @param bizId a {@link java.lang.String} object.
+	 */
 	public void setBizId(String bizId) {
 		this.bizId = bizId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactInfoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<HoloGraphicContactInfo> getContactInfoList() {
 		return this.contactInfoList;
 	}
+	/**
+	 * <p>Setter for the field <code>contactInfoList</code>.</p>
+	 *
+	 * @param contactInfoList a {@link java.util.List} object.
+	 */
 	public void setContactInfoList(List<HoloGraphicContactInfo> contactInfoList) {
 		this.contactInfoList = contactInfoList;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isvFeature</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsvFeature() {
 		return this.isvFeature;
 	}
+	/**
+	 * <p>Setter for the field <code>isvFeature</code>.</p>
+	 *
+	 * @param isvFeature a {@link java.lang.String} object.
+	 */
 	public void setIsvFeature(String isvFeature) {
 		this.isvFeature = isvFeature;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserName() {
 		return this.userName;
 	}
+	/**
+	 * <p>Setter for the field <code>userName</code>.</p>
+	 *
+	 * @param userName a {@link java.lang.String} object.
+	 */
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}

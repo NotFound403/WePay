@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.marketing.voucher.code.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-23 17:58:11
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketingVoucherCodeUploadResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOfflineMarketingVoucherCodeUploadResponse extends AlipayRespo
 	@ApiField("code_inventory_id")
 	private String codeInventoryId;
 
+	/**
+	 * <p>Setter for the field <code>codeInventoryId</code>.</p>
+	 *
+	 * @param codeInventoryId a {@link java.lang.String} object.
+	 */
 	public void setCodeInventoryId(String codeInventoryId) {
 		this.codeInventoryId = codeInventoryId;
 	}
+	/**
+	 * <p>Getter for the field <code>codeInventoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCodeInventoryId( ) {
 		return this.codeInventoryId;
 	}

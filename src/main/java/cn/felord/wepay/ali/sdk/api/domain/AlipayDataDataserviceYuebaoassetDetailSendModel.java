@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 余额宝资产端数据录入
  *
  * @author auto create
- * @since 1.0, 2016-12-22 21:53:37
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceYuebaoassetDetailSendModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayDataDataserviceYuebaoassetDetailSendModel extends AlipayObjec
 	@ApiField("alm_report_data")
 	private List<AlmReportData> almReportData;
 
+	/**
+	 * <p>Getter for the field <code>almReportData</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AlmReportData> getAlmReportData() {
 		return this.almReportData;
 	}
+	/**
+	 * <p>Setter for the field <code>almReportData</code>.</p>
+	 *
+	 * @param almReportData a {@link java.util.List} object.
+	 */
 	public void setAlmReportData(List<AlmReportData> almReportData) {
 		this.almReportData = almReportData;
 	}

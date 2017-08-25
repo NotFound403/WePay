@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.item.extitem.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-06 10:48:25
+ * @version $Id: $Id
  */
 public class KoubeiItemExtitemCreateResponse extends AlipayResponse {
 

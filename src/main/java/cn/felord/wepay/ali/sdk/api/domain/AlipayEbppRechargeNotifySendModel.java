@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 发送支付宝手机充值超时提醒与补偿
  *
  * @author auto create
- * @since 1.0, 2017-06-06 15:12:19
+ * @version $Id: $Id
  */
 public class AlipayEbppRechargeNotifySendModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class AlipayEbppRechargeNotifySendModel extends AlipayObject {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Getter for the field <code>facePrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFacePrice() {
 		return this.facePrice;
 	}
+	/**
+	 * <p>Setter for the field <code>facePrice</code>.</p>
+	 *
+	 * @param facePrice a {@link java.lang.String} object.
+	 */
 	public void setFacePrice(String facePrice) {
 		this.facePrice = facePrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtCharge</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtCharge() {
 		return this.gmtCharge;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtCharge</code>.</p>
+	 *
+	 * @param gmtCharge a {@link java.lang.String} object.
+	 */
 	public void setGmtCharge(String gmtCharge) {
 		this.gmtCharge = gmtCharge;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>notifyType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNotifyType() {
 		return this.notifyType;
 	}
+	/**
+	 * <p>Setter for the field <code>notifyType</code>.</p>
+	 *
+	 * @param notifyType a {@link java.lang.String} object.
+	 */
 	public void setNotifyType(String notifyType) {
 		this.notifyType = notifyType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutUserId() {
 		return this.outUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>outUserId</code>.</p>
+	 *
+	 * @param outUserId a {@link java.lang.String} object.
+	 */
 	public void setOutUserId(String outUserId) {
 		this.outUserId = outUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo() {
 		return this.tradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId() {
 		return this.userId;
 	}
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}

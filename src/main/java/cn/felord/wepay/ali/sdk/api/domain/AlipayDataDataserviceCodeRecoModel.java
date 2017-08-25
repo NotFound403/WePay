@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 改api为数立提供验证码识别服务。isv可以通过该接口，使用我们的图片识别能力。
  *
  * @author auto create
- * @since 1.0, 2016-06-02 14:27:04
+ * @version $Id: $Id
  */
 public class AlipayDataDataserviceCodeRecoModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayDataDataserviceCodeRecoModel extends AlipayObject {
 	@ApiField("strategy")
 	private String strategy;
 
+	/**
+	 * <p>Getter for the field <code>config</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConfig() {
 		return this.config;
 	}
+	/**
+	 * <p>Setter for the field <code>config</code>.</p>
+	 *
+	 * @param config a {@link java.lang.String} object.
+	 */
 	public void setConfig(String config) {
 		this.config = config;
 	}
 
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent() {
 		return this.content;
 	}
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
 
+	/**
+	 * <p>Getter for the field <code>strategy</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStrategy() {
 		return this.strategy;
 	}
+	/**
+	 * <p>Setter for the field <code>strategy</code>.</p>
+	 *
+	 * @param strategy a {@link java.lang.String} object.
+	 */
 	public void setStrategy(String strategy) {
 		this.strategy = strategy;
 	}

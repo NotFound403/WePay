@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.offline.marketing.voucher.use response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-23 17:57:58
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketingVoucherUseResponse extends AlipayResponse {
 

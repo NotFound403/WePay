@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.quality.test.cloudacpt.activity.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-15 15:07:41
+ * @version $Id: $Id
  */
 public class KoubeiQualityTestCloudacptActivityQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiQualityTestCloudacptActivityQueryResponse extends AlipayRespo
 	@ApiField("open_activity")
 	private List<OpenActivity> activityList;
 
+	/**
+	 * <p>Setter for the field <code>activityList</code>.</p>
+	 *
+	 * @param activityList a {@link java.util.List} object.
+	 */
 	public void setActivityList(List<OpenActivity> activityList) {
 		this.activityList = activityList;
 	}
+	/**
+	 * <p>Getter for the field <code>activityList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OpenActivity> getActivityList( ) {
 		return this.activityList;
 	}

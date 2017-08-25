@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.msg.recall response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-19 20:51:25
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeMsgRecallResponse extends AlipayResponse {
 

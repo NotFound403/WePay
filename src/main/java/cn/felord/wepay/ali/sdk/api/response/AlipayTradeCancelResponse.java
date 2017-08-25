@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trade.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-23 10:05:50
+ * @version $Id: $Id
  */
 public class AlipayTradeCancelResponse extends AlipayResponse {
 
@@ -40,30 +40,70 @@ refund：产生了退款
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Setter for the field <code>action</code>.</p>
+	 *
+	 * @param action a {@link java.lang.String} object.
+	 */
 	public void setAction(String action) {
 		this.action = action;
 	}
+	/**
+	 * <p>Getter for the field <code>action</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAction( ) {
 		return this.action;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>retryFlag</code>.</p>
+	 *
+	 * @param retryFlag a {@link java.lang.String} object.
+	 */
 	public void setRetryFlag(String retryFlag) {
 		this.retryFlag = retryFlag;
 	}
+	/**
+	 * <p>Getter for the field <code>retryFlag</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRetryFlag( ) {
 		return this.retryFlag;
 	}
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}

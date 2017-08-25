@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 获取生产指令接口
  *
  * @author auto create
- * @since 1.0, 2017-06-30 10:14:49
+ * @version $Id: $Id
  */
 public class AntMerchantExpandAssetproduceAssignQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AntMerchantExpandAssetproduceAssignQueryModel extends AlipayObject 
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}

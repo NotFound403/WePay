@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.account.exrate.advice.accept response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-23 14:55:42
+ * @version $Id: $Id
  */
 public class AlipayAccountExrateAdviceAcceptResponse extends AlipayResponse {
 
@@ -100,93 +100,223 @@ r1
 	@ApiField("value_date")
 	private String valueDate;
 
+	/**
+	 * <p>Setter for the field <code>clientId</code>.</p>
+	 *
+	 * @param clientId a {@link java.lang.String} object.
+	 */
 	public void setClientId(String clientId) {
 		this.clientId = clientId;
 	}
+	/**
+	 * <p>Getter for the field <code>clientId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getClientId( ) {
 		return this.clientId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contraAmount</code>.</p>
+	 *
+	 * @param contraAmount a {@link java.lang.String} object.
+	 */
 	public void setContraAmount(String contraAmount) {
 		this.contraAmount = contraAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>contraAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContraAmount( ) {
 		return this.contraAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contraCcy</code>.</p>
+	 *
+	 * @param contraCcy a {@link java.lang.String} object.
+	 */
 	public void setContraCcy(String contraCcy) {
 		this.contraCcy = contraCcy;
 	}
+	/**
+	 * <p>Getter for the field <code>contraCcy</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContraCcy( ) {
 		return this.contraCcy;
 	}
 
+	/**
+	 * <p>Setter for the field <code>dealRef</code>.</p>
+	 *
+	 * @param dealRef a {@link java.lang.String} object.
+	 */
 	public void setDealRef(String dealRef) {
 		this.dealRef = dealRef;
 	}
+	/**
+	 * <p>Getter for the field <code>dealRef</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDealRef( ) {
 		return this.dealRef;
 	}
 
+	/**
+	 * <p>Setter for the field <code>dealtRate</code>.</p>
+	 *
+	 * @param dealtRate a {@link java.lang.String} object.
+	 */
 	public void setDealtRate(String dealtRate) {
 		this.dealtRate = dealtRate;
 	}
+	/**
+	 * <p>Getter for the field <code>dealtRate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDealtRate( ) {
 		return this.dealtRate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>duplicate</code>.</p>
+	 *
+	 * @param duplicate a {@link java.lang.Boolean} object.
+	 */
 	public void setDuplicate(Boolean duplicate) {
 		this.duplicate = duplicate;
 	}
+	/**
+	 * <p>Getter for the field <code>duplicate</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getDuplicate( ) {
 		return this.duplicate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>messagId</code>.</p>
+	 *
+	 * @param messagId a {@link java.lang.String} object.
+	 */
 	public void setMessagId(String messagId) {
 		this.messagId = messagId;
 	}
+	/**
+	 * <p>Getter for the field <code>messagId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMessagId( ) {
 		return this.messagId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>msgType</code>.</p>
+	 *
+	 * @param msgType a {@link java.lang.String} object.
+	 */
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
+	/**
+	 * <p>Getter for the field <code>msgType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsgType( ) {
 		return this.msgType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>requestedRateStatus</code>.</p>
+	 *
+	 * @param requestedRateStatus a {@link java.lang.String} object.
+	 */
 	public void setRequestedRateStatus(String requestedRateStatus) {
 		this.requestedRateStatus = requestedRateStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>requestedRateStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestedRateStatus( ) {
 		return this.requestedRateStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>side</code>.</p>
+	 *
+	 * @param side a {@link java.lang.String} object.
+	 */
 	public void setSide(String side) {
 		this.side = side;
 	}
+	/**
+	 * <p>Getter for the field <code>side</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSide( ) {
 		return this.side;
 	}
 
+	/**
+	 * <p>Setter for the field <code>transactionAmount</code>.</p>
+	 *
+	 * @param transactionAmount a {@link java.lang.String} object.
+	 */
 	public void setTransactionAmount(String transactionAmount) {
 		this.transactionAmount = transactionAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>transactionAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransactionAmount( ) {
 		return this.transactionAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>transactionCcy</code>.</p>
+	 *
+	 * @param transactionCcy a {@link java.lang.String} object.
+	 */
 	public void setTransactionCcy(String transactionCcy) {
 		this.transactionCcy = transactionCcy;
 	}
+	/**
+	 * <p>Getter for the field <code>transactionCcy</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransactionCcy( ) {
 		return this.transactionCcy;
 	}
 
+	/**
+	 * <p>Setter for the field <code>valueDate</code>.</p>
+	 *
+	 * @param valueDate a {@link java.lang.String} object.
+	 */
 	public void setValueDate(String valueDate) {
 		this.valueDate = valueDate;
 	}
+	/**
+	 * <p>Getter for the field <code>valueDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getValueDate( ) {
 		return this.valueDate;
 	}

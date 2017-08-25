@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 统一收单合并支付预创建接口
  *
  * @author auto create
- * @since 1.0, 2016-08-24 15:18:45
+ * @version $Id: $Id
  */
 public class AlipayTradeMergePrecreateModel extends AlipayObject {
 
@@ -36,23 +36,53 @@ public class AlipayTradeMergePrecreateModel extends AlipayObject {
 	@ApiField("timeout_express")
 	private String timeoutExpress;
 
+	/**
+	 * <p>Getter for the field <code>orderDetails</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OrderDetail> getOrderDetails() {
 		return this.orderDetails;
 	}
+	/**
+	 * <p>Setter for the field <code>orderDetails</code>.</p>
+	 *
+	 * @param orderDetails a {@link java.util.List} object.
+	 */
 	public void setOrderDetails(List<OrderDetail> orderDetails) {
 		this.orderDetails = orderDetails;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outMergeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutMergeNo() {
 		return this.outMergeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outMergeNo</code>.</p>
+	 *
+	 * @param outMergeNo a {@link java.lang.String} object.
+	 */
 	public void setOutMergeNo(String outMergeNo) {
 		this.outMergeNo = outMergeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeoutExpress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimeoutExpress() {
 		return this.timeoutExpress;
 	}
+	/**
+	 * <p>Setter for the field <code>timeoutExpress</code>.</p>
+	 *
+	 * @param timeoutExpress a {@link java.lang.String} object.
+	 */
 	public void setTimeoutExpress(String timeoutExpress) {
 		this.timeoutExpress = timeoutExpress;
 	}

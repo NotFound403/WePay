@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 网商银行融资平台协议查询接口
  *
  * @author auto create
- * @since 1.0, 2017-03-10 17:03:54
+ * @version $Id: $Id
  */
 public class MybankCreditLoanapplyArrangementQueryModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class MybankCreditLoanapplyArrangementQueryModel extends AlipayObject {
 	@ApiField("site_user_id")
 	private String siteUserId;
 
+	/**
+	 * <p>Getter for the field <code>arPdCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArPdCode() {
 		return this.arPdCode;
 	}
+	/**
+	 * <p>Setter for the field <code>arPdCode</code>.</p>
+	 *
+	 * @param arPdCode a {@link java.lang.String} object.
+	 */
 	public void setArPdCode(String arPdCode) {
 		this.arPdCode = arPdCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ipId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIpId() {
 		return this.ipId;
 	}
+	/**
+	 * <p>Setter for the field <code>ipId</code>.</p>
+	 *
+	 * @param ipId a {@link java.lang.String} object.
+	 */
 	public void setIpId(String ipId) {
 		this.ipId = ipId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIpRoleId() {
 		return this.ipRoleId;
 	}
+	/**
+	 * <p>Setter for the field <code>ipRoleId</code>.</p>
+	 *
+	 * @param ipRoleId a {@link java.lang.String} object.
+	 */
 	public void setIpRoleId(String ipRoleId) {
 		this.ipRoleId = ipRoleId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>site</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSite() {
 		return this.site;
 	}
+	/**
+	 * <p>Setter for the field <code>site</code>.</p>
+	 *
+	 * @param site a {@link java.lang.String} object.
+	 */
 	public void setSite(String site) {
 		this.site = site;
 	}
 
+	/**
+	 * <p>Getter for the field <code>siteUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSiteUserId() {
 		return this.siteUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>siteUserId</code>.</p>
+	 *
+	 * @param siteUserId a {@link java.lang.String} object.
+	 */
 	public void setSiteUserId(String siteUserId) {
 		this.siteUserId = siteUserId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 合约信息标准VO
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class ArrangementVORes extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class ArrangementVORes extends AlipayObject {
 	@ApiField("arrangement_no")
 	private String arrangementNo;
 
+	/**
+	 * <p>Getter for the field <code>arBase</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementBaseVO} object.
+	 */
 	public ArrangementBaseVO getArBase() {
 		return this.arBase;
 	}
+	/**
+	 * <p>Setter for the field <code>arBase</code>.</p>
+	 *
+	 * @param arBase a {@link cn.felord.wepay.ali.sdk.api.domain.ArrangementBaseVO} object.
+	 */
 	public void setArBase(ArrangementBaseVO arBase) {
 		this.arBase = arBase;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arBsnStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArBsnStatus() {
 		return this.arBsnStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>arBsnStatus</code>.</p>
+	 *
+	 * @param arBsnStatus a {@link java.lang.String} object.
+	 */
 	public void setArBsnStatus(String arBsnStatus) {
 		this.arBsnStatus = arBsnStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arCondition</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArCondition() {
 		return this.arCondition;
 	}
+	/**
+	 * <p>Setter for the field <code>arCondition</code>.</p>
+	 *
+	 * @param arCondition a {@link java.lang.String} object.
+	 */
 	public void setArCondition(String arCondition) {
 		this.arCondition = arCondition;
 	}
 
+	/**
+	 * <p>Getter for the field <code>arrangementNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArrangementNo() {
 		return this.arrangementNo;
 	}
+	/**
+	 * <p>Setter for the field <code>arrangementNo</code>.</p>
+	 *
+	 * @param arrangementNo a {@link java.lang.String} object.
+	 */
 	public void setArrangementNo(String arrangementNo) {
 		this.arrangementNo = arrangementNo;
 	}

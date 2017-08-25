@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 输入域模型集合对象
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:37
+ * @version $Id: $Id
  */
 public class InputFieldModel extends AlipayObject {
 
@@ -59,51 +59,121 @@ public class InputFieldModel extends AlipayObject {
 	@ApiField("validation_rule")
 	private List<ValidationRule> regexpRuleList;
 
+	/**
+	 * <p>Getter for the field <code>defaultValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDefaultValue() {
 		return this.defaultValue;
 	}
+	/**
+	 * <p>Setter for the field <code>defaultValue</code>.</p>
+	 *
+	 * @param defaultValue a {@link java.lang.String} object.
+	 */
 	public void setDefaultValue(String defaultValue) {
 		this.defaultValue = defaultValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fieldName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFieldName() {
 		return this.fieldName;
 	}
+	/**
+	 * <p>Setter for the field <code>fieldName</code>.</p>
+	 *
+	 * @param fieldName a {@link java.lang.String} object.
+	 */
 	public void setFieldName(String fieldName) {
 		this.fieldName = fieldName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fieldTips</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFieldTips() {
 		return this.fieldTips;
 	}
+	/**
+	 * <p>Setter for the field <code>fieldTips</code>.</p>
+	 *
+	 * @param fieldTips a {@link java.lang.String} object.
+	 */
 	public void setFieldTips(String fieldTips) {
 		this.fieldTips = fieldTips;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fieldTitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFieldTitle() {
 		return this.fieldTitle;
 	}
+	/**
+	 * <p>Setter for the field <code>fieldTitle</code>.</p>
+	 *
+	 * @param fieldTitle a {@link java.lang.String} object.
+	 */
 	public void setFieldTitle(String fieldTitle) {
 		this.fieldTitle = fieldTitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fieldType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFieldType() {
 		return this.fieldType;
 	}
+	/**
+	 * <p>Setter for the field <code>fieldType</code>.</p>
+	 *
+	 * @param fieldType a {@link java.lang.String} object.
+	 */
 	public void setFieldType(String fieldType) {
 		this.fieldType = fieldType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>priority</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPriority() {
 		return this.priority;
 	}
+	/**
+	 * <p>Setter for the field <code>priority</code>.</p>
+	 *
+	 * @param priority a {@link java.lang.String} object.
+	 */
 	public void setPriority(String priority) {
 		this.priority = priority;
 	}
 
+	/**
+	 * <p>Getter for the field <code>regexpRuleList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ValidationRule> getRegexpRuleList() {
 		return this.regexpRuleList;
 	}
+	/**
+	 * <p>Setter for the field <code>regexpRuleList</code>.</p>
+	 *
+	 * @param regexpRuleList a {@link java.util.List} object.
+	 */
 	public void setRegexpRuleList(List<ValidationRule> regexpRuleList) {
 		this.regexpRuleList = regexpRuleList;
 	}

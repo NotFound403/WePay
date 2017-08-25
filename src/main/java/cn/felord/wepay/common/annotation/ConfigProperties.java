@@ -8,6 +8,9 @@ import java.lang.annotation.*;
  * Description:
  * Date: 17-8-23
  * Time: 下午10:51
+ *
+ * @author lenovo
+ * @version $Id: $Id
  */
 
 @Target(ElementType.TYPE)
@@ -15,4 +18,5 @@ import java.lang.annotation.*;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ConfigProperties {
     String fileName() default "weChatConfig";
+    String notifyUrl() default "";
 }

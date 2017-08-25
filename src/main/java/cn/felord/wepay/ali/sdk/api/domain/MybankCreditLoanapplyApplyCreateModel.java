@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 机构代客户申贷
  *
  * @author auto create
- * @since 1.0, 2017-05-17 14:53:02
+ * @version $Id: $Id
  */
 public class MybankCreditLoanapplyApplyCreateModel extends AlipayObject {
 
@@ -106,107 +106,257 @@ TAOBAO：淘宝
 	@ApiField("site")
 	private String site;
 
+	/**
+	 * <p>Getter for the field <code>alipayId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayId() {
 		return this.alipayId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayId</code>.</p>
+	 *
+	 * @param alipayId a {@link java.lang.String} object.
+	 */
 	public void setAlipayId(String alipayId) {
 		this.alipayId = alipayId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>applyLmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyLmt() {
 		return this.applyLmt;
 	}
+	/**
+	 * <p>Setter for the field <code>applyLmt</code>.</p>
+	 *
+	 * @param applyLmt a {@link java.lang.String} object.
+	 */
 	public void setApplyLmt(String applyLmt) {
 		this.applyLmt = applyLmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo() {
 		return this.bizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizSceneNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizSceneNo() {
 		return this.bizSceneNo;
 	}
+	/**
+	 * <p>Setter for the field <code>bizSceneNo</code>.</p>
+	 *
+	 * @param bizSceneNo a {@link java.lang.String} object.
+	 */
 	public void setBizSceneNo(String bizSceneNo) {
 		this.bizSceneNo = bizSceneNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizTag</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizTag() {
 		return this.bizTag;
 	}
+	/**
+	 * <p>Setter for the field <code>bizTag</code>.</p>
+	 *
+	 * @param bizTag a {@link java.lang.String} object.
+	 */
 	public void setBizTag(String bizTag) {
 		this.bizTag = bizTag;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertType() {
 		return this.certType;
 	}
+	/**
+	 * <p>Setter for the field <code>certType</code>.</p>
+	 *
+	 * @param certType a {@link java.lang.String} object.
+	 */
 	public void setCertType(String certType) {
 		this.certType = certType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>email</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEmail() {
 		return this.email;
 	}
+	/**
+	 * <p>Setter for the field <code>email</code>.</p>
+	 *
+	 * @param email a {@link java.lang.String} object.
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+	/**
+	 * <p>Getter for the field <code>loginId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLoginId() {
 		return this.loginId;
 	}
+	/**
+	 * <p>Setter for the field <code>loginId</code>.</p>
+	 *
+	 * @param loginId a {@link java.lang.String} object.
+	 */
 	public void setLoginId(String loginId) {
 		this.loginId = loginId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opPdCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpPdCode() {
 		return this.opPdCode;
 	}
+	/**
+	 * <p>Setter for the field <code>opPdCode</code>.</p>
+	 *
+	 * @param opPdCode a {@link java.lang.String} object.
+	 */
 	public void setOpPdCode(String opPdCode) {
 		this.opPdCode = opPdCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outMemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutMemId() {
 		return this.outMemId;
 	}
+	/**
+	 * <p>Setter for the field <code>outMemId</code>.</p>
+	 *
+	 * @param outMemId a {@link java.lang.String} object.
+	 */
 	public void setOutMemId(String outMemId) {
 		this.outMemId = outMemId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>site</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSite() {
 		return this.site;
 	}
+	/**
+	 * <p>Setter for the field <code>site</code>.</p>
+	 *
+	 * @param site a {@link java.lang.String} object.
+	 */
 	public void setSite(String site) {
 		this.site = site;
 	}

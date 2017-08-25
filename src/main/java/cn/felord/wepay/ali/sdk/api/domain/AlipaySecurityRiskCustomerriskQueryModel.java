@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户风险服务输出
  *
  * @author auto create
- * @since 1.0, 2017-05-26 21:53:47
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskCustomerriskQueryModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class AlipaySecurityRiskCustomerriskQueryModel extends AlipayObject {
 	@ApiField("risk_type")
 	private String riskType;
 
+	/**
+	 * <p>Getter for the field <code>cardNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardNo() {
 		return this.cardNo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardNo</code>.</p>
+	 *
+	 * @param cardNo a {@link java.lang.String} object.
+	 */
 	public void setCardNo(String cardNo) {
 		this.cardNo = cardNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo() {
 		return this.certNo;
 	}
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobileNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobileNo() {
 		return this.mobileNo;
 	}
+	/**
+	 * <p>Setter for the field <code>mobileNo</code>.</p>
+	 *
+	 * @param mobileNo a {@link java.lang.String} object.
+	 */
 	public void setMobileNo(String mobileNo) {
 		this.mobileNo = mobileNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>riskType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRiskType() {
 		return this.riskType;
 	}
+	/**
+	 * <p>Setter for the field <code>riskType</code>.</p>
+	 *
+	 * @param riskType a {@link java.lang.String} object.
+	 */
 	public void setRiskType(String riskType) {
 		this.riskType = riskType;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.closeloop.data.upload response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 14:12:15
+ * @version $Id: $Id
  */
 public class ZhimaMerchantCloseloopDataUploadResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class ZhimaMerchantCloseloopDataUploadResponse extends AlipayResponse {
 	@ApiField("task_id")
 	private String taskId;
 
+	/**
+	 * <p>Setter for the field <code>bizExtParams</code>.</p>
+	 *
+	 * @param bizExtParams a {@link java.lang.String} object.
+	 */
 	public void setBizExtParams(String bizExtParams) {
 		this.bizExtParams = bizExtParams;
 	}
+	/**
+	 * <p>Getter for the field <code>bizExtParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizExtParams( ) {
 		return this.bizExtParams;
 	}
 
+	/**
+	 * <p>Setter for the field <code>taskId</code>.</p>
+	 *
+	 * @param taskId a {@link java.lang.String} object.
+	 */
 	public void setTaskId(String taskId) {
 		this.taskId = taskId;
 	}
+	/**
+	 * <p>Getter for the field <code>taskId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTaskId( ) {
 		return this.taskId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 间连商户查询
  *
  * @author auto create
- * @since 1.0, 2017-04-11 18:05:48
+ * @version $Id: $Id
  */
 public class AntMerchantExpandIndirectQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AntMerchantExpandIndirectQueryModel extends AlipayObject {
 	@ApiField("sub_merchant_id")
 	private String subMerchantId;
 
+	/**
+	 * <p>Getter for the field <code>externalId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalId() {
 		return this.externalId;
 	}
+	/**
+	 * <p>Setter for the field <code>externalId</code>.</p>
+	 *
+	 * @param externalId a {@link java.lang.String} object.
+	 */
 	public void setExternalId(String externalId) {
 		this.externalId = externalId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subMerchantId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubMerchantId() {
 		return this.subMerchantId;
 	}
+	/**
+	 * <p>Setter for the field <code>subMerchantId</code>.</p>
+	 *
+	 * @param subMerchantId a {@link java.lang.String} object.
+	 */
 	public void setSubMerchantId(String subMerchantId) {
 		this.subMerchantId = subMerchantId;
 	}

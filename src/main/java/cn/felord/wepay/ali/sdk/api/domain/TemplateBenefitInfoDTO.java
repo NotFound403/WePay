@@ -11,7 +11,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 卡模板权益信息
  *
  * @author auto create
- * @since 1.0, 2016-12-28 15:26:46
+ * @version $Id: $Id
  */
 public class TemplateBenefitInfoDTO extends AlipayObject {
 
@@ -42,30 +42,70 @@ public class TemplateBenefitInfoDTO extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>benefitDesc</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getBenefitDesc() {
 		return this.benefitDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitDesc</code>.</p>
+	 *
+	 * @param benefitDesc a {@link java.util.List} object.
+	 */
 	public void setBenefitDesc(List<String> benefitDesc) {
 		this.benefitDesc = benefitDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndDate() {
 		return this.endDate;
 	}
+	/**
+	 * <p>Setter for the field <code>endDate</code>.</p>
+	 *
+	 * @param endDate a {@link java.util.Date} object.
+	 */
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartDate() {
 		return this.startDate;
 	}
+	/**
+	 * <p>Setter for the field <code>startDate</code>.</p>
+	 *
+	 * @param startDate a {@link java.util.Date} object.
+	 */
 	public void setStartDate(Date startDate) {
 		this.startDate = startDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

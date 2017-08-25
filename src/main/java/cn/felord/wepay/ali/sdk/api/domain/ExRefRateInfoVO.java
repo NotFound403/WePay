@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 测试
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class ExRefRateInfoVO extends AlipayObject {
 
@@ -57,51 +57,121 @@ public class ExRefRateInfoVO extends AlipayObject {
 	@ApiField("target_currency")
 	private String targetCurrency;
 
+	/**
+	 * <p>Getter for the field <code>currencyPair</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCurrencyPair() {
 		return this.currencyPair;
 	}
+	/**
+	 * <p>Setter for the field <code>currencyPair</code>.</p>
+	 *
+	 * @param currencyPair a {@link java.lang.String} object.
+	 */
 	public void setCurrencyPair(String currencyPair) {
 		this.currencyPair = currencyPair;
 	}
 
+	/**
+	 * <p>Getter for the field <code>datumCurrency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDatumCurrency() {
 		return this.datumCurrency;
 	}
+	/**
+	 * <p>Setter for the field <code>datumCurrency</code>.</p>
+	 *
+	 * @param datumCurrency a {@link java.lang.String} object.
+	 */
 	public void setDatumCurrency(String datumCurrency) {
 		this.datumCurrency = datumCurrency;
 	}
 
+	/**
+	 * <p>Getter for the field <code>priceType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPriceType() {
 		return this.priceType;
 	}
+	/**
+	 * <p>Setter for the field <code>priceType</code>.</p>
+	 *
+	 * @param priceType a {@link java.lang.String} object.
+	 */
 	public void setPriceType(String priceType) {
 		this.priceType = priceType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pubDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPubDate() {
 		return this.pubDate;
 	}
+	/**
+	 * <p>Setter for the field <code>pubDate</code>.</p>
+	 *
+	 * @param pubDate a {@link java.lang.String} object.
+	 */
 	public void setPubDate(String pubDate) {
 		this.pubDate = pubDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pubTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getPubTime() {
 		return this.pubTime;
 	}
+	/**
+	 * <p>Setter for the field <code>pubTime</code>.</p>
+	 *
+	 * @param pubTime a {@link java.util.Date} object.
+	 */
 	public void setPubTime(Date pubTime) {
 		this.pubTime = pubTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRate() {
 		return this.rate;
 	}
+	/**
+	 * <p>Setter for the field <code>rate</code>.</p>
+	 *
+	 * @param rate a {@link java.lang.String} object.
+	 */
 	public void setRate(String rate) {
 		this.rate = rate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>targetCurrency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTargetCurrency() {
 		return this.targetCurrency;
 	}
+	/**
+	 * <p>Setter for the field <code>targetCurrency</code>.</p>
+	 *
+	 * @param targetCurrency a {@link java.lang.String} object.
+	 */
 	public void setTargetCurrency(String targetCurrency) {
 		this.targetCurrency = targetCurrency;
 	}

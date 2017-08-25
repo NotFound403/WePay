@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.dishdiagnosetype.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-03 14:41:47
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataDishdiagnosetypeBatchqueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiMarketingDataDishdiagnosetypeBatchqueryResponse extends Alipa
 	@ApiField("item_diagnose_type")
 	private List<ItemDiagnoseType> itemDiagnoseTypeList;
 
+	/**
+	 * <p>Setter for the field <code>itemDiagnoseTypeList</code>.</p>
+	 *
+	 * @param itemDiagnoseTypeList a {@link java.util.List} object.
+	 */
 	public void setItemDiagnoseTypeList(List<ItemDiagnoseType> itemDiagnoseTypeList) {
 		this.itemDiagnoseTypeList = itemDiagnoseTypeList;
 	}
+	/**
+	 * <p>Getter for the field <code>itemDiagnoseTypeList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ItemDiagnoseType> getItemDiagnoseTypeList( ) {
 		return this.itemDiagnoseTypeList;
 	}

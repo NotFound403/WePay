@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.trade.refund response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-14 15:11:20
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarTradeRefundResponse extends AlipayResponse {
 

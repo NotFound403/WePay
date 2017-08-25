@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.account.search response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-08-11 18:02:23
+ * @version $Id: $Id
  */
 public class AlipayUserAccountSearchResponse extends AlipayResponse {
 
@@ -36,23 +36,53 @@ public class AlipayUserAccountSearchResponse extends AlipayResponse {
 	@ApiField("total_results")
 	private Long totalResults;
 
+	/**
+	 * <p>Setter for the field <code>accountRecords</code>.</p>
+	 *
+	 * @param accountRecords a {@link java.util.List} object.
+	 */
 	public void setAccountRecords(List<AccountRecord> accountRecords) {
 		this.accountRecords = accountRecords;
 	}
+	/**
+	 * <p>Getter for the field <code>accountRecords</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AccountRecord> getAccountRecords( ) {
 		return this.accountRecords;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalPages</code>.</p>
+	 *
+	 * @param totalPages a {@link java.lang.Long} object.
+	 */
 	public void setTotalPages(Long totalPages) {
 		this.totalPages = totalPages;
 	}
+	/**
+	 * <p>Getter for the field <code>totalPages</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalPages( ) {
 		return this.totalPages;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalResults</code>.</p>
+	 *
+	 * @param totalResults a {@link java.lang.Long} object.
+	 */
 	public void setTotalResults(Long totalResults) {
 		this.totalResults = totalResults;
 	}
+	/**
+	 * <p>Getter for the field <code>totalResults</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalResults( ) {
 		return this.totalResults;
 	}

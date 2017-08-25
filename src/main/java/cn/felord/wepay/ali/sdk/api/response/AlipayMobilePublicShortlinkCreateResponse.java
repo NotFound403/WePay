@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.shortlink.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-29 19:58:48
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicShortlinkCreateResponse extends AlipayResponse {
 
@@ -32,23 +32,45 @@ public class AlipayMobilePublicShortlinkCreateResponse extends AlipayResponse {
 	@ApiField("shortlink")
 	private String shortlink;
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/** {@inheritDoc} */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg( ) {
 		return this.msg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shortlink</code>.</p>
+	 *
+	 * @param shortlink a {@link java.lang.String} object.
+	 */
 	public void setShortlink(String shortlink) {
 		this.shortlink = shortlink;
 	}
+	/**
+	 * <p>Getter for the field <code>shortlink</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShortlink( ) {
 		return this.shortlink;
 	}

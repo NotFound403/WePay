@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.security.prod.facerepo.add response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-30 08:29:39
+ * @version $Id: $Id
  */
 public class AlipaySecurityProdFacerepoAddResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipaySecurityProdFacerepoAddResponse extends AlipayResponse {
 	@ApiField("face_id")
 	private String faceId;
 
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>faceId</code>.</p>
+	 *
+	 * @param faceId a {@link java.lang.String} object.
+	 */
 	public void setFaceId(String faceId) {
 		this.faceId = faceId;
 	}
+	/**
+	 * <p>Getter for the field <code>faceId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFaceId( ) {
 		return this.faceId;
 	}

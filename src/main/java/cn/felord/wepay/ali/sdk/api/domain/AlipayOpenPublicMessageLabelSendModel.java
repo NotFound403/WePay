@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 根据标签组发消息接口
  *
  * @author auto create
- * @since 1.0, 2016-12-02 17:04:34
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMessageLabelSendModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenPublicMessageLabelSendModel extends AlipayObject {
 	@ApiField("material")
 	private Material material;
 
+	/**
+	 * <p>Getter for the field <code>filter</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.Filter} object.
+	 */
 	public Filter getFilter() {
 		return this.filter;
 	}
+	/**
+	 * <p>Setter for the field <code>filter</code>.</p>
+	 *
+	 * @param filter a {@link cn.felord.wepay.ali.sdk.api.domain.Filter} object.
+	 */
 	public void setFilter(Filter filter) {
 		this.filter = filter;
 	}
 
+	/**
+	 * <p>Getter for the field <code>material</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.Material} object.
+	 */
 	public Material getMaterial() {
 		return this.material;
 	}
+	/**
+	 * <p>Setter for the field <code>material</code>.</p>
+	 *
+	 * @param material a {@link cn.felord.wepay.ali.sdk.api.domain.Material} object.
+	 */
 	public void setMaterial(Material material) {
 		this.material = material;
 	}

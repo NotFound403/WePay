@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 推荐菜数据
  *
  * @author auto create
- * @since 1.0, 2017-02-13 14:20:35
+ * @version $Id: $Id
  */
 public class ItemDiagnoseDetail extends AlipayObject {
 
@@ -121,128 +121,308 @@ public class ItemDiagnoseDetail extends AlipayObject {
 	@ApiField("report_date")
 	private String reportDate;
 
+	/**
+	 * <p>Getter for the field <code>hotGrade</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getHotGrade() {
 		return this.hotGrade;
 	}
+	/**
+	 * <p>Setter for the field <code>hotGrade</code>.</p>
+	 *
+	 * @param hotGrade a {@link java.lang.Long} object.
+	 */
 	public void setHotGrade(Long hotGrade) {
 		this.hotGrade = hotGrade;
 	}
 
+	/**
+	 * <p>Getter for the field <code>hotValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getHotValue() {
 		return this.hotValue;
 	}
+	/**
+	 * <p>Setter for the field <code>hotValue</code>.</p>
+	 *
+	 * @param hotValue a {@link java.lang.Long} object.
+	 */
 	public void setHotValue(Long hotValue) {
 		this.hotValue = hotValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemDiagnose</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemDiagnose() {
 		return this.itemDiagnose;
 	}
+	/**
+	 * <p>Setter for the field <code>itemDiagnose</code>.</p>
+	 *
+	 * @param itemDiagnose a {@link java.lang.String} object.
+	 */
 	public void setItemDiagnose(String itemDiagnose) {
 		this.itemDiagnose = itemDiagnose;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemDiagnoseDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemDiagnoseDesc() {
 		return this.itemDiagnoseDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>itemDiagnoseDesc</code>.</p>
+	 *
+	 * @param itemDiagnoseDesc a {@link java.lang.String} object.
+	 */
 	public void setItemDiagnoseDesc(String itemDiagnoseDesc) {
 		this.itemDiagnoseDesc = itemDiagnoseDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId() {
 		return this.itemId;
 	}
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemName() {
 		return this.itemName;
 	}
+	/**
+	 * <p>Setter for the field <code>itemName</code>.</p>
+	 *
+	 * @param itemName a {@link java.lang.String} object.
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getItemPrice() {
 		return this.itemPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>itemPrice</code>.</p>
+	 *
+	 * @param itemPrice a {@link java.lang.Long} object.
+	 */
 	public void setItemPrice(Long itemPrice) {
 		this.itemPrice = itemPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recNinetyConsumeUidCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecNinetyConsumeUidCnt() {
 		return this.recNinetyConsumeUidCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recNinetyConsumeUidCnt</code>.</p>
+	 *
+	 * @param recNinetyConsumeUidCnt a {@link java.lang.Long} object.
+	 */
 	public void setRecNinetyConsumeUidCnt(Long recNinetyConsumeUidCnt) {
 		this.recNinetyConsumeUidCnt = recNinetyConsumeUidCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recNinetyRebuyUidCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecNinetyRebuyUidCnt() {
 		return this.recNinetyRebuyUidCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recNinetyRebuyUidCnt</code>.</p>
+	 *
+	 * @param recNinetyRebuyUidCnt a {@link java.lang.Long} object.
+	 */
 	public void setRecNinetyRebuyUidCnt(Long recNinetyRebuyUidCnt) {
 		this.recNinetyRebuyUidCnt = recNinetyRebuyUidCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recSevenSaleAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecSevenSaleAmt() {
 		return this.recSevenSaleAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>recSevenSaleAmt</code>.</p>
+	 *
+	 * @param recSevenSaleAmt a {@link java.lang.Long} object.
+	 */
 	public void setRecSevenSaleAmt(Long recSevenSaleAmt) {
 		this.recSevenSaleAmt = recSevenSaleAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recSevenSaleCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecSevenSaleCnt() {
 		return this.recSevenSaleCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recSevenSaleCnt</code>.</p>
+	 *
+	 * @param recSevenSaleCnt a {@link java.lang.Long} object.
+	 */
 	public void setRecSevenSaleCnt(Long recSevenSaleCnt) {
 		this.recSevenSaleCnt = recSevenSaleCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recSixtyConsumeUidCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecSixtyConsumeUidCnt() {
 		return this.recSixtyConsumeUidCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recSixtyConsumeUidCnt</code>.</p>
+	 *
+	 * @param recSixtyConsumeUidCnt a {@link java.lang.Long} object.
+	 */
 	public void setRecSixtyConsumeUidCnt(Long recSixtyConsumeUidCnt) {
 		this.recSixtyConsumeUidCnt = recSixtyConsumeUidCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recSixtyRebuyUidCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecSixtyRebuyUidCnt() {
 		return this.recSixtyRebuyUidCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recSixtyRebuyUidCnt</code>.</p>
+	 *
+	 * @param recSixtyRebuyUidCnt a {@link java.lang.Long} object.
+	 */
 	public void setRecSixtyRebuyUidCnt(Long recSixtyRebuyUidCnt) {
 		this.recSixtyRebuyUidCnt = recSixtyRebuyUidCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recThirtyConsumeUidCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRecThirtyConsumeUidCnt() {
 		return this.recThirtyConsumeUidCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recThirtyConsumeUidCnt</code>.</p>
+	 *
+	 * @param recThirtyConsumeUidCnt a {@link java.lang.String} object.
+	 */
 	public void setRecThirtyConsumeUidCnt(String recThirtyConsumeUidCnt) {
 		this.recThirtyConsumeUidCnt = recThirtyConsumeUidCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recThirtyRebuyUidCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecThirtyRebuyUidCnt() {
 		return this.recThirtyRebuyUidCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recThirtyRebuyUidCnt</code>.</p>
+	 *
+	 * @param recThirtyRebuyUidCnt a {@link java.lang.Long} object.
+	 */
 	public void setRecThirtyRebuyUidCnt(Long recThirtyRebuyUidCnt) {
 		this.recThirtyRebuyUidCnt = recThirtyRebuyUidCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recThirtySaleAmt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecThirtySaleAmt() {
 		return this.recThirtySaleAmt;
 	}
+	/**
+	 * <p>Setter for the field <code>recThirtySaleAmt</code>.</p>
+	 *
+	 * @param recThirtySaleAmt a {@link java.lang.Long} object.
+	 */
 	public void setRecThirtySaleAmt(Long recThirtySaleAmt) {
 		this.recThirtySaleAmt = recThirtySaleAmt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recThirtySaleCnt</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getRecThirtySaleCnt() {
 		return this.recThirtySaleCnt;
 	}
+	/**
+	 * <p>Setter for the field <code>recThirtySaleCnt</code>.</p>
+	 *
+	 * @param recThirtySaleCnt a {@link java.lang.Long} object.
+	 */
 	public void setRecThirtySaleCnt(Long recThirtySaleCnt) {
 		this.recThirtySaleCnt = recThirtySaleCnt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>reportDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReportDate() {
 		return this.reportDate;
 	}
+	/**
+	 * <p>Setter for the field <code>reportDate</code>.</p>
+	 *
+	 * @param reportDate a {@link java.lang.String} object.
+	 */
 	public void setReportDate(String reportDate) {
 		this.reportDate = reportDate;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 停车代扣退款接口
  *
  * @author auto create
- * @since 1.0, 2017-04-12 11:49:32
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarParkingOrderRefundModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class AlipayEcoMycarParkingOrderRefundModel extends AlipayObject {
 	@ApiField("refund_reason")
 	private String refundReason;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo() {
 		return this.outOrderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRefundNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRefundNo() {
 		return this.outRefundNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outRefundNo</code>.</p>
+	 *
+	 * @param outRefundNo a {@link java.lang.String} object.
+	 */
 	public void setOutRefundNo(String outRefundNo) {
 		this.outRefundNo = outRefundNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundFee</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundFee() {
 		return this.refundFee;
 	}
+	/**
+	 * <p>Setter for the field <code>refundFee</code>.</p>
+	 *
+	 * @param refundFee a {@link java.lang.String} object.
+	 */
 	public void setRefundFee(String refundFee) {
 		this.refundFee = refundFee;
 	}
 
+	/**
+	 * <p>Getter for the field <code>refundReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefundReason() {
 		return this.refundReason;
 	}
+	/**
+	 * <p>Setter for the field <code>refundReason</code>.</p>
+	 *
+	 * @param refundReason a {@link java.lang.String} object.
+	 */
 	public void setRefundReason(String refundReason) {
 		this.refundReason = refundReason;
 	}

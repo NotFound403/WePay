@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.pcredit.huabei.promo.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-03-03 17:48:05
+ * @version $Id: $Id
  */
 public class AlipayPcreditHuabeiPromoQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayPcreditHuabeiPromoQueryResponse extends AlipayResponse {
 	@ApiField("facescore")
 	private String facescore;
 
+	/**
+	 * <p>Setter for the field <code>facescore</code>.</p>
+	 *
+	 * @param facescore a {@link java.lang.String} object.
+	 */
 	public void setFacescore(String facescore) {
 		this.facescore = facescore;
 	}
+	/**
+	 * <p>Getter for the field <code>facescore</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFacescore( ) {
 		return this.facescore;
 	}

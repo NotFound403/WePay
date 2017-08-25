@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 支付宝脱机交易结算
  *
  * @author auto create
- * @since 1.0, 2016-08-10 17:01:08
+ * @version $Id: $Id
  */
 public class AlipayCommerceTransportOfflinepayTradeSettleModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class AlipayCommerceTransportOfflinepayTradeSettleModel extends AlipayObj
 	@ApiField("alipay_offline_trade")
 	private List<AlipayOfflineTrade> tradeList;
 
+	/**
+	 * <p>Getter for the field <code>tradeList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AlipayOfflineTrade> getTradeList() {
 		return this.tradeList;
 	}
+	/**
+	 * <p>Setter for the field <code>tradeList</code>.</p>
+	 *
+	 * @param tradeList a {@link java.util.List} object.
+	 */
 	public void setTradeList(List<AlipayOfflineTrade> tradeList) {
 		this.tradeList = tradeList;
 	}

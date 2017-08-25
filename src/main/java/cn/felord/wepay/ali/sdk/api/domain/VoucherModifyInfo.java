@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 券修改模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class VoucherModifyInfo extends AlipayObject {
 
@@ -48,37 +48,87 @@ public class VoucherModifyInfo extends AlipayObject {
 	@ApiField("voucher_term_info")
 	private List<VoucherTermInfo> voucherTerms;
 
+	/**
+	 * <p>Getter for the field <code>suitableShops</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getSuitableShops() {
 		return this.suitableShops;
 	}
+	/**
+	 * <p>Setter for the field <code>suitableShops</code>.</p>
+	 *
+	 * @param suitableShops a {@link java.util.List} object.
+	 */
 	public void setSuitableShops(List<String> suitableShops) {
 		this.suitableShops = suitableShops;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherDesc() {
 		return this.voucherDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherDesc</code>.</p>
+	 *
+	 * @param voucherDesc a {@link java.lang.String} object.
+	 */
 	public void setVoucherDesc(String voucherDesc) {
 		this.voucherDesc = voucherDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherId() {
 		return this.voucherId;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherId</code>.</p>
+	 *
+	 * @param voucherId a {@link java.lang.String} object.
+	 */
 	public void setVoucherId(String voucherId) {
 		this.voucherId = voucherId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherName() {
 		return this.voucherName;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherName</code>.</p>
+	 *
+	 * @param voucherName a {@link java.lang.String} object.
+	 */
 	public void setVoucherName(String voucherName) {
 		this.voucherName = voucherName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>voucherTerms</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<VoucherTermInfo> getVoucherTerms() {
 		return this.voucherTerms;
 	}
+	/**
+	 * <p>Setter for the field <code>voucherTerms</code>.</p>
+	 *
+	 * @param voucherTerms a {@link java.util.List} object.
+	 */
 	public void setVoucherTerms(List<VoucherTermInfo> voucherTerms) {
 		this.voucherTerms = voucherTerms;
 	}

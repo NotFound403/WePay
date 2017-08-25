@@ -7,8 +7,6 @@ package cn.felord.wepay.common.pay;
  * @version v1.0.0
  * @since 2017 /8/9  13:26
  */
-
-
 public interface Params {
 
 }

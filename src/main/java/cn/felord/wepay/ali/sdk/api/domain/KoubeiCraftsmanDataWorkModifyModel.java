@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 修改手艺人作品信息接口
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:32:57
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataWorkModifyModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KoubeiCraftsmanDataWorkModifyModel extends AlipayObject {
 	@ApiField("work_id")
 	private String workId;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * <p>Getter for the field <code>workId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWorkId() {
 		return this.workId;
 	}
+	/**
+	 * <p>Setter for the field <code>workId</code>.</p>
+	 *
+	 * @param workId a {@link java.lang.String} object.
+	 */
 	public void setWorkId(String workId) {
 		this.workId = workId;
 	}

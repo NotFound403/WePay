@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 老版本复杂Listlist对象
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class OldListListComplexMockModel extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class OldListListComplexMockModel extends AlipayObject {
 	@ApiField("old_complext_mock_model")
 	private List<OldComplextMockModel> cmList;
 
+	/**
+	 * <p>Getter for the field <code>cmList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OldComplextMockModel> getCmList() {
 		return this.cmList;
 	}
+	/**
+	 * <p>Setter for the field <code>cmList</code>.</p>
+	 *
+	 * @param cmList a {@link java.util.List} object.
+	 */
 	public void setCmList(List<OldComplextMockModel> cmList) {
 		this.cmList = cmList;
 	}

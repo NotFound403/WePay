@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 社区物业平台物业费账单数据集合
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:37:38
+ * @version $Id: $Id
  */
 public class CPBillSet extends AlipayObject {
 
@@ -73,72 +73,172 @@ public class CPBillSet extends AlipayObject {
 	@ApiField("room_address")
 	private String roomAddress;
 
+	/**
+	 * <p>Getter for the field <code>acctPeriod</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAcctPeriod() {
 		return this.acctPeriod;
 	}
+	/**
+	 * <p>Setter for the field <code>acctPeriod</code>.</p>
+	 *
+	 * @param acctPeriod a {@link java.lang.String} object.
+	 */
 	public void setAcctPeriod(String acctPeriod) {
 		this.acctPeriod = acctPeriod;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billEntryAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillEntryAmount() {
 		return this.billEntryAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>billEntryAmount</code>.</p>
+	 *
+	 * @param billEntryAmount a {@link java.lang.String} object.
+	 */
 	public void setBillEntryAmount(String billEntryAmount) {
 		this.billEntryAmount = billEntryAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billEntryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillEntryId() {
 		return this.billEntryId;
 	}
+	/**
+	 * <p>Setter for the field <code>billEntryId</code>.</p>
+	 *
+	 * @param billEntryId a {@link java.lang.String} object.
+	 */
 	public void setBillEntryId(String billEntryId) {
 		this.billEntryId = billEntryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>costType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCostType() {
 		return this.costType;
 	}
+	/**
+	 * <p>Setter for the field <code>costType</code>.</p>
+	 *
+	 * @param costType a {@link java.lang.String} object.
+	 */
 	public void setCostType(String costType) {
 		this.costType = costType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>deadline</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeadline() {
 		return this.deadline;
 	}
+	/**
+	 * <p>Setter for the field <code>deadline</code>.</p>
+	 *
+	 * @param deadline a {@link java.lang.String} object.
+	 */
 	public void setDeadline(String deadline) {
 		this.deadline = deadline;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRoomId() {
 		return this.outRoomId;
 	}
+	/**
+	 * <p>Setter for the field <code>outRoomId</code>.</p>
+	 *
+	 * @param outRoomId a {@link java.lang.String} object.
+	 */
 	public void setOutRoomId(String outRoomId) {
 		this.outRoomId = outRoomId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>relateId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRelateId() {
 		return this.relateId;
 	}
+	/**
+	 * <p>Setter for the field <code>relateId</code>.</p>
+	 *
+	 * @param relateId a {@link java.lang.String} object.
+	 */
 	public void setRelateId(String relateId) {
 		this.relateId = relateId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>releaseDay</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReleaseDay() {
 		return this.releaseDay;
 	}
+	/**
+	 * <p>Setter for the field <code>releaseDay</code>.</p>
+	 *
+	 * @param releaseDay a {@link java.lang.String} object.
+	 */
 	public void setReleaseDay(String releaseDay) {
 		this.releaseDay = releaseDay;
 	}
 
+	/**
+	 * <p>Getter for the field <code>remarkStr</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRemarkStr() {
 		return this.remarkStr;
 	}
+	/**
+	 * <p>Setter for the field <code>remarkStr</code>.</p>
+	 *
+	 * @param remarkStr a {@link java.lang.String} object.
+	 */
 	public void setRemarkStr(String remarkStr) {
 		this.remarkStr = remarkStr;
 	}
 
+	/**
+	 * <p>Getter for the field <code>roomAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRoomAddress() {
 		return this.roomAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>roomAddress</code>.</p>
+	 *
+	 * @param roomAddress a {@link java.lang.String} object.
+	 */
 	public void setRoomAddress(String roomAddress) {
 		this.roomAddress = roomAddress;
 	}

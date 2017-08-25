@@ -1,85 +1,144 @@
 package cn.felord.wepay.ali.sdk.api.internal.util;
 
-import java.io.IOException;
-
 import cn.felord.wepay.ali.sdk.api.AlipayApiException;
 import cn.felord.wepay.ali.sdk.api.FileItem;
 
+import java.io.IOException;
+
+/**
+ * The type Request check utils.
+ *
+ * @author lenovo
+ * @version $Id: $Id
+ */
 public class RequestCheckUtils {
-    public static final String ERROR_CODE_ARGUMENTS_MISS    = "40001"; //Missing Required Arguments
+    /**
+     * The constant ERROR_CODE_ARGUMENTS_MISS.
+     */
+    public static final String ERROR_CODE_ARGUMENTS_MISS = "40001"; //Missing Required Arguments
+    /**
+     * The constant ERROR_CODE_ARGUMENTS_INVALID.
+     */
     public static final String ERROR_CODE_ARGUMENTS_INVALID = "40002"; //Invalid Arguments
 
+    /**
+     * Check not empty.
+     *
+     * @param value     the value
+     * @param fieldName the field name
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     */
     public static void checkNotEmpty(Object value, String fieldName) throws AlipayApiException {
-		if(value==null){
+        if (value == null) {
             throw new AlipayApiException(ERROR_CODE_ARGUMENTS_MISS,
-                "client-error:Missing Required Arguments:" + fieldName + "");
-		}
-		if(value instanceof String){
-			if(((String) value).trim().length()==0){
-                throw new AlipayApiException(ERROR_CODE_ARGUMENTS_MISS,
                     "client-error:Missing Required Arguments:" + fieldName + "");
-			}
-		}
-	}
-	
-    public static void checkMaxLength(String value, int maxLength, String fieldName)
-                                                                                    throws AlipayApiException {
-		if(value!=null){
-			if(value.length()>maxLength){
-                throw new AlipayApiException(ERROR_CODE_ARGUMENTS_INVALID,
-                    "client-error:Invalid Arguments:the length of " + fieldName
-                            + " can not be larger than " + maxLength + ".");
-			}
-		}
-	}
+        }
+        if (value instanceof String) {
+            if (((String) value).trim().length() == 0) {
+                throw new AlipayApiException(ERROR_CODE_ARGUMENTS_MISS,
+                        "client-error:Missing Required Arguments:" + fieldName + "");
+            }
+        }
+    }
 
-    public static void checkMaxLength(FileItem fileItem, int maxLength, String fieldName)
-                                                                                         throws AlipayApiException {
-		try {
-			if(fileItem!=null&&fileItem.getContent()!=null){
-				
-				if(fileItem.getContent().length>maxLength){
-                    throw new AlipayApiException(ERROR_CODE_ARGUMENTS_INVALID,
+    /**
+     * Check max length.
+     *
+     * @param value     the value
+     * @param maxLength the max length
+     * @param fieldName the field name
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     */
+    public static void checkMaxLength(String value, int maxLength, String fieldName)
+            throws AlipayApiException {
+        if (value != null) {
+            if (value.length() > maxLength) {
+                throw new AlipayApiException(ERROR_CODE_ARGUMENTS_INVALID,
                         "client-error:Invalid Arguments:the length of " + fieldName
                                 + " can not be larger than " + maxLength + ".");
-				}
-			}
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
-	}
+            }
+        }
+    }
 
+    /**
+     * Check max length.
+     *
+     * @param fileItem  the file item
+     * @param maxLength the max length
+     * @param fieldName the field name
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     */
+    public static void checkMaxLength(FileItem fileItem, int maxLength, String fieldName)
+            throws AlipayApiException {
+        try {
+            if (fileItem != null && fileItem.getContent() != null) {
+
+                if (fileItem.getContent().length > maxLength) {
+                    throw new AlipayApiException(ERROR_CODE_ARGUMENTS_INVALID,
+                            "client-error:Invalid Arguments:the length of " + fieldName
+                                    + " can not be larger than " + maxLength + ".");
+                }
+            }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    /**
+     * Check max list size.
+     *
+     * @param value     the value
+     * @param maxSize   the max size
+     * @param fieldName the field name
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     */
     public static void checkMaxListSize(String value, int maxSize, String fieldName)
-                                                                                    throws AlipayApiException {
-		if(value!=null){
-			String[] list=value.split(",");
-			if(list!=null&&list.length>maxSize){
+            throws AlipayApiException {
+        if (value != null) {
+            String[] list = value.split(",");
+            if (list != null && list.length > maxSize) {
                 throw new AlipayApiException(ERROR_CODE_ARGUMENTS_INVALID,
-                    "client-error:Invalid Arguments:the listsize(the string split by \",\") of "
-                            + fieldName + " must be less than " + maxSize + ".");
-			}
-		}
-	}
+                        "client-error:Invalid Arguments:the listsize(the string split by \",\") of "
+                                + fieldName + " must be less than " + maxSize + ".");
+            }
+        }
+    }
 
+    /**
+     * Check max value.
+     *
+     * @param value     the value
+     * @param maxValue  the max value
+     * @param fieldName the field name
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     */
     public static void checkMaxValue(Long value, long maxValue, String fieldName)
-                                                                                 throws AlipayApiException {
-		if(value!=null){
-			if(value>maxValue){
+            throws AlipayApiException {
+        if (value != null) {
+            if (value > maxValue) {
                 throw new AlipayApiException(ERROR_CODE_ARGUMENTS_INVALID,
-                    "client-error:Invalid Arguments:the value of " + fieldName
-                            + " can not be larger than " + maxValue + ".");
-			}
-		}
-	}
+                        "client-error:Invalid Arguments:the value of " + fieldName
+                                + " can not be larger than " + maxValue + ".");
+            }
+        }
+    }
 
+    /**
+     * Check min value.
+     *
+     * @param value     the value
+     * @param minValue  the min value
+     * @param fieldName the field name
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     */
     public static void checkMinValue(Long value, long minValue, String fieldName)
-                                                                                 throws AlipayApiException {
-		if(value!=null){
-			if(value<minValue){
+            throws AlipayApiException {
+        if (value != null) {
+            if (value < minValue) {
                 throw new AlipayApiException(ERROR_CODE_ARGUMENTS_INVALID,
-                    "client-error:Invalid Arguments:the value of " + fieldName
-                            + " can not be less than " + minValue + ".");
-			}
-		}
-	}
+                        "client-error:Invalid Arguments:the value of " + fieldName
+                                + " can not be less than " + minValue + ".");
+            }
+        }
+    }
 }

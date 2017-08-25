@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑商品券批量查询接口
  *
  * @author auto create
- * @since 1.0, 2016-12-06 10:03:04
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignItemBatchqueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class KoubeiMarketingCampaignItemBatchqueryModel extends AlipayObject {
 	@ApiField("operator_type")
 	private String operatorType;
 
+	/**
+	 * <p>Getter for the field <code>operatorId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorId() {
 		return this.operatorId;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorId</code>.</p>
+	 *
+	 * @param operatorId a {@link java.lang.String} object.
+	 */
 	public void setOperatorId(String operatorId) {
 		this.operatorId = operatorId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operatorType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperatorType() {
 		return this.operatorType;
 	}
+	/**
+	 * <p>Setter for the field <code>operatorType</code>.</p>
+	 *
+	 * @param operatorType a {@link java.lang.String} object.
+	 */
 	public void setOperatorType(String operatorType) {
 		this.operatorType = operatorType;
 	}

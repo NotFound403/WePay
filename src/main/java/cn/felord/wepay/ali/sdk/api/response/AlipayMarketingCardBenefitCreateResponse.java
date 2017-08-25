@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.card.benefit.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-23 09:40:35
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardBenefitCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCardBenefitCreateResponse extends AlipayResponse {
 	@ApiField("benefit_id")
 	private String benefitId;
 
+	/**
+	 * <p>Setter for the field <code>benefitId</code>.</p>
+	 *
+	 * @param benefitId a {@link java.lang.String} object.
+	 */
 	public void setBenefitId(String benefitId) {
 		this.benefitId = benefitId;
 	}
+	/**
+	 * <p>Getter for the field <code>benefitId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitId( ) {
 		return this.benefitId;
 	}

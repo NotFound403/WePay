@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 提交贷款订单
  *
  * @author auto create
- * @since 1.0, 2017-05-09 15:15:59
+ * @version $Id: $Id
  */
 public class AlipayCreditAutofinanceLoanApplyModel extends AlipayObject {
 
@@ -67,65 +67,155 @@ public class AlipayCreditAutofinanceLoanApplyModel extends AlipayObject {
 	@ApiField("version")
 	private String version;
 
+	/**
+	 * <p>Getter for the field <code>area</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArea() {
 		return this.area;
 	}
+	/**
+	 * <p>Setter for the field <code>area</code>.</p>
+	 *
+	 * @param area a {@link java.lang.String} object.
+	 */
 	public void setArea(String area) {
 		this.area = area;
 	}
 
+	/**
+	 * <p>Getter for the field <code>backurl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBackurl() {
 		return this.backurl;
 	}
+	/**
+	 * <p>Setter for the field <code>backurl</code>.</p>
+	 *
+	 * @param backurl a {@link java.lang.String} object.
+	 */
 	public void setBackurl(String backurl) {
 		this.backurl = backurl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extparam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtparam() {
 		return this.extparam;
 	}
+	/**
+	 * <p>Setter for the field <code>extparam</code>.</p>
+	 *
+	 * @param extparam a {@link java.lang.String} object.
+	 */
 	public void setExtparam(String extparam) {
 		this.extparam = extparam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemid() {
 		return this.itemid;
 	}
+	/**
+	 * <p>Setter for the field <code>itemid</code>.</p>
+	 *
+	 * @param itemid a {@link java.lang.String} object.
+	 */
 	public void setItemid(String itemid) {
 		this.itemid = itemid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orgcode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrgcode() {
 		return this.orgcode;
 	}
+	/**
+	 * <p>Setter for the field <code>orgcode</code>.</p>
+	 *
+	 * @param orgcode a {@link java.lang.String} object.
+	 */
 	public void setOrgcode(String orgcode) {
 		this.orgcode = orgcode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outorderno</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutorderno() {
 		return this.outorderno;
 	}
+	/**
+	 * <p>Setter for the field <code>outorderno</code>.</p>
+	 *
+	 * @param outorderno a {@link java.lang.String} object.
+	 */
 	public void setOutorderno(String outorderno) {
 		this.outorderno = outorderno;
 	}
 
+	/**
+	 * <p>Getter for the field <code>uid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUid() {
 		return this.uid;
 	}
+	/**
+	 * <p>Setter for the field <code>uid</code>.</p>
+	 *
+	 * @param uid a {@link java.lang.String} object.
+	 */
 	public void setUid(String uid) {
 		this.uid = uid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>verifyid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVerifyid() {
 		return this.verifyid;
 	}
+	/**
+	 * <p>Setter for the field <code>verifyid</code>.</p>
+	 *
+	 * @param verifyid a {@link java.lang.String} object.
+	 */
 	public void setVerifyid(String verifyid) {
 		this.verifyid = verifyid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>version</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVersion() {
 		return this.version;
 	}
+	/**
+	 * <p>Setter for the field <code>version</code>.</p>
+	 *
+	 * @param version a {@link java.lang.String} object.
+	 */
 	public void setVersion(String version) {
 		this.version = version;
 	}

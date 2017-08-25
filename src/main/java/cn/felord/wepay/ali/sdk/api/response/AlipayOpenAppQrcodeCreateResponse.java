@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.app.qrcode.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-06 17:41:17
+ * @version $Id: $Id
  */
 public class AlipayOpenAppQrcodeCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayOpenAppQrcodeCreateResponse extends AlipayResponse {
 	@ApiField("qr_code_url")
 	private String qrCodeUrl;
 
+	/**
+	 * <p>Setter for the field <code>qrCodeUrl</code>.</p>
+	 *
+	 * @param qrCodeUrl a {@link java.lang.String} object.
+	 */
 	public void setQrCodeUrl(String qrCodeUrl) {
 		this.qrCodeUrl = qrCodeUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>qrCodeUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCodeUrl( ) {
 		return this.qrCodeUrl;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 返回给isv结果，成员为列表类型
  *
  * @author auto create
- * @since 1.0, 2017-06-26 14:14:12
+ * @version $Id: $Id
  */
 public class TableInfoResult extends AlipayObject {
 
@@ -23,9 +23,19 @@ public class TableInfoResult extends AlipayObject {
 	@ApiField("table_list_result")
 	private List<TableListResult> tableInfoList;
 
+	/**
+	 * <p>Getter for the field <code>tableInfoList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<TableListResult> getTableInfoList() {
 		return this.tableInfoList;
 	}
+	/**
+	 * <p>Setter for the field <code>tableInfoList</code>.</p>
+	 *
+	 * @param tableInfoList a {@link java.util.List} object.
+	 */
 	public void setTableInfoList(List<TableListResult> tableInfoList) {
 		this.tableInfoList = tableInfoList;
 	}

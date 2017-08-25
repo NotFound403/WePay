@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询凤蝶H5页面详情
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:11
+ * @version $Id: $Id
  */
 public class AlipayMarketingToolFengdieActivityQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayMarketingToolFengdieActivityQueryModel extends AlipayObject {
 	@ApiField("activity_id")
 	private Long activityId;
 
+	/**
+	 * <p>Getter for the field <code>activityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getActivityId() {
 		return this.activityId;
 	}
+	/**
+	 * <p>Setter for the field <code>activityId</code>.</p>
+	 *
+	 * @param activityId a {@link java.lang.Long} object.
+	 */
 	public void setActivityId(Long activityId) {
 		this.activityId = activityId;
 	}

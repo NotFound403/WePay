@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.system.oauth.token response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-31 15:36:51
+ * @version $Id: $Id
  */
 public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 
@@ -50,44 +50,104 @@ public class AlipaySystemOauthTokenResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>accessToken</code>.</p>
+	 *
+	 * @param accessToken a {@link java.lang.String} object.
+	 */
 	public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
 	}
+	/**
+	 * <p>Getter for the field <code>accessToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccessToken( ) {
 		return this.accessToken;
 	}
 
+	/**
+	 * <p>Setter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @param alipayUserId a {@link java.lang.String} object.
+	 */
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>expiresIn</code>.</p>
+	 *
+	 * @param expiresIn a {@link java.lang.String} object.
+	 */
 	public void setExpiresIn(String expiresIn) {
 		this.expiresIn = expiresIn;
 	}
+	/**
+	 * <p>Getter for the field <code>expiresIn</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExpiresIn( ) {
 		return this.expiresIn;
 	}
 
+	/**
+	 * <p>Setter for the field <code>reExpiresIn</code>.</p>
+	 *
+	 * @param reExpiresIn a {@link java.lang.String} object.
+	 */
 	public void setReExpiresIn(String reExpiresIn) {
 		this.reExpiresIn = reExpiresIn;
 	}
+	/**
+	 * <p>Getter for the field <code>reExpiresIn</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReExpiresIn( ) {
 		return this.reExpiresIn;
 	}
 
+	/**
+	 * <p>Setter for the field <code>refreshToken</code>.</p>
+	 *
+	 * @param refreshToken a {@link java.lang.String} object.
+	 */
 	public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
+	/**
+	 * <p>Getter for the field <code>refreshToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefreshToken( ) {
 		return this.refreshToken;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}

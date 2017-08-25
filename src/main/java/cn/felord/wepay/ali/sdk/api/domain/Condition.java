@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 条件模型
  *
  * @author auto create
- * @since 1.0, 2017-01-18 15:50:35
+ * @version $Id: $Id
  */
 public class Condition extends AlipayObject {
 
@@ -35,23 +35,53 @@ status：活动状态
 	@ApiField("operator")
 	private String operator;
 
+	/**
+	 * <p>Getter for the field <code>fieldName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFieldName() {
 		return this.fieldName;
 	}
+	/**
+	 * <p>Setter for the field <code>fieldName</code>.</p>
+	 *
+	 * @param fieldName a {@link java.lang.String} object.
+	 */
 	public void setFieldName(String fieldName) {
 		this.fieldName = fieldName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fieldValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFieldValue() {
 		return this.fieldValue;
 	}
+	/**
+	 * <p>Setter for the field <code>fieldValue</code>.</p>
+	 *
+	 * @param fieldValue a {@link java.lang.String} object.
+	 */
 	public void setFieldValue(String fieldValue) {
 		this.fieldValue = fieldValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operator</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperator() {
 		return this.operator;
 	}
+	/**
+	 * <p>Setter for the field <code>operator</code>.</p>
+	 *
+	 * @param operator a {@link java.lang.String} object.
+	 */
 	public void setOperator(String operator) {
 		this.operator = operator;
 	}

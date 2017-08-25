@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.daowei.sp.schedule.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-10 16:05:46
+ * @version $Id: $Id
  */
 public class AlipayDaoweiSpScheduleModifyResponse extends AlipayResponse {
 

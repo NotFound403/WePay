@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.exsc.user.firstfundinpour.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 16:23:40
+ * @version $Id: $Id
  */
 public class AlipayExscUserFirstfundinpourGetResponse extends AlipayResponse {
 
@@ -28,16 +28,36 @@ public class AlipayExscUserFirstfundinpourGetResponse extends AlipayResponse {
 	@ApiField("success")
 	private Boolean success;
 
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType( ) {
 		return this.bizType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>success</code>.</p>
+	 *
+	 * @param success a {@link java.lang.Boolean} object.
+	 */
 	public void setSuccess(Boolean success) {
 		this.success = success;
 	}
+	/**
+	 * <p>Getter for the field <code>success</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSuccess( ) {
 		return this.success;
 	}

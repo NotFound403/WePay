@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 时间表，定义当前服务者在一定时间范围内，可以提供服务的时间窗口
  *
  * @author auto create
- * @since 1.0, 2017-01-12 17:05:10
+ * @version $Id: $Id
  */
 public class ScheduleInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class ScheduleInfo extends AlipayObject {
 	@ApiField("date")
 	private String date;
 
+	/**
+	 * <p>Getter for the field <code>bitmap</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBitmap() {
 		return this.bitmap;
 	}
+	/**
+	 * <p>Setter for the field <code>bitmap</code>.</p>
+	 *
+	 * @param bitmap a {@link java.lang.String} object.
+	 */
 	public void setBitmap(String bitmap) {
 		this.bitmap = bitmap;
 	}
 
+	/**
+	 * <p>Getter for the field <code>date</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDate() {
 		return this.date;
 	}
+	/**
+	 * <p>Setter for the field <code>date</code>.</p>
+	 *
+	 * @param date a {@link java.lang.String} object.
+	 */
 	public void setDate(String date) {
 		this.date = date;
 	}

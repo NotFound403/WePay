@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.content.comment.reply.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-14 22:26:53
+ * @version $Id: $Id
  */
 public class KoubeiContentCommentReplyCreateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class KoubeiContentCommentReplyCreateResponse extends AlipayResponse {
 	@ApiField("comment_id")
 	private String commentId;
 
+	/**
+	 * <p>Setter for the field <code>commentId</code>.</p>
+	 *
+	 * @param commentId a {@link java.lang.String} object.
+	 */
 	public void setCommentId(String commentId) {
 		this.commentId = commentId;
 	}
+	/**
+	 * <p>Getter for the field <code>commentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommentId( ) {
 		return this.commentId;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 报关订购人信息，即用户留在商户处的身份信息。可用于与支付单的身份信息作比对。
  *
  * @author auto create
- * @since 1.0, 2016-11-09 19:11:51
+ * @version $Id: $Id
  */
 public class CustomsDeclareBuyerInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class CustomsDeclareBuyerInfo extends AlipayObject {
 	@ApiField("buyer_name")
 	private String buyerName;
 
+	/**
+	 * <p>Getter for the field <code>buyerCertNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerCertNo() {
 		return this.buyerCertNo;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerCertNo</code>.</p>
+	 *
+	 * @param buyerCertNo a {@link java.lang.String} object.
+	 */
 	public void setBuyerCertNo(String buyerCertNo) {
 		this.buyerCertNo = buyerCertNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>buyerName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerName() {
 		return this.buyerName;
 	}
+	/**
+	 * <p>Setter for the field <code>buyerName</code>.</p>
+	 *
+	 * @param buyerName a {@link java.lang.String} object.
+	 */
 	public void setBuyerName(String buyerName) {
 		this.buyerName = buyerName;
 	}

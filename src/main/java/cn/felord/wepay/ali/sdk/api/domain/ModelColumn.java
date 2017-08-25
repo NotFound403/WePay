@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 模型数据
  *
  * @author auto create
- * @since 1.0, 2017-04-27 14:36:26
+ * @version $Id: $Id
  */
 public class ModelColumn extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class ModelColumn extends AlipayObject {
 	@ApiField("data")
 	private String data;
 
+	/**
+	 * <p>Getter for the field <code>alias</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlias() {
 		return this.alias;
 	}
+	/**
+	 * <p>Setter for the field <code>alias</code>.</p>
+	 *
+	 * @param alias a {@link java.lang.String} object.
+	 */
 	public void setAlias(String alias) {
 		this.alias = alias;
 	}
 
+	/**
+	 * <p>Getter for the field <code>data</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getData() {
 		return this.data;
 	}
+	/**
+	 * <p>Setter for the field <code>data</code>.</p>
+	 *
+	 * @param data a {@link java.lang.String} object.
+	 */
 	public void setData(String data) {
 		this.data = data;
 	}

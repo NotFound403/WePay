@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 会员卡模板外部权益创建
  *
  * @author auto create
- * @since 1.0, 2017-06-23 09:40:35
+ * @version $Id: $Id
  */
 public class AlipayMarketingCardBenefitCreateModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayMarketingCardBenefitCreateModel extends AlipayObject {
 	@ApiField("mcard_template_benefit")
 	private McardTemplateBenefit mcardTemplateBenefit;
 
+	/**
+	 * <p>Getter for the field <code>mcardTemplateBenefit</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.McardTemplateBenefit} object.
+	 */
 	public McardTemplateBenefit getMcardTemplateBenefit() {
 		return this.mcardTemplateBenefit;
 	}
+	/**
+	 * <p>Setter for the field <code>mcardTemplateBenefit</code>.</p>
+	 *
+	 * @param mcardTemplateBenefit a {@link cn.felord.wepay.ali.sdk.api.domain.McardTemplateBenefit} object.
+	 */
 	public void setMcardTemplateBenefit(McardTemplateBenefit mcardTemplateBenefit) {
 		this.mcardTemplateBenefit = mcardTemplateBenefit;
 	}

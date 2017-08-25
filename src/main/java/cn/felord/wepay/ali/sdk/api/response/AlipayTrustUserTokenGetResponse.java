@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trust.user.token.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-05-06 18:13:09
+ * @version $Id: $Id
  */
 public class AlipayTrustUserTokenGetResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayTrustUserTokenGetResponse extends AlipayResponse {
 	@ApiField("refresh_token")
 	private String refreshToken;
 
+	/**
+	 * <p>Setter for the field <code>accessToken</code>.</p>
+	 *
+	 * @param accessToken a {@link java.lang.String} object.
+	 */
 	public void setAccessToken(String accessToken) {
 		this.accessToken = accessToken;
 	}
+	/**
+	 * <p>Getter for the field <code>accessToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccessToken( ) {
 		return this.accessToken;
 	}
 
+	/**
+	 * <p>Setter for the field <code>refreshToken</code>.</p>
+	 *
+	 * @param refreshToken a {@link java.lang.String} object.
+	 */
 	public void setRefreshToken(String refreshToken) {
 		this.refreshToken = refreshToken;
 	}
+	/**
+	 * <p>Getter for the field <code>refreshToken</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRefreshToken( ) {
 		return this.refreshToken;
 	}

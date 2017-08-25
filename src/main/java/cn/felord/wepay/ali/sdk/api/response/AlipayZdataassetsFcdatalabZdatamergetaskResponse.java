@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.zdataassets.fcdatalab.zdatamergetask response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-26 15:14:28
+ * @version $Id: $Id
  */
 public class AlipayZdataassetsFcdatalabZdatamergetaskResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayZdataassetsFcdatalabZdatamergetaskResponse extends AlipayResp
 	@ApiField("result")
 	private String result;
 
+	/**
+	 * <p>Setter for the field <code>result</code>.</p>
+	 *
+	 * @param result a {@link java.lang.String} object.
+	 */
 	public void setResult(String result) {
 		this.result = result;
 	}
+	/**
+	 * <p>Getter for the field <code>result</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResult( ) {
 		return this.result;
 	}

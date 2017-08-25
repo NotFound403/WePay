@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 根据标签圈人的过滤器
  *
  * @author auto create
- * @since 1.0, 2016-12-02 15:56:25
+ * @version $Id: $Id
  */
 public class Filter extends AlipayObject {
 
@@ -27,16 +27,36 @@ or：只需满足其中一个条件
 	@ApiField("template")
 	private String template;
 
+	/**
+	 * <p>Getter for the field <code>context</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.LabelContext} object.
+	 */
 	public LabelContext getContext() {
 		return this.context;
 	}
+	/**
+	 * <p>Setter for the field <code>context</code>.</p>
+	 *
+	 * @param context a {@link cn.felord.wepay.ali.sdk.api.domain.LabelContext} object.
+	 */
 	public void setContext(LabelContext context) {
 		this.context = context;
 	}
 
+	/**
+	 * <p>Getter for the field <code>template</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplate() {
 		return this.template;
 	}
+	/**
+	 * <p>Setter for the field <code>template</code>.</p>
+	 *
+	 * @param template a {@link java.lang.String} object.
+	 */
 	public void setTemplate(String template) {
 		this.template = template;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.point.balance.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 19:01:40
+ * @version $Id: $Id
  */
 public class AlipayPointBalanceGetResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayPointBalanceGetResponse extends AlipayResponse {
 	@ApiField("point_amount")
 	private Long pointAmount;
 
+	/**
+	 * <p>Setter for the field <code>pointAmount</code>.</p>
+	 *
+	 * @param pointAmount a {@link java.lang.Long} object.
+	 */
 	public void setPointAmount(Long pointAmount) {
 		this.pointAmount = pointAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>pointAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPointAmount( ) {
 		return this.pointAmount;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.cplife.bill.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-10 18:52:46
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeBillBatchqueryResponse extends AlipayResponse {
 
@@ -36,23 +36,53 @@ public class AlipayEcoCplifeBillBatchqueryResponse extends AlipayResponse {
 	@ApiField("total_bill_count")
 	private Long totalBillCount;
 
+	/**
+	 * <p>Setter for the field <code>billResultSet</code>.</p>
+	 *
+	 * @param billResultSet a {@link java.util.List} object.
+	 */
 	public void setBillResultSet(List<CPBillResultSet> billResultSet) {
 		this.billResultSet = billResultSet;
 	}
+	/**
+	 * <p>Getter for the field <code>billResultSet</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CPBillResultSet> getBillResultSet( ) {
 		return this.billResultSet;
 	}
 
+	/**
+	 * <p>Setter for the field <code>currentPageNum</code>.</p>
+	 *
+	 * @param currentPageNum a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPageNum(Long currentPageNum) {
 		this.currentPageNum = currentPageNum;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPageNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPageNum( ) {
 		return this.currentPageNum;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalBillCount</code>.</p>
+	 *
+	 * @param totalBillCount a {@link java.lang.Long} object.
+	 */
 	public void setTotalBillCount(Long totalBillCount) {
 		this.totalBillCount = totalBillCount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalBillCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalBillCount( ) {
 		return this.totalBillCount;
 	}

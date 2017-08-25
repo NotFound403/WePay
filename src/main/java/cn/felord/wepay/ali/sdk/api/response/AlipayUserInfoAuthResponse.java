@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.info.auth response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-12-13 17:20:12
+ * @version $Id: $Id
  */
 public class AlipayUserInfoAuthResponse extends AlipayResponse {
 

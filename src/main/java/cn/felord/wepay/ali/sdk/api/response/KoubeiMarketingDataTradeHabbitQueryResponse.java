@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.trade.habbit.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-25 10:43:58
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataTradeHabbitQueryResponse extends AlipayResponse {
 
@@ -31,9 +31,19 @@ public class KoubeiMarketingDataTradeHabbitQueryResponse extends AlipayResponse 
 	@ApiField("trade_habit_info")
 	private String tradeHabitInfo;
 
+	/**
+	 * <p>Setter for the field <code>tradeHabitInfo</code>.</p>
+	 *
+	 * @param tradeHabitInfo a {@link java.lang.String} object.
+	 */
 	public void setTradeHabitInfo(String tradeHabitInfo) {
 		this.tradeHabitInfo = tradeHabitInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeHabitInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeHabitInfo( ) {
 		return this.tradeHabitInfo;
 	}

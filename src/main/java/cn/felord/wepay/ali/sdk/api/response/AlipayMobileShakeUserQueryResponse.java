@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.shake.user.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-02-27 11:22:58
+ * @version $Id: $Id
  */
 public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 
@@ -38,30 +38,70 @@ public class AlipayMobileShakeUserQueryResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>bizdata</code>.</p>
+	 *
+	 * @param bizdata a {@link java.lang.String} object.
+	 */
 	public void setBizdata(String bizdata) {
 		this.bizdata = bizdata;
 	}
+	/**
+	 * <p>Getter for the field <code>bizdata</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizdata( ) {
 		return this.bizdata;
 	}
 
+	/**
+	 * <p>Setter for the field <code>logonId</code>.</p>
+	 *
+	 * @param logonId a {@link java.lang.String} object.
+	 */
 	public void setLogonId(String logonId) {
 		this.logonId = logonId;
 	}
+	/**
+	 * <p>Getter for the field <code>logonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogonId( ) {
 		return this.logonId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>passId</code>.</p>
+	 *
+	 * @param passId a {@link java.lang.String} object.
+	 */
 	public void setPassId(String passId) {
 		this.passId = passId;
 	}
+	/**
+	 * <p>Getter for the field <code>passId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassId( ) {
 		return this.passId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}

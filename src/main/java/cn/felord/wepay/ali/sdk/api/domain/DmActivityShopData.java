@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 店铺DM营销数据
  *
  * @author auto create
- * @since 1.0, 2017-05-16 17:02:42
+ * @version $Id: $Id
  */
 public class DmActivityShopData extends AlipayObject {
 
@@ -69,65 +69,155 @@ public class DmActivityShopData extends AlipayObject {
 	@ApiField("total_exposure_times")
 	private Long totalExposureTimes;
 
+	/**
+	 * <p>Getter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtCreate() {
 		return this.gmtCreate;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @param gmtCreate a {@link java.util.Date} object.
+	 */
 	public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtModified() {
 		return this.gmtModified;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @param gmtModified a {@link java.util.Date} object.
+	 */
 	public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
 
+	/**
+	 * <p>Getter for the field <code>oneDayClickPersons</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getOneDayClickPersons() {
 		return this.oneDayClickPersons;
 	}
+	/**
+	 * <p>Setter for the field <code>oneDayClickPersons</code>.</p>
+	 *
+	 * @param oneDayClickPersons a {@link java.lang.Long} object.
+	 */
 	public void setOneDayClickPersons(Long oneDayClickPersons) {
 		this.oneDayClickPersons = oneDayClickPersons;
 	}
 
+	/**
+	 * <p>Getter for the field <code>oneDayClickTimes</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getOneDayClickTimes() {
 		return this.oneDayClickTimes;
 	}
+	/**
+	 * <p>Setter for the field <code>oneDayClickTimes</code>.</p>
+	 *
+	 * @param oneDayClickTimes a {@link java.lang.Long} object.
+	 */
 	public void setOneDayClickTimes(Long oneDayClickTimes) {
 		this.oneDayClickTimes = oneDayClickTimes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>oneDayExposureTimes</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getOneDayExposureTimes() {
 		return this.oneDayExposureTimes;
 	}
+	/**
+	 * <p>Setter for the field <code>oneDayExposureTimes</code>.</p>
+	 *
+	 * @param oneDayExposureTimes a {@link java.lang.Long} object.
+	 */
 	public void setOneDayExposureTimes(Long oneDayExposureTimes) {
 		this.oneDayExposureTimes = oneDayExposureTimes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalClickPersons</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalClickPersons() {
 		return this.totalClickPersons;
 	}
+	/**
+	 * <p>Setter for the field <code>totalClickPersons</code>.</p>
+	 *
+	 * @param totalClickPersons a {@link java.lang.Long} object.
+	 */
 	public void setTotalClickPersons(Long totalClickPersons) {
 		this.totalClickPersons = totalClickPersons;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalClickTimes</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalClickTimes() {
 		return this.totalClickTimes;
 	}
+	/**
+	 * <p>Setter for the field <code>totalClickTimes</code>.</p>
+	 *
+	 * @param totalClickTimes a {@link java.lang.Long} object.
+	 */
 	public void setTotalClickTimes(Long totalClickTimes) {
 		this.totalClickTimes = totalClickTimes;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalExposureTimes</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalExposureTimes() {
 		return this.totalExposureTimes;
 	}
+	/**
+	 * <p>Setter for the field <code>totalExposureTimes</code>.</p>
+	 *
+	 * @param totalExposureTimes a {@link java.lang.Long} object.
+	 */
 	public void setTotalExposureTimes(Long totalExposureTimes) {
 		this.totalExposureTimes = totalExposureTimes;
 	}

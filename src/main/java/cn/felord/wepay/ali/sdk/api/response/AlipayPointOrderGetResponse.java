@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.point.order.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 18:56:51
+ * @version $Id: $Id
  */
 public class AlipayPointOrderGetResponse extends AlipayResponse {
 
@@ -63,58 +63,138 @@ public class AlipayPointOrderGetResponse extends AlipayResponse {
 	@ApiField("receive_user_id")
 	private String receiveUserId;
 
+	/**
+	 * <p>Setter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @param alipayOrderNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayOrderNo( ) {
 		return this.alipayOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>createTime</code>.</p>
+	 *
+	 * @param createTime a {@link java.util.Date} object.
+	 */
 	public void setCreateTime(Date createTime) {
 		this.createTime = createTime;
 	}
+	/**
+	 * <p>Getter for the field <code>createTime</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getCreateTime( ) {
 		return this.createTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>dispatchUserId</code>.</p>
+	 *
+	 * @param dispatchUserId a {@link java.lang.String} object.
+	 */
 	public void setDispatchUserId(String dispatchUserId) {
 		this.dispatchUserId = dispatchUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>dispatchUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDispatchUserId( ) {
 		return this.dispatchUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo( ) {
 		return this.memo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>merchantOrderNo</code>.</p>
+	 *
+	 * @param merchantOrderNo a {@link java.lang.String} object.
+	 */
 	public void setMerchantOrderNo(String merchantOrderNo) {
 		this.merchantOrderNo = merchantOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>merchantOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantOrderNo( ) {
 		return this.merchantOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @param orderStatus a {@link java.lang.String} object.
+	 */
 	public void setOrderStatus(String orderStatus) {
 		this.orderStatus = orderStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>orderStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderStatus( ) {
 		return this.orderStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pointCount</code>.</p>
+	 *
+	 * @param pointCount a {@link java.lang.Long} object.
+	 */
 	public void setPointCount(Long pointCount) {
 		this.pointCount = pointCount;
 	}
+	/**
+	 * <p>Getter for the field <code>pointCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPointCount( ) {
 		return this.pointCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>receiveUserId</code>.</p>
+	 *
+	 * @param receiveUserId a {@link java.lang.String} object.
+	 */
 	public void setReceiveUserId(String receiveUserId) {
 		this.receiveUserId = receiveUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>receiveUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReceiveUserId( ) {
 		return this.receiveUserId;
 	}

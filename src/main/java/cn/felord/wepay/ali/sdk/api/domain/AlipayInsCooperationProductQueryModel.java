@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 保险产品查询
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:55:33
+ * @version $Id: $Id
  */
 public class AlipayInsCooperationProductQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayInsCooperationProductQueryModel extends AlipayObject {
 	@ApiField("prod_code")
 	private String prodCode;
 
+	/**
+	 * <p>Getter for the field <code>prodCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdCode() {
 		return this.prodCode;
 	}
+	/**
+	 * <p>Setter for the field <code>prodCode</code>.</p>
+	 *
+	 * @param prodCode a {@link java.lang.String} object.
+	 */
 	public void setProdCode(String prodCode) {
 		this.prodCode = prodCode;
 	}

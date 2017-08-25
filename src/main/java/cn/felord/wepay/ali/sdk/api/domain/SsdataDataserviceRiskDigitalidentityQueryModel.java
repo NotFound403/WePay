@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 蚁盾设备指纹
  *
  * @author auto create
- * @since 1.0, 2017-06-26 11:43:28
+ * @version $Id: $Id
  */
 public class SsdataDataserviceRiskDigitalidentityQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class SsdataDataserviceRiskDigitalidentityQueryModel extends AlipayObject
 	@ApiField("device_code")
 	private String deviceCode;
 
+	/**
+	 * <p>Getter for the field <code>deviceCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeviceCode() {
 		return this.deviceCode;
 	}
+	/**
+	 * <p>Setter for the field <code>deviceCode</code>.</p>
+	 *
+	 * @param deviceCode a {@link java.lang.String} object.
+	 */
 	public void setDeviceCode(String deviceCode) {
 		this.deviceCode = deviceCode;
 	}

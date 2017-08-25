@@ -11,8 +11,6 @@ import cn.felord.wepay.common.pay.PayType;
  * @version v1.0.0
  * @since 2017 /7/17  11:23
  */
-
-
 public enum WeChatPayTypeEnum implements PayType {
     /**
      * 刷卡支付.
@@ -57,6 +55,7 @@ public enum WeChatPayTypeEnum implements PayType {
     BILL_DOWNLOAD("pay/downloadbill");
 
 
+    /** Constant <code>WE_CHAT_PAY_URL="https://api.mch.weixin.qq.com/"</code> */
     private static final String WE_CHAT_PAY_URL = "https://api.mch.weixin.qq.com/";
     private final String uri;
 
@@ -64,11 +63,13 @@ public enum WeChatPayTypeEnum implements PayType {
         this.uri = uri;
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getType() {
         return this.name();
     }
 
+    /** {@inheritDoc} */
     @Override
     public String getApi() {
         return WE_CHAT_PAY_URL + this.uri;

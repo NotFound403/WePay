@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 根据卡号和instId查询得到的卡bin信息对象模型
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class CardBinVO extends AlipayObject {
 
@@ -67,65 +67,155 @@ public class CardBinVO extends AlipayObject {
 	@ApiField("version")
 	private String version;
 
+	/**
+	 * <p>Getter for the field <code>cardAlias</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardAlias() {
 		return this.cardAlias;
 	}
+	/**
+	 * <p>Setter for the field <code>cardAlias</code>.</p>
+	 *
+	 * @param cardAlias a {@link java.lang.String} object.
+	 */
 	public void setCardAlias(String cardAlias) {
 		this.cardAlias = cardAlias;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardBinValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCardBinValue() {
 		return this.cardBinValue;
 	}
+	/**
+	 * <p>Setter for the field <code>cardBinValue</code>.</p>
+	 *
+	 * @param cardBinValue a {@link java.lang.String} object.
+	 */
 	public void setCardBinValue(String cardBinValue) {
 		this.cardBinValue = cardBinValue;
 	}
 
+	/**
+	 * <p>Getter for the field <code>cardTypeVo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CardTypeVO} object.
+	 */
 	public CardTypeVO getCardTypeVo() {
 		return this.cardTypeVo;
 	}
+	/**
+	 * <p>Setter for the field <code>cardTypeVo</code>.</p>
+	 *
+	 * @param cardTypeVo a {@link cn.felord.wepay.ali.sdk.api.domain.CardTypeVO} object.
+	 */
 	public void setCardTypeVo(CardTypeVO cardTypeVo) {
 		this.cardTypeVo = cardTypeVo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>domainVo</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CardDomainVO} object.
+	 */
 	public CardDomainVO getDomainVo() {
 		return this.domainVo;
 	}
+	/**
+	 * <p>Setter for the field <code>domainVo</code>.</p>
+	 *
+	 * @param domainVo a {@link cn.felord.wepay.ali.sdk.api.domain.CardDomainVO} object.
+	 */
 	public void setDomainVo(CardDomainVO domainVo) {
 		this.domainVo = domainVo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>instId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInstId() {
 		return this.instId;
 	}
+	/**
+	 * <p>Setter for the field <code>instId</code>.</p>
+	 *
+	 * @param instId a {@link java.lang.String} object.
+	 */
 	public void setInstId(String instId) {
 		this.instId = instId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>instLen</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInstLen() {
 		return this.instLen;
 	}
+	/**
+	 * <p>Setter for the field <code>instLen</code>.</p>
+	 *
+	 * @param instLen a {@link java.lang.String} object.
+	 */
 	public void setInstLen(String instLen) {
 		this.instLen = instLen;
 	}
 
+	/**
+	 * <p>Getter for the field <code>memo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMemo() {
 		return this.memo;
 	}
+	/**
+	 * <p>Setter for the field <code>memo</code>.</p>
+	 *
+	 * @param memo a {@link java.lang.String} object.
+	 */
 	public void setMemo(String memo) {
 		this.memo = memo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>operator</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOperator() {
 		return this.operator;
 	}
+	/**
+	 * <p>Setter for the field <code>operator</code>.</p>
+	 *
+	 * @param operator a {@link java.lang.String} object.
+	 */
 	public void setOperator(String operator) {
 		this.operator = operator;
 	}
 
+	/**
+	 * <p>Getter for the field <code>version</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVersion() {
 		return this.version;
 	}
+	/**
+	 * <p>Setter for the field <code>version</code>.</p>
+	 *
+	 * @param version a {@link java.lang.String} object.
+	 */
 	public void setVersion(String version) {
 		this.version = version;
 	}

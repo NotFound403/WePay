@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 圈人规则创建
  *
  * @author auto create
- * @since 1.0, 2016-12-23 18:16:35
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignRuleCrowdCreateModel extends AlipayObject {
 
@@ -59,23 +59,53 @@ user_age >60 then 11
 	@ApiField("ruledesc")
 	private String ruledesc;
 
+	/**
+	 * <p>Getter for the field <code>mdatacrowdsource</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMdatacrowdsource() {
 		return this.mdatacrowdsource;
 	}
+	/**
+	 * <p>Setter for the field <code>mdatacrowdsource</code>.</p>
+	 *
+	 * @param mdatacrowdsource a {@link java.lang.String} object.
+	 */
 	public void setMdatacrowdsource(String mdatacrowdsource) {
 		this.mdatacrowdsource = mdatacrowdsource;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mpid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMpid() {
 		return this.mpid;
 	}
+	/**
+	 * <p>Setter for the field <code>mpid</code>.</p>
+	 *
+	 * @param mpid a {@link java.lang.String} object.
+	 */
 	public void setMpid(String mpid) {
 		this.mpid = mpid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruledesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuledesc() {
 		return this.ruledesc;
 	}
+	/**
+	 * <p>Setter for the field <code>ruledesc</code>.</p>
+	 *
+	 * @param ruledesc a {@link java.lang.String} object.
+	 */
 	public void setRuledesc(String ruledesc) {
 		this.ruledesc = ruledesc;
 	}

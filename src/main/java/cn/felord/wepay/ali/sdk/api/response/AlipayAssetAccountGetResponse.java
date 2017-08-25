@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.asset.account.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-07 18:05:33
+ * @version $Id: $Id
  */
 public class AlipayAssetAccountGetResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class AlipayAssetAccountGetResponse extends AlipayResponse {
 	@ApiField("asset_account_result")
 	private List<AssetAccountResult> assetList;
 
+	/**
+	 * <p>Setter for the field <code>assetList</code>.</p>
+	 *
+	 * @param assetList a {@link java.util.List} object.
+	 */
 	public void setAssetList(List<AssetAccountResult> assetList) {
 		this.assetList = assetList;
 	}
+	/**
+	 * <p>Getter for the field <code>assetList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<AssetAccountResult> getAssetList( ) {
 		return this.assetList;
 	}

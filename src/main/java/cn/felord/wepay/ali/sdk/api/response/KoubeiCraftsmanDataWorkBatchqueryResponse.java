@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.work.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-13 16:33:13
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataWorkBatchqueryResponse extends AlipayResponse {
 
@@ -48,37 +48,87 @@ public class KoubeiCraftsmanDataWorkBatchqueryResponse extends AlipayResponse {
 	@ApiField("craftsman_work_open_model")
 	private List<CraftsmanWorkOpenModel> works;
 
+	/**
+	 * <p>Setter for the field <code>currentPageNo</code>.</p>
+	 *
+	 * @param currentPageNo a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPageNo(Long currentPageNo) {
 		this.currentPageNo = currentPageNo;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPageNo( ) {
 		return this.currentPageNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalPageNo</code>.</p>
+	 *
+	 * @param totalPageNo a {@link java.lang.Long} object.
+	 */
 	public void setTotalPageNo(Long totalPageNo) {
 		this.totalPageNo = totalPageNo;
 	}
+	/**
+	 * <p>Getter for the field <code>totalPageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalPageNo( ) {
 		return this.totalPageNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalWorks</code>.</p>
+	 *
+	 * @param totalWorks a {@link java.lang.Long} object.
+	 */
 	public void setTotalWorks(Long totalWorks) {
 		this.totalWorks = totalWorks;
 	}
+	/**
+	 * <p>Getter for the field <code>totalWorks</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalWorks( ) {
 		return this.totalWorks;
 	}
 
+	/**
+	 * <p>Setter for the field <code>works</code>.</p>
+	 *
+	 * @param works a {@link java.util.List} object.
+	 */
 	public void setWorks(List<CraftsmanWorkOpenModel> works) {
 		this.works = works;
 	}
+	/**
+	 * <p>Getter for the field <code>works</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CraftsmanWorkOpenModel> getWorks( ) {
 		return this.works;
 	}

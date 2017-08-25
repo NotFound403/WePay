@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.eco.mycar.data.external.send response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-05-12 10:25:11
+ * @version $Id: $Id
  */
 public class AlipayEcoMycarDataExternalSendResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayEcoMycarDataExternalSendResponse extends AlipayResponse {
 	@ApiField("process_result")
 	private String processResult;
 
+	/**
+	 * <p>Setter for the field <code>externalSystemName</code>.</p>
+	 *
+	 * @param externalSystemName a {@link java.lang.String} object.
+	 */
 	public void setExternalSystemName(String externalSystemName) {
 		this.externalSystemName = externalSystemName;
 	}
+	/**
+	 * <p>Getter for the field <code>externalSystemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalSystemName( ) {
 		return this.externalSystemName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>processResult</code>.</p>
+	 *
+	 * @param processResult a {@link java.lang.String} object.
+	 */
 	public void setProcessResult(String processResult) {
 		this.processResult = processResult;
 	}
+	/**
+	 * <p>Getter for the field <code>processResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProcessResult( ) {
 		return this.processResult;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.customer.certification.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-07 14:25:49
+ * @version $Id: $Id
  */
 public class ZhimaCustomerCertificationQueryResponse extends AlipayResponse {
 
@@ -32,23 +32,53 @@ public class ZhimaCustomerCertificationQueryResponse extends AlipayResponse {
 	@ApiField("passed")
 	private String passed;
 
+	/**
+	 * <p>Setter for the field <code>channelStatuses</code>.</p>
+	 *
+	 * @param channelStatuses a {@link java.lang.String} object.
+	 */
 	public void setChannelStatuses(String channelStatuses) {
 		this.channelStatuses = channelStatuses;
 	}
+	/**
+	 * <p>Getter for the field <code>channelStatuses</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChannelStatuses( ) {
 		return this.channelStatuses;
 	}
 
+	/**
+	 * <p>Setter for the field <code>failedReason</code>.</p>
+	 *
+	 * @param failedReason a {@link java.lang.String} object.
+	 */
 	public void setFailedReason(String failedReason) {
 		this.failedReason = failedReason;
 	}
+	/**
+	 * <p>Getter for the field <code>failedReason</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFailedReason( ) {
 		return this.failedReason;
 	}
 
+	/**
+	 * <p>Setter for the field <code>passed</code>.</p>
+	 *
+	 * @param passed a {@link java.lang.String} object.
+	 */
 	public void setPassed(String passed) {
 		this.passed = passed;
 	}
+	/**
+	 * <p>Getter for the field <code>passed</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassed( ) {
 		return this.passed;
 	}

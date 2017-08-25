@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 用户步数信息
  *
  * @author auto create
- * @since 1.0, 2017-07-07 11:56:25
+ * @version $Id: $Id
  */
 public class StepcounterDataInfo extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class StepcounterDataInfo extends AlipayObject {
 	@ApiField("time_zone")
 	private String timeZone;
 
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCount() {
 		return this.count;
 	}
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.Long} object.
+	 */
 	public void setCount(Long count) {
 		this.count = count;
 	}
 
+	/**
+	 * <p>Getter for the field <code>countDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCountDate() {
 		return this.countDate;
 	}
+	/**
+	 * <p>Setter for the field <code>countDate</code>.</p>
+	 *
+	 * @param countDate a {@link java.lang.String} object.
+	 */
 	public void setCountDate(String countDate) {
 		this.countDate = countDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>timeZone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTimeZone() {
 		return this.timeZone;
 	}
+	/**
+	 * <p>Setter for the field <code>timeZone</code>.</p>
+	 *
+	 * @param timeZone a {@link java.lang.String} object.
+	 */
 	public void setTimeZone(String timeZone) {
 		this.timeZone = timeZone;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 创建现金活动
  *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:08
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignCashCreateModel extends AlipayObject {
 
@@ -72,65 +72,155 @@ public class AlipayMarketingCampaignCashCreateModel extends AlipayObject {
 	@ApiField("total_num")
 	private String totalNum;
 
+	/**
+	 * <p>Getter for the field <code>couponName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponName() {
 		return this.couponName;
 	}
+	/**
+	 * <p>Setter for the field <code>couponName</code>.</p>
+	 *
+	 * @param couponName a {@link java.lang.String} object.
+	 */
 	public void setCouponName(String couponName) {
 		this.couponName = couponName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEndTime() {
 		return this.endTime;
 	}
+	/**
+	 * <p>Setter for the field <code>endTime</code>.</p>
+	 *
+	 * @param endTime a {@link java.lang.String} object.
+	 */
 	public void setEndTime(String endTime) {
 		this.endTime = endTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>merchantLink</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantLink() {
 		return this.merchantLink;
 	}
+	/**
+	 * <p>Setter for the field <code>merchantLink</code>.</p>
+	 *
+	 * @param merchantLink a {@link java.lang.String} object.
+	 */
 	public void setMerchantLink(String merchantLink) {
 		this.merchantLink = merchantLink;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeMsg() {
 		return this.prizeMsg;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeMsg</code>.</p>
+	 *
+	 * @param prizeMsg a {@link java.lang.String} object.
+	 */
 	public void setPrizeMsg(String prizeMsg) {
 		this.prizeMsg = prizeMsg;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeType() {
 		return this.prizeType;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeType</code>.</p>
+	 *
+	 * @param prizeType a {@link java.lang.String} object.
+	 */
 	public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sendFreqency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSendFreqency() {
 		return this.sendFreqency;
 	}
+	/**
+	 * <p>Setter for the field <code>sendFreqency</code>.</p>
+	 *
+	 * @param sendFreqency a {@link java.lang.String} object.
+	 */
 	public void setSendFreqency(String sendFreqency) {
 		this.sendFreqency = sendFreqency;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStartTime() {
 		return this.startTime;
 	}
+	/**
+	 * <p>Setter for the field <code>startTime</code>.</p>
+	 *
+	 * @param startTime a {@link java.lang.String} object.
+	 */
 	public void setStartTime(String startTime) {
 		this.startTime = startTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalMoney</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalMoney() {
 		return this.totalMoney;
 	}
+	/**
+	 * <p>Setter for the field <code>totalMoney</code>.</p>
+	 *
+	 * @param totalMoney a {@link java.lang.String} object.
+	 */
 	public void setTotalMoney(String totalMoney) {
 		this.totalMoney = totalMoney;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalNum() {
 		return this.totalNum;
 	}
+	/**
+	 * <p>Setter for the field <code>totalNum</code>.</p>
+	 *
+	 * @param totalNum a {@link java.lang.String} object.
+	 */
 	public void setTotalNum(String totalNum) {
 		this.totalNum = totalNum;
 	}

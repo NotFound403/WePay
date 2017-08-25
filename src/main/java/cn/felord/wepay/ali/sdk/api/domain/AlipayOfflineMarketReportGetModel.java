@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 获取店铺信息
  *
  * @author auto create
- * @since 1.0, 2015-12-17 10:04:22
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketReportGetModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class AlipayOfflineMarketReportGetModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Getter for the field <code>opePid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpePid() {
 		return this.opePid;
 	}
+	/**
+	 * <p>Setter for the field <code>opePid</code>.</p>
+	 *
+	 * @param opePid a {@link java.lang.String} object.
+	 */
 	public void setOpePid(String opePid) {
 		this.opePid = opePid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>requestId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRequestId() {
 		return this.requestId;
 	}
+	/**
+	 * <p>Setter for the field <code>requestId</code>.</p>
+	 *
+	 * @param requestId a {@link java.lang.String} object.
+	 */
 	public void setRequestId(String requestId) {
 		this.requestId = requestId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}

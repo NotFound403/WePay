@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.user.userinfo.share response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-20 16:36:18
+ * @version $Id: $Id
  */
 public class AlipayUserUserinfoShareResponse extends AlipayResponse {
 
@@ -281,282 +281,682 @@ W代表已注册，未激活的账户
 	@ApiField("zip")
 	private String zip;
 
+	/**
+	 * <p>Setter for the field <code>address</code>.</p>
+	 *
+	 * @param address a {@link java.lang.String} object.
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
+	/**
+	 * <p>Getter for the field <code>address</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddress( ) {
 		return this.address;
 	}
 
+	/**
+	 * <p>Setter for the field <code>addressCode</code>.</p>
+	 *
+	 * @param addressCode a {@link java.lang.String} object.
+	 */
 	public void setAddressCode(String addressCode) {
 		this.addressCode = addressCode;
 	}
+	/**
+	 * <p>Getter for the field <code>addressCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddressCode( ) {
 		return this.addressCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @param alipayUserId a {@link java.lang.String} object.
+	 */
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayUserId( ) {
 		return this.alipayUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>area</code>.</p>
+	 *
+	 * @param area a {@link java.lang.String} object.
+	 */
 	public void setArea(String area) {
 		this.area = area;
 	}
+	/**
+	 * <p>Getter for the field <code>area</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getArea( ) {
 		return this.area;
 	}
 
+	/**
+	 * <p>Setter for the field <code>avatar</code>.</p>
+	 *
+	 * @param avatar a {@link java.lang.String} object.
+	 */
 	public void setAvatar(String avatar) {
 		this.avatar = avatar;
 	}
+	/**
+	 * <p>Getter for the field <code>avatar</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAvatar( ) {
 		return this.avatar;
 	}
 
+	/**
+	 * <p>Setter for the field <code>balanceFreezeType</code>.</p>
+	 *
+	 * @param balanceFreezeType a {@link java.lang.String} object.
+	 */
 	public void setBalanceFreezeType(String balanceFreezeType) {
 		this.balanceFreezeType = balanceFreezeType;
 	}
+	/**
+	 * <p>Getter for the field <code>balanceFreezeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBalanceFreezeType( ) {
 		return this.balanceFreezeType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>birthday</code>.</p>
+	 *
+	 * @param birthday a {@link java.lang.String} object.
+	 */
 	public void setBirthday(String birthday) {
 		this.birthday = birthday;
 	}
+	/**
+	 * <p>Getter for the field <code>birthday</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBirthday( ) {
 		return this.birthday;
 	}
 
+	/**
+	 * <p>Setter for the field <code>certNo</code>.</p>
+	 *
+	 * @param certNo a {@link java.lang.String} object.
+	 */
 	public void setCertNo(String certNo) {
 		this.certNo = certNo;
 	}
+	/**
+	 * <p>Getter for the field <code>certNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertNo( ) {
 		return this.certNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>certTypeValue</code>.</p>
+	 *
+	 * @param certTypeValue a {@link java.lang.String} object.
+	 */
 	public void setCertTypeValue(String certTypeValue) {
 		this.certTypeValue = certTypeValue;
 	}
+	/**
+	 * <p>Getter for the field <code>certTypeValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCertTypeValue( ) {
 		return this.certTypeValue;
 	}
 
+	/**
+	 * <p>Setter for the field <code>city</code>.</p>
+	 *
+	 * @param city a {@link java.lang.String} object.
+	 */
 	public void setCity(String city) {
 		this.city = city;
 	}
+	/**
+	 * <p>Getter for the field <code>city</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCity( ) {
 		return this.city;
 	}
 
+	/**
+	 * <p>Setter for the field <code>defaultDeliverAddress</code>.</p>
+	 *
+	 * @param defaultDeliverAddress a {@link java.lang.String} object.
+	 */
 	public void setDefaultDeliverAddress(String defaultDeliverAddress) {
 		this.defaultDeliverAddress = defaultDeliverAddress;
 	}
+	/**
+	 * <p>Getter for the field <code>defaultDeliverAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDefaultDeliverAddress( ) {
 		return this.defaultDeliverAddress;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deliverAddressList</code>.</p>
+	 *
+	 * @param deliverAddressList a {@link java.util.List} object.
+	 */
 	public void setDeliverAddressList(List<DeliverAddress> deliverAddressList) {
 		this.deliverAddressList = deliverAddressList;
 	}
+	/**
+	 * <p>Getter for the field <code>deliverAddressList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DeliverAddress> getDeliverAddressList( ) {
 		return this.deliverAddressList;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deliverArea</code>.</p>
+	 *
+	 * @param deliverArea a {@link java.lang.String} object.
+	 */
 	public void setDeliverArea(String deliverArea) {
 		this.deliverArea = deliverArea;
 	}
+	/**
+	 * <p>Getter for the field <code>deliverArea</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliverArea( ) {
 		return this.deliverArea;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deliverCity</code>.</p>
+	 *
+	 * @param deliverCity a {@link java.lang.String} object.
+	 */
 	public void setDeliverCity(String deliverCity) {
 		this.deliverCity = deliverCity;
 	}
+	/**
+	 * <p>Getter for the field <code>deliverCity</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliverCity( ) {
 		return this.deliverCity;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deliverFullname</code>.</p>
+	 *
+	 * @param deliverFullname a {@link java.lang.String} object.
+	 */
 	public void setDeliverFullname(String deliverFullname) {
 		this.deliverFullname = deliverFullname;
 	}
+	/**
+	 * <p>Getter for the field <code>deliverFullname</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliverFullname( ) {
 		return this.deliverFullname;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deliverMobile</code>.</p>
+	 *
+	 * @param deliverMobile a {@link java.lang.String} object.
+	 */
 	public void setDeliverMobile(String deliverMobile) {
 		this.deliverMobile = deliverMobile;
 	}
+	/**
+	 * <p>Getter for the field <code>deliverMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliverMobile( ) {
 		return this.deliverMobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deliverPhone</code>.</p>
+	 *
+	 * @param deliverPhone a {@link java.lang.String} object.
+	 */
 	public void setDeliverPhone(String deliverPhone) {
 		this.deliverPhone = deliverPhone;
 	}
+	/**
+	 * <p>Getter for the field <code>deliverPhone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliverPhone( ) {
 		return this.deliverPhone;
 	}
 
+	/**
+	 * <p>Setter for the field <code>deliverProvince</code>.</p>
+	 *
+	 * @param deliverProvince a {@link java.lang.String} object.
+	 */
 	public void setDeliverProvince(String deliverProvince) {
 		this.deliverProvince = deliverProvince;
 	}
+	/**
+	 * <p>Getter for the field <code>deliverProvince</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDeliverProvince( ) {
 		return this.deliverProvince;
 	}
 
+	/**
+	 * <p>Setter for the field <code>email</code>.</p>
+	 *
+	 * @param email a {@link java.lang.String} object.
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	/**
+	 * <p>Getter for the field <code>email</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEmail( ) {
 		return this.email;
 	}
 
+	/**
+	 * <p>Setter for the field <code>familyName</code>.</p>
+	 *
+	 * @param familyName a {@link java.lang.String} object.
+	 */
 	public void setFamilyName(String familyName) {
 		this.familyName = familyName;
 	}
+	/**
+	 * <p>Getter for the field <code>familyName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFamilyName( ) {
 		return this.familyName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>firmName</code>.</p>
+	 *
+	 * @param firmName a {@link java.lang.String} object.
+	 */
 	public void setFirmName(String firmName) {
 		this.firmName = firmName;
 	}
+	/**
+	 * <p>Getter for the field <code>firmName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFirmName( ) {
 		return this.firmName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gender</code>.</p>
+	 *
+	 * @param gender a {@link java.lang.String} object.
+	 */
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
+	/**
+	 * <p>Getter for the field <code>gender</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGender( ) {
 		return this.gender;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isBalanceFrozen</code>.</p>
+	 *
+	 * @param isBalanceFrozen a {@link java.lang.String} object.
+	 */
 	public void setIsBalanceFrozen(String isBalanceFrozen) {
 		this.isBalanceFrozen = isBalanceFrozen;
 	}
+	/**
+	 * <p>Getter for the field <code>isBalanceFrozen</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsBalanceFrozen( ) {
 		return this.isBalanceFrozen;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isBankAuth</code>.</p>
+	 *
+	 * @param isBankAuth a {@link java.lang.String} object.
+	 */
 	public void setIsBankAuth(String isBankAuth) {
 		this.isBankAuth = isBankAuth;
 	}
+	/**
+	 * <p>Getter for the field <code>isBankAuth</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsBankAuth( ) {
 		return this.isBankAuth;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isCertified</code>.</p>
+	 *
+	 * @param isCertified a {@link java.lang.String} object.
+	 */
 	public void setIsCertified(String isCertified) {
 		this.isCertified = isCertified;
 	}
+	/**
+	 * <p>Getter for the field <code>isCertified</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsCertified( ) {
 		return this.isCertified;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isCertifyGradeA</code>.</p>
+	 *
+	 * @param isCertifyGradeA a {@link java.lang.String} object.
+	 */
 	public void setIsCertifyGradeA(String isCertifyGradeA) {
 		this.isCertifyGradeA = isCertifyGradeA;
 	}
+	/**
+	 * <p>Getter for the field <code>isCertifyGradeA</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsCertifyGradeA( ) {
 		return this.isCertifyGradeA;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isIdAuth</code>.</p>
+	 *
+	 * @param isIdAuth a {@link java.lang.String} object.
+	 */
 	public void setIsIdAuth(String isIdAuth) {
 		this.isIdAuth = isIdAuth;
 	}
+	/**
+	 * <p>Getter for the field <code>isIdAuth</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsIdAuth( ) {
 		return this.isIdAuth;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isLicenceAuth</code>.</p>
+	 *
+	 * @param isLicenceAuth a {@link java.lang.String} object.
+	 */
 	public void setIsLicenceAuth(String isLicenceAuth) {
 		this.isLicenceAuth = isLicenceAuth;
 	}
+	/**
+	 * <p>Getter for the field <code>isLicenceAuth</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsLicenceAuth( ) {
 		return this.isLicenceAuth;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isMobileAuth</code>.</p>
+	 *
+	 * @param isMobileAuth a {@link java.lang.String} object.
+	 */
 	public void setIsMobileAuth(String isMobileAuth) {
 		this.isMobileAuth = isMobileAuth;
 	}
+	/**
+	 * <p>Getter for the field <code>isMobileAuth</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsMobileAuth( ) {
 		return this.isMobileAuth;
 	}
 
+	/**
+	 * <p>Setter for the field <code>isStudentCertified</code>.</p>
+	 *
+	 * @param isStudentCertified a {@link java.lang.String} object.
+	 */
 	public void setIsStudentCertified(String isStudentCertified) {
 		this.isStudentCertified = isStudentCertified;
 	}
+	/**
+	 * <p>Getter for the field <code>isStudentCertified</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsStudentCertified( ) {
 		return this.isStudentCertified;
 	}
 
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile( ) {
 		return this.mobile;
 	}
 
+	/**
+	 * <p>Setter for the field <code>nickName</code>.</p>
+	 *
+	 * @param nickName a {@link java.lang.String} object.
+	 */
 	public void setNickName(String nickName) {
 		this.nickName = nickName;
 	}
+	/**
+	 * <p>Getter for the field <code>nickName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNickName( ) {
 		return this.nickName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>phone</code>.</p>
+	 *
+	 * @param phone a {@link java.lang.String} object.
+	 */
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	/**
+	 * <p>Getter for the field <code>phone</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPhone( ) {
 		return this.phone;
 	}
 
+	/**
+	 * <p>Setter for the field <code>province</code>.</p>
+	 *
+	 * @param province a {@link java.lang.String} object.
+	 */
 	public void setProvince(String province) {
 		this.province = province;
 	}
+	/**
+	 * <p>Getter for the field <code>province</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProvince( ) {
 		return this.province;
 	}
 
+	/**
+	 * <p>Setter for the field <code>realName</code>.</p>
+	 *
+	 * @param realName a {@link java.lang.String} object.
+	 */
 	public void setRealName(String realName) {
 		this.realName = realName;
 	}
+	/**
+	 * <p>Getter for the field <code>realName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealName( ) {
 		return this.realName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>reducedBirthday</code>.</p>
+	 *
+	 * @param reducedBirthday a {@link java.lang.String} object.
+	 */
 	public void setReducedBirthday(String reducedBirthday) {
 		this.reducedBirthday = reducedBirthday;
 	}
+	/**
+	 * <p>Getter for the field <code>reducedBirthday</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getReducedBirthday( ) {
 		return this.reducedBirthday;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userStatus</code>.</p>
+	 *
+	 * @param userStatus a {@link java.lang.String} object.
+	 */
 	public void setUserStatus(String userStatus) {
 		this.userStatus = userStatus;
 	}
+	/**
+	 * <p>Getter for the field <code>userStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserStatus( ) {
 		return this.userStatus;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userTypeValue</code>.</p>
+	 *
+	 * @param userTypeValue a {@link java.lang.String} object.
+	 */
 	public void setUserTypeValue(String userTypeValue) {
 		this.userTypeValue = userTypeValue;
 	}
+	/**
+	 * <p>Getter for the field <code>userTypeValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserTypeValue( ) {
 		return this.userTypeValue;
 	}
 
+	/**
+	 * <p>Setter for the field <code>zip</code>.</p>
+	 *
+	 * @param zip a {@link java.lang.String} object.
+	 */
 	public void setZip(String zip) {
 		this.zip = zip;
 	}
+	/**
+	 * <p>Getter for the field <code>zip</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getZip( ) {
 		return this.zip;
 	}

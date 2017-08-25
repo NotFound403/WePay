@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 子订单明细
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class OrderDetail extends AlipayObject {
 
@@ -85,79 +85,189 @@ public class OrderDetail extends AlipayObject {
 	@ApiField("total_amount")
 	private String totalAmount;
 
+	/**
+	 * <p>Getter for the field <code>appId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppId() {
 		return this.appId;
 	}
+	/**
+	 * <p>Setter for the field <code>appId</code>.</p>
+	 *
+	 * @param appId a {@link java.lang.String} object.
+	 */
 	public void setAppId(String appId) {
 		this.appId = appId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>body</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBody() {
 		return this.body;
 	}
+	/**
+	 * <p>Setter for the field <code>body</code>.</p>
+	 *
+	 * @param body a {@link java.lang.String} object.
+	 */
 	public void setBody(String body) {
 		this.body = body;
 	}
 
+	/**
+	 * <p>Getter for the field <code>goodsDetail</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<GoodsDetail> getGoodsDetail() {
 		return this.goodsDetail;
 	}
+	/**
+	 * <p>Setter for the field <code>goodsDetail</code>.</p>
+	 *
+	 * @param goodsDetail a {@link java.util.List} object.
+	 */
 	public void setGoodsDetail(List<GoodsDetail> goodsDetail) {
 		this.goodsDetail = goodsDetail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo() {
 		return this.outTradeNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>passbackParams</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPassbackParams() {
 		return this.passbackParams;
 	}
+	/**
+	 * <p>Setter for the field <code>passbackParams</code>.</p>
+	 *
+	 * @param passbackParams a {@link java.lang.String} object.
+	 */
 	public void setPassbackParams(String passbackParams) {
 		this.passbackParams = passbackParams;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sellerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerId() {
 		return this.sellerId;
 	}
+	/**
+	 * <p>Setter for the field <code>sellerId</code>.</p>
+	 *
+	 * @param sellerId a {@link java.lang.String} object.
+	 */
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>sellerLogonId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerLogonId() {
 		return this.sellerLogonId;
 	}
+	/**
+	 * <p>Setter for the field <code>sellerLogonId</code>.</p>
+	 *
+	 * @param sellerLogonId a {@link java.lang.String} object.
+	 */
 	public void setSellerLogonId(String sellerLogonId) {
 		this.sellerLogonId = sellerLogonId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>showUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShowUrl() {
 		return this.showUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>showUrl</code>.</p>
+	 *
+	 * @param showUrl a {@link java.lang.String} object.
+	 */
 	public void setShowUrl(String showUrl) {
 		this.showUrl = showUrl;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subject</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubject() {
 		return this.subject;
 	}
+	/**
+	 * <p>Setter for the field <code>subject</code>.</p>
+	 *
+	 * @param subject a {@link java.lang.String} object.
+	 */
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
 
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount() {
 		return this.totalAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}

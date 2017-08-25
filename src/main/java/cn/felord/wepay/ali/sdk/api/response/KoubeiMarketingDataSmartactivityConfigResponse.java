@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.smartactivity.config response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-13 10:58:55
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataSmartactivityConfigResponse extends AlipayResponse {
 
@@ -102,93 +102,223 @@ RATE：折扣券
 	@ApiField("worth_value")
 	private String worthValue;
 
+	/**
+	 * <p>Setter for the field <code>activityType</code>.</p>
+	 *
+	 * @param activityType a {@link java.lang.String} object.
+	 */
 	public void setActivityType(String activityType) {
 		this.activityType = activityType;
 	}
+	/**
+	 * <p>Getter for the field <code>activityType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActivityType( ) {
 		return this.activityType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>activityValidDays</code>.</p>
+	 *
+	 * @param activityValidDays a {@link java.lang.String} object.
+	 */
 	public void setActivityValidDays(String activityValidDays) {
 		this.activityValidDays = activityValidDays;
 	}
+	/**
+	 * <p>Getter for the field <code>activityValidDays</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getActivityValidDays( ) {
 		return this.activityValidDays;
 	}
 
+	/**
+	 * <p>Setter for the field <code>configCode</code>.</p>
+	 *
+	 * @param configCode a {@link java.lang.String} object.
+	 */
 	public void setConfigCode(String configCode) {
 		this.configCode = configCode;
 	}
+	/**
+	 * <p>Getter for the field <code>configCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConfigCode( ) {
 		return this.configCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>crowdGroup</code>.</p>
+	 *
+	 * @param crowdGroup a {@link java.lang.String} object.
+	 */
 	public void setCrowdGroup(String crowdGroup) {
 		this.crowdGroup = crowdGroup;
 	}
+	/**
+	 * <p>Getter for the field <code>crowdGroup</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCrowdGroup( ) {
 		return this.crowdGroup;
 	}
 
+	/**
+	 * <p>Setter for the field <code>extInfo</code>.</p>
+	 *
+	 * @param extInfo a {@link java.lang.String} object.
+	 */
 	public void setExtInfo(String extInfo) {
 		this.extInfo = extInfo;
 	}
+	/**
+	 * <p>Getter for the field <code>extInfo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtInfo( ) {
 		return this.extInfo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemId</code>.</p>
+	 *
+	 * @param itemId a {@link java.lang.String} object.
+	 */
 	public void setItemId(String itemId) {
 		this.itemId = itemId;
 	}
+	/**
+	 * <p>Getter for the field <code>itemId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemId( ) {
 		return this.itemId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>itemName</code>.</p>
+	 *
+	 * @param itemName a {@link java.lang.String} object.
+	 */
 	public void setItemName(String itemName) {
 		this.itemName = itemName;
 	}
+	/**
+	 * <p>Getter for the field <code>itemName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemName( ) {
 		return this.itemName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>minConsume</code>.</p>
+	 *
+	 * @param minConsume a {@link java.lang.String} object.
+	 */
 	public void setMinConsume(String minConsume) {
 		this.minConsume = minConsume;
 	}
+	/**
+	 * <p>Getter for the field <code>minConsume</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMinConsume( ) {
 		return this.minConsume;
 	}
 
+	/**
+	 * <p>Setter for the field <code>minCost</code>.</p>
+	 *
+	 * @param minCost a {@link java.lang.String} object.
+	 */
 	public void setMinCost(String minCost) {
 		this.minCost = minCost;
 	}
+	/**
+	 * <p>Getter for the field <code>minCost</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMinCost( ) {
 		return this.minCost;
 	}
 
+	/**
+	 * <p>Setter for the field <code>proType</code>.</p>
+	 *
+	 * @param proType a {@link java.lang.String} object.
+	 */
 	public void setProType(String proType) {
 		this.proType = proType;
 	}
+	/**
+	 * <p>Getter for the field <code>proType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProType( ) {
 		return this.proType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherType</code>.</p>
+	 *
+	 * @param voucherType a {@link java.lang.String} object.
+	 */
 	public void setVoucherType(String voucherType) {
 		this.voucherType = voucherType;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherType( ) {
 		return this.voucherType;
 	}
 
+	/**
+	 * <p>Setter for the field <code>voucherValidDays</code>.</p>
+	 *
+	 * @param voucherValidDays a {@link java.lang.String} object.
+	 */
 	public void setVoucherValidDays(String voucherValidDays) {
 		this.voucherValidDays = voucherValidDays;
 	}
+	/**
+	 * <p>Getter for the field <code>voucherValidDays</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getVoucherValidDays( ) {
 		return this.voucherValidDays;
 	}
 
+	/**
+	 * <p>Setter for the field <code>worthValue</code>.</p>
+	 *
+	 * @param worthValue a {@link java.lang.String} object.
+	 */
 	public void setWorthValue(String worthValue) {
 		this.worthValue = worthValue;
 	}
+	/**
+	 * <p>Getter for the field <code>worthValue</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWorthValue( ) {
 		return this.worthValue;
 	}

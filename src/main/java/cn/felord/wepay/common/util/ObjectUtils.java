@@ -32,8 +32,6 @@ import java.util.*;
  * @version v1.0.0
  * @since 2017 /7/18  14:59
  */
-
-
 public class ObjectUtils {
     /**
      * The constant DEFAULT_CHARSET.
@@ -94,7 +92,6 @@ public class ObjectUtils {
     /**
      * Params sorter map.
      *
-     * @param <M> the type parameter
      * @param m   the m
      * @return the map
      */
@@ -128,7 +125,7 @@ public class ObjectUtils {
      * @param charset     the charset
      * @param key         the key
      * @return the string
-     * @throws PayException the pay exception
+     * @throws cn.felord.wepay.common.exception.PayException the pay exception
      */
     public static String signatureGenerator(Map<String, Object> sortedMap, String encryptType, String charset, String key) throws PayException {
         String origin = getParamStr(sortedMap, key);
@@ -167,7 +164,6 @@ public class ObjectUtils {
      *
      * @param original 原字符
      * @return string string
-     * @deprecated
      */
     @Deprecated
     public static String encrypt(String original) {
@@ -325,11 +321,10 @@ public class ObjectUtils {
     /**
      * 签名验证.
      *
-     * @param <M>         the type parameter
      * @param m           the m
      * @param encryptType the encrypt type
      * @param secretKey   the secret key
-     * @throws PayException the pay exception
+     * @throws cn.felord.wepay.common.exception.PayException the pay exception
      */
     public static <M extends Map<String, Object>> void verifySignature(M m, String encryptType, String secretKey) throws PayException {
         String originSign = (String) m.remove("sign");
@@ -346,7 +341,7 @@ public class ObjectUtils {
      * @param <T>        the type parameter
      * @param t          the t
      * @param fieldNames the field names
-     * @throws PayException the pay exception
+     * @throws cn.felord.wepay.common.exception.PayException the pay exception
      */
     public static <T> void checkParams(T t, List<String> fieldNames) throws PayException {
         Set<String> fieldNameSet = new HashSet<>(fieldNames);
@@ -378,7 +373,6 @@ public class ObjectUtils {
      *
      * @param original 密文
      * @return String string
-     * @deprecated
      */
     @Deprecated
     public static String decrypt(String original) {

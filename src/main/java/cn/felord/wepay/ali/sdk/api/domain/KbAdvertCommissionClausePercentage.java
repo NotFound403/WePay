@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统分佣规则(比例)
  *
  * @author auto create
- * @since 1.0, 2016-11-21 17:14:39
+ * @version $Id: $Id
  */
 public class KbAdvertCommissionClausePercentage extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class KbAdvertCommissionClausePercentage extends AlipayObject {
 	@ApiField("max_limit_start")
 	private String maxLimitStart;
 
+	/**
+	 * <p>Getter for the field <code>commissionRateEnd</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommissionRateEnd() {
 		return this.commissionRateEnd;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionRateEnd</code>.</p>
+	 *
+	 * @param commissionRateEnd a {@link java.lang.String} object.
+	 */
 	public void setCommissionRateEnd(String commissionRateEnd) {
 		this.commissionRateEnd = commissionRateEnd;
 	}
 
+	/**
+	 * <p>Getter for the field <code>commissionRateStart</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommissionRateStart() {
 		return this.commissionRateStart;
 	}
+	/**
+	 * <p>Setter for the field <code>commissionRateStart</code>.</p>
+	 *
+	 * @param commissionRateStart a {@link java.lang.String} object.
+	 */
 	public void setCommissionRateStart(String commissionRateStart) {
 		this.commissionRateStart = commissionRateStart;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxLimitEnd</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxLimitEnd() {
 		return this.maxLimitEnd;
 	}
+	/**
+	 * <p>Setter for the field <code>maxLimitEnd</code>.</p>
+	 *
+	 * @param maxLimitEnd a {@link java.lang.String} object.
+	 */
 	public void setMaxLimitEnd(String maxLimitEnd) {
 		this.maxLimitEnd = maxLimitEnd;
 	}
 
+	/**
+	 * <p>Getter for the field <code>maxLimitStart</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMaxLimitStart() {
 		return this.maxLimitStart;
 	}
+	/**
+	 * <p>Setter for the field <code>maxLimitStart</code>.</p>
+	 *
+	 * @param maxLimitStart a {@link java.lang.String} object.
+	 */
 	public void setMaxLimitStart(String maxLimitStart) {
 		this.maxLimitStart = maxLimitStart;
 	}

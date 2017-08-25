@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付宝积分会员权益信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class BenefitInfo extends AlipayObject {
 
@@ -66,58 +66,138 @@ public class BenefitInfo extends AlipayObject {
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>benefitInfoId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitInfoId() {
 		return this.benefitInfoId;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitInfoId</code>.</p>
+	 *
+	 * @param benefitInfoId a {@link java.lang.String} object.
+	 */
 	public void setBenefitInfoId(String benefitInfoId) {
 		this.benefitInfoId = benefitInfoId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitName() {
 		return this.benefitName;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitName</code>.</p>
+	 *
+	 * @param benefitName a {@link java.lang.String} object.
+	 */
 	public void setBenefitName(String benefitName) {
 		this.benefitName = benefitName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitNameCn</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitNameCn() {
 		return this.benefitNameCn;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitNameCn</code>.</p>
+	 *
+	 * @param benefitNameCn a {@link java.lang.String} object.
+	 */
 	public void setBenefitNameCn(String benefitNameCn) {
 		this.benefitNameCn = benefitNameCn;
 	}
 
+	/**
+	 * <p>Getter for the field <code>benefitType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitType() {
 		return this.benefitType;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitType</code>.</p>
+	 *
+	 * @param benefitType a {@link java.lang.String} object.
+	 */
 	public void setBenefitType(String benefitType) {
 		this.benefitType = benefitType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dispatchDt</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getDispatchDt() {
 		return this.dispatchDt;
 	}
+	/**
+	 * <p>Setter for the field <code>dispatchDt</code>.</p>
+	 *
+	 * @param dispatchDt a {@link java.util.Date} object.
+	 */
 	public void setDispatchDt(Date dispatchDt) {
 		this.dispatchDt = dispatchDt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>endDt</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getEndDt() {
 		return this.endDt;
 	}
+	/**
+	 * <p>Setter for the field <code>endDt</code>.</p>
+	 *
+	 * @param endDt a {@link java.util.Date} object.
+	 */
 	public void setEndDt(Date endDt) {
 		this.endDt = endDt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>startDt</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getStartDt() {
 		return this.startDt;
 	}
+	/**
+	 * <p>Setter for the field <code>startDt</code>.</p>
+	 *
+	 * @param startDt a {@link java.util.Date} object.
+	 */
 	public void setStartDt(Date startDt) {
 		this.startDt = startDt;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

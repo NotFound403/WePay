@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 计算所选标签人数
  *
  * @author auto create
- * @since 1.0, 2016-12-19 15:27:28
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignRuleCrowdCountModel extends AlipayObject {
 
@@ -59,23 +59,53 @@ user_age >60 then 11
 	@ApiField("scenetagjson")
 	private String scenetagjson;
 
+	/**
+	 * <p>Getter for the field <code>mpid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMpid() {
 		return this.mpid;
 	}
+	/**
+	 * <p>Setter for the field <code>mpid</code>.</p>
+	 *
+	 * @param mpid a {@link java.lang.String} object.
+	 */
 	public void setMpid(String mpid) {
 		this.mpid = mpid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ruleid</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRuleid() {
 		return this.ruleid;
 	}
+	/**
+	 * <p>Setter for the field <code>ruleid</code>.</p>
+	 *
+	 * @param ruleid a {@link java.lang.String} object.
+	 */
 	public void setRuleid(String ruleid) {
 		this.ruleid = ruleid;
 	}
 
+	/**
+	 * <p>Getter for the field <code>scenetagjson</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getScenetagjson() {
 		return this.scenetagjson;
 	}
+	/**
+	 * <p>Setter for the field <code>scenetagjson</code>.</p>
+	 *
+	 * @param scenetagjson a {@link java.lang.String} object.
+	 */
 	public void setScenetagjson(String scenetagjson) {
 		this.scenetagjson = scenetagjson;
 	}

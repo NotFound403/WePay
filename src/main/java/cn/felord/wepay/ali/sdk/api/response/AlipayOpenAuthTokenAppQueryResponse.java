@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.auth.token.app.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-07-18 13:35:47
+ * @version $Id: $Id
  */
 public class AlipayOpenAuthTokenAppQueryResponse extends AlipayResponse {
 
@@ -60,51 +60,121 @@ public class AlipayOpenAuthTokenAppQueryResponse extends AlipayResponse {
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>authAppId</code>.</p>
+	 *
+	 * @param authAppId a {@link java.lang.String} object.
+	 */
 	public void setAuthAppId(String authAppId) {
 		this.authAppId = authAppId;
 	}
+	/**
+	 * <p>Getter for the field <code>authAppId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthAppId( ) {
 		return this.authAppId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>authEnd</code>.</p>
+	 *
+	 * @param authEnd a {@link java.util.Date} object.
+	 */
 	public void setAuthEnd(Date authEnd) {
 		this.authEnd = authEnd;
 	}
+	/**
+	 * <p>Getter for the field <code>authEnd</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getAuthEnd( ) {
 		return this.authEnd;
 	}
 
+	/**
+	 * <p>Setter for the field <code>authMethods</code>.</p>
+	 *
+	 * @param authMethods a {@link java.util.List} object.
+	 */
 	public void setAuthMethods(List<String> authMethods) {
 		this.authMethods = authMethods;
 	}
+	/**
+	 * <p>Getter for the field <code>authMethods</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getAuthMethods( ) {
 		return this.authMethods;
 	}
 
+	/**
+	 * <p>Setter for the field <code>authStart</code>.</p>
+	 *
+	 * @param authStart a {@link java.util.Date} object.
+	 */
 	public void setAuthStart(Date authStart) {
 		this.authStart = authStart;
 	}
+	/**
+	 * <p>Getter for the field <code>authStart</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getAuthStart( ) {
 		return this.authStart;
 	}
 
+	/**
+	 * <p>Setter for the field <code>expiresIn</code>.</p>
+	 *
+	 * @param expiresIn a {@link java.lang.Long} object.
+	 */
 	public void setExpiresIn(Long expiresIn) {
 		this.expiresIn = expiresIn;
 	}
+	/**
+	 * <p>Getter for the field <code>expiresIn</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getExpiresIn( ) {
 		return this.expiresIn;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}

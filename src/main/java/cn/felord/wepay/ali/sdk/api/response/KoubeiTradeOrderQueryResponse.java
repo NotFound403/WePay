@@ -13,9 +13,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.trade.order.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-17 15:14:16
+ * @version $Id: $Id
  */
 public class KoubeiTradeOrderQueryResponse extends AlipayResponse {
 
@@ -138,114 +138,274 @@ refund_reason：退款理由，由消费者选择或填写内容，系统退款�
 	@ApiField("kb_order_voucher_model")
 	private List<KbOrderVoucherModel> vouchers;
 
+	/**
+	 * <p>Setter for the field <code>activityInfos</code>.</p>
+	 *
+	 * @param activityInfos a {@link java.util.List} object.
+	 */
 	public void setActivityInfos(List<KbOrderActivityModel> activityInfos) {
 		this.activityInfos = activityInfos;
 	}
+	/**
+	 * <p>Getter for the field <code>activityInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbOrderActivityModel> getActivityInfos( ) {
 		return this.activityInfos;
 	}
 
+	/**
+	 * <p>Setter for the field <code>buyerId</code>.</p>
+	 *
+	 * @param buyerId a {@link java.lang.String} object.
+	 */
 	public void setBuyerId(String buyerId) {
 		this.buyerId = buyerId;
 	}
+	/**
+	 * <p>Getter for the field <code>buyerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBuyerId( ) {
 		return this.buyerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>contact</code>.</p>
+	 *
+	 * @param contact a {@link java.lang.String} object.
+	 */
 	public void setContact(String contact) {
 		this.contact = contact;
 	}
+	/**
+	 * <p>Getter for the field <code>contact</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContact( ) {
 		return this.contact;
 	}
 
+	/**
+	 * <p>Setter for the field <code>fundsVouchers</code>.</p>
+	 *
+	 * @param fundsVouchers a {@link java.util.List} object.
+	 */
 	public void setFundsVouchers(List<KbOrderFundsVoucherModel> fundsVouchers) {
 		this.fundsVouchers = fundsVouchers;
 	}
+	/**
+	 * <p>Getter for the field <code>fundsVouchers</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbOrderFundsVoucherModel> getFundsVouchers( ) {
 		return this.fundsVouchers;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @param gmtCreate a {@link java.util.Date} object.
+	 */
 	public void setGmtCreate(Date gmtCreate) {
 		this.gmtCreate = gmtCreate;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtCreate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtCreate( ) {
 		return this.gmtCreate;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @param gmtModified a {@link java.util.Date} object.
+	 */
 	public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtModified( ) {
 		return this.gmtModified;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId( ) {
 		return this.partnerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>realAmount</code>.</p>
+	 *
+	 * @param realAmount a {@link java.lang.String} object.
+	 */
 	public void setRealAmount(String realAmount) {
 		this.realAmount = realAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>realAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRealAmount( ) {
 		return this.realAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>sellerId</code>.</p>
+	 *
+	 * @param sellerId a {@link java.lang.String} object.
+	 */
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
+	/**
+	 * <p>Getter for the field <code>sellerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSellerId( ) {
 		return this.sellerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>shop</code>.</p>
+	 *
+	 * @param shop a {@link cn.felord.wepay.ali.sdk.api.domain.KbOrderShopModel} object.
+	 */
 	public void setShop(KbOrderShopModel shop) {
 		this.shop = shop;
 	}
+	/**
+	 * <p>Getter for the field <code>shop</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbOrderShopModel} object.
+	 */
 	public KbOrderShopModel getShop( ) {
 		return this.shop;
 	}
 
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus( ) {
 		return this.status;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @param totalAmount a {@link java.lang.String} object.
+	 */
 	public void setTotalAmount(String totalAmount) {
 		this.totalAmount = totalAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalAmount( ) {
 		return this.totalAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>transNo</code>.</p>
+	 *
+	 * @param transNo a {@link java.lang.String} object.
+	 */
 	public void setTransNo(String transNo) {
 		this.transNo = transNo;
 	}
+	/**
+	 * <p>Getter for the field <code>transNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransNo( ) {
 		return this.transNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>vouchers</code>.</p>
+	 *
+	 * @param vouchers a {@link java.util.List} object.
+	 */
 	public void setVouchers(List<KbOrderVoucherModel> vouchers) {
 		this.vouchers = vouchers;
 	}
+	/**
+	 * <p>Getter for the field <code>vouchers</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<KbOrderVoucherModel> getVouchers( ) {
 		return this.vouchers;
 	}

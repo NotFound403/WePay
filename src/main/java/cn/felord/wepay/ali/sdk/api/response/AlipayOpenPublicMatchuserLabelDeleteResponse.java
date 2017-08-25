@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.matchuser.label.delete response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-01 11:25:22
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMatchuserLabelDeleteResponse extends AlipayResponse {
 
@@ -30,16 +30,36 @@ public class AlipayOpenPublicMatchuserLabelDeleteResponse extends AlipayResponse
 	@ApiField("error_matcher")
 	private List<ErrorMatcher> errorMatchers;
 
+	/**
+	 * <p>Setter for the field <code>errorCount</code>.</p>
+	 *
+	 * @param errorCount a {@link java.lang.Long} object.
+	 */
 	public void setErrorCount(Long errorCount) {
 		this.errorCount = errorCount;
 	}
+	/**
+	 * <p>Getter for the field <code>errorCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getErrorCount( ) {
 		return this.errorCount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>errorMatchers</code>.</p>
+	 *
+	 * @param errorMatchers a {@link java.util.List} object.
+	 */
 	public void setErrorMatchers(List<ErrorMatcher> errorMatchers) {
 		this.errorMatchers = errorMatchers;
 	}
+	/**
+	 * <p>Getter for the field <code>errorMatchers</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ErrorMatcher> getErrorMatchers( ) {
 		return this.errorMatchers;
 	}

@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 分账明细
  *
  * @author auto create
- * @since 1.0, 2017-06-06 18:11:24
+ * @version $Id: $Id
  */
 public class RoyaltyDetailInfos extends AlipayObject {
 
@@ -84,72 +84,172 @@ storeId：分账到门店对应的银行卡编号。
 	@ApiField("trans_out_type")
 	private String transOutType;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.Long} object.
+	 */
 	public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>amountPercentage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAmountPercentage() {
 		return this.amountPercentage;
 	}
+	/**
+	 * <p>Setter for the field <code>amountPercentage</code>.</p>
+	 *
+	 * @param amountPercentage a {@link java.lang.String} object.
+	 */
 	public void setAmountPercentage(String amountPercentage) {
 		this.amountPercentage = amountPercentage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>batchNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchNo() {
 		return this.batchNo;
 	}
+	/**
+	 * <p>Setter for the field <code>batchNo</code>.</p>
+	 *
+	 * @param batchNo a {@link java.lang.String} object.
+	 */
 	public void setBatchNo(String batchNo) {
 		this.batchNo = batchNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outRelationId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutRelationId() {
 		return this.outRelationId;
 	}
+	/**
+	 * <p>Setter for the field <code>outRelationId</code>.</p>
+	 *
+	 * @param outRelationId a {@link java.lang.String} object.
+	 */
 	public void setOutRelationId(String outRelationId) {
 		this.outRelationId = outRelationId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serialNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getSerialNo() {
 		return this.serialNo;
 	}
+	/**
+	 * <p>Setter for the field <code>serialNo</code>.</p>
+	 *
+	 * @param serialNo a {@link java.lang.Long} object.
+	 */
 	public void setSerialNo(Long serialNo) {
 		this.serialNo = serialNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transIn</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransIn() {
 		return this.transIn;
 	}
+	/**
+	 * <p>Setter for the field <code>transIn</code>.</p>
+	 *
+	 * @param transIn a {@link java.lang.String} object.
+	 */
 	public void setTransIn(String transIn) {
 		this.transIn = transIn;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transInType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransInType() {
 		return this.transInType;
 	}
+	/**
+	 * <p>Setter for the field <code>transInType</code>.</p>
+	 *
+	 * @param transInType a {@link java.lang.String} object.
+	 */
 	public void setTransInType(String transInType) {
 		this.transInType = transInType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transOut</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransOut() {
 		return this.transOut;
 	}
+	/**
+	 * <p>Setter for the field <code>transOut</code>.</p>
+	 *
+	 * @param transOut a {@link java.lang.String} object.
+	 */
 	public void setTransOut(String transOut) {
 		this.transOut = transOut;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transOutType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransOutType() {
 		return this.transOutType;
 	}
+	/**
+	 * <p>Setter for the field <code>transOutType</code>.</p>
+	 *
+	 * @param transOutType a {@link java.lang.String} object.
+	 */
 	public void setTransOutType(String transOutType) {
 		this.transOutType = transOutType;
 	}

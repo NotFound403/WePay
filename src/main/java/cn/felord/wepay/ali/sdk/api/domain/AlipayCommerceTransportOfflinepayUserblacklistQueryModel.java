@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 脱机交易黑名单列表
  *
  * @author auto create
- * @since 1.0, 2016-07-01 22:05:43
+ * @version $Id: $Id
  */
 public class AlipayCommerceTransportOfflinepayUserblacklistQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayCommerceTransportOfflinepayUserblacklistQueryModel extends Al
 	@ApiField("page_size")
 	private Long pageSize;
 
+	/**
+	 * <p>Getter for the field <code>pageIndex</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageIndex() {
 		return this.pageIndex;
 	}
+	/**
+	 * <p>Setter for the field <code>pageIndex</code>.</p>
+	 *
+	 * @param pageIndex a {@link java.lang.Long} object.
+	 */
 	public void setPageIndex(Long pageIndex) {
 		this.pageIndex = pageIndex;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}

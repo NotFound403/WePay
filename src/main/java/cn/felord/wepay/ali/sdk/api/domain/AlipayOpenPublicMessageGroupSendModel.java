@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 分组消息发送接口
  *
  * @author auto create
- * @since 1.0, 2017-07-03 21:12:45
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMessageGroupSendModel extends AlipayObject {
 
@@ -47,37 +47,87 @@ public class AlipayOpenPublicMessageGroupSendModel extends AlipayObject {
 	@ApiField("text")
 	private Text text;
 
+	/**
+	 * <p>Getter for the field <code>articles</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Article> getArticles() {
 		return this.articles;
 	}
+	/**
+	 * <p>Setter for the field <code>articles</code>.</p>
+	 *
+	 * @param articles a {@link java.util.List} object.
+	 */
 	public void setArticles(List<Article> articles) {
 		this.articles = articles;
 	}
 
+	/**
+	 * <p>Getter for the field <code>groupId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGroupId() {
 		return this.groupId;
 	}
+	/**
+	 * <p>Setter for the field <code>groupId</code>.</p>
+	 *
+	 * @param groupId a {@link java.lang.String} object.
+	 */
 	public void setGroupId(String groupId) {
 		this.groupId = groupId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>image</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.Image} object.
+	 */
 	public Image getImage() {
 		return this.image;
 	}
+	/**
+	 * <p>Setter for the field <code>image</code>.</p>
+	 *
+	 * @param image a {@link cn.felord.wepay.ali.sdk.api.domain.Image} object.
+	 */
 	public void setImage(Image image) {
 		this.image = image;
 	}
 
+	/**
+	 * <p>Getter for the field <code>msgType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsgType() {
 		return this.msgType;
 	}
+	/**
+	 * <p>Setter for the field <code>msgType</code>.</p>
+	 *
+	 * @param msgType a {@link java.lang.String} object.
+	 */
 	public void setMsgType(String msgType) {
 		this.msgType = msgType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>text</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.Text} object.
+	 */
 	public Text getText() {
 		return this.text;
 	}
+	/**
+	 * <p>Setter for the field <code>text</code>.</p>
+	 *
+	 * @param text a {@link cn.felord.wepay.ali.sdk.api.domain.Text} object.
+	 */
 	public void setText(Text text) {
 		this.text = text;
 	}

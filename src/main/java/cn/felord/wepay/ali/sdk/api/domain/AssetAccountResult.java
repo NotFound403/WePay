@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 账户绑定
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class AssetAccountResult extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class AssetAccountResult extends AlipayObject {
 	@ApiField("provider_user_name")
 	private String providerUserName;
 
+	/**
+	 * <p>Getter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayUserId() {
 		return this.alipayUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>alipayUserId</code>.</p>
+	 *
+	 * @param alipayUserId a {@link java.lang.String} object.
+	 */
 	public void setAlipayUserId(String alipayUserId) {
 		this.alipayUserId = alipayUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>consumerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getConsumerId() {
 		return this.consumerId;
 	}
+	/**
+	 * <p>Setter for the field <code>consumerId</code>.</p>
+	 *
+	 * @param consumerId a {@link java.lang.String} object.
+	 */
 	public void setConsumerId(String consumerId) {
 		this.consumerId = consumerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>providerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProviderId() {
 		return this.providerId;
 	}
+	/**
+	 * <p>Setter for the field <code>providerId</code>.</p>
+	 *
+	 * @param providerId a {@link java.lang.String} object.
+	 */
 	public void setProviderId(String providerId) {
 		this.providerId = providerId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>providerUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProviderUserId() {
 		return this.providerUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>providerUserId</code>.</p>
+	 *
+	 * @param providerUserId a {@link java.lang.String} object.
+	 */
 	public void setProviderUserId(String providerUserId) {
 		this.providerUserId = providerUserId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>providerUserName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProviderUserName() {
 		return this.providerUserName;
 	}
+	/**
+	 * <p>Setter for the field <code>providerUserName</code>.</p>
+	 *
+	 * @param providerUserName a {@link java.lang.String} object.
+	 */
 	public void setProviderUserName(String providerUserName) {
 		this.providerUserName = providerUserName;
 	}

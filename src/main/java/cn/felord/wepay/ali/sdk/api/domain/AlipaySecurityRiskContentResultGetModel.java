@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 内容风险识别结果查询接口服务
  *
  * @author auto create
- * @since 1.0, 2016-10-31 17:32:43
+ * @version $Id: $Id
  */
 public class AlipaySecurityRiskContentResultGetModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipaySecurityRiskContentResultGetModel extends AlipayObject {
 	@ApiField("app_scene_data_id")
 	private String appSceneDataId;
 
+	/**
+	 * <p>Getter for the field <code>appScene</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppScene() {
 		return this.appScene;
 	}
+	/**
+	 * <p>Setter for the field <code>appScene</code>.</p>
+	 *
+	 * @param appScene a {@link java.lang.String} object.
+	 */
 	public void setAppScene(String appScene) {
 		this.appScene = appScene;
 	}
 
+	/**
+	 * <p>Getter for the field <code>appSceneDataId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAppSceneDataId() {
 		return this.appSceneDataId;
 	}
+	/**
+	 * <p>Setter for the field <code>appSceneDataId</code>.</p>
+	 *
+	 * @param appSceneDataId a {@link java.lang.String} object.
+	 */
 	public void setAppSceneDataId(String appSceneDataId) {
 		this.appSceneDataId = appSceneDataId;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.drawcamp.update response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-23 14:22:20
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDrawcampUpdateResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMarketingCampaignDrawcampUpdateResponse extends AlipayRespons
 	@ApiField("camp_result")
 	private Boolean campResult;
 
+	/**
+	 * <p>Setter for the field <code>campResult</code>.</p>
+	 *
+	 * @param campResult a {@link java.lang.Boolean} object.
+	 */
 	public void setCampResult(Boolean campResult) {
 		this.campResult = campResult;
 	}
+	/**
+	 * <p>Getter for the field <code>campResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getCampResult( ) {
 		return this.campResult;
 	}

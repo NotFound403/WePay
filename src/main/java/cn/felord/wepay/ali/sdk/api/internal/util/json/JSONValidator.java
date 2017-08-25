@@ -3,6 +3,12 @@ package cn.felord.wepay.ali.sdk.api.internal.util.json;
 import java.text.CharacterIterator;
 import java.text.StringCharacterIterator;
 
+/**
+ * <p>JSONValidator class.</p>
+ *
+ * @author lenovo
+ * @version $Id: $Id
+ */
 public class JSONValidator {
 
     private JSONErrorListener listener;
@@ -10,10 +16,21 @@ public class JSONValidator {
     private char c;
     private int col;
     
+    /**
+     * <p>Constructor for JSONValidator.</p>
+     *
+     * @param listener a {@link cn.felord.wepay.ali.sdk.api.internal.util.json.JSONErrorListener} object.
+     */
     public JSONValidator(JSONErrorListener listener) {
         this.listener = listener;
     }
     
+    /**
+     * <p>validate.</p>
+     *
+     * @param input a {@link java.lang.String} object.
+     * @return a boolean.
+     */
     public boolean validate(String input) {
         input = input.trim();
         listener.start(input);

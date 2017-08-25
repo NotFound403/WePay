@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.member.coupon.querylist response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 11:46:40
+ * @version $Id: $Id
  */
 public class AlipayMemberCouponQuerylistResponse extends AlipayResponse {
 
@@ -60,44 +60,100 @@ public class AlipayMemberCouponQuerylistResponse extends AlipayResponse {
 	@ApiField("total_num")
 	private String totalNum;
 
+	/**
+	 * <p>Setter for the field <code>couponList</code>.</p>
+	 *
+	 * @param couponList a {@link java.util.List} object.
+	 */
 	public void setCouponList(List<Coupon> couponList) {
 		this.couponList = couponList;
 	}
+	/**
+	 * <p>Getter for the field <code>couponList</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<Coupon> getCouponList( ) {
 		return this.couponList;
 	}
 
+	/** {@inheritDoc} */
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>errorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorCode( ) {
 		return this.errorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @param errorMsg a {@link java.lang.String} object.
+	 */
 	public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
+	/**
+	 * <p>Getter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorMsg( ) {
 		return this.errorMsg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>listSize</code>.</p>
+	 *
+	 * @param listSize a {@link java.lang.String} object.
+	 */
 	public void setListSize(String listSize) {
 		this.listSize = listSize;
 	}
+	/**
+	 * <p>Getter for the field <code>listSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getListSize( ) {
 		return this.listSize;
 	}
 
+	/**
+	 * <p>Setter for the field <code>successCode</code>.</p>
+	 *
+	 * @param successCode a {@link java.lang.String} object.
+	 */
 	public void setSuccessCode(String successCode) {
 		this.successCode = successCode;
 	}
+	/**
+	 * <p>Getter for the field <code>successCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSuccessCode( ) {
 		return this.successCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalNum</code>.</p>
+	 *
+	 * @param totalNum a {@link java.lang.String} object.
+	 */
 	public void setTotalNum(String totalNum) {
 		this.totalNum = totalNum;
 	}
+	/**
+	 * <p>Getter for the field <code>totalNum</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalNum( ) {
 		return this.totalNum;
 	}

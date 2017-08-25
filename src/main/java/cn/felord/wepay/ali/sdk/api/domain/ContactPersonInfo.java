@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 企业联系人信息
  *
  * @author auto create
- * @since 1.0, 2016-09-26 13:19:43
+ * @version $Id: $Id
  */
 public class ContactPersonInfo extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class ContactPersonInfo extends AlipayObject {
 	@ApiField("contact_type")
 	private String contactType;
 
+	/**
+	 * <p>Getter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactEmail() {
 		return this.contactEmail;
 	}
+	/**
+	 * <p>Setter for the field <code>contactEmail</code>.</p>
+	 *
+	 * @param contactEmail a {@link java.lang.String} object.
+	 */
 	public void setContactEmail(String contactEmail) {
 		this.contactEmail = contactEmail;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactMobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactMobile() {
 		return this.contactMobile;
 	}
+	/**
+	 * <p>Setter for the field <code>contactMobile</code>.</p>
+	 *
+	 * @param contactMobile a {@link java.lang.String} object.
+	 */
 	public void setContactMobile(String contactMobile) {
 		this.contactMobile = contactMobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactName() {
 		return this.contactName;
 	}
+	/**
+	 * <p>Setter for the field <code>contactName</code>.</p>
+	 *
+	 * @param contactName a {@link java.lang.String} object.
+	 */
 	public void setContactName(String contactName) {
 		this.contactName = contactName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contactType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContactType() {
 		return this.contactType;
 	}
+	/**
+	 * <p>Setter for the field <code>contactType</code>.</p>
+	 *
+	 * @param contactType a {@link java.lang.String} object.
+	 */
 	public void setContactType(String contactType) {
 		this.contactType = contactType;
 	}

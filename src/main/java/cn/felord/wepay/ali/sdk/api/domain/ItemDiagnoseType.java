@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 菜品诊断类型列表对象
  *
  * @author auto create
- * @since 1.0, 2017-02-12 21:51:42
+ * @version $Id: $Id
  */
 public class ItemDiagnoseType extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class ItemDiagnoseType extends AlipayObject {
 	@ApiField("item_diagnose_desc")
 	private String itemDiagnoseDesc;
 
+	/**
+	 * <p>Getter for the field <code>itemDiagnose</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemDiagnose() {
 		return this.itemDiagnose;
 	}
+	/**
+	 * <p>Setter for the field <code>itemDiagnose</code>.</p>
+	 *
+	 * @param itemDiagnose a {@link java.lang.String} object.
+	 */
 	public void setItemDiagnose(String itemDiagnose) {
 		this.itemDiagnose = itemDiagnose;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemDiagnoseDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemDiagnoseDesc() {
 		return this.itemDiagnoseDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>itemDiagnoseDesc</code>.</p>
+	 *
+	 * @param itemDiagnoseDesc a {@link java.lang.String} object.
+	 */
 	public void setItemDiagnoseDesc(String itemDiagnoseDesc) {
 		this.itemDiagnoseDesc = itemDiagnoseDesc;
 	}

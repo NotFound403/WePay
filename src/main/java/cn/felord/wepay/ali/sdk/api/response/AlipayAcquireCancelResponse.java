@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.acquire.cancel response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2014-06-12 17:17:06
+ * @version $Id: $Id
  */
 public class AlipayAcquireCancelResponse extends AlipayResponse {
 
@@ -58,44 +58,104 @@ N：不可继续发起撤销请求，即后续的撤销请求也不会成功。
 	@ApiField("trade_no")
 	private String tradeNo;
 
+	/**
+	 * <p>Setter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @param detailErrorCode a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorCode(String detailErrorCode) {
 		this.detailErrorCode = detailErrorCode;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorCode( ) {
 		return this.detailErrorCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @param detailErrorDes a {@link java.lang.String} object.
+	 */
 	public void setDetailErrorDes(String detailErrorDes) {
 		this.detailErrorDes = detailErrorDes;
 	}
+	/**
+	 * <p>Getter for the field <code>detailErrorDes</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDetailErrorDes( ) {
 		return this.detailErrorDes;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @param outTradeNo a {@link java.lang.String} object.
+	 */
 	public void setOutTradeNo(String outTradeNo) {
 		this.outTradeNo = outTradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outTradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutTradeNo( ) {
 		return this.outTradeNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.String} object.
+	 */
 	public void setResultCode(String resultCode) {
 		this.resultCode = resultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultCode( ) {
 		return this.resultCode;
 	}
 
+	/**
+	 * <p>Setter for the field <code>retryFlag</code>.</p>
+	 *
+	 * @param retryFlag a {@link java.lang.String} object.
+	 */
 	public void setRetryFlag(String retryFlag) {
 		this.retryFlag = retryFlag;
 	}
+	/**
+	 * <p>Getter for the field <code>retryFlag</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRetryFlag( ) {
 		return this.retryFlag;
 	}
 
+	/**
+	 * <p>Setter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @param tradeNo a {@link java.lang.String} object.
+	 */
 	public void setTradeNo(String tradeNo) {
 		this.tradeNo = tradeNo;
 	}
+	/**
+	 * <p>Getter for the field <code>tradeNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTradeNo( ) {
 		return this.tradeNo;
 	}

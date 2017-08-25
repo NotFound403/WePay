@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.finance.yulibao.price.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:17
+ * @version $Id: $Id
  */
 public class MybankFinanceYulibaoPriceQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class MybankFinanceYulibaoPriceQueryResponse extends AlipayResponse {
 	@ApiField("y_l_b_price_detail_info")
 	private List<YLBPriceDetailInfo> ylbPriceDetailInfos;
 
+	/**
+	 * <p>Setter for the field <code>ylbPriceDetailInfos</code>.</p>
+	 *
+	 * @param ylbPriceDetailInfos a {@link java.util.List} object.
+	 */
 	public void setYlbPriceDetailInfos(List<YLBPriceDetailInfo> ylbPriceDetailInfos) {
 		this.ylbPriceDetailInfos = ylbPriceDetailInfos;
 	}
+	/**
+	 * <p>Getter for the field <code>ylbPriceDetailInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<YLBPriceDetailInfo> getYlbPriceDetailInfos( ) {
 		return this.ylbPriceDetailInfos;
 	}

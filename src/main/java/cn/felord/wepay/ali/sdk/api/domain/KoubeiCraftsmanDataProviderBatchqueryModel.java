@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 手艺人信息批量查询接口
  *
  * @author auto create
- * @since 1.0, 2017-01-13 16:27:52
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataProviderBatchqueryModel extends AlipayObject {
 
@@ -66,58 +66,138 @@ public class KoubeiCraftsmanDataProviderBatchqueryModel extends AlipayObject {
 	@ApiField("shop_id")
 	private String shopId;
 
+	/**
+	 * <p>Getter for the field <code>authCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuthCode() {
 		return this.authCode;
 	}
+	/**
+	 * <p>Setter for the field <code>authCode</code>.</p>
+	 *
+	 * @param authCode a {@link java.lang.String} object.
+	 */
 	public void setAuthCode(String authCode) {
 		this.authCode = authCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>craftsmanIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getCraftsmanIds() {
 		return this.craftsmanIds;
 	}
+	/**
+	 * <p>Setter for the field <code>craftsmanIds</code>.</p>
+	 *
+	 * @param craftsmanIds a {@link java.util.List} object.
+	 */
 	public void setCraftsmanIds(List<String> craftsmanIds) {
 		this.craftsmanIds = craftsmanIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outCraftsmanIds</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getOutCraftsmanIds() {
 		return this.outCraftsmanIds;
 	}
+	/**
+	 * <p>Setter for the field <code>outCraftsmanIds</code>.</p>
+	 *
+	 * @param outCraftsmanIds a {@link java.util.List} object.
+	 */
 	public void setOutCraftsmanIds(List<String> outCraftsmanIds) {
 		this.outCraftsmanIds = outCraftsmanIds;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNo() {
 		return this.pageNo;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNo</code>.</p>
+	 *
+	 * @param pageNo a {@link java.lang.String} object.
+	 */
 	public void setPageNo(String pageNo) {
 		this.pageNo = pageNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.String} object.
+	 */
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}
 
+	/**
+	 * <p>Getter for the field <code>qrCodeShopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCodeShopId() {
 		return this.qrCodeShopId;
 	}
+	/**
+	 * <p>Setter for the field <code>qrCodeShopId</code>.</p>
+	 *
+	 * @param qrCodeShopId a {@link java.lang.String} object.
+	 */
 	public void setQrCodeShopId(String qrCodeShopId) {
 		this.qrCodeShopId = qrCodeShopId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>recommend</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getRecommend() {
 		return this.recommend;
 	}
+	/**
+	 * <p>Setter for the field <code>recommend</code>.</p>
+	 *
+	 * @param recommend a {@link java.lang.Boolean} object.
+	 */
 	public void setRecommend(Boolean recommend) {
 		this.recommend = recommend;
 	}
 
+	/**
+	 * <p>Getter for the field <code>shopId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getShopId() {
 		return this.shopId;
 	}
+	/**
+	 * <p>Setter for the field <code>shopId</code>.</p>
+	 *
+	 * @param shopId a {@link java.lang.String} object.
+	 */
 	public void setShopId(String shopId) {
 		this.shopId = shopId;
 	}

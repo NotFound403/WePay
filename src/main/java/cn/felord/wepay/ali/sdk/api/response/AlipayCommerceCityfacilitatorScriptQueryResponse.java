@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.cityfacilitator.script.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-12-09 16:24:55
+ * @version $Id: $Id
  */
 public class AlipayCommerceCityfacilitatorScriptQueryResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayCommerceCityfacilitatorScriptQueryResponse extends AlipayResp
 	@ApiField("gmt_modified")
 	private String gmtModified;
 
+	/**
+	 * <p>Setter for the field <code>content</code>.</p>
+	 *
+	 * @param content a {@link java.lang.String} object.
+	 */
 	public void setContent(String content) {
 		this.content = content;
 	}
+	/**
+	 * <p>Getter for the field <code>content</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContent( ) {
 		return this.content;
 	}
 
+	/**
+	 * <p>Setter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @param gmtModified a {@link java.lang.String} object.
+	 */
 	public void setGmtModified(String gmtModified) {
 		this.gmtModified = gmtModified;
 	}
+	/**
+	 * <p>Getter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getGmtModified( ) {
 		return this.gmtModified;
 	}

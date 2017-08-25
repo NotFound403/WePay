@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 数据报告服务数据传输接口
  *
  * @author auto create
- * @since 1.0, 2017-02-06 12:07:51
+ * @version $Id: $Id
  */
 public class SsdataDataserviceDtevalDataanalysisSendModel extends AlipayObject {
 
@@ -37,30 +37,70 @@ public class SsdataDataserviceDtevalDataanalysisSendModel extends AlipayObject {
 	@ApiField("process_biz_type")
 	private String processBizType;
 
+	/**
+	 * <p>Getter for the field <code>bizNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNumber() {
 		return this.bizNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>bizNumber</code>.</p>
+	 *
+	 * @param bizNumber a {@link java.lang.String} object.
+	 */
 	public void setBizNumber(String bizNumber) {
 		this.bizNumber = bizNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizSource</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizSource() {
 		return this.bizSource;
 	}
+	/**
+	 * <p>Setter for the field <code>bizSource</code>.</p>
+	 *
+	 * @param bizSource a {@link java.lang.String} object.
+	 */
 	public void setBizSource(String bizSource) {
 		this.bizSource = bizSource;
 	}
 
+	/**
+	 * <p>Getter for the field <code>dataContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDataContent() {
 		return this.dataContent;
 	}
+	/**
+	 * <p>Setter for the field <code>dataContent</code>.</p>
+	 *
+	 * @param dataContent a {@link java.lang.String} object.
+	 */
 	public void setDataContent(String dataContent) {
 		this.dataContent = dataContent;
 	}
 
+	/**
+	 * <p>Getter for the field <code>processBizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProcessBizType() {
 		return this.processBizType;
 	}
+	/**
+	 * <p>Setter for the field <code>processBizType</code>.</p>
+	 *
+	 * @param processBizType a {@link java.lang.String} object.
+	 */
 	public void setProcessBizType(String processBizType) {
 		this.processBizType = processBizType;
 	}

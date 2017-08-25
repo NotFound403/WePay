@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 门店类目配置查询接口
  *
  * @author auto create
- * @since 1.0, 2017-07-19 16:56:09
+ * @version $Id: $Id
  */
 public class AlipayOfflineMarketShopCategoryQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOfflineMarketShopCategoryQueryModel extends AlipayObject {
 	@ApiField("op_role")
 	private String opRole;
 
+	/**
+	 * <p>Getter for the field <code>categoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryId() {
 		return this.categoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryId</code>.</p>
+	 *
+	 * @param categoryId a {@link java.lang.String} object.
+	 */
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>opRole</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOpRole() {
 		return this.opRole;
 	}
+	/**
+	 * <p>Setter for the field <code>opRole</code>.</p>
+	 *
+	 * @param opRole a {@link java.lang.String} object.
+	 */
 	public void setOpRole(String opRole) {
 		this.opRole = opRole;
 	}

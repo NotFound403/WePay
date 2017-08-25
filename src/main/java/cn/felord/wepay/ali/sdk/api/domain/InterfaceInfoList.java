@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 接口信息列表，停车业务需要配置的接口列表，该值为JSON数据格式的LIST对象，现阶段只需要配置一个页面接口即可 。每次请将所有的接口配置信息都传入，未传的接口信息将会被置空。
  *
  * @author auto create
- * @since 1.0, 2017-06-13 15:26:13
+ * @version $Id: $Id
  */
 public class InterfaceInfoList extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class InterfaceInfoList extends AlipayObject {
 	@ApiField("interface_url")
 	private String interfaceUrl;
 
+	/**
+	 * <p>Getter for the field <code>interfaceName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInterfaceName() {
 		return this.interfaceName;
 	}
+	/**
+	 * <p>Setter for the field <code>interfaceName</code>.</p>
+	 *
+	 * @param interfaceName a {@link java.lang.String} object.
+	 */
 	public void setInterfaceName(String interfaceName) {
 		this.interfaceName = interfaceName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>interfaceType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInterfaceType() {
 		return this.interfaceType;
 	}
+	/**
+	 * <p>Setter for the field <code>interfaceType</code>.</p>
+	 *
+	 * @param interfaceType a {@link java.lang.String} object.
+	 */
 	public void setInterfaceType(String interfaceType) {
 		this.interfaceType = interfaceType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>interfaceUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInterfaceUrl() {
 		return this.interfaceUrl;
 	}
+	/**
+	 * <p>Setter for the field <code>interfaceUrl</code>.</p>
+	 *
+	 * @param interfaceUrl a {@link java.lang.String} object.
+	 */
 	public void setInterfaceUrl(String interfaceUrl) {
 		this.interfaceUrl = interfaceUrl;
 	}

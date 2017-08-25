@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.data.upload.initialize response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-27 22:38:46
+ * @version $Id: $Id
  */
 public class ZhimaMerchantDataUploadInitializeResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class ZhimaMerchantDataUploadInitializeResponse extends AlipayResponse {
 	@ApiField("template_url")
 	private String templateUrl;
 
+	/**
+	 * <p>Setter for the field <code>templateUrl</code>.</p>
+	 *
+	 * @param templateUrl a {@link java.lang.String} object.
+	 */
 	public void setTemplateUrl(String templateUrl) {
 		this.templateUrl = templateUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>templateUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTemplateUrl( ) {
 		return this.templateUrl;
 	}

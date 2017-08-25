@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 商户入驻申请单认证、审核详情
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class MerchantApplyResultRecord extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class MerchantApplyResultRecord extends AlipayObject {
 	@ApiField("result_type")
 	private String resultType;
 
+	/**
+	 * <p>Getter for the field <code>prodName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProdName() {
 		return this.prodName;
 	}
+	/**
+	 * <p>Setter for the field <code>prodName</code>.</p>
+	 *
+	 * @param prodName a {@link java.lang.String} object.
+	 */
 	public void setProdName(String prodName) {
 		this.prodName = prodName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>propInputKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPropInputKey() {
 		return this.propInputKey;
 	}
+	/**
+	 * <p>Setter for the field <code>propInputKey</code>.</p>
+	 *
+	 * @param propInputKey a {@link java.lang.String} object.
+	 */
 	public void setPropInputKey(String propInputKey) {
 		this.propInputKey = propInputKey;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultMsg() {
 		return this.resultMsg;
 	}
+	/**
+	 * <p>Setter for the field <code>resultMsg</code>.</p>
+	 *
+	 * @param resultMsg a {@link java.lang.String} object.
+	 */
 	public void setResultMsg(String resultMsg) {
 		this.resultMsg = resultMsg;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultStatus() {
 		return this.resultStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>resultStatus</code>.</p>
+	 *
+	 * @param resultStatus a {@link java.lang.String} object.
+	 */
 	public void setResultStatus(String resultStatus) {
 		this.resultStatus = resultStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>resultType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getResultType() {
 		return this.resultType;
 	}
+	/**
+	 * <p>Setter for the field <code>resultType</code>.</p>
+	 *
+	 * @param resultType a {@link java.lang.String} object.
+	 */
 	public void setResultType(String resultType) {
 		this.resultType = resultType;
 	}

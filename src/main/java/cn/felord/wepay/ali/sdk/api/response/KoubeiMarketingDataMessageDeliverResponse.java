@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.message.deliver response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-09-09 17:44:32
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataMessageDeliverResponse extends AlipayResponse {
 

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 删除物业社区通知通告
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:14:49
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeNoticeDeleteModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class AlipayEcoCplifeNoticeDeleteModel extends AlipayObject {
 	@ApiField("notice_id")
 	private String noticeId;
 
+	/**
+	 * <p>Getter for the field <code>communityIdSet</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getCommunityIdSet() {
 		return this.communityIdSet;
 	}
+	/**
+	 * <p>Setter for the field <code>communityIdSet</code>.</p>
+	 *
+	 * @param communityIdSet a {@link java.util.List} object.
+	 */
 	public void setCommunityIdSet(List<String> communityIdSet) {
 		this.communityIdSet = communityIdSet;
 	}
 
+	/**
+	 * <p>Getter for the field <code>noticeId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNoticeId() {
 		return this.noticeId;
 	}
+	/**
+	 * <p>Setter for the field <code>noticeId</code>.</p>
+	 *
+	 * @param noticeId a {@link java.lang.String} object.
+	 */
 	public void setNoticeId(String noticeId) {
 		this.noticeId = noticeId;
 	}

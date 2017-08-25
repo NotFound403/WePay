@@ -5,9 +5,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.commerce.transport.offlinepay.record.verify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-05-20 21:41:36
+ * @version $Id: $Id
  */
 public class AlipayCommerceTransportOfflinepayRecordVerifyResponse extends AlipayResponse {
 

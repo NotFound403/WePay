@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 模型数据查询接口
  *
  * @author auto create
- * @since 1.0, 2017-04-27 14:36:26
+ * @version $Id: $Id
  */
 public class AlipayMarketingDataModelQueryModel extends AlipayObject {
 
@@ -32,16 +32,36 @@ value:查询参数值。此为查询值
 	@ApiField("model_uk")
 	private String modelUk;
 
+	/**
+	 * <p>Getter for the field <code>modelQueryParam</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<ModelQueryParam> getModelQueryParam() {
 		return this.modelQueryParam;
 	}
+	/**
+	 * <p>Setter for the field <code>modelQueryParam</code>.</p>
+	 *
+	 * @param modelQueryParam a {@link java.util.List} object.
+	 */
 	public void setModelQueryParam(List<ModelQueryParam> modelQueryParam) {
 		this.modelQueryParam = modelQueryParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>modelUk</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getModelUk() {
 		return this.modelUk;
 	}
+	/**
+	 * <p>Setter for the field <code>modelUk</code>.</p>
+	 *
+	 * @param modelUk a {@link java.lang.String} object.
+	 */
 	public void setModelUk(String modelUk) {
 		this.modelUk = modelUk;
 	}

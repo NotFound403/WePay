@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.micropay.order.freezepayurl.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-06-06 17:52:18
+ * @version $Id: $Id
  */
 public class AlipayMicropayOrderFreezepayurlGetResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMicropayOrderFreezepayurlGetResponse extends AlipayResponse {
 	@ApiField("pay_freeze_url")
 	private String payFreezeUrl;
 
+	/**
+	 * <p>Setter for the field <code>payFreezeUrl</code>.</p>
+	 *
+	 * @param payFreezeUrl a {@link java.lang.String} object.
+	 */
 	public void setPayFreezeUrl(String payFreezeUrl) {
 		this.payFreezeUrl = payFreezeUrl;
 	}
+	/**
+	 * <p>Getter for the field <code>payFreezeUrl</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPayFreezeUrl( ) {
 		return this.payFreezeUrl;
 	}

@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.open.public.life.modify response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-15 17:39:52
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicLifeModifyResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayOpenPublicLifeModifyResponse extends AlipayResponse {
 	@ApiField("public_id")
 	private String publicId;
 
+	/**
+	 * <p>Setter for the field <code>modifyTime</code>.</p>
+	 *
+	 * @param modifyTime a {@link java.lang.String} object.
+	 */
 	public void setModifyTime(String modifyTime) {
 		this.modifyTime = modifyTime;
 	}
+	/**
+	 * <p>Getter for the field <code>modifyTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getModifyTime( ) {
 		return this.modifyTime;
 	}
 
+	/**
+	 * <p>Setter for the field <code>publicId</code>.</p>
+	 *
+	 * @param publicId a {@link java.lang.String} object.
+	 */
 	public void setPublicId(String publicId) {
 		this.publicId = publicId;
 	}
+	/**
+	 * <p>Getter for the field <code>publicId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPublicId( ) {
 		return this.publicId;
 	}

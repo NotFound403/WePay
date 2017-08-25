@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 返回充值面额状态list
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class ItermInfo extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class ItermInfo extends AlipayObject {
 	@ApiField("supplier_price")
 	private String supplierPrice;
 
+	/**
+	 * <p>Getter for the field <code>errorMessage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorMessage() {
 		return this.errorMessage;
 	}
+	/**
+	 * <p>Setter for the field <code>errorMessage</code>.</p>
+	 *
+	 * @param errorMessage a {@link java.lang.String} object.
+	 */
 	public void setErrorMessage(String errorMessage) {
 		this.errorMessage = errorMessage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isForSale</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsForSale() {
 		return this.isForSale;
 	}
+	/**
+	 * <p>Setter for the field <code>isForSale</code>.</p>
+	 *
+	 * @param isForSale a {@link java.lang.String} object.
+	 */
 	public void setIsForSale(String isForSale) {
 		this.isForSale = isForSale;
 	}
 
+	/**
+	 * <p>Getter for the field <code>itemCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getItemCode() {
 		return this.itemCode;
 	}
+	/**
+	 * <p>Setter for the field <code>itemCode</code>.</p>
+	 *
+	 * @param itemCode a {@link java.lang.String} object.
+	 */
 	public void setItemCode(String itemCode) {
 		this.itemCode = itemCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>markPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMarkPrice() {
 		return this.markPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>markPrice</code>.</p>
+	 *
+	 * @param markPrice a {@link java.lang.String} object.
+	 */
 	public void setMarkPrice(String markPrice) {
 		this.markPrice = markPrice;
 	}
 
+	/**
+	 * <p>Getter for the field <code>success</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getSuccess() {
 		return this.success;
 	}
+	/**
+	 * <p>Setter for the field <code>success</code>.</p>
+	 *
+	 * @param success a {@link java.lang.Boolean} object.
+	 */
 	public void setSuccess(Boolean success) {
 		this.success = success;
 	}
 
+	/**
+	 * <p>Getter for the field <code>supplierPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSupplierPrice() {
 		return this.supplierPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>supplierPrice</code>.</p>
+	 *
+	 * @param supplierPrice a {@link java.lang.String} object.
+	 */
 	public void setSupplierPrice(String supplierPrice) {
 		this.supplierPrice = supplierPrice;
 	}

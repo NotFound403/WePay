@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询缴费业务输出的机构账单
  *
  * @author auto create
- * @since 1.0, 2017-07-19 12:08:56
+ * @version $Id: $Id
  */
 public class AlipayEbppJfexportInstbillQueryModel extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class AlipayEbppJfexportInstbillQueryModel extends AlipayObject {
 	@ApiField("sub_biz_type")
 	private String subBizType;
 
+	/**
+	 * <p>Getter for the field <code>billDate</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillDate() {
 		return this.billDate;
 	}
+	/**
+	 * <p>Setter for the field <code>billDate</code>.</p>
+	 *
+	 * @param billDate a {@link java.lang.String} object.
+	 */
 	public void setBillDate(String billDate) {
 		this.billDate = billDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>billKey</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBillKey() {
 		return this.billKey;
 	}
+	/**
+	 * <p>Setter for the field <code>billKey</code>.</p>
+	 *
+	 * @param billKey a {@link java.lang.String} object.
+	 */
 	public void setBillKey(String billKey) {
 		this.billKey = billKey;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>chargeInst</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getChargeInst() {
 		return this.chargeInst;
 	}
+	/**
+	 * <p>Setter for the field <code>chargeInst</code>.</p>
+	 *
+	 * @param chargeInst a {@link java.lang.String} object.
+	 */
 	public void setChargeInst(String chargeInst) {
 		this.chargeInst = chargeInst;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extendField</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtendField() {
 		return this.extendField;
 	}
+	/**
+	 * <p>Setter for the field <code>extendField</code>.</p>
+	 *
+	 * @param extendField a {@link java.lang.String} object.
+	 */
 	public void setExtendField(String extendField) {
 		this.extendField = extendField;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ownerName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOwnerName() {
 		return this.ownerName;
 	}
+	/**
+	 * <p>Setter for the field <code>ownerName</code>.</p>
+	 *
+	 * @param ownerName a {@link java.lang.String} object.
+	 */
 	public void setOwnerName(String ownerName) {
 		this.ownerName = ownerName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subBizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubBizType() {
 		return this.subBizType;
 	}
+	/**
+	 * <p>Setter for the field <code>subBizType</code>.</p>
+	 *
+	 * @param subBizType a {@link java.lang.String} object.
+	 */
 	public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}

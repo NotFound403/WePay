@@ -4,41 +4,40 @@
  */
 package cn.felord.wepay.ali.sdk.api.internal.util;
 
-import java.security.GeneralSecurityException;
+import cn.felord.wepay.ali.sdk.api.AlipayApiException;
+import cn.felord.wepay.ali.sdk.api.internal.util.codec.Base64;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.IvParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
-
-import cn.felord.wepay.ali.sdk.api.AlipayApiException;
-import cn.felord.wepay.ali.sdk.api.internal.util.codec.Base64;
+import java.security.GeneralSecurityException;
 
 /**
- *  加密工具
- * 
+ * 加密工具
+ *
  * @author jiehua
- * @version $Id: AlipayEncrypt.java, v 0.1 2016-3-28 下午5:14:12 jiehua Exp $
+ * @version $Id : AlipayEncrypt.java, v 0.1 2016-3-28 下午5:14:12 jiehua Exp $
  */
 public class AlipayEncrypt {
 
-    private static final String AES_ALG         = "AES";
+    private static final String AES_ALG = "AES";
 
     /**
      * AES算法
      */
     private static final String AES_CBC_PCK_ALG = "AES/CBC/PKCS5Padding";
 
-    private static final byte[] AES_IV          = initIv(AES_CBC_PCK_ALG);
+    private static final byte[] AES_IV = initIv(AES_CBC_PCK_ALG);
 
     /**
-     *   加密
-     * 
-     * @param content
-     * @param encryptType
-     * @param encryptKey
-     * @param charset
-     * @return
-     * @throws AlipayApiException
+     * 加密
+     *
+     * @param content     the content
+     * @param encryptType the encrypt type
+     * @param encryptKey  the encrypt key
+     * @param charset     the charset
+     * @return string
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String encryptContent(String content, String encryptType, String encryptKey,
                                         String charset) throws AlipayApiException {
@@ -55,14 +54,14 @@ public class AlipayEncrypt {
     }
 
     /**
-     *  解密
-     * 
-     * @param content
-     * @param encryptType
-     * @param encryptKey
-     * @param charset
-     * @return
-     * @throws AlipayApiException
+     * 解密
+     *
+     * @param content     the content
+     * @param encryptType the encrypt type
+     * @param encryptKey  the encrypt key
+     * @param charset     the charset
+     * @return string
+     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String decryptContent(String content, String encryptType, String encryptKey,
                                         String charset) throws AlipayApiException {
@@ -80,7 +79,7 @@ public class AlipayEncrypt {
 
     /**
      * AES加密
-     * 
+     *
      * @param content
      * @param aesKey
      * @param charset
@@ -88,27 +87,27 @@ public class AlipayEncrypt {
      * @throws AlipayApiException
      */
     private static String aesEncrypt(String content, String aesKey, String charset)
-                                                                                   throws AlipayApiException {
+            throws AlipayApiException {
 
         try {
             Cipher cipher = Cipher.getInstance(AES_CBC_PCK_ALG);
 
             IvParameterSpec iv = new IvParameterSpec(AES_IV);
             cipher.init(Cipher.ENCRYPT_MODE,
-                new SecretKeySpec(Base64.decodeBase64(aesKey.getBytes()), AES_ALG), iv);
+                    new SecretKeySpec(Base64.decodeBase64(aesKey.getBytes()), AES_ALG), iv);
 
             byte[] encryptBytes = cipher.doFinal(content.getBytes(charset));
             return new String(Base64.encodeBase64(encryptBytes));
         } catch (Exception e) {
             throw new AlipayApiException("AES加密失败：Aescontent = " + content + "; charset = "
-                                         + charset, e);
+                    + charset, e);
         }
 
     }
 
     /**
      * AES解密
-     * 
+     *
      * @param content
      * @param key
      * @param charset
@@ -116,18 +115,18 @@ public class AlipayEncrypt {
      * @throws AlipayApiException
      */
     private static String aesDecrypt(String content, String key, String charset)
-                                                                                throws AlipayApiException {
+            throws AlipayApiException {
         try {
             Cipher cipher = Cipher.getInstance(AES_CBC_PCK_ALG);
             IvParameterSpec iv = new IvParameterSpec(initIv(AES_CBC_PCK_ALG));
             cipher.init(Cipher.DECRYPT_MODE, new SecretKeySpec(Base64.decodeBase64(key.getBytes()),
-                AES_ALG), iv);
+                    AES_ALG), iv);
 
             byte[] cleanBytes = cipher.doFinal(Base64.decodeBase64(content.getBytes()));
             return new String(cleanBytes, charset);
         } catch (Exception e) {
             throw new AlipayApiException("AES解密失败：Aescontent = " + content + "; charset = "
-                                         + charset, e);
+                    + charset, e);
         }
     }
 

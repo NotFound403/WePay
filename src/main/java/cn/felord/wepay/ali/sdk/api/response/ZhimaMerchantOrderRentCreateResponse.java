@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: zhima.merchant.order.rent.create response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-17 19:04:51
+ * @version $Id: $Id
  */
 public class ZhimaMerchantOrderRentCreateResponse extends AlipayResponse {
 
@@ -46,37 +46,87 @@ N-不准入
 	@ApiField("user_id")
 	private String userId;
 
+	/**
+	 * <p>Setter for the field <code>admitState</code>.</p>
+	 *
+	 * @param admitState a {@link java.lang.String} object.
+	 */
 	public void setAdmitState(String admitState) {
 		this.admitState = admitState;
 	}
+	/**
+	 * <p>Getter for the field <code>admitState</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAdmitState( ) {
 		return this.admitState;
 	}
 
+	/**
+	 * <p>Setter for the field <code>invokeState</code>.</p>
+	 *
+	 * @param invokeState a {@link java.lang.String} object.
+	 */
 	public void setInvokeState(String invokeState) {
 		this.invokeState = invokeState;
 	}
+	/**
+	 * <p>Getter for the field <code>invokeState</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getInvokeState( ) {
 		return this.invokeState;
 	}
 
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo( ) {
 		return this.orderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @param outOrderNo a {@link java.lang.String} object.
+	 */
 	public void setOutOrderNo(String outOrderNo) {
 		this.outOrderNo = outOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutOrderNo( ) {
 		return this.outOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>userId</code>.</p>
+	 *
+	 * @param userId a {@link java.lang.String} object.
+	 */
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
+	/**
+	 * <p>Getter for the field <code>userId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUserId( ) {
 		return this.userId;
 	}

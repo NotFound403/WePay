@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 根据发票申请id查询发票信息
  *
  * @author auto create
- * @since 1.0, 2017-05-09 19:40:03
+ * @version $Id: $Id
  */
 public class AlipayEbppInvoiceInfoApplyidQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayEbppInvoiceInfoApplyidQueryModel extends AlipayObject {
 	@ApiField("apply_id")
 	private String applyId;
 
+	/**
+	 * <p>Getter for the field <code>applyId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getApplyId() {
 		return this.applyId;
 	}
+	/**
+	 * <p>Setter for the field <code>applyId</code>.</p>
+	 *
+	 * @param applyId a {@link java.lang.String} object.
+	 */
 	public void setApplyId(String applyId) {
 		this.applyId = applyId;
 	}

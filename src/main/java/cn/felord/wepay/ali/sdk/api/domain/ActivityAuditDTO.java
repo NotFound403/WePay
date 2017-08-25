@@ -9,88 +9,154 @@ import java.util.Date;
  * 活动审核模型
  *
  * @author auto create
- * @since 1.0, 2016-12-27 16:58:19
+ * @version $Id: $Id
  */
 public class ActivityAuditDTO extends AlipayObject {
 
-	private static final long serialVersionUID = 7112172416545651952L;
+    private static final long serialVersionUID = 7112172416545651952L;
 
-	/**
-	 * 审核id
-	 */
-	@ApiField("audit_id")
-	private String auditId;
+    /**
+     * 审核id
+     */
+    @ApiField("audit_id")
+    private String auditId;
 
-	/**
-	 * INIT:初始化;AUDITING:审核中;REJECT:审核驳回;PASS:审核通过;CANCEL:审核撤销;FAIL:审核失败
-	 */
-	@ApiField("audit_status")
-	private String auditStatus;
+    /**
+     * INIT:初始化;AUDITING:审核中;REJECT:审核驳回;PASS:审核通过;CANCEL:审核撤销;FAIL:审核失败
+     */
+    @ApiField("audit_status")
+    private String auditStatus;
 
-	/**
-	 * 操作人id
-	 */
-	@ApiField("creator_id")
-	private String creatorId;
+    /**
+     * 操作人id
+     */
+    @ApiField("creator_id")
+    private String creatorId;
 
-	/**
-	 * SALES:口碑内部小二;PROVIDER:外部服务商;PROVIDER_STAFF:外部服务商员工
-	 */
-	@ApiField("creator_type")
-	private String creatorType;
+    /**
+     * SALES:口碑内部小二;PROVIDER:外部服务商;PROVIDER_STAFF:外部服务商员工
+     */
+    @ApiField("creator_type")
+    private String creatorType;
 
-	/**
-	 * 操作时间
-	 */
-	@ApiField("operation_time")
-	private Date operationTime;
+    /**
+     * 操作时间
+     */
+    @ApiField("operation_time")
+    private Date operationTime;
 
-	/**
-	 * 审核通过或者审核驳回的原因
-	 */
-	@ApiField("reason")
-	private String reason;
+    /**
+     * 审核通过或者审核驳回的原因
+     */
+    @ApiField("reason")
+    private String reason;
 
-	public String getAuditId() {
-		return this.auditId;
-	}
-	public void setAuditId(String auditId) {
-		this.auditId = auditId;
-	}
+    /**
+     * Gets audit id.
+     *
+     * @return the audit id
+     */
+    public String getAuditId() {
+        return this.auditId;
+    }
 
-	public String getAuditStatus() {
-		return this.auditStatus;
-	}
-	public void setAuditStatus(String auditStatus) {
-		this.auditStatus = auditStatus;
-	}
+    /**
+     * Sets audit id.
+     *
+     * @param auditId the audit id
+     */
+    public void setAuditId(String auditId) {
+        this.auditId = auditId;
+    }
 
-	public String getCreatorId() {
-		return this.creatorId;
-	}
-	public void setCreatorId(String creatorId) {
-		this.creatorId = creatorId;
-	}
+    /**
+     * Gets audit status.
+     *
+     * @return the audit status
+     */
+    public String getAuditStatus() {
+        return this.auditStatus;
+    }
 
-	public String getCreatorType() {
-		return this.creatorType;
-	}
-	public void setCreatorType(String creatorType) {
-		this.creatorType = creatorType;
-	}
+    /**
+     * Sets audit status.
+     *
+     * @param auditStatus the audit status
+     */
+    public void setAuditStatus(String auditStatus) {
+        this.auditStatus = auditStatus;
+    }
 
-	public Date getOperationTime() {
-		return this.operationTime;
-	}
-	public void setOperationTime(Date operationTime) {
-		this.operationTime = operationTime;
-	}
+    /**
+     * Gets creator id.
+     *
+     * @return the creator id
+     */
+    public String getCreatorId() {
+        return this.creatorId;
+    }
 
-	public String getReason() {
-		return this.reason;
-	}
-	public void setReason(String reason) {
-		this.reason = reason;
-	}
+    /**
+     * Sets creator id.
+     *
+     * @param creatorId the creator id
+     */
+    public void setCreatorId(String creatorId) {
+        this.creatorId = creatorId;
+    }
+
+    /**
+     * Gets creator type.
+     *
+     * @return the creator type
+     */
+    public String getCreatorType() {
+        return this.creatorType;
+    }
+
+    /**
+     * Sets creator type.
+     *
+     * @param creatorType the creator type
+     */
+    public void setCreatorType(String creatorType) {
+        this.creatorType = creatorType;
+    }
+
+    /**
+     * Gets operation time.
+     *
+     * @return the operation time
+     */
+    public Date getOperationTime() {
+        return this.operationTime;
+    }
+
+    /**
+     * Sets operation time.
+     *
+     * @param operationTime the operation time
+     */
+    public void setOperationTime(Date operationTime) {
+        this.operationTime = operationTime;
+    }
+
+    /**
+     * Gets reason.
+     *
+     * @return the reason
+     */
+    public String getReason() {
+        return this.reason;
+    }
+
+    /**
+     * Sets reason.
+     *
+     * @param reason the reason
+     */
+    public void setReason(String reason) {
+        this.reason = reason;
+    }
 
 }

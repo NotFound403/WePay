@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.trust.user.riskidentify.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-01-04 10:16:04
+ * @version $Id: $Id
  */
 public class AlipayTrustUserRiskidentifyGetResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class AlipayTrustUserRiskidentifyGetResponse extends AlipayResponse {
 	@ApiField("ali_trust_risk_identify")
 	private AliTrustRiskIdentify aliTrustRiskIdentify;
 
+	/**
+	 * <p>Setter for the field <code>aliTrustRiskIdentify</code>.</p>
+	 *
+	 * @param aliTrustRiskIdentify a {@link cn.felord.wepay.ali.sdk.api.domain.AliTrustRiskIdentify} object.
+	 */
 	public void setAliTrustRiskIdentify(AliTrustRiskIdentify aliTrustRiskIdentify) {
 		this.aliTrustRiskIdentify = aliTrustRiskIdentify;
 	}
+	/**
+	 * <p>Getter for the field <code>aliTrustRiskIdentify</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.AliTrustRiskIdentify} object.
+	 */
 	public AliTrustRiskIdentify getAliTrustRiskIdentify( ) {
 		return this.aliTrustRiskIdentify;
 	}

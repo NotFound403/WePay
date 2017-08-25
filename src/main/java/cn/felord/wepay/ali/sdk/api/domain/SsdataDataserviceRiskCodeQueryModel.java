@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 反欺诈服务
  *
  * @author auto create
- * @since 1.0, 2017-06-26 11:43:55
+ * @version $Id: $Id
  */
 public class SsdataDataserviceRiskCodeQueryModel extends AlipayObject {
 
@@ -67,65 +67,155 @@ public class SsdataDataserviceRiskCodeQueryModel extends AlipayObject {
 	@ApiField("wifimac")
 	private String wifimac;
 
+	/**
+	 * <p>Getter for the field <code>address</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAddress() {
 		return this.address;
 	}
+	/**
+	 * <p>Setter for the field <code>address</code>.</p>
+	 *
+	 * @param address a {@link java.lang.String} object.
+	 */
 	public void setAddress(String address) {
 		this.address = address;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bankCard</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBankCard() {
 		return this.bankCard;
 	}
+	/**
+	 * <p>Setter for the field <code>bankCard</code>.</p>
+	 *
+	 * @param bankCard a {@link java.lang.String} object.
+	 */
 	public void setBankCard(String bankCard) {
 		this.bankCard = bankCard;
 	}
 
+	/**
+	 * <p>Getter for the field <code>email</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getEmail() {
 		return this.email;
 	}
+	/**
+	 * <p>Setter for the field <code>email</code>.</p>
+	 *
+	 * @param email a {@link java.lang.String} object.
+	 */
 	public void setEmail(String email) {
 		this.email = email;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imei</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImei() {
 		return this.imei;
 	}
+	/**
+	 * <p>Setter for the field <code>imei</code>.</p>
+	 *
+	 * @param imei a {@link java.lang.String} object.
+	 */
 	public void setImei(String imei) {
 		this.imei = imei;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ip</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIp() {
 		return this.ip;
 	}
+	/**
+	 * <p>Setter for the field <code>ip</code>.</p>
+	 *
+	 * @param ip a {@link java.lang.String} object.
+	 */
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mac</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMac() {
 		return this.mac;
 	}
+	/**
+	 * <p>Setter for the field <code>mac</code>.</p>
+	 *
+	 * @param mac a {@link java.lang.String} object.
+	 */
 	public void setMac(String mac) {
 		this.mac = mac;
 	}
 
+	/**
+	 * <p>Getter for the field <code>mobile</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMobile() {
 		return this.mobile;
 	}
+	/**
+	 * <p>Setter for the field <code>mobile</code>.</p>
+	 *
+	 * @param mobile a {@link java.lang.String} object.
+	 */
 	public void setMobile(String mobile) {
 		this.mobile = mobile;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>wifimac</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getWifimac() {
 		return this.wifimac;
 	}
+	/**
+	 * <p>Setter for the field <code>wifimac</code>.</p>
+	 *
+	 * @param wifimac a {@link java.lang.String} object.
+	 */
 	public void setWifimac(String wifimac) {
 		this.wifimac = wifimac;
 	}

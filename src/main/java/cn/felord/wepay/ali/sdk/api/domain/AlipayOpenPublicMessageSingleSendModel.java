@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 单发模板消息
  *
  * @author auto create
- * @since 1.0, 2016-12-02 16:31:58
+ * @version $Id: $Id
  */
 public class AlipayOpenPublicMessageSingleSendModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayOpenPublicMessageSingleSendModel extends AlipayObject {
 	@ApiField("to_user_id")
 	private String toUserId;
 
+	/**
+	 * <p>Getter for the field <code>template</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.Template} object.
+	 */
 	public Template getTemplate() {
 		return this.template;
 	}
+	/**
+	 * <p>Setter for the field <code>template</code>.</p>
+	 *
+	 * @param template a {@link cn.felord.wepay.ali.sdk.api.domain.Template} object.
+	 */
 	public void setTemplate(Template template) {
 		this.template = template;
 	}
 
+	/**
+	 * <p>Getter for the field <code>toUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getToUserId() {
 		return this.toUserId;
 	}
+	/**
+	 * <p>Setter for the field <code>toUserId</code>.</p>
+	 *
+	 * @param toUserId a {@link java.lang.String} object.
+	 */
 	public void setToUserId(String toUserId) {
 		this.toUserId = toUserId;
 	}

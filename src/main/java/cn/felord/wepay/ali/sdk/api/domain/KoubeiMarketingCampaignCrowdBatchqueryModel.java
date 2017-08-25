@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑商户人群组列表查询接口
  *
  * @author auto create
- * @since 1.0, 2017-02-15 16:31:23
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignCrowdBatchqueryModel extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class KoubeiMarketingCampaignCrowdBatchqueryModel extends AlipayObject {
 	@ApiField("page_size")
 	private String pageSize;
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageNumber</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageNumber() {
 		return this.pageNumber;
 	}
+	/**
+	 * <p>Setter for the field <code>pageNumber</code>.</p>
+	 *
+	 * @param pageNumber a {@link java.lang.String} object.
+	 */
 	public void setPageNumber(String pageNumber) {
 		this.pageNumber = pageNumber;
 	}
 
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPageSize() {
 		return this.pageSize;
 	}
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.String} object.
+	 */
 	public void setPageSize(String pageSize) {
 		this.pageSize = pageSize;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mpointprod.benefit.detail.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-01-29 15:46:36
+ * @version $Id: $Id
  */
 public class AlipayMpointprodBenefitDetailGetResponse extends AlipayResponse {
 
@@ -36,23 +36,45 @@ public class AlipayMpointprodBenefitDetailGetResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
+	/**
+	 * <p>Setter for the field <code>benefitInfos</code>.</p>
+	 *
+	 * @param benefitInfos a {@link java.util.List} object.
+	 */
 	public void setBenefitInfos(List<BenefitInfo> benefitInfos) {
 		this.benefitInfos = benefitInfos;
 	}
+	/**
+	 * <p>Getter for the field <code>benefitInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<BenefitInfo> getBenefitInfos( ) {
 		return this.benefitInfos;
 	}
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/** {@inheritDoc} */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg( ) {
 		return this.msg;
 	}

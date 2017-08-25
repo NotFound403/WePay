@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mdata.tag.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2015-03-11 14:09:56
+ * @version $Id: $Id
  */
 public class AlipayMdataTagGetResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class AlipayMdataTagGetResponse extends AlipayResponse {
 	@ApiField("tag_values")
 	private String tagValues;
 
+	/**
+	 * <p>Setter for the field <code>tagValues</code>.</p>
+	 *
+	 * @param tagValues a {@link java.lang.String} object.
+	 */
 	public void setTagValues(String tagValues) {
 		this.tagValues = tagValues;
 	}
+	/**
+	 * <p>Getter for the field <code>tagValues</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTagValues( ) {
 		return this.tagValues;
 	}

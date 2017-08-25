@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑广告系统分佣规则
  *
  * @author auto create
- * @since 1.0, 2017-01-17 10:33:12
+ * @version $Id: $Id
  */
 public class KbAdvertCommissionClauseResponse extends AlipayObject {
 
@@ -35,23 +35,53 @@ QUOTA_CLAUSE-定额
 	@ApiField("type")
 	private String type;
 
+	/**
+	 * <p>Getter for the field <code>percentageClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClausePercentageResponse} object.
+	 */
 	public KbAdvertCommissionClausePercentageResponse getPercentageClause() {
 		return this.percentageClause;
 	}
+	/**
+	 * <p>Setter for the field <code>percentageClause</code>.</p>
+	 *
+	 * @param percentageClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClausePercentageResponse} object.
+	 */
 	public void setPercentageClause(KbAdvertCommissionClausePercentageResponse percentageClause) {
 		this.percentageClause = percentageClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>quotaClause</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClauseQuotaResponse} object.
+	 */
 	public KbAdvertCommissionClauseQuotaResponse getQuotaClause() {
 		return this.quotaClause;
 	}
+	/**
+	 * <p>Setter for the field <code>quotaClause</code>.</p>
+	 *
+	 * @param quotaClause a {@link cn.felord.wepay.ali.sdk.api.domain.KbAdvertCommissionClauseQuotaResponse} object.
+	 */
 	public void setQuotaClause(KbAdvertCommissionClauseQuotaResponse quotaClause) {
 		this.quotaClause = quotaClause;
 	}
 
+	/**
+	 * <p>Getter for the field <code>type</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getType() {
 		return this.type;
 	}
+	/**
+	 * <p>Setter for the field <code>type</code>.</p>
+	 *
+	 * @param type a {@link java.lang.String} object.
+	 */
 	public void setType(String type) {
 		this.type = type;
 	}

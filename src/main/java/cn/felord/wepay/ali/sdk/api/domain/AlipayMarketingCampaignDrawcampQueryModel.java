@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 营销抽奖活动查询
  *
  * @author auto create
- * @since 1.0, 2017-03-23 14:22:15
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignDrawcampQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class AlipayMarketingCampaignDrawcampQueryModel extends AlipayObject {
 	@ApiField("camp_id")
 	private String campId;
 
+	/**
+	 * <p>Getter for the field <code>campId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCampId() {
 		return this.campId;
 	}
+	/**
+	 * <p>Setter for the field <code>campId</code>.</p>
+	 *
+	 * @param campId a {@link java.lang.String} object.
+	 */
 	public void setCampId(String campId) {
 		this.campId = campId;
 	}

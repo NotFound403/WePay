@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.std.public.follow.list response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-04-14 20:38:32
+ * @version $Id: $Id
  */
 public class AlipayMobileStdPublicFollowListResponse extends AlipayResponse {
 
@@ -39,30 +39,70 @@ public class AlipayMobileStdPublicFollowListResponse extends AlipayResponse {
 	@ApiField("next_user_id")
 	private String nextUserId;
 
+	/**
+	 * <p>Setter for the field <code>count</code>.</p>
+	 *
+	 * @param count a {@link java.lang.String} object.
+	 */
 	public void setCount(String count) {
 		this.count = count;
 	}
+	/**
+	 * <p>Getter for the field <code>count</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCount( ) {
 		return this.count;
 	}
 
+	/**
+	 * <p>Setter for the field <code>data</code>.</p>
+	 *
+	 * @param data a {@link cn.felord.wepay.ali.sdk.api.domain.Data} object.
+	 */
 	public void setData(Data data) {
 		this.data = data;
 	}
+	/**
+	 * <p>Getter for the field <code>data</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.Data} object.
+	 */
 	public Data getData( ) {
 		return this.data;
 	}
 
+	/**
+	 * <p>Setter for the field <code>nextAlipayUserId</code>.</p>
+	 *
+	 * @param nextAlipayUserId a {@link java.lang.String} object.
+	 */
 	public void setNextAlipayUserId(String nextAlipayUserId) {
 		this.nextAlipayUserId = nextAlipayUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>nextAlipayUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNextAlipayUserId( ) {
 		return this.nextAlipayUserId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>nextUserId</code>.</p>
+	 *
+	 * @param nextUserId a {@link java.lang.String} object.
+	 */
 	public void setNextUserId(String nextUserId) {
 		this.nextUserId = nextUserId;
 	}
+	/**
+	 * <p>Getter for the field <code>nextUserId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNextUserId( ) {
 		return this.nextUserId;
 	}

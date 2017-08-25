@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.data.smartmanagement.diagnose response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-03-14 16:50:04
+ * @version $Id: $Id
  */
 public class KoubeiMarketingDataSmartmanagementDiagnoseResponse extends AlipayResponse {
 
@@ -45,9 +45,19 @@ repurchase_customer返回8，则封装的文案是“一个明星菜将带来8�
 	@ApiField("diagnose_result")
 	private List<DiagnoseResult> diagnoseResult;
 
+	/**
+	 * <p>Setter for the field <code>diagnoseResult</code>.</p>
+	 *
+	 * @param diagnoseResult a {@link java.util.List} object.
+	 */
 	public void setDiagnoseResult(List<DiagnoseResult> diagnoseResult) {
 		this.diagnoseResult = diagnoseResult;
 	}
+	/**
+	 * <p>Getter for the field <code>diagnoseResult</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<DiagnoseResult> getDiagnoseResult( ) {
 		return this.diagnoseResult;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.craftsman.data.provider.batchquery response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-01-13 16:27:52
+ * @version $Id: $Id
  */
 public class KoubeiCraftsmanDataProviderBatchqueryResponse extends AlipayResponse {
 
@@ -48,37 +48,87 @@ public class KoubeiCraftsmanDataProviderBatchqueryResponse extends AlipayRespons
 	@ApiField("total_page_no")
 	private Long totalPageNo;
 
+	/**
+	 * <p>Setter for the field <code>craftsmans</code>.</p>
+	 *
+	 * @param craftsmans a {@link java.util.List} object.
+	 */
 	public void setCraftsmans(List<CraftsmanOpenModel> craftsmans) {
 		this.craftsmans = craftsmans;
 	}
+	/**
+	 * <p>Getter for the field <code>craftsmans</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CraftsmanOpenModel> getCraftsmans( ) {
 		return this.craftsmans;
 	}
 
+	/**
+	 * <p>Setter for the field <code>currentPageNo</code>.</p>
+	 *
+	 * @param currentPageNo a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPageNo(Long currentPageNo) {
 		this.currentPageNo = currentPageNo;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPageNo( ) {
 		return this.currentPageNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>pageSize</code>.</p>
+	 *
+	 * @param pageSize a {@link java.lang.Long} object.
+	 */
 	public void setPageSize(Long pageSize) {
 		this.pageSize = pageSize;
 	}
+	/**
+	 * <p>Getter for the field <code>pageSize</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getPageSize( ) {
 		return this.pageSize;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalCraftsmans</code>.</p>
+	 *
+	 * @param totalCraftsmans a {@link java.lang.Long} object.
+	 */
 	public void setTotalCraftsmans(Long totalCraftsmans) {
 		this.totalCraftsmans = totalCraftsmans;
 	}
+	/**
+	 * <p>Getter for the field <code>totalCraftsmans</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalCraftsmans( ) {
 		return this.totalCraftsmans;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalPageNo</code>.</p>
+	 *
+	 * @param totalPageNo a {@link java.lang.Long} object.
+	 */
 	public void setTotalPageNo(Long totalPageNo) {
 		this.totalPageNo = totalPageNo;
 	}
+	/**
+	 * <p>Getter for the field <code>totalPageNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getTotalPageNo( ) {
 		return this.totalPageNo;
 	}

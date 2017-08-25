@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: ssdata.dataservice.risk.alixiaohao.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-06-26 11:43:59
+ * @version $Id: $Id
  */
 public class SsdataDataserviceRiskAlixiaohaoQueryResponse extends AlipayResponse {
 
@@ -20,9 +20,19 @@ public class SsdataDataserviceRiskAlixiaohaoQueryResponse extends AlipayResponse
 	@ApiField("is_alixiaohao")
 	private Boolean isAlixiaohao;
 
+	/**
+	 * <p>Setter for the field <code>isAlixiaohao</code>.</p>
+	 *
+	 * @param isAlixiaohao a {@link java.lang.Boolean} object.
+	 */
 	public void setIsAlixiaohao(Boolean isAlixiaohao) {
 		this.isAlixiaohao = isAlixiaohao;
 	}
+	/**
+	 * <p>Getter for the field <code>isAlixiaohao</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getIsAlixiaohao( ) {
 		return this.isAlixiaohao;
 	}

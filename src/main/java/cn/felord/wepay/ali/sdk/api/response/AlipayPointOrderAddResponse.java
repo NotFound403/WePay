@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.point.order.add response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-11 11:00:47
+ * @version $Id: $Id
  */
 public class AlipayPointOrderAddResponse extends AlipayResponse {
 
@@ -26,16 +26,36 @@ public class AlipayPointOrderAddResponse extends AlipayResponse {
 	@ApiField("result_code")
 	private Boolean resultCode;
 
+	/**
+	 * <p>Setter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @param alipayOrderNo a {@link java.lang.String} object.
+	 */
 	public void setAlipayOrderNo(String alipayOrderNo) {
 		this.alipayOrderNo = alipayOrderNo;
 	}
+	/**
+	 * <p>Getter for the field <code>alipayOrderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAlipayOrderNo( ) {
 		return this.alipayOrderNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>resultCode</code>.</p>
+	 *
+	 * @param resultCode a {@link java.lang.Boolean} object.
+	 */
 	public void setResultCode(Boolean resultCode) {
 		this.resultCode = resultCode;
 	}
+	/**
+	 * <p>Getter for the field <code>resultCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getResultCode( ) {
 		return this.resultCode;
 	}

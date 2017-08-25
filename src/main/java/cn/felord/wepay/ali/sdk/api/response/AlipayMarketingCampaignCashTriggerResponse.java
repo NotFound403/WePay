@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.marketing.campaign.cash.trigger response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-14 11:53:19
+ * @version $Id: $Id
  */
 public class AlipayMarketingCampaignCashTriggerResponse extends AlipayResponse {
 
@@ -74,72 +74,172 @@ public class AlipayMarketingCampaignCashTriggerResponse extends AlipayResponse {
 	@ApiField("trigger_result")
 	private String triggerResult;
 
+	/**
+	 * <p>Setter for the field <code>bizNo</code>.</p>
+	 *
+	 * @param bizNo a {@link java.lang.String} object.
+	 */
 	public void setBizNo(String bizNo) {
 		this.bizNo = bizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>bizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizNo( ) {
 		return this.bizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>couponName</code>.</p>
+	 *
+	 * @param couponName a {@link java.lang.String} object.
+	 */
 	public void setCouponName(String couponName) {
 		this.couponName = couponName;
 	}
+	/**
+	 * <p>Getter for the field <code>couponName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCouponName( ) {
 		return this.couponName;
 	}
 
+	/**
+	 * <p>Setter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @param errorMsg a {@link java.lang.String} object.
+	 */
 	public void setErrorMsg(String errorMsg) {
 		this.errorMsg = errorMsg;
 	}
+	/**
+	 * <p>Getter for the field <code>errorMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getErrorMsg( ) {
 		return this.errorMsg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>merchantLogo</code>.</p>
+	 *
+	 * @param merchantLogo a {@link java.lang.String} object.
+	 */
 	public void setMerchantLogo(String merchantLogo) {
 		this.merchantLogo = merchantLogo;
 	}
+	/**
+	 * <p>Getter for the field <code>merchantLogo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMerchantLogo( ) {
 		return this.merchantLogo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo( ) {
 		return this.outBizNo;
 	}
 
+	/**
+	 * <p>Setter for the field <code>partnerId</code>.</p>
+	 *
+	 * @param partnerId a {@link java.lang.String} object.
+	 */
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
+	/**
+	 * <p>Getter for the field <code>partnerId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPartnerId( ) {
 		return this.partnerId;
 	}
 
+	/**
+	 * <p>Setter for the field <code>prizeAmount</code>.</p>
+	 *
+	 * @param prizeAmount a {@link java.lang.String} object.
+	 */
 	public void setPrizeAmount(String prizeAmount) {
 		this.prizeAmount = prizeAmount;
 	}
+	/**
+	 * <p>Getter for the field <code>prizeAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeAmount( ) {
 		return this.prizeAmount;
 	}
 
+	/**
+	 * <p>Setter for the field <code>prizeMsg</code>.</p>
+	 *
+	 * @param prizeMsg a {@link java.lang.String} object.
+	 */
 	public void setPrizeMsg(String prizeMsg) {
 		this.prizeMsg = prizeMsg;
 	}
+	/**
+	 * <p>Getter for the field <code>prizeMsg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeMsg( ) {
 		return this.prizeMsg;
 	}
 
+	/**
+	 * <p>Setter for the field <code>repeatTriggerFlag</code>.</p>
+	 *
+	 * @param repeatTriggerFlag a {@link java.lang.String} object.
+	 */
 	public void setRepeatTriggerFlag(String repeatTriggerFlag) {
 		this.repeatTriggerFlag = repeatTriggerFlag;
 	}
+	/**
+	 * <p>Getter for the field <code>repeatTriggerFlag</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRepeatTriggerFlag( ) {
 		return this.repeatTriggerFlag;
 	}
 
+	/**
+	 * <p>Setter for the field <code>triggerResult</code>.</p>
+	 *
+	 * @param triggerResult a {@link java.lang.String} object.
+	 */
 	public void setTriggerResult(String triggerResult) {
 		this.triggerResult = triggerResult;
 	}
+	/**
+	 * <p>Getter for the field <code>triggerResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTriggerResult( ) {
 		return this.triggerResult;
 	}

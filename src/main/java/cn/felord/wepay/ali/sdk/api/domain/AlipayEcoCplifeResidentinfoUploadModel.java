@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 物业小区业主信息上传
  *
  * @author auto create
- * @since 1.0, 2016-11-24 16:15:02
+ * @version $Id: $Id
  */
 public class AlipayEcoCplifeResidentinfoUploadModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ public class AlipayEcoCplifeResidentinfoUploadModel extends AlipayObject {
 	@ApiField("cplife_resident_info")
 	private List<CplifeResidentInfo> residentInfo;
 
+	/**
+	 * <p>Getter for the field <code>batchId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBatchId() {
 		return this.batchId;
 	}
+	/**
+	 * <p>Setter for the field <code>batchId</code>.</p>
+	 *
+	 * @param batchId a {@link java.lang.String} object.
+	 */
 	public void setBatchId(String batchId) {
 		this.batchId = batchId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>communityId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCommunityId() {
 		return this.communityId;
 	}
+	/**
+	 * <p>Setter for the field <code>communityId</code>.</p>
+	 *
+	 * @param communityId a {@link java.lang.String} object.
+	 */
 	public void setCommunityId(String communityId) {
 		this.communityId = communityId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>residentInfo</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<CplifeResidentInfo> getResidentInfo() {
 		return this.residentInfo;
 	}
+	/**
+	 * <p>Setter for the field <code>residentInfo</code>.</p>
+	 *
+	 * @param residentInfo a {@link java.util.List} object.
+	 */
 	public void setResidentInfo(List<CplifeResidentInfo> residentInfo) {
 		this.residentInfo = residentInfo;
 	}

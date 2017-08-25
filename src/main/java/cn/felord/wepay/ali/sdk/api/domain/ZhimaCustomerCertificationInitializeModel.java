@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 认证初始化
  *
  * @author auto create
- * @since 1.0, 2017-04-24 09:46:23
+ * @version $Id: $Id
  */
 public class ZhimaCustomerCertificationInitializeModel extends AlipayObject {
 
@@ -52,37 +52,87 @@ FACE:人脸认证
 	@ApiField("transaction_id")
 	private String transactionId;
 
+	/**
+	 * <p>Getter for the field <code>bizCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizCode() {
 		return this.bizCode;
 	}
+	/**
+	 * <p>Setter for the field <code>bizCode</code>.</p>
+	 *
+	 * @param bizCode a {@link java.lang.String} object.
+	 */
 	public void setBizCode(String bizCode) {
 		this.bizCode = bizCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>extBizParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtBizParam() {
 		return this.extBizParam;
 	}
+	/**
+	 * <p>Setter for the field <code>extBizParam</code>.</p>
+	 *
+	 * @param extBizParam a {@link java.lang.String} object.
+	 */
 	public void setExtBizParam(String extBizParam) {
 		this.extBizParam = extBizParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>identityParam</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIdentityParam() {
 		return this.identityParam;
 	}
+	/**
+	 * <p>Setter for the field <code>identityParam</code>.</p>
+	 *
+	 * @param identityParam a {@link java.lang.String} object.
+	 */
 	public void setIdentityParam(String identityParam) {
 		this.identityParam = identityParam;
 	}
 
+	/**
+	 * <p>Getter for the field <code>productCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getProductCode() {
 		return this.productCode;
 	}
+	/**
+	 * <p>Setter for the field <code>productCode</code>.</p>
+	 *
+	 * @param productCode a {@link java.lang.String} object.
+	 */
 	public void setProductCode(String productCode) {
 		this.productCode = productCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>transactionId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTransactionId() {
 		return this.transactionId;
 	}
+	/**
+	 * <p>Setter for the field <code>transactionId</code>.</p>
+	 *
+	 * @param transactionId a {@link java.lang.String} object.
+	 */
 	public void setTransactionId(String transactionId) {
 		this.transactionId = transactionId;
 	}

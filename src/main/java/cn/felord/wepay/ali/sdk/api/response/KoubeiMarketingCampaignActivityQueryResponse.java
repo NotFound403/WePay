@@ -7,9 +7,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.campaign.activity.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-19 15:39:40
+ * @version $Id: $Id
  */
 public class KoubeiMarketingCampaignActivityQueryResponse extends AlipayResponse {
 
@@ -21,9 +21,19 @@ public class KoubeiMarketingCampaignActivityQueryResponse extends AlipayResponse
 	@ApiField("camp_detail")
 	private CampDetail campDetail;
 
+	/**
+	 * <p>Setter for the field <code>campDetail</code>.</p>
+	 *
+	 * @param campDetail a {@link cn.felord.wepay.ali.sdk.api.domain.CampDetail} object.
+	 */
 	public void setCampDetail(CampDetail campDetail) {
 		this.campDetail = campDetail;
 	}
+	/**
+	 * <p>Getter for the field <code>campDetail</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.CampDetail} object.
+	 */
 	public CampDetail getCampDetail( ) {
 		return this.campDetail;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 开放活动接口奖品
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:39
+ * @version $Id: $Id
  */
 public class OpenPromoPrize extends AlipayObject {
 
@@ -122,121 +122,291 @@ public class OpenPromoPrize extends AlipayObject {
 	@ApiField("prize_worth_amount")
 	private String prizeWorthAmount;
 
+	/**
+	 * <p>Getter for the field <code>prizeBaseRuleAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeBaseRuleAmount() {
 		return this.prizeBaseRuleAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeBaseRuleAmount</code>.</p>
+	 *
+	 * @param prizeBaseRuleAmount a {@link java.lang.String} object.
+	 */
 	public void setPrizeBaseRuleAmount(String prizeBaseRuleAmount) {
 		this.prizeBaseRuleAmount = prizeBaseRuleAmount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeCustomMenu</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<PrizeCustomMenu> getPrizeCustomMenu() {
 		return this.prizeCustomMenu;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeCustomMenu</code>.</p>
+	 *
+	 * @param prizeCustomMenu a {@link java.util.List} object.
+	 */
 	public void setPrizeCustomMenu(List<PrizeCustomMenu> prizeCustomMenu) {
 		this.prizeCustomMenu = prizeCustomMenu;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeDesc() {
 		return this.prizeDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeDesc</code>.</p>
+	 *
+	 * @param prizeDesc a {@link java.lang.String} object.
+	 */
 	public void setPrizeDesc(String prizeDesc) {
 		this.prizeDesc = prizeDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeDetailImg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeDetailImg() {
 		return this.prizeDetailImg;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeDetailImg</code>.</p>
+	 *
+	 * @param prizeDetailImg a {@link java.lang.String} object.
+	 */
 	public void setPrizeDetailImg(String prizeDetailImg) {
 		this.prizeDetailImg = prizeDetailImg;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeDimensionTime</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<OpenPromoPrizeDimension> getPrizeDimensionTime() {
 		return this.prizeDimensionTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeDimensionTime</code>.</p>
+	 *
+	 * @param prizeDimensionTime a {@link java.util.List} object.
+	 */
 	public void setPrizeDimensionTime(List<OpenPromoPrizeDimension> prizeDimensionTime) {
 		this.prizeDimensionTime = prizeDimensionTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeEndTime() {
 		return this.prizeEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeEndTime</code>.</p>
+	 *
+	 * @param prizeEndTime a {@link java.lang.String} object.
+	 */
 	public void setPrizeEndTime(String prizeEndTime) {
 		this.prizeEndTime = prizeEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeLogo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeLogo() {
 		return this.prizeLogo;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeLogo</code>.</p>
+	 *
+	 * @param prizeLogo a {@link java.lang.String} object.
+	 */
 	public void setPrizeLogo(String prizeLogo) {
 		this.prizeLogo = prizeLogo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeName() {
 		return this.prizeName;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeName</code>.</p>
+	 *
+	 * @param prizeName a {@link java.lang.String} object.
+	 */
 	public void setPrizeName(String prizeName) {
 		this.prizeName = prizeName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeRelativeTime</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.OpenPromoPrizeRelativeTime} object.
+	 */
 	public OpenPromoPrizeRelativeTime getPrizeRelativeTime() {
 		return this.prizeRelativeTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeRelativeTime</code>.</p>
+	 *
+	 * @param prizeRelativeTime a {@link cn.felord.wepay.ali.sdk.api.domain.OpenPromoPrizeRelativeTime} object.
+	 */
 	public void setPrizeRelativeTime(OpenPromoPrizeRelativeTime prizeRelativeTime) {
 		this.prizeRelativeTime = prizeRelativeTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeStartTime() {
 		return this.prizeStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeStartTime</code>.</p>
+	 *
+	 * @param prizeStartTime a {@link java.lang.String} object.
+	 */
 	public void setPrizeStartTime(String prizeStartTime) {
 		this.prizeStartTime = prizeStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeSubtitle</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeSubtitle() {
 		return this.prizeSubtitle;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeSubtitle</code>.</p>
+	 *
+	 * @param prizeSubtitle a {@link java.lang.String} object.
+	 */
 	public void setPrizeSubtitle(String prizeSubtitle) {
 		this.prizeSubtitle = prizeSubtitle;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeSuitableShops</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getPrizeSuitableShops() {
 		return this.prizeSuitableShops;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeSuitableShops</code>.</p>
+	 *
+	 * @param prizeSuitableShops a {@link java.util.List} object.
+	 */
 	public void setPrizeSuitableShops(List<String> prizeSuitableShops) {
 		this.prizeSuitableShops = prizeSuitableShops;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeTemplateEndTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeTemplateEndTime() {
 		return this.prizeTemplateEndTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeTemplateEndTime</code>.</p>
+	 *
+	 * @param prizeTemplateEndTime a {@link java.lang.String} object.
+	 */
 	public void setPrizeTemplateEndTime(String prizeTemplateEndTime) {
 		this.prizeTemplateEndTime = prizeTemplateEndTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeTemplateStartTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeTemplateStartTime() {
 		return this.prizeTemplateStartTime;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeTemplateStartTime</code>.</p>
+	 *
+	 * @param prizeTemplateStartTime a {@link java.lang.String} object.
+	 */
 	public void setPrizeTemplateStartTime(String prizeTemplateStartTime) {
 		this.prizeTemplateStartTime = prizeTemplateStartTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeTerms</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getPrizeTerms() {
 		return this.prizeTerms;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeTerms</code>.</p>
+	 *
+	 * @param prizeTerms a {@link java.util.List} object.
+	 */
 	public void setPrizeTerms(List<String> prizeTerms) {
 		this.prizeTerms = prizeTerms;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeType() {
 		return this.prizeType;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeType</code>.</p>
+	 *
+	 * @param prizeType a {@link java.lang.String} object.
+	 */
 	public void setPrizeType(String prizeType) {
 		this.prizeType = prizeType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>prizeWorthAmount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPrizeWorthAmount() {
 		return this.prizeWorthAmount;
 	}
+	/**
+	 * <p>Setter for the field <code>prizeWorthAmount</code>.</p>
+	 *
+	 * @param prizeWorthAmount a {@link java.lang.String} object.
+	 */
 	public void setPrizeWorthAmount(String prizeWorthAmount) {
 		this.prizeWorthAmount = prizeWorthAmount;
 	}

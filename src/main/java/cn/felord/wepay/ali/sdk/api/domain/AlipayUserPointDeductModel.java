@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 蚂蚁会员积分扣减接口（需要用户授权）
  *
  * @author auto create
- * @since 1.0, 2016-09-28 17:51:04
+ * @version $Id: $Id
  */
 public class AlipayUserPointDeductModel extends AlipayObject {
 
@@ -45,37 +45,87 @@ public class AlipayUserPointDeductModel extends AlipayObject {
 	@ApiField("sub_biz_type")
 	private String subBizType;
 
+	/**
+	 * <p>Getter for the field <code>benefitId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBenefitId() {
 		return this.benefitId;
 	}
+	/**
+	 * <p>Setter for the field <code>benefitId</code>.</p>
+	 *
+	 * @param benefitId a {@link java.lang.String} object.
+	 */
 	public void setBenefitId(String benefitId) {
 		this.benefitId = benefitId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizDate</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getBizDate() {
 		return this.bizDate;
 	}
+	/**
+	 * <p>Setter for the field <code>bizDate</code>.</p>
+	 *
+	 * @param bizDate a {@link java.util.Date} object.
+	 */
 	public void setBizDate(Date bizDate) {
 		this.bizDate = bizDate;
 	}
 
+	/**
+	 * <p>Getter for the field <code>bizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizType() {
 		return this.bizType;
 	}
+	/**
+	 * <p>Setter for the field <code>bizType</code>.</p>
+	 *
+	 * @param bizType a {@link java.lang.String} object.
+	 */
 	public void setBizType(String bizType) {
 		this.bizType = bizType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>subBizType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getSubBizType() {
 		return this.subBizType;
 	}
+	/**
+	 * <p>Setter for the field <code>subBizType</code>.</p>
+	 *
+	 * @param subBizType a {@link java.lang.String} object.
+	 */
 	public void setSubBizType(String subBizType) {
 		this.subBizType = subBizType;
 	}

@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: koubei.marketing.tool.isv.merchant.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2017-07-25 10:42:12
+ * @version $Id: $Id
  */
 public class KoubeiMarketingToolIsvMerchantQueryResponse extends AlipayResponse {
 
@@ -24,9 +24,19 @@ public class KoubeiMarketingToolIsvMerchantQueryResponse extends AlipayResponse 
 	@ApiField("isv_merchant_info")
 	private List<IsvMerchantInfo> merchantInfos;
 
+	/**
+	 * <p>Setter for the field <code>merchantInfos</code>.</p>
+	 *
+	 * @param merchantInfos a {@link java.util.List} object.
+	 */
 	public void setMerchantInfos(List<IsvMerchantInfo> merchantInfos) {
 		this.merchantInfos = merchantInfos;
 	}
+	/**
+	 * <p>Getter for the field <code>merchantInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<IsvMerchantInfo> getMerchantInfos( ) {
 		return this.merchantInfos;
 	}

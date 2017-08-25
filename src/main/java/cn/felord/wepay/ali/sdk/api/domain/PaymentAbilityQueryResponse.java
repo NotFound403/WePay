@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 支付能力返回结果
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:42
+ * @version $Id: $Id
  */
 public class PaymentAbilityQueryResponse extends AlipayObject {
 
@@ -31,23 +31,53 @@ public class PaymentAbilityQueryResponse extends AlipayObject {
 	@ApiField("order_id")
 	private String orderId;
 
+	/**
+	 * <p>Getter for the field <code>extraInfos</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExtraInfos() {
 		return this.extraInfos;
 	}
+	/**
+	 * <p>Setter for the field <code>extraInfos</code>.</p>
+	 *
+	 * @param extraInfos a {@link java.lang.String} object.
+	 */
 	public void setExtraInfos(String extraInfos) {
 		this.extraInfos = extraInfos;
 	}
 
+	/**
+	 * <p>Getter for the field <code>level</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLevel() {
 		return this.level;
 	}
+	/**
+	 * <p>Setter for the field <code>level</code>.</p>
+	 *
+	 * @param level a {@link java.lang.String} object.
+	 */
 	public void setLevel(String level) {
 		this.level = level;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderId() {
 		return this.orderId;
 	}
+	/**
+	 * <p>Setter for the field <code>orderId</code>.</p>
+	 *
+	 * @param orderId a {@link java.lang.String} object.
+	 */
 	public void setOrderId(String orderId) {
 		this.orderId = orderId;
 	}

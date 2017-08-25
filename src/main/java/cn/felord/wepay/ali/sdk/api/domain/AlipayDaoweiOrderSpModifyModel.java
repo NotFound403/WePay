@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 订单服务者变更接口
  *
  * @author auto create
- * @since 1.0, 2017-03-20 14:01:51
+ * @version $Id: $Id
  */
 public class AlipayDaoweiOrderSpModifyModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayDaoweiOrderSpModifyModel extends AlipayObject {
 	@ApiField("out_sp_id")
 	private String outSpId;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outSpId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutSpId() {
 		return this.outSpId;
 	}
+	/**
+	 * <p>Setter for the field <code>outSpId</code>.</p>
+	 *
+	 * @param outSpId a {@link java.lang.String} object.
+	 */
 	public void setOutSpId(String outSpId) {
 		this.outSpId = outSpId;
 	}

@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * asd
  *
  * @author auto create
- * @since 1.0, 2016-10-26 18:05:09
+ * @version $Id: $Id
  */
 public class ZhimaMerchantTestPracticeModel extends AlipayObject {
 
@@ -29,16 +29,36 @@ public class ZhimaMerchantTestPracticeModel extends AlipayObject {
 	@ApiField("xxxx")
 	private XXXXsdasdasd xxxx;
 
+	/**
+	 * <p>Getter for the field <code>add</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<String> getAdd() {
 		return this.add;
 	}
+	/**
+	 * <p>Setter for the field <code>add</code>.</p>
+	 *
+	 * @param add a {@link java.util.List} object.
+	 */
 	public void setAdd(List<String> add) {
 		this.add = add;
 	}
 
+	/**
+	 * <p>Getter for the field <code>xxxx</code>.</p>
+	 *
+	 * @return a {@link cn.felord.wepay.ali.sdk.api.domain.XXXXsdasdasd} object.
+	 */
 	public XXXXsdasdasd getXxxx() {
 		return this.xxxx;
 	}
+	/**
+	 * <p>Setter for the field <code>xxxx</code>.</p>
+	 *
+	 * @param xxxx a {@link cn.felord.wepay.ali.sdk.api.domain.XXXXsdasdasd} object.
+	 */
 	public void setXxxx(XXXXsdasdasd xxxx) {
 		this.xxxx = xxxx;
 	}

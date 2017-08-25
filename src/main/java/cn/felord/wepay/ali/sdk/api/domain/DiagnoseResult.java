@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 诊断结果信息
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:38
+ * @version $Id: $Id
  */
 public class DiagnoseResult extends AlipayObject {
 
@@ -32,16 +32,36 @@ REPAY_RATE	复购率低
 	@ApiField("diagnose_code")
 	private String diagnoseCode;
 
+	/**
+	 * <p>Getter for the field <code>bizData</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getBizData() {
 		return this.bizData;
 	}
+	/**
+	 * <p>Setter for the field <code>bizData</code>.</p>
+	 *
+	 * @param bizData a {@link java.lang.String} object.
+	 */
 	public void setBizData(String bizData) {
 		this.bizData = bizData;
 	}
 
+	/**
+	 * <p>Getter for the field <code>diagnoseCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDiagnoseCode() {
 		return this.diagnoseCode;
 	}
+	/**
+	 * <p>Setter for the field <code>diagnoseCode</code>.</p>
+	 *
+	 * @param diagnoseCode a {@link java.lang.String} object.
+	 */
 	public void setDiagnoseCode(String diagnoseCode) {
 		this.diagnoseCode = diagnoseCode;
 	}

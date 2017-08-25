@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 网商银行余利宝赎回
  *
  * @author auto create
- * @since 1.0, 2016-11-18 16:08:08
+ * @version $Id: $Id
  */
 public class MybankFinanceYulibaoCapitalRansomModel extends AlipayObject {
 
@@ -43,37 +43,87 @@ public class MybankFinanceYulibaoCapitalRansomModel extends AlipayObject {
 	@ApiField("ransom_mode")
 	private String ransomMode;
 
+	/**
+	 * <p>Getter for the field <code>amount</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getAmount() {
 		return this.amount;
 	}
+	/**
+	 * <p>Setter for the field <code>amount</code>.</p>
+	 *
+	 * @param amount a {@link java.lang.Long} object.
+	 */
 	public void setAmount(Long amount) {
 		this.amount = amount;
 	}
 
+	/**
+	 * <p>Getter for the field <code>currency</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCurrency() {
 		return this.currency;
 	}
+	/**
+	 * <p>Setter for the field <code>currency</code>.</p>
+	 *
+	 * @param currency a {@link java.lang.String} object.
+	 */
 	public void setCurrency(String currency) {
 		this.currency = currency;
 	}
 
+	/**
+	 * <p>Getter for the field <code>fundCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getFundCode() {
 		return this.fundCode;
 	}
+	/**
+	 * <p>Setter for the field <code>fundCode</code>.</p>
+	 *
+	 * @param fundCode a {@link java.lang.String} object.
+	 */
 	public void setFundCode(String fundCode) {
 		this.fundCode = fundCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutBizNo() {
 		return this.outBizNo;
 	}
+	/**
+	 * <p>Setter for the field <code>outBizNo</code>.</p>
+	 *
+	 * @param outBizNo a {@link java.lang.String} object.
+	 */
 	public void setOutBizNo(String outBizNo) {
 		this.outBizNo = outBizNo;
 	}
 
+	/**
+	 * <p>Getter for the field <code>ransomMode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRansomMode() {
 		return this.ransomMode;
 	}
+	/**
+	 * <p>Setter for the field <code>ransomMode</code>.</p>
+	 *
+	 * @param ransomMode a {@link java.lang.String} object.
+	 */
 	public void setRansomMode(String ransomMode) {
 		this.ransomMode = ransomMode;
 	}

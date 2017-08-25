@@ -9,7 +9,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 小区服务列表
  *
  * @author auto create
- * @since 1.0, 2017-01-14 11:36:24
+ * @version $Id: $Id
  */
 public class CPCommServices extends AlipayObject {
 
@@ -113,114 +113,274 @@ FORMAL - 上线后可用于推广的正式二维码（仅针对部分服务类�
 	@ApiField("status")
 	private String status;
 
+	/**
+	 * <p>Getter for the field <code>account</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccount() {
 		return this.account;
 	}
+	/**
+	 * <p>Setter for the field <code>account</code>.</p>
+	 *
+	 * @param account a {@link java.lang.String} object.
+	 */
 	public void setAccount(String account) {
 		this.account = account;
 	}
 
+	/**
+	 * <p>Getter for the field <code>accountType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAccountType() {
 		return this.accountType;
 	}
+	/**
+	 * <p>Setter for the field <code>accountType</code>.</p>
+	 *
+	 * @param accountType a {@link java.lang.String} object.
+	 */
 	public void setAccountType(String accountType) {
 		this.accountType = accountType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditDesc() {
 		return this.auditDesc;
 	}
+	/**
+	 * <p>Setter for the field <code>auditDesc</code>.</p>
+	 *
+	 * @param auditDesc a {@link java.lang.String} object.
+	 */
 	public void setAuditDesc(String auditDesc) {
 		this.auditDesc = auditDesc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getAuditStatus() {
 		return this.auditStatus;
 	}
+	/**
+	 * <p>Setter for the field <code>auditStatus</code>.</p>
+	 *
+	 * @param auditStatus a {@link java.lang.String} object.
+	 */
 	public void setAuditStatus(String auditStatus) {
 		this.auditStatus = auditStatus;
 	}
 
+	/**
+	 * <p>Getter for the field <code>categoryName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryName() {
 		return this.categoryName;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryName</code>.</p>
+	 *
+	 * @param categoryName a {@link java.lang.String} object.
+	 */
 	public void setCategoryName(String categoryName) {
 		this.categoryName = categoryName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalAddressScanResult</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalAddressScanResult() {
 		return this.externalAddressScanResult;
 	}
+	/**
+	 * <p>Setter for the field <code>externalAddressScanResult</code>.</p>
+	 *
+	 * @param externalAddressScanResult a {@link java.lang.String} object.
+	 */
 	public void setExternalAddressScanResult(String externalAddressScanResult) {
 		this.externalAddressScanResult = externalAddressScanResult;
 	}
 
+	/**
+	 * <p>Getter for the field <code>externalInvokeAddress</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getExternalInvokeAddress() {
 		return this.externalInvokeAddress;
 	}
+	/**
+	 * <p>Setter for the field <code>externalInvokeAddress</code>.</p>
+	 *
+	 * @param externalInvokeAddress a {@link java.lang.String} object.
+	 */
 	public void setExternalInvokeAddress(String externalInvokeAddress) {
 		this.externalInvokeAddress = externalInvokeAddress;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtCreated</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtCreated() {
 		return this.gmtCreated;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtCreated</code>.</p>
+	 *
+	 * @param gmtCreated a {@link java.util.Date} object.
+	 */
 	public void setGmtCreated(Date gmtCreated) {
 		this.gmtCreated = gmtCreated;
 	}
 
+	/**
+	 * <p>Getter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getGmtModified() {
 		return this.gmtModified;
 	}
+	/**
+	 * <p>Setter for the field <code>gmtModified</code>.</p>
+	 *
+	 * @param gmtModified a {@link java.util.Date} object.
+	 */
 	public void setGmtModified(Date gmtModified) {
 		this.gmtModified = gmtModified;
 	}
 
+	/**
+	 * <p>Getter for the field <code>nextAction</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getNextAction() {
 		return this.nextAction;
 	}
+	/**
+	 * <p>Setter for the field <code>nextAction</code>.</p>
+	 *
+	 * @param nextAction a {@link java.lang.String} object.
+	 */
 	public void setNextAction(String nextAction) {
 		this.nextAction = nextAction;
 	}
 
+	/**
+	 * <p>Getter for the field <code>qrCodeExpires</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getQrCodeExpires() {
 		return this.qrCodeExpires;
 	}
+	/**
+	 * <p>Setter for the field <code>qrCodeExpires</code>.</p>
+	 *
+	 * @param qrCodeExpires a {@link java.util.Date} object.
+	 */
 	public void setQrCodeExpires(Date qrCodeExpires) {
 		this.qrCodeExpires = qrCodeExpires;
 	}
 
+	/**
+	 * <p>Getter for the field <code>qrCodeImage</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCodeImage() {
 		return this.qrCodeImage;
 	}
+	/**
+	 * <p>Setter for the field <code>qrCodeImage</code>.</p>
+	 *
+	 * @param qrCodeImage a {@link java.lang.String} object.
+	 */
 	public void setQrCodeImage(String qrCodeImage) {
 		this.qrCodeImage = qrCodeImage;
 	}
 
+	/**
+	 * <p>Getter for the field <code>qrCodeType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getQrCodeType() {
 		return this.qrCodeType;
 	}
+	/**
+	 * <p>Setter for the field <code>qrCodeType</code>.</p>
+	 *
+	 * @param qrCodeType a {@link java.lang.String} object.
+	 */
 	public void setQrCodeType(String qrCodeType) {
 		this.qrCodeType = qrCodeType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceExpires</code>.</p>
+	 *
+	 * @return a {@link java.util.Date} object.
+	 */
 	public Date getServiceExpires() {
 		return this.serviceExpires;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceExpires</code>.</p>
+	 *
+	 * @param serviceExpires a {@link java.util.Date} object.
+	 */
 	public void setServiceExpires(Date serviceExpires) {
 		this.serviceExpires = serviceExpires;
 	}
 
+	/**
+	 * <p>Getter for the field <code>serviceType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getServiceType() {
 		return this.serviceType;
 	}
+	/**
+	 * <p>Setter for the field <code>serviceType</code>.</p>
+	 *
+	 * @param serviceType a {@link java.lang.String} object.
+	 */
 	public void setServiceType(String serviceType) {
 		this.serviceType = serviceType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>status</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getStatus() {
 		return this.status;
 	}
+	/**
+	 * <p>Setter for the field <code>status</code>.</p>
+	 *
+	 * @param status a {@link java.lang.String} object.
+	 */
 	public void setStatus(String status) {
 		this.status = status;
 	}

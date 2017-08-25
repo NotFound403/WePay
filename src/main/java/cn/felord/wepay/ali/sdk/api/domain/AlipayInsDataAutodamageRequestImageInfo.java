@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 车险图像定损请求中的图像信息
  *
  * @author auto create
- * @since 1.0, 2017-03-16 09:53:40
+ * @version $Id: $Id
  */
 public class AlipayInsDataAutodamageRequestImageInfo extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayInsDataAutodamageRequestImageInfo extends AlipayObject {
 	@ApiField("image_path")
 	private String imagePath;
 
+	/**
+	 * <p>Getter for the field <code>imageName</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImageName() {
 		return this.imageName;
 	}
+	/**
+	 * <p>Setter for the field <code>imageName</code>.</p>
+	 *
+	 * @param imageName a {@link java.lang.String} object.
+	 */
 	public void setImageName(String imageName) {
 		this.imageName = imageName;
 	}
 
+	/**
+	 * <p>Getter for the field <code>imagePath</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getImagePath() {
 		return this.imagePath;
 	}
+	/**
+	 * <p>Setter for the field <code>imagePath</code>.</p>
+	 *
+	 * @param imagePath a {@link java.lang.String} object.
+	 */
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}

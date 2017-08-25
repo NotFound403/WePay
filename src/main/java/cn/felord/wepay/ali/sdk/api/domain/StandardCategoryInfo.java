@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑标准后台类目
  *
  * @author auto create
- * @since 1.0, 2017-06-06 11:40:51
+ * @version $Id: $Id
  */
 public class StandardCategoryInfo extends AlipayObject {
 
@@ -49,44 +49,104 @@ public class StandardCategoryInfo extends AlipayObject {
 	@ApiField("root_id")
 	private String rootId;
 
+	/**
+	 * <p>Getter for the field <code>categoryId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCategoryId() {
 		return this.categoryId;
 	}
+	/**
+	 * <p>Setter for the field <code>categoryId</code>.</p>
+	 *
+	 * @param categoryId a {@link java.lang.String} object.
+	 */
 	public void setCategoryId(String categoryId) {
 		this.categoryId = categoryId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>isLeaf</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getIsLeaf() {
 		return this.isLeaf;
 	}
+	/**
+	 * <p>Setter for the field <code>isLeaf</code>.</p>
+	 *
+	 * @param isLeaf a {@link java.lang.String} object.
+	 */
 	public void setIsLeaf(String isLeaf) {
 		this.isLeaf = isLeaf;
 	}
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>parentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getParentId() {
 		return this.parentId;
 	}
+	/**
+	 * <p>Setter for the field <code>parentId</code>.</p>
+	 *
+	 * @param parentId a {@link java.lang.String} object.
+	 */
 	public void setParentId(String parentId) {
 		this.parentId = parentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>path</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPath() {
 		return this.path;
 	}
+	/**
+	 * <p>Setter for the field <code>path</code>.</p>
+	 *
+	 * @param path a {@link java.lang.String} object.
+	 */
 	public void setPath(String path) {
 		this.path = path;
 	}
 
+	/**
+	 * <p>Getter for the field <code>rootId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getRootId() {
 		return this.rootId;
 	}
+	/**
+	 * <p>Setter for the field <code>rootId</code>.</p>
+	 *
+	 * @param rootId a {@link java.lang.String} object.
+	 */
 	public void setRootId(String rootId) {
 		this.rootId = rootId;
 	}

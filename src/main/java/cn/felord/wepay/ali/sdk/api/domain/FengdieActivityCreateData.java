@@ -10,7 +10,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
  * 凤蝶创建H5应用的初始化数据
  *
  * @author auto create
- * @since 1.0, 2017-03-20 10:29:17
+ * @version $Id: $Id
  */
 public class FengdieActivityCreateData extends AlipayObject {
 
@@ -41,30 +41,70 @@ public class FengdieActivityCreateData extends AlipayObject {
 	@ApiField("title")
 	private String title;
 
+	/**
+	 * <p>Getter for the field <code>name</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getName() {
 		return this.name;
 	}
+	/**
+	 * <p>Setter for the field <code>name</code>.</p>
+	 *
+	 * @param name a {@link java.lang.String} object.
+	 */
 	public void setName(String name) {
 		this.name = name;
 	}
 
+	/**
+	 * <p>Getter for the field <code>offlineTime</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOfflineTime() {
 		return this.offlineTime;
 	}
+	/**
+	 * <p>Setter for the field <code>offlineTime</code>.</p>
+	 *
+	 * @param offlineTime a {@link java.lang.String} object.
+	 */
 	public void setOfflineTime(String offlineTime) {
 		this.offlineTime = offlineTime;
 	}
 
+	/**
+	 * <p>Getter for the field <code>page</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<FengdieActivityCreatePageData> getPage() {
 		return this.page;
 	}
+	/**
+	 * <p>Setter for the field <code>page</code>.</p>
+	 *
+	 * @param page a {@link java.util.List} object.
+	 */
 	public void setPage(List<FengdieActivityCreatePageData> page) {
 		this.page = page;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}

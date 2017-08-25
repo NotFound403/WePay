@@ -6,9 +6,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: alipay.mobile.public.menu.get response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-01-05 22:34:31
+ * @version $Id: $Id
  */
 public class AlipayMobilePublicMenuGetResponse extends AlipayResponse {
 
@@ -32,23 +32,45 @@ public class AlipayMobilePublicMenuGetResponse extends AlipayResponse {
 	@ApiField("msg")
 	private String msg;
 
+	/** {@inheritDoc} */
 	public void setCode(String code) {
 		this.code = code;
 	}
+	/**
+	 * <p>Getter for the field <code>code</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getCode( ) {
 		return this.code;
 	}
 
+	/**
+	 * <p>Setter for the field <code>menuContent</code>.</p>
+	 *
+	 * @param menuContent a {@link java.lang.String} object.
+	 */
 	public void setMenuContent(String menuContent) {
 		this.menuContent = menuContent;
 	}
+	/**
+	 * <p>Getter for the field <code>menuContent</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMenuContent( ) {
 		return this.menuContent;
 	}
 
+	/** {@inheritDoc} */
 	public void setMsg(String msg) {
 		this.msg = msg;
 	}
+	/**
+	 * <p>Getter for the field <code>msg</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getMsg( ) {
 		return this.msg;
 	}

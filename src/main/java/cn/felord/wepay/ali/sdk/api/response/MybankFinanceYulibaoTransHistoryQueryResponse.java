@@ -9,9 +9,9 @@ import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 
 /**
  * ALIPAY API: mybank.finance.yulibao.trans.history.query response.
- * 
+ *
  * @author auto create
- * @since 1.0, 2016-11-18 16:07:59
+ * @version $Id: $Id
  */
 public class MybankFinanceYulibaoTransHistoryQueryResponse extends AlipayResponse {
 
@@ -42,30 +42,70 @@ public class MybankFinanceYulibaoTransHistoryQueryResponse extends AlipayRespons
 	@ApiField("total_item_count")
 	private String totalItemCount;
 
+	/**
+	 * <p>Setter for the field <code>currentPage</code>.</p>
+	 *
+	 * @param currentPage a {@link java.lang.Long} object.
+	 */
 	public void setCurrentPage(Long currentPage) {
 		this.currentPage = currentPage;
 	}
+	/**
+	 * <p>Getter for the field <code>currentPage</code>.</p>
+	 *
+	 * @return a {@link java.lang.Long} object.
+	 */
 	public Long getCurrentPage( ) {
 		return this.currentPage;
 	}
 
+	/**
+	 * <p>Setter for the field <code>hasNextPage</code>.</p>
+	 *
+	 * @param hasNextPage a {@link java.lang.Boolean} object.
+	 */
 	public void setHasNextPage(Boolean hasNextPage) {
 		this.hasNextPage = hasNextPage;
 	}
+	/**
+	 * <p>Getter for the field <code>hasNextPage</code>.</p>
+	 *
+	 * @return a {@link java.lang.Boolean} object.
+	 */
 	public Boolean getHasNextPage( ) {
 		return this.hasNextPage;
 	}
 
+	/**
+	 * <p>Setter for the field <code>historyTransDetailInfos</code>.</p>
+	 *
+	 * @param historyTransDetailInfos a {@link java.util.List} object.
+	 */
 	public void setHistoryTransDetailInfos(List<YLBTransDetailInfo> historyTransDetailInfos) {
 		this.historyTransDetailInfos = historyTransDetailInfos;
 	}
+	/**
+	 * <p>Getter for the field <code>historyTransDetailInfos</code>.</p>
+	 *
+	 * @return a {@link java.util.List} object.
+	 */
 	public List<YLBTransDetailInfo> getHistoryTransDetailInfos( ) {
 		return this.historyTransDetailInfos;
 	}
 
+	/**
+	 * <p>Setter for the field <code>totalItemCount</code>.</p>
+	 *
+	 * @param totalItemCount a {@link java.lang.String} object.
+	 */
 	public void setTotalItemCount(String totalItemCount) {
 		this.totalItemCount = totalItemCount;
 	}
+	/**
+	 * <p>Getter for the field <code>totalItemCount</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTotalItemCount( ) {
 		return this.totalItemCount;
 	}

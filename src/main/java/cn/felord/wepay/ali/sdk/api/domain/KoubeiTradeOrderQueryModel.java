@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 口碑订单详情
  *
  * @author auto create
- * @since 1.0, 2016-11-21 14:07:02
+ * @version $Id: $Id
  */
 public class KoubeiTradeOrderQueryModel extends AlipayObject {
 
@@ -19,9 +19,19 @@ public class KoubeiTradeOrderQueryModel extends AlipayObject {
 	@ApiField("order_no")
 	private String orderNo;
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}

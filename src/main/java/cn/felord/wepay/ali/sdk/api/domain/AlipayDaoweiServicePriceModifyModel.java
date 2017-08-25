@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 更新服务价格接口
  *
  * @author auto create
- * @since 1.0, 2017-06-12 10:29:34
+ * @version $Id: $Id
  */
 public class AlipayDaoweiServicePriceModifyModel extends AlipayObject {
 
@@ -35,23 +35,53 @@ out_sku_id是在sku中定义的外部商品库存单位信息ID,该配置表示o
 	@ApiField("unit_price")
 	private String unitPrice;
 
+	/**
+	 * <p>Getter for the field <code>outServiceId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOutServiceId() {
 		return this.outServiceId;
 	}
+	/**
+	 * <p>Setter for the field <code>outServiceId</code>.</p>
+	 *
+	 * @param outServiceId a {@link java.lang.String} object.
+	 */
 	public void setOutServiceId(String outServiceId) {
 		this.outServiceId = outServiceId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>priceDimType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getPriceDimType() {
 		return this.priceDimType;
 	}
+	/**
+	 * <p>Setter for the field <code>priceDimType</code>.</p>
+	 *
+	 * @param priceDimType a {@link java.lang.String} object.
+	 */
 	public void setPriceDimType(String priceDimType) {
 		this.priceDimType = priceDimType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>unitPrice</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUnitPrice() {
 		return this.unitPrice;
 	}
+	/**
+	 * <p>Setter for the field <code>unitPrice</code>.</p>
+	 *
+	 * @param unitPrice a {@link java.lang.String} object.
+	 */
 	public void setUnitPrice(String unitPrice) {
 		this.unitPrice = unitPrice;
 	}

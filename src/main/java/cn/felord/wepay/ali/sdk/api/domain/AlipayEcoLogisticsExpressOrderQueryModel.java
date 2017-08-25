@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 查询订单详情接口
  *
  * @author auto create
- * @since 1.0, 2017-04-06 18:05:24
+ * @version $Id: $Id
  */
 public class AlipayEcoLogisticsExpressOrderQueryModel extends AlipayObject {
 
@@ -25,16 +25,36 @@ public class AlipayEcoLogisticsExpressOrderQueryModel extends AlipayObject {
 	@ApiField("order_no")
 	private String orderNo;
 
+	/**
+	 * <p>Getter for the field <code>logisMerchCode</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getLogisMerchCode() {
 		return this.logisMerchCode;
 	}
+	/**
+	 * <p>Setter for the field <code>logisMerchCode</code>.</p>
+	 *
+	 * @param logisMerchCode a {@link java.lang.String} object.
+	 */
 	public void setLogisMerchCode(String logisMerchCode) {
 		this.logisMerchCode = logisMerchCode;
 	}
 
+	/**
+	 * <p>Getter for the field <code>orderNo</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getOrderNo() {
 		return this.orderNo;
 	}
+	/**
+	 * <p>Setter for the field <code>orderNo</code>.</p>
+	 *
+	 * @param orderNo a {@link java.lang.String} object.
+	 */
 	public void setOrderNo(String orderNo) {
 		this.orderNo = orderNo;
 	}

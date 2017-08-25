@@ -7,7 +7,7 @@ import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
  * 链接信息数据结构
  *
  * @author auto create
- * @since 1.0, 2016-10-26 17:43:37
+ * @version $Id: $Id
  */
 public class NewsfeedMediaLinkInfo extends AlipayObject {
 
@@ -55,51 +55,121 @@ public class NewsfeedMediaLinkInfo extends AlipayObject {
 	@ApiField("url")
 	private String url;
 
+	/**
+	 * <p>Getter for the field <code>contentId</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentId() {
 		return this.contentId;
 	}
+	/**
+	 * <p>Setter for the field <code>contentId</code>.</p>
+	 *
+	 * @param contentId a {@link java.lang.String} object.
+	 */
 	public void setContentId(String contentId) {
 		this.contentId = contentId;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentSource</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentSource() {
 		return this.contentSource;
 	}
+	/**
+	 * <p>Setter for the field <code>contentSource</code>.</p>
+	 *
+	 * @param contentSource a {@link java.lang.String} object.
+	 */
 	public void setContentSource(String contentSource) {
 		this.contentSource = contentSource;
 	}
 
+	/**
+	 * <p>Getter for the field <code>contentType</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getContentType() {
 		return this.contentType;
 	}
+	/**
+	 * <p>Setter for the field <code>contentType</code>.</p>
+	 *
+	 * @param contentType a {@link java.lang.String} object.
+	 */
 	public void setContentType(String contentType) {
 		this.contentType = contentType;
 	}
 
+	/**
+	 * <p>Getter for the field <code>desc</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getDesc() {
 		return this.desc;
 	}
+	/**
+	 * <p>Setter for the field <code>desc</code>.</p>
+	 *
+	 * @param desc a {@link java.lang.String} object.
+	 */
 	public void setDesc(String desc) {
 		this.desc = desc;
 	}
 
+	/**
+	 * <p>Getter for the field <code>thumb</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getThumb() {
 		return this.thumb;
 	}
+	/**
+	 * <p>Setter for the field <code>thumb</code>.</p>
+	 *
+	 * @param thumb a {@link java.lang.String} object.
+	 */
 	public void setThumb(String thumb) {
 		this.thumb = thumb;
 	}
 
+	/**
+	 * <p>Getter for the field <code>title</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getTitle() {
 		return this.title;
 	}
+	/**
+	 * <p>Setter for the field <code>title</code>.</p>
+	 *
+	 * @param title a {@link java.lang.String} object.
+	 */
 	public void setTitle(String title) {
 		this.title = title;
 	}
 
+	/**
+	 * <p>Getter for the field <code>url</code>.</p>
+	 *
+	 * @return a {@link java.lang.String} object.
+	 */
 	public String getUrl() {
 		return this.url;
 	}
+	/**
+	 * <p>Setter for the field <code>url</code>.</p>
+	 *
+	 * @param url a {@link java.lang.String} object.
+	 */
 	public void setUrl(String url) {
 		this.url = url;
 	}
