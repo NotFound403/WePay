@@ -10,7 +10,7 @@ import java.lang.annotation.Annotation;
  * Time: 下午9:58
  *
  * @author lenovo
- * @version $Id: $Id
+ * @version $Id : $Id
  */
 public class AnnotationUtil {
 

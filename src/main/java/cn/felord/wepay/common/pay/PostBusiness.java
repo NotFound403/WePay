@@ -13,14 +13,14 @@ public interface PostBusiness {
     /**
      * 失败后业务处理.
      *
-     * @param t a T object.
+     * @param t   the t
      */
     <T extends Map<String, Object>> void failureBusinessHandler(T t);
 
     /**
      * 成功后业务处理.
      *
-     * @param t a T object.
+     * @param t   the t
      */
     <T extends Map<String, Object>> void successBusinessHandler(T t);
 }

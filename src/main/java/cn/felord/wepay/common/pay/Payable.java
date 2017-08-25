@@ -84,6 +84,10 @@ public interface Payable {
      * @param orderId         订单号  微信订单号 transaction_id    商户订单号 out_trade_no 二选一
      * @param orderIdTypeEnum 订单号类型
      * @param orderIdTypeEnum 订单号类型
+     * @param orderIdTypeEnum 订单号类型
+     * @param orderIdTypeEnum 订单号类型
+     * @param orderIdTypeEnum 订单号类型
+     * @param orderIdTypeEnum 订单号类型
      * @return the map
      * @throws cn.felord.wepay.common.exception.PayException the pay exception
      * @see <a href="https://pay.weixin.qq.com/wiki/doc/api/app/app.php?chapter=9_2&index=4">腾讯微信支付查询订单</a>
@@ -103,6 +107,10 @@ public interface Payable {
      * 查询退款.
      *
      * @param orderId         订单号 四选一
+     * @param orderIdTypeEnum 对应订单号的四种类型
+     * @param orderIdTypeEnum 对应订单号的四种类型
+     * @param orderIdTypeEnum 对应订单号的四种类型
+     * @param orderIdTypeEnum 对应订单号的四种类型
      * @param orderIdTypeEnum 对应订单号的四种类型
      * @param orderIdTypeEnum 对应订单号的四种类型
      * @return the map

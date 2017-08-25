@@ -4,7 +4,7 @@ import cn.felord.wepay.ali.sdk.api.AlipayObject;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
 
 /**
- * 出账机构接口输出参数列表 ChargeInstResult{ List<ChargeInstMode>}对象
+ * 出账机构接口输出参数列表对象
  *
  * @author auto create
  * @version $Id: $Id

@@ -4,34 +4,25 @@
  */
 package cn.felord.wepay.ali.sdk.api.internal.util;
 
-import java.io.ByteArrayInputStream;
-import java.io.ByteArrayOutputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.StringWriter;
+import cn.felord.wepay.ali.sdk.api.AlipayApiException;
+import cn.felord.wepay.ali.sdk.api.AlipayConstants;
+import cn.felord.wepay.ali.sdk.api.internal.util.codec.Base64;
+
+import javax.crypto.Cipher;
+import java.io.*;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 import java.security.spec.InvalidKeySpecException;
 import java.security.spec.PKCS8EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-
-import javax.crypto.Cipher;
-
-import cn.felord.wepay.ali.sdk.api.AlipayApiException;
-import cn.felord.wepay.ali.sdk.api.AlipayConstants;
-import cn.felord.wepay.ali.sdk.api.internal.util.codec.Base64;
+import java.util.*;
 
 /**
  * The type Alipay signature.
  *
  * @author runzhi
- * @version $Id: $Id
+ * @version $Id : $Id
  */
 public class AlipaySignature {
 
@@ -108,7 +99,7 @@ public class AlipaySignature {
      * @param privateKey the private key
      * @param charset    the charset
      * @param signType   the sign type
-     * @return string
+     * @return string string
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey, String charset,
@@ -133,7 +124,7 @@ public class AlipaySignature {
      * @param content    the content
      * @param privateKey the private key
      * @param charset    the charset
-     * @return string
+     * @return string string
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String rsa256Sign(String content, String privateKey,
@@ -169,7 +160,7 @@ public class AlipaySignature {
      * @param content    the content
      * @param privateKey the private key
      * @param charset    the charset
-     * @return string
+     * @return string string
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey,
@@ -485,15 +476,7 @@ public class AlipaySignature {
     /**
      * 验签并解密
      * <p>
-     * <b>目前适用于公众号</b><br>
-     * params参数示例：
-     * <br>{
-     * <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
-     * <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
-     * sign_type=RSA,
-     * <br>charset=UTF-8
-     * <br>}
-     * </p>
+     * 目前适用于公众号
      *
      * @param params          the params
      * @param alipayPublicKey 支付宝公钥
@@ -517,22 +500,19 @@ public class AlipaySignature {
         if (isDecrypt) {
             return rsaDecrypt(bizContent, cusPrivateKey, charset);
         }
+/*   params参数示例：
+        {
+                  <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
+      <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
+      sign_type=RSA,
+     <br>charset=UTF-8
+                 <br>}*/
 
         return bizContent;
     }
 
     /**
      * 验签并解密
-     * <p>
-     * <b>目前适用于公众号</b><br>
-     * params参数示例：
-     * <br>{
-     * <br>biz_content=M0qGiGz+8kIpxe8aF4geWJdBn0aBTuJRQItLHo9R7o5JGhpic/MIUjvXo2BLB++BbkSq2OsJCEQFDZ0zK5AJYwvBgeRX30gvEj6eXqXRt16/IkB9HzAccEqKmRHrZJ7PjQWE0KfvDAHsJqFIeMvEYk1Zei2QkwSQPlso7K0oheo/iT+HYE8aTATnkqD/ByD9iNDtGg38pCa2xnnns63abKsKoV8h0DfHWgPH62urGY7Pye3r9FCOXA2Ykm8X4/Bl1bWFN/PFCEJHWe/HXj8KJKjWMO6ttsoV0xRGfeyUO8agu6t587Dl5ux5zD/s8Lbg5QXygaOwo3Fz1G8EqmGhi4+soEIQb8DBYanQOS3X+m46tVqBGMw8Oe+hsyIMpsjwF4HaPKMr37zpW3fe7xOMuimbZ0wq53YP/jhQv6XWodjT3mL0H5ACqcsSn727B5ztquzCPiwrqyjUHjJQQefFTzOse8snaWNQTUsQS7aLsHq0FveGpSBYORyA90qPdiTjXIkVP7mAiYiAIWW9pCEC7F3XtViKTZ8FRMM9ySicfuAlf3jtap6v2KPMtQv70X+hlmzO/IXB6W0Ep8DovkF5rB4r/BJYJLw/6AS0LZM9w5JfnAZhfGM2rKzpfNsgpOgEZS1WleG4I2hoQC0nxg9IcP0Hs+nWIPkEUcYNaiXqeBc=,
-     * <br>sign=rlqgA8O+RzHBVYLyHmrbODVSANWPXf3pSrr82OCO/bm3upZiXSYrX5fZr6UBmG6BZRAydEyTIguEW6VRuAKjnaO/sOiR9BsSrOdXbD5Rhos/Xt7/mGUWbTOt/F+3W0/XLuDNmuYg1yIC/6hzkg44kgtdSTsQbOC9gWM7ayB4J4c=,
-     * sign_type=RSA,
-     * <br>charset=UTF-8
-     * <br>}
-     * </p>
      *
      * @param params          the params
      * @param alipayPublicKey 支付宝公钥
@@ -571,7 +551,7 @@ public class AlipaySignature {
      * @param charset         字符集，如UTF-8, GBK, GB2312
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
-     * @return 加密 、签名后xml内容字符串 <p> 返回示例： <alipay> <response>密文</response> <encryption_type>RSA</encryption_type> <sign>sign</sign> <sign_type>RSA</sign_type> </alipay> </p>
+     * @return 加密 、签名后xml内容字符串
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
@@ -603,6 +583,7 @@ public class AlipaySignature {
         } else {// 不加密，不加签
             sb.append(bizContent);
         }
+//        <alipay> <response>密文</response> <encryption_type>RSA</encryption_type> <sign>sign</sign> <sign_type>RSA</sign_type> </alipay> </p>
         return sb.toString();
     }
 
@@ -617,7 +598,7 @@ public class AlipaySignature {
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
      * @param signType        the sign type
-     * @return 加密 、签名后xml内容字符串 <p> 返回示例： <alipay> <response>密文</response> <encryption_type>RSA</encryption_type> <sign>sign</sign> <sign_type>RSA</sign_type> </alipay> </p>
+     * @return 加密 、签名后xml内容字符串
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
@@ -653,6 +634,7 @@ public class AlipaySignature {
         } else {// 不加密，不加签
             sb.append(bizContent);
         }
+//         返回示例： <alipay> <response>密文</response> <encryption_type>RSA</encryption_type> <sign>sign</sign> <sign_type>RSA</sign_type> </alipay>
         return sb.toString();
     }
 

@@ -39,7 +39,7 @@ public abstract class Configuration {
      * Read default map.
      *
      * @return the map
-     * @throws PayException the pay exception
+     * @throws cn.felord.wepay.common.exception.PayException the pay exception
      */
     public static Map<Object, Object> readDefault() throws PayException {
 
@@ -68,7 +68,7 @@ public abstract class Configuration {
      * Read   map.
      *
      * @return the map
-     * @throws PayException the pay exception
+     * @throws cn.felord.wepay.common.exception.PayException the pay exception
      */
     public Map<Object, Object> read() throws PayException {
 

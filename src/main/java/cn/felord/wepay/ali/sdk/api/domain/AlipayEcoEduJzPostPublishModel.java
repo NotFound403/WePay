@@ -1,10 +1,10 @@
 package cn.felord.wepay.ali.sdk.api.domain;
 
-import java.util.List;
-
 import cn.felord.wepay.ali.sdk.api.AlipayObject;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
+
+import java.util.List;
 
 /**
  * 兼职平台贴子发布接口
@@ -215,7 +215,7 @@ public class AlipayEcoEduJzPostPublishModel extends AlipayObject {
 	private String workTimeRemark;
 
 	/**
-	 * 每天工作时长 <以小时计>
+	 * 每天工作时长 以小时计
 	 */
 	@ApiField("working_hours")
 	private String workingHours;

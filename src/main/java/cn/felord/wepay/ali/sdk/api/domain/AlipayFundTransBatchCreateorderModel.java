@@ -20,7 +20,7 @@ public class AlipayFundTransBatchCreateorderModel extends AlipayObject {
 	private String batchNo;
 
 	/**
-	 * 必须是map<String,String>的json串，长度限制为100
+	 * 必须是map String,String 的json串，长度限制为100
 	 */
 	@ApiField("ext_param")
 	private String extParam;

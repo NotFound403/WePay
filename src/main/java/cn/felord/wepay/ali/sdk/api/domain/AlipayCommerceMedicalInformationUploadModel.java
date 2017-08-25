@@ -9,7 +9,7 @@ import java.util.Date;
  * 医疗行业挂号报备接口
  *
  * @author auto create
- * @version $Id: $Id
+ * @version $Id : $Id
  */
 public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 
@@ -117,7 +117,7 @@ public class AlipayCommerceMedicalInformationUploadModel extends AlipayObject {
 
     /**
      * 患者姓名
-     * 患者姓名&患者证件和医保卡信息全部匹配才能使用医保，否则认为套保嫌疑不允许医保只能自费
+     * 患者姓名 患者证件和医保卡信息全部匹配才能使用医保，否则认为套保嫌疑不允许医保只能自费
      */
     @ApiField("patient_name")
     private String patientName;

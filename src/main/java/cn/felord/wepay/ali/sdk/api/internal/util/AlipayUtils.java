@@ -1,25 +1,25 @@
 package cn.felord.wepay.ali.sdk.api.internal.util;
 
-import java.net.Inet4Address;
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
-import java.util.Map.Entry;
-
 import cn.felord.wepay.ali.sdk.api.AlipayApiException;
 import cn.felord.wepay.ali.sdk.api.AlipayResponse;
 import cn.felord.wepay.ali.sdk.api.internal.parser.json.ObjectJsonParser;
 import cn.felord.wepay.ali.sdk.api.internal.util.json.JSONReader;
 import cn.felord.wepay.ali.sdk.api.internal.util.json.JSONValidatingReader;
 
+import java.net.Inet4Address;
+import java.net.InetAddress;
+import java.net.NetworkInterface;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
 /**
  * 系统工具类。
  *
  * @author carver.gu
- * @version $Id: $Id
+ * @version $Id : $Id
  */
 public abstract class AlipayUtils {
     private static String localIp;
@@ -55,7 +55,7 @@ public abstract class AlipayUtils {
      * 获取文件的真实媒体类型。目前只支持JPG, GIF, PNG, BMP四种图片文件。
      *
      * @param bytes 文件字节流
-     * @return 媒体类型(MEME TYPE)
+     * @return 媒体类型(MEME TYPE) mime type
      */
     public static String getMimeType(byte[] bytes) {
         String suffix = getFileSuffix(bytes);
@@ -126,7 +126,7 @@ public abstract class AlipayUtils {
      */
     public static <T extends AlipayResponse> T parseResponse(String json, Class<T> clazz)
             throws AlipayApiException {
-        ObjectJsonParser<T> parser = new ObjectJsonParser<T>(clazz);
+        ObjectJsonParser<T> parser = new ObjectJsonParser<>(clazz);
         return parser.parse(json);
     }
 

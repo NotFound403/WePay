@@ -1,11 +1,11 @@
 package cn.felord.wepay.ali.sdk.api.domain;
 
-import java.util.Date;
-import java.util.List;
-
 import cn.felord.wepay.ali.sdk.api.AlipayObject;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiField;
 import cn.felord.wepay.ali.sdk.api.internal.mapping.ApiListField;
+
+import java.util.Date;
+import java.util.List;
 
 /**
  * 消费记录信息-主记录
@@ -295,7 +295,7 @@ public class ConsumeRecordAOPModel extends AlipayObject {
 	private String payChannel;
 
 	/**
-	 * 代付人&亲密付人姓名
+	 * 代付人 亲密付人姓名
 	 */
 	@ApiField("peerpayer_real_name")
 	private String peerpayerRealName;

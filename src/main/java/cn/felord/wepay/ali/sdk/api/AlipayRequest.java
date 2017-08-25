@@ -7,7 +7,7 @@ import java.util.Map;
  *
  * @param <T> the type parameter
  * @author carver.gu
- * @version $Id: $Id
+ * @version $Id : $Id
  */
 public interface AlipayRequest<T extends AlipayResponse> {
 
@@ -20,12 +20,11 @@ public interface AlipayRequest<T extends AlipayResponse> {
 
     /**
      * 获取所有的Key-Value形式的文本请求参数集合。其中：
-     * <ul>
-     * <li>Key: 请求参数名</li>
-     * <li>Value: 请求参数值</li>
-     * </ul>
+     * <p>
+     * Key: 请求参数名
+     * Value: 请求参数值
      *
-     * @return 文本请求参数集合 text params
+     * @return the text params  文本请求参数集合
      */
     Map<String, String> getTextParams();
 

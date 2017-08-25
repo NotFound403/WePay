@@ -15,8 +15,7 @@ import java.util.Map;
  * @author yikai.hu
  * @version $Id : AlipayMobilePublicMultiMediaDownloadRequest.java, v 0.1 Aug 15, 2014 10:19:15 AM yikai.hu Exp $
  */
-public class AlipayMobilePublicMultiMediaDownloadRequest implements
-        AlipayRequest<AlipayMobilePublicMultiMediaDownloadResponse> {
+public class AlipayMobilePublicMultiMediaDownloadRequest implements AlipayRequest<AlipayMobilePublicMultiMediaDownloadResponse> {
 
     private AlipayHashMap udfParams;         // add user-defined text parameters
     private String apiVersion = "1.0";
@@ -169,7 +168,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
 
     /**
      * {@inheritDoc}
-     *
+     * <p>
      * Setter method for property <tt>notifyUrl</tt>.
      */
     public void setNotifyUrl(String notifyUrl) {
@@ -177,7 +176,7 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
     }
 
     /**
-     * <p>getResponseClass.</p>
+     * getResponseClass.
      *
      * @return a {@link java.lang.Class} object.
      */
@@ -186,10 +185,10 @@ public class AlipayMobilePublicMultiMediaDownloadRequest implements
     }
 
     /**
-     * <p>isNeedEncrypt.</p>
+     * isNeedEncrypt
      *
-     * @see cn.felord.wepay.ali.sdk.api.AlipayRequest#isNeedEncrypt()
      * @return a boolean.
+     * @see AlipayRequest#isNeedEncrypt()
      */
     public boolean isNeedEncrypt() {
         return false;

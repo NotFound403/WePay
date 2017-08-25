@@ -32,7 +32,7 @@ public class AlipayFundTransBatchCreatesinglebatchModel extends AlipayObject {
 	private String createUserId;
 
 	/**
-	 * 扩展参数,目前淘系会传商品类目过来key=categoryNo。注：长度不可超过100; 数据格式需要为map<String,String>的json串
+	 * 扩展参数,目前淘系会传商品类目过来key=categoryNo。注：长度不可超过100; 数据格式需要为map String,String 的json串
 	 */
 	@ApiField("ext_param")
 	private String extParam;

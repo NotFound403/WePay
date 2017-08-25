@@ -10,7 +10,7 @@ import java.util.Map;
  * The interface Alipay client.
  *
  * @author runzhi
- * @version $Id: $Id
+ * @version $Id : $Id
  */
 public interface AlipayClient {
 
@@ -20,8 +20,9 @@ public interface AlipayClient {
      * @param request the request
      * @return t t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
-    <T extends cn.felord.wepay.ali.sdk.api.AlipayResponse> T execute(cn.felord.wepay.ali.sdk.api.AlipayRequest<T> request) throws cn.felord.wepay.ali.sdk.api.AlipayApiException;
+    <T extends AlipayResponse> T execute(AlipayRequest<T> request) throws AlipayApiException;
 
     /**
      * Execute t.
@@ -30,9 +31,9 @@ public interface AlipayClient {
      * @param authToken the auth token
      * @return t t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
-    <T extends cn.felord.wepay.ali.sdk.api.AlipayResponse> T execute(cn.felord.wepay.ali.sdk.api.AlipayRequest<T> request,
-                                                                     String authToken) throws cn.felord.wepay.ali.sdk.api.AlipayApiException;
+    <T extends AlipayResponse> T execute(AlipayRequest<T> request, String authToken) throws AlipayApiException;
 
     /**
      * Execute t.
@@ -42,9 +43,10 @@ public interface AlipayClient {
      * @param appAuthToken the app auth token
      * @return t t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
-    <T extends cn.felord.wepay.ali.sdk.api.AlipayResponse> T execute(cn.felord.wepay.ali.sdk.api.AlipayRequest<T> request, String accessToken,
-                                                                     String appAuthToken) throws cn.felord.wepay.ali.sdk.api.AlipayApiException;
+    <T extends AlipayResponse> T execute(AlipayRequest<T> request, String accessToken,
+                                         String appAuthToken) throws AlipayApiException;
 
     /**
      * Page execute t.
@@ -52,8 +54,9 @@ public interface AlipayClient {
      * @param request the request
      * @return t t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
-    <T extends cn.felord.wepay.ali.sdk.api.AlipayResponse> T pageExecute(cn.felord.wepay.ali.sdk.api.AlipayRequest<T> request) throws cn.felord.wepay.ali.sdk.api.AlipayApiException;
+    <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request) throws AlipayApiException;
 
     /**
      * SDK客户端调用生成sdk字符串
@@ -61,8 +64,9 @@ public interface AlipayClient {
      * @param request the request
      * @return t t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
-    <T extends cn.felord.wepay.ali.sdk.api.AlipayResponse> T sdkExecute(cn.felord.wepay.ali.sdk.api.AlipayRequest<T> request) throws cn.felord.wepay.ali.sdk.api.AlipayApiException;
+    <T extends AlipayResponse> T sdkExecute(AlipayRequest<T> request) throws AlipayApiException;
 
     /**
      * Page execute t.
@@ -71,9 +75,10 @@ public interface AlipayClient {
      * @param method  the method
      * @return t t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
-    <T extends cn.felord.wepay.ali.sdk.api.AlipayResponse> T pageExecute(cn.felord.wepay.ali.sdk.api.AlipayRequest<T> request,
-                                                                         String method) throws cn.felord.wepay.ali.sdk.api.AlipayApiException;
+    <T extends AlipayResponse> T pageExecute(AlipayRequest<T> request,
+                                             String method) throws AlipayApiException;
 
     /**
      * 移动客户端同步结果返回解析的参考工具方法
@@ -82,7 +87,8 @@ public interface AlipayClient {
      * @param requsetClazz 接口请求request类，如App支付传入 AlipayTradeAppPayRequest.class
      * @return 同步返回结果的response对象 tr
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <TR> a TR object.
+     * @param <T> a T object.
      */
-    <TR extends cn.felord.wepay.ali.sdk.api.AlipayResponse, T extends cn.felord.wepay.ali.sdk.api.AlipayRequest<TR>> TR parseAppSyncResult(Map<String, String> result,
-                                                                                                                                           Class<T> requsetClazz) throws cn.felord.wepay.ali.sdk.api.AlipayApiException;
+    <TR extends AlipayResponse, T extends AlipayRequest<TR>> TR parseAppSyncResult(Map<String, String> result, Class<T> requsetClazz) throws AlipayApiException;
 }

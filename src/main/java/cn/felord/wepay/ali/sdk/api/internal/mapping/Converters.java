@@ -20,7 +20,7 @@ import java.util.*;
  * 转换工具类。
  *
  * @author carver.gu
- * @version $Id: $Id
+ * @version $Id : $Id
  */
 public class Converters {
     private static final Set<String> baseFields = new HashSet<String>();
@@ -63,11 +63,11 @@ public class Converters {
     /**
      * 使用指定 的读取器去转换字符串为对象。
      *
-     * @param <T>    领域泛型
      * @param clazz  领域类型
      * @param reader 读取器
      * @return 领域对象 t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
     public static <T> T convert(Class<T> clazz, Reader reader) throws AlipayApiException {
         T rsp = null;
