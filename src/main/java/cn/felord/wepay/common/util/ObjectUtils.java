@@ -94,6 +94,7 @@ public class ObjectUtils {
      *
      * @param m   the m
      * @return the map
+     * @param <M> a M object.
      */
     public static <M extends Map<String, Object>> Map<String, Object> paramsSorter(M m) {
 //    1.8JDK 可采用注释部分的lambda表达式    Map<String, Object> map = new TreeMap<>(String::compareTo);
@@ -325,6 +326,7 @@ public class ObjectUtils {
      * @param encryptType the encrypt type
      * @param secretKey   the secret key
      * @throws cn.felord.wepay.common.exception.PayException the pay exception
+     * @param <M> a M object.
      */
     public static <M extends Map<String, Object>> void verifySignature(M m, String encryptType, String secretKey) throws PayException {
         String originSign = (String) m.remove("sign");

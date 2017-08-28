@@ -20,7 +20,6 @@ public interface Converter {
      * @param clazz 领域类型
      * @return 响应对象 t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
-     * @param <T> a T object.
      */
     <T extends AlipayResponse> T toResponse(String rsp, Class<T> clazz)
             throws AlipayApiException;

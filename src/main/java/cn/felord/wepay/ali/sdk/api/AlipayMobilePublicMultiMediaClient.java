@@ -419,6 +419,7 @@ public class AlipayMobilePublicMultiMediaClient implements AlipayClient {
      * @param appAuthToken the app auth token
      * @return the t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
     public <T extends AlipayResponse> T doGet(AlipayRequest<T> request,
                                               String appAuthToken) throws AlipayApiException {

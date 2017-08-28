@@ -123,6 +123,7 @@ public abstract class AlipayUtils {
      * @param clazz API响应类
      * @return API响应对象 t
      * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @param <T> a T object.
      */
     public static <T extends AlipayResponse> T parseResponse(String json, Class<T> clazz)
             throws AlipayApiException {

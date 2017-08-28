@@ -100,7 +100,7 @@ public class AlipaySignature {
      * @param charset    the charset
      * @param signType   the sign type
      * @return string string
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey, String charset,
                                  String signType) throws AlipayApiException {
@@ -125,7 +125,7 @@ public class AlipaySignature {
      * @param privateKey the private key
      * @param charset    the charset
      * @return string string
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsa256Sign(String content, String privateKey,
                                     String charset) throws AlipayApiException {
@@ -161,7 +161,7 @@ public class AlipaySignature {
      * @param privateKey the private key
      * @param charset    the charset
      * @return string string
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaSign(String content, String privateKey,
                                  String charset) throws AlipayApiException {
@@ -197,7 +197,7 @@ public class AlipaySignature {
      * @param privateKey the private key
      * @param charset    the charset
      * @return the string
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaSign(Map<String, String> params, String privateKey,
                                  String charset) throws AlipayApiException {
@@ -213,7 +213,7 @@ public class AlipaySignature {
      * @param algorithm the algorithm
      * @param ins       the ins
      * @return the private key from pkcs 8
-     * @throws java.lang.Exception the exception
+     * @throws Exception the exception
      */
     public static PrivateKey getPrivateKeyFromPKCS8(String algorithm,
                                                     InputStream ins) throws Exception {
@@ -290,7 +290,7 @@ public class AlipaySignature {
      * @param publicKey the public key
      * @param charset   the charset
      * @return the boolean
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static boolean rsaCheckV1(Map<String, String> params, String publicKey,
                                      String charset) throws AlipayApiException {
@@ -308,7 +308,7 @@ public class AlipaySignature {
      * @param charset   the charset
      * @param signType  the sign type
      * @return the boolean
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static boolean rsaCheckV1(Map<String, String> params, String publicKey,
                                      String charset, String signType) throws AlipayApiException {
@@ -325,7 +325,7 @@ public class AlipaySignature {
      * @param publicKey the public key
      * @param charset   the charset
      * @return the boolean
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static boolean rsaCheckV2(Map<String, String> params, String publicKey,
                                      String charset) throws AlipayApiException {
@@ -343,7 +343,7 @@ public class AlipaySignature {
      * @param charset   the charset
      * @param signType  the sign type
      * @return the boolean
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static boolean rsaCheckV2(Map<String, String> params, String publicKey,
                                      String charset, String signType) throws AlipayApiException {
@@ -358,12 +358,11 @@ public class AlipaySignature {
      *
      * @param content   the content
      * @param sign      the sign
-     * @param signType  the sign type
      * @param publicKey the public key
      * @param charset   the charset
      * @param signType  the sign type
      * @return the boolean
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static boolean rsaCheck(String content, String sign, String publicKey, String charset,
                                    String signType) throws AlipayApiException {
@@ -391,7 +390,7 @@ public class AlipaySignature {
      * @param publicKey the public key
      * @param charset   the charset
      * @return the boolean
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static boolean rsa256CheckContent(String content, String sign, String publicKey,
                                              String charset) throws AlipayApiException {
@@ -425,7 +424,7 @@ public class AlipaySignature {
      * @param publicKey the public key
      * @param charset   the charset
      * @return the boolean
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static boolean rsaCheckContent(String content, String sign, String publicKey,
                                           String charset) throws AlipayApiException {
@@ -457,7 +456,7 @@ public class AlipaySignature {
      * @param algorithm the algorithm
      * @param ins       the ins
      * @return the public key from x 509
-     * @throws java.lang.Exception the exception
+     * @throws Exception the exception
      */
     public static PublicKey getPublicKeyFromX509(String algorithm,
                                                  InputStream ins) throws Exception {
@@ -484,7 +483,7 @@ public class AlipaySignature {
      * @param isCheckSign     是否验签
      * @param isDecrypt       是否解密
      * @return 解密后明文 ，验签失败则异常抛出
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
                                              String cusPrivateKey, boolean isCheckSign,
@@ -521,7 +520,7 @@ public class AlipaySignature {
      * @param isDecrypt       是否解密
      * @param signType        the sign type
      * @return 解密后明文 ，验签失败则异常抛出
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String checkSignAndDecrypt(Map<String, String> params, String alipayPublicKey,
                                              String cusPrivateKey, boolean isCheckSign,
@@ -552,7 +551,7 @@ public class AlipaySignature {
      * @param isEncrypt       是否加密，true-加密  false-不加密
      * @param isSign          是否签名，true-签名  false-不签名
      * @return 加密 、签名后xml内容字符串
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
                                         String cusPrivateKey, String charset, boolean isEncrypt,
@@ -599,7 +598,7 @@ public class AlipaySignature {
      * @param isSign          是否签名，true-签名  false-不签名
      * @param signType        the sign type
      * @return 加密 、签名后xml内容字符串
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String encryptAndSign(String bizContent, String alipayPublicKey,
                                         String cusPrivateKey, String charset, boolean isEncrypt,
@@ -645,7 +644,7 @@ public class AlipaySignature {
      * @param publicKey 公钥
      * @param charset   字符集，如UTF-8, GBK, GB2312
      * @return 密文内容 string
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaEncrypt(String content, String publicKey,
                                     String charset) throws AlipayApiException {
@@ -690,7 +689,7 @@ public class AlipaySignature {
      * @param privateKey 私钥
      * @param charset    字符集，如UTF-8, GBK, GB2312
      * @return 明文内容 string
-     * @throws cn.felord.wepay.ali.sdk.api.AlipayApiException the alipay api exception
+     * @throws AlipayApiException the alipay api exception
      */
     public static String rsaDecrypt(String content, String privateKey,
                                     String charset) throws AlipayApiException {
