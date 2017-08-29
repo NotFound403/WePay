@@ -8,6 +8,7 @@ import cn.felord.wepay.common.util.QRCodeUtil;
 import cn.felord.wepay.wechat.entity.Bill;
 import cn.felord.wepay.wechat.entity.PayRequestParams;
 import cn.felord.wepay.wechat.entity.RefundRequestParams;
+import cn.felord.wepay.wechat.enumeration.CollectionKeyEnum;
 import cn.felord.wepay.wechat.enumeration.OrderIdTypeEnum;
 import cn.felord.wepay.wechat.enumeration.WeChatPayTypeEnum;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -25,8 +26,6 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static cn.felord.wepay.common.pay.Constant.BILL_KEY;
-import static cn.felord.wepay.common.pay.Constant.PARAMS_KEY;
 import static cn.felord.wepay.common.util.ObjectUtils.DEFAULT_CHARSET;
 import static cn.felord.wepay.common.util.ObjectUtils.MD5;
 
@@ -419,9 +418,9 @@ public class WeChatPayClient implements Payable {
             }
             k = k + t.length;
         }
-        Map<String, Object> resultList = new HashMap<>();
-        resultList.put(BILL_KEY, bills);
-        return resultList;
+        Map<String, Object> resultMap = new HashMap<>();
+        resultMap.put(CollectionKeyEnum.bill.name(), bills);
+        return resultMap;
     }
 
     private Map<String, Object> orderHandler(PayType weChatPayTypeEnum, String orderId, OrderIdTypeEnum orderIdTypeEnum) throws PayException {
@@ -501,7 +500,7 @@ public class WeChatPayClient implements Payable {
     }
 
     private <T> Map<String, Object> injector(Map<String, Object> map, T t) {
-        map.put(PARAMS_KEY, t);
+        map.put(CollectionKeyEnum.params_key.name(), t);
         return map;
     }
 

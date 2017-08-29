@@ -33,28 +33,31 @@ public class WeChatPayCallback implements Callback {
         this.response = response;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void payCallback() {
         Map<String, Object> result = HttpKit.resolveRequestData(request);
-        String resultCode = (String) result.get("result_code");
-        String returnMsg = "SUCCESS".equals(resultCode) ? "OK" : (String) result.get("err_code");
+        String returnMsg = (String) result.get("return_msg");
         response.setCharacterEncoding("UTF-8");
+        log.debug("微信请求："+xmlTemplate(returnMsg));
         try {
-            response.getWriter().write(xmlTemplate(resultCode, returnMsg));
+            response.getWriter().write(xmlTemplate(returnMsg));
         } catch (IOException e) {
             log.debug("callback request resolve params：" + result, e);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public HttpServletRequest getRequest() {
         return request;
     }
 
-    private String xmlTemplate(String returnCode, String returnMsg) {
-        return "<xml>" + "<return_code>" + "<![CDATA[" + returnCode + "]]>" + "</return_code>" +
-                "<return_msg>" + "<![CDATA[" + returnMsg + "</return_msg>" + "</xml>";
+    private String xmlTemplate(String returnMsg) {
+        return "<xml><return_code><![CDATA[SUCCESS]]></return_code><return_msg><![CDATA[" + returnMsg + "]]></return_msg></xml>";
     }
 }

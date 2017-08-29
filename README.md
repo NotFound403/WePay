@@ -16,7 +16,7 @@
  
 #### **wiki**
  - 具体使用配置方法参看腾讯文档或者 wiki：[https://gitee.com/felord/WePay/wikis]
- - demo 包下有简单调用实例
+ - demo项目：[ https://gitee.com/felord/WePayDemo ]
  
 #### **maven坐标**
  
