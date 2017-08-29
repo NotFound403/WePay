@@ -15,8 +15,8 @@
  
  
 #### **wiki**
- - 具体使用配置方法参看腾讯文档或者 wiki：[https://gitee.com/felord/WePay/wikis]
- - demo项目：[ https://gitee.com/felord/WePayDemo ]
+ - 具体使用配置方法参看腾讯文档或者 wiki：[https://gitee.com/felord/WePay/wikis](https://gitee.com/felord/WePay/wikis)
+ - demo项目：[https://gitee.com/felord/WePayDemo](https://gitee.com/felord/WePayDemo)
  
 #### **maven坐标**
  
@@ -33,8 +33,8 @@
 
 
 #### **仓库地址**
- - OSC:[https://git.oschina.net/felord/WePay]
- - GitHub:[https://github.com/NotFound403/WePay]
+ - OSC:[https://git.oschina.net/felord/WePay](https://git.oschina.net/felord/WePay)
+ - GitHub:[https://github.com/NotFound403/WePay](https://github.com/NotFound403/WePay)
  
  
 ** QQ群 4390822  欢迎各位大佬提出建议 不胜感激 **
