@@ -389,22 +389,22 @@ public class WeChatPayClient implements Payable {
         String[] tempStr = newStr.split("`"); // 数据分组
 //        String[] t = tempStr[0].split(" ");// 分组标题
 
-        String[] t = {"tradeTime", "appId", "mchId", "subMchId", "deviceId", "transactionId", "outTradeNo", "sign", "tradeType", "tradeStatus", "bank", "feeType", "totalFee", "enterpriseFee", "refundId", "outRefundNo", "refundFee", "enterpriseRefundFee", "refundType", "refundStatus", "attach", "sceneInfo", "serviceFee", "serviceFeeRate"};
+        String[] fieldNames = {"tradeTime", "appId", "mchId", "subMchId", "deviceId", "transactionId", "outTradeNo", "sign", "tradeType", "tradeStatus", "bank", "feeType", "totalFee", "enterpriseFee", "refundId", "outRefundNo", "refundFee", "enterpriseRefundFee", "refundType", "refundStatus", "attach", "sceneInfo", "serviceFee", "serviceFeeRate"};
         int k = 1; // 纪录数组下标
-        int j = tempStr.length / t.length; // 计算循环次数
+        int j = tempStr.length / fieldNames.length; // 计算循环次数
         List<Bill> bills = new ArrayList<>();
         for (int i = 0; i < j; i++) {
             Map<String, Object> map = new TreeMap<>();
-            for (int l = 0; l < t.length; l++) {
+            for (int l = 0; l < fieldNames.length; l++) {
                 //如果是最后列且是最后一行数据时，去除数据里的汉字
-                if ((i == j - 1) && (l == t.length - 1)) {
+                if ((i == j - 1) && (l == fieldNames.length - 1)) {
                     String reg = "[\u4e00-\u9fa5]";//汉字的正则表达式
                     Pattern pat = Pattern.compile(reg);
                     Matcher mat = pat.matcher(tempStr[l + k]);
                     String repickStr = mat.replaceAll("");
-                    map.put(t[l], repickStr);
+                    map.put(fieldNames[l], repickStr);
                 } else {
-                    map.put(t[l], tempStr[l + k]);
+                    map.put(fieldNames[l], tempStr[l + k]);
                 }
             }
             ObjectMapper mapper = new ObjectMapper();
@@ -416,7 +416,7 @@ public class WeChatPayClient implements Payable {
             } catch (IOException e) {
                 log.debug("bill data can't be read", e);
             }
-            k = k + t.length;
+            k = k + fieldNames.length;
         }
         Map<String, Object> resultMap = new HashMap<>();
         resultMap.put(CollectionKeyEnum.bill.name(), bills);

@@ -44,7 +44,6 @@ public interface PayConfig {
     String getMch_id();
 
 
-
     /**
      * Gets dev mode.
      *

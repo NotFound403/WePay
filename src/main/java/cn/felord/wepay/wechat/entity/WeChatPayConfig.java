@@ -59,49 +59,66 @@ public class WeChatPayConfig implements PayConfig, Serializable {
         this.devMode = builder.devMode;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getAppid() {
         return appid;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getMch_id() {
         return mch_id;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getSecretKey() {
         return secretKey;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getNotify_url() {
         return notify_url;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getSign_type() {
         return sign_type;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getDevMode() {
         return devMode;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String getCertPath() {
         return certPath;
     }
 
-    /** {@inheritDoc} */
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString() {
         return "{" +
@@ -175,6 +192,26 @@ public class WeChatPayConfig implements PayConfig, Serializable {
                 this.devMode = dev;
                 this.notifyUrl = _notifyUrl;
             }
+        }
+
+
+        public Builder(Decryptable decryptable,String appId, String secretKey, String mchId, String signType, String certPath, String notifyUrl, String devMode) {
+
+                if (decryptable != null) {
+                        this.appId = decryptable.decrypt(appId);
+                        this.mchId = decryptable.decrypt(mchId);
+                        this.secretKey = decryptable.decrypt(secretKey);
+                        this.certPath = certPath != null ? decryptable.decrypt(certPath) : null;
+                }else {
+                    this.appId = appId;
+                    this.mchId = mchId;
+                    this.secretKey = secretKey;
+                    this.certPath = certPath;
+                }
+                this.signType = signType;
+                this.devMode = devMode;
+                this.notifyUrl = notifyUrl;
+
         }
 
         /**
