@@ -18,6 +18,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.io.OutputStream;
+import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Path;
 import java.util.EnumMap;
@@ -99,9 +100,9 @@ public class QRCodeUtil {
         hints.put(EncodeHintType.CHARACTER_SET, "UTF-8");
         hints.put(EncodeHintType.MARGIN, 1);
         hints.put(EncodeHintType.ERROR_CORRECTION, ErrorCorrectionLevel.L);
-        try {
+        try (FileSystem fileSystem=FileSystems.getDefault()){
             BitMatrix bitMatrix = MULTI_FORMAT_WRITER.encode(content, BarcodeFormat.QR_CODE, width, height, hints);
-            Path path = FileSystems.getDefault().getPath(filePath, fileName);
+            Path path = fileSystem.getPath(filePath, fileName);
             MatrixToImageWriter.writeToPath(bitMatrix, format, path);
         } catch (WriterException | IOException e) {
             log.debug("create QRcode is defeated ：", e);

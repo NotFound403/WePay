@@ -20,7 +20,7 @@
         </license>
     </licenses>
     <scm>
-        <tag>1.0.1</tag>
+        <tag>1.0.3</tag>
         <url>git@git.oschina.net:felord/WePay.git</url>
         <connection>scm:git:git@git.oschina.net:felord/WePay.git</connection>
         <developerConnection>scm:git:git@git.oschina.net:felord/WePay.git</developerConnection>
