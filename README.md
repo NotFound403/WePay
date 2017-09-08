@@ -21,18 +21,17 @@
 #### **maven坐标**
  
  ```   
- 
  <dependency>
    <groupId>cn.felord</groupId>
    <artifactId>wePay</artifactId>
-   <version>1.0.2</version>
+   <version>1.0.3</version>
  </dependency>
- 
  ```  
 
 
 
 #### **仓库地址**
+- wepay-spring-boot-starter: [https://gitee.com/felord/wepay-spring-boot](https://gitee.com/felord/wepay-spring-boot)
  - OSC:[https://git.oschina.net/felord/WePay](https://git.oschina.net/felord/WePay)
  - GitHub:[https://github.com/NotFound403/WePay](https://github.com/NotFound403/WePay)
  

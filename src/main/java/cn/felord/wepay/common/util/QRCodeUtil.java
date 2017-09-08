@@ -105,7 +105,7 @@ public class QRCodeUtil {
             Path path = fileSystem.getPath(filePath, fileName);
             MatrixToImageWriter.writeToPath(bitMatrix, format, path);
         } catch (WriterException | IOException e) {
-            log.debug("create QRcode is defeated ：", e);
+            log.debug("creating QRcode is defeated ：", e);
         }
     }
 

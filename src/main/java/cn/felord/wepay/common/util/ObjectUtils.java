@@ -161,7 +161,7 @@ public class ObjectUtils {
 
     /**
      * 加密
-     *
+     * @deprecated
      * @param original 原字符
      * @return string string
      */
@@ -365,7 +365,7 @@ public class ObjectUtils {
                 }
             }
         } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
-            log.debug("bean can be resolved ", e);
+            log.debug("bean cant be resolved ", e);
         }
     }
 
