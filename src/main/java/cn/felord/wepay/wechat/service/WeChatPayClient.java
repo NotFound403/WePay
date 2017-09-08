@@ -89,7 +89,7 @@ public class WeChatPayClient implements Payable {
             resultMap.put("secretKey", secretKey);
             return resultMap;
         }
-        throw new PayException("参数列表：" + resultMap);
+        throw new PayException("统一下单返回失败,参数列表：{}" + resultMap);
     }
 
     /** {@inheritDoc} */

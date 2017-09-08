@@ -33,6 +33,7 @@ import java.util.*;
  * @since 2017 /7/18  14:59
  */
 public class ObjectUtils {
+    private static final Logger log = LoggerFactory.getLogger(ObjectUtils.class);
     /**
      * The constant DEFAULT_CHARSET.
      */
@@ -41,7 +42,6 @@ public class ObjectUtils {
      * The constant MD5.
      */
     public static final String MD5 = "md5";
-    private static final Logger log = LoggerFactory.getLogger(ObjectUtils.class);
     private static final String[] hexDigits = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
     private static final byte[] AES_KEY = {65, 55, 70, 56, 102, 51, 118, 52, 68, 48, 111, 106, 57, 42, 12, 17};
 
@@ -85,7 +85,6 @@ public class ObjectUtils {
         } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
             log.debug("获取实体bean信息异常", e);
         }
-        log.info("\u53c2\u6570\u5217\u8868\uff1a： {}", map);
         return map;
     }
 

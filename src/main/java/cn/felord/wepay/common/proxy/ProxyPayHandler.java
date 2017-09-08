@@ -3,8 +3,6 @@ package cn.felord.wepay.common.proxy;
 import cn.felord.wepay.common.pay.Payable;
 import cn.felord.wepay.common.pay.PreBusinessService;
 import cn.felord.wepay.wechat.enumeration.CollectionKeyEnum;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
@@ -20,7 +18,6 @@ import java.util.Map;
  * @since 2017 /7/25  14:37
  */
 public class ProxyPayHandler implements InvocationHandler {
-    private static final Logger log= LoggerFactory.getLogger(ProxyPayHandler.class);
     private Payable target;
     private PreBusinessService preBusinessService;
 
@@ -49,20 +46,16 @@ public class ProxyPayHandler implements InvocationHandler {
     /** {@inheritDoc} */
     @Override
     @SuppressWarnings("unchecked")
-    public Object invoke(Object proxy, Method method, Object[] args) {
+    public Object invoke(Object proxy, Method method, Object[] args) throws InvocationTargetException, IllegalAccessException {
 
-        Map<String, Object> map=null;
-        try {
-        map = (Map<String, Object>)method.invoke(target, args) ;
+        Map<String, Object> map = (Map<String, Object>)method.invoke(target, args) ;
             if (preBusinessService != null) {
                 preBusinessService.preHandler(map);
             }
             if (map.containsKey(CollectionKeyEnum.params_key.name())) {
                 map.remove(CollectionKeyEnum.params_key.name());
             }
-        } catch (IllegalAccessException | InvocationTargetException e) {
-           log.debug("payment proxy invoke is defeated",e);
-        }
+
         return map;
     }
 }
