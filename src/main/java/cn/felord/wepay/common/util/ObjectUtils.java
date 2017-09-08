@@ -85,7 +85,7 @@ public class ObjectUtils {
         } catch (IntrospectionException | IllegalAccessException | InvocationTargetException e) {
             log.debug("获取实体bean信息异常", e);
         }
-        log.info(String.format("\u53c2\u6570\u5217\u8868\uff1a %s", map));
+        log.info("\u53c2\u6570\u5217\u8868\uff1a： {}", map);
         return map;
     }
 

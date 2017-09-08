@@ -41,9 +41,10 @@ public class WeChatPayCallback implements Callback {
         Map<String, Object> result = HttpKit.resolveRequestData(request);
         String returnMsg = (String) result.get("return_msg");
         response.setCharacterEncoding("UTF-8");
-        log.debug("微信请求："+xmlTemplate(returnMsg));
+        String xml=xmlTemplate(returnMsg);
+        log.debug("微信请求：{}",xml);
         try {
-            response.getWriter().write(xmlTemplate(returnMsg));
+            response.getWriter().write(xml);
         } catch (IOException e) {
             log.debug("callback request resolve params：" + result, e);
         }

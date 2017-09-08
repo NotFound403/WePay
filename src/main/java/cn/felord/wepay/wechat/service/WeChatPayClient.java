@@ -75,14 +75,14 @@ public class WeChatPayClient implements Payable {
         sortedMap.put("sign", sign);
         String xml = ObjectUtils.mapToXML(sortedMap);
         if ("true".equals(devMode)) {
-            log.info(String.format("payRequestParams: %s", params));
-            log.info(String.format("sortMap：%s", sortedMap));
-            log.info(String.format("weChatPayConfig： %s", weChatPayConfig));
-            log.info(String.format("统一下单参数xml： %s", xml));
+            log.info( "payRequestParams: {}", params);
+            log.info("sortMap：{}", sortedMap);
+            log.info("weChatPayConfig： {}", weChatPayConfig);
+            log.info("统一下单参数xml： {}", xml);
         }
         Map<String, Object> resultMap = doWeChatPayRequest(WeChatPayTypeEnum.valueOf(tradeType).getApi(), xml);
         if ("true".equals(devMode)) {
-            log.info(String.format("统一下单返回结果：%s", resultMap));
+            log.info( "统一下单返回结果：{}", resultMap);
         }
         if ("SUCCESS".equals(resultMap.get("result_code"))) {
             ObjectUtils.verifySignature(resultMap, MD5, secretKey);
@@ -116,7 +116,7 @@ public class WeChatPayClient implements Payable {
             ObjectUtils.verifySignature(resultMap, MD5, secretKey);
             return injector(resultMap, payRequestParams);
         }
-        throw new PayException("参数列表：" + resultMap);
+        throw new PayException("响应失败参数列表：" + resultMap);
     }
 
     /** {@inheritDoc} */
